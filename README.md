@@ -1,60 +1,63 @@
 # Clinical GraphRAG Evaluation
 
-Knowledge Graph extraction from clinical transcripts + GraphRAG QA evaluation.
+Evaluate Knowledge Graph extraction methods for clinical transcripts using GraphRAG QA.
 
-## Key Results
+## Pipeline Overview
 
-### Method Comparison
+![Pipeline](figures/pipeline_overview.png)
+
+**Stage 1: KG Construction**
+- Extract entities & relations from clinical transcripts (per-patient)
+- Merge into unified graph with entity resolution (BGE-M3 embedding, 0.85 threshold)
+
+**Stage 2: Evaluation**
+- GraphRAG retrieves relevant KG triples to answer clinical questions
+- 4 LLM judges (GPT/Claude/Gemini/Grok) × 3 trials score each answer
+
+---
+
+## Results
+
 ![Comparison](figures/comparison_all_methods.png)
 
-| Method | Score | vs Curated | Cost | ROI |
-|--------|-------|------------|------|-----|
-| Curated (Gold) | 3.49 | 100% | $40 | - |
-| Self-Critic GLM | 3.24 | 92.8% | $0.12 | **Best value** |
-| Self-Critic Gemini | 3.22 | 92.3% | $0.50 | - |
-| Naive | 3.08 | 88.2% | $0.05 | - |
-| Text RAG | 2.14 | 61.4% | $0 | - |
+| Method | Score | vs Curated | Cost |
+|--------|-------|------------|------|
+| Curated (Gold) | 3.49 | 100% | $40 |
+| Self-Critic GLM | 3.24 | 93% | $0.12 |
+| Naive | 3.08 | 88% | $0.05 |
+| Text RAG | 2.14 | 61% | $0 |
 
-**Conclusion**: Self-Critic with GLM-4.7-flash achieves 93% of curated quality at 0.3% of the cost.
-
-### Dimension Analysis
-![Radar](figures/comparison_radar.png)
-
-### Question Type Performance
-![Question Types](figures/comparison_question_types.png)
-
-### Cost vs Quality
-![Cost](figures/cost_vs_quality.png)
+**Takeaway**: Self-Critic achieves 93% quality at 0.3% cost.
 
 ---
 
 ## Quick Start
 
 ```bash
-# 1. Setup API keys
-cp api_keys_example.json api_keys.json
+# Step 1: Setup
+cp api_keys_example.json api_keys.json  # Add your API keys
 
-# 2. KG extraction
+# Step 2: KG Extraction
 python kg_extraction.py --input evaluation_bundle/transcripts --output my_kg/ --method self-critic
 
-# 3. Merge graph
+# Step 3: Entity Resolution
 python dump_graph.py --input my_kg/ --output my_unified_graph.json
 
-# 4. GraphRAG QA
+# Step 4: GraphRAG QA
 python graphrag_qa_pipeline.py --kg my_unified_graph.json --bundle evaluation_bundle/ --output my_results/
 
-# 5. LLM Judge
+# Step 5: LLM Judge
 python llm_judge_batch_parallel.py --results my_results/ --output my_scores/
 
-# 6. Compare to baseline
+# Step 6: Compare to baseline
 python kg_similarity_scorer.py --student my_unified_graph.json --baseline baseline_curated/unified_graph_curated.json
 ```
 
-## Project Structure
+## Structure
 
 ```
-├── evaluation_bundle/     # 20 patients × 7 questions
-├── baseline_*/            # Pre-computed baselines
+├── evaluation_bundle/     # 20 patients × 7 question types
+├── baseline_*/            # Pre-computed baselines with scores
 ├── figures/               # Visualizations
-└── *.py                   # Core scripts
+└── *.py                   # Pipeline scripts
 ```
