@@ -32,16 +32,16 @@ Your task: Design an agentic orchestration pipeline that extracts high-quality K
 
 ## Baseline Results
 
-![Comparison](figures/comparison_all_methods.png)
+![Methods Comparison](figures/methods_comparison.png)
 
-| Method | Score | vs Curated | Cost | Description |
-|--------|-------|------------|------|-------------|
-| Curated (Gold) | 3.49 | 100% | $40 | Human expert + 3 SOTA LLMs voting |
-| Self-Critic GLM | 3.24 | 93% | $0.12 | 2-pass extraction with self-correction |
-| Naive | 3.08 | 88% | $0.05 | Single-pass extraction |
-| Text RAG | 2.14 | 61% | $0 | No KG, just text retrieval |
+| Method | Pipeline | Score | Cost |
+|--------|----------|-------|------|
+| **Curated** | 3 LLMs voting → Writer-Critic → Human review | 3.49 | $40 |
+| **Self-Critic** | LLM extract → Self critique → Merge | 3.24 | $0.12 |
+| **Naive** | LLM extract → Merge | 3.08 | $0.05 |
+| **Text RAG** | Chunk & embed (no KG) | 2.14 | $0 |
 
-**Takeaway**: Self-Critic achieves 93% of curated quality at 0.3% cost. Can you do better?
+**Takeaway**: Self-Critic achieves **93% quality at 0.3% cost**. Can your multi-agent system do better?
 
 ---
 
