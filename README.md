@@ -36,7 +36,7 @@ Your task: Design an agentic orchestration pipeline that extracts high-quality K
 
 | Method | Pipeline | Score | Cost |
 |--------|----------|-------|------|
-| **Human Labeled** | LLM extract → Writer-Critic → Human review | 3.49 | $50 |
+| **Curated** | Human curated | 3.49 | $50 |
 | **Self-Critic [GLM/Gemini]** | LLM extract → Self critique → Merge | 3.24 / 3.22 | $0.12 / $0.50 |
 | **Naive** | LLM extract → Merge | 3.08 | $0.05 |
 | **Text RAG** | Chunk & embed (no KG) | 2.14 | $0 |
