@@ -16,7 +16,7 @@ from agent_prompts import CRITIC_PROMPT, REFINE_PROMPT
 
 # === Configuration ===
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY", "your-api-key-here")
-MODEL = "deepseek/deepseek-chat-v3.1"    # "google/gemini-2.5-flash"
+MODEL = "zhipu-ai/glm-4.7-flash"  # Baseline. Alternatives: qwen/qwen3-14b, deepseek/deepseek-r1-distill-qwen-32b
 MAX_TOKENS = 4000
 
 # === OpenRouter API Client ===

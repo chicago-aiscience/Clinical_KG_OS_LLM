@@ -15,7 +15,7 @@ from schema_prompt import BASE_EXTRACTION_PROMPT
 
 # === Configuration ===
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY", "your-api-key-here")
-MODEL = "google/gemini-2.5-flash"  # Free model - alternatives: "deepseek/deepseek-chat-v3.1", "openrouter/free"
+MODEL = "zhipu-ai/glm-4.7-flash"  # Baseline model. Alternatives: qwen/qwen3-14b, deepseek/deepseek-r1-distill-qwen-32b
 MAX_TOKENS = 4000  # Limit response size to stay within free tier (reduce to 2000-3000 for smaller responses)
 
 # === OpenRouter API Client ===

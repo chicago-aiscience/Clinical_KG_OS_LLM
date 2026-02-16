@@ -58,27 +58,27 @@ uv run src/open_router_example/visualize_kg.py /path/to/kg.json -o viz.html
 
 ## Configuration
 
-Edit the model in each script:
+Edit the model in each script (**must use approved models only**):
 
 ```python
-# Single-agent (transcript_open_router_poc.py)
-MODEL = "google/gemini-2.5-flash"  # Free model
-
-# Multi-agent (multi_agent_kg_extraction.py)
-MODEL = "deepseek/deepseek-chat-v3.1"  # Free model
+# Approved models:
+MODEL = "zhipu-ai/glm-4.7-flash"           # Baseline (default)
+MODEL = "qwen/qwen3-14b"
+MODEL = "nvidia/nemotron-3-nano-30b-a3b"
+MODEL = "openai/gpt-oss-20b"
+MODEL = "deepseek/deepseek-r1-distill-qwen-32b"
 ```
 
 Adjust token limits:
 
 ```python
-MAX_TOKENS = 4000  # Increase for longer outputs; currently reduced to use OpenRouter with 0 credits
+MAX_TOKENS = 4000  # Increase for longer outputs
 ```
 
 ## Features
 
 - **Validation:** Automatically removes invalid edges (references to non-existent nodes)
 - **JSON Parsing:** Handles markdown code blocks, trailing commas, and malformed JSON
-- **Free Models:** Uses free OpenRouter models by default
 - **Interactive Viz:** Color-coded nodes, hover tooltips, draggable layout
 
 ## Files
@@ -96,10 +96,9 @@ src/open_router_example/
 
 **JSON parsing errors:**
 - Check `debug_raw_response.txt` and `debug_invalid_json.txt`
-- Try a better model (e.g., `deepseek/deepseek-chat-v3.1`)
+- Try a different approved model
 - Increase `max_tokens`
 
 **402 Payment errors:**
 - Reduce `MAX_TOKENS` (e.g., to 2000-3000)
-- Use a free model
 - Check your OpenRouter credit balance
