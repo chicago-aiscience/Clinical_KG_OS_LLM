@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer captures the main clinical takeaway from the Gold Answer: the husband’s similar illness increases suspicion for COVID-19 and the lack of a flu shot keeps influenza on the differential. However, it contains an important factual error by implying the patient was “likely spreading [symptoms] to her husband,” whereas the transcript indicates the husband was sick for a week and the patient for three days (suggesting the opposite direction). It also overstates/introduces non-transcript framing (e.g., “strong secondary possibility,” “statistical edge”) not explicitly stated by the clinician.",
+    "completeness": "Key Gold Answer points covered: (1) husband with similar symptoms leading the doctor to prioritize ruling out COVID-19; (2) lack of flu shot supporting influenza as a possibility; (3) COVID swab/self-isolation plan. Key point missed: the limited outside contact/work-from-home/self-isolating context and only minor hiking exposure, which the Gold Answer uses to support household transmission rather than independent exposures. The question explicitly asks about these epidemiological factors collectively, so omission is meaningful.",
+    "faithfulness": "Multiple elements are not grounded in the transcript: repeated references to a “Knowledge Graph ([KG])” and a purported KG relationship are fabricated; “Both COVID-19 and influenza cause fever and sore throat [KG]” is not supported by transcript content; and the claim about the patient spreading illness to her husband contradicts the timeline given. While some other statements (ordering COVID swab, considering flu due to no shot) are well supported, the hallucinated KG content and the transmission-direction error reduce faithfulness substantially.",
+    "relevance": "The response is largely focused on how epidemiological factors affect COVID vs influenza differential (husband illness and flu-shot status). It adds some clinically adjacent but less asked-for content (symptom overlap, isolation) and fails to address the limited outside contact factor, but it remains mostly on-topic."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 3.0,
+  "summary": "Partially aligns with the Gold Answer (COVID prioritized due to household case; flu considered due to no vaccine) but misses the limited-contact epidemiology and includes hallucinated “Knowledge Graph” content plus a timeline-inconsistent transmission claim."
+}

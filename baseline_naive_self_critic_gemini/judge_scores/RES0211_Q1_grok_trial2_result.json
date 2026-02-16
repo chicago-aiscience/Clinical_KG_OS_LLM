@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies several key reported symptoms from the Gold Answer (dry cough, scratchy throat, malaise/crappy feeling, headache, feeling hot as fever), but adds congestion and post-nasal drip as current 3-4 day symptoms based on P-18 (which Gold attributes to allergies, not primary current symptoms) and only partially covers denied symptoms (sputum correctly via dry cough, shortness of breath partially akin to Gold's 'cannot breathe from allergies,' but completely misses explicit denials of rashes/skin changes, nausea/vomiting, diarrhea, and joint aches). It also falsely claims in the note that nausea, joint pain, rashes were 'not mentioned in the provided transcript segments,' contradicting the transcript (P-10, P-11, P-12, P-13). These omissions, additions, and incorrect note represent significant factual discrepancies vs. Gold.",
+    "completeness": "Gold reported symptoms covered: dry cough/scratchy throat (yes), headache (yes), feeling hot day/night (partially as fever), malaise/crappy/icky (yes), tired (no, only malaise proxy). Gold denied symptoms covered: sputum/phlegm (yes), cannot breathe (partially as SOB), but missed: rashes/skin changes, nausea/vomiting, diarrhea, joint aches. Covers ~50-60% of Gold's key points across both parts of the question.",
+    "faithfulness": "All listed symptoms and denials are directly verifiable in the cited transcript segments (e.g., P-1 for cough/throat/malaise/headache, P-7/P-9 for hot, P-18 for plugged/post-nasal/can't breathe, P-1/P-4/P-5/P-6 for dry/no sputum). Minor external references (Knowledge Graph for fever/dry cough definitions) are plausible and aligned with doctor's summary (D-58 mentions fever); no major hallucinations, though the note incorrectly states certain symptoms 'not mentioned' when they are (P-10-P-13).",
+    "relevance": "Directly structures response around reported symptoms (bulleted list with citations) and denied symptoms as per question, addressing the core query on 3-4 day symptoms and explicit denials with examples; minor tangent in definitions/note, but focused overall."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 4,
+    "relevance": 4
+  },
+  "average_score": 3.25,
+  "summary": "The Generated Answer partially captures the main reported symptoms but significantly undercovers denied symptoms, adds minor extras, and includes a factual error in its note, leading to moderate overall quality."
+}

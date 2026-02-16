@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer contains multiple factual errors versus the Gold Answer/transcript. It incorrectly states the cough duration as “maybe for like a month” as the overall duration, whereas the patient clearly reports a cough for ~3 months with intermittent course (P-2, P-13). It fails to specify that sleep disruption has been occurring pretty much nightly for the last month (P-21), instead vaguely noting sleep disruption without the nightly pattern. It reports greenish sputum but omits the key timing that it became productive about 3 days prior (P-12). It incorrectly states there is no information about subjective fevers and that the transcript does not report fever; the patient explicitly reports feeling “hot at night in the past couple days” (P-4).",
+    "completeness": "Key timeline elements from the Gold Answer are largely missing or incorrect: (1) initial onset ~3 months ago during pole dancing class—missed; (2) intermittent/dry course for ~2 months—missed; (3) began waking her up pretty well every night for the last month—partially captured as sleep disruption but missing nightly frequency and correct timing; (4) became productive with greenish sputum about 3 days prior—color captured but timing missed; (5) subjective fevers in last couple days—missed/contradicted. Overall coverage is well under 50% of required key points.",
+    "faithfulness": "Several statements are not faithful to the transcript. The claim that the cough has been occurring for “maybe for like a month” as the main duration misrepresents P-19 (which refers to sleep disruption/fatigue context) and ignores explicit 3-month duration (P-2, P-13). The statement that there is no transcript information about subjective fevers contradicts P-4. While the greenish sputum claim is grounded (P-9), the overall answer includes multiple contradictions/omissions relative to clearly stated transcript content.",
+    "relevance": "The response is structured as a timeline and attempts to address the asked components (onset, sleep disruption, sputum, fevers). However, because it omits/incorrectly reports several required timeline milestones (especially onset timing and fevers), it only partially fulfills the question despite staying on-topic."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "The answer is on-topic but substantially inaccurate and incomplete, missing the 3-month onset, the 3-day productive change, and incorrectly denying subjective fevers that are explicitly reported in the transcript."
+}

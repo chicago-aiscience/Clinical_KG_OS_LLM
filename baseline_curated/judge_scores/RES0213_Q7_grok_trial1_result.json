@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer provides a precise chronological timeline starting from smoking at age 18, teen anxiety attacks with 8-year gap, smoking escalation to 10 cigs/day past 2 years then reduction few months ago, father's recent heart attack, recent weeks thesis stress, and 1.5-week chest pain onset with links. Generated Answer omits starting age 18, smoking escalation/reduction timeline, 8-year anxiety gap, father's heart attack, and thesis specifics; it starts with current smoking/stress, vaguely references past anxiety without teen detail or gap, covers pain onset accurately but adds irrelevant treatment details; significant omissions and lack of full factual match lead to score of 2.",
+    "completeness": "Key Gold points: (1) smoking start ~18 [P-18], (2) teen anxiety [P-21], (3) 8 yrs no anxiety [P-22], (4) 2 yrs 10 cigs/day [P-18], (5) few mo cut to 5 [P-14,P-18], (6) father HA [P-8,P-30], (7) recent wks thesis stress [P-15,P-16], (8) 1.5 wk first pain [P-2,P-3,P-17], (9) stress/anxiety links [P-8,P-22,P-9,P-29]. Generated covers: past anxiety (partial), recent stress/smoking (partial), pain onset (yes), some relations (alone/studying). Misses 1,3,4,5,6,7 specifics; covers ~30-40% of key points, score 2.",
+    "faithfulness": "Generated citations [P-13],[P-20],[P-1],[P-3],[P-6],[P-29],[P-19] are accurate and verifiable in transcript. However, introduces unverifiable 'Knowledge Graph' references ([MEDICAL_HISTORY], [SYMPTOM] stress --[CAUSES]--> chest pain) not present in transcript, and misstates transcript on 'exact duration of onset' (clearly 1.5 weeks [P-2]); multiple hallucinated elements (Knowledge Graph links), score 2.",
+    "relevance": "Question requires timeline tracing from smoking start -> teen anxiety -> recent stress escalation -> pain onset, with phase relations. Generated attempts timeline/relations but starts current (not from smoking onset), vague on anxiety timing, omits key phases, adds off-topic Knowledge Graph and treatments; partially relevant with some structure matching question but significant deviations and misses, score 3."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "The Generated Answer partially addresses the timeline and relations but omits major chronological details from the Gold Answer, introduces transcript-external hallucinations, resulting in low correctness, completeness, and faithfulness."
+}

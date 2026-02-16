@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer states the sole medication is a bronchodilator (rescue inhaler) administered via a 'puffer', and the doctor asked about a daily controller ('one that you take every day no matter what') which the patient lacks (D-4, D-5, P-5, D-7, P-7). Generated Answer correctly identifies bronchodilator as sole medication but erroneously claims administration method is unspecified (contradicts D-7/P-7 'puffer') and that no question about daily controller was asked (directly contradicts D-5/P-5), introducing significant factual errors and contradictions.",
+    "completeness": "Gold key points: (1) bronchodilator as sole as-needed asthma med, (2) administered via puffer/inhaler, (3) doctor asked about daily controller med ('every day no matter what'), (4) patient does not have it, plus context on usage. Generated covers (1) partially but misses as-needed emphasis; completely misses (2), (3), (4). Covers ~25% of key points.",
+    "faithfulness": "Generated claims transcript does not specify bronchodilator administration (false: D-7/P-7 explicitly 'puffer'); claims no doctor question on daily controller (false: D-5 exactly matches); cites P-1 accurately for usage but hallucinates absences of clear transcript evidence, introducing multiple unverifiable/contradictory claims.",
+    "relevance": "Generated Answer is structured directly around the question's three parts (medication used, administration, daily controller), with no off-topic content or tangents beyond minor symptom details."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer partially identifies the correct medication but fabricates absences of key transcript details on administration and the daily controller inquiry, resulting in low factual accuracy, completeness, and faithfulness despite strong relevance."
+}

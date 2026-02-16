@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies and cites the main clinical features assessed and found absent: bullseye rash [D-6, P-3/P-6], joint pain [D-7, patient distinguishes skin soreness from joint], fever/illness [D-8], and headaches [D-19], aligning with Gold's core symptoms. It accurately notes patient denials implicitly through assessments. For diagnostics, tick ID [D-6, D-18] and serology [D-18] match Gold exactly. Minor discrepancies: omits 'feeling well otherwise' [D-18/P-18], 'no other bites' [D-9/P-9], physical exam [D-18], and physician consult [D-13/D-22]; adds Lyme map [D-13], which is factual but not listed as a key test in Gold. No major errors or contradictions.",
+    "completeness": "Clinical key points from Gold (6): covers bullseye rash, joint pain, fever/systemic illness, headaches (4/6); misses 'feeling well otherwise' and 'no other bites'. Diagnostic key points from Gold (4): covers tick ID (with species detail), blood serology (2/4); misses physical exam of bite site and physician consult; adds map (in transcript but not Gold key). Overall covers ~60-70% of Gold's explicit points.",
+    "faithfulness": "All specific claims verifiable in transcript with accurate citations (e.g., D-6 for rash, D-7 joint pain, D-8 systemic, D-19 headaches, D-18 tests). Patient details like soreness vs. joint pain grounded in P-1/P-7. No hallucinated facts; interpretive phrasing (e.g., 'did not report joint pain itself') supported by P-1/P-7. Minor unverifiable: reference to 'knowledge graph' not in transcript.",
+    "relevance": "Perfectly focused on question: structures response into exact sections for clinical features assessed/absent and diagnostic tests proposed, with no off-topic content or tangents."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 4,
+    "relevance": 5
+  },
+  "average_score": 4.0,
+  "summary": "The Generated Answer is factually accurate and highly relevant with strong grounding in the transcript but moderately incomplete in covering all key points from the Gold Answer."
+}

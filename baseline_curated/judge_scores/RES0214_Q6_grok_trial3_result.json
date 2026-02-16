@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer accurately captures the COVID-19 swab order [D-53] and self-isolation recommendation for patient and husband [D-53, D-54], consistent with Gold. It correctly notes intent to rule out COVID before considering influenza [D-54]. However, it omits the physical exam [D-52] and consultation with the supervising doctor [D-55], introduces minor interpretive additions like 'sick contact indicator of COVID-19' (plausible from [P-19, D-53] but not verbatim), and references non-existent 'clinical guidelines'. Core facts match, with minor discrepancies.",
+    "completeness": "Gold key points: (1) COVID swab [D-53] - covered; (2) self-isolation for patient/husband [D-53, D-54] - covered; (3) physical exam next [D-52] - missed; (4) consult supervising doctor/return [D-55] - missed; (5) patient agreement [P-54] - not covered. Covers 2/5 key points fully (~50%), with vague 'further workup' partially addressing next steps.",
+    "faithfulness": "All major claims verifiable: swab [D-53], isolation [D-53], symptoms [P-1], husband symptoms [P-19], rule out COVID/influenza [D-53, D-54]. Citations accurate. Minor unverifiable: 'clinical guidelines provided' (absent), interpretive rationale on sick contact/likelihood (plausible but added). No major hallucinations; mostly grounded.",
+    "relevance": "Directly structures response around diagnostic test, precautionary measures, and next steps, perfectly matching question components without off-topic content."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 4,
+    "relevance": 5
+  },
+  "average_score": 4.0,
+  "summary": "The Generated Answer is mostly accurate and relevant, faithfully grounded in the transcript, but incomplete in covering all Gold key points like physical exam and physician consultation."
+}

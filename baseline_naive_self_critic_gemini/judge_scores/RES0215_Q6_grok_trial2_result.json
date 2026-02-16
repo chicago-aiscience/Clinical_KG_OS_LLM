@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer falsely claims the doctor's plan is not included because the transcript ends at [P-44], but the provided transcript extends to [D-59]/[P-59], including [D-58] where the plan is explicitly stated (physical exam, consult physician, return to discuss next steps), directly contradicting the Gold Answer. It also incorrectly identifies environmental factors as colder weather [P-38] and seasonal allergies [P-35], ignoring the specific home assessments in [D-53] to [D-57] (smoking, carpets, pets, fireplaces, air filters). This represents major factual errors and contradictions.",
+    "completeness": "Gold Answer key points: doctor's plan (3 steps: physical exam, consult physician, return/discuss next steps; no specific tests; offered questions); home environmental factors (smoking [P-53], new carpets [P-54], no pets [P-55], no fireplaces/stoves [P-56], air filters changed [P-57], townhouse [P-50]). Generated Answer covers 0% of these, instead denying the plan exists and listing irrelevant factors (colder weather, seasonal allergies).",
+    "faithfulness": "Generated Answer hallucinates that the transcript ends at [P-44], fabricating the absence of [D-58] where the plan is stated; this is not verifiable in the provided transcript. Citations for env factors ([P-38], [P-35]) are accurate but refer to general triggers, not the home-specific assessments before the plan; largely ungrounded for the question's scope.",
+    "relevance": "Partially addresses environmental factors but completely misses the doctor's plan (core of the question), uses incorrect factors, and denies key content, making it largely off-topic."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 2
+  },
+  "average_score": 1.25,
+  "summary": "The Generated Answer is fundamentally incorrect, incomplete, and unfaithful due to hallucinating the transcript's end and misidentifying key elements, poorly addressing the question."
+}

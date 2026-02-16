@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the two inhalers (Ventolin and Spiriva), correctly reports Ventolin use as ~10 times in the past week, and correctly states the patient stopped a diuretic blood-pressure medication without physician approval. However, it omits the non-respiratory medication atorvastatin that the patient was taking, and its bracketed citations misattribute some information to doctor lines (e.g., Ventolin/Spiriva are stated by the patient at P-11, and Ventolin frequency is stated at P-12, not D-11/D-12).",
+    "completeness": "Covered: (1) Ventolin and Spiriva as pre-visit respiratory meds; (2) Ventolin use ~10 times in past week; (3) self-discontinuation of a diuretic BP medication without doctor approval. Missed: (1) atorvastatin (“Torva Staten”) as an active non-respiratory medication; (2) indication for atorvastatin (high cholesterol) and the context that Ventolin was PRN/used more recently; (3) (minor) doctor’s follow-up advice about BP monitoring/kidney complications.",
+    "faithfulness": "Substance is grounded in the transcript (Ventolin/Spiriva, ~10 uses, diuretic stopped without asking). The main faithfulness issue is inaccurate citation line references (using D-11/D-12 where the key facts are in P-11/P-12), but the claims themselves are supported.",
+    "relevance": "Directly addresses the asked items (pre-visit meds, Ventolin frequency, and which medication was stopped). No irrelevant content."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 4,
+    "relevance": 5
+  },
+  "average_score": 4.0,
+  "summary": "Mostly accurate and well-focused, but incomplete because it omits atorvastatin as a pre-visit medication and has minor citation misattributions."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer’s central premise is factually wrong: the transcript clearly includes the doctor asking about weight loss [D-22], recent travel [D-23], sick contacts [D-24], and chemical exposure at work [D-34]. Because it denies these questions occurred, it fails to provide the intended differentials (TB, lung cancer, travel-related infections, occupational/chemical pneumonitis) and instead introduces unrelated/unsupported differentials (e.g., MI/angina as a primary focus) not reflected in the Gold Answer’s targeted reasoning. This is a major contradiction to both transcript and Gold Answer.",
+    "completeness": "Key Gold Answer points missed almost entirely:\n- Weight loss question → screening for lung cancer and TB; denial lowers likelihood but doesn’t exclude.\n- Travel question → screening for travel/exposure-related or endemic infections (e.g., Legionella/fungal); Sarnia domestic; timing overlaps.\n- Sick contacts → screening for transmissible respiratory infection/TB exposure; denial lowers known exposure but doesn’t exclude CAP.\n- Chemical exposure → screening for chemical pneumonitis/occupational lung disease; limited exposure makes less likely.\nGenerated Answer does not address these mappings and therefore does not cover the Gold Answer’s required content.",
+    "faithfulness": "Multiple unfaithful elements: (1) explicit contradiction of the transcript by stating there is “no evidence” the doctor asked those questions, when they are present; (2) references to a “Knowledge Graph” and claims derived from it are not part of the provided transcript; (3) added differential framing (cardiovascular dysfunction/MI) is not grounded in the specific prompt and is not supported as the intent of the asked screening questions. Overall, the response is largely not grounded in the provided source.",
+    "relevance": "The question asks specifically what differentials the doctor was screening for with the four targeted questions and how the patient’s answers affected the differential. The Generated Answer mostly fails to address that and instead provides a general differential for symptoms after claiming the questions weren’t asked. This is only partially responsive and largely off-target."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 2
+  },
+  "average_score": 1.25,
+  "summary": "The Generated Answer contradicts the transcript by denying key screening questions occurred, misses nearly all Gold Answer differentials, and adds unsupported content, making it largely incorrect and ungrounded."
+}

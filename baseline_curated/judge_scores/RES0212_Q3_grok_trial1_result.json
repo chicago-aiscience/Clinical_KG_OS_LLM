@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer specifies 'acute lower respiratory tract infection, most likely acute bronchitis with possible bacterial superinfection or early community-acquired pneumonia, superimposed on a pre-existing chronic cough.' Generated Answer uses the vague term 'respiratory infection,' missing the specificity of acute bronchitis, bacterial superinfection, pneumonia possibility, and chronic cough context. Explanations of features are superficial compared to Gold's detailed clinical reasoning (e.g., transition to inflammation, bacterial concern, systemic response). Citation errors (e.g., [P-2] for sputum color, actually [P-9]). References to non-existent 'Knowledge Graph' contradict Gold's transcript-based reasoning. Some core facts align (productive cough worsening, green sputum, fever), but significant discrepancies in precision and additions.",
+    "completeness": "Gold key points: specific diagnosis with chronic overlay; productive cough as 3-day acute on 3-month chronic indicating transition; green sputum suggesting bacterial/infectious etiology; subjective fevers as systemic response; D-47 synthesis distinguishing from chronic issues; no further data. Generated covers basic diagnosis, three features' descriptions with citations, and D-47 summary, but misses chronic cough details, nuanced contributions (e.g., mucus production, bacterial concern), distinctions from serious conditions, and lack of vitals/exam. Covers ~60% of key points.",
+    "faithfulness": "Most claims grounded: productive cough [P-2, D-47], green sputum [P-9, D-47], fever [P-4]. However, multiple hallucinations: 'Knowledge Graph' repeatedly cited as source for sputum color and fever indicating infection (absent from transcript); minor citation error ([P-2] for color); D-47 'implicitly' concluding diagnosis (it only summarizes symptoms, no diagnosis stated). Several unverifiable/hallucinated elements reduce grounding.",
+    "relevance": "Generated directly states diagnosis and uses bulleted structure to explain each of the three exact features' contributions with transcript evidence, followed by summary tying to D-47; no off-topic content, perfectly focused on question."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.25,
+  "summary": "The Generated Answer is relevant and partially complete but undermined by vagueness in diagnosis, superficial explanations, and hallucinations like the Knowledge Graph, reducing correctness and faithfulness compared to the precise, transcript-grounded Gold Answer."
+}

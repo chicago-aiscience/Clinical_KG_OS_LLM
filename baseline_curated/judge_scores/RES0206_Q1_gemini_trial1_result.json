@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly identifies shortness of breath as the most bothersome symptom. The patient explicitly states in transcript [P-12], 'it's been the cough has been the thing that's been the most bothersome.' The Gold Answer correctly identifies the cough. Other symptoms like cough and sputum are correctly identified.",
+    "completeness": "The Generated Answer misses several symptoms listed in the Gold Answer and the transcript: sinus pressure [P-12], mild headache [P-14], and reduced exercise tolerance/difficulty walking the dog [P-4]. It covers about 60% of the symptoms mentioned in the Gold Answer.",
+    "faithfulness": "The Generated Answer claims the patient identified shortness of breath as the primary/most bothersome symptom, citing [P-1]. While the patient emphasizes breathing difficulty in [P-1], they never label it 'most bothersome'. In [P-12], they specifically use that phrasing for the cough. Therefore, the Generated Answer hallucinates the patient's priority assessment.",
+    "relevance": "The Generated Answer is highly relevant as it attempts to answer both parts of the specific question regarding respiratory/systemic symptoms and the most bothersome one, even though the conclusion of the second part is factually wrong."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer provides a decent summary of basic symptoms but fails on the critical task of identifying the most bothersome symptom, contradicting a direct statement in the transcript."
+}

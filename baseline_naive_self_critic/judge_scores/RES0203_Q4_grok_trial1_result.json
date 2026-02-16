@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly states there were 'no negative findings' and that the doctor 'did not screen for these specific symptoms' like fever, dyspnea, sore throat, etc., directly contradicting the Gold Answer and transcript (e.g., D-10/P-10: no fevers; D-11/P-11: no difficulty breathing; D-13/P-13: no sore throat). It ignores the systematic review of systems (D-10 to D-15, D-22) and claims these absences were not discussed, which is false. Core facts are entirely wrong, warranting a score of 1.",
+    "completeness": "The Gold Answer lists key negative findings (no fever, no dyspnea/difficulty breathing, no headaches, no sore throat, no chills/night sweats, no muscle aches/weakness, no chest pain, no sputum/blood, no cough triggers), citations, summary from D-16, explanation of clinical implications, and PMH negatives. The Generated Answer covers 0% of these, instead listing irrelevant positive findings (loss of smell/taste, dry cough) and denying negatives exist. Score: 1.",
+    "faithfulness": "Generated claims (no screening for fever/dyspnea/sore throat, no negative findings documented) are not verifiable in transcript and are fabricated, as D-7/P-7 (no sputum/blood), D-10-15 (fevers, dyspnea, headaches, sore throat, chills, aches), D-21 (no triggers), D-22 (no chest pain) explicitly confirm negatives. Positive findings are accurate but do not address query; overall, largely hallucinated denial of ROS. Score: 1.",
+    "relevance": "The question asks for negative findings from ROS (symptoms/conditions screened and absent) and their clinical significance. Generated Answer denies any negatives exist, lists positives instead, and shifts to COVID suspicion without addressing absences or their role in the picture. Does not address question. Score: 1."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 1
+  },
+  "average_score": 1.0,
+  "summary": "The Generated Answer is entirely inaccurate, hallucinates the absence of a clear review of systems, fails to cover any key points from the Gold Answer, and irrelevantly focuses on positive symptoms instead of requested negatives."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies that chest pain was screened for and denied (D-7/P-7), aligning with one fact in the Gold Answer, but fabricates the patient's response as 'I don't, no' from P-34 (which is actually denial of smoking), uses incorrect citation, and ignores all other symptoms/exposures listed in Gold (e.g., faintness, infectious symptoms, GI symptoms). It partially infers cardiac differential correctly but attributes it solely to chest pain ruling out angina/MI, while Gold groups it with faintness for cardiopulmonary. Significant factual errors including wrong quote/citation and incomplete coverage vs. Gold.",
+    "completeness": "Gold Answer key points: denied chest pain, faintness (cardiac); taste/smell loss, sore throat, runny nose, sick contacts, travel (infectious); nausea/vomiting, belly pain, diarrhea (GI); dry cough/no sputum; no prior episodes. Generated covers only chest pain (1/12+ points, <20%), misses all others and broader differentials (infectious, GI).",
+    "faithfulness": "Chest pain denial verifiable (D-7/P-7), but claims wrong patient response 'I don't, no' [P-34] (smoking denial, not chest pain), wrong context tie to P-1, and hallucinated standard procedure explanation not directly from transcript. Multiple unverifiable/hallucinated details (quote, citation).",
+    "relevance": "Directly addresses part of question by listing one denied symptom (chest pain) and linking to cardiac differential, but ignores exposures, other symptoms, and other differentials (infectious, GI), making it partially on-topic with narrow focus."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.0,
+  "summary": "The Generated Answer is factually inaccurate with hallucinations in citation/quote, extremely incomplete in covering denied symptoms/exposures and differentials, poorly grounded in transcript, but partially relevant to the question."
+}

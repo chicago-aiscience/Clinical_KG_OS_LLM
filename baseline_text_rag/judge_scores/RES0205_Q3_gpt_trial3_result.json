@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies COVID-19 as the investigated diagnosis and correctly states the test result was negative. The stated prompts (hospital employment and coworkers being alarmed by coughing) are consistent with the transcript content, though the answer omits other major prompts described in the Gold Answer (viral/flu-like symptoms, persistence of cough, PPE context, timing of the test). Speaker-label citations are also incorrect (it cites D-35, but the relevant statements are from P-34/P-35).",
+    "completeness": "Key points from the Gold Answer covered: (1) COVID-19 was investigated; (2) test result was negative; (3) patient works at a hospital; (4) social/occupational concern about coughing.\nKey points missed: (1) flu-like/viral symptom constellation (sore throat, runny nose, initial mucus) prompting suspicion; (2) persistent nature of cough as a concern; (3) PPE/being careful at work; (4) timing of test (~2 weeks ago at symptom onset); (5) patient stayed home awaiting symptom resolution before return to work.",
+    "faithfulness": "All substantive claims are supported by the transcript (hospital clerk; coworkers scared when she coughs; she had a COVID test and \"don't have it\"). However, the answer’s citations are inaccurate: it references D-35 for facts stated at P-34/P-35, and the coworker concern/negative test are in P-35. This lowers citation reliability but does not introduce major hallucinated content.",
+    "relevance": "The answer directly addresses what diagnosis was investigated, why it was investigated, and what testing showed, with no meaningful irrelevant content."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 2,
+    "faithfulness": 4,
+    "relevance": 5
+  },
+  "average_score": 3.75,
+  "summary": "Accurately identifies COVID-19 and the negative test result with partially correct supporting evidence, but misses several key prompts and contextual details emphasized in the Gold Answer and uses incorrect transcript citations."
+}

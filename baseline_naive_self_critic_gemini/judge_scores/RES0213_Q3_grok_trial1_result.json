@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Gold Answer diagnoses anxiety-related or stress-induced chest pain, supported by situational triggers, history, stress, symptoms, patient insight, and pertinent negatives ruling out cardiac/pulmonary issues. The Generated Answer incorrectly diagnoses Angina Pectoris (stress-induced or psychogenic), which contradicts the Gold by implying cardiac ischemia despite transcript evidence against it (e.g., non-exertional, resolves with distraction); some supporting points overlap but are misapplied to wrong diagnosis, constituting significant factual errors.",
+    "completeness": "Gold key points: 1) situational pattern (alone vs. distracted/social, [P-4,P-9,P-29]); 2) anxiety history ([P-21,P-22]); 3) thesis stress ([P-13,P-15,P-16]); 4) nervousness/fast breathing ([P-19]); 5) patient links to stress ([P-8]); 6) pertinent negatives (no fever/exertion/palps/asthma). Generated covers partial situational ([P-4]), anxiety history ([P-20,D-21]), stress ([P-15,P-8]), breathing ([P-19]), adds medication resistance ([P-6]); misses resolution with distraction, patient stress link explicitly, all pertinent negatives (covers ~50-60%).",
+    "faithfulness": "Most claims verifiable: solitary activities [P-4], breathing/nervousness [P-19], anxiety history [P-20,D-21], stress [P-15,P-8], meds [P-6]. However, Angina Pectoris diagnosis hallucinated (transcript has no ischemic features; patient fears heart but symptoms contradict); interprets as 'cardiac symptoms' despite evidence against; adds unverified 'clinical link' and medication implying non-musculoskeletal (plausible but not transcript-grounded); multiple distortions.",
+    "relevance": "Directly addresses question with diagnosis and bulleted clinical observations tied to reasoning; minor tangent in wrong diagnosis and added points like meds, but structure and focus match perfectly."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer is significantly incorrect in diagnosis and hallucinates cardiac pathology, partially covering Gold points but missing key supportive evidence and pertinent negatives."
+}

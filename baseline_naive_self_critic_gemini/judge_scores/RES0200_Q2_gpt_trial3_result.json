@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The generated answer correctly identifies the two inhalers (Ventolin and Spiriva) and the non-respiratory medication atorvastatin. However, it contains a major factual error by stating that the transcript does not provide a specific numerical frequency of Ventolin use; the patient explicitly reports using it \"almost like 10 times\" in the past week (P-12). It also fails to correctly identify the discontinued medication as a diuretic and does not state that it was stopped without the doctor’s approval (P-36), which is central to the question.",
+    "completeness": "Included: Ventolin, Spiriva, atorvastatin. Partially included: notes patient stopped “blood pressure medications” but does not specify it was a diuretic and does not include that it was discontinued without physician approval. Missing: the quantified Ventolin use (~10 times in past week) and the explicit self-discontinuation without approval.",
+    "faithfulness": "Several statements are not faithful to the transcript: it claims no numeric Ventolin frequency is provided despite P-12 giving ~10 uses in the past week. It references a \"knowledge graph\" not present in the transcript. It also cites P-33 as support for atorvastatin use, but P-33 only establishes high cholesterol (atorvastatin use is in P-38).",
+    "relevance": "The response stays focused on the patient’s medications, Ventolin use, and discontinued medication, which are directly relevant. However, it fails to answer two explicit parts of the question (Ventolin frequency and which medication was stopped without approval), reducing its effectiveness."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 3,
+    "relevance": 4
+  },
+  "average_score": 3.0,
+  "summary": "The answer is on-topic and captures some medications, but it misses key requested details and contains a major error about Ventolin usage frequency that is explicitly stated in the transcript."
+}

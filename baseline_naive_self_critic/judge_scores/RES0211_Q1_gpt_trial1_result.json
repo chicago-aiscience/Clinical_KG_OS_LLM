@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies several key reported symptoms (dry cough, scratchy throat, feeling generally unwell/crappy, headache). However, it contains major factual errors compared with the Gold Answer/transcript: it claims there are no explicit denials of sputum production, nausea/vomiting, joint pain, or rashes—when Jessica explicitly denies sputum/phlegm [P-5, P-6], nausea/vomiting [P-11], rashes/skin changes [P-10], and joint aches [P-13]. It also omits the clearly reported persistent feeling hot/possible fever [P-7, P-9] and incorrectly states/hedges that cough duration is “unspecified,” despite the stated 3–4 days [P-1, P-3].",
+    "completeness": "Reported symptoms covered: dry cough, scratchy throat, malaise/feeling crappy, headache (partial coverage). Missed reported symptoms from Gold Answer: feeling really hot day and night (feverishness), tiredness, and the clinician’s characterization as malaise. Denials covered: only a vague/unclear mention of ‘not hurting’ tied to joints, but it fails to list the explicit denials requested in the question. Missed denials: no sputum/phlegm, no rashes/skin changes, no nausea/vomiting, no diarrhea, no joint aches, and no shortness of breath related to allergies.",
+    "faithfulness": "Several statements are not grounded and directly contradict the transcript, especially the claim that there are no explicit denials of sputum production, nausea, joint pain, or rashes. These denials are explicitly present in the cited transcript lines. The answer also introduces an irrelevant framing (“knowledge graph provided”) not supported by the transcript.",
+    "relevance": "The response is aimed at listing reported symptoms and denied symptoms, which is what the question asks. However, it fails to provide the specific denied symptoms requested (and incorrectly says they are not present), reducing how well it addresses the question."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "Partially captures a few reported symptoms but misses most key positives/negatives and incorrectly claims several explicit denials are not in the transcript, leading to low correctness, completeness, and faithfulness."
+}

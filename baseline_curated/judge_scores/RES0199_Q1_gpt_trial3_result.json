@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The generated answer is partially accurate but contains significant factual errors/omissions relative to the Gold Answer and transcript. It correctly identifies a mostly dry cough [P-12] and correctly reports two vomiting episodes [P-32]. However, it incorrectly states that the transcript does not provide a diarrhea frequency; the patient clearly reports liquid stools “five or six times a day” [P-28]. It also fails to provide the headache severity rating (7/10) [P-8], instead substituting that the headache was “pretty persistent,” which is true [P-3] but does not answer the asked severity-rating element. These errors affect two of the four specifically requested characteristics (diarrhea frequency and headache severity).",
+    "completeness": "Key points required by the question/gold answer:\n- Reported respiratory symptom(s): cough ✅\n- Nature of cough (dry) ✅\n- GI symptoms: diarrhea, nausea, vomiting ✅\n- Diarrhea frequency (5–6x/day) ❌ (missed/incorrectly said not provided)\n- Vomiting episode count (2) ✅\n- Headache severity rating (7/10) ❌\nOverall, it captures the symptom categories and 2/4 requested specific characteristics, but misses or misstates the other 2/4.",
+    "faithfulness": "Most statements are grounded in the transcript (dry cough [P-12], vomiting twice [P-32], persistent headache [P-3]). However, the claim that no diarrhea frequency is given is contradicted by [P-28], making that portion unfaithful to the source. No clear fabricated symptoms are introduced, but the misreading counts as a notable faithfulness issue.",
+    "relevance": "The response stays focused on GI and respiratory symptoms and the requested characteristics (cough nature, diarrhea frequency, vomiting count, headache severity). It includes some non-requested phrasing (e.g., “really sick”), but does not substantially go off-topic. The main problem is missing/incorrect required details rather than irrelevance."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 3,
+    "relevance": 4
+  },
+  "average_score": 3.0,
+  "summary": "The answer is relevant and gets the cough type and vomiting count right, but it incorrectly claims diarrhea frequency is unspecified and omits the documented headache severity rating (7/10), reducing correctness and completeness."
+}

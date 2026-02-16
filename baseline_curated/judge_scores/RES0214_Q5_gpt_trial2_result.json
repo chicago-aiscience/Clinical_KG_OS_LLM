@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Core conclusion matches the Gold Answer: husband’s similar illness increases suspicion for COVID-19 and lack of flu shot keeps influenza on the differential, with COVID testing prioritized. However, the Generated Answer contains a notable factual/interpretive error by implying the patient was “likely spreading” illness to her husband, whereas the transcript indicates the husband became ill first (week-long symptoms vs patient’s 3 days). It also over-relies on “Knowledge Graph” statements not present in the source, though those do not directly contradict the Gold Answer’s main clinical point.",
+    "completeness": "Covers: (1) husband with similar symptoms and doctor prioritizing ruling out COVID-19; (2) lack of flu shot supporting influenza as a possibility; (3) ordering a COVID swab and advising isolation. Misses a key Gold Answer element: the limited outside contact/work-from-home/shared household context (and the hiking trip as the only notable exposure) that supports household transmission and frames the epidemiologic reasoning beyond just “sick contact.”",
+    "faithfulness": "Partially grounded with correct direct quotes/citations (P-19, D-53, D-54). But it introduces non-transcript elements (“Knowledge Graph” links; claims like ‘both COVID-19 and influenza cause fever and sore throat [KG]’), and includes an incorrect/unverifiable claim about transmission direction (patient spreading to husband). Overall, some content is plausible but not supported by the provided transcript.",
+    "relevance": "Stays focused on how epidemiologic factors shape the COVID vs influenza differential. The isolation/testing discussion is a minor tangent but still related to the differential workup and infectious risk."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 3,
+    "relevance": 5
+  },
+  "average_score": 3.5,
+  "summary": "The answer captures the main differential logic (household case raises COVID concern; no flu shot keeps influenza in play) but omits the limited-outside-contact context and includes some ungrounded/incorrect additions (notably the transmission direction and “Knowledge Graph” claims)."
+}

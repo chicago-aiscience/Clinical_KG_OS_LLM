@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The answer correctly identifies several reported symptoms: dry cough, scratchy throat, malaise/feeling crappy, headache, and feeling hot (subjective feverishness). It also correctly notes denial of shortness of breath (in context of allergies) and generally addresses lack of sputum, though it relies on a definition of “dry cough” rather than citing Jessica’s explicit denial of bringing anything up/phlegm. However, it contains a major factual error: it claims nausea, joint pain, and rashes were “not mentioned in the provided transcript segments,” when the transcript clearly includes direct questioning and explicit denials of nausea/vomiting, diarrhea, joint aches, and (effectively) rashes/skin changes. It also adds “congestion”/post-nasal drip as symptoms; while mentioned, these are discussed in the allergies context and she says she doesn’t really have allergies “right now,” so presenting them as part of the 3–4 day illness is at least misleading.",
+    "completeness": "Reported symptoms missing vs Gold: persistent feeling hot day and night with detail (night/day, minimal clothing), feeling ‘icky,’ tiredness, and the doctor’s characterization of malaise. Denied symptoms missing vs Gold: explicit denial of sputum/phlegm (with the actual transcript exchange), denial of rashes/skin changes, denial of nausea and vomiting, denial of diarrhea, and denial of joint aches. Only a subset (dry cough, scratchy throat, malaise, headache, feeling hot; denial of SOB; partial sputum) is covered—well under 80% of key points.",
+    "faithfulness": "Several statements are grounded in the transcript (dry cough, scratchy throat, headache, feeling hot, post-nasal drip/plugged up, denial of SOB). However, the response includes non-transcripted framing (“aligns with the Knowledge Graph definition of fever”) and, more importantly, asserts that nausea/joint pain/rashes were not mentioned—contradicting the transcript where these are explicitly asked and denied. This constitutes a significant unfaithful claim.",
+    "relevance": "The response stays focused on the asked task (symptoms over 3–4 days and explicit denials). Minor tangents include definitional/‘knowledge graph’ commentary, but overall it attempts to answer the question."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The answer is on-topic and captures some key symptoms, but it incorrectly claims several explicitly denied symptoms were not in the transcript and omits multiple major denials and reported symptoms from the gold answer."
+}

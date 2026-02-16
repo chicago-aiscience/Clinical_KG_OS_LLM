@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the overall symptom duration (1.5 weeks from P-2/P-6), episode duration (20 minutes from P-6), and partial quality (uncomfortable/odd from P-2, sharp/strong on deep breath though incorrectly cited to P-2 instead of P-3). Occurrence situations (studying/walking from P-4) are accurate. However, it introduces significant errors: resolution is misrepresented as not resolving without intervention (meds ineffective per P-6, but contradicts transcript/Gold where it resolves socially per P-9/P-29); falsely links pain to anxiety attacks (P-20 refers to palpitations, not pain); omits/misstates no worsening with exercise (P-10), at rest (D-11), no injury (P-5), first occurrence (P-17). These contradictions on key question elements (especially resolve) warrant score 2.",
+    "completeness": "Covered from Gold: overall ~1.5 weeks duration, quality as uncomfortable/odd/sharp-strong-deep-breath, episode duration ~20 min intermittent (partial via frequency), occurrence when studying/walking alone (partial, misses 'alone' emphasis). Missed: resolves/goes unnoticed when engaged socially/talking/hands-on (P-9/P-29), occurs at rest (D-11), not worse with exercise/walking same (P-10), no injury (P-5), first time (P-17). Covers ~40% of key points, score 2.",
+    "faithfulness": "Most claims grounded: durations/quality base in P-2/P-6 (sharp citation inaccurate to P-2); occurrence P-4; frequency D-18. However, resolution claim ('does not resolve without intervention') misinterprets P-6 (meds) ignoring P-9 self-resolution socially; anxiety-pain correlation hallucinated (P-20 is palpitations); 'not strictly exertion' interpretive ok but adds unverified. Multiple misinterpretations/hallucinations, score 2.",
+    "relevance": "Directly structures response around quality, duration of episodes, occurrence/resolution situations as per question; extras like frequency/meds/anxiety are minor tangents but overall focused, score 4."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer is partially accurate on quality and durations but has significant factual errors and hallucinations on resolution and adds irrelevant anxiety linkage, missing key situational details from the Gold Answer."
+}

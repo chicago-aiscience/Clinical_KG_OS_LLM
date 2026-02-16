@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the patient reported nasal congestion (“stuffy nose”) and rhinorrhea for ~1 week. However, it contains several key factual errors versus the Gold Answer/transcript: (1) It fails to state the nasal discharge was “mostly clear” (asked explicitly and answered in [P-5]). (2) It misstates symptom progression by implying the nose has “mostly run since the beginning,” whereas the patient said it was “pretty stuffy at first, but now it’s mostly running” ([P-3]). (3) Most importantly, it incorrectly claims the transcript does not contain explicit denials of sore throat/cough/SOB/fever/chills/loss of taste/smell—these are explicitly denied with “No” in [P-4], [P-7], and [P-16], and post-nasal drip/back-of-throat drainage is denied in [P-6].",
+    "completeness": "Key points from the Gold Answer that are missing or inadequately covered: (1) character of discharge as “mostly clear” ([P-5]) is omitted; (2) explicit denials of cough, sore throat, SOB, fever/chills, and loss of taste/smell are not listed (and are incorrectly stated as not explicitly denied); (3) denial of post-nasal drip/back-of-throat drainage is partially captured via [P-6] but not clearly labeled as denial of post-nasal drip. The answer includes the basic nasal symptoms but misses most of the required denied-symptom content and the discharge character.",
+    "faithfulness": "Most statements reference the transcript, but there are notable unfaithful interpretations: stating there are no explicit denials of key symptoms contradicts multiple clear “No” responses in the transcript. Also, the phrasing that rhinorrhea was “mostly” present since the beginning is not faithful to [P-3]. No major fabricated new symptoms are introduced, but the incorrect negative assertion about the transcript is significant.",
+    "relevance": "The response is generally targeted to nasal symptoms, discharge, and denied related symptoms, but it fails to actually provide the requested list of explicitly denied related symptoms and omits the discharge character, reducing how well it answers the question."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 3,
+    "relevance": 4
+  },
+  "average_score": 2.75,
+  "summary": "The answer is on-topic and captures congestion/rhinorrhea, but it omits the clear discharge and wrongly states that key related symptoms were not explicitly denied, making it incomplete and partially incorrect."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer details symptom progression (scratchy throat first [P-4], dry cough [P-1,P-4], subjective fever day/night [P-7,P-9], headache [P-1,P-2], malaise [P-14,D-15], fatigue [P-13]), 3-4 day timeline [P-1,P-3], non-productive cough [P-5,P-6], absences (GI [P-11,P-12], joints [P-13]), brother's cold [P-39], doctor summary [D-58], all supporting URI. Generated Answer correctly identifies core symptoms (dry cough [P-1], fever [P-7,D-58], scratchy throat [P-1], headache [P-1,D-58]) and absences (sputum, GI, joints), but introduces non-existent 'knowledge graph' as diagnostic basis (factual error, not in Gold or transcript), misattributes sputum question to D-58 (actual D-5/P-5-6), vaguely covers absences without citations, omits timeline/malaise/fatigue/exposure. Main point (symptoms support URI) correct, but discrepancies from fabrication and omissions.",
+    "completeness": "Gold key points: scratchy throat, dry cough, fever (detailed), headache, malaise, fatigue, timeline, non-productive cough, no GI/nausea/vomiting/diarrhea, no joint pain, brother's cold, doctor summary. Covered: scratchy throat, dry cough, fever, headache, non-productive cough (vaguely), no GI/joints (mentioned but not detailed). Missed: detailed fever description, malaise, fatigue, explicit timeline, brother's cold, precise absence citations, URI timeline plausibility. Covers ~60% of key points.",
+    "faithfulness": "Symptoms verifiable: dry cough [P-1,P-4], scratchy throat [P-1,P-4], headache [P-1,P-2], feverish hot [P-7,P-9,D-58]. But 'knowledge graph' entirely hallucinated (no such element in transcript). Sputum absence mis-cited to D-58 (summary, not question; actual [D-5,P-5,D-6,P-6]); 'plugged up [P-18]' is allergy-related, not current cough. GI/joints absences stated as 'likely asked' but explicitly denied [P-11-13], no citation. Doctor summary partial. Multiple unverifiable/hallucinated elements (graph, citation errors).",
+    "relevance": "Directly addresses how listed symptoms (dry cough, fever, scratchy throat, headache) and absences (sputum, GI, joints) support URI; structured explanation with transcript ties. Minor off-topic: fabricated knowledge graph section, vague differential ruling."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 3.0,
+  "summary": "Generated Answer captures core symptoms supporting URI but is undermined by hallucinated knowledge graph, citation errors, and incomplete coverage of Gold Answer details."
+}

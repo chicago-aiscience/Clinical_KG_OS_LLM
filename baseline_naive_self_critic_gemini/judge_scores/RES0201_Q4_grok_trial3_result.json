@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Generated Answer incorrectly states that the patient denied trouble breathing, which directly contradicts the transcript (e.g., [P-7], [P-8], [P-9], [P-10]) and Gold Answer's accurate listing of positive symptoms; it only partially covers loss of smell as a negative but misses the full list of denied symptoms from Gold (cough, runny nose, headaches, chest pain, fever, chills/night sweats); for differentials, it fabricates that negatives rule out COVID-19 and support mono recurrence, while Gold notes no explicit differentials and doctor still suspects COVID.",
+    "completeness": "Gold key points: denied cough [D-15/P-15], runny nose [D-16/P-16], headaches [D-17/P-17], chest pain [D-18/P-18], loss of smell [D-19/P-19], fever [D-23/P-23], chills/night sweats [D-24/P-24], prior breathing issues, sick contacts, travel; interpretations of screening purpose. Generated covers only loss of smell (~1/10 points), wrongly includes trouble breathing as denied, misses all others; <20% coverage.",
+    "faithfulness": "Claims 'patient did not report trouble breathing' is hallucinated (patient explicitly reports it multiple times); 'knowledge graph' not in transcript; mono as primary differential with recurrence not supported (patient had mono 'when younger' [P-5], not pursued); only loss of smell denial verifiable [P-19]; largely fabricated.",
+    "relevance": "Attempts to list screened symptoms and discuss COVID differentiation but includes incorrect symptoms (trouble breathing as negative) and off-topic fabrication (mono recurrence, knowledge graph), partially addressing the question."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 3
+  },
+  "average_score": 1.5,
+  "summary": "The Generated Answer is mostly incorrect, incomplete, and unfaithful to the transcript due to major factual errors like denying reported breathing difficulty and hallucinated differentials, despite partial relevance."
+}

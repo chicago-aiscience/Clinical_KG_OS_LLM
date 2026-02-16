@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly notes parts of the doctor’s recap in D-58: a 3–4 day dry cough, “a little bit of fever,” some headache, and that her brother was sick about two weeks prior. However, it incorrectly states that the doctor recapped a scratchy throat and post-nasal drip in D-58 (those symptoms were mentioned earlier by Jessica but are not included in the doctor’s end-of-visit summary). It also omits several recapped findings that are explicitly in D-58 (no sputum, no asthma, no meds besides Claritin, and essentially no other sick contacts) and misstates Jessica’s primary goal: Jessica’s stated goal is to know if she needs medicine (P-60), not merely the generic “next steps.” These are significant deviations from the Gold Answer.",
+    "completeness": "Covered: dry cough duration, fever, headache, brother sick ~2 weeks ago.\nMissed from Gold Answer: no sputum production/not bringing anything up; no other recent sick contacts aside from brother; no asthma; no medications aside from Claritin; the doctor’s explicit framing/check of the purpose (“next steps and where to go from here, correct?”) in context; Jessica’s primary goal of whether she needs medicine (P-60); Jessica’s additional desire to go home and lay down (P-61). Overall, the response captures only a minority of the key recap points and does not capture Jessica’s stated next-step goal accurately.",
+    "faithfulness": "Several statements are not faithful to what was said in the doctor’s summary: attributing “scratchy throat” and “post-nasal drip” to D-58 is unsupported, and the citations to D-58 for these items are inaccurate. While those symptoms appear earlier in the transcript, the question asks specifically what the doctor recapped at the end, and the answer blurs that distinction. The patient-goal section is also not faithful because it does not include Jessica’s explicit medicine-related goal (P-60).",
+    "relevance": "The answer stays generally on-topic (doctor’s recap and patient goal), but it partially answers the question incorrectly by substituting non-recap symptoms and by failing to state Jessica’s actual primary goal regarding next steps (whether she needs medicine)."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "Partially relevant but significantly incomplete and not faithful to the end-of-visit summary, with incorrect attribution of symptoms to D-58 and failure to capture Jessica’s stated goal of whether she needs medicine."
+}

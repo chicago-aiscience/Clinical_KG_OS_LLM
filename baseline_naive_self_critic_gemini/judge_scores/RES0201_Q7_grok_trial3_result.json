@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer outlines a precise timeline: sore throat on Day 1 (4 days ago, worsening, dysphagia for food), fatigue/muscle aches shortly after, reduced taste on Day 3 (constant, new, no smell loss), breathing difficulty on Day 4 (constant, worsening, new), failed treatments, overall progression. Generated Answer correctly notes sore throat onset 4 days ago and worsening [P-2, P-4, P-6], mentions dysphagia tied to sore throat [P-2], fatigue/muscle aches [P-25]. However, it misrepresents taste/smell: claims 'loss of smell (\"not smell\") but \"little bit\" of taste remaining' [P-19], inverting the transcript ('maybe taste a little bit but not smell' means reduced taste, intact smell). No timeline for fatigue (Gold: shortly after sore throat [P-26]), taste (Gold: 2 days ago [P-20]), and completely omits breathing difficulty (major symptom, Day 4 [P-8-P-11], worsening [P-9]). Presents dysphagia as separate 'development' rather than part of sore throat progression. Significant errors in timeline, omissions, and misrepresentations contradict Gold.",
+    "completeness": "Gold key points: (1) Sore throat Day 1, worsens over 4 days, dysphagia food/not fluids; (2) Fatigue/muscle aches shortly after Day 1; (3) Reduced taste Day 3, constant/new, no smell loss; (4) Breathing Day 4 (yesterday), constant/worsening/new; (5) Failed treatments; (6) Progressive accumulation. Generated covers: sore throat onset/worsening/treatment failure (~100% for this); dysphagia (partial); fatigue/muscle aches (mentioned, no timing); taste/smell (partial but inaccurate). Misses: fatigue timing, taste timing/severity/details/correctness, entire breathing symptom/timing/severity, overall progression narrative. Covers ~30-40% of key points (strong on sore throat, weak/absent on others).",
+    "faithfulness": "Claims grounded: sore throat 4 days [P-2], very sore/worsening [P-2,P-4], treatment fail [P-6], dysphagia [P-2], fatigue/aches [P-25,P-26], taste mention [P-19,P-20,P-21]. Citations accurate where used. Unverifiable/hallucinated: 'loss of smell' misquotes [P-19] (patient denies smell loss); dysphagia as distinct 'development/change occurring during current encounter' (no support, tied to sore throat [P-2]); 'concurrent symptoms' ignores timelines [P-8,20,26]; complete omission of breathing [P-7-P-11] (prominent, verifiable). Multiple distortions/omissions indicate poor grounding.",
+    "relevance": "Question seeks chronological order of symptom onset starting from sore throat, changes in severity over time. Generated structures around sore throat onset/evolution, adds dysphagia progression, lists 'concurrent' symptoms – attempts chronology but flattens to '4 days' then vague 'current'/concurrent, omits key late symptom (breathing). No irrelevant content, directly symptom-focused, minor issues from incompleteness/inaccuracy."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer partially captures sore throat progression but significantly errs by omitting breathing difficulty, misrepresenting taste/smell, and lacking full chronology/severity details compared to Gold."
+}

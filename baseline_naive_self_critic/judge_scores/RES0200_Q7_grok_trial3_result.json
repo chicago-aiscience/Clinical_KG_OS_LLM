@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer specifies chronic cough for about 10 years [P-3], but Generated Answer claims exact start 'not specified' citing only [P-1], which is a significant factual error. Gold notes COPD diagnosis clarified to ~5 years ago [P-2], but Generated sticks to initial 'couple years ago' [P-1] without the correction, another key discrepancy. Worsening cough, sputum change over last week [P-1, P-5, P-6], and acute SOB in last few days [P-1, P-8] match, but overall timeline inaccuracies contradict Gold's precise tracing.",
+    "completeness": "Covered: worsening cough last week, sputum change past week, acute SOB last few days (matching Gold's acute phases). Missed: chronic cough ~10 years [P-3], COPD diagnosis ~5 years with clarification [P-2], intermittent baseline SOB [P-8], chills last couple days [P-29]. Covers ~50-70% of Gold's key timeline points.",
+    "faithfulness": "Claims grounded where cited: chronic cough in [P-1], COPD [P-1], worsening [P-1], sputum [P-6], SOB [P-8] all verifiable. However, 'exact start date not specified' for cough is false as [P-3] states 'probably for the last 10 years'; COPD ignores clarifying [P-2]. No outright fabrications but omissions and incorrect assertion of absence make it partially ungrounded.",
+    "relevance": "Generated Answer uses bullet points directly mirroring the question's timeline elements (chronic cough, COPD diagnosis, worsening cough/sputum, acute SOB), with no off-topic content—perfectly focused."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 3,
+    "relevance": 5
+  },
+  "average_score": 3.25,
+  "summary": "The Generated Answer captures the acute recent changes accurately but significantly underperforms on chronic timeline details by missing key transcript clarifications, leading to factual inaccuracies and incompleteness."
+}

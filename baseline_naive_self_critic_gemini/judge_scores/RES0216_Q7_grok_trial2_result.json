@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer states symptoms began 3 days ago on a walk with dog [P-4], no specific trigger [P-3], staying the same/steady [P-2,P-3], always there but worse with walking dog, chair, big breath [P-9,P-10], noticeable on inspiration [P-1,P-5], reduced from 2 walks/day to 1 [P-22]. Generated correctly notes 3-day onset, constant baseline esp on inhale, exacerbators (walking dog, chair, deep breath), but has significant errors: calls it 'intermittent' (contradicts 'always there'), implies first noticed on walk but not explicit [P-4], wrongly states maintains normal walking routine (contradicts reduction to 1 walk [P-22]), misattributes P-1 quote to doctor, adds non-existent KG reference; core facts mostly match but contradictions on progression nuance and impact justify 2.",
+    "completeness": "Gold key points: 3-day onset [P-1], first on dog walk [P-4], no trigger [P-3], staying same [P-2,P-3], baseline always there worse on walk/chair/breath [P-9,P-10], inspiration [P-1,P-5], reduced walks 2->1 [P-22], no work miss [P-21,P-22], noticeably limiting [P-22,P-23]. Generated covers: onset, constant esp inhale, worse on walk/chair/breath (~60%), misses explicit first on walk/no trigger/exact 'staying same'/work detail, wrongly covers impact as 'maintains routine' instead of reduction; ~50-79% coverage, score 3.",
+    "faithfulness": "Claims like onset [P-1], constant [P-9], exacerbators [P-9,D-10], inspiration [P-1] verifiable; but 'intermittent' twists 'always there but worse', misattributes P-1 to doctor, fabricates 'Knowledge graph data [KG]' (no KG in transcript), distorts impact from reduced walks [P-22] to 'maintains normal routine' using partial P-1 quote; multiple hallucinations/twists, score 2.",
+    "relevance": "Directly structures response around onset/development, progression, exacerbators, impact on routine, matching question elements; minor off-topic KG mention but mostly focused, score 4."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer is mostly structured correctly and relevant but contains significant factual errors on symptom progression and impact on walking routine, hallucinations like KG reference, reducing overall quality."
+}

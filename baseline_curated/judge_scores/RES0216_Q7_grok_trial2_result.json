@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer states symptoms began 3 days ago, first noticed on dog walk, no specific trigger, staying the same/steady, baseline always there but exacerbated by walking, rising from chair, deep breaths, noticeable on inspiration, reduced walks from 2/day to 1/day, no work missed, noticeably limiting. Generated correctly notes 3-day onset, tightness on inspiration/not pain, first noticed on walk (partial, mentions dog walk daily but not explicitly first time), worse on walking. Errors: Claims 'evolved into a significant respiratory issue' contradicting steady/same; adds breathlessness/hoarseness/phlegm as 'evolution' not supported as progression; misattributes doctor's puffer suggestion as trigger identification. Significant contradictions on progression.",
+    "completeness": "Key Gold points: 1. 3 days onset (covered); 2. First on dog walk (partial); 3. No trigger/just came on (missed); 4. Staying same/steady (missed entirely); 5. Baseline always, worse walk/chair/deep breath (partial: walk only); 6. On inspiration (covered); 7. Walks couple to one/day (missed, says challenging only); 8. No work miss (missed); 9. Noticeably limiting (partial). Covers ~30-40% of keys, misses progression status, full exacerbators, quantified walk impact.",
+    "faithfulness": "Verifiable: 3 days [P-1], description [P-1,P-5], walk trigger [P-1,P-4,P-9], asthma different [P-16], breathlessness [P-7], hoarse/phlegm [P-11]. Unverifiable/hallucinated: 'evolved into significant respiratory issue' (contradicts [P-2,P-3]); portrays [D-35] as identifying trigger (doctor hypothesizes asthma, suggests trial); frames hoarse/phlegm as evolution over days (static report). Multiple interpretive hallucinations.",
+    "relevance": "Directly addresses onset, trigger, exacerbators (partial), impact on walks; minor tangents on asthma history/description/associated symptoms but stays focused on chest tightness development/evolution/routine impact per question."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer partially covers onset and triggers but fabricates progression as evolving/worsening against transcript evidence of stability, misses key exacerbators and quantified functional impact, resulting in low factual alignment and completeness."
+}

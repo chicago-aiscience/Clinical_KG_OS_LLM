@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the core respiratory symptoms (increased cough frequency, increased green-yellow sputum, hemoptysis, dyspnea) from [P-1], matching the Gold Answer. It accurately notes the cough as most bothersome with citations to [P-1] and [P-12]. However, it omits reduced exercise tolerance [P-4] included in Gold as part of respiratory symptoms. For systemic symptoms, it only mentions sinus pressure [P-12] and incorrectly states the patient 'did not report' fever (reported in [P-9-11] as feeling 'really hot') or headache ([P-14]), which Gold includes. The citation for most bothersome partly references [P-1] inaccurately, as the explicit statement is in [P-12]. Some factual errors and omissions, but main points correct. Score: 3",
+    "completeness": "Gold key points: Respiratory - increased cough [P-1], sputum 'green yellowy' [P-1], hemoptysis [P-1], worsened dyspnea [P-1], reduced exercise tolerance [P-4]; Systemic - possible fever [P-9-11], sinus pressure [P-12], mild headache [P-14]; Most bothersome - cough [P-12]; pertinent negatives. Generated covers 4/5 respiratory (misses exercise tolerance), 1/3 systemic (misses fever, headache), most bothersome (yes), no negatives. Covers ~60% of key points. Score: 3",
+    "faithfulness": "All listed respiratory symptoms and sinus pressure verifiable in transcript with accurate citations. Cough as bothersome verifiable in [P-12] (and mentioned in [P-1]). The claim of no fever/headache 'during this specific description... in [P-1]' is technically true for [P-1] but ignores later reports, making it misleading but not hallucinated. No fabricated facts, mostly grounded. Score: 4",
+    "relevance": "The answer directly structures response around respiratory symptoms, systemic symptoms, and most bothersome symptom, precisely matching the question with no off-topic content. Score: 5"
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 4,
+    "relevance": 5
+  },
+  "average_score": 3.75,
+  "summary": "The Generated Answer is mostly accurate and relevant but incomplete in covering all respiratory functional impacts and systemic symptoms from the Gold Answer, with minor interpretive errors on symptom reporting."
+}

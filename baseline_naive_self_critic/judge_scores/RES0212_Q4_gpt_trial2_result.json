@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Gold Answer identifies specific denied constitutional symptoms (night sweats, weight loss/loose clothes, hemoptysis) and denied exposure risks (sick contacts, roommate illness, travel, IV drug use/other drugs), and links these to ruling out TB and other serious infections. The Generated Answer instead focuses on fatigue, sleep disturbance, and cough-related chest discomfort—none of which are the key *denied* screening symptoms asked in the question (and fatigue/sleep disturbance were not denied). It also incorrectly claims the transcript is “vague” about the denied symptoms, despite clear transcript content. It introduces incorrect/unsupported clinical assertions (e.g., labeling this as chronic bronchitis; linking cat exposure to TB; “feline/zoonotic tuberculosis” as a major concern here). Overall it contradicts/misses the core facts in the Gold Answer.",
+    "completeness": "Key Gold Answer points missed: (1) denial of night sweats, (2) denial of unexplained weight loss/loose-fitting clothes, (3) denial of hemoptysis, (4) denial of sick contacts (class/recent/roommate), (5) denial of recent travel/out of country/exotic locales, (6) denial of cocaine/heroin and IV drug use, (7) denial of stiff neck, nausea/vomiting, and body pain, (8) rationale: these screen to exclude TB and other chronic/endemic infections and reduce concern for malignancy/serious disease. Generated Answer covers essentially none of these, and adds non-key items (fatigue/sleep disturbance/cat allergy).",
+    "faithfulness": "Multiple statements are not supported by the transcript: references to a “knowledge graph,” calling the condition “chronic bronchitis,” asserting constitutional symptoms include fatigue and sleep disturbance as part of the screening denials, and especially the claim that cat exposure suggests “Feline/Zoonotic Tuberculosis.” The transcript’s explicit denials (night sweats, weight loss, hemoptysis, travel, sick contacts, IV drug use) are omitted or mischaracterized as vague. This represents substantial hallucination/lack of grounding.",
+    "relevance": "The question asks for (a) specific constitutional symptoms/exposure risks the doctor screened for that were denied, and (b) what serious conditions those questions help exclude (e.g., TB/chronic infections). The Generated Answer only partially engages with TB and does not list the correct screened/denied items; it focuses on symptoms the patient reported and on an irrelevant cat-allergy point. Thus it is only weakly aligned with the question."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 2
+  },
+  "average_score": 1.25,
+  "summary": "The Generated Answer omits nearly all transcript-supported screened-and-denied constitutional/exposure items, introduces several unsupported claims, and therefore is largely incorrect and incomplete with poor grounding."
+}

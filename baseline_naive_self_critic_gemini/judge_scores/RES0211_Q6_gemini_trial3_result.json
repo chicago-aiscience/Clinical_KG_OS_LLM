@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The generated answer fails to accurately identify the specific clinical findings recapped by the doctor in D-58, instead listing general symptoms from the entire transcript (e.g., post-nasal drip, malaise, birth control). Most critically, it incorrectly identifies Jessica's primary goal as seeking medical attention from her family doctor based on P-22, whereas the gold answer and transcript clearly state her goal is determining next steps and knowing if she needs medicine (P-60).",
+    "completeness": "The answer misses several key points from the doctor's recap, including the absence of sputum, the absence of asthma, and the specific detail about her brother's cold. It also completely misses Jessica's identified goal regarding medication and her desire to go home and rest.",
+    "faithfulness": "The generated answer hallucinates the patient's 'primary goal' by misinterpreting a mention of a family doctor in P-22 as the purpose of the current visit. While the symptoms listed exist in the transcript, they are not faithful to the specific 'recap' section requested.",
+    "relevance": "The answer does not follow the prompt's instruction to focus on the doctor's summary at the end of the visit. Instead, it provides a general extraction of clinical data from the whole conversation, leading to irrelevant inclusions and omissions of the specific recapped points requested by the question (D-58/P-60)."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 2
+  },
+  "average_score": 2.0,
+  "summary": "The generated answer ignores the specific constraints of the prompt regarding the end-of-visit summary and hallucinates the patient's primary goal."
+}

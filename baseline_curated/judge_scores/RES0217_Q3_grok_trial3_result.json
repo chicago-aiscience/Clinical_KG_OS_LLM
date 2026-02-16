@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer specifies four key factors: exposure history (hiking Fri/gardening Sat, uncertain timing [P-1]), tick attachment >72 hours [D-6], geographic risk (Strathroy creek [P-12], Lyme map shows concerning [D-13]), prior history (10y ago tick bite with bullseye rash treated w/ abx [P-3]). Generated covers exposure, duration, prior accurately. However, for geographic risk, it incorrectly attributes to deer tick vector identification [D-5] rather than location-specific assessment/map [D-13]; misses patient belief all ticks carriers [P-5], lab ID [D-6/D-18]. Some factual errors/misrepresentation on geo but core facts on other points correct.",
+    "completeness": "Key points from Gold: exposure history (hiking/gardening/uncertain [P-1]) - covered; duration (>72h [D-6]) - covered; geo risk (Strathroy/map concerning [P-12/D-13]) - missed; prior history (bullseye/abx [P-3]) - covered; additional (not deer-like [P-5], no rash [P-6], all ticks carriers [P-5], lab [D-6]) - partially (no rash/mismatch yes, others no). Covers ~75% of key points (3/4 main factors).",
+    "faithfulness": "All claims grounded in transcript with accurate citations: duration [D-6], exposure [P-1], prior [P-3], deer tick vector/mismatch [D-5/P-5 implied]. No hallucinations; interpretive framing of 'geographic risk' via species vector is plausible from context but stretched. Fully verifiable.",
+    "relevance": "Directly addresses question by listing the exact combination of four factors (exposure, duration, prior history, geographic risk) as bullet points, notes despite no rash/tick mismatch, perfectly focused on doctor's recommendation rationale."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 5,
+    "relevance": 5
+  },
+  "average_score": 4.0,
+  "summary": "The Generated Answer is mostly correct and relevant, faithfully grounded in the transcript, but incomplete due to omitting the specific geographic risk assessment via location and map while misattributing it to tick species knowledge."
+}

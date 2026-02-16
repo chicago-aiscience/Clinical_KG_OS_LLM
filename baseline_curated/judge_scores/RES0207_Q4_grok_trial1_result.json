@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies that chest pain was screened for and denied (from [D-7, P-7]), and links it to cardiac differentials, which aligns partially with the Gold Answer's mention of chest pain for cardiac causes. However, it has significant factual errors: incorrect citation of [P-34] (smoking denial) and misquotes the patient's response as 'I don't, no' which is not from the chest pain question (P-7 is simply 'No'). It ignores all other symptoms and only partially matches Gold's cardiac inference, leading to contradictions in completeness and evidence.",
+    "completeness": "Gold Answer key points: denied chest pain, feeling faint (cardiac); loss of taste/smell, sore throat, runny nose, sick contacts, travel (infectious); nausea/vomiting, belly pain, diarrhea (GI); dry cough/no sputum; no prior episodes. Generated covers only chest pain (one point) and cardiac inference, missing 90+% of points including all infectious, GI, exposures, and other cardiac symptoms. Covers <20%.",
+    "faithfulness": "Chest pain denial is verifiable in [D-7, P-7], shortness of breath from [P-1] is accurate, and cardiac rule-out is plausible interpretation. However, hallucinates wrong quote ('I don't, no') and citation [P-34] which is unrelated (smoking). Other claims like standard procedure for cardiac are not directly in transcript but plausible; overall multiple inaccuracies in grounding.",
+    "relevance": "Directly addresses part of the question by listing one denied symptom (chest pain) and linking to cardiac differential, with no off-topic content, but narrowly focused on only one aspect instead of the full scope of symptoms/exposures and multiple differentials."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.25,
+  "summary": "The Generated Answer is factually partially accurate on one symptom but marred by citation errors, extremely incomplete in covering denied symptoms and differentials, poorly grounded due to hallucinated evidence, yet remains relevant to the question."
+}

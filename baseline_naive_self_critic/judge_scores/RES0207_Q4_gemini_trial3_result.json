@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer fails to address the 'denied' symptoms and exposures requested in the prompt. It focuses on the symptoms the patient affirmed (shortness of breath and cough) and a volunteered medical history (seizure), whereas the question explicitly asks for symptoms the doctor screened for that the patient denied (negative findings). It identifies cardiac and infectious differentials but misses the gastrointestinal category entirely.",
+    "completeness": "The answer is highly incomplete. It misses all the specific negative findings mentioned in the Gold Answer: chest pain, faintness, loss of taste/smell, sore throat, runny nose, contact with sick individuals, travel, nausea, vomiting, belly pain, diarrhea, and sputum production. It also misses the context of how these negatives rule out specific differential categories.",
+    "faithfulness": "The Generated Answer is faithful to the transcript in that the doctor did ask about SOB and cough, and the patient did discuss a seizure. However, it mischaracterizes the 'denial' of the relationship between the seizure and symptoms as the primary screened denial, which is not what the clinical question was targeting.",
+    "relevance": "The response is largely irrelevant to the specific prompt. The prompt asks for symptoms and exposures that were denied; the response provides symptoms that were confirmed. It fails to provide the list of negatives that would allow a clinician to narrow a differential diagnosis."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 1,
+    "faithfulness": 4,
+    "relevance": 2
+  },
+  "average_score": 2.25,
+  "summary": "The Generated Answer fundamentally misunderstood the prompt, listing symptoms the patient affirmed rather than those the patient denied, thereby failing to capture the diagnostic reasoning requested."
+}

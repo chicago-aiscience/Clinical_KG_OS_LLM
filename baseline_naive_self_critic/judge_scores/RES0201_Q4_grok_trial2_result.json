@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly identifies only loss of smell and current smoking as denied findings, while the Gold Answer lists multiple specific symptoms denied (cough, runny nose, headaches, chest pain, loss of smell, fever, chills/night sweats) plus other negatives (prior breathing issues, sick contacts, travel). Loss of smell is partially accurate but overstated as a key distinguisher; smoking is not a 'symptom' screened like the others but social history. The differential interpretations (e.g., distinguishing COVID via anosmia denial, COPD exacerbation via smoking denial) contradict the Gold's note of no explicit differentials in transcript and introduce ungrounded claims, representing significant factual errors.",
+    "completeness": "Gold key points: denied symptoms (cough [D-15/P-15], runny nose [D-16/P-16], headaches [D-17/P-17], chest pain [D-18/P-18], loss of smell [D-19/P-19], fever [D-23/P-23], chills/night sweats [D-24/P-24]); other negatives (prior breathing [D-11/P-11], contacts [D-12/P-12], travel [D-13/P-13]); no explicit differentials, only COVID suspicion [D-43]; explanations (narrow URI, chest pain re dyspnea, fever/chills not ruling out COVID, mono history). Generated covers only loss of smell (~1 key point) and adds smoking (not a Gold key point), missing 90+% of content. Covers <20%.",
+    "faithfulness": "Transcript verifies doctor screening cough (P-15 no), runny nose (P-16 no), headaches (P-17 no), chest pain (P-18 no), smell/taste (P-19 taste maybe/not smell), fever (P-23 no), chills (P-24 no)—none mentioned in Generated except smell. Smoking quit confirmed [P-34], but not framed as symptom denial. Generated hallucinates: screening focus on COVID symptoms/social history; differentials like COVID pattern vs cold/flu/COPD exac not in transcript (doctor only notes COVID-like symptoms [D-43], no exclusions discussed). Multiple ungrounded claims.",
+    "relevance": "Generated attempts to list denied findings and explain distinctions from COVID (vs cold/flu/COPD), directly addressing the question structure, but focuses on minor/irrelevant items (smell/smoking) instead of main screened symptoms, with off-topic COVID screening framing; partially relevant with some misalignment."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.0,
+  "summary": "The Generated Answer is significantly incomplete and factually inaccurate, missing most denied symptoms from the Gold Answer and hallucinating differential diagnoses not grounded in the transcript."
+}

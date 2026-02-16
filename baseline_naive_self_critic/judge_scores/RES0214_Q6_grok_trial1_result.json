@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer identifies COVID swab, self-isolation for patient and husband, physical exam as next step [D-52], and consulting the supervising doctor before returning [D-55]. Generated Answer correctly identifies the COVID swab [D-53] and self-isolation for patient and husband [D-53, D-54]. However, it inaccurately presents the swab as the 'immediate next step' (contradicting [D-52]'s physical exam), omits the physical exam and consult entirely, introduces 'social distancing' as separate from isolation (minor rephrasing of [D-54]), and states 'ruling out influenza' as a subsequent step (plausible from [D-54] but not explicitly planned in Gold or transcript as a discrete action). Some factual errors in next steps, but core test and isolation correct.",
+    "completeness": "Gold key points: 1) COVID swab (covered), 2) self-isolation patient+husband (covered), 3) physical exam next (missed), 4) consult supervising doctor/return (missed), 5) patient agreement (missed, minor). Generated covers swab and isolation (~50% of major points), misses two key next steps, partially covers precautions with extra phrasing. Covers 50-79% of key points.",
+    "faithfulness": "All citations accurate ([D-53, D-54]). Claims like COVID swab, self-isolate patient+husband directly verifiable. 'Keep to herself' [D-54] supports precautions. Swab as 'immediate next step' not verifiable (transcript prioritizes physical exam [D-52]). 'Ruling out influenza after COVID' plausible from [D-54] context but not explicit plan. No major hallucinations, minor interpretive stretches.",
+    "relevance": "Generated Answer directly structures response around question elements (test ordered, precautionary measures for patient+husband, next steps), uses bold headings matching query, no off-topic content, fully focused."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 4,
+    "relevance": 5
+  },
+  "average_score": 3.75,
+  "summary": "The Generated Answer is mostly correct and relevant on the test and isolation but incomplete and partially inaccurate by omitting the physical exam and physician consult as next steps while overstating the swab and flu workup."
+}

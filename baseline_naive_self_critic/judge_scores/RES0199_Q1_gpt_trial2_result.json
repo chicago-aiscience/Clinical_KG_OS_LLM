@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The answer correctly identifies the cough as mostly dry. However, it contains major factual errors by stating key requested characteristics are “not specified” when they are clearly stated in the transcript: diarrhea frequency is “five or six times a day” [P-28], vomiting occurred “two times” [P-32], and headache severity is rated “7” out of 10 [P-8]. These are central to the question, so overall factual accuracy is low.",
+    "completeness": "Gold Answer key points include: dry cough with no sputum/blood and stable severity; diarrhea liquid stools 5–6/day and no blood; nausea today; vomiting yesterday with 2 episodes, food contents, no blood; headache persistent, bilateral forehead/top of head, 7/10, no neck radiation/stiffness, unusual for patient; plus pertinent negatives and additional symptoms (fatigue, loss of smell). Generated Answer includes only: presence of GI symptoms broadly, dry cough, persistent headache/relief with Tylenol. It omits most specific characteristics and nearly all pertinent negatives and additional symptoms. Coverage is well under 50% of key points.",
+    "faithfulness": "Most statements are drawn from the transcript, but the repeated claims that the transcript does not specify diarrhea frequency, vomiting count, and headache numerical severity are directly contradicted by the transcript ([P-28], [P-32], [P-8]). This represents multiple ungrounded/incorrect assertions about what is or is not present in the source.",
+    "relevance": "The response stays focused on the asked symptom domains (GI and respiratory) and attempts to address cough nature, diarrhea frequency, vomiting episodes, and headache severity. There is minimal tangential content, though it misclassifies headache under ‘respiratory’ and fails to provide the requested details."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The answer is on-topic but misses and incorrectly denies several explicitly stated key details (diarrhea frequency, vomiting count, and headache severity), resulting in low correctness, completeness, and faithfulness."
+}

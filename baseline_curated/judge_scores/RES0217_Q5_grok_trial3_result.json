@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer accurately describes the attachment duration reasoning, matching the Gold Answer's coverage of Friday hiking, Saturday gardening [P-1], uncertainty in attachment time, discovery 'earlier today' [D-1], doctor's confirmation of time since last outdoors [D-2], and estimation of >72 hours leading to prophylactic antibiotics [D-6]. However, it incorrectly claims the Strathroy Lyme disease map detail 'is **not present**' in the transcript, directly contradicting the Gold Answer and transcript [D-13], where the doctor explicitly references the Ontario Lyme map and states 'Strathroy is close enough to be considered a little bit of a concerning point' to justify antibiotics. It also misattributes justification to prior rash [P-3] instead of location. This introduces significant contradictions on the second half of the question.",
+    "completeness": "Covers all key points on attachment duration (hiking/gardening activities [P-1], doctor's >72-hour calculation [D-6], link to prophylactic treatment). Misses entirely the geographic risk points: Strathroy location [P-12], doctor's map reference and assessment as 'concerning' [D-13], and how it contributes to antibiotic decision. Covers ~50% of Gold Answer key points.",
+    "faithfulness": "Duration claims fully verifiable [P-1, D-2, D-6]. Geographic claims hallucinate absence of map/Strathroy detail despite clear presence in [D-13]; falsely attributes reliance to prior rash [P-3, D-6] which is not the doctor's stated justification for this incident's prophylaxis. Multiple ungrounded assertions about transcript content.",
+    "relevance": "Directly addresses both parts of the question: explains duration contribution from activities and doctor's reasoning; responds to map usage by denying its presence and offering alternative justification. No off-topic content, remains focused on question elements despite errors."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer is strong on tick attachment duration but factually incorrect and hallucinatory in denying the transcript's explicit mention of Strathroy's position on the Lyme map as justification for prophylaxis."
+}

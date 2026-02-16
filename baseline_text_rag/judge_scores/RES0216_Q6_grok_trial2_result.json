@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer states that the doctor suspects chest tightness is likely asthma recurring (top of the differential) and considers cardiac ischemia less likely, which exactly matches the Gold Answer's description of the assessment from D-35 (asthma top) and D-36 (cardiac lower due to no pain/SOB with exercise). No factual errors, discrepancies, or contradictions with the Gold Answer.",
+    "completeness": "Key points from Gold Answer: 1) Overall assessment (asthma recurring top of differential, pending exam/findings) - partially covered (asthma top yes, cardiac lower yes, but pending exam omitted); 2) Physical exam components (quick physical exam, listen to lungs, further investigations if needed) - completely missed; 3) First-step treatment (obtain and trial rescue puffers on walks) - completely missed; 4) Contingency (if no improvement, reassess other directions/investigations); 5) Stepwise approach and consult with supervising doc - completely missed. Covers approximately 20-25% of key points (only partial assessment).",
+    "faithfulness": "All claims are directly grounded and verifiable in the transcript: 'asthma recurring (top of the differential)' from [D-35]; 'considers cardiac ischemia less likely' from [D-36] (no pain, not out of breath with exercise, lower on differential). No hallucinations, fabrications, or unverifiable details; fully faithful to transcript.",
+    "relevance": "The Generated Answer is perfectly structured to directly address the clinical question, beginning with 'the doctor's assessment and proposed plan' using bolded '**Assessment:**' and citing transcript, with no irrelevant, off-topic, or tangential content."
+  },
+  "scores": {
+    "correctness": 5,
+    "completeness": 2,
+    "faithfulness": 5,
+    "relevance": 5
+  },
+  "average_score": 4.25,
+  "summary": "The Generated Answer is factually correct, faithful, and highly relevant in identifying the assessment but is severely incomplete due to truncation, omitting all details on the physical exam, treatment intervention, and contingency plan."
+}

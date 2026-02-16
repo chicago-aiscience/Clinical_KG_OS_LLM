@@ -1,0 +1,181 @@
+{
+  "nodes": [
+    {
+      "id": "N_001",
+      "text": "sore throat",
+      "type": "SYMPTOM",
+      "evidence": "P-2",
+      "turn_id": "P-2"
+    },
+    {
+      "id": "N_002",
+      "text": "difficulty swallowing food",
+      "type": "SYMPTOM",
+      "evidence": "P-2",
+      "turn_id": "P-2"
+    },
+    {
+      "id": "N_003",
+      "text": "mono",
+      "type": "MEDICAL_HISTORY",
+      "evidence": "P-5",
+      "turn_id": "P-5"
+    },
+    {
+      "id": "N_004",
+      "text": "difficulty breathing",
+      "type": "SYMPTOM",
+      "evidence": "P-7",
+      "turn_id": "P-7"
+    },
+    {
+      "id": "N_005",
+      "text": "loss of taste",
+      "type": "SYMPTOM",
+      "evidence": "P-19",
+      "turn_id": "P-19"
+    },
+    {
+      "id": "N_006",
+      "text": "muscle ache",
+      "type": "SYMPTOM",
+      "evidence": "P-25",
+      "turn_id": "P-25"
+    },
+    {
+      "id": "N_007",
+      "text": "COPD",
+      "type": "MEDICAL_HISTORY",
+      "evidence": "P-27",
+      "turn_id": "P-27"
+    },
+    {
+      "id": "N_008",
+      "text": "long acting beta agonist",
+      "type": "MEDICATION",
+      "evidence": "P-28",
+      "turn_id": "P-28"
+    },
+    {
+      "id": "N_009",
+      "text": "covid 19",
+      "type": "DIAGNOSIS",
+      "evidence": "D-43",
+      "turn_id": "D-43"
+    },
+    {
+      "id": "N_010",
+      "text": "covid swab",
+      "type": "TEST",
+      "evidence": "D-43",
+      "turn_id": "D-43"
+    },
+    {
+      "id": "N_011",
+      "text": "chest xray",
+      "type": "TEST",
+      "evidence": "D-43",
+      "turn_id": "D-43"
+    },
+    {
+      "id": "N_012",
+      "text": "gargling with salt water",
+      "type": "TREATMENT",
+      "evidence": "P-6",
+      "turn_id": "P-6"
+    },
+    {
+      "id": "N_013",
+      "text": "painkillers",
+      "type": "MEDICATION",
+      "evidence": "P-6",
+      "turn_id": "P-6"
+    }
+  ],
+  "edges": [
+    {
+      "source_id": "N_001",
+      "target_id": "N_003",
+      "type": "ASSOCIATED_WITH",
+      "evidence": "P-5",
+      "turn_id": "P-5"
+    },
+    {
+      "source_id": "N_007",
+      "target_id": "N_008",
+      "type": "TREATS",
+      "evidence": "P-28",
+      "turn_id": "P-28"
+    },
+    {
+      "source_id": "N_001",
+      "target_id": "N_009",
+      "type": "POSSIBLE_DIAGNOSIS",
+      "evidence": "D-43",
+      "turn_id": "D-43"
+    },
+    {
+      "source_id": "N_002",
+      "target_id": "N_009",
+      "type": "POSSIBLE_DIAGNOSIS",
+      "evidence": "D-43",
+      "turn_id": "D-43"
+    },
+    {
+      "source_id": "N_004",
+      "target_id": "N_009",
+      "type": "POSSIBLE_DIAGNOSIS",
+      "evidence": "D-43",
+      "turn_id": "D-43"
+    },
+    {
+      "source_id": "N_005",
+      "target_id": "N_009",
+      "type": "POSSIBLE_DIAGNOSIS",
+      "evidence": "D-43",
+      "turn_id": "D-43"
+    },
+    {
+      "source_id": "N_006",
+      "target_id": "N_009",
+      "type": "POSSIBLE_DIAGNOSIS",
+      "evidence": "D-43",
+      "turn_id": "D-43"
+    },
+    {
+      "source_id": "N_012",
+      "target_id": "N_001",
+      "type": "TREATS",
+      "evidence": "P-6",
+      "turn_id": "P-6"
+    },
+    {
+      "source_id": "N_013",
+      "target_id": "N_001",
+      "type": "TREATS",
+      "evidence": "P-6",
+      "turn_id": "P-6"
+    }
+  ],
+  "_usage": {
+    "prompt_tokens": 5723,
+    "completion_tokens": 2602,
+    "total_tokens": 8325,
+    "pass1_nodes": 11,
+    "pass1_edges": 7,
+    "pass2_nodes": 13,
+    "pass2_edges": 9
+  },
+  "_meta": {
+    "method": "self_critic_gemini",
+    "model": "gemini-2.0-flash",
+    "pass1": {
+      "nodes": 11,
+      "edges": 7
+    },
+    "pass2": {
+      "nodes": 13,
+      "edges": 9
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer identifies key symptoms as sore throat, worsening difficulty breathing, reduced taste (without loss of smell), and fatigue/muscle aches, all cited from transcript, leading to doctor's suspicion [D-43]. Generated Answer incorrectly limits symptoms to sore throat/difficulty swallowing and muscle ache, omitting critical difficulty breathing; misinterprets P-19 as 'loss of smell with reduced taste' (opposite of transcript: reduced taste but no smell loss); introduces non-transcript 'Knowledge Graph'. Significant contradictions with Gold on symptom list and sensory details.",
+    "completeness": "Gold covers doctor's statement [D-43], specific symptoms (sore throat [P-2,P-4], breathing difficulty [P-8-10], reduced taste [P-19-21], muscle aches/fatigue [P-25-26]), screening [D-19], exposure risks [P-12-14]. Generated covers doctor's statement [D-43], sore throat [P-2], muscle ache [P-25], taste/smell [P-19] (inaccurately); misses breathing difficulty, fatigue distinction, exposure details, screening context. Covers ~30% of key points.",
+    "faithfulness": "Claims like sore throat/muscle ache verifiable [P-2,P-25]; doctor's quote accurate [D-43]. Hallucinations: 'loss of smell (anosmia)' contradicts P-19 ('maybe taste a little bit but not smell'); 'Knowledge Graph association' absent from transcript; implies specific 'criteria' not stated by doctor. Multiple unverifiable/inaccurate claims.",
+    "relevance": "Addresses question by listing symptoms for suspicion and discussing taste/smell with others, but off-topic 'Knowledge Graph' and factual errors on sensory symptoms detract; partially relevant due to direct attempt but undermined by inaccuracies."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "Generated Answer has significant factual errors, especially misinterpreting sensory symptoms and omitting key breathing difficulty, resulting in low correctness, completeness, and faithfulness despite reasonable relevance."
+}

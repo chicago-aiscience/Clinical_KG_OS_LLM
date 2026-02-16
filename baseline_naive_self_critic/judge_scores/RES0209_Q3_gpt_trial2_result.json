@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "- The main conclusion (asthma exacerbation/worsening rather than a new condition) aligns with the Gold Answer.\n- Correctly identifies dry cough (P-1), shortness of breath (P-1), and wheezing (P-15) as present.\n- Incorrectly states chest tightness is not explicitly cited; chest tightness is clearly endorsed by the patient (P-20).\n- Does not accurately report the key quantitative change in bronchodilator use (from once every ~2 weeks to 5–6 times/week, P-8), instead using vague phrasing (“a lot now”).\n- Introduces “Knowledge Graph” as evidence; this is not part of the transcript or Gold Answer support and is therefore not factually grounded in the provided source.",
+    "completeness": "Gold Answer key points vs Generated Answer:\n- Covered: dry cough; shortness of breath; wheezing; some trigger association (exercise/cold); implies bronchodilator helps.\n- Missing/insufficient: chest tightness (present in transcript and central to question); explicit asthma history/known diagnosis since age 8; the dramatic quantified SABA increase (P-8); wheezing occurs more often than bronchodilator use (D-17/P-17); systematic exclusion of infectious features (no URI, no sick contacts, no fever, no anosmia, no travel, etc.); absence of productive cough.\n- Includes family history (P-32), which is true but not a key Gold Answer justification.\nOverall, it captures less than half of the Gold Answer’s supporting elements.",
+    "faithfulness": "- Several statements are grounded in the transcript with correct citations (P-1, P-15, P-9, P-11, P-32).\n- However, it contains ungrounded content (“Knowledge Graph directly links…”, “Knowledge Graph establishes…”), which is not in the transcript.\n- It also makes a demonstrably false transcript-related claim that chest tightness is not explicitly cited.\nThese issues reduce faithfulness substantially.",
+    "relevance": "- Largely addresses the question by attributing the symptom cluster and increased bronchodilator use to worsening asthma.\n- Minor tangents (repeated “Knowledge Graph” framing; family history) and omission of key requested elements (chest tightness + quantified bronchodilator increase) keep it from being fully responsive."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.75,
+  "summary": "The answer reaches the correct overall conclusion but omits several key Gold Answer supports (notably chest tightness, quantified inhaler escalation, and infection negatives) and includes ungrounded “Knowledge Graph” claims, lowering completeness and faithfulness."
+}

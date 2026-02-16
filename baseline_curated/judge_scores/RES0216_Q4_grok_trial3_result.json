@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer specifies 'cardiac ischemic picture' [D-36], which Generated correctly identifies as 'cardiac ischemia' (minor terminology discrepancy, core fact matches). Nature of complaints: Gold cites tightness not pain [P-5, D-36] and not classic exertional dyspnea; Generated notes tightness on breathing/activity rather than SOB [D-36, P-1], but inaccurately implies no SOB primacy while Gold nuances patient's mild SOB report [P-7]. Absences: Gold lists no pain, no anxiety/sweaty/impending doom [P-5,P-6,D-6]; Generated only covers no pain [D-36], missing others. Hallucinates 'Knowledge Graph' ruling out ischemia, which contradicts Gold/transcript (tightness can be ischemic, doesn't rule out). Some errors but main points (condition, tightness>pain, lower priority) align.",
+    "completeness": "Gold key points: condition ('cardiac ischemic picture'), nature (tightness not pain; tightness not exertional SOB despite some patient SOB), absences (no pain; no anxiety/sweaty/doom), clinician screening [D-5,D-6], patient relief. Generated covers: condition (~100%), tightness nature (~70%), no exertional SOB (~50%), no pain (~30%). Misses: full absences (anxiety etc.), screening details, patient SOB nuance, relief. Covers ~60% of key points.",
+    "faithfulness": "Transcript verifies: condition [D-36]; tightness [P-1,P-5,D-36]; no pain [P-5,D-36]; doctor notes no real SOB on exercise [D-36]. Patient did report some breath difficulty [P-7,P-9], but doctor downplays. Citations [D-36,P-1] accurate. Hallucinations: entire 'Knowledge Graph' claim (absent from transcript, fabricates external validation and medical conclusion 'rule out'); implies tightness/SOB pattern rules out ischemia (not stated, plausible but ungrounded). Multiple unverifiable/hallucinated elements.",
+    "relevance": "Directly names condition and categorizes evidence into 'nature of chest complaints' (tightness vs SOB) and 'absence' (no pain), matching question structure. KG tangent slightly off-topic but core response focused."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer captures the core condition and basic evidence categories from the Gold but is incomplete on cited absences, introduces transcript-irrelevant hallucination via 'Knowledge Graph,' and has minor factual stretches on SOB."
+}

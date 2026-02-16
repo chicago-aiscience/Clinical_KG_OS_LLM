@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Generated Answer has significant factual errors compared to Gold: misstates patient's weight loss response as not explicit (Gold cites explicit denial [P-22]); claims no travel info despite [P-23] Sarnia trip; ignores explicit no sick contacts [P-24]; reverses impact of chemical exposure response (Gold: limited exposure makes less likely; Gen: maintains occupational); proposes irrelevant differentials (e.g., malaria/Lyme for domestic travel vs Gold's Legionella/fungal); contradicts Gold on narrowing/maintaining.",
+    "completeness": "Gold key points: specific differentials (lung ca/TB for weight loss; Legionella/fungal for travel; person-to-person/TB for sick contacts; chem pneumonitis/occ lung dz for chemicals), exact responses/citations, precise impacts (less likely but not excluded, timing coincides, reduces likelihood, less likely), collective favoring acute infection. Gen covers 4 topics structurally but misses ~70% key points: no accurate diffs/responses/impacts/citations/collective summary.",
+    "faithfulness": "Multiple hallucinations/misreads: falsely claims no explicit weight loss denial, no travel/sick contact info (directly in [P-22/23/24]); infers absences from acute onset; irrelevant diffs (malaria etc.) not in transcript; misinterprets chem response as maintaining occ dz despite patient's 'engineering side, not direct'. Claims unverifiable or contradicted.",
+    "relevance": "Directly structures response around the 4 specific questions with subsections; minor intro on symptoms but focused on diffs/responses/impacts as asked; no major off-topic content."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer fails due to factual inaccuracies, transcript misreads, and hallucinations, despite relevant structure."
+}

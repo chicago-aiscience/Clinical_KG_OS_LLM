@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies most assessed-and-absent features of active Lyme disease from the transcript: erythema migrans/bullseye rash was asked about and denied, joint pain was screened and denied, fever/illness was screened and denied, and headaches were screened and denied. It also correctly lists proposed evaluation steps: tick specimen identification at a lab and Lyme serology/blood work.\n\nHowever, it has minor inaccuracies/mischaracterizations: it cites [P-3] as the confirmation about absence of the current bullseye rash; the direct denial occurs at [P-6]. It also presents review of the Ontario Lyme distribution map as a “diagnostic test,” whereas in context it is a geographic risk assessment tool, not a test to evaluate/exclude Lyme in the patient.",
+    "completeness": "Key absent clinical features in the Gold Answer: (1) no erythema migrans, (2) no joint pain, (3) no fever/illness, (4) no headaches, (5) generally feeling well otherwise, (6) no other bites found. Generated Answer covers (1)-(4) but misses (5) and (6).\n\nKey proposed diagnostic steps in the Gold Answer: (a) physical exam of the bite site, (b) send tick for definitive species identification, (c) bloodwork for titres/serology, (d) plan to consult supervising physician. Generated Answer includes (b) and (c), but omits (a) and (d), and adds the distribution map (mentioned in transcript but not a diagnostic test). Overall coverage is partial (~50–75% of key points).",
+    "faithfulness": "Most statements are grounded in the transcript (rash, joint pain, fever/illness, headaches; tick ID; serology). The added “Lyme disease distribution map” is indeed mentioned ([D-13]) but is somewhat reframed as a diagnostic test rather than a contextual risk check, which is a mild distortion. No major hallucinated symptoms or tests are introduced.",
+    "relevance": "The response largely addresses exactly what was asked: absent clinical features and proposed diagnostic evaluation. The inclusion of the distribution map is slightly tangential to “diagnostic tests,” but still related to Lyme risk assessment. Otherwise, content stays on-topic."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 4,
+    "relevance": 4
+  },
+  "average_score": 3.75,
+  "summary": "Mostly accurate and transcript-grounded, but it misses several Gold Answer elements (feeling well/no other bites, physical exam, supervising-physician consult) and slightly mislabels the distribution map as a diagnostic test."
+}

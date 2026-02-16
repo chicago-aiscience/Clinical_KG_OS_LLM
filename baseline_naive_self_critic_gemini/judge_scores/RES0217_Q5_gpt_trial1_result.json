@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly explains that the patient was outdoors hiking Friday and gardening Saturday (P-1), that the tick was removed “earlier today” (D-1), and that the doctor inferred an attachment duration of “longer than at least 72 hours” and therefore recommended prophylactic antibiotics (D-6). It also correctly states the doctor used the Ontario Lyme distribution map and judged Strathroy “close enough to be considered…concerning,” supporting moving forward with antibiotics (D-13). The only clear factual problem is the added claim about a “knowledge graph indicating Strathroy is a [RISK_FACTOR],” which is not in the transcript or Gold Answer.",
+    "completeness": "Covers the key Gold Answer points: (1) uncertainty about when tick attached and exposure Friday/Saturday (P-1), (2) removal earlier today (D-1) and doctor’s inference about elapsed time leading to >72 hours (D-2, D-6), (3) prophylactic antibiotics rationale (D-6), (4) Strathroy location and map-based geographic risk justification (P-12, D-13), and (5) conclusion to proceed with antibiotics (D-13). Minor omission: it does not explicitly mention the patient’s stated uncertainty (“I don’t really know when I got it”), though it’s implied.",
+    "faithfulness": "Most statements are grounded in the transcript with correct bracketed references (P-1, D-6, P-12, D-13). However, the mention of a “knowledge graph” and Strathroy being labeled a “[RISK_FACTOR]” is not present in the transcript and constitutes hallucinated support for the decision.",
+    "relevance": "Directly addresses both parts of the question (attachment-duration reasoning and map/geographic-risk reasoning) with minimal extraneous content. The “knowledge graph” aside is irrelevant and unsupported, but the rest remains on-topic."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 3,
+    "relevance": 5
+  },
+  "average_score": 4.0,
+  "summary": "Accurately captures the timeline-based >72-hour attachment estimate and the map-based geographic risk justification for prophylaxis, but includes an unsupported “knowledge graph/RISK_FACTOR” claim that reduces faithfulness."
+}

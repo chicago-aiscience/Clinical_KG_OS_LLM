@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer is largely inconsistent with both the Gold Answer and the transcript. It incorrectly states there is “no specific evidence” which symptom appeared first, despite explicit transcript evidence: the patient says it was “pretty stuffy at first” [P-3]. It also incorrectly claims there was no change in predominant symptom over the week, contradicting “but now it’s mostly running” [P-3]. Finally, it concludes the symptoms were intermittent (“on and off”), but the patient later clarifies they have been “pretty constant for the past week” [P-8]. While the onset timing (~1 week) is correct, the key chronological/progression and constancy details are wrong.",
+    "completeness": "Key Gold Answer points missed or contradicted: (1) first symptom was congestion/stuffiness [P-3] (missed/denied); (2) predominant symptom shifted from congestion to rhinorrhea over the week [P-3] (missed/denied); (3) pattern nuance—initially described as “on and off” [P-1] but clarified as “pretty constant” [P-8] (missed; instead states intermittent only); (4) lack of improvement prompting visit [P-1] (not mentioned). Only the ~1 week onset is captured. Overall coverage is very low.",
+    "faithfulness": "The answer selectively uses [P-1] but makes claims that are directly contradicted by other transcript lines (notably [P-3] and [P-8]). The statement that there is “no evidence” of which symptom appeared first and “no change” in predominance is not faithful to the transcript. No clear fabricated new facts are introduced, but the interpretation is inconsistent with explicit patient statements, indicating poor grounding.",
+    "relevance": "The response stays focused on the question (onset, symptom order/progression, and constancy/intermittence). However, although relevant in topic, it answers these elements incorrectly."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 2.25,
+  "summary": "Although on-topic, the Generated Answer contradicts key transcript details about which symptom started first, the shift to predominantly runny nose, and the clarification that symptoms were pretty constant."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Step-by-step: Gold lists salbutamol, Ramipril (HBP), Tylenol (headaches) correctly matched in Generated. Conditions accurate per transcript/Gold. Asthma adherence in Gold specifies daily inhaler prescribed BID but patient reduced to morning only for a while (P-19, P-20); no rescue refill for couple years, none available (P-17, P-18). Generated vaguely notes 'limiting' medication (D-34, accurate but incomplete) and incorrectly frames rescue as doctor's future plan (D-35) rather than past patient non-adherence. Adds non-transcript 'knowledge graph' confirmations (unverifiable fabrication). Some factual errors/omissions in adherence details vs Gold, but core meds correct. Score: 3.",
+    "completeness": "Gold key points: Meds/conditions (salbutamol P-25, Ramipril HBP P-24/P-26, Tylenol headaches P-27) — 100% covered. Asthma: two inhalers (daily/as-needed P-17); daily BID prescribed but skipping night, now only morning (P-19); no issues (P-20); not stopped last 3 days (P-19); no rescue refill ~2yrs, unavailable (P-17/18); limiting summary (D-34); two gaps. Generated covers all meds/conditions; vague 'limiting' (partial); misses dosing specifics entirely; misstates rescue past change as future plan. Covers ~50-60% (meds full, adherence partial/misstated). Score: 3.",
+    "faithfulness": "All med claims verifiable (P-25/26/27). Adherence 'limiting' from D-34 accurate. Rescue cite D-35 accurate but contextually future plan, not past. 'Knowledge graph' links to meds/conditions not in transcript (hallucination, twice). Doctor's plan (D-35) grounded but not central to past adherence query. Minor unverifiable details/hallucinations, mostly grounded in transcript citations. Score: 4.",
+    "relevance": "Directly structures response to meds/conditions and adherence changes. Meds section perfectly on-topic. Adherence section addresses changes/limiting but vague, includes minor off-topic future plan (D-35) and knowledge graph tangents. Mostly relevant, minor irrelevant additions. Score: 4."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 4,
+    "relevance": 4
+  },
+  "average_score": 3.5,
+  "summary": "The Generated Answer accurately covers current medications and conditions but provides vague and partially inaccurate details on asthma adherence changes, missing key specifics on dosing reduction and rescue non-refill while adding minor hallucinations."
+}

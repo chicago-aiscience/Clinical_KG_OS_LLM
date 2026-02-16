@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies some reported symptoms (dry cough, scratchy throat, feeling crappy, headache) matching Gold, but misses key ones like feeling 'really hot' persistently (feverish, P-7/P-9), malaise/icky/crappy explicitly tied to 3-4 days, and tiredness (P-13). It significantly errs on denials by claiming no explicit mentions of denying sputum, nausea, joint pain, rashes (contradicting Gold's citations P-5/P-6, P-10, P-11, P-12, P-13), misinterprets P-13 as general pain denial instead of joint aches, and notes implicit sputum denial while ignoring explicit. Core duration tie-in is weak. Significant factual contradictions warrant 2.",
+    "completeness": "Gold key reported points: 3-4 day history, dry cough/scratchy throat, pounding/active headache, feeling hot day/night, crappy/icky/malaise, tired (6 points). Covered: dry cough, scratchy throat, crappy, headache (4/6). Gold denied: sputum/phlegm, rashes/skin changes, nausea/vomiting, diarrhea, joint aches, breathing difficulty (6 points). Covered: partial joint aches/tired (1/6, misinterpreted). Total coverage ~30-40% (4/12 points), so 2.",
+    "faithfulness": "Reported symptoms verifiable in P-1/P-4. P-13 denial of 'hurting' verifiable but interpretive. However, hallucinates 'no explicit mentions' of denying sputum (explicit P-5/P-6 'No, no nothing'), nausea (P-11 'No'), diarrhea (P-12 'No'), rashes (P-10 'I don't think so'), joint pain (P-13 'No'); references non-existent 'knowledge graph'; multiple incorrect claims about transcript content. Score 2.",
+    "relevance": "Directly structures response with 'Reported Symptoms' and 'Denied Symptoms' sections addressing the question on 3-4 day symptoms and explicit denials (with examples); minor interpretive tangents but focused. Score 4."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer partially covers some reported symptoms but misses key ones like feverishness and significantly errs by denying the existence of explicit denials for several symptoms, leading to low scores in correctness, completeness, and faithfulness."
+}

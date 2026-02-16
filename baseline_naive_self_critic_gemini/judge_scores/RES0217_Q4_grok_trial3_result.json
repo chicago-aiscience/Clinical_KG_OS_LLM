@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer lists specific absent features: bullseye rash (D-6/P-6), joint pain (D-7/P-7), fever/illness (D-8/P-8), headaches (D-19/P-19/P-20), feeling well (D-18/P-18), no other bites (P-9). Generated covers rash (cites D-6/P-3 accurately for denial), joint pain (D-7, notes soreness distinction correct per P-1/P-7), fever/illness (D-8), headaches (D-19). Minor discrepancy: rash denial better in P-6, P-3 is past reference; doesn't explicitly state 'absent' but implies. Diagnostics: Gold has phys exam, tick ID (D-18/P-1), serology (D-18), consult (D-13/D-22). Generated has tick ID/serology correct; adds map (D-13, factual but not core test in Gold). 'Knowledge graph' not in transcript (minor addition). Core facts consistent, minor citation/omission discrepancies.",
+    "completeness": "Clinical key points covered: rash, joint pain, fever/illness, headaches (4/6; misses 'feeling well otherwise' D-18/P-18, no other bites P-9/D-9). Diagnostics covered: tick ID, serology (2/4 core; misses phys exam, physician consult; adds map as extra). Covers main symptomatic features and primary tests (~80-90% key points), omits some confirmatory/contextual ones.",
+    "faithfulness": "All clinical claims verifiable: rash denial D-6/P-6 (P-3 supports history), joint D-7/P-7, fever D-8/P-8, headache D-19/P-19/P-20. Diagnostics: tick lab D-6/D-18/P-1, serology D-18, map D-13/D-12 all in transcript. Patient soreness vs joint distinction grounded in P-1/P-7. Minor: 'knowledge graph' not in transcript but doesn't affect claims; no fabrication.",
+    "relevance": "Directly structures response around clinical features assessed/absent and diagnostic tests proposed, matching question precisely with no off-topic content or tangents."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 4,
+    "relevance": 5
+  },
+  "average_score": 4.25,
+  "summary": "The Generated Answer is mostly accurate and relevant, covering core clinical features and tests with minor omissions and citation tweaks, grounded in the transcript."
+}

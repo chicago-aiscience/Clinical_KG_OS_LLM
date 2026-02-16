@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies stuffy nose as first ('just before' [P-1]), fever next (3 days [P-1]), muscle aches concurrent with fever (2-3 days [P-13/14]), and husband preceding (week vs 3 days [P-19]). However, it incorrectly places sore throat after fever (Gold has it around fever onset [P-1]); significantly, it fabricates 'rash' as a symptom citing [P-38] (allergy history, not current; patient denied rashes [P-12]), contradicting Gold and transcript. These are significant factual errors.",
+    "completeness": "Covers key points: stuffy nose first, fever, sore throat (misordered), muscle aches timing, husband longer duration preceding onset. Misses: precise ~4-day gap calculation, doctor's confirmation of progression [D-2/3], concurrent muscle ache emphasis, household transmission note [D-51/53], some citations. Adds extraneous rash. Covers ~60-70% of Gold's points.",
+    "faithfulness": "Most claims grounded: stuffy nose/fever/sore throat/muscle ache/husband from [P-1/13/19]. Sore throat timing stretched (P-1 concurrent-ish). Major hallucination: 'rash' as symptom [P-38] is allergy, not current (denied [P-12]); muscle ache phrasing accurate but progression implies sequence not fully verbatim. Multiple unverifiable/wrong claims.",
+    "relevance": "Directly structures response around chronological progression (numbered list) and husband comparison, matching question; rash addition is minor off-topic error but core focus intact."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer captures the main symptom sequence and husband timeline but is undermined by significant errors including misordering sore throat, hallucinating a rash symptom, and lacking precise temporal details from the Gold Answer."
+}

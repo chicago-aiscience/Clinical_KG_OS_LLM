@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer is largely inconsistent with the Gold Answer and transcript. It incorrectly states that the transcript does not contain explicit questions about chest pain, palpitations, runny nose, and nausea—these are explicitly asked and denied at D-10/P-10, D-15/P-15, D-16/P-16, and D-17/P-17. It also substitutes other items (appetite, taste) that are not “pertinent negatives” in the ROS; they are actually abnormal/positive findings in the transcript. The diagnostic differentiation discussion contains inaccuracies/overreach (e.g., invoking heart failure and attributing conclusions to D-37 rather than D-36) and relies on a “knowledge graph” not present in the transcript or Gold Answer.",
+    "completeness": "Gold Answer key negatives: (1) runny nose/congestion, (2) vision/hearing changes, (3) nausea/vomiting, (4) chest pain, (5) palpitations/fast heartbeat, (6) abdominal pain, (7) urinary symptoms, (8) numbness/tingling. The Generated Answer does not list these correctly (it explicitly denies their presence in the transcript) and omits most of them entirely (vision/hearing, abdominal pain, urinary symptoms, numbness/tingling). It also misses the Gold Answer’s framing that these negatives narrow toward respiratory infection/COVID and away from cardiac, GI, neuro, and common cold patterns (it partially covers cardiac/GI/URI but in a flawed way). Overall coverage is well under half of required points.",
+    "faithfulness": "Multiple statements are not grounded in the transcript: claiming those ROS questions are not present; adding a “knowledge graph” claim; speculating about heart failure; and misattributing the clinician’s reasoning to D-37. The answer also treats “absence of runny nose/nausea/chest pain/palpitations” as hypothetical rather than directly supported, despite those denials being explicitly present. This reflects substantial unfaithfulness/hallucination relative to the transcript.",
+    "relevance": "The response is on-topic (ROS negatives and how they help differentiate respiratory distress causes), but it fails to answer the first part correctly (which symptoms were explicitly asked and negated) and introduces irrelevant/unsupported elements (knowledge graph, heart failure). Thus it is only partially responsive."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 3
+  },
+  "average_score": 1.5,
+  "summary": "The Generated Answer is on-topic but largely incorrect and ungrounded, missing most ROS pertinent negatives and wrongly claiming key negated symptoms were not asked about in the transcript."
+}

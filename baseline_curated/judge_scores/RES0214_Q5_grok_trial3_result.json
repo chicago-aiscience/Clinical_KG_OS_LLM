@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer focuses on three epi risks: husband's week-long illness suggesting household transmission (cited P-19/20, D-51/53), limited outside contact (P-17/18/22/23/42 supporting household over independent exposure), and no flu shot (P-53/D-53) keeping flu viable but prioritizing COVID. Generated correctly captures husband as prioritizing COVID (P-19/D-53) and no flu shot keeping flu possible (D-53/54), with doctor's quotes accurate. However, it downplays limited outside contact (only implied via household), adds irrelevant symptom overlap and KG hallucinations not in Gold/transcript, minor discrepancies but core epi facts match.",
+    "completeness": "Gold key points: 1) Husband's prior similar symptoms → household tx → COVID priority (full coverage). 2) Limited contacts (work home, staying home, hiking only, no other sick) → supports household tx (partial/implied in Generated via sick contact, misses specifics P-17/18/22/23/42). 3) No flu shot → flu possible alongside COVID (full coverage). Covers ~85% (strong on 1 and 3, weak on 2 details).",
+    "faithfulness": "Verifiable: husband sick [P-19], doctor prioritizes COVID [D-53], flu shot Q [D-53], isolation [D-53/54], symptoms [P-1]. Inaccurate/hallucinated: 'Knowledge Graph' and [KG] references not in transcript; symptom overlap 'both cause fever/sore throat [KG]' plausible but not cited from transcript. Multiple unverifiable additions (KG), but core clinical claims grounded with accurate citations.",
+    "relevance": "Directly addresses epi factors shaping COVID vs flu differential: husband → COVID priority, no flu shot → flu possible. Minor tangents: symptom overlap (not epi risk per Q), isolation (containment, not shaping differential), KG (irrelevant). Mostly focused on question's specified risks."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 3,
+    "relevance": 4
+  },
+  "average_score": 3.75,
+  "summary": "The Generated Answer is mostly accurate and relevant, strongly covering the husband and flu shot risks while implying but not fully detailing limited contacts, with some hallucinated KG elements reducing faithfulness."
+}

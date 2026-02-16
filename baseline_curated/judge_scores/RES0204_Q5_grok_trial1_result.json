@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer accurately attributes the doctor's specific inquiry about family history of respiratory problems [D-28] to the persistent dry cough, with mother disclosing grandparents' asthma [P-28] and doctor summarizing [D-30]; Generated Answer incorrectly states the patient brings up the history and links it vaguely to 'clinical evaluation' mentioning irrelevant inquiries like sore throat [D-9] and taste/smell [D-10], misattributes [P-28] to the patient instead of mother, and omits doctor's summary and clinical relevance to cough, leading to significant factual errors despite core idea of connection and differentiation.",
+    "completeness": "Gold key points: doctor's targeted inquiry [D-28] and relevance to cough; mother's disclosure [P-28]; doctor's summary [D-30]; differentiation via prior workup, no SOB/wheezing even with activity [P-28]; contrast with current dry cough [D-5/6 P-5/6], runny nose [D-11/12 P-11/12], no wheeze/dyspnea, prior shorter issues [P-24]. Generated covers grandparents' asthma and differentiation evidence (no SOB/wheezing/activity) from [P-28] (~30-40%), misses inquiry details, relevance, summary, current symptom contrasts, prior history.",
+    "faithfulness": "All claims verifiable: grandparents asthma [P-28], prior workup/no SOB/wheezing/activity [P-28], sore throat/taste-smell inquiries [D-9/10]; minor issues with attributing [P-28] to 'patient' (transcript labels P but content is mother's), no hallucinations, citations accurate.",
+    "relevance": "Directly addresses connection of asthma history to inquiry/response and differentiation via symptom profile/absence of SOB/wheezing as per question; minor tangent on unrelated inquiries but overall focused."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 4,
+    "relevance": 4
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer captures the core familial asthma history and differentiation evidence but has significant errors in attribution, omits key details from Gold, and mischaracterizes the doctor's inquiry."
+}

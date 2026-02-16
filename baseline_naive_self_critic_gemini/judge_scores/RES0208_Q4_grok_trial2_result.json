@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly states that the transcript 'does not contain any explicit instances' of the doctor asking about or the patient denying chest pain [D-16/P-16], palpitations [D-17/P-17], runny nose [D-10/P-10], and nausea [D-15/P-15], directly contradicting the Gold Answer and transcript evidence. It also fails to list other pertinent negatives like vision/hearing changes, abdominal pain, urinary symptoms, and numbness/tingling, and provides inaccurate clinical differentiation that does not match the Gold Answer's reasoning for excluding cardiac, GI, common cold, and neurological causes in favor of respiratory infection/COVID-19.",
+    "completeness": "Gold Answer key points: lists 8 specific denied symptoms with citations (runny nose/congestion, vision/hearing changes, nausea/vomiting, chest pain, palpitations, abdominal pain, urinary symptoms, numbness/tingling); explains differentiation (excludes cardiac via no chest pain/palpitations, GI via no nausea/abdominal pain, common cold via no runny nose, neurological via no neuro symptoms, supports infection/COVID-19). Generated Answer covers 0% of these, instead denying their presence and discussing unrelated symptoms like shortness of breath severity and general DDx without citations or matching logic.",
+    "faithfulness": "Generated Answer hallucinates the absence of explicit questions/denials for the key symptoms, which are verifiable in the transcript (e.g., [D-10/P-10], [D-15/P-15], [D-16/P-16], [D-17/P-17]). It references a non-existent 'knowledge graph,' invents interpretations (e.g., cough negation not central), and provides plausible but ungrounded general DDx not tied to transcript or doctor's working diagnosis [D-36]. Multiple hallucinations and inaccurate citations.",
+    "relevance": "Generated Answer attempts to address the question by discussing denied symptoms and differentiation for respiratory distress but derails by falsely claiming key examples are absent, shifting to unrelated negations (e.g., breathing severity, cough frequency) and broad DDx (e.g., allergic rhinitis, GERD) not prompted or central, making it partially relevant with significant off-topic content."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 2
+  },
+  "average_score": 1.25,
+  "summary": "The Generated Answer is fundamentally flawed, incorrectly denying the presence of key denied symptoms in the transcript, resulting in low scores across all dimensions."
+}

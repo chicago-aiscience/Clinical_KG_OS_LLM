@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer contains key factual inaccuracies relative to the Gold Answer. Most importantly, it misstates the initial symptom: the transcript clearly indicates the first noticed symptom was a scratchy throat followed by coughing (P-4), whereas the Generated Answer treats dry cough and scratchy throat as co-initial and even implies cough as part of the onset (P-1). It also asserts that the sensation of feeling hot (fever) occurred after the respiratory/systemic symptoms; the Gold Answer correctly notes the transcript does not establish when the “feeling hot” began relative to throat/cough, only that it was present during the same multi-day illness (P-7, P-9). The claim that feeling hot “likely represented a subsequent change/escalation” is speculative and not supported by the transcript.",
+    "completeness": "Compared with the Gold Answer, the Generated Answer partially covers the symptom set (scratchy throat, dry cough, malaise, headache, feeling hot) but misses or under-represents key details: it omits fatigue (P-13), does not capture that feeling hot was persistent ‘all the time’ day and night (P-9), and fails to state the key Gold point that timing of feeling hot relative to cough/throat is not specified. It also does not accurately reflect the progression framing from localized throat irritation to systemic symptoms.",
+    "faithfulness": "The answer introduces non-transcript elements (e.g., “Knowledge Graph confirms…”, graph relations, and the inference that fever indicates escalation/shift). These are not verifiable from the provided transcript. While some symptom mentions are grounded (P-1, P-7), multiple statements go beyond the evidence, reducing faithfulness.",
+    "relevance": "The response is generally directed at the question (order of symptom appearance and relationship of feeling hot to cough/throat). However, it adds speculative interpretation about escalation and an unsupported sequencing of fever, which detracts from a precise timeline-focused answer."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer is on-topic but substantially misorders the initial symptoms and incorrectly infers that feeling hot began later, while also adding unverifiable “knowledge graph” and speculative claims not grounded in the transcript."
+}

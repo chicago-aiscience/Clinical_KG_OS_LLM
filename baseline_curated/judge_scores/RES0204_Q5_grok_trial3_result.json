@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer emphasizes the doctor's direct inquiry about family history of respiratory problems [D-28], with mom responding about grandparents' asthma [P-28] and doctor summarizing [D-30]. Generated Answer inaccurately implies the patient voluntarily brings up the asthma history 'in response to the clinical evaluation,' citing earlier unrelated questions like sore throat [D-9] and taste/smell [D-10], missing the specific family respiratory history question. For differentiation, Generated correctly captures the absence of shortness of breath and wheezing even with activity [P-28] but omits Gold's details on current dry cough, clear runny nose, and prior episode differences. Some factual errors but main points (family asthma, differentiation via absent symptoms) are correct.",
+    "completeness": "Key points in Gold: doctor's specific inquiry [D-28]; mom's disclosure and differentiation [P-28]; doctor's summary [D-30]; prior workup negative; no SOB/wheezing with activity; current dry non-productive cough [D-5/6]; clear runny nose [D-11/12]; no wheeze/dyspnea; prior issues shorter/not dry [P-24]. Generated covers: grandparents asthma [P-28]; worked up negative, no SOB/wheezing/activity issues [P-28]. Misses doctor's inquiry/summary, current symptom details, prior history contrast. Covers ~30-40% of key points.",
+    "faithfulness": "All claims in Generated are verifiable: sore throat inquiry [D-9], taste/smell [D-10], grandparents asthma and differentiation details [P-28]. Citations accurate. Minor issue: attributes statements to 'patient' but [P-28] is mom's speech (labeled P); no hallucinations, fully grounded with plausible speaker interpretation.",
+    "relevance": "Directly addresses both question parts: connection of family asthma to inquiry (though inaccurately), and differentiation via symptom profile/absence of SOB/wheezing. Minor tangent on earlier symptoms questions for context, but focused overall."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 2,
+    "faithfulness": 4,
+    "relevance": 4
+  },
+  "average_score": 3.25,
+  "summary": "The Generated Answer partially captures the family asthma connection and key differentiation evidence but misses the doctor's specific inquiry, detailed current symptoms, and accurate speaker attribution, leading to moderate correctness and low completeness."
+}

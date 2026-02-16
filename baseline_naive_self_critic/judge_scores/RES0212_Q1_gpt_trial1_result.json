@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Compared with the Gold Answer, the Generated Answer contains major inaccuracies. It incorrectly states the cough has been present “approximately one month” (the patient reports ~3 months with worsening/productive phase in last ~3 days). It also fails to correctly describe the evolution from intermittent/dry to productive over 3 days, and omits key sputum characteristics (no blood, no foul smell noticed). Some elements are correct (chest discomfort only with coughing; greenish sputum; fatigue/sleep disturbance), but the central timeline and cough characterization are wrong, which materially reduces factual accuracy.",
+    "completeness": "It captures only a minority of the required symptom details: green sputum, cough-associated chest discomfort, fatigue, sleep disruption. It misses: 3-month intermittent cough history; onset context (pole dancing class); last-3-days productive “gunk”; explicit denial of blood and lack of noted foul smell; subjective fever/feeling hot at night; impact on exercise; and most explicit denials (night sweats, weight loss/clothes loose, hemoptysis, N/V, stiff neck, body pain/tenderness, lack of sick contacts). For denials, it only points to P-5 and P-6 without stating what was denied.",
+    "faithfulness": "Several statements are not supported or are contradicted by the transcript—most notably “cough … approximately one month [P-1]” (P-1 does not give a duration; P-2 gives ~3 months). Referencing an “associated knowledge graph” is extraneous and not part of the transcript. Other included claims (greenish sputum; pain when coughing; tired; sleep disturbed) are grounded. Overall, there are multiple unfaithful/misattributed elements.",
+    "relevance": "The answer is generally on-topic (respiratory symptoms and denials) but only partially addresses the question because it does not actually enumerate the denied symptoms and omits many of the specific respiratory/associated symptom characteristics asked for (timeline, productive change, blood/smell, subjective fever, exercise impact, etc.)."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "Partially relevant but substantially incomplete and includes major inaccuracies (notably cough duration and missing key symptom/denial details), with multiple elements not faithfully supported by the transcript."
+}

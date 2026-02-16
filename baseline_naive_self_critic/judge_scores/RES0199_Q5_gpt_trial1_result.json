@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer directly contradicts both the Gold Answer and the transcript. The doctor DID explore exposure sources: living situation (apartment in city, lives alone), home/environmental triggers (carpets/dust/mold/asbestos/pets), sick contacts, workplace (car dealership; whether coworkers were sick), and travel (asked; patient denied). The Generated Answer incorrectly states none of these were explored. It also inaccurately reports the patient had “loss of taste,” whereas the transcript describes reduced smell.",
+    "completeness": "Misses essentially all key exposure-history elements in the Gold Answer: living situation, home environmental risks, sick contacts (including lunchroom at work), workplace details and coworker illness screening, and travel history. It instead adds non-asked content (symptom/differential/management) that does not answer the exposure-source question.",
+    "faithfulness": "Multiple claims are not grounded in the transcript and are contradicted by it (e.g., ‘doctor did not systematically explore…’; ‘No dialogue segments referenced asking about travel…’). Also includes a factual inaccuracy about ‘loss of taste.’ Overall, it is largely unfaithful to the source transcript.",
+    "relevance": "It attempts to answer the question about exposure-source exploration, but much of the response shifts to symptom assessment/management and it incorrectly denies the exposure history that was actually obtained. Still broadly focused on the question prompt."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 4
+  },
+  "average_score": 1.75,
+  "summary": "The Generated Answer is on-topic but largely incorrect and unfaithful, denying multiple exposure-history questions that are clearly present in the transcript and required by the Gold Answer."
+}

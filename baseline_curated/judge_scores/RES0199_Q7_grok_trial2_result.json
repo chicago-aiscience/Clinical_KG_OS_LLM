@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer details initial headache and cough 4 days ago (correct in Generated [P-1]); GI symptoms with precise timings (diarrhea 2 days ago [P-28], vomiting yesterday [P-32], nausea today); loss of smell 1 day ago (correct [P-24]); headache persistent, 7/10, stable severity [P-3,P-5,P-8,P-9]; cough dry and stable [P-11,P-12]. Generated correctly identifies timeline for initial symptoms, loss of smell, and GI as 'few days back' per [P-1], notes headache persistent and cough dry/remaining present, implying stability but omits explicit severity stability ('stayed around the same'), rating, and precise GI sub-timings. No contradictions, minor omissions/discrepancies in detail.",
+    "completeness": "Gold key points: initial headache/cough Day -4; headache details (persistent, location, 7/10, stable, atypical); cough dry/stable; GI ~Day -2 (diarrhea specifics), vomiting Day -1, nausea Day 0; anosmia Day -1; negatives. Generated covers: initial Day -4 (100%), GI timing 'few days' (partial, misses precision), anosmia Day -1 (100%), headache persistent/location (partial, misses severity/stable/atypical), cough dry/present (partial, misses explicit stable). Covers core timeline (~80%) but misses severity stability emphasis, precise GI, rating, negatives.",
+    "faithfulness": "All Generated claims directly verifiable: initial symptoms [P-1], GI 'few days back' [P-1], anosmia [P-24], headache persistent/location [P-3,P-5], cough dry/remaining [P-11,P-12]. Citations accurate, no unverifiable or hallucinated details; 'remained present/persistent' grounded in stability reports.",
+    "relevance": "Generated directly structures response around question elements: initial onset, GI timing relative to initial, loss of smell timing, headache/cough progression/stability, with no off-topic content or tangents."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 5,
+    "relevance": 5
+  },
+  "average_score": 4.5,
+  "summary": "The Generated Answer is highly relevant and faithful to the transcript, with strong correctness and good completeness on core timeline but minor gaps in precise GI timings and explicit severity stability for headache/cough."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly identifies chest pain, nausea/vomiting, and stiff neck as the primary constitutional symptoms screened and denied, while missing the Gold Answer's key constitutional symptoms (night sweats, unexplained weight loss, hemoptysis). It hallucinates that night sweats were not screened (directly contradicted by D-5/P-5) and fails to cover exposure risks entirely. Explanations for excluded conditions (TB via meningitis/pleuritis) mismatch Gold's focus on classic TB triad.",
+    "completeness": "Key points from Gold covered: partial overlap on stiff neck, nausea/vomiting, body pain; TB mention. Missed entirely: night sweats, weight loss, hemoptysis (core constitutional), all exposure risks (sick contacts, travel, IV drugs), doctor's summary. Covers ~20-30% of key points.",
+    "faithfulness": "Most claims grounded in transcript with accurate citations (e.g., chest pain D-3/P-3, stiff neck D-18/P-18, nausea D-17/P-17). Hallucinations: night sweats 'not explicitly screened' (falsely, explicit in D-5); minor citation error (P-19 for nausea); plausible but unverified links to meningitis/pleuritis. Some unverifiable details.",
+    "relevance": "Addresses screening symptoms and TB exclusion partially but focuses on incorrect/secondary symptoms, ignores exposure risks, and drifts to fatigue/pleuritis/meningitis not central to question."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 3,
+    "relevance": 3
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer is significantly incomplete and factually inaccurate compared to the Gold Answer, missing core constitutional symptoms and all exposure risks while introducing hallucinations about unscreened symptoms."
+}

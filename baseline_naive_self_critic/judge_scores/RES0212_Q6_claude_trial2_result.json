@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer is factually incorrect. It claims the transcript only contains patient turns [P-1] through [P-27] and lacks doctor turns, when in fact the full transcript contains doctor turns [D-1] through [D-48]. The Gold Answer correctly references [D-47] and [D-48] where the doctor provides a summary and plan. The Generated Answer contradicts the actual source material.",
+    "completeness": "The Generated Answer fails to address any of the three key components requested: (1) the doctor's stated plan, (2) the summary assessment, and (3) information guiding next steps. It provides 0% coverage of the Gold Answer's key points about the doctor reviewing the case with supervising physicians, the characterization of the cough, absence of constitutional symptoms, and absence of specific orders.",
+    "faithfulness": "The Generated Answer contains a significant hallucination - it claims the transcript ends at [P-27] and lacks doctor turns, which is demonstrably false. The source transcript clearly contains doctor turns through [D-48]. While it correctly identifies some patient-reported symptoms, the core claim about missing information is fabricated.",
+    "relevance": "The Generated Answer does not address the question. Instead of providing the requested information about the doctor's plan, assessment, and guidance for next steps, it incorrectly claims this information is unavailable. This is completely off-topic given that the requested information exists in [D-47] and [D-48]."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 1
+  },
+  "average_score": 1.0,
+  "summary": "The Generated Answer is fundamentally flawed across all dimensions. It incorrectly claims the transcript lacks doctor turns and ends at [P-27], when the full transcript clearly contains doctor statements through [D-48]. This hallucination leads to complete failure to address the question about the doctor's plan, summary assessment, and guidance for next steps - all of which are present in the source material at [D-47] and [D-48]. The answer provides no coverage of any key points from the Gold Answer."
+}

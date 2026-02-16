@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the symptoms reported by the mother (cough, runny nose, fever, fatigue, loss of taste/appetite). However, it is factually incorrect regarding the second part of the question. It explicitly states that none of the symptoms listed in the prompt (wheezing, sore throat, chest pain, chills, GI complaints) were asked about by the doctor. In the transcript, the doctor specifically asks about wheezing [D-7], chest pain [D-13], sore throat [D-14], chills [D-19], and GI complaints [D-22, D-23].",
+    "completeness": "The answer identifies the reported symptoms well but misses the entire list of 'pertinent negatives' or denied symptoms that were explicitly asked for in the prompt. It fails to cover roughly 60% of the content found in the Gold Answer.",
+    "faithfulness": "The first half of the answer is faithful to the transcript. The second half is a hallucination of omission; it claims the doctor did not ask specific questions that are clearly present in the text (D-7, D-13, D-14, D-19, D-22, D-23).",
+    "relevance": "The answer is relevant in that it attempts to address both parts of the prompt, but by incorrectly claiming the second part of the information does not exist, it fails to provide the requested details."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "The Generated Answer accurately captures the patient's reported symptoms but contains a significant factual error by claiming the doctor never asked about the specific symptoms mentioned in the prompt."
+}

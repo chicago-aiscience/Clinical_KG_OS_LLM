@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer emphasizes that BOTH patient (P-1) and doctor (D-39) identified COVID-19 as needing to be ruled out; Generated Answer only attributes identification to the doctor (D-39) and does not mention the patient's explicit concern, creating a minor discrepancy. Core facts on COVID, swab test, 48-hour turnaround, and isolation instructions match Gold and transcript. Irrelevant addition of Type 1 diabetes (P-23) as a note is factually accurate but not part of the condition to rule out, slightly detracting from full consistency.",
+    "completeness": "Gold key points: both identify COVID-19 (with citations), COVID swab 'today', 48 hours, stay isolated/not see anyone, further instructions from public health. Generated covers: COVID (doctor only), swab, 48 hours, isolation; misses patient's identification, 'today' for test, public health instructions. Covers ~80% of key points.",
+    "faithfulness": "All claims in Generated are directly verifiable in transcript: COVID/swab/48 hours/isolation [D-39], diabetes [P-23]. Diabetes note is accurate and cited correctly, though contextually extraneous; no hallucinations or unverifiable details.",
+    "relevance": "Generated Answer uses bullet points to directly address all four question elements (condition, test, turnaround, instructions) with citations; minor tangent on diabetes is brief and tied back to irrelevance for ruling out."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 5,
+    "relevance": 5
+  },
+  "average_score": 4.5,
+  "summary": "The Generated Answer is highly accurate, grounded, and relevant but has minor discrepancies in completeness by not fully covering both parties' identification of COVID-19 and omitting some instructional details."
+}

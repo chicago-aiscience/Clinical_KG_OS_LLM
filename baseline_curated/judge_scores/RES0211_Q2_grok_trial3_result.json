@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly states Jessica is 'currently taking Claritin,' but the Gold Answer and transcript [P-25] clarify she carries it 'just in case' but is not actively taking it; it completely omits the birth control 'Deyo' (3-month oral pill) which is explicitly stated as currently taken [P-25-P-28]; for past treatments, it mentions allergy shots but omits dosing details ('once a week for a little while, like in the winter') [P-20]; it also denies EpiPen and details allergies not covered accurately. These are significant factual errors and omissions contradicting the Gold Answer.",
+    "completeness": "Key points from Gold: (1) Claritin (carries, not taking, allergies, citations); (2) Deyo (oral contraceptive, 3-month, details); (3) no med allergies; (4) allergy shots (dosing, timing); (5) no EpiPen, seasonal allergies details. Generated covers Claritin partially (~50% accurate) and allergy shots basically (~30% with no dosing), misses Deyo entirely, no allergies/EpiPen details; covers ~20-40% of key points.",
+    "faithfulness": "Claims like 'currently taking Claritin' contradict transcript [P-25]; hallucinates doctor's summary on symptoms flaring 'just before they normally start' [D-58 does not say this]; attributes dosing vaguely without transcript support; adds family history plausibly from [P-33] but not central; misses verifiable Deyo details; multiple inaccuracies and unverifiable additions.",
+    "relevance": "Directly structures response around 'Current Medications' and 'Past Treatments' matching question; includes indications and notes lack of dosing; minor tangents like family history and misquoted doctor summary but mostly focused on query."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer has significant omissions (e.g., birth control) and inaccuracies (e.g., Claritin status) compared to the Gold, with partial coverage of allergy shots but poor faithfulness due to misquotes and hallucinations."
+}

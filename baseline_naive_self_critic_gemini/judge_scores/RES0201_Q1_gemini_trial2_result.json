@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer misses the most significant symptom reported by the patient: difficulty breathing (P-7, P-8). It also describes the taste symptom in a contradictory manner, stating the patient reported 'Loss of taste' but then claiming they 'confirmed they have not lost their taste'. The Gold Answer correctly identifies it as a 'reduced sense of taste' based on the doctor's clarifying question (P-21).",
+    "completeness": "The Generated Answer is highly incomplete. It omits the major symptom of 'difficulty breathing'. Most importantly, it fails to list the denied symptoms specifically requested in the prompt (cough, runny nose, fever, headaches, chest pain), only mentioning 'loss of smell'. The Gold Answer includes all of these plus additional denials (chills, night sweats, travel, sick contacts).",
+    "faithfulness": "The information provided is grounded in the transcript, but the omission of the primary respiratory complaint (breathing difficulty) makes the summary an unfaithful representation of the clinical encounter's severity.",
+    "relevance": "The answer attempts to address the question but ignores the parenthetical list of symptoms provided in the prompt's instruction (cough, runny nose, etc.) for the denial section, resulting in a very limited response."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 4,
+    "relevance": 3
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer fails significantly by omitting the patient's primary concern (difficulty breathing) and ignoring nearly all the negative symptoms explicitly requested in the prompt."
+}

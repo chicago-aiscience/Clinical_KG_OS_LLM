@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer states symptoms began 3 days ago on a walk with dog, no specific trigger, staying the same/steady, always there but worse with walks/getting up/big breaths, noticeable on inspiration, reduced walks from couple/day to one, no missed work, noticeably limiting. Generated correctly notes 3-day onset, tightness on inhale/no pain, worse on walks/dog walks. Errors: claims 'progressed/evolved' to include dyspnea/hoarseness/phlegm (contradicts steady, hoarseness not core to tightness evolution); says maintained walking routine (contradicts reduced to one walk/day); misses first noticed specifically on dog walk, no trigger, other exacerbators (chair/big breath), work impact. Some factual errors but core onset/exacerbation correct.",
+    "completeness": "Covered: 3-day onset (~100%), first noticed on walk (partial, misses dog specificity), inspiration (~100%), main exacerbator walks (~50% of exacerbators). Missed/wrong: no trigger (0%), staying same (opposite: evolved), other exacerbators (chair/breath, 0%), precise impact (reduced walks/work, wrong: maintained). ~50-60% coverage.",
+    "faithfulness": "Verified: 3 days [P-1], inhale tightness [P-1,5], walks exacerbate [P-1,9,10], no pain [P-5/D-36], hoarseness [P-11], different from asthma [P-16], doctor suspicion [D-35]. Unverifiable/hallucinated: 'progressed/evolved' (contradicts steady [P-2,3]); maintained routine (ignores reduction [P-22]); evolution includes phlegm as tightness change (not grounded); cherry-picks P-1 over P-22/9/10. Multiple distortions.",
+    "relevance": "Directly addresses onset, evolution, exacerbators, routine impact with structure matching question; minor extras (hoarseness, doctor diff dx) but focused on symptoms timeline/triggers/impact."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer covers core onset and main exacerbators but inaccurately describes symptom evolution as progressive rather than steady and misrepresents impact on walking routine, with some hallucinated progression details."
+}

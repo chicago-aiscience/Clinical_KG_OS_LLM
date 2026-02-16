@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer identifies asthma ruled out based on mother's report [P-28] of prior workup, no shortness of breath or wheezing even with activity, despite grandparents' history; patient healthy otherwise. Generated correctly IDs asthma and no SOB/wheeze even with activity [P-28], but wrongly cites family history to [P-13] (actual [P-28]), attributes no fever/chills [P-13] to ruling out asthma (not in transcript or Gold), misses prior 'worked up' and mother's conclusion. Some factual errors (irrelevant symptoms, wrong citations) but core (asthma, key symptoms) correct.",
+    "completeness": "Gold key points: asthma [D-28/P-28/D-30], grandparents history [P-28], prior workup [P-28], no SOB/wheeze even activity [P-28], mother's 'doesn't have that' [P-28], patient healthy [P-24]. Generated covers asthma, grandparents history, no SOB/wheeze even activity; misses prior workup, doctor's comments, mother's conclusion, patient healthy report. Covers ~60% of key points.",
+    "faithfulness": "Asthma/family hx/grandparents/no SOB/wheeze/activity verifiable in [P-28]; no fever/chills verifiable [P-13] but hallucinated as support for ruling out asthma (not mentioned there or contextually); wrong citation [P-13] for family hx (should be [P-28]). Fabricates causal link between fever/chills absence and asthma rule-out, multiple citation errors.",
+    "relevance": "Directly addresses condition (asthma), family hx grandparents, mother-cited findings incl. no symptoms even activity; minor irrelevant tangent of fever/chills as 'support'; no major off-topic content."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer correctly identifies the key condition and primary ruling-out symptoms but introduces factual inaccuracies, hallucinations via irrelevant symptom links, wrong citations, and omits important details like prior workup."
+}

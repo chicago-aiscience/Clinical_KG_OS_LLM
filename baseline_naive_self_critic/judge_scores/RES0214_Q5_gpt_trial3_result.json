@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Core conclusion matches the Gold Answer: husband’s similar illness suggests household transmission and makes COVID a top rule-out; lack of flu shot increases influenza plausibility; physician prioritizes COVID testing while acknowledging flu as possible. However, there are factual/citation errors: it cites the flu-shot denial as [P-27] (incorrect; it is [P-53]), and it adds a concept of “ruling out imported disease” that is not stated by the clinician and is not part of the Gold Answer’s reasoning. The “clinical knowledge graph [KG]” content is not in the transcript.",
+    "completeness": "Covers the main Gold Answer points: (1) husband ill for a week and clinician explicitly prioritizes COVID rule-out; (2) limited outside contact is partially addressed via hike/no travel but it under-emphasizes key details from Gold (works from home, mainly at home together, denies other sick contacts), and it doesn’t clearly connect limited exposure to “household transmission rather than independent exposures” as explicitly as Gold; (3) no flu shot leading clinician to add influenza. Overall ~80–90% of key points are present but with some gaps.",
+    "faithfulness": "Not fully grounded in the transcript: (1) wrong citation for flu-shot status ([P-27] instead of [P-53]); (2) introduces “Exclusion of imported disease” framing (“rules out imported cases”) which is not stated; (3) references a “clinical knowledge graph [KG]” which is absent. While many other claims are supported (husband symptoms, hike/no out-of-province travel, clinician prioritizing COVID swab), these multiple ungrounded elements reduce faithfulness.",
+    "relevance": "Directly answers how the epidemiologic factors shape the COVID vs influenza differential and the clinician’s prioritization/testing plan. The added ‘imported disease’ discussion is a minor tangent but still loosely related to epidemiology."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.75,
+  "summary": "The answer captures the clinician’s COVID-first rule-out logic and influenza consideration, but it contains multiple transcript-unfaithful elements (wrong citation, added ‘imported disease’ reasoning, and an invented ‘knowledge graph’), lowering faithfulness despite good relevance and mostly correct substance."
+}

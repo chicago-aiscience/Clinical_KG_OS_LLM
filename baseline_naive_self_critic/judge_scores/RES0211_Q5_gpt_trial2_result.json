@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer contains multiple major factual errors relative to the Gold Answer and the transcript. It incorrectly states the transcript contradicts living on a farm; the patient explicitly says she lives on a farm [P-43] and only clarifies it is “not like an animal farm” [P-48]. It incorrectly claims the transcript lacks documentation of (a) father with allergies, (b) cousin with asthma, and (c) brother’s recent cold—yet all are directly stated in the transcript [P-33], [P-30], and [P-39]. It also concludes symptoms are consistent with seasonal allergies, whereas the Gold Answer notes Jessica says her allergy season has not started yet [P-16, P-17], making this episode less typical for her allergies. These errors materially change the clinical interpretation.",
+    "completeness": "Key Gold Answer points largely missed or contradicted: (1) family history of allergic/respiratory conditions (father allergies; cousin asthma) as context—omitted/denied; (2) allergy season not started, suggesting current illness differs from usual allergies—misrepresented; (3) brother’s cold as most plausible viral exposure—omitted/denied; (4) relative isolation during COVID (homeschooling, parents working from home/on farm, doesn’t leave house, no travel) supporting intra-household exposure—mostly omitted; (5) dog only/not a working animal farm reducing animal exposure concerns—partially mentioned but used to incorrectly negate farm living. Overall coverage is minimal and often opposite to Gold.",
+    "faithfulness": "The answer is poorly grounded in the transcript. It asserts absence of documented family history and brother’s cold despite explicit transcript statements [P-30], [P-33], [P-39]. It misinterprets “not like an animal farm” [P-48] as contradicting living on a farm, despite [P-43]. These are not minor unverifiable additions; they are direct contradictions of the source.",
+    "relevance": "It attempts to address the question (how these contextual factors relate to her symptoms) but largely does so by incorrectly claiming the factors are not present and by drawing an incorrect conclusion (primarily allergies). This only partially addresses the prompt and fails to integrate the listed factors as asked."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 2
+  },
+  "average_score": 1.25,
+  "summary": "The Generated Answer contradicts key transcript facts (farm living, family history, brother’s cold) and misses the Gold Answer’s core reasoning about likely viral exposure in a relatively isolated household, resulting in very low correctness, completeness, and faithfulness."
+}

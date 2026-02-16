@@ -1,0 +1,272 @@
+{
+  "nodes": [
+    {
+      "id": "N_001",
+      "text": "COPD",
+      "type": "DIAGNOSIS",
+      "evidence": "I have COPD... manageable with my puffers",
+      "turn_id": "P-1"
+    },
+    {
+      "id": "N_002",
+      "text": "COPD exacerbation",
+      "type": "DIAGNOSIS",
+      "evidence": "It's likely that what you have right now is COPD exacerbation",
+      "turn_id": "D-43"
+    },
+    {
+      "id": "N_003",
+      "text": "Coughing more often",
+      "type": "SYMPTOM",
+      "evidence": "I feel like I'm coughing more often",
+      "turn_id": "P-1"
+    },
+    {
+      "id": "N_004",
+      "text": "Green yellowy sputum",
+      "type": "SYMPTOM",
+      "evidence": "producing more sputum. Kind of like a green yellowy sputum",
+      "turn_id": "P-1"
+    },
+    {
+      "id": "N_005",
+      "text": "Hemoptysis (Blood)",
+      "type": "SYMPTOM",
+      "evidence": "little bit of blood a couple times",
+      "turn_id": "P-1"
+    },
+    {
+      "id": "N_006",
+      "text": "Shortness of breath",
+      "type": "SYMPTOM",
+      "evidence": "It's been really hard to breathe... walked here fine... harder to do that",
+      "turn_id": "P-1"
+    },
+    {
+      "id": "N_007",
+      "text": "Puffers",
+      "type": "TREATMENT",
+      "evidence": "manageable with my puffers",
+      "turn_id": "P-1"
+    },
+    {
+      "id": "N_008",
+      "text": "High blood pressure",
+      "type": "MEDICAL_HISTORY",
+      "evidence": "I have a high blood pressure",
+      "turn_id": "P-22"
+    },
+    {
+      "id": "N_009",
+      "text": "Lung doctor referral",
+      "type": "PROCEDURE",
+      "evidence": "referred me to a lung doctor",
+      "turn_id": "P-8"
+    },
+    {
+      "id": "N_010",
+      "text": "Fever",
+      "type": "SYMPTOM",
+      "evidence": "fever last night... felt really hot",
+      "turn_id": "P-9"
+    },
+    {
+      "id": "N_011",
+      "text": "Stuffy nose",
+      "type": "SYMPTOM",
+      "evidence": "runny nose or stuffy nose",
+      "turn_id": "P-12"
+    },
+    {
+      "id": "N_012",
+      "text": "Pressure in sinus area",
+      "type": "SYMPTOM",
+      "evidence": "pressure in the sinus area",
+      "turn_id": "P-12"
+    },
+    {
+      "id": "N_013",
+      "text": "Headache",
+      "type": "SYMPTOM",
+      "evidence": "headache",
+      "turn_id": "P-14"
+    },
+    {
+      "id": "N_014",
+      "text": "Temperature check",
+      "type": "PROCEDURE",
+      "evidence": "We can now check your temperature",
+      "turn_id": "D-11"
+    },
+    {
+      "id": "N_015",
+      "text": "Covid swab",
+      "type": "PROCEDURE",
+      "evidence": "doing a covid swab",
+      "turn_id": "D-43"
+    },
+    {
+      "id": "N_016",
+      "text": "Covid-19",
+      "type": "DIAGNOSIS",
+      "evidence": "rule out covid",
+      "turn_id": "D-43"
+    },
+    {
+      "id": "N_017",
+      "text": "Sick friend / Exposure",
+      "type": "RISK_FACTOR",
+      "evidence": "one of them was a bit sick... maybe I don't know. Maybe sometimes we walk a little too close",
+      "turn_id": "P-20"
+    },
+    {
+      "id": "N_018",
+      "text": "Emerg visits",
+      "type": "MEDICAL_HISTORY",
+      "evidence": "come to emerge a couple times... twice maybe over the last like three years",
+      "turn_id": "P-5"
+    },
+    {
+      "id": "N_019",
+      "text": "Smoking history",
+      "type": "MEDICAL_HISTORY",
+      "evidence": "I used to. I smoked 1/2 pack a day for probably 20 years",
+      "turn_id": "P-40"
+    }
+  ],
+  "edges": [
+    {
+      "source_id": "N_007",
+      "target_id": "N_001",
+      "type": "TAKEN_FOR",
+      "evidence": "manageable with my puffers",
+      "turn_id": "P-1"
+    },
+    {
+      "source_id": "N_001",
+      "target_id": "N_003",
+      "type": "CAUSES",
+      "evidence": "COPD made worse by being sick",
+      "turn_id": "P-3"
+    },
+    {
+      "source_id": "N_001",
+      "target_id": "N_004",
+      "type": "CAUSES",
+      "evidence": "producing more sputum. Kind of like a green yellowy sputum",
+      "turn_id": "P-1"
+    },
+    {
+      "source_id": "N_001",
+      "target_id": "N_005",
+      "type": "CAUSES",
+      "evidence": "little bit of blood a couple times",
+      "turn_id": "P-1"
+    },
+    {
+      "source_id": "N_001",
+      "target_id": "N_006",
+      "type": "CAUSES",
+      "evidence": "It's been really hard to breathe",
+      "turn_id": "P-1"
+    },
+    {
+      "source_id": "N_001",
+      "target_id": "N_002",
+      "type": "CAUSES",
+      "evidence": "It's likely that what you have right now is COPD exacerbation",
+      "turn_id": "D-43"
+    },
+    {
+      "source_id": "N_019",
+      "target_id": "N_001",
+      "type": "RISK_FACTOR",
+      "evidence": "I smoked 1/2 pack a day for probably 20 years",
+      "turn_id": "P-40"
+    },
+    {
+      "source_id": "N_017",
+      "target_id": "N_016",
+      "type": "RISK_FACTOR",
+      "evidence": "one of them was a bit sick",
+      "turn_id": "P-20"
+    },
+    {
+      "source_id": "N_010",
+      "target_id": "N_002",
+      "type": "INDICATES",
+      "evidence": "fever last night... likely that what you have right now is COPD exacerbation",
+      "turn_id": "P-9"
+    },
+    {
+      "source_id": "N_003",
+      "target_id": "N_002",
+      "type": "INDICATES",
+      "evidence": "COPD exacerbation",
+      "turn_id": "D-43"
+    },
+    {
+      "source_id": "N_004",
+      "target_id": "N_002",
+      "type": "INDICATES",
+      "evidence": "COPD exacerbation",
+      "turn_id": "D-43"
+    },
+    {
+      "source_id": "N_011",
+      "target_id": "N_012",
+      "type": "ASSOCIATED_WITH",
+      "evidence": "pressure in the sinus area",
+      "turn_id": "P-12"
+    },
+    {
+      "source_id": "N_014",
+      "target_id": "N_010",
+      "type": "CONFIRMS",
+      "evidence": "We can now check your temperature",
+      "turn_id": "D-11"
+    },
+    {
+      "source_id": "N_009",
+      "target_id": "N_001",
+      "type": "TAKEN_FOR",
+      "evidence": "referred me to a lung doctor",
+      "turn_id": "P-8"
+    },
+    {
+      "source_id": "N_015",
+      "target_id": "N_016",
+      "type": "TAKEN_FOR",
+      "evidence": "doing a covid swab",
+      "turn_id": "D-43"
+    },
+    {
+      "source_id": "N_015",
+      "target_id": "N_016",
+      "type": "RULES_OUT",
+      "evidence": "rule out covid",
+      "turn_id": "D-43"
+    }
+  ],
+  "_usage": {
+    "prompt_tokens": 6243,
+    "completion_tokens": 15696,
+    "reasoning_tokens": 9919,
+    "cost": 0.008628375,
+    "pass1_nodes": 16,
+    "pass1_edges": 11,
+    "pass2_nodes": 19,
+    "pass2_edges": 16
+  },
+  "_meta": {
+    "method": "self_critic",
+    "pass1": {
+      "nodes": 16,
+      "edges": 11
+    },
+    "pass2": {
+      "nodes": 19,
+      "edges": 16
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer accurately cites nasal symptoms (stuffy on/off and runny for 1 week, stuffy first then mostly running), clear discharge [P-5], and explicit denials (cough [P-4], post-nasal [P-6], sore throat/SOB/fevers/chills [P-7], loss taste/smell [P-16]). Generated Answer correctly identifies stuffy (on/off) and runny nose for 1 week but inaccurately states runny was 'mostly run since the beginning' (contradicts P-3: stuffy first). Misses 'mostly clear' discharge entirely (key fact from P-5). Incorrectly claims no explicit denials for cough, sore throat, etc., despite direct 'No' responses in P-4, P-7, P-16 (significant contradictions to transcript and Gold).",
+    "completeness": "Gold key points: stuffy nose on/off [P-1,P-2], runny nose [P-1,P-2], progression stuffy first now running [P-3], clear discharge [P-5], denied cough [P-4], post-nasal [P-6], sore throat/SOB/fevers/chills [P-7], loss taste/smell [P-16]. Generated covers stuffy on/off and runny for week (~30%), partial progression (but wrong), misses clear discharge entirely, covers only post-nasal denial vaguely (~1/7 denials), no fatigue mention needed but irrelevant. Covers ~20-40% of keys.",
+    "faithfulness": "Claims about nasal symptoms mostly verifiable [P-1,P-3] but misinterprets progression as runny since beginning (P-3 says opposite). No mention of 'clear' despite direct question [D-5,P-5]. Hallucinates 'no explicit verbal denials' for cough/sore throat/etc. (directly contradicted by P-4 'No', P-7 'No', P-16 'No'); cites questions but ignores patient 'No' responses. Multiple inaccuracies and fabricated absence of denials.",
+    "relevance": "Directly structures response into 'Specific Nasal Symptoms', 'Character of Nasal Discharge', 'Explicitly Denied Symptoms' matching question components; no off-topic content, fully focused despite factual flaws."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer partially addresses nasal symptoms but has significant factual errors in discharge character (omitted), symptom progression, and denied symptoms (incorrectly claims absent), leading to low correctness, completeness, and faithfulness."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Matches the Gold Answer on the core plan: quick physical exam; send tick for species ID; order Lyme-related bloodwork/serology; start prophylactic antibiotics due to likely >72h attachment and local risk; and consult/speak with another physician. Minor inaccuracy: the Generated Answer adds that the patient was implicitly advised to continue her statin—this is not stated as part of the doctor’s plan in the transcript/Gold Answer, so it is not supported.",
+    "completeness": "Covers all key elements from the Gold Answer: (1) physical exam, (2) tick sent to lab for identification, (3) blood work for titres/serology, (4) prophylactic antibiotics without specifying agent/dose/duration, (5) plan to speak with the physician/attending, and (6) preventive garden/outdoor advice (ticks in long grass/wood-field edges; consider insecticide). No major omissions.",
+    "faithfulness": "Most statements are directly grounded in the transcript. The only notable ungrounded addition is the implied recommendation to continue the statin (patient reports taking it, but no plan/advice is given about it). Other details (e.g., deer tick as key vector) are mentioned in the transcript, though the plan is more generally to identify the tick species rather than specifically ‘look for deer tick.’ Overall, only minor extrapolation/hallucination.",
+    "relevance": "Directly answers the question and stays focused on end-of-visit plan elements (tests, treatment, consultation, prevention). The statin/cholesterol mention is a minor tangent not asked for and not part of the clinical plan for this problem."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 5,
+    "faithfulness": 4,
+    "relevance": 4
+  },
+  "average_score": 4.25,
+  "summary": "The Generated Answer is largely accurate, complete, and grounded, with a minor unsupported addition about continuing the statin and a small amount of extra inference, but it otherwise captures the full clinical plan."
+}

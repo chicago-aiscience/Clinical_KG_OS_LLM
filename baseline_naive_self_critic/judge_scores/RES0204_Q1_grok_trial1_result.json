@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly identifies only one respiratory symptom (cough) when the Gold Answer specifies two (cough and runny nose). It wrongly states that the cough nature (productive vs. non-productive) is not specified, despite clear evidence in the transcript of a dry, non-productive cough (D-5, P-5, D-6, P-6). It also denies nasal discharge despite explicit reporting (D-11, P-11, D-12, P-12). These are significant factual errors and contradictions with the Gold Answer.",
+    "completeness": "Key points from Gold Answer: (1) cough for 4-5 days, (2) dry/non-productive cough confirmed no gunk, (3) severity stayed the same, (4) runny nose for couple of days, (5) clear nasal discharge, (6) first-time dry cough and longer duration than past runny noses, (7) pertinent negatives (no sore throat, chest pain, SOB/wheeze). Generated covers only cough duration partially (~1 key point), missing 85-90% including the second symptom and all characteristics.",
+    "faithfulness": "Cough duration verifiable [P-2, P-4]; however, claim that cough nature not specified is false/hallucinated absence (contradicted by D-5/P-5 'dry cough', D-6/P-6 'no gunk'); nasal discharge denial is hallucinated absence (D-11/P-11 'runny nose', D-12/P-12 'pretty clear'); COVID swab mention is verifiable but irrelevant to symptoms and used to deny discharge. Multiple contradictions and fabricated absences.",
+    "relevance": "The answer directly focuses on respiratory symptoms, cough characteristics, and nasal discharge as asked, with no off-topic content or tangents, though incomplete and inaccurate."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer is significantly incomplete and factually inaccurate by missing the runny nose symptom and denying transcript evidence for cough nature and nasal discharge details present in the Gold Answer."
+}

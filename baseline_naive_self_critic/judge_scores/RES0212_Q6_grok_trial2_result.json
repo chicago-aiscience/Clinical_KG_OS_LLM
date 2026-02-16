@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly claims that the transcript lacks doctor turns beyond patient segments up to [P-27] and that no doctor's plan, assessment, or guidance is available. In reality, the full transcript provided includes [D-47] and [D-48], which directly contain the summary assessment (cough for a little while, bad in last three days, greenish sputum no blood, no constitutional symptoms), stated plan (review story with doctors), and implication that next steps are guided by supervising physicians' review. This is a complete factual contradiction to the Gold Answer and the source transcript, with no accurate facts matched.",
+    "completeness": "Gold Answer key points: (1) Summary assessment details from [D-47] (cough duration, recent worsening, nighttime awakening, greenish sputum no blood, absence of constitutional symptoms); (2) Plan to review story with doctors [D-47]; (3) Next steps guided by supervising physician after review; (4) No tests/treatments ordered; (5) Patient's additional comment and doctor's response [P-47, D-48]. Generated Answer covers 0% of these, instead fabricating absence of information and summarizing unrelated patient symptoms.",
+    "faithfulness": "Generated Answer hallucinates that the transcript ends at [P-27] with only patient turns and no doctor responses, which is unverifiable and false—the actual transcript extends to [D-48] with full dialogue. It cites non-existent 'Relevant Transcript Segments' and misrepresents content (e.g., greenish/yellow sputum from [P-9], not doctor assessment). All claims about missing doctor input are fabricated, with no grounding in the provided transcript.",
+    "relevance": "The Generated Answer attempts to address the question by claiming the required information is unavailable due to missing transcript parts, lists patient symptoms as context, and concludes answers cannot be extracted. However, this is based on a false premise and diverts into irrelevant excuses and partial patient history recap, failing to provide or engage with the actual doctor's statements at the consultation's end."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 2
+  },
+  "average_score": 1.25,
+  "summary": "The Generated Answer is entirely incorrect, incomplete, and unfaithful due to hallucinating the transcript's content and claiming missing information that is plainly present in [D-47] and [D-48], resulting in no coverage of the Gold Answer's key points."
+}

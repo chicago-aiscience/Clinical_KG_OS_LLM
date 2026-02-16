@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer accurately lists Ventolin and Spiriva as inhalers, Ventolin used as needed with ~10 times past week [P-11,P-12], atorvastatin [P-38], and discontinued diuretic without approval [P-35,P-36]. Generated correctly identifies inhalers (Ventolin, Spiriva), atorvastatin, and diuretic discontinuation. However, it significantly errs by claiming no specific Ventolin frequency stated (only 'increased'), directly contradicting P-12 ('almost like 10 times this past week'), and adds unneeded example 'four times a day'. Core meds correct, but key factual error on frequency warrants score 2.",
+    "completeness": "Gold key points: respiratory (Ventolin as needed/relief, Spiriva), Ventolin ~10x/week, non-resp (atorvastatin), previous diuretic discontinued without approval. Generated covers inhalers, atorvastatin, diuretic as prior non-resp and discontinued. Misses Ventolin 'as needed for relief' detail, and entirely omits the quantified 10x/week usage (claims unspecified). Covers ~60-70% (meds yes, freq no), score 3.",
+    "faithfulness": "Claims grounded except: Ventolin freq cites only [P-11] (increased use), but falsely states 'specific frequency ... not stated' despite verbatim P-12 quantification; hallucinates example 'four times a day' not in transcript; minor citation stretch [P-33] for atorva (P-38 direct). Multiple misrepresentations/hallucinations on key freq detail, score 2.",
+    "relevance": "Generated structures response directly around question parts: meds (resp/non-resp), Ventolin freq, discontinued med. Minor extraneous 'knowledge graph' mention (none provided), but perfectly focused overall, score 5."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer correctly identifies the patient's medications and discontinuation but fails by incorrectly denying the specific Ventolin usage frequency explicitly stated in the transcript."
+}

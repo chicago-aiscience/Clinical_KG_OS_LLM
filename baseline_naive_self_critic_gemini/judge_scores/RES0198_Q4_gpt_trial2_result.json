@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Core items match the Gold Answer: COVID-19 is the condition to rule out, a swab test was ordered, results expected in 48 hours, and the patient was told to isolate at home. However, the question asks what BOTH patient and doctor identified as needing to be ruled out; the Generated Answer does not explicitly note that the patient came in specifically to check for COVID-19 (it only attributes the rule-out framing to the doctor). This is more an attribution gap than a direct factual error, but it reduces accuracy relative to the Gold framing.",
+    "completeness": "Includes: COVID-19 to be ruled out, swab ordered, 48-hour turnaround, instruction to isolate at home. Missing from the Gold Answer: (1) explicit instruction “not see anyone else,” and (2) that after results the patient would receive further instructions from public health. Also does not explicitly state the patient identified COVID-19 as the concern in the way the Gold Answer highlights.",
+    "faithfulness": "All included claims are grounded in the transcript: common cold/viral infection mentioned by the doctor, COVID-19 as a consideration during the pandemic, swab today, 48 hours for results, and isolate at home. No clear hallucinations.",
+    "relevance": "Directly answers the asked components (condition to rule out, test, turnaround time, instructions). The added note about common cold is slightly extra but still contextually related and not substantially distracting."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 5,
+    "relevance": 4
+  },
+  "average_score": 4.25,
+  "summary": "The answer is largely accurate and transcript-grounded, but it omits the public health follow-up and the explicit “not see anyone else” guidance, and it doesn’t clearly state that the patient also flagged COVID-19 as the rule-out concern."
+}

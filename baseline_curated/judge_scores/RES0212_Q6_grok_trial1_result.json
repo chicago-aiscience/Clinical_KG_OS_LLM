@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer precisely quotes doctor's summary in [D-47] (cough for ~3 months worsened last 3 days, nighttime awakening, greenish sputum no blood, no constitutional symptoms) and notes plan to review story with supervising doctors, with next steps guided by their assessment post-history review. Generated correctly identifies plan to review story [D-47] but errs by diagnosing 'respiratory infection' (not stated by doctor), alters summary to include 'fatigue and potential pain' as constitutional symptoms despite doctor's explicit 'no constitutional symptoms,' misattributes fever to [D-47] (it's in [P-4], not summary), and lists specific symptoms as guiding next steps instead of overall history review by supervisor. Significant contradictions and additions not in doctor's conveyance.",
+    "completeness": "Gold key points: summary details (duration 3mo/3days, nighttime, greenish sputum no blood, no const symptoms w/links to P-5-8), plan (review story), patient addition/query [D-47/P-47], 'we'll see what we can do' [D-48], no tests/treatments, next steps by supervising MD. Generated covers plan and partial summary (worsen 3 days, sputum, sleep, no blood/const symptoms) but misses 3-month duration, patient exchange, no tests, supervising role; instead adds hallucinated diagnosis and wrong guiding info. Covers ~60% of points.",
+    "faithfulness": "Claims like plan [D-47] verifiable; summary partially grounded but 'respiratory infection,' Knowledge Graph links, fever in [D-47], 'fatigue/pain as const symptoms' not in transcript (fatigue [P-19], pain [P-3], doctor excludes const symptoms). Multiple unverifiable additions (diagnosis, KG) and mis-citations indicate hallucinations.",
+    "relevance": "Directly structures response around question's three parts (plan, summary, guiding info), stays on-topic despite inaccuracies and extraneous KG references."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.75,
+  "summary": "Generated Answer partially captures the plan and summary but introduces hallucinations like a 'respiratory infection' diagnosis, misrepresents constitutional symptoms, and inaccurately specifies guiding information, reducing overall fidelity to the Gold Answer and transcript."
+}

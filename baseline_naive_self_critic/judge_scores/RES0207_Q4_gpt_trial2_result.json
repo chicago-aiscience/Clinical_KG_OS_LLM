@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Gold Answer lists multiple specific symptoms/exposures the patient denied (chest pain, presyncope, GI symptoms, URI/COVID symptoms, sick contacts, travel, sputum) and interprets them as screening across cardiac/cardiopulmonary, infectious/URI, and GI/systemic differentials. The Generated Answer is largely incorrect: it focuses on shortness of breath and cough (which the patient *confirmed*, not denied), and it introduces an unsupported claim that the patient “denied the relationship” between seizure/missed meds and respiratory symptoms (the patient said they didn’t know if it was related, not a denial, and it wasn’t framed as an exposure screen). It also incorrectly implies dyspnea/cough were the negative findings being used to address differentials, which contradicts the question and the transcript.",
+    "completeness": "It misses essentially all key negative screens in the Gold Answer: no chest pain, no feeling faint, no nausea/vomiting, no abdominal pain, no diarrhea, no sick contacts, no travel, no loss of taste/smell, no sore throat, no runny nose, and the dry (no sputum) cough characterization. It also omits the ‘no prior similar episodes’ point. Differential framing is also incomplete (does not mention GI/systemic screening and ignores the broader infectious risk-factor screening).",
+    "faithfulness": "Several statements are not well-grounded in the transcript: portraying the seizure/missed medication as a “precipitating exposure” the doctor screened for, and stating the patient “denied the relationship” between seizure and respiratory symptoms. The transcript only shows uncertainty (“I don’t know if that’s related”). Additionally, it mischaracterizes confirmed symptoms (dyspnea/cough) as if they were denial-based screening outcomes. Overall, multiple inaccuracies and interpretive leaps reduce faithfulness.",
+    "relevance": "The question asks which *denied* symptoms/exposures were screened and what differential categories those negatives address. The Generated Answer largely does not provide the requested list of denied items and gives only a vague, incomplete differential discussion. It is only partially on-topic."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 2
+  },
+  "average_score": 1.5,
+  "summary": "The Generated Answer is largely incorrect and incomplete, missing nearly all denied symptom/exposure screens and introducing unsupported interpretations, with only limited relevance to the asked screening/differential mapping."
+}

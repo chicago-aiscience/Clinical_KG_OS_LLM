@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer details specific evidence like clear discharge [P-5], one-week duration [P-2], symptom progression [P-3], absent features (no cough [P-4], no post-nasal drip [P-6]), no allergies/exposures [P-22, P-28], nephew in daycare [P-11], and contrasts with allergic/bacterial causes. Generated Answer correctly notes doctor's conclusion [D-39], some absent features (sore throat, fevers [P-7], headaches [P-14]), and symptoms (stuffy/runny nose), but introduces factual error with non-existent 'knowledge graph', omits discharge quality, duration, progression, allergic/bacterial differentiators explicitly, and misframes pandemic as 'high-exposure environment'. Some factual errors but main point of viral via symptoms/absences partially aligns.",
+    "completeness": "Gold key points: (1) symptom type w/o lower/systemic (no cough, sore throat etc., no post-nasal); (2) clear discharge; (3) 1-week duration/constant; (4) progression; (5) vs allergic (no exposures/allergies/priors); (6) vs bacterial (no fever/headache/clear discharge); (7) daycare exposure. Generated covers conclusion, partial symptom type/absences (sore throat/fevers/headaches, but misses cough/post-nasal), runny drainage vaguely; misses discharge quality, duration, progression, all vs allergic points, daycare, vs bacterial specifics. Covers ~30-40% of key points.",
+    "faithfulness": "Claims like symptoms (stuffy/runny [P-3]), conclusion [D-39], absences (sore throat/fevers [D-7/P-7], headaches [D-14], taste/smell [D-16]), pandemic/COVID [D-39] verifiable in transcript. However, 'associated with viral illness in the provided knowledge graph [Knowledge Graph]' is hallucinated (no KG in transcript); 'high-exposure environment' interpretive but loosely from pandemic context. Some hallucinated claims (KG) but most grounded.",
+    "relevance": "Question focuses on symptom characteristics (type/duration/discharge/absent features) and exposure history differentiating viral vs allergic/bacterial. Generated addresses some symptoms/absences and conclusion, but omits duration/discharge/exposures/allergic-bacterial contrasts, adds irrelevant KG and pandemic exposure framing; partially on-topic with tangents."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 2,
+    "faithfulness": 3,
+    "relevance": 3
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer partially captures absent features and conclusion supporting viral diagnosis but misses key symptom details, differentiators against allergic/bacterial causes, and exposure history while introducing a hallucinated knowledge graph reference."
+}

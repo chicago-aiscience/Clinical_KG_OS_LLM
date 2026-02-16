@@ -1,0 +1,104 @@
+{
+  "nodes": [
+    {
+      "id": "N_001",
+      "text": "loss of sense of smell",
+      "type": "SYMPTOM",
+      "evidence": "can't smell things as well",
+      "turn_id": "P-1"
+    },
+    {
+      "id": "N_002",
+      "text": "loss of sense of taste",
+      "type": "SYMPTOM",
+      "evidence": "lost my sense of taste",
+      "turn_id": "P-1"
+    },
+    {
+      "id": "N_003",
+      "text": "mild dry cough",
+      "type": "SYMPTOM",
+      "evidence": "have this mild dry cough",
+      "turn_id": "P-1"
+    },
+    {
+      "id": "N_004",
+      "text": "suspected COVID-19",
+      "type": "HYPOTHESIS",
+      "evidence": "your symptoms are consistent with some common covid symptoms",
+      "turn_id": "D-39"
+    },
+    {
+      "id": "N_005",
+      "text": "COVID-19 test",
+      "type": "INTERVENTION",
+      "evidence": "get you a covid test",
+      "turn_id": "D-39"
+    },
+    {
+      "id": "N_006",
+      "text": "self-isolation",
+      "type": "RECOMMENDATION",
+      "evidence": "You definitely have to self isolate",
+      "turn_id": "D-39"
+    }
+  ],
+  "edges": [
+    {
+      "source_id": "N_001",
+      "target_id": "N_004",
+      "type": "INDICATES",
+      "evidence": "your symptoms are consistent with some common covid symptoms",
+      "turn_id": "D-39"
+    },
+    {
+      "source_id": "N_002",
+      "target_id": "N_004",
+      "type": "INDICATES",
+      "evidence": "your symptoms are consistent with some common covid symptoms",
+      "turn_id": "D-39"
+    },
+    {
+      "source_id": "N_003",
+      "target_id": "N_004",
+      "type": "INDICATES",
+      "evidence": "your symptoms are consistent with some common covid symptoms",
+      "turn_id": "D-39"
+    },
+    {
+      "source_id": "N_005",
+      "target_id": "N_004",
+      "type": "TESTED_FOR",
+      "evidence": "get you a covid test just because your symptoms are consistent",
+      "turn_id": "D-39"
+    },
+    {
+      "source_id": "N_006",
+      "target_id": "N_004",
+      "type": "REQUIRED_FOR",
+      "evidence": "You definitely have to self isolate",
+      "turn_id": "D-39"
+    }
+  ],
+  "_usage": {
+    "prompt_tokens": 4137,
+    "completion_tokens": 9259,
+    "reasoning_tokens": 7201,
+    "cost": 0.0039712600000127996,
+    "pass1_nodes": 5,
+    "pass1_edges": 4,
+    "pass2_nodes": 6,
+    "pass2_edges": 5
+  },
+  "_meta": {
+    "method": "self_critic",
+    "pass1": {
+      "nodes": 5,
+      "edges": 4
+    },
+    "pass2": {
+      "nodes": 6,
+      "edges": 5
+    }
+  }
+}

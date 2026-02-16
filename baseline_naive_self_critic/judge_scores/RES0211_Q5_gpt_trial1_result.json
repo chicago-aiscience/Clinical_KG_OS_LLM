@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer contains multiple major factual errors relative to the Gold Answer. It incorrectly states the transcript “explicitly contradicts” that Jessica lives on a farm; in fact, she answers “Yeah” to living on a farm [P-43] and clarifies only that it’s “not like an animal farm” (i.e., not livestock/agricultural animal exposure) [P-48]. It also incorrectly claims the transcript does not contain family history of father’s allergies, cousin’s asthma, and brother’s recent cold—these are clearly present at [P-33], [P-30], and [P-39] (with timing summarized by the doctor at [D-58]). Finally, it incorrectly concludes symptoms are consistent with seasonal allergies, whereas the Gold Answer emphasizes her allergy season has not started yet [P-16, P-17] and that the brother’s cold is the most plausible viral exposure source in an otherwise isolated household setting.",
+    "completeness": "Key Gold Answer points missed or contradicted include: (1) family history: father allergies and cousin asthma (missed/denied), (2) Jessica’s allergy season not yet started and this episode likely differs from her usual allergies (missed; instead attributes symptoms to allergies), (3) brother’s cold as likely exposure (missed/denied), (4) the household’s relative isolation due to COVID home-schooling/working from home and no travel/rarely leaving the house, supporting intra-household transmission (not integrated), and (5) clarification that farm setting exists but animal exposure is limited to a dog, reducing animal-related exposure concern (misrepresented as “not a farm”). Overall it covers only the general symptom description and mentions allergies/Claritin, but fails to capture the main explanatory synthesis in the Gold Answer.",
+    "faithfulness": "The answer is not grounded in the transcript at several points. It hallucinates “missing information” that is actually explicitly present (father allergies [P-33], cousin asthma [P-30], brother cold [P-39]). It also misreads [P-48] to claim she does not live on a farm, contradicting [P-43]. Because these are central claims, the response demonstrates substantial unfaithfulness to the provided source.",
+    "relevance": "The response attempts to address how family history, exposure history, and living situation relate to current URI symptoms, so it is on-topic. However, it largely derails by denying the presence of the key factors asked about and by drawing the wrong clinical connection (allergies rather than likely viral exposure), reducing its practical relevance to the question."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 3
+  },
+  "average_score": 1.5,
+  "summary": "The Generated Answer is on-topic but contains multiple major contradictions to the transcript and Gold Answer, omitting or denying key documented exposures and family history and incorrectly attributing symptoms primarily to allergies."
+}

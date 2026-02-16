@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer lists endorsed symptoms including worsening cough (with exertion trigger), increased SOB (severity details), sputum change (clear-to-white to yellow), chest discomfort, chills (no measured fever). Generated correctly captures SOB, worsening cough, sputum change (minor phrasing discrepancy: 'clear to yellow/white' vs precise 'clear to white'), discomfort. However, misses chills entirely. Critically, Generated falsely states no explicit denials for key symptoms like orthopnea [P-9], PND [P-10], hemoptysis [P-7], palpitations [P-14], fever (no measurement [P-30]), contradicting Gold and transcript which has numerous pertinent negatives. Significant factual errors.",
+    "completeness": "Gold key points covered: worsening cough [partial, misses exertion detail], SOB [partial], sputum change [yes], chest discomfort [yes]; missed: chills, precise SOB severity/exertion, full list of ~20 denies (orthopnea, PND, hemoptysis, palpitations, fever implied, calf pain, etc.). Generated covers main respiratory positives and sputum (~4/25+ points), misses chills and all denies. Covers 20-49%.",
+    "faithfulness": "Claims on SOB, cough, sputum [P-1,3,5,6,8,13], discomfort verifiable. Sputum 'darker yellow' interpretive but grounded ('more yellow'). However, assertion 'no specific explicit denials' for listed symptoms is false/hallucinated - transcript has direct 'No' responses [P-7,9,10,14, etc.]; misses chills [P-29] but doesn't fabricate. Multiple ungrounded/misstated claims about denies.",
+    "relevance": "Generated directly structures response around endorsed respiratory symptoms, sputum change, and denied symptoms, mirroring question's request for respiratory/systemic endorsed, sputum baseline change, and specific denies (e.g., orthopnea, PND, etc.). No off-topic content, fully focused despite errors."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer accurately covers main respiratory symptoms and sputum change but misses chills and all pertinent negatives, incorrectly claiming no explicit denials in the transcript."
+}

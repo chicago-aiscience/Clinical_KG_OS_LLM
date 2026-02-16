@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies sore throat starting ~4 days prior with difficulty swallowing solid food and that the patient felt tired with muscle aches. However, it has major factual errors versus the Gold Answer/transcript: (1) It omits the patient’s key symptom of difficulty breathing that began yesterday, is constant, and worsening ([P-7]–[P-11]). (2) It omits the reduced sense of taste starting ~2 days ago and constant ([P-19]–[P-21]). (3) It incorrectly implies the patient did not explicitly deny cough/runny nose/headache/chest pain/fever—these were explicitly denied ([P-15]–[P-18], [P-23]). (4) It lists “Loss of Smell” under ‘Reported Symptoms’ rather than as a denied symptom; while it later treats it as a denial, the categorization is internally inconsistent and not aligned with the question framing.",
+    "completeness": "Key reported symptoms in Gold: sore throat with worsening and dysphagia (PARTIALLY covered: onset and dysphagia covered; worsening and ‘fluids ok’ not included), difficulty breathing (MISSED), reduced taste (MISSED), fatigue + muscle aches (covered). Key explicit denials in Gold: cough, runny nose, headaches, chest pain, loss of smell, fever, chills/night sweats (only loss of smell captured; all others missed/incorrectly negated). Additional Gold negatives (sick contacts, travel) not included (also not asked by user). Overall coverage is well under 50% of Gold’s key points.",
+    "faithfulness": "Most quoted snippets (e.g., sore throat, muscle aches, ‘not smell’) are present in the transcript. However, the answer makes multiple claims that contradict the transcript, notably stating the patient did not explicitly deny cough/runny nose/fever/headache/chest pain despite direct denials in [P-15]–[P-18], [P-23]. It also fails to reflect clearly documented symptoms (dyspnea, taste change), which undermines grounding. No clear hallucinated new symptoms, but multiple contradictions to the source.",
+    "relevance": "The response is generally aimed at listing reported symptoms and explicit denials, which matches the question. There is minor extraneous phrasing (“Based on the clinical documentation expert role”), but the main content stays on-topic."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The answer is on-topic but misses major reported symptoms and wrongly claims several explicitly denied symptoms were not denied, leading to low correctness, completeness, and faithfulness."
+}

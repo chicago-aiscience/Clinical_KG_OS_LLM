@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer specifies stuffy nose first 'just before' fever, sore throat around fever onset, fever for 3 days, muscle aches concurrent with fever (2-3 days); husband symptoms for past week (~4 days before patient's fever), staggered onset. Generated correctly identifies stuffy nose first, fever next (3 days), sore throat concurrent (minor order discrepancy as Gold places it before fever), muscle aches later but timed correctly; however, erroneously includes 'rash' as a current symptom citing [P-38] which is actually an allergy reaction to penicillin, not part of the illness—a significant factual error and contradiction with Gold (no rash mentioned) and transcript (rash denied in [P-12]). Husband comparison is basically accurate but lacks precision on 4-day gap. Overall, significant errors due to hallucinated rash.",
+    "completeness": "Gold key points: (1) stuffy nose first just before fever with citations; (2) sore throat next/around fever onset, ongoing; (3) fever 3 days, progression confirmed; (4) muscle aches concurrent 2-3 days; (5) husband past week (~4 days prior), similar/ongoing, staggered household transmission noted by doctor. Generated covers stuffy nose first, fever 3 days, sore throat concurrent, muscle aches timed, husband past week preceding patient's; misses detailed confirmations [D-2/P-2 etc.], exact 4-day calculation, transmission context [D-53]; adds extraneous wrong rash. Covers ~60-70% of key points.",
+    "faithfulness": "Claims for stuffy nose [P-1], fever [P-1], sore throat [P-1], muscle ache [P-13/P-14], husband [P-19] verifiable in transcript; however, 'rash' [P-38] is misattributed as current symptom (it's penicillin allergy history, patient denied rashes [P-12]); sore throat listed after fever despite P-1 phrasing but plausible; no other fabrications but rash is clear hallucination/misinterpretation. Multiple issues with one major hallucinated fact.",
+    "relevance": "Generated directly structures response around chronological symptom progression (numbered list) and husband timeline comparison, perfectly matching question focus; minor irrelevance in including wrong rash but overall highly on-topic."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer is mostly structured correctly and relevant but undermined by a significant hallucination of a 'rash' as a current symptom and minor discrepancies in sore throat timing and completeness of timeline details."
+}

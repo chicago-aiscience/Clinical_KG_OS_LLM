@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Gold Answer states the patient identified a specific potential exposure: hiking with their partner two weeks prior, during which strangers “kind of brushed by us” (P-18), with the hike being about 30 minutes away (P-19). The Generated Answer incorrectly claims the patient did not identify any specific potential exposure event. It also overemphasizes that suspicion is based only on symptoms, whereas the transcript includes an exposure history element (even if limited).",
+    "completeness": "Key Gold Answer points missed: (1) hiking with partner ~2 weeks prior (P-18), (2) strangers brushed by them (P-18) as potential close contact, (3) location close by (~30 minutes away) (P-19), (4) patient largely staying home/online school context (P-36–P-38) as framing for why this is notable, (5) denial of known sick contacts (P-17) and lack of other exposures (“don’t see where else…”) (P-18). The Generated Answer only mentions symptoms and that testing/self-isolation was recommended, omitting essentially all exposure-history specifics asked in the question.",
+    "faithfulness": "The central claim (“did not explicitly identify a specific potential exposure event”) is contradicted by the transcript (P-18, P-19). It also references a “knowledge graph,” which is not part of the provided transcript, adding an unverifiable element. While the mention that symptoms prompted testing/self-isolation is grounded (D-39), the exposure-history statements are not faithful to the source.",
+    "relevance": "The response is structured to address the question (exposure event + connection to suspected COVID-19), but it fails to provide the specific exposure event requested and instead diverts to symptoms-only reasoning. Thus it is only partially responsive to what was asked."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 1.75,
+  "summary": "The Generated Answer misses and contradicts the transcript’s identified exposure (hiking with close pass-by contact) and is therefore largely incorrect, incomplete, and only partially grounded despite remaining generally on-topic."
+}

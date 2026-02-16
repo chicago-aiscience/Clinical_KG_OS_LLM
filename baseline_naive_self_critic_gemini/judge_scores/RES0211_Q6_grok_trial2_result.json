@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer fails to accurately recap the specific key clinical findings from the doctor's summary in D-58, which include: 3-4 day dry cough with fever and headache, no sputum, limited recent contacts sick (brother 2 weeks ago), no asthma, and only Claritin as medication; instead, it lists general early symptoms (e.g., scratchy throat, post-nasal drip from allergies), includes irrelevant details like birth control, and incorrectly states Jessica's goal as seeking attention from family doctor (P-22), contradicting her explicit goal in P-60 about needing medicine; this results in factual inaccuracies and contradictions with the Gold Answer.",
+    "completeness": "Gold Answer key points: doctor's 5 recaps from D-58 (duration/symptoms, no sputum, contacts, no asthma, Claritin only), visit purpose as next steps, Jessica's goal (know if needs medicine, P-60), and desire to rest (P-61); Generated covers 0% of these precisely, partially echoes some symptoms but not as recapped and misses goal entirely.",
+    "faithfulness": "Generated cites transcript snippets (e.g., P-1, P-7, P-18 for symptoms; P-25/26 for meds) but misapplies them outside the doctor's end-summary (D-58); introduces unverifiable '[KG]' (knowledge graph) not in transcript; post-nasal drip [P-18] refers to past allergies, not current; birth control irrelevant to summary; goal from P-22 is distorted and not about next steps; multiple misinterpretations and off-context claims.",
+    "relevance": "Question focuses narrowly on doctor's end-summary findings (D-58) and Jessica's next-steps goal (P-60); Generated provides general symptom/history summary from early transcript and vague/irrelevant goal, largely ignoring the specified recap and primary goal."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 2
+  },
+  "average_score": 1.5,
+  "summary": "The Generated Answer is largely incorrect, incomplete, and off-target, failing to address the doctor's specific end-of-visit summary or Jessica's stated goal for next steps."
+}

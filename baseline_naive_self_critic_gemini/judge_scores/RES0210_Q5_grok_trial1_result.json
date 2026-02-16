@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer accurately details all three risk factors with citations and their relations to symptoms (smoking impairs clearance, risks COPD/cancer; occupational mitigated but possible exposure; family predisposition), noting hemoptysis and need for malignancy vigilance. Generated Answer correctly notes smoking pack-a-day [P-37] and family history [P-42] but omits smoking start at age 15 [P-38]; critically, it falsely claims no occupational info in transcript despite clear evidence [P-33, P-34], contradicting Gold and transcript. Relations are partial (smoking irritant, family elevates cancer risk) but lack mechanisms, hemoptysis, and occupational link. Significant contradictions on occupational history.",
+    "completeness": "Gold covers: smoking details/citation/effects; occupational details/citation/mitigation; family details/citation/predisposition; collective acute infection vs malignancy vigilance with hemoptysis. Generated covers smoking (partial, misses age), family (full), occupational (none, denies existence), partial relations (no mechanisms, no hemoptysis, no occupational). Misses ~60% including full smoking detail, entire occupational, detailed mechanisms, hemoptysis vigilance.",
+    "faithfulness": "Transcript verifies smoking [P-37,38], occupational [P-33,34], family [P-42], symptoms. Generated citations accurate for covered parts but hallucinates absence of occupational history (directly in [P-33,34]); introduces unverifiable 'knowledge graph' and 'clinical documentation expert analysis' not in transcript; plausible but stretched cancer link from chest pain without hemoptysis mention. Multiple hallucinations/misreads.",
+    "relevance": "Question requires relating all three specified risk factors (smoking from 15, chemical plant job, grandpa lung ca) to presentation and elicited details. Generated addresses presentation/symptoms well, elicits details for two factors accurately (partial for smoking), relates them somewhat, but ignores/denies third factor central to question and adds extraneous 'knowledge graph'/presentation summary; partially on-topic but incomplete."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "Generated Answer has significant factual errors by denying the occupational history in the transcript, incomplete coverage of risk factors and relations, faithfulness issues from hallucination, and only partial relevance to the full question."
+}

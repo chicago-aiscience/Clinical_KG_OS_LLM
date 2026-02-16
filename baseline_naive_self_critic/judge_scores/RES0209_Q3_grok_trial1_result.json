@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Generated Answer correctly identifies classic asthma symptoms (dry cough [P-1], SOB [P-1], wheezing [P-15]) matching Gold, bronchodilator relief [P-1], and triggers [P-9, P-11], but inaccurately states chest tightness is not in transcript (it is at P-20), vaguely describes bronchodilator increase without citing precise escalation from once every two weeks to 5-6x/week [P-8], omits wheezing frequency > use [P-17], and adds unsubstantiated 'Knowledge Graph'; core conclusion aligns but minor factual discrepancies exist.",
+    "completeness": "Gold key points: symptoms (dry cough P-1/14, SOB P-1/19, wheezing P-15, chest tightness P-20), diagnosis age 8 (P-2/D-3), bronchodilator helps/precise increase (P-1/P-8), wheezing > use (P-17), triggers (P-9/11), no infection signs (P-14/21-28). Generated covers symptoms (partial, misses chest tightness cite), vague increase, triggers; misses precise frequency, wheezing > use, diagnosis age/history details, infection screening (critical for vs new condition), med adjustment. Covers ~60% of key points.",
+    "faithfulness": "Claims mostly grounded: symptoms cited accurately from transcript. However, 'Knowledge Graph' fully hallucinated/not in transcript; chest tightness wrongly claimed absent (present P-20); bronchodilator escalation vaguely referenced without key P-8 cite, plausible but imprecise; family history [P-32] verifiable but peripheral. Some unverifiable/hallucinated elements.",
+    "relevance": "Directly addresses question by linking specified symptoms and bronchodilator increase to worsening asthma vs new condition; structured evidence supports conclusion with minimal off-topic (family history, Knowledge Graph minor)."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 3,
+    "relevance": 4
+  },
+  "average_score": 3.5,
+  "summary": "The Generated Answer is mostly correct and relevant but incomplete in covering key Gold points like precise bronchodilator escalation and infection ruling-out, with some hallucinations reducing faithfulness."
+}

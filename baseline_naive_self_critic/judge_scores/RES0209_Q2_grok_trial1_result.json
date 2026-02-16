@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer identifies the bronchodilator (rescue inhaler) as the sole medication, administered via 'puffer', used as-needed, with explicit denials of other meds and direct quote from doctor about daily med. Generated correctly identifies bronchodilator as only med, as-needed/rescue, administered as inhaler (synonymous with puffer), and doctor asking about daily controller which patient lacks. Minor discrepancies: cites P-1 for 'inhaler' (actual confirmation at P-7/D-7), assumes 'controller inhaler' (transcript says 'one that you take every day no matter what', not specifying inhaler), omits explicit other med denials; core facts match.",
+    "completeness": "Gold key points: bronchodilator/rescue inhaler as only med (as-needed), via puffer, no other meds, doctor asked about 'every day no matter what' daily controller (patient no), restatements. Generated covers: bronchodilator only, inhaler admin, as-needed acute relief, doctor asked about daily controller med/inhaler (no). Misses: exact 'puffer', explicit no other meds (P-6/P-30), direct quote phrasing, clinical sig. Covers ~85% core points.",
+    "faithfulness": "Claims grounded: bronchodilator (P-1+), helps/using a lot (P-1), increased post-exercise/cold (P-9), sole reliance on rescue (multiple). Citation P-1 for inhaler approximate (puffer at D-7/P-7). 'Doctor likely asked' understates direct ask (D-5), 'controller inhaler' plausible but not verbatim (daily med unspecified type), no major fabrications but some added specificity/plausibility.",
+    "relevance": "Directly answers question parts: only med (bronchodilator), admin (inhaler), daily controller type asked about/ lacks (controller med/inhaler). Extra details on usage/triggers contextually related, no off-topic content."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 3,
+    "relevance": 5
+  },
+  "average_score": 4.0,
+  "summary": "The Generated Answer is mostly accurate and relevant but has minor citation issues, added assumptions about inhaler types, and omits some confirmatory details from the Gold Answer."
+}

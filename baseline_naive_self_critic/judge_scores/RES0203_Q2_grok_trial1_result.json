@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Generated Answer correctly states patient tried no prior treatments or medications, aligning with Gold and transcript [D-9, P-9; D-24, P-24], though it cites [P-1] inaccurately instead of direct quotes. Doctor's recommendation of COVID-19 test via swab matches Gold [D-39], but adds 'nasal' not specified in transcript (minor discrepancy). Instructions on timing and self-isolation are fully consistent. No major errors, core facts match.",
+    "completeness": "Key points covered: no prior treatments (partial citation), COVID test/swab, results 1-2 days, self-isolation until results and potentially longer if negative/symptoms persist. Missed: explicit no regular medications [D-24, P-24], no medication prescribed, possible other tests, and consultation with supervising doctor [D-40]. Covers ~85% of Gold key points.",
+    "faithfulness": "Most claims verifiable: no prior tx [D-9/P-9], test/swab [D-39], instructions [D-39]. Citation [P-1] incorrect for prior tx (should be D-9/P-9). 'Nasal swab' not in transcript (plausible but added). '[Knowledge Graph]' reference is hallucinated as no KG in input/transcript. Minor unverifiable details.",
+    "relevance": "Answer directly structured around prior treatments and doctor's recommendations/intervention/instructions, perfectly matching question with no off-topic content."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 3,
+    "relevance": 5
+  },
+  "average_score": 4.0,
+  "summary": "The Generated Answer is mostly accurate and relevant but has minor citation errors, a small hallucination ('nasal swab' and 'Knowledge Graph'), and misses some Gold details like additional tests and no regular meds."
+}

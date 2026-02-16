@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly states that the patient had nasal congestion/runny nose for ~1 week and that the doctor concluded this was most likely a viral URI/common cold (supported by [P-1], [P-2], [D-39]). It also correctly notes supportive care/OTC treatment was recommended and COVID testing was planned due to the pandemic context ([D-39]). However, it over-relies on vague “clinical correlation” and does not accurately distinguish viral vs allergic vs bacterial using the specific discriminating features emphasized in the Gold Answer (e.g., clear discharge, lack of fever/cough). It also uses the initial “on and off” phrasing [P-1] as supportive, while the history later clarifies symptoms were “pretty constant” [P-8] (not a major contradiction, but a mild inaccuracy in emphasis).",
+    "completeness": "Major Gold Answer elements are missing. The Generated Answer does not mention: clear nasal discharge/no colored discharge ([P-5]); absence of cough ([P-4]), sore throat/SOB/fever/chills ([P-7]), post-nasal drip ([P-6]); lack of headache ([P-14]); exposure history arguing against allergies (no dust/fumes/animals [P-22], no known allergies [P-28]); lack of prior similar recent episodes ([P-9]); or daycare exposure context ([P-11]). It only partially covers duration and general symptom type, so it captures well under half of the Gold Answer’s supporting evidence.",
+    "faithfulness": "Most statements are grounded in the transcript (symptoms for a week, doctor calling it viral/common cold, supportive care/OTC meds, COVID swab). Minor issues: it references a “knowledge graph” (not in the transcript) and implies allergies were “discussed but not fully confirmed,” which is vague and not tied to the specific negative allergy/exposure history actually documented. No major fabricated clinical facts, but several key claims are non-specific or not directly supported.",
+    "relevance": "The response is generally on-topic (why viral rather than allergic/bacterial) but does not directly answer the question with the specific symptom characteristics (discharge quality, absent features) and exposure history that support the viral conclusion, and it barely addresses why allergic or bacterial causes are less likely. Thus it is only partially responsive to the prompt."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 2,
+    "faithfulness": 4,
+    "relevance": 3
+  },
+  "average_score": 3.25,
+  "summary": "The answer is mostly factually consistent with the transcript but omits most of the key discriminating evidence (clear discharge, absence of systemic/lower respiratory symptoms, allergy/exposure negatives) needed to justify viral over allergic/bacterial causes."
+}

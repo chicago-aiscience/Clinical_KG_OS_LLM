@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer accurately details all three risk factors with citations: smoking (pack/day since age 15 [P-37,P-38]), occupational (consultant at chemical plant in Sarnia, engineering side, safe practices [P-33,P-34]), family (grandpa lung cancer, big smoker [P-42]). Generated misses smoking start age, completely denies occupational details exist in transcript (direct contradiction, as they are in [P-33,P-34]), partially covers family. Relations in Generated overemphasize malignancy without Gold's balanced infection focus or occupational mitigation, omitting hemoptysis link. Significant contradictions and omissions.",
+    "completeness": "Gold covers: full smoking details and predispositions (infection, COPD, cancer); full occupational details and mitigated risk; full family and genetic risk; collective relation (infection likely but malignancy vigilance). Generated: partial smoking (misses age 15), full family, zero occupational, partial relations (smoking irritation, family cancer risk, ignores infection/COPD/hemoptysis/occupational). Covers ~30-40% of key points.",
+    "faithfulness": "Generated citations accurate where used (e.g., [P-37],[P-42]). Presentation claims verifiable. But falsely claims no occupational info in transcript (hallucination/misreading, directly contradicts [P-33,P-34]). Adds ungrounded 'knowledge graph' and 'clinical documentation expert analysis'. Misses verifiable hemoptysis [P-4,P-6]. Multiple unverifiable/erroneous claims.",
+    "relevance": "Directly structures around risk factors' elicitation and relation to presentation as questioned, includes presentation details relevant to respiratory symptoms. Minor tangent in detailed symptom list, but occupational denial still attempts to address it. Mostly on-topic."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer has significant factual errors, particularly denying the transcript contains occupational details, leading to incomplete coverage and low faithfulness despite reasonable relevance."
+}

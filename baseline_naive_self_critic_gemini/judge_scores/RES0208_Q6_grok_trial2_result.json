@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer contradicts the Gold Answer and transcript by claiming no diagnostic tests (chest X-ray and COVID swab) were ordered [D-37], no self-isolation instructions were given [D-37], and no timeline for results [D-37], while only partially acknowledging the physical exam. These are major factual errors as the Gold Answer accurately extracts all these from [D-37]. Core facts are missed or denied.",
+    "completeness": "Key points from Gold Answer: physical exam of chest [D-37], chest X-ray [D-37], COVID swab [D-37], self-isolation from everyone including wife [D-37], 24-48 hour timeline with public health nurse follow-up [D-37], disposition based on results [D-37]. Generated covers only physical exam (~10-20%), misses all tests, isolation, timeline, and criteria details.",
+    "faithfulness": "Claims of no tests ordered, no self-isolation, no timeline are not verifiable and directly contradicted by [D-37]; physical exam citation [D-38] is accurate but incomplete as [D-37] also mentions chest exam. Multiple hallucinated absences of explicit transcript content.",
+    "relevance": "The Generated Answer is structured directly around the question's components (tests, phys exam, isolation, timeline, criteria) with no off-topic content, perfectly addressing the query structure despite inaccuracies."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 5
+  },
+  "average_score": 2.0,
+  "summary": "The Generated Answer is highly inaccurate, incomplete, and unfaithful by denying key elements of the management plan explicitly stated in the transcript and Gold Answer, despite being structurally relevant."
+}

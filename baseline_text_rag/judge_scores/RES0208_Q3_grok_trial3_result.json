@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Step-by-step: Gold Answer specifies 'fevers and fatigue and muscle aches' strictly for general infectious process. Generated includes 'difficulty breathing' here, contradicting Gold's categorization where it is part of additional COVID-concerning symptoms. Gold lists additional as 'difficulty breathing' + 'sore throat and cough'; Generated omits 'difficulty breathing' from additional and only lists 'sore throat and cough'. This represents significant discrepancies in symptom attribution matching Gold's analysis of D-36.",
+    "completeness": "Gold key points: (1) general infectious - fevers, fatigue, muscle aches (fully covered); (2) additional distinct for COVID - difficulty breathing, sore throat, cough (partially: sore throat and cough covered, difficulty breathing missed and misgrouped); (3) notes that taste/smell not cited in assessment, respiratory focus (not covered). Covers ~70% of core symptom points but misses key separation and inclusion of difficulty breathing in additional. Score 3 (50-79%).",
+    "faithfulness": "All symptoms (fevers from P-4, fatigue from P-1/P-2, muscle aches from P-20, difficulty breathing from P-1/P-3, sore throat from P-9, cough from P-7/P-8) verifiable in transcript and cited in D-36 summary. Citation to D-36 accurate. Minor interpretive stretch claiming 'difficulty breathing' as part of 'general infectious process' since transcript structures it post-comma as 'and then the difficulty breathing... and then sore throat and cough', but no outright hallucination. Score 4.",
+    "relevance": "Generated Answer directly structures response around the two categories from the question (general infectious symptoms and additional for COVID), cites D-36, and focuses on doctor's assessment without tangents. Perfectly on-topic. Score 5."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 4,
+    "relevance": 5
+  },
+  "average_score": 3.5,
+  "summary": "The Generated Answer covers most symptoms cited by the doctor but inaccurately categorizes difficulty breathing as part of the general infectious process rather than an additional COVID concern, reducing correctness and completeness."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the mother-reported symptoms at/around presentation (wheezing, shortness of breath, slight cough, and difficulty taking deep breaths) and correctly notes that cough appeared later than wheeze based on “and now she has a slight cough” [P-1]. However, it is not fully accurate about the *earliest* symptoms: when specifically asked what was noticed first at onset, the mother reported **both** wheezing **and** difficulty taking deep breaths [P-2]. The Generated Answer states only wheezing as the earliest symptom, which contradicts/omits part of the onset description.",
+    "completeness": "Key Gold Answer points covered: wheezing, shortness of breath, slight cough; includes difficulty taking deep breaths (as a symptom).\nKey points missed or under-covered relative to Gold: does not state that **difficulty taking deep breaths** was also among the *earliest* symptoms at onset [P-2]; does not mention exertional “quite out of breath” with activity [P-3] or “hard time catching her breath” during episodes [P-32] (both respiratory descriptors included in the Gold Answer’s presentation summary). It also omits non-productive cough detail [P-31], though this is less central to the question.",
+    "faithfulness": "All symptoms the Generated Answer mentions are supported by the transcript ([P-1] and [P-2]). No clear hallucinated symptoms or unsupported claims are introduced. The only issue is omission/mischaracterization (earliest symptoms), not fabrication.",
+    "relevance": "The response stays focused on the respiratory symptoms reported and attempts to identify which came first, directly addressing the question without notable tangents."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 5,
+    "relevance": 5
+  },
+  "average_score": 4.0,
+  "summary": "Mostly transcript-grounded and relevant, but it incompletely/incorrectly identifies the earliest symptoms by naming only wheezing instead of wheezing plus difficulty taking deep breaths."
+}

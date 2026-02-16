@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly claims that the transcript only includes patient statements from [P-1] to [P-26] with no doctor's dialogue or concluding remarks, which is false as the full transcript includes extensive doctor dialogue up to [D-33]; it completely misses the stated plan from [D-33] (passing information to another doctor), contradicts the Gold Answer on key details like full smoking history (down from 10 to 5 cigarettes), symptom nuances (1.5 weeks duration, rest/alone/distraction relief, not worse with exercise), and pertinent negatives (no trauma, fevers, asthma, etc.), covering only partial facts.",
+    "completeness": "Misses the entire plan (relay to another doctor, no investigations/prescriptions/diagnoses); covers partially symptoms (sharp on deep breath, 20 min), OTC failures, stress, partial smoking/family/anxiety history (~25-30% of Gold's 5 key categories), but omits duration, triggers/relievers, most negatives, psychosocial details (thesis stress, living alone), and meds.",
+    "faithfulness": "Falsely hallucinates transcript limitations (only patient [P-1]-[P-26], no doctor remarks), ignoring [D-33] and all [D-#] utterances; patient citations ([P-1],[P-3],[P-6],[P-8],[P-13],[P-14],[P-20],[P-21]) are accurate but incomplete/selective; adds ungrounded 'reproducible' interpretation.",
+    "relevance": "Partially addresses key clinical information with a patient-focused summary but entirely ignores the first part of the question on doctor's concluding plan, derailed by erroneous disclaimer; includes some relevant history but not doctor-gathered context."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "The Generated Answer is significantly flawed by hallucinating transcript content limitations, omitting the stated plan entirely, and providing only partial, inaccurate coverage of key clinical information."
+}

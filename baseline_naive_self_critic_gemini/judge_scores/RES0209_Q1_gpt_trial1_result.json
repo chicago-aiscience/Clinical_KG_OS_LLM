@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the major symptom domains (dry cough, shortness of breath/difficulty breathing, and wheezing) and accurately quotes the daytime cough as “almost nonstop throughout the day” (P-1). However, it contains two clear factual errors relative to the Gold Answer/transcript: (1) it states the patient did not explicitly confirm chest tightness, but the patient did confirm it (“Do you feel it gets tight in your chest?” “Yes.” D-20, P-20); and (2) it states the patient did not provide a specific nighttime frequency, but the patient did (“every other day… every two days or so,” P-18). These are clinically important inaccuracies about symptom burden and severity. It also omits the ~2-week duration of symptoms (P-13) in its main summary.",
+    "completeness": "Key Gold Answer points covered: dry cough and its near-constant daytime character; shortness of breath/difficulty breathing; wheezing; general statement that nighttime symptoms occur less often than daytime. Key points missed: cough duration (~2 weeks); explicit non-productive nature being confirmed (doctor’s “bringing up gunk” line); wheezing occurring more frequently than bronchodilator use (D-17, P-17); chest tightness confirmation (D-20, P-20); and the specific nighttime frequency (“every other day” / “every two days,” P-18). Overall this is missing several required details the question explicitly asked for (chest sensations and day vs night frequency detail).",
+    "faithfulness": "Most included statements are grounded in the transcript (e.g., P-1, P-15, P-18). However, the answer introduces meta-content (“knowledge graph,” “clinical documentation expert analysis”) not supported by the transcript, and more importantly it contradicts the transcript by claiming chest tightness was not confirmed and that no specific nighttime frequency was given. Those contradictions reduce faithfulness.",
+    "relevance": "The answer is largely focused on the requested symptoms and their day/night frequency. The brief discussion of triggers (cold air/pollen) is slightly tangential to the question but not overly distracting. Overall it addresses the question directly."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 3,
+    "relevance": 5
+  },
+  "average_score": 3.5,
+  "summary": "The response captures the main asthma symptoms but misses multiple required specifics (notably chest tightness and quantified nighttime frequency) and contains transcript-contradicting statements, yielding moderate overall quality."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer has significant factual errors compared to the Gold Answer: it misses the Friday onset of the raspy cough (P-3), vaguely states cough as 'couple of days' (P-1) instead of Friday raspy then Sunday worsening; attributes fever vaguely to 'next day' after cough/sputum without specifying Monday (P-8); correctly identifies Sunday for yellow sputum with red spots but does not note it started simultaneously with cough worsening; chills correctly as last two days; fails to specify chest pain onset as 'last day' (Tuesday, P-20) and confuses it with sore throat rawness (P-15 is throat, chest pain separate in P-17/P-19/P-20); worsening description is vague and inaccurate vs Gold's precise progression; mentions non-existent 'knowledge graph'. Core timeline contradicts Gold. Score: 2.",
+    "completeness": "Gold key points: runny nose ~1 week ago (missed); Friday raspy cough (missed); Sunday cough really bad + yellow sputum w/ red spots simultaneous (partial, sputum only); Monday fever start + sputum cont. (fever sorta, not explicit); Tue-Wed chills (covered); Tue chest pain onset (missed day); Wed full picture incl. exertional dyspnea, sore throat separate (missed dyspnea, confuses sore throat w/ pain); worsening progression (vague phases only). Covers sputum Sunday, chills partially (~20-40% of specifics). Score: 2.",
+    "faithfulness": "Claims mostly grounded but issues: cough 'couple days' P-1 verifiable but ignores earlier Friday P-3; fever 'next day' P-5 verifiable (post-Sunday); sputum Sunday P-6/P-7 ok; chills P-9 ok; pain progression from cough with 'raw' cites P-15 (sore throat, not chest), P-17/18 (chest separate, 'last day' P-20 missed); worsening phases plausible but 'initial ignored cough couple days' misuses P-5 (spots ignore); hallucinates 'knowledge graph information' not in transcript; confuses throat/chest. Multiple misrepresentations/hallucinations. Score: 2.",
+    "relevance": "Directly structures response with timeline bullets for each required symptom (raspy cough, yellow sputum red spots, fever, chills, right chest pain) and worsening section, matching question focus; minor tangents in phases but no major off-topic content. Score: 4."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer incompletely and inaccurately traces the symptom timeline with missing onsets, confusions between symptoms, and hallucinations, though it remains mostly relevant to the question."
+}

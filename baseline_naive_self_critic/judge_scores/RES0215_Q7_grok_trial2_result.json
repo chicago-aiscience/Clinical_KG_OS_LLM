@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer accurately details onset (4-5 days [P-1]), trigger (playing tag [P-3]), initial symptoms (wheezing, difficulty deep breaths [P-2]), fluctuating episodic pattern with rest/activity triggers [P-5,P-6], recent cough (slight, non-productive [P-1,P-31]), single nocturnal wheeze [P-43,P-44], and negatives. Generated correctly notes onset, trigger (tag [P-1,P-3]), cough emergence [P-1], but inaccurately attributes fluctuating pattern to past viral infections [P-15] (contradicts first-time nature [P-4]), adds colder weather [P-38] and allergies [P-35] not central to Gold progression, omits initial deep breath detail and non-productive cough, and falsely claims no nocturnal info despite [P-43,P-44]. Significant contradictions on nocturnal and pattern cause.",
+    "completeness": "Gold key points: 1) onset 4-5 days; 2) trigger tag/out-of-breath; 3) wheezing/diff deep breaths; 4) fluctuating/episodic resolve with rest/recur activity; 5) cough recent/non-productive; 6) single nocturnal wheeze/trouble sleep; 7) negatives (no cyanosis/fever). Covered: 1 fully, 2 fully, 3 partially (wheezy/SOB), 4 partially (fluctuating but wrong details), 5 partially (slight cough, misses non-productive). Missed: 6 entirely, 7 entirely. Covers ~50-60% partially.",
+    "faithfulness": "Claims verifiable: onset/trigger [P-1,P-3], cough [P-1], colder [P-38], allergies [P-35]. Unverifiable/hallucinated: fluctuating due to past virals [P-15] misapplied (past infections ≠ current first-time wheezing [P-4]); 'knowledge graph' not in transcript; falsely states no nocturnal info despite clear [P-43 'one night wheeziness', P-44 'trouble falling asleep']. Multiple inaccuracies.",
+    "relevance": "Directly structures response around question elements (onset/trigger, fluctuating, cough, nocturnal), with minor tangents (past virals, weather, allergies); addresses progression to presentation well despite errors."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.75,
+  "summary": "Generated Answer partially addresses the symptom progression but introduces factual errors, misattributes causes, and incorrectly denies the nocturnal episode present in both transcript and Gold."
+}

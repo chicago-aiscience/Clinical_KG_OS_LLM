@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer contains significant factual errors. Most critically, it claims the patient denied trouble breathing, whereas the transcript shows the patient explicitly confirmed having difficulty breathing [P-7] which started yesterday and was very concerning [P-8]. It also ignores almost all the negative findings listed in the Gold Answer (cough, runny nose, headaches, chest pain, fever, chills, night sweats, sick contacts, travel).",
+    "completeness": "The Generated Answer is highly incomplete. It only identifies one correct negative finding (loss of smell). It misses approximately 90% of the negative findings identified in the Gold Answer, such as cough, runny nose, headaches, chest pain, fever, and history of travel/sick contacts.",
+    "faithfulness": "The Generated Answer exhibits severe hallucinations. It states 'The patient did not report trouble breathing' and 'they did not mention dyspnea', which directly contradicts the source transcript where the patient says 'Yeah, that's right' in response to a question about breathing difficulty and describes it getting worse. It also suggests the doctor explored Mono as a current differential, whereas the Gold Answer notes this was not further explored.",
+    "relevance": "While the answer attempts to follow the structure of the prompt, the inclusion of factually opposite information (regarding breathing) and the omission of the majority of relevant data makes it largely irrelevant to an accurate clinical summary."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 2
+  },
+  "average_score": 1.25,
+  "summary": "The Generated Answer is highly inaccurate and incomplete, failing to identify most negative findings and falsely claiming the patient denied their primary symptom of breathing difficulty."
+}

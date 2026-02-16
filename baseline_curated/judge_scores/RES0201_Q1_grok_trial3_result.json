@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer has significant factual errors compared to the Gold Answer: it completely misses the key symptom of difficulty breathing (present in P-7 to P-11); misinterprets the patient's statement on taste in P-19 ('maybe taste a little bit but not smell') as denying loss of taste when Gold correctly identifies it as reduced sense of taste; incorrectly states that commonly screened symptoms like cough, runny nose, fever, headaches, and chest pain were 'not mentioned' when the patient explicitly denied them (P-15 to P-18, P-23); partial accuracy on sore throat, muscle aches, and tiredness but lacks details like timelines and progression present in Gold.",
+    "completeness": "Gold Answer covers four key reported symptoms (sore throat with details, difficulty breathing with details, reduced taste, fatigue/muscle aches) and seven explicit denials (cough, runny nose, headaches, chest pain, loss of smell, fever, chills/night sweats); Generated covers sore throat (partial), muscle aches, tiredness (~50% of one symptom), wrongly includes taste as denial, misses breathing entirely, and only covers one denial (loss of smell) while claiming others absent (covers ~20-30% of key points).",
+    "faithfulness": "Claims on sore throat, muscle aches, and tiredness are verifiable in transcript (P-2, P-25); however, loss of taste is hallucinated as denial (P-19 actually reports reduced taste); explicit denials of cough, runny nose, etc., are verifiable but Generated falsely claims they are unmentioned; introduces non-existent 'knowledge graph'; multiple inaccuracies and fabrications.",
+    "relevance": "The answer directly structures response around reported symptoms and explicit denials as per the question, using bullet points for clarity, with no major off-topic content, though errors reduce precision."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer is significantly incomplete and factually inaccurate, missing key symptoms like difficulty breathing, misrepresenting taste changes, and failing to list most explicit denials."
+}

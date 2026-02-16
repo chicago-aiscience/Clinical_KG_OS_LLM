@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer details family history (father's HA last year in 50s, heart doctors, scares her [P-8,P-30], grandpa accident [P-30]), smoking (started 18, 10 cigs/day 2yrs, now 5/day, hard to quit [P-13,14,18]), stressors (Masters thesis pressure/time crunch [P-15,16], lives alone [P-26,27], nervous running [P-28]), connections (stress? [P-8], nervous breathing [P-19], past anxiety returning [P-22]). Generated covers core family fear [P-8], smoking reduction/hard quit [P-13,14], school stress/anxiety [P-13,20], interactions. Minor discrepancies: incomplete smoking details (misses start age, exact prior amount/duration), stressors less specific (misses thesis/living/running), omits grandpa; core facts align.",
+    "completeness": "Covered: family fear [P-8]; smoking history/quit stress [P-13,14]; school stress, anxiety link [P-13,20]; interactions via stress/heart worry. Missed: father details (50s, last year, heart doctors [P-30]), grandpa [P-30]; full smoking (start 18, 10/day 2yrs [P-18]); stressor specifics (thesis scary/time crunch [P-15,16], alone in London [P-26,27], nervous running [P-28]); connections (breathing nervous [P-19], teen anxiety return [P-22]). Covers ~60-70% key points.",
+    "faithfulness": "Transcript citations accurate (P-8,13,14,20,3). All patient quotes verbatim or close. However, multiple hallucinations: repeated 'knowledge graph' references ([FAMILY_HISTORY], [CONTEXT] stress --[CAUSES/TRIGGER]--> etc.) not in transcript; 'clinical documentation' vs transcript; implies graph classifies symptoms. These unverifiable fabrications.",
+    "relevance": "Directly structures response around the three exact factors (family, smoking, stressors), explains contributions/interactions/concerns with transcript details; no tangents, perfectly on-question."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.5,
+  "summary": "The Generated Answer is mostly correct and relevant but incomplete in stressor and smoking details and unfaithful due to hallucinated 'knowledge graph' references."
+}

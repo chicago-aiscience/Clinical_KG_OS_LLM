@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer includes accurate transcript facts like symptoms (stuffy/runny nose [P-1, P-3]), duration (one week [P-2]), doctor's conclusion ([D-39]), and daycare exposure ([P-11]), which align with Gold. However, it introduces a non-existent 'knowledge graph' and falsely attributes diagnostic links and treatment associations to it, misquotes P-11 slightly, and fails to address key differentiators against allergic (no allergies/exposures [P-22, P-28]) or bacterial (no fever, clear discharge [P-5, P-7]) causes as in Gold, leading to some factual discrepancies beyond the transcript.",
+    "completeness": "Gold key points: (1) symptom type (congestion/rhinorrhea, absent cough/sore throat/etc. [P-4, P-6, P-7]); (2) clear discharge [P-5]; (3) 1-week duration/constant [P-2, P-8]; (4) progression [P-3]; (5) against allergic (no exposures/allergies/prior episodes [P-9, P-22, P-28]); (6) against bacterial (no fever/headache, clear discharge [P-5, P-7, P-14]); (7) daycare exposure [P-11]. Generated covers symptoms/duration vaguely and exposure ([P-1, P-2, P-11]), but misses absent features, clear discharge emphasis, progression, and all specific against allergic/bacterial points (covers ~25%).",
+    "faithfulness": "Claims like symptoms, duration, D-39 quote, and daycare [P-11] are verifiable in transcript with accurate citations. However, multiple hallucinations: 'provided knowledge graph' (absent), explicit links from KG to 'daycare exposure' and 'viral infection,' and Tylenol cold 'associated with viral infections in the provided knowledge graph' – all fabricated, not grounded in transcript.",
+    "relevance": "Generated directly lists evidence from symptoms, duration, exposure, and doctor's statement to support viral conclusion, addressing the question's focus on symptom characteristics and exposure history, though it underemphasizes distinctions from allergic/bacterial and adds irrelevant KG tangents."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer partially captures viral-supporting evidence from symptoms and exposure but is incomplete in covering Gold's key differentiators against allergic/bacterial causes and introduces transcript-unverifiable hallucinations about a knowledge graph."
+}

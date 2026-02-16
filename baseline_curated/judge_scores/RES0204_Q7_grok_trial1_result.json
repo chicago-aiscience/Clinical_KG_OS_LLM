@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer accurately details cough onset 4-5 days ago as primary dry non-productive symptom with unchanged severity, later runny nose (2-3 days after), and specific priors (never had such dry cough, past runny noses shorter). Generated matches timeline, dry cough label, relative timing, and consistent severity well. However, it inaccurately frames prior experiences around fever differences ('previous episodes' not directly tied to similar symptoms in transcript) and asthma evaluation (family history, not patient's prior symptoms), while omitting key patient statement on novel dry cough and runny nose duration [P-24], introducing minor factual discrepancies.",
+    "completeness": "Gold key points: 1) cough 4-5 days first symptom; 2) dry/non-productive; 3) severity unchanged; 4) runny nose couple days later, clear; 5) sequential progression; 6) priors: healthy, no prior dry cough like this, runny noses shorter [P-24]; 7) no SOB/wheeze. Generated covers 1-4 fully, severity persistence, timing well (~70%), but misses explicit non-productive detail, progression phrasing, and core prior quote [P-24]; substitutes with fever/asthma not central to Gold's patient priors.",
+    "faithfulness": "All timeline/severity claims directly verifiable [P-2,P-4,P-5,P-7,P-11,P-12]; citations accurate. 'Consistent severity over past week' minor stretch (4-5 days). Prior fever claim grounded in [P-13] (past fevers noted by mom) but 'previous episodes' slightly inferred; asthma [P-28] accurate but context family. No major hallucinations, mostly transcript-grounded.",
+    "relevance": "Generated directly structures response around symptom onset/timing (cough vs runny nose), progression/severity, and prior comparison, perfectly matching question without off-topic content."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 4,
+    "relevance": 5
+  },
+  "average_score": 3.75,
+  "summary": "The Generated Answer is strong on symptom timeline and severity but incomplete and somewhat inaccurate on prior experiences comparison, leading to solid but not excellent scores."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer details baseline management with puffers [P-1, P-28], infrequent rescue use [P-26], and daily activities [P-4]; acute changes including increased cough frequency, green-yellow sputum volume, hemoptysis, worsened dyspnea [P-1], reduced exercise tolerance [P-4], possible fever [P-9]; progressive worsening [P-2]; and severity as worst ever with prior ED visits but no admissions [P-3,5,6]. Generated accurately captures baseline management [P-1,26], acute symptoms (cough, SOB, green sputum, hemoptysis, fever [P-1,9]), and infers worsening evolution and increased severity without contradictions, but omits explicit patient statements on progression [P-2] and direct severity comparison [P-3,5,6]; adds relevant smoking history [P-40] and doctor summary [D-43]. Minor discrepancies in emphasis, core facts correct.",
+    "completeness": "Covered: baseline manageability with puffers/inhalers/lifestyle [P-1,23,26,28], acute symptoms over 3 days (worsening cough, SOB, green sputum, hemoptysis, fever [P-1,9]), overall deterioration. Missed or partially covered: specific exercise tolerance decline [P-4], explicit statement of progressive worsening over 3 days [P-2], patient's direct assertion this is 'worst ever' [P-3], details of prior exacerbations with ED visits x2 no hospitalizations [P-5,6]. Covers ~70% of key points, strong on baseline and acute symptoms but incomplete on progression and severity comparison.",
+    "faithfulness": "All claims directly verifiable: baseline [P-1,23,26], symptoms [P-1,9], smoking [P-40], doctor assessment [D-43], no home O2/SOB severity [P-1]. No hallucinations or unverifiable details; citations accurate where provided.",
+    "relevance": "Generated Answer is structured around baseline, 3-day evolution (worsening symptoms), and severity comparison, directly mirroring the question's three components with no off-topic content."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 5,
+    "relevance": 5
+  },
+  "average_score": 4.25,
+  "summary": "The Generated Answer is factually accurate and well-grounded but moderately incomplete in covering explicit progression and prior exacerbation history for full severity comparison."
+}

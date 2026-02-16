@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer identifies 6 specific conditions ruled out with precise citations: (1) trauma [D-5], (2) cardiac (exertional angina) [D-10, D-20, D-11], (3) infection [D-12, D-27], (4) asthma [D-23/24], (5) dyspnea [D-19], (6) inherited arrhythmia [D-31/32]. Generated Answer only vaguely addresses cardiac issues via family history (P-8 prompted, but doctor asks later D-30+) and incorrectly claims anxiety attacks ruled out (actually correlates symptoms to anxiety via P-20, but Gold rules out cardiac separately and doesn't list anxiety as ruled out). Significant errors: fabricates 'ruling out' cardiac by linking to anxiety, ignores other 4 conditions entirely, contradicts Gold's cardiac exclusion criteria.",
+    "completeness": "Gold key points: 6 conditions with specific doctor questions/citations and patient denials. Generated covers ~1 partially (cardiac, but wrong details) and adds anxiety (not in Gold, not ruled out). Misses trauma, infection, asthma, dyspnea, arrhythmia entirely (5/6 missed, <20% coverage).",
+    "faithfulness": "Generated hallucinates doctor's 'screening for cardiac risk factors, likely inquiring about family history' (patient prompted P-8, doctor follows up D-30+ but vaguely); claims doctor used 'distinction of triggers to differentiate cardiac from psychological' (no direct doctor statement); for anxiety, infers doctor screened via patient details in P-20 (doctor asked D-20 about fluttering), but misstates as ruling out anxiety/confirming tie (patient links fluttering, not chest pain directly; transcript supports anxiety as likely). Multiple unverifiable claims and misinterpretations not grounded in transcript.",
+    "relevance": "Generated attempts to list screened/ruled-out conditions with inquiries, mirroring Gold structure, but selects wrong conditions (anxiety not ruled out), vague citations, and off-topic confirmation of anxiety instead of exclusions; partially addresses question but with substantial inaccuracies."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.0,
+  "summary": "The Generated Answer is significantly inaccurate and incomplete, covering only a distorted portion of cardiac screening while hallucinating details and missing five key ruled-out conditions from the Gold Answer."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Generated Answer has several factual inaccuracies compared to Gold: incorrectly states patient provided no travel info (ignores P-23 Sarnia trip), no chemical exposure (ignores P-33/P-34 work details), overstates weight loss denial as ruling out malignancy/TB (Gold says 'less likely but does not exclude'); lists implausible differentials like malaria/dengue/HIV for this context; misinterprets cough duration from P-1. Core structure aligns but significant contradictions/errors.",
+    "completeness": "Gold covers precise differentials (lung ca/TB for weight loss; Legionella/fungal for travel; person-to-person/TB for contacts; chemical pneumonitis/occupational for exposure), exact responses (P-22 denial; P-23 Sarnia; P-24 no contacts; P-34 limited exposure), and nuanced narrowing (less likely/not exclude). Generated covers 4 questions but misses exact responses for travel/chemical/contacts, precise narrowing, Sarnia context, hemoptysis tie-in; adds irrelevant differentials. Covers ~50-60% key points.",
+    "faithfulness": "Multiple hallucinations/misreads: claims no travel/chemical info despite D-23/P-23 and D-34/P-33/P-34; wrong cough duration cite [P-1]; unverifiable claims like 'rules out chronic' not in transcript. Some correct elements (smoking [P-37], family hx [P-42], chills [P-9]) but overall not grounded.",
+    "relevance": "Perfectly structured around the 4 specific questions, analyzes differentials and response impacts directly; no off-topic content."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer is relevant and structurally sound but undermined by factual errors, misrepresentations of patient responses, and incomplete coverage of Gold's precise differentials and nuances."
+}

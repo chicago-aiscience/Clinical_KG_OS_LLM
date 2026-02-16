@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies several reported symptoms: dry cough, scratchy throat, overall feeling unwell (“crappy”), and headache/pounding head. However, it contains major factual errors by stating that the transcript does not include explicit denials of sputum production, nausea, joint pain, or rashes—these are explicitly denied in the transcript (no sputum/phlegm [P-5, P-6], no nausea/vomiting [P-11], no joint aches [P-13], no rashes [P-10]). It also incorrectly characterizes the cough duration as “unspecified,” despite the clear 3–4 day duration [P-1, P-3]. Overall, core elements are partially correct but with significant contradictions to the source/gold answer.",
+    "completeness": "Reported symptoms: includes dry cough, scratchy throat, malaise/feeling crappy, headache; misses feeling really hot/persistent heat/feverishness [P-7, P-9], tiredness [P-13], and the day/night detail and clinician framing as malaise. Denied symptoms: largely missing—fails to list explicit denials of sputum/phlegm, rashes/skin changes, nausea/vomiting, diarrhea, and breathing difficulty, and instead provides only an unclear/partial statement about pain/joint hurting. Coverage is well under 50% of Gold Answer key points.",
+    "faithfulness": "Several statements are not grounded in the transcript, particularly the claim that the transcript does not contain explicit denials of sputum production, nausea, joint pain, or rashes; these denials are clearly present. The answer also adds unnecessary framing (“knowledge graph provided”) not supported by the prompt. While most included symptoms are grounded, the repeated incorrect claims about what is/ չէ is not in the transcript indicate multiple unfaithful assertions.",
+    "relevance": "The response is generally aimed at listing reported and denied symptoms, which matches the question. However, it omits several asked-about denials (sputum, nausea, joint pain, rashes) and includes an irrelevant note about a “knowledge graph,” reducing usefulness. Still, most content is on-topic."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The answer is partially on-topic and captures a few symptoms, but it is substantially incomplete and contains major unfaithful/correctness errors by incorrectly claiming key explicit denials are absent from the transcript."
+}

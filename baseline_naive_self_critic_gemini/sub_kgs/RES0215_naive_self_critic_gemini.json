@@ -1,0 +1,153 @@
+{
+  "nodes": [
+    {
+      "id": "N_001",
+      "text": "wheezy",
+      "type": "SYMPTOM",
+      "evidence": "she's been quite wheezy",
+      "turn_id": "P-1"
+    },
+    {
+      "id": "N_002",
+      "text": "cough",
+      "type": "SYMPTOM",
+      "evidence": "she has a slight cough",
+      "turn_id": "P-1"
+    },
+    {
+      "id": "N_003",
+      "text": "short of breath",
+      "type": "SYMPTOM",
+      "evidence": "sounds like she's a little short of breath",
+      "turn_id": "P-1"
+    },
+    {
+      "id": "N_004",
+      "text": "difficulty taking in deep breaths",
+      "type": "SYMPTOM",
+      "evidence": "she was having some difficulty taking in deep breaths",
+      "turn_id": "P-2"
+    },
+    {
+      "id": "N_005",
+      "text": "out of breath",
+      "type": "SYMPTOM",
+      "evidence": "she was quite out of breath after",
+      "turn_id": "P-3"
+    },
+    {
+      "id": "N_006",
+      "text": "viral infection",
+      "type": "MEDICAL_HISTORY",
+      "evidence": "some sort of viral infection",
+      "turn_id": "P-15"
+    },
+    {
+      "id": "N_007",
+      "text": "seasonal allergies",
+      "type": "MEDICAL_HISTORY",
+      "evidence": "she has some seasonal allergies",
+      "turn_id": "P-35"
+    },
+    {
+      "id": "N_008",
+      "text": "Reactine",
+      "type": "MEDICATION",
+      "evidence": "Sometimes she takes like Reactine",
+      "turn_id": "P-36"
+    },
+    {
+      "id": "N_009",
+      "text": "wheeziness",
+      "type": "SYMPTOM",
+      "evidence": "she had some issues um with like wheeziness",
+      "turn_id": "P-43"
+    },
+    {
+      "id": "N_010",
+      "text": "episodes",
+      "type": "SYMPTOM",
+      "evidence": "she would have these these uh episodes, but it would resolve on its own",
+      "turn_id": "P-6"
+    },
+    {
+      "id": "N_011",
+      "text": "colder weather",
+      "type": "RISK_FACTOR",
+      "evidence": "it's worse when um when when there's colder weather",
+      "turn_id": "P-38"
+    },
+    {
+      "id": "N_012",
+      "text": "trouble falling asleep",
+      "type": "SYMPTOM",
+      "evidence": "Just trouble falling asleep, I think yeah.",
+      "turn_id": "P-44"
+    }
+  ],
+  "edges": [
+    {
+      "source_id": "N_001",
+      "target_id": "N_003",
+      "type": "COEXISTS_WITH",
+      "evidence": "wheezy um for the past four five days and now she has a slight cough, um sounds like she's a little short of breath",
+      "turn_id": "P-1"
+    },
+    {
+      "source_id": "N_001",
+      "target_id": "N_002",
+      "type": "COEXISTS_WITH",
+      "evidence": "wheezy um for the past four five days and now she has a slight cough, um sounds like she's a little short of breath",
+      "turn_id": "P-1"
+    },
+    {
+      "source_id": "N_007",
+      "target_id": "N_008",
+      "type": "TREATED_WITH",
+      "evidence": "Sometimes she takes like Reactine or like over the counter stuff",
+      "turn_id": "P-36"
+    },
+    {
+      "source_id": "N_011",
+      "target_id": "N_001",
+      "type": "TRIGGERS",
+      "evidence": "it's worse when um when when there's colder weather",
+      "turn_id": "P-38"
+    },
+    {
+      "source_id": "N_005",
+      "target_id": "N_010",
+      "type": "PART_OF",
+      "evidence": "she would have these these uh episodes, but it would resolve on its own",
+      "turn_id": "P-6"
+    },
+    {
+      "source_id": "N_009",
+      "target_id": "N_012",
+      "type": "COEXISTS_WITH",
+      "evidence": "Just trouble falling asleep, I think yeah.",
+      "turn_id": "P-43"
+    }
+  ],
+  "_usage": {
+    "prompt_tokens": 6872,
+    "completion_tokens": 2172,
+    "total_tokens": 9044,
+    "pass1_nodes": 9,
+    "pass1_edges": 3,
+    "pass2_nodes": 12,
+    "pass2_edges": 6
+  },
+  "_meta": {
+    "method": "self_critic_gemini",
+    "model": "gemini-2.0-flash",
+    "pass1": {
+      "nodes": 9,
+      "edges": 3
+    },
+    "pass2": {
+      "nodes": 12,
+      "edges": 6
+    }
+  }
+}

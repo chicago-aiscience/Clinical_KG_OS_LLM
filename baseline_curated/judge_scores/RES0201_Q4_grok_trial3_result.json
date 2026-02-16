@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly identifies only loss of smell as a denied symptom, ignoring the Gold Answer's comprehensive list (cough, runny nose, headaches, chest pain, loss of smell, fever, chills/night sweats, plus contextual negatives like prior breathing issues, sick contacts, travel). It misframes sore throat and breathing difficulty as screened negatives when they were affirmed. For differentials, it hallucinates exclusions (Mono, Strep Throat, Common Cold/Influenza) with factual errors (e.g., anosmia not primary for cold/flu; COVID hallmark), contradicting Gold's accurate note that no explicit differentials were discussed beyond COVID suspicion. Significant errors vs. Gold.",
+    "completeness": "Gold key points: denied symptoms (cough [D15], runny nose [D16], headaches [D17], chest pain [D18], smell [D19], fever [D23], chills [D24]; context: no prior dyspnea [D11], no contacts [D12], no travel [D13]); interpretations (narrows URI, relevant to dyspnea, fever not dissuading COVID test). Generated covers only smell partially (~1/10 points), misses all others and accurate interpretations. <20% coverage.",
+    "faithfulness": "Transcript verifies many screened negatives ignored by Generated (e.g., D15-18,23-24: cough, runny nose, headache, chest pain, fever, chills denied). Partial accuracy on smell [P19: 'not smell']. Hallucinates differentials (Strep/mono/cold/flu not discussed; wrong facts like anosmia primary in cold/flu). Cites [D43],[P19] accurate but incomplete. Multiple ungrounded claims.",
+    "relevance": "Generated structures response around denied symptoms and differentials re: COVID, directly attempting question format, but content is incomplete/wrong, introducing off-topic inventions (unmentioned Strep/mono distinctions). Partially relevant with off-topic elements."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.0,
+  "summary": "The Generated Answer is significantly incomplete and inaccurate, covering only one minor denied symptom while hallucinating unsupported differentials, poorly matching the Gold Answer's faithful transcript-based analysis."
+}

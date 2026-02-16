@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly states the timeline (~1 week) and correctly identifies nasal congestion/stuffiness as the first symptom with a shift over the week to predominantly rhinorrhea (\"now it's mostly running\")—all consistent with the Gold Answer. However, it is incorrect in concluding the symptom pattern was intermittent overall: while the patient initially said \"on and off\" [P-1], they later clarified the symptoms had been \"pretty constant for the past week\" [P-8]. Because the question explicitly asks whether symptoms were constant or intermittent, this is a meaningful error.",
+    "completeness": "Key Gold Answer points covered: (1) onset ~1 week prior, (2) first symptom congestion, (3) predominant symptom shifted from congestion to runny nose. Key points missed: (1) the clarification that symptoms were \"pretty constant\" despite initial \"on and off\" wording, (2) the note that symptoms were not improving prompting the visit, and (3) possible contribution of OTC decongestants to the change in symptoms (minor but included in Gold). Overall coverage is partial.",
+    "faithfulness": "Most statements are grounded in the transcript (onset, stuffy-first, now mostly running). However, the answer selectively uses [P-1] to assert an intermittent pattern and explicitly interprets it as \"rather than constant\" while ignoring the direct later statement of constancy [P-8]. This makes the overall characterization not fully grounded in the complete transcript context (i.e., it is a misleading inference/omission rather than a pure hallucination).",
+    "relevance": "The response stays focused on the requested chronology (first symptom, change over the week, constant vs intermittent) with no major tangents. Relevance is high despite the incorrect conclusion about intermittency."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 3,
+    "relevance": 5
+  },
+  "average_score": 3.5,
+  "summary": "Accurately captures onset and the shift from congestion to rhinorrhea, but incorrectly reports the overall pattern as intermittent and omits the later clarification that symptoms were pretty constant, reducing correctness and completeness."
+}

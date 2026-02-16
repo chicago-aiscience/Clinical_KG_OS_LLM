@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer lists specific reported symptoms (dry cough worsening over 3 days, fever >100°F on Friday, fatigue, decreased appetite, possible loss of taste, mild runny nose, uncertain SOB) and detailed denied symptoms (sputum/blood, wheezing, chest pain/heart racing, sore throat, chills/night sweats, skin changes, GI issues, N/V, urine changes, dizziness/fainting, confusion/memory loss). Generated Answer correctly identifies most reported symptoms (cough worsening, runny nose, fatigue, fever details, loss of taste, reduced appetite) but misclassifies uncertain swallowing as 'trouble swallowing' reported symptom and omits SOB uncertainty and precise 3-day timeline. Critically, it incorrectly states none of the example denied symptoms (wheezing, sore throat, etc.) were asked about (contradicting transcript D-7, D-13, D-14, D-19, D-22/23), hallucinates denials for seizures/dizziness from D-44 advice (not history-taking) with wrong citation to P-32 (allergies), missing all actual pertinent negatives. Significant contradictions on denials.",
+    "completeness": "Covered key points: dry cough worsening (partial, misses explicit 3-day start Wed eve), runny nose, fatigue, fever details, loss of taste, reduced appetite. Missed: SOB uncertainty [P-8], precise timeline emphasis, all denied symptoms (sputum/blood [P-6], wheezing [P-7], chest pain/heart racing [P-13], sore throat [P-14], chills/night sweats [P-19], skin/rashes [P-20], GI [P-22], N/V [P-23], urine [P-24], dizziness/fainting [P-25], confusion [P-26], vision/hearing fine [P-18], swallowing uncertain distinction. Covers ~30% of key points, primarily reported symptoms partially.",
+    "faithfulness": "Symptom reports mostly verifiable with accurate citations (e.g., cough [P-1,P-12], fever [P-1,P-2], runny nose [P-16], etc.). However, claims 'none of the specific symptoms (wheezing, sore throat, etc.) were explicitly asked' is false (D-7 wheezing P-7 no; D-13 chest pain P-13 no; etc.). Hallucinates doctor asking about seizures/neurological/dizziness in history-taking context from D-44 (future worsening advice, not current symptoms), wrongly attributes denial to P-32 (unrelated allergies response). Includes 'trouble swallowing' as reported despite P-15 uncertainty. Multiple ungrounded claims and mis-citations.",
+    "relevance": "Directly structures response around reported respiratory/systemic symptoms and doctor's questions/denials, mirroring question's two parts. Minor off-topic tangent in misattributing end-of-visit advice (D-44) as history questions, but overall focused on query despite errors."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer partially covers reported symptoms but significantly errs on denied symptoms by denying their inquiry and hallucinating unrelated ones, leading to low correctness, completeness, and faithfulness."
+}

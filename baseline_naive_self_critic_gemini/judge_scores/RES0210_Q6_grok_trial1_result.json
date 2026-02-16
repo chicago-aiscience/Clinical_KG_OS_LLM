@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer has significant factual errors compared to the Gold Answer: it incorrectly states there is 'no explicit evidence' of the doctor's plan and claims the transcript ends at [P-42], ignoring [D-43] where the doctor explicitly states the plan to consult the supervising physician and return to discuss next steps; it partially misattributes Tylenol effect to the cough rather than feverish discomfort [P-14, P-8]; misses expectoration as self-care relief [P-13]; but correctly identifies most aggravating (deep breathing [P-18/19], exertion [P-10/11], coughing [P-19]) and alleviating factors (resting [P-10], Tylenol). Core contradiction on the plan section.",
+    "completeness": "Key points from Gold covered: partial self-care (Tylenol effect, ~33%); aggravating factors (deep breathing, exertion, coughing - all covered, 100%); alleviating factors (Tylenol, resting - 66%, misses expectoration); misses doctor's plan entirely (0%) and clinical management implications summary; overall ~50-60% coverage of key points across the three question components.",
+    "faithfulness": "Most claims verifiable with accurate citations (e.g., [P-14], [P-18/19], [P-10], [P-15]); however, hallucinates transcript ending at [P-42] excluding [D-43] plan, wrongly denies doctor's plan exists; minor misattribution of Tylenol to cough (contextually after cough but linked to fever); multiple ungrounded assertions about absence of plan.",
+    "relevance": "Perfectly structured and focused on the three-part question (doctor's plan, self-care, aggravating/alleviating factors informing management), with no irrelevant content or tangents."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer is relevant and mostly faithful on aggravating/alleviating factors but significantly incomplete and incorrect by entirely missing the doctor's stated plan at [D-43] and some self-care details."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly states that the patient did not identify a specific potential exposure event, directly contradicting the Gold Answer and transcript where the patient explicitly mentions hiking with their partner two weeks ago where 'some people kind of brushed by us' [P-18] as the only possible source ('I don't see where else I could have gotten this from' [P-18]); it also hallucinates a 'knowledge graph' not present in the transcript, making it mostly incorrect.",
+    "completeness": "Key points from Gold Answer not covered: patient's high school status and online classes [P-36,P-37]; limited time out of house [D-38,P-38]; specific hiking exposure two weeks prior with partner, local location, people brushing by [P-18,P-19]; no other exposures recalled [P-17,P-18]; household living situation [P-29]; up-to-date immunizations [P-20]; doctor's testing due to symptoms despite limited exposure [D-39]. Generated Answer covers none of these (<20%).",
+    "faithfulness": "Generated claims 'did not explicitly identify a specific potential exposure event' are unverifiable and false as P-18 directly identifies the hiking incident as potential exposure; references to 'knowledge graph' and alignment with 'indicators for suspected COVID-19 in the knowledge graph' are hallucinations not in transcript; symptom description partially grounded but overall largely fabricated denial of transcript content.",
+    "relevance": "Generated Answer directly attempts to address the question by identifying (incorrectly) no exposure event and connecting via symptoms to COVID suspicion [D-39], with minor off-topic hallucination (knowledge graph), making it mostly relevant."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 4
+  },
+  "average_score": 1.75,
+  "summary": "The Generated Answer is factually incorrect, incomplete, and unfaithful to the transcript by denying the patient's identified hiking exposure event while hallucinating external references."
+}

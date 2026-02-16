@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer identifies a triad including dry cough (worsening over 3 days), fever (>100°F on Friday), and possible loss of taste (P-17) leading to COVID-19 alignment, with fever distinguishing infection (D-45). Generated Answer correctly identifies cough and fever but incorrectly states the transcript 'does not document' change in taste (contradicting P-17 and Gold), misstates cough duration as 5 days per D-3 without noting correction to 3 days, and adds shortness of breath which was not prominent (P-8 denies). Main point of cough + fever -> infection/COVID is consistent, but significant errors on taste and details warrant score 2.",
+    "completeness": "Gold key points: triad (cough worsening 3 days [P-1,P-5,P-12], fever [P-1,P-2], taste loss [P-17]), D-44 COVID alignment, D-45 fever -> infection vs asthma, combo acute/systemic/taste -> viral priority. Generated covers cough/fever (partially), D-44/D-45 logic (~60% coverage), misses taste entirely, 3-day worsening specificity, fatigue/appetite/systemic emphasis. Score 3.",
+    "faithfulness": "Generated hallucinates denial of taste change (P-17 explicitly documents mother's observation of possible loss), cites D-3's 5-day cough uncorrected (P-4 clarifies 3 days), infers SOB in combo despite P-8 minimization. Citations [P-1,P-2,D-3,D-44,D-45] accurate, but denial and SOB stretching are multiple ungrounded claims. Score 2.",
+    "relevance": "Directly addresses symptom combination for COVID alignment and infectious conclusion via D-45 logic, structured response matches question structure despite omitting/denying taste; minor tangent on knowledge graph. Score 4."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer partially captures the cough-fever basis for infection but significantly errs by denying the documented taste change central to the Gold triad and question, reducing overall quality."
+}

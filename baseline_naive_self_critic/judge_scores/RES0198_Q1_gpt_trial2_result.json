@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the patient’s nasal symptoms as stuffy nose (on and off initially) and runny nose for ~1 week. However, it inaccurately states/frames that the runny nose has been “mostly” present “since the beginning,” whereas the transcript indicates it began as stuffiness and later became “mostly running” (P-3). It also fails to report the key described character of discharge (“mostly clear,” P-5) and instead describes “stuffy/mostly running,” which is not the discharge character. Most importantly, it incorrectly claims the transcript does not contain explicit denials of cough, sore throat, SOB, fever/chills, and loss of taste/smell—these are explicitly denied in P-4, P-7, and P-16. This is a major contradiction of the source and Gold Answer.",
+    "completeness": "Key points covered: (1) nasal congestion/stuffy nose, (2) runny nose, (3) duration ~1 week, (4) started stuffy then mostly running (partially/awkwardly). Key points missed: (1) discharge character “mostly clear” (P-5), (2) explicit denials of cough (P-4), sore throat/SOB/fever/chills (P-7), post-nasal drip/back-of-throat drainage (P-6), and loss of taste/smell (P-16). Also omitted mild fatigue (P-15) and other pertinent negatives listed in the Gold Answer (though those are less central to the question). Overall, it captures well under half of the Gold Answer’s required items.",
+    "faithfulness": "Several statements are directly contradicted by the transcript, especially the claim that there were no explicit denials of cough/sore throat/SOB/fever/chills/loss of taste/smell. Those denials are clearly present. While some quoted material is accurate (e.g., “just mostly for my nose”), the response omits and misrepresents key transcript content, reducing grounding/faithfulness.",
+    "relevance": "The response is largely focused on nasal symptoms, discharge, and denied related symptoms, which matches the question. However, because it fails to actually list the explicitly denied symptoms (and incorrectly says they weren’t denied), it only partially addresses the asked items."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "The answer is partially relevant and captures the main nasal complaints, but it misses the clear discharge description and incorrectly claims key related-symptom denials were not present, making it incomplete and not faithful to the transcript."
+}

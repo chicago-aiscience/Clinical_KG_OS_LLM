@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer lists a fuller constellation including dry cough, persistent headache, GI symptoms (nausea/vomiting/diarrhea), fatigue, and loss of smell as overlapping with COVID-19. Generated Answer correctly identifies headache, cough, and loss of smell as key, with accurate citations, and doctor's statement [D-52]; minor discrepancy in omitting GI symptoms, fatigue, and 'dry' cough detail, but core facts (doctor's suspicion and key symptoms) align; characteristic symptom (anosmia) matches exactly.",
+    "completeness": "Gold key points: doctor's [D-52] statement (covered), symptoms (dry cough [P-12], headache [P-3/P-5], GI [P-1/P-28/P-32], fatigue [P-19], loss of smell [P-24]) - Generated covers headache, cough (not specified dry), loss of smell (~3/6 symptoms, 50%); doctor's smell question [D-24], alternatives, negatives missed. Covers 50-79%.",
+    "faithfulness": "Claims like headache location [P-5], cough [P-1], loss of smell [P-24], doctor's overlap [D-52] verifiable in transcript with accurate citations. However, 'knowledge graph explicitly links loss of smell to DIAGNOSIS of covid-19' is entirely hallucinated/not in transcript; distinguishes from viral management plausible but adds unverifiable detail. Multiple hallucinated elements.",
+    "relevance": "Directly addresses both question parts: specifies combination (headache, cough, loss of smell) leading to suspicion with citations, identifies anosmia as characteristic; minor off-topic hallucination (knowledge graph) but core perfectly focused on question."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 3.25,
+  "summary": "The Generated Answer is mostly correct and relevant but incomplete in symptom coverage and includes hallucinated references, lowering faithfulness."
+}

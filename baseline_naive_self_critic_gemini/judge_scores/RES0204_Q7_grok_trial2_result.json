@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer details dry cough onset 4-5 days prior as first symptom (P-2,P-4), non-productive (P-6), severity stayed the same/not improving (P-7,P-2), runny nose couple days later/clear (P-11,P-12), novel dry cough and longer runny nose vs prior (P-24), no wheezing (P-28). Generated correctly captures onset/timing/durations of cough vs runny nose, persistence/not improving; however, omits explicit 'dry/non-productive' description (only implicit via citations), misattributes P-5 to duration confirmation (it's dry confirmation), partial severity (misses 'stayed the same'), and significantly alters prior experiences by focusing on asthma workup/family history (P-28) instead of patient's direct statement of never having such dry cough and shorter prior runny noses (P-24, unmentioned). Some factual discrepancies but core timeline correct.",
+    "completeness": "Gold key points: 1) cough 4-5 days first/dry/non-productive; 2) severity unchanged/not better; 3) runny nose 2-3 days later/clear; 4) sequential; 5) prior novel dry cough, shorter past runny noses, healthy/no SOB. Generated covers: 1) cough 4-5 days first; 3) runny couple days later/clear; 2) partial (persistent/not better); 4) yes; misses explicit dry/non-productive, 'stayed same', key P-24 prior details (covers ~60-70%).",
+    "faithfulness": "All claims verifiable in transcript: durations/timing from P-2,P-4,P-11; persistence P-2; clear P-12; denials accurate; prior P-28. Minor issues: P-5 cited for duration (actually dry); interprets questioning sequence for timing (plausible/accurate); no fabrication, asthma details match transcript.",
+    "relevance": "Directly structures answer around symptom sequence, timing cough vs runny, severity trends, prior comparison per question; minor tangent on other absent symptoms but focused overall."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 4,
+    "relevance": 4
+  },
+  "average_score": 3.5,
+  "summary": "The Generated Answer accurately captures symptom timeline and relative onset but omits key details on cough characteristics, exact severity phrasing, and prior history specifics while adding minor irrelevant denials."
+}

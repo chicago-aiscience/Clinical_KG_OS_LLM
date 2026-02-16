@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the deprioritized condition as cardiac ischemia/“cardiac ischemic picture,” consistent with the Gold Answer. It also correctly cites that the clinician relied on the character of symptoms being tightness rather than pain and the clinician’s statement that the patient “didn’t really get out of breath with exercise.” However, it overstates the conclusion by implying cardiac ischemia is “ruled out,” whereas the transcript/Gold indicate it was placed lower on the differential, not excluded. It also omits other key clinician-screened red-flag negatives (anxiety, sweating, impending doom) that the Gold Answer includes as part of the evidence base.",
+    "completeness": "Covers: (1) cardiac ischemia lower on differential; (2) chest symptoms described as tightness rather than pain; (3) clinician comment about not really being out of breath with exercise. Misses: denial of anxiety/sweating/impending doom as additional pertinent negatives supporting lower ischemic likelihood, and the nuance that the patient did report some difficulty getting a full breath (Gold notes this while still emphasizing clinician’s interpretation). Also adds an irrelevant “Knowledge Graph” justification rather than fully listing transcript-based symptom absences.",
+    "faithfulness": "Most claims are supported by the transcript (tightness rather than pain; clinician noting no real exertional dyspnea; no pain). However, reference to a “Knowledge Graph” is not in the transcript, and stating these findings “rule out” cardiac ischemia is not directly supported (the clinician only said it was lower on the differential). These elements reduce grounding.",
+    "relevance": "The response stays on the asked items (which condition was deprioritized and what symptom findings supported that). However, it only partially addresses the ‘absence of certain symptoms’ component by mentioning absence of pain but not the other clinician-queried absent symptoms (anxiety/sweating/impending doom)."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 3,
+    "relevance": 4
+  },
+  "average_score": 3.25,
+  "summary": "Identifies cardiac ischemia correctly and cites tightness-without-pain and limited exertional dyspnea, but incompletely captures the cited absent red-flag symptoms and introduces ungrounded/overstated elements (\"Knowledge Graph,\" \"rule out\")."
+}

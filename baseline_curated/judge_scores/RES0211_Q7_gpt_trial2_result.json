@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "- Correctly states the overall duration was ~3–4 days.\n- Incorrect/imprecise on symptom order: the transcript explicitly says she first noticed a scratchy throat and then started coughing (scratchy throat → dry cough). The generated answer groups “dry cough and scratchy throat” together as first, not clearly identifying scratchy throat as the initial symptom.\n- Headache timing is not established as occurring after throat/cough onset; it is reported at presentation. Listing it as the next step in progression is not clearly supported.\n- Main error regarding “feeling hot”: the generated answer asserts it occurred “followed immediately” after throat/cough and was “concurrent,” whereas the gold answer notes the transcript does not specify exactly when the hot sensation began relative to throat/cough—only that it was part of the same multi-day illness.\n- Correct that clinician later summarized this as “a little bit of fever.”",
+    "completeness": "Gold answer key points:\n- 3–4 day timeframe: covered.\n- Initial symptom scratchy throat then dry cough: partially covered (not clearly ordered).\n- Additional symptoms by visit: headache, malaise/feeling crappy, fatigue: headache covered; malaise and fatigue omitted.\n- Feeling hot described as persistent day and night: not captured fully (no mention of constant/all the time, day and night, clothing detail).\n- Important nuance: exact onset of feeling hot relative to throat/cough not specified: missed/contradicted (it asserts immediacy/concurrency).\nOverall: covers some, but misses several key gold elements and nuance.",
+    "faithfulness": "- Supported: 3–4 days; presence of dry cough, scratchy throat, headache, feeling hot; physician summary of “a little bit of fever.”\n- Not well-supported: claiming the hot sensation occurred “followed immediately” after throat/cough and treating it as clearly concurrent in sequence; transcript does not anchor its onset relative to other symptoms.\n- Implied chronology for headache is not established.\n- Mentions post-nasal drip later; that is in transcript, but it is not relevant to the asked progression and may distract.\nThese issues make the answer only partially grounded in the transcript’s temporal details.",
+    "relevance": "Directly attempts to answer (1) symptom order/progression and (2) how feeling hot fits relative to cough/throat symptoms. Minor extraneous mention of post-nasal drip, but overall focused on the question."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 3,
+    "relevance": 5
+  },
+  "average_score": 3.5,
+  "summary": "Partially answers the timeline, but it blurs the documented initial symptom order and incorrectly adds certainty about when the “feeling hot” began relative to throat/cough, while also omitting several key associated symptoms and details."
+}

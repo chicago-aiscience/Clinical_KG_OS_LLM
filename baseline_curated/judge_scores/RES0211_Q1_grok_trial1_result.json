@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Generated Answer correctly identifies dry cough, scratchy throat, and headache from P-1, aligning with Gold. It inaccurately attributes 'fever' solely to doctor's summary (D-58) without noting patient's 'felt really hot' (P-7,P-9). Adds 'post nasal drip' (P-18) which Gold does not list as a key 3-4 day symptom and relates to allergies, not primary complaint. For denials, wrongly claims no explicit sputum denial (contradicts P-5,P-6 and mis-cites D-58), and falsely states no transcript info on nausea (P-11), rashes (P-10), joint pain (P-13), missing diarrhea (P-12) and others; significant contradictions with Gold.",
+    "completeness": "Gold reported symptoms covered: dry cough/scratchy throat (yes), headache (yes); misses 'feeling hot/feverish' (P-7,P-9), malaise/crappy/icky (P-1,P-2,P-14), tired (P-13). Gold denied: sputum/phlegm (no), rashes/skin changes (no), nausea/vomiting (no), diarrhea (no), joint aches (no), breathing difficulty (no). Covers ~2/6 reported and 0/6 denied key points (~20-30%), score 2.",
+    "faithfulness": "Claims for cough/throat/headache grounded in P-1. Fever in D-58 accurate but patient-based in P-7/9. Post nasal drip verifiable in P-18 but contextually allergy-related, not hallucinated. Sputum: 'dry cough implies absence' plausible but explicit denials in P-5/6 ignored; wrong citation D-58. Major issue: 'transcript does not contain info' on nausea/joint/rashes is false (P-10-13 present), multiple ungrounded absences/omissions.",
+    "relevance": "Directly lists reported symptoms and addresses denied examples, structured response matches question format; minor tangent with post nasal drip but no major off-topic content."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer partially captures reported symptoms but significantly errs on explicit denials by claiming absence of transcript evidence and misses key points, leading to low overall quality."
+}

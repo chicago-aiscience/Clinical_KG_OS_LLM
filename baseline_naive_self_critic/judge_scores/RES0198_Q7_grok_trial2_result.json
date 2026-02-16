@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer accurately captures onset one week ago [P-1,P-2], stuffy nose first [P-3], shift to mostly runny [P-3], decongestant influence [P-10], initial 'on and off' [P-1] clarified to 'pretty constant' [P-8], and no improvement [P-1]. Generated Answer correctly identifies one-week onset [P-1], stuffy first transitioning to runny [P-3], but inaccurately states both symptoms began together without prioritizing stuffy as first, definitively labels symptoms as intermittent based only on [P-1] ignoring [P-8] constant clarification, and omits decongestant role and lack of improvement. Some factual errors on symptom onset simultaneity, pattern of symptoms, and misses influences, but core progression (stuffy to runny) aligns.",
+    "completeness": "Gold key points: 1-week onset, initial stuffy, shift to runny, decongestant influence, pattern nuance (on/off to constant), no improvement. Generated covers: 1-week onset (yes), first stuffy (yes), change to runny (yes), intermittent pattern partially (only on/off). Misses: decongestant [P-10], constant clarification [P-8], no improvement explicit. Covers ~60% of key points (main progression but incomplete on pattern and influences).",
+    "faithfulness": "All claims in Generated verifiable: both symptoms past week and 'on and off' [P-1], stuffy first now mostly running [P-3]. No hallucinations or inaccurate citations; selective omission of [P-8] and [P-10] but present claims grounded directly in transcript.",
+    "relevance": "Generated directly structures response around onset/initial symptoms, progression of predominant symptom, and summary addressing first symptom, change over week, and frequency—perfectly matches question without off-topic content."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 5,
+    "relevance": 5
+  },
+  "average_score": 4.0,
+  "summary": "The Generated Answer captures the core chronological progression accurately but is incomplete and has some factual discrepancies in symptom pattern and influences compared to the nuanced Gold Answer."
+}

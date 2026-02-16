@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer specifies onset symptoms (SOB, fatigue/rundown/tired/weakness/reduced appetite, laborious breathing, aches unspecified onset), day before (subjective fever), morning (loss of taste/smell, new), emerging (dry cough 'on its way', sore throat 'starting', headaches not different from baseline). Generated correctly identifies onset SOB/fatigue/malaise and recent fever/loss of taste. Errors: sore throat citation wrong (P-6 is smell, not sore throat); cough misattributed (patient explicitly reports 'starting' in P-7/8, not just doctor); muscle aches wrongly categorized as emerging/doctor-noted (patient reports in P-20/21); SOB wrongly moved to emerging; misses smell/headaches/reduced appetite detail, aches timeline. Some factual errors but core timeline structure matches.",
+    "completeness": "Covered from Gold: onset SOB/fatigue (partial, misses weakness/appetite/laborious/aches); recent fever/loss of taste. Missed: reduced appetite, laborious breathing detail, aches (or wrong category), smell, headaches. Partial emerging: sore throat/cough (inaccurate), adds extras wrongly. Covers ~60% key points.",
+    "faithfulness": "Most claims verifiable: onset symptoms/citations accurate; fever/taste ok. Issues: sore throat cites P-6 (smell, hallucinated); cough 'patient does not explicitly vocalize' false (P-7/8 explicit 'starting one, dry, on its way'); muscle aches/SOB doctor attribution partial (patient reports directly); 'knowledge graph' not in transcript. Multiple inaccuracies/hallucinations in reporting patient statements.",
+    "relevance": "Perfectly structures response into onset/recent/emerging categories mirroring question's timeline phases (couple days ago, day before/morning, just emerging at consult); no off-topic content."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.25,
+  "summary": "The Generated Answer captures the core timeline structure and major symptoms but has factual errors, miscategorizations, wrong citations, and omissions reducing overall quality."
+}

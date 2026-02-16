@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Gold Answer specifies what the doctor recapped in the end-of-visit summary (D-58): 3–4 day dry cough with a little fever and headache; no sputum; no recent sick contacts except brother with a cold ~2 weeks prior; no asthma; no meds aside from Claritin. It also specifies Jessica’s stated goal for next steps (P-60: whether she needs to take medicine) and her desire to go home and rest (P-61). The Generated Answer partially captures some symptoms (dry cough, headache, feeling hot/fever) and allergies, but it does not accurately report the doctor’s recap items (omits no sputum, brother/contacts, no asthma) and adds items not part of the doctor’s recap (scratchy throat, post-nasal drip, birth control). Most importantly, it incorrectly states Jessica’s primary goal was to seek care from her family doctor (misread of P-22) rather than asking whether she needs medication (P-60).",
+    "completeness": "Covered from Gold: (1) dry cough (partial), (2) headache (yes), (3) feeling hot/fever (yes), (5) mentions Claritin (though context differs). Missed from Gold: no sputum production; sick-contact recap including brother with cold ~2 weeks ago; no asthma; the explicit framing of “next steps and where to go from here”; Jessica’s actual primary goal (whether she needs medicine); Jessica’s additional desire to go home/lie down. Overall, well under 80% of key points.",
+    "faithfulness": "Several statements are not well-supported by the transcript or are attributed to an external “knowledge graph” not present in the source. The interpretation that Jessica’s primary goal was to seek medical attention from her family doctor is not supported by P-22 and contradicts P-60. Also, the answer presents post-nasal drip and birth control details as part of the key recap despite the question focusing on the doctor’s summary; while those facts exist earlier in the transcript, they are not what the doctor recapped at the end. These issues reflect multiple ungrounded/misattributed claims.",
+    "relevance": "The response is generally on-topic (symptoms and goal), but it does not answer the specific question about what the doctor recapped in the end summary and what Jessica identified as next steps. It includes tangential history/medication details and an incorrect goal statement, reducing relevance."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "The generated answer is partially related but misses several key recap elements and incorrectly identifies Jessica’s primary goal, with multiple ungrounded or misattributed claims."
+}

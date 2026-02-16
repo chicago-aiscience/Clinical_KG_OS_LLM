@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer contains multiple factual errors compared to the Gold Answer and transcript: it incorrectly states no diagnostic tests (chest X-ray and COVID swab) were ordered [D-37], denies self-isolation instructions despite explicit mention to 'stay away from everyone, including your wife' and 'self isolate as much as possible' [D-37], omits the 24-48 hour timeline for results and public health nurse follow-up [D-37], and misrepresents disposition criteria as not explicit when Gold notes they are based on test results [D-37]. Physical exam is partially acknowledged but misses chest focus. Overall, contradicts Gold Answer on core facts.",
+    "completeness": "Key points from Gold Answer: physical exam of chest [D-37], chest X-ray and COVID swab [D-37], self-isolation from everyone including wife [D-37], 24-48 hour results timeline with public health nurse [D-37], disposition based on results [D-37]. Generated covers only ~10% (physical exam mention), misses or denies all others.",
+    "faithfulness": "Generated hallucinates absences: claims no tests ordered (contra [D-37] chest X-ray, COVID swab), no self-isolation (contra [D-37]), no timeline (contra [D-37]). Physical exam citation [D-38] accurate but incomplete (misses [D-37] chest exam). Links to breathing/COVID [D-36] plausible but not faithful to plan details. Multiple contradictions to transcript.",
+    "relevance": "Generated Answer directly structures response around the question's elements (tests, physical exam, self-isolation, timeline, criteria), with no off-topic content, perfectly matching the query's focus despite factual inaccuracies."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 2.25,
+  "summary": "The Generated Answer is highly inaccurate, incomplete, and unfaithful to the transcript by denying key elements of the management plan explicitly stated in [D-37], despite maintaining structural relevance."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer accurately cites transcript for husband's week-long illness (P-19/P-20), limited contacts (P-17/P-18/P-22/P-23/P-42), and no flu shot (P-53), emphasizing household transmission favoring COVID prioritization and flu as alternative. Generated Answer gets core facts right (husband's symptoms, limited exposure via hiking/no travel, no flu shot influencing flu suspicion) but has errors: wrong citation for flu shot (P-27 instead of P-53), introduces 'imported disease' exclusion not stated by doctor or Gold, and adds symptom correlation via non-existent [KG]. Main point of prioritization holds, but discrepancies present.",
+    "completeness": "Gold key points: 1) Husband's prior similar illness suggesting household spread (covered); 2) Limited outside contact (work from home, homebound except hiking, no other sick contacts) supporting household tx (partially covered via hiking/local, but misses explicit home isolation/work details); 3) No flu shot making flu plausible (covered). Covers ~85% but omits some supporting details on household isolation.",
+    "faithfulness": "Claims on husband [P-19/D-53], hiking [P-18], prioritization [D-53/D-54] verifiable. Flu shot claim verifiable but wrong citation [P-27 vs P-53]. 'Rules out imported cases' not in transcript (doctor doesn't mention). 'Clinical knowledge graph [KG]' fully hallucinated, no KG present. Symptom indistinguishability plausible but not doctor-stated. Multiple hallucinations/wrong refs.",
+    "relevance": "Directly breaks down the three specified risk factors (husband, exposure history, vaccination) and their role in shaping COVID-primary vs flu-secondary differential, matching question focus. Minor off-topic: imported disease, symptoms/[KG]."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 4,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 3.25,
+  "summary": "The Generated Answer captures the core epidemiological influences on the differential but is undermined by factual errors, incorrect citations, and hallucinations like [KG] and imported disease claims."
+}

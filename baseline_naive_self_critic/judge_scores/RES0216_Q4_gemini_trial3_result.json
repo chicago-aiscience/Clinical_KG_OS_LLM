@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The generated answer correctly identifies the condition (cardiac ischemia) and the absence of pain. However, it incorrectly lists 'difficulty breathing' as a symptom finding used to deprioritize the condition, whereas the transcript (D-36) and the gold answer show the doctor cited the *absence* of significant breathlessness ('didn't really get out of breath with exercise') as evidence against a cardiac picture. The generated answer also claims the lack of pain 'rules out' the diagnosis, which is a stronger claim than the transcript's 'lower on the differential.'",
+    "completeness": "The generated answer misses several key points from the gold answer. It fails to mention the absence of anxiety, sweating, and the feeling of impending doom (P-6), which the doctor explicitly screened for and the gold answer includes as evidence. It also misses the distinction between tightness and classic exertional dyspnea used as reasoning by the doctor.",
+    "faithfulness": "The generated answer hallucinates the existence of a 'knowledge graph' as a source of information. No knowledge graph was provided in the context; only a 'Source Transcript' was available. The claims about the knowledge graph 'ruling out' the diagnosis are not grounded in the provided transcript.",
+    "relevance": "The answer is highly relevant in structure, directly addressing the specific condition and the requested symptom findings, although it fails to capture all of them."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.0,
+  "summary": "The answer correctly identifies the condition but hallucinates a 'knowledge graph' source and misses the majority of the specific symptoms the doctor cited as absent."
+}

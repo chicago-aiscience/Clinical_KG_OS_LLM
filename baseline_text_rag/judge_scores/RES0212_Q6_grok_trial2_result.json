@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer accurately paraphrases the doctor's stated plan from [D-47] ('go review your story with the doctors') and begins the summary assessment matching [D-47] ('cough for a while... became bad in the last three days... wakes up at night... brings up' greenish sputum). No factual errors or contradictions with the Gold Answer or transcript; interpretations in Gold (e.g., lowering concern for TB/malignancy) are absent but not contradicted. All stated facts are fully consistent.",
+    "completeness": "Gold key points: detailed summary assessment (cough duration, recent worsening, nighttime awakening, greenish sputum/no blood, no constitutional symptoms), absence lowers concern for serious illness (TB/malignancy refs), plan to review with doctors/trainee context, patient addition [P-47]/doctor response [D-48], no tests/treatments, next steps guided by supervising physician. Generated covers: plan fully, partial summary (cough history, worsening, night waking, starts sputum). Misses: no blood/constitutional symptoms, interpretations, post-D47 exchanges, no tests, next steps guidance. Covers ~25-40% of key points.",
+    "faithfulness": "All claims directly from [D-47]: plan verbatim ('review... with the doctors'), summary paraphrase exact to transcript wording. Citation accurate (**D-47**). No unverifiable details, hallucinations, or fabrications; fully grounded despite truncation.",
+    "relevance": "Directly addresses question by structuring response around 'Stated Plan' and 'Summary Assessment' with transcript citation. Covers first two question parts (plan, assessment) partially; ignores third (info guiding next steps). No off-topic content, highly focused on query elements present."
+  },
+  "scores": {
+    "correctness": 5,
+    "completeness": 2,
+    "faithfulness": 5,
+    "relevance": 4
+  },
+  "average_score": 4.0,
+  "summary": "The Generated Answer is factually correct, faithful, and relevant but severely incomplete due to truncation and omission of key assessment details and next-steps guidance."
+}

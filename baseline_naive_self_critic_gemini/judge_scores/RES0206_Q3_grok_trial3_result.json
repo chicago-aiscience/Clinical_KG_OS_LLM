@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer specifies symptoms for COPD exacerbation (increased dyspnea, cough frequency, sputum volume [P-1], decreased exercise tolerance [P-4]) and infection (green-yellow sputum [P-1], fever [P-9], sinus pressure [P-12], headache [P-14], sick contact [P-20]), with explanations of distinctions and exclusions. Generated correctly identifies core symptoms from [P-1] (cough, sputum volume, dyspnea) and doctor's assessment [D-43], and sputum's role. Minor discrepancies: adds blood-tinged sputum as COPD support (present in [P-1] but not emphasized in Gold), omits fever/exercise tolerance explicitly in lists, but no factual contradictions; core facts align.",
+    "completeness": "Gold key points: COPD symps (4 points, Generated covers 3/4, misses exercise [P-4]); infection symps (5 points, covers 2/5: sputum/sinus, misses fever/headache/contact); doctor's quote (partial); distinctions (partial, misses fever); patient history [P-3], exclusions [P-26/P-38], no findings [D-43] (all missed). Covers ~60-70% of key points.",
+    "faithfulness": "All cited quotes from [P-1], [P-12], [D-43] accurate and verifiable. Symptoms/blood factual. Explanations (purulent sputum = bacterial, sinus = URI) plausible medical knowledge but not explicitly in transcript. 'Knowledge graph' reference unverifiable/not in transcript (hallucination). Distinction from non-infectious triggers partially grounded (env explored [D-38/P-38]). Mostly grounded with minor unverifiable details.",
+    "relevance": "Directly lists symptoms supporting dual assessment with citations, explains sputum's distinguishing role per question. Structured response focused on question; minor addition of blood/sinus but no major off-topic content. Does not explicitly address 'fever' distinction as queried, but overall perfectly on-topic."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 4,
+    "relevance": 5
+  },
+  "average_score": 4.0,
+  "summary": "The Generated Answer is mostly accurate and relevant with good transcript grounding, but incomplete in covering all Gold-specified symptoms and distinctions, particularly omitting fever."
+}

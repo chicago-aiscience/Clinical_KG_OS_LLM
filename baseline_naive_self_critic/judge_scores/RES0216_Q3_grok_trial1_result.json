@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer details precise links: asthma history [P-16,P-29], medication non-compliance (skipping evening ICS [P-19], no rescue refill [P-17-18,D-34]), specific symptoms (diffuse tightness on exertion/difficulty full breath [P-1,7,9,10]), patient acknowledgment possible relation [P-16], no triggers [P-33], no cardiac/systemic sx [D-36], therapeutic trial [D-35]. Generated correctly identifies asthma as top dx [D-35], history [P-16], tightness [P-1], reduced meds [D-34], exertion [D-34], no pain cardiac lower [D-36]. Errors: Elevates hoarseness/phlegm [P-11] as key symptom (not in Gold/doctor emphasis, patient denies cough); misattributes Salbutamol [P-25] as reduced (it's rescue, but patient hasn't used/refilled, daily separate); 'new onset triggered outdoors' imprecise (steady 3 days, worse on walks); hallucinates 'knowledge graph'. Some factual errors but main point (asthma top via history/symptoms/med reduction/exertion/no cardiac) correct.",
+    "completeness": "Gold key points: 1. Asthma history (covered). 2. Specific med limiting (skipping evening [P-19], no rescue [P-17-18]) - partially via [D-34], imprecise. 3. Precise symptoms (diffuse tightness/exertion/SOB) - partially (tightness/SOB/exertion). 4. Patient: could be related [P-16] - missed. 5. No triggers [P-33] - missed. 6. Absence cardiac/systemic [D-36] - covered partially. 7. Therapeutic trial [D-35] - missed. Covers ~60% (history, symptoms partial, exertion, cardiac ruleout, basic linking).",
+    "faithfulness": "Claims mostly verifiable: symptoms tightness [P-1], SOB [P-1/P-7], phlegm/hoarse [P-11], asthma [P-16], salbutamol [P-25], reduced [D-34], walks [D-34], recurrence [D-35], no pain cardiac [D-36]. Phlegm/hoarse minor/not emphasized by doctor. Hallucinates 'knowledge graph relationship'/'asthma differential for cardiac ischemia' - not in transcript. Some plausible but one clear fabrication; mostly grounded.",
+    "relevance": "Directly lists combination (symptoms/history/features), explains linking (history+symptoms->recurrence, no pain->rule cardiac), matches question structure perfectly despite issues; no major off-topic."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 4,
+    "relevance": 5
+  },
+  "average_score": 3.75,
+  "summary": "Generated Answer captures core reasoning for asthma as top diagnosis but misses key details like specific medication non-compliance and patient acknowledgment, includes minor extraneous symptoms, and hallucinates a knowledge graph reference."
+}

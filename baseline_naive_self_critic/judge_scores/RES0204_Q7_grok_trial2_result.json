@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer accurately details cough onset 4-5 days ago as first symptom, dry/non-productive, unchanged severity; runny nose starting 2-3 days later with clear discharge; novel dry cough and longer-lasting runny nose vs priors. Generated Answer correctly notes cough 4-5 days but misstates severity as 'persisted or worsened' (transcript/Gold: stayed same); fabricates 'clinical knowledge graph'; erroneously claims no runny nose info despite clear transcript evidence [P-11,P-12]; shifts prior comparison to fever/chills/asthma (tangential) instead of cough/runny nose history. Significant contradictions on key facts like runny nose absence and severity.",
+    "completeness": "Gold key points: cough 4-5 days first/dry/unchanged; runny nose later/clear; sequential; novel dry cough, prior runny shorter. Generated covers cough onset partially; misses dry details/severity unchanged/runny nose entirely/relative timing/prior cough novel & runny duration. Covers ~20-30% (only basic cough start).",
+    "faithfulness": "Cites some transcript [P-2,P-13,P-28] but hallucinates 'knowledge graph' (absent); denies verifiable runny nose [P-11:P 'Oh yes... past couple of days', P-12 'pretty clear']; infers worsening ungrounded (P-7 'stayed the same'); adds unprompted fever/asthma context. Multiple unverifiable/hallucinated claims.",
+    "relevance": "Structures around onset/cough-runny/priors matching question, but derails with runny denial, irrelevant fever/asthma, knowledge graph tangent; partially addresses cough timeline but omits core timing/severity changes."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "The Generated Answer has significant factual errors like denying the runny nose, misstating cough severity, and hallucinating external references, covering only partial cough details while missing key timelines and comparisons."
+}

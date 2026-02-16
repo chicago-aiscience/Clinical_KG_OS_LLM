@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Generated Answer partially captures nasal symptoms (stuffy and runny nose from P-1) but omits duration (1 week, P-2), evolution (stuffy first, now mostly running, P-3), and incorrectly describes discharge character as 'runny' (P-1) and attributes 'congestion and drainage' to doctor (D-6) instead of patient's report of 'mostly clear' (P-5, as in Gold). For denials, it lists some correct ones (cough P-4, sore throat P-7, loss of taste/smell P-16) but falsely claims patient did not explicitly say 'no' (contradicts explicit 'No' in P-4, P-7, etc.), misses post-nasal drip denial (P-6), and adds extras like headaches (P-14) not central to question examples. Significant factual errors and contradictions with Gold.",
+    "completeness": "Key Gold points covered: stuffy/runny nose (partial). Missed: 1-week duration, stuffy first/now running, clear discharge, post-nasal drip denial (P-6), fatigue (P-15); partial on some denials (cough, sore throat, anosmia). Covers ~30-40% of key points.",
+    "faithfulness": "Claims grounded: stuffy/runny [P-1]. Unverifiable/hallucinated: discharge as 'runny' only (ignores P-5 clear), doctor identification of discharge (D-6 misattributed), no explicit 'no' from patient (falsely contradicts P-4 'No', P-7 'No', P-16 'No'), infers absence from doctor questions rather than patient responses. Mentions non-existent 'knowledge graph'. Multiple hallucinations.",
+    "relevance": "Directly structures response around question parts (nasal symptoms, discharge character, denied symptoms) with bullet points matching examples; minor extras like headaches but focused on query."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer has significant factual inaccuracies, especially on discharge character and explicit denials, low completeness in covering Gold details, faithfulness issues from hallucinations, but remains mostly relevant to the question."
+}

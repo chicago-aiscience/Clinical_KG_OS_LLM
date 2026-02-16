@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer specifies initial onset 4-5 days ago with wheezing and difficulty deep breathing after playing tag (trigger) [P-1,P-2,P-3]. Generated correctly notes onset and wheeziness [P-1] but incorrectly identifies cold weather as the trigger [P-38] instead of physical activity (playing tag) [P-3]; misattributes fluctuating pattern to past infections [P-15] rather than current episodic activity-related episodes resolving with rest [P-5,P-6]; cough noted but not as recently emerged or non-productive [P-1,P-31]; nocturnal episode partially correct but incomplete. Significant errors on trigger and pattern contradict Gold.",
+    "completeness": "Gold key points: onset 4-5 days [P-1], trigger playing tag [P-3], early symptoms wheeze/difficulty breaths [P-2], fluctuating episodic with activity/rest [P-5,P-6], recent cough non-productive [P-1,P-31], nocturnal wheeze/trouble sleep [P-43,P-44], negatives (no cyanosis/fever/well otherwise). Generated covers onset, partial cough, partial nocturnal; misses trigger, early symptoms detail, accurate fluctuating pattern, negatives. Covers ~30% of key points.",
+    "faithfulness": "Claims like onset [P-1], cough [P-1], nocturnal [P-43] verifiable; cold worsening [P-38] accurate but misframed as trigger; past infections [P-15] verifiable but wrongly applied to current pattern; 'knowledge graph linking cold air to wheezing' fully hallucinated (no such element in transcript). Multiple misinterpretations and one clear hallucination.",
+    "relevance": "Generated directly structures response around onset, trigger, fluctuating pattern, cough emergence, nocturnal episode as per question; minor extraneous past history but focused on symptom progression."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer partially addresses the symptom progression but contains significant factual errors, misinterpretations, and a hallucination, covering only a fraction of the Gold Answer's key points."
+}

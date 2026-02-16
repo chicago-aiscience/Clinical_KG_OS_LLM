@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer accurately captures core facts like productive cough with yellow 'custard' sputum and red spots [P-4, P-6], fever [P-5, P-8 equivalent], exertional dyspnea [P-10, P-11], and right-sided pleuritic chest pain worsening with deep breathing/coughing [P-17-20]. It correctly interprets these as supporting pneumonia. Minor discrepancies: fever citation uses P-14 (Tylenol, indirect) instead of precise P-8; omits chills [P-9] and smoking [P-36-38]; less detail on pain being constant/dull even at rest [P-19-21]; adds 'hemoptytic' (accurate for red spots) and Knowledge Graph (not in Gold). Core facts consistent, no major errors.",
+    "completeness": "Gold key points: 1) yellow sputum + red spots [P-4,6]; 2) fever [P-8]; 3) chills [P-9]; 4) exertional dyspnea [P-10,11]; 5) detailed right chest pain (constant dull, worsens deep breath/cough, at rest) [P-17-21]; 6) pleuritic supports pleural involvement; 7) smoking risk. Generated covers 1,2(partial),4,5(partial),6; misses chills, full pain details, smoking. Covers ~75-85% of key points.",
+    "faithfulness": "Most claims verifiable: sputum [P-6], red spots [P-4,6], cough [P-1], fever [P-5], dyspnea [P-10], pain [P-17,18]. P-14 Tylenol implies symptoms but not direct fever evidence. Hallucinations: repeated 'Knowledge Graph' references (absent from transcript); interpretive phrases like 'compromised lung function/consolidation' plausible but not directly stated. Some unverifiable additions, but majority grounded.",
+    "relevance": "Directly addresses question by listing transcript findings (cough/sputum, fever, dyspnea, pleuritic pain) supporting LRTI/pneumonia with citations and explaining pleuritic pain's role in localizing to pleural inflammation. Minor off-topic: Knowledge Graph mentions; still highly focused."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 3,
+    "relevance": 4
+  },
+  "average_score": 3.75,
+  "summary": "The Generated Answer is mostly accurate and relevant, covering key symptoms with good transcript grounding and pleuritic reasoning, but misses chills/smoking, underdetails pain, and hallucinates Knowledge Graph."
+}

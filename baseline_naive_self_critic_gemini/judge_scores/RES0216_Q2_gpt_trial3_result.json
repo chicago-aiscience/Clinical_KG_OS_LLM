@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies Ramipril as being for high blood pressure. However, it incorrectly characterizes the asthma regimen: it states the patient is “taking salbutamol daily,” whereas the transcript distinguishes a daily maintenance inhaler vs an as‑needed rescue inhaler, and the key adherence issue is that the patient has been skipping the prescribed evening maintenance dose and does not currently have a rescue inhaler because he did not refill it. The answer also claims the record lacks information about adherence changes over the past couple of years, but the transcript explicitly states changes (skipping night dose ‘for a while’; not refilling rescue inhaler for a couple of years). It also omits Tylenol, which the patient reports taking occasionally.",
+    "completeness": "Gold Answer key points: (1) salbutamol inhaler; (2) Ramipril for HTN; (3) occasional Tylenol for headaches; (4) two-inhaler concept (daily controller + PRN rescue); (5) prescribed controller dosing BID (morning and night); (6) patient has been skipping the night dose for a while and currently only takes morning dose; (7) has not needed rescue inhaler for a couple years and therefore did not refill and currently has none available; (8) confirms he did not stop controller entirely in last 3 days. Generated Answer includes only Ramipril and salbutamol (and misstates salbutamol use as daily) and misses Tylenol and essentially all adherence-change details (dose reduction and lack of rescue inhaler).",
+    "faithfulness": "Several statements are not grounded in the provided transcript: references to a “knowledge graph,” the claim that documentation does not contain adherence-change information (it does), and the implication that rescue inhaler availability change is not stated (it is: he did not refill and does not have it). These constitute multiple unfaithful or contradictory claims relative to the transcript.",
+    "relevance": "The response is generally on-topic (medications and asthma adherence) but fails to answer the most important part of the question—how adherence changed over the past couple of years including dosing frequency and rescue inhaler availability—despite that information being present in the transcript."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "The answer is partially on-topic and gets Ramipril’s indication right, but it omits a reported medication and misses (and contradicts) the transcript’s key details about reduced controller dosing and lack of a current rescue inhaler."
+}

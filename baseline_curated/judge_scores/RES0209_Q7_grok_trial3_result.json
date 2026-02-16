@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly notes the diagnosis at age 8 and current symptoms (dry cough, SOB, wheezing, nonstop daytime cough), increase in bronchodilator use ('a lot now'), and triggers (exercise, cold air, pollen). However, it fails to specify the patient's current age (10), baseline bronchodilator frequency ('once every two weeks'), precise current frequency ('five-six times a week'), 2-week exacerbation duration, chest tightness, wheezing exceeding bronchodilator use, and no precipitant. It inaccurately equates nighttime symptoms (every other day) with 'near-daily bronchodilator use' and misattributes baseline nighttime symptoms description to P-18 (which is current). Mentions non-existent 'knowledge graph'. Some factual errors but main point of evolution (infrequent to frequent use, worsening symptoms) is correct.",
+    "completeness": "Key points from Gold covered: diagnosis age 8 (partial, misses now 10), baseline infrequent use (implied but not specified), triggers (exercise, cold, seasonal), current symptoms (cough, wheezing, SOB; misses chest tightness), increased bronchodilator use (general, misses specifics), nighttime symptoms. Missed: 2-year history/age 10, exact baseline 'once/2 weeks', exact current '5-6x/week', wheezing > use frequency, cough duration clarification (1-2 weeks), no infection/precipitant. Covers ~60% of key points.",
+    "faithfulness": "Most claims grounded with citations (e.g., P-9 exercise, P-1 symptoms, P-15 wheezing, P-18 nighttime, P-11 triggers). However, 'knowledge graph provided' is hallucinated (absent from input). Nighttime symptoms misinterpreted as 'indicating near-daily use' (P-18 is symptoms, not use; use freq in P-8). Baseline nighttime 'not as much' wrongly sourced to P-18 (current only). Some plausible but unverifiable misinterpretations.",
+    "relevance": "Strongly addresses question on evolution of symptoms and bronchodilator use (initial diagnosis, baseline to exacerbation progression, triggers). Structure aligns with timeline. Minor tangents none; focused but incomplete in details."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 3,
+    "relevance": 4
+  },
+  "average_score": 3.25,
+  "summary": "The Generated Answer captures the main evolution of worsening asthma symptoms and increased bronchodilator use but has factual inaccuracies, omissions of key specifics, and minor hallucinations reducing overall quality."
+}

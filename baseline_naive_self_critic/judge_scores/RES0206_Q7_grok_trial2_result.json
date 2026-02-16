@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer details baseline comprehensively (puffers [P-1], lifestyle [P-28], inhaler frequency [P-26], dog walks [P-4]). Generated covers baseline puffers [P-1] accurately but omits others. Acute symptoms match (cough increase, green-yellow sputum, dyspnea, hemoptysis [P-1]). Worsening implied but not directly from [P-2]. Severity comparison accurate ([P-3] worst, prior sick-related). Adds accurate doctor impression [D-43] and minor plausible interpretation. Introduces 'knowledge graph' not in transcript, minor discrepancy. Core facts consistent, no major errors.",
+    "completeness": "Gold key points: baseline (4 points: puffers, lifestyle, inhaler freq, activities) - covers 1/4; acute symptoms (cough, sputum, hemoptysis, dyspnea, exercise tol decline [P-4], fever [P-9]) - covers 4/6; worsening explicit [P-2] - implied only; severity (worst [P-3], prior sick [P-3], ED visits x2 no hosp [P-5/6]) - covers 2/4. Covers ~60% of key points (strong on core symptoms/severity, misses baseline depth, fever, exercise details, ED history, explicit worsening).",
+    "faithfulness": "Claims grounded: symptoms [P-1], severity [P-3], doctor note [D-43] verifiable in transcript. Hallucinations: multiple references to 'knowledge graph' and its 'clinical indicators' - not present in source transcript, fabricated external source. Some plausible but unverifiable additions. Multiple hallucinated elements.",
+    "relevance": "Directly structures response around baseline evolution over 3 days, worsening vs improvement, and severity comparison to priors, perfectly matching question components with no off-topic content."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.5,
+  "summary": "The Generated Answer is mostly correct and relevant but incomplete in baseline and history details, with faithfulness reduced by hallucinated knowledge graph references."
+}

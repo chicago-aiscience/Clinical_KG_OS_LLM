@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer details specific symptoms like initial scratchy throat followed by dry cough, detailed subjective fever (day/night), pounding headache, malaise, fatigue, 3-4 day timeline, explicit denials of GI and joint symptoms with citations, brother's cold, and doctor's summary. Generated Answer covers core symptoms (dry cough, scratchy throat, headache, subjective fever/hot, malaise/crappy), timeline, absences (sputum, GI, joint pain), and doctor's summary accurately. Minor issues: incorrect citation for sputum question (D-58 is summary, not direct ask; actual in D-5/P-5-6), generalizes absences without exact citations, omits some Gold details like fever persistence and sequence. Core facts consistent, no major errors.",
+    "completeness": "Gold key points: scratchy throat first [P-4], dry cough [P-1,P-4], fever details [P-7,P-9], headache [P-1,P-2], malaise [P-14,D-15], fatigue [P-13], 3-4 days [P-1,P-3], no sputum [P-5,P-6], no N/V [P-11], no diarrhea [P-12], no joint pain [P-13], brother cold [P-39], doc summary [D-58]. Generated covers: dry cough, scratchy throat, headache, fever/hot, malaise, timeline, no sputum, absences of GI/joint pain, doc summary. Missed: exact sequence, day/night fever, fatigue explicitly, brother's cold. Covers ~85% of key points (all question-specified symptoms/absences plus extras).",
+    "faithfulness": "Most claims grounded: symptoms directly from P-1, P-7, D-58 verifiable. Sputum absence verifiable earlier [P-5,P-6]. Malaise from 'crappy' [P-1,P-14]. However, 'knowledge graph' mentioned twice not in transcript (hallucination). Citation for sputum ask imprecise (D-58 is confirmation). GI/joint absences verifiable [P-11-13] but understated as 'not explicitly detailed'. Mostly grounded with minor unverifiable addition (knowledge graph plausible but absent).",
+    "relevance": "Generated Answer directly structures response around how listed symptoms and absences support URI diagnosis, mirroring question with sections on upper symptoms, constitutional, exclusions; no off-topic content."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 3,
+    "relevance": 5
+  },
+  "average_score": 4.0,
+  "summary": "The Generated Answer is mostly accurate and complete in supporting URI assessment with symptoms and absences, but includes minor hallucinations like 'knowledge graph' and omits some Gold details."
+}

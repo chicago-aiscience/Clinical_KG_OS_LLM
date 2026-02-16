@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer accurately captures respiratory symptoms (sudden SOB [P-1], ~3 hours [P-11], sudden dry cough [P-2, P-4]), neurological (seizure night before [P-8], epilepsy [P-8], fine after), and fever measurement (37.4°C morning [P-5]). Generated covers main resp (SOB [P-1], dry cough [P-4]) and neuro (seizure [P-8], epilepsy [P-8]) but incorrectly states no objective fever measurement despite patient reporting '37.4 I think' [P-5] after checking; this is a significant contradiction on a core fact.",
+    "completeness": "Key Gold points covered: sudden SOB [P-1], dry cough [P-4], seizure [P-8], epilepsy [P-8] (~50%). Missed: SOB/cough timing (~3hrs [P-11], morning onset [P-2]), fine after seizure, full fever details (37.4°C mild morning [P-5,P-6]), pertinent negatives. Fever entirely contradicted/missed.",
+    "faithfulness": "Resp and neuro claims directly verifiable [P-1,P-4,P-8]. Fever claim 'did not provide objective measurement' not grounded—contradicted by transcript [P-5 '37.4 I think' after checking fever]; this hallucinates absence of self-reported measurement. No other fabrications.",
+    "relevance": "Directly structures answer around respiratory symptoms, neurological symptoms, and fever measurement per question; no tangents or off-topic content."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer correctly identifies main respiratory and neurological symptoms but significantly errs by denying the patient's provision of a specific fever measurement, reducing correctness, completeness, and faithfulness."
+}

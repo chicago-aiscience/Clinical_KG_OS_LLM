@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer specifies stuffy nose first 'just before' fever, sore throat around fever onset and ongoing, fever for 3 days, muscle aches concurrent with fever for 2-3 days, husband symptoms for past week (~4 days before patient's fever), staggered onset. Generated correctly identifies stuffy nose first, fever next for 3 days, sore throat concurrent, muscle aches, and husband's preceding onset by longer duration (week vs 3 days). However, it inaccurately lists 'rash' as the 5th symptom citing [P-38], which refers to penicillin allergy rash, not a current illness symptom (patient denied rashes in [P-12]); this is a significant factual contradiction. Minor issue: sore throat listed after fever despite P-1 suggesting it predated or coincided with fever onset. Overall, significant errors prevent full consistency.",
+    "completeness": "Gold key points: stuffy nose first (pre-fever), sore throat ~fever onset/ongoing, fever 3 days, stuffy nose→fever progression, muscle aches concurrent 2-3 days, husband week-long similar symptoms preceding patient's by ~4 days, staggered household transmission. Generated covers stuffy nose first, fever 3 days, sore throat concurrent, muscle aches, husband week vs patient's 3 days (precedes). Misses explicit ~4-day gap calculation, doctor's progression summary, transmission note; minor order discrepancy for sore throat. Adds extraneous rash. Covers ~80-99% of key points.",
+    "faithfulness": "Claims verifiable: stuffy nose [P-1], fever [P-1], sore throat [P-1], muscle ache [P-13,P-14 concurrent], husband [P-19,P-20]. Hallucination: 'Rash' listed as symptom progression citing [P-38] (penicillin allergy, not current; denied rashes [P-12,D-12]). Minor stretch: implies initial joint pain mention (corrected to muscle). 'Clinical documentation principles' not in transcript. Multiple hallucinated/misattributed facts (rash primary).",
+    "relevance": "Generated Answer directly structures response as chronological list of patient's symptoms (1-5) from onset to presentation and explicit comparison to husband's timeline, perfectly matching question's requirements with no off-topic content."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 4,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.25,
+  "summary": "The Generated Answer mostly accurately describes the symptom progression and husband comparison but includes a significant hallucinated rash symptom, reducing correctness and faithfulness."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer provides precise chronology (Day 1: sore throat worsens progressively; shortly after: fatigue/muscle aches; Day 3: reduced taste constant; Day 4: breathing difficulty starts, constant and worsening) with specifics like swallowing issues, failed self-treatment, and overall progression. Generated Answer gets sore throat onset correct (4 days ago) but vaguely describes severity as 'remained distressing' without noting explicit worsening [P-4]; omits swallowing food difficulty; places systemic symptoms (fatigue/aches) without 'immediately after' timeline [P-26]; wrongly attributes total smell loss (transcript [P-19] indicates smell unaffected, only 'maybe taste a little bit'); no timeline for taste (2 days [P-20]) or breathing (yesterday [P-8]); misses constant nature [P-10, P-21], newness [P-11, P-22], and progressive accumulation. Significant factual discrepancies and contradictions (e.g., smell loss).",
+    "completeness": "Gold key points: sore throat Day 1 worsens, swallow food issue/fluids ok [P-2,P-4]; aches/fatigue immediately after, tired not weak [P-25,P-26]; taste Day 3 constant/new, smell unaffected [P-19-22]; breathing Day 4 constant/worsening/new [P-8-11]; failed Rx [P-6]; overall progression. Generated covers sore throat onset/failed Rx; mentions aches/fatigue and taste/smell issue; breathing as last. Misses: all specific timelines except sore throat, swallowing details, 'immediately after'/constant/worsening/newness, smell unaffected, progression summary. Covers <50% of detailed key points.",
+    "faithfulness": "Sore throat claims verifiable [P-2,P-6]; systemic symptoms verifiable [P-25] but timeline claim 'not quantified' ignores [P-26] 'immediately after'; sensory timeline vague, misinterprets [P-19] 'not smell' as total smell loss (hallucination, actually unaffected) and ignores [P-20] 'two days ago'/constant [P-21]; breathing onset not cited as yesterday [P-8], worsening [P-9]/constant [P-10] omitted, cites irrelevant [D-7,D-43]; adds 'medical knowledge' unwarranted. Multiple hallucinations (smell loss, vague timelines contradicting transcript) and unverifiable details.",
+    "relevance": "Directly attempts chronological symptom order starting with sore throat and notes some severity changes; structured list matches question focus without off-topic content or tangents, though incomplete in details."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer partially captures symptom order but has significant factual errors (e.g., hallucinated smell loss), misses key timelines and severity progressions from the Gold Answer and transcript, resulting in low correctness, completeness, and faithfulness."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Step-by-step: Gold Answer clearly separates symptoms supporting COPD exacerbation (increased dyspnea [P-1], increased cough frequency [P-1], increased sputum volume [P-1], decreased exercise tolerance [P-4]) from those supporting superimposed infection (green-yellow sputum [P-1], fever [P-9], sinus pressure [P-12], headache [P-14], sick contact [P-20]), with sputum and fever distinguishing the infectious trigger per doctor's framing [D-43]. Generated Answer lumps symptoms without clear separation, attributes green-yellow sputum primarily to COPD exacerbation (contradicting Gold's infection link), claims fever links to COPD exacerbation via non-existent 'knowledge graph,' omits key COPD symptoms like dyspnea and exercise tolerance, and misframes distinction. Significant factual errors and contradictions warrant score of 2.",
+    "completeness": "Key points from Gold: Doctor's assessment [D-43]; COPD symptoms (dyspnea, cough freq, sputum vol, exercise tol) - Generated partially covers cough freq and implies sputum vol but misses dyspnea/exercise tol; Infection symptoms (sputum color, fever, sinus press, headache, contact) - covers sputum color, fever, sinus, contact but misses headache; Distinction of sputum/fever for infection trigger - partially but inaccurately; Excluded triggers (no env exp [P-38], good adherence [P-26]), patient pattern [P-3] - missed entirely. Covers ~50-60% of key points, score 3.",
+    "faithfulness": "Generated cites transcript accurately for symptoms (e.g., [P-1], [P-9], [P-12], [P-20], [D-43]), but repeatedly hallucinates a 'knowledge graph' for associations (e.g., sputum to COPD, fever to COPD, stuffy nose) not present in transcript; infers 'stuffy nose' beyond transcript's 'sinus pressure'; multiple unverifiable/hallucinated claims, score 2.",
+    "relevance": "Generated directly lists symptoms supporting dual assessment and discusses sputum/fever differentiation, closely matching question; minor tangents via hallucinations (knowledge graph, COVID emphasis) but overall focused, score 4."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer partially covers relevant symptoms with accurate transcript citations but includes significant factual misattributions, omissions of key distinctions, and multiple hallucinations about a non-existent knowledge graph, leading to a middling evaluation."
+}

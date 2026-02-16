@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the stuffy nose (congestion) and runny nose (rhinorrhea) from [P-1], but misses details like initial stuffiness evolving to mostly running [P-3] and the one-week duration [P-2]; it incorrectly states there is no description of nasal discharge character despite [P-5] explicitly stating 'mostly clear,' directly contradicting the Gold Answer; it wrongly claims no explicit denials of related symptoms (cough [P-4], post-nasal drip [P-6], sore throat/fevers [P-7], loss of taste/smell [P-16]), citing irrelevant sections like [P-11] and [P-23], leading to significant factual errors and contradictions with the Gold Answer.",
+    "completeness": "Key points from Gold Answer covered: stuffy nose and runny nose (partial, ~30%); missed: evolution of symptoms [P-3], clear discharge [P-5], mild fatigue [P-15], all explicit denials (cough, post-nasal drip, sore throat, fevers/chills, loss of taste/smell, and other negatives), covering only ~20-30% of key points.",
+    "faithfulness": "Nasal symptoms verifiable in [P-1] and [P-3]; however, hallucinates absence of discharge character despite clear statement in [P-5]; fabricates no evidence for denials despite explicit negatives in [P-4], [P-6], [P-7], [P-16], and cites unrelated transcript parts ([P-10], [P-11], [P-23]), resulting in multiple hallucinated absences of verifiable information.",
+    "relevance": "The Generated Answer is structured directly around the question's components (reported nasal symptoms, discharge character, denied related symptoms) with no off-topic content or tangents, perfectly focusing on the query despite factual inaccuracies."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer partially captures nasal symptoms but contains major factual errors by denying the existence of discharge description and symptom denials that are explicitly present in the transcript and Gold Answer, resulting in low correctness, completeness, and faithfulness."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer accurately reports the patient tried 'decongestants' [P-10], matching the Gold Answer. The assessment is quoted as 'worked a little bit' [P-10], which captures the core of the Gold's description without the additional nuance of ambiguity or full reasoning, but no factual errors. The doctor's recommendation of 'Tylenol Cold' [D-39] is correctly stated, consistent with Gold. All facts align fully with Gold Answer.",
+    "completeness": "Gold key points: (1) tried OTC decongestants [P-10]; (2) assessment ambiguous/'worked a little bit' with reasoning about stuffy to runny [P-10]; (3) supportive care incl. hydration and OTC like Tylenol Cold [D-39]; (4) context of viral illness taking weeks. Generated covers (1) fully, (2) partially (quotes 'little bit' but misses ambiguity/reasoning detail), (3) Tylenol Cold but misses hydration and supportive care phrasing, (4) not covered. Covers ~80-90% of key points, missing some details.",
+    "faithfulness": "All claims directly verifiable: 'decongestants' and 'worked a little bit' from [P-10], 'Tylenol Cold' from [D-39]. Citations accurate. No hallucinations or unverifiable details; fully grounded in transcript.",
+    "relevance": "Generated Answer is structured to directly address the three-part question (medication tried, assessment, OTC recommendation) with bullet points focused on transcript evidence, no tangents or off-topic content."
+  },
+  "scores": {
+    "correctness": 5,
+    "completeness": 4,
+    "faithfulness": 5,
+    "relevance": 5
+  },
+  "average_score": 4.75,
+  "summary": "The Generated Answer is highly accurate, faithful, and relevant but slightly incomplete in capturing the full nuance of the patient's assessment and additional supportive care details from the Gold Answer."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies COVID-19 as the diagnosis investigated and accurately states that the patient’s COVID test was negative, consistent with the Gold Answer and transcript (patient: “I have had the covid test and I don't have it” [P-35]). The listed prompting factors (hospital worker, viral/flu-like symptoms, persistent cough, coworkers’ concern) align with the Gold Answer. Minor issue: it attributes “production of mucus” to citation [P-14], but mucus is described in [P-5]/[P-6], not [P-14]. This is a citation/grounding error rather than a major factual error.",
+    "completeness": "Covers the major Gold Answer elements: COVID-19 was investigated; prompting evidence included hospital work/exposure context, flu-like symptoms with persistent cough, and coworkers’ concern; and testing was negative. It omits some Gold Answer details: PPE/being careful [P-17], timing of the test at symptom onset about two weeks ago [P-36], and that the patient stayed home awaiting symptom resolution before returning to work [P-36].",
+    "faithfulness": "Most statements are supported by the transcript (persistent cough [P-2], flu-like symptoms and resolution except cough [P-14], hospital clerk [P-34], coworkers scared [P-35], negative COVID test [P-35]). However, there is a minor grounding/citation problem: mucus is not supported by the cited line [P-14] (it is supported elsewhere). Also, it does not mention the test timing/staying home, but it does not fabricate those facts either.",
+    "relevance": "Directly answers all parts of the question: what diagnosis was investigated, what evidence prompted it, and what testing revealed. No meaningful irrelevant content."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 4,
+    "relevance": 5
+  },
+  "average_score": 4.25,
+  "summary": "The Generated Answer is largely accurate and well-focused, capturing the key diagnosis and negative test result, but it misses some Gold Answer details (test timing, PPE, staying home) and has a minor citation/grounding mismatch regarding mucus."
+}

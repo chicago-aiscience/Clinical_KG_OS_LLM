@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly identifies sore throat and cough as explicitly negated symptoms, but the patient affirmed a sore throat ([P-9]) and indicated a possible emerging dry cough ([P-7, P-8]), contradicting the Gold Answer's precise list of denied symptoms (runny nose/congestion, vision/hearing changes, nausea/vomiting, chest pain, palpitations, abdominal pain, urinary symptoms, numbness/tingling). It mentions chest pain and runny nose correctly in differentiation but omits most others and introduces hallucinations like 'knowledge graph' and absent anosmia (patient reported 'kind of' loss of smell [P-6]). Differentiation explanations partially overlap (e.g., chest pain for cardiac/pneumonia, runny nose for URI) but are inaccurate or incomplete compared to Gold (e.g., no mention of GI, neuro exclusions). Significant factual errors and contradictions with Gold.",
+    "completeness": "Gold key points: Lists 8 specific denied symptoms with citations; explains differentiation for cardiac (chest pain/palpitations), GI (nausea/abd pain), URI (runny nose), neuro (vision/hearing, numbness), tied to D-36 diagnosis. Generated covers runny nose and chest pain vaguely in differentiation section (~2/8 symptoms, no citations for denials); misses vision/hearing, nausea, palpitations, abd pain, urinary, numbness entirely; wrong inclusion of sore throat/cough; partial/inaccurate diff explanations. Covers 20-49% of key points.",
+    "faithfulness": "Incorrect claims: sore throat/cough denied (not verifiable, contradicted by [P-8,P-9]); 'knowledge graph' and anosmia absent fabricated (anosmia queried [D-6,P-6]); pleuritic pain distinction plausible but chest pain denial verifiable [D-16,P-16], runny nose verifiable [D-10,P-10]. Doctor's summary [D-36] cited accurately but misinterpreted. Multiple hallucinated facts (knowledge graph, wrong denials, anosmia absence) and unverifiable details.",
+    "relevance": "Directly structures response around 'Explicitly Asked About and Negated/Denied Symptoms' and 'Differentiation via Absence of Findings', addressing both parts of the question on denied symptoms and their diagnostic utility; minor tangents like 'knowledge graph' and pneumonia specifics, but focused on respiratory distress differentials."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer partially addresses the question with relevant structure but contains significant factual errors, incomplete coverage of denied symptoms, and multiple hallucinations, poorly matching the Gold Answer."
+}

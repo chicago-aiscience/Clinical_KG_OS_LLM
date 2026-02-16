@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly lists 'Loss of Smell' under reported symptoms despite P-19 explicitly denying it ('not smell') and only partially covers sore throat accurately while omitting major symptoms like difficulty breathing (P-7-P-11), reduced sense of taste (P-19-P-21), and full details of fatigue/muscle aches onset (P-25-P-26); it also wrongly claims explicit denials only for loss of smell, contradicting transcript denials for cough (P-15 'No'), runny nose (P-16 'No'), headaches (P-17 'No'), chest pain (P-18 'No'), fever (P-23 'I don't think so'), and chills (P-24 'No') as in Gold Answer. Significant factual errors and contradictions warrant score 2.",
+    "completeness": "Key Gold points covered partially: sore throat details (~full), fatigue/muscle aches (partial, misses onset timing and 'not weak'); completely misses difficulty breathing (major symptom cluster), reduced taste; for denials, covers only 1/7 (loss of smell), wrongly asserts no explicit denials for other 5 listed symptoms (cough, runny nose, fever, headaches, chest pain). Covers ~20-49% of key points, score 2.",
+    "faithfulness": "Citations accurate (P-2, P-6, P-19, P-25), but misplaces P-19 denial of smell loss as 'reported symptom'; hallucinates/ignores explicit 'No' denials for cough (P-15), runny nose (P-16), etc., claiming 'did not explicitly deny'; omits verifiable breathing difficulty and taste alteration claims from transcript. Multiple ungrounded/misinterpreted claims, score 2.",
+    "relevance": "Structured response directly addresses question with 'Reported Symptoms' and 'Explicit Denials of Commonly Screened Symptoms' sections mirroring the query's two parts, listing relevant screened symptoms; no off-topic content, perfectly focused despite errors, score 5."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer has significant omissions and misclassifications of symptoms and denials, covering only a fraction of the Gold Answer accurately while remaining structurally relevant."
+}

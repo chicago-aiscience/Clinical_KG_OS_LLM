@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer is mostly factually accurate where it cites symptoms (loss of taste [P-4], overall achy [P-20], feeling hot/warm [P-4], loss of appetite [P-2,P-4]), but includes details of shortness of breath (laborious breathing [P-3]) under upper respiratory complaints, which contradicts the question's exclusion of chief complaints (SOB and fatigue); the quote for loss of taste is slightly mangled but conveys the correct idea; no major contradictions but some misattribution.",
+    "completeness": "Key points from Gold Answer: sensory (loss of taste [P-4], diminished smell [P-6], new [P-5]); upper respiratory (dry cough starting [P-7/8], sore throat starting [P-9], denied runny nose [P-10]); musculoskeletal (achy overall [P-20/21], weakness [P-2]); constitutional (subjective fever [P-4], decreased appetite [P-2/4/18], mild headaches usual [P-11-13]). Generated covers loss of taste, achy, fever, appetite (4 key points, ~30-40% coverage), misses smell, cough, sore throat, runny nose denial, weakness, headaches.",
+    "faithfulness": "All claims in Generated Answer are directly verifiable in the transcript with accurate citations (e.g., P-4 for taste/fever/appetite, P-3 for breathing, P-8 for dry feeling, P-20 for achy, P-2 for appetite); no hallucinations or fabricated content, even the breathing description is grounded.",
+    "relevance": "The answer directly structures response around the requested categories (sensory, upper resp, musculoskeletal, constitutional) and focuses on symptoms beyond chief complaints, though it erroneously includes SOB details under upper respiratory; mostly on-topic with minor misplacement."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 2,
+    "faithfulness": 5,
+    "relevance": 4
+  },
+  "average_score": 3.5,
+  "summary": "The Generated Answer is faithful and relevant but incomplete in covering key symptoms from the Gold Answer and has some factual misattribution by including chief complaint details."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly identifies the diagnosis as 'Angina Pectoris'. Angina Pectoris specifically refers to chest pain caused by reduced blood flow to the heart (ischemia), whereas the Gold Answer and the clinical reasoning focus on 'anxiety-related or stress-induced chest pain'. While the Generated Answer adds 'Psychogenic' in parentheses and notes it is 'driven by anxiety rather than ischemia', using the term 'Angina' is a factual contradiction. Additionally, the Generated Answer claims the patient confirms current symptoms feel like past anxiety attacks; however, in the transcript [P-20], the patient is specifically referring to heart fluttering/palpitations, not the chest pain.",
+    "completeness": "The Generated Answer covers several key points: situational patterns, the breathing mechanism, history of anxiety, and academic stress. However, it completely omits the 'pertinent negatives' mentioned in the Gold Answer (absence of fever, absence of exertional worsening, pain occurring at rest, and absence of asthma), which are critical clinical observations used to rule out cardiac or pulmonary pathology.",
+    "faithfulness": "The answer is mostly faithful to the transcript, though it slightly misinterprets [P-20] by suggesting the patient's current symptoms are identical to her previous anxiety attacks, when the patient was specifically answering a question about heart flutters. The inclusion of medication resistance [P-6] is grounded in the transcript, although not highlighted in the Gold Answer.",
+    "relevance": "The Generated Answer is highly relevant, directly addressing the prompt's request for a diagnosis and the clinical observations supporting it."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 4,
+    "faithfulness": 4,
+    "relevance": 5
+  },
+  "average_score": 4.0,
+  "summary": "The answer correctly identifies the psychological drivers of the pain but uses an incorrect medical term (Angina Pectoris) and omits several pertinent negatives used to rule out organic causes."
+}

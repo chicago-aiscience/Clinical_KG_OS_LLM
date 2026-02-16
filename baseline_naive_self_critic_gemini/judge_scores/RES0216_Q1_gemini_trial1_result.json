@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer contains a major factual error by claiming that the transcript does not contain the patient's responses regarding fevers, night sweats, chills, weight loss, and cough. These are explicitly present in turns P-11 through P-15. It also fails to mention the upper airway symptoms (hoarseness, phlegm, throat clearing) included in the Gold Answer.",
+    "completeness": "The Generated Answer misses approximately 75% of the 'explicitly denied' symptoms requested by the prompt (fevers, night sweats, chills, weight loss, cough, anxiety, sweating). It also misses the specific upper airway symptoms reported by the patient.",
+    "faithfulness": "The Generated Answer hallucinates a limitation of the provided source text, stating that responses for several symptoms are missing when they are clearly visible in the provided transcript. It also interprets a doctor's summary in D-36 as a patient denial of shortness of breath with exercise, which contradicts the patient's own statements in P-1 and P-7.",
+    "relevance": "While the answer identifies the primary complaint (chest tightness), it fails to answer the second half of the multi-part question regarding commonly screened symptoms due to the incorrect claim that the information was missing from the text."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 1,
+    "relevance": 3
+  },
+  "average_score": 2.0,
+  "summary": "The Generated Answer fails significantly by incorrectly claiming the transcript lacked information that was clearly provided, leading to a largely incomplete list of denied symptoms."
+}

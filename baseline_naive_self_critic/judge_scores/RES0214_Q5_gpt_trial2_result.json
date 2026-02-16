@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Core clinical reasoning matches the Gold Answer: husband’s week-long similar illness suggests household transmission and leads the doctor to prioritize ruling out COVID-19 first; limited outside contact supports a shared household exposure; lack of flu shot increases plausibility of influenza and is explicitly raised by the doctor. However, there are notable inaccuracies: it incorrectly cites the flu-shot confirmation as [P-27] (it is [P-53]), and it overstates that lack of travel \"rules out imported cases\" (the transcript only notes no travel outside the province; it doesn’t frame this as ruling out imported disease).",
+    "completeness": "Includes all major Gold Answer elements: (1) husband with similar symptoms and doctor prioritizing COVID rule-out, (2) limited outside contact with only a hiking trip as notable exposure and denial of other sick contacts, and (3) no flu shot leading doctor to consider influenza while testing COVID first. It does not explicitly mention she works from home/self-isolating as clearly as the Gold Answer, but it captures the limited-contact concept overall.",
+    "faithfulness": "Not fully grounded: it introduces a \"clinical knowledge graph\" and [KG] citation, which are not in the transcript. It also contains an incorrect transcript citation ([P-27] for flu shot). Some interpretive framing (\"rules out imported cases\") is not stated in the encounter. Most other claims are supported by the transcript.",
+    "relevance": "Directly addresses how the epidemiologic factors shape the COVID vs influenza differential, with only minor tangential framing (imported disease) and an unnecessary mention of a knowledge graph."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 3,
+    "relevance": 4
+  },
+  "average_score": 3.75,
+  "summary": "Largely matches the Gold Answer’s differential logic (COVID prioritized due to household cluster; flu considered due to no flu shot), but faithfulness is reduced by a hallucinated \"knowledge graph\" reference and an incorrect transcript citation."
+}

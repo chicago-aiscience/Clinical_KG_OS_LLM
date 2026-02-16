@@ -1,0 +1,258 @@
+{
+  "nodes": [
+    {
+      "id": "N_001",
+      "text": "fever",
+      "type": "SYMPTOM",
+      "evidence": "I've had this terrible fever for the past three days",
+      "turn_id": "P-1"
+    },
+    {
+      "id": "N_002",
+      "text": "stuffy nose",
+      "type": "SYMPTOM",
+      "evidence": "had a stuffy nose",
+      "turn_id": "P-1"
+    },
+    {
+      "id": "N_003",
+      "text": "sore throat",
+      "type": "SYMPTOM",
+      "evidence": "and I had a sore throat, well I still do",
+      "turn_id": "P-1"
+    },
+    {
+      "id": "N_004",
+      "text": "muscle ache",
+      "type": "SYMPTOM",
+      "evidence": "there has been some muscle ache",
+      "turn_id": "P-13"
+    },
+    {
+      "id": "N_005",
+      "text": "rash",
+      "type": "ALLERGY",
+      "evidence": "I get a rash",
+      "turn_id": "P-38"
+    },
+    {
+      "id": "N_006",
+      "text": "covid",
+      "type": "DIAGNOSIS",
+      "evidence": "I thought I should just come in and see if I have covid",
+      "turn_id": "P-1"
+    },
+    {
+      "id": "N_007",
+      "text": "influenza",
+      "type": "DIAGNOSIS",
+      "evidence": "it's also a possibility it might be influenza",
+      "turn_id": "D-54"
+    },
+    {
+      "id": "N_008",
+      "text": "covid swab",
+      "type": "PROCEDURE",
+      "evidence": "we'll be ordering a covid swab",
+      "turn_id": "D-53"
+    },
+    {
+      "id": "N_009",
+      "text": "gallbladder removal",
+      "type": "MEDICAL_HISTORY",
+      "evidence": "I had my gallbladder taken out five years ago",
+      "turn_id": "P-30"
+    },
+    {
+      "id": "N_010",
+      "text": "pre diabetes",
+      "type": "MEDICAL_HISTORY",
+      "evidence": "I'm pre diabetic",
+      "turn_id": "P-33"
+    },
+    {
+      "id": "N_011",
+      "text": "penicillin",
+      "type": "MEDICATION",
+      "evidence": "Penicillin",
+      "turn_id": "P-37"
+    },
+    {
+      "id": "N_012",
+      "text": "london",
+      "type": "LOCATION",
+      "evidence": "lived with your husband in a house... in London",
+      "turn_id": "D-41"
+    },
+    {
+      "id": "N_013",
+      "text": "multivitamins",
+      "type": "MEDICATION",
+      "evidence": "I just take multivitamins, that's it though",
+      "turn_id": "P-40"
+    },
+    {
+      "id": "N_014",
+      "text": "swelling",
+      "type": "SYMPTOM",
+      "evidence": "swelling around your neck",
+      "turn_id": "P-27"
+    },
+    {
+      "id": "N_015",
+      "text": "digital marketing agent",
+      "type": "OCCUPATION",
+      "evidence": "I work from home as a digital marketing agent",
+      "turn_id": "P-42"
+    },
+    {
+      "id": "N_016",
+      "text": "computer programmer",
+      "type": "OCCUPATION",
+      "evidence": "my husband is a computer programmer",
+      "turn_id": "P-42"
+    },
+    {
+      "id": "N_017",
+      "text": "hiking",
+      "type": "ACTIVITY",
+      "evidence": "I did go hiking",
+      "turn_id": "P-18"
+    },
+    {
+      "id": "N_018",
+      "text": "husband",
+      "type": "PERSON",
+      "evidence": "my husband has also been experiencing similar symptoms",
+      "turn_id": "P-19"
+    },
+    {
+      "id": "N_019",
+      "text": "marijuana",
+      "type": "SUBSTANCE",
+      "evidence": "tried marijuana before, just like edibles",
+      "turn_id": "P-47"
+    },
+    {
+      "id": "N_020",
+      "text": "wine",
+      "type": "SUBSTANCE",
+      "evidence": "about one or two glasses of wine",
+      "turn_id": "P-45"
+    }
+  ],
+  "edges": [
+    {
+      "source_id": "N_008",
+      "target_id": "N_006",
+      "type": "TAKEN_FOR",
+      "evidence": "we'll be ordering a covid swab no matter what",
+      "turn_id": "D-53"
+    },
+    {
+      "source_id": "N_011",
+      "target_id": "N_005",
+      "type": "CAUSES",
+      "evidence": "what happens when you take penicillin? Um I get a rash",
+      "turn_id": "P-38"
+    },
+    {
+      "source_id": "N_001",
+      "target_id": "N_006",
+      "type": "INDICATES",
+      "evidence": "with any presentation where we have someone come in with a fever... want to rule out covid",
+      "turn_id": "D-53"
+    },
+    {
+      "source_id": "N_002",
+      "target_id": "N_006",
+      "type": "INDICATES",
+      "evidence": "with any presentation where we have someone come in with a fever and sore throat, we want to rule out anything infectious",
+      "turn_id": "D-53"
+    },
+    {
+      "source_id": "N_003",
+      "target_id": "N_006",
+      "type": "INDICATES",
+      "evidence": "we want to rule out anything infectious",
+      "turn_id": "D-53"
+    },
+    {
+      "source_id": "N_001",
+      "target_id": "N_007",
+      "type": "INDICATES",
+      "evidence": "it's also a possibility it might be influenza",
+      "turn_id": "D-54"
+    },
+    {
+      "source_id": "N_002",
+      "target_id": "N_007",
+      "type": "INDICATES",
+      "evidence": "it's also a possibility it might be influenza",
+      "turn_id": "D-54"
+    },
+    {
+      "source_id": "N_003",
+      "target_id": "N_007",
+      "type": "INDICATES",
+      "evidence": "it's also a possibility it might be influenza",
+      "turn_id": "D-54"
+    },
+    {
+      "source_id": "N_018",
+      "target_id": "N_001",
+      "type": "HAS_SYMPTOM",
+      "evidence": "my husband has also been experiencing similar symptoms",
+      "turn_id": "P-19"
+    },
+    {
+      "source_id": "N_018",
+      "target_id": "N_003",
+      "type": "HAS_SYMPTOM",
+      "evidence": "my husband has also been experiencing similar symptoms",
+      "turn_id": "P-19"
+    },
+    {
+      "source_id": "N_018",
+      "target_id": "N_002",
+      "type": "HAS_SYMPTOM",
+      "evidence": "my husband has also been experiencing similar symptoms",
+      "turn_id": "P-19"
+    },
+    {
+      "source_id": "N_018",
+      "target_id": "N_004",
+      "type": "HAS_SYMPTOM",
+      "evidence": "my husband has also been experiencing similar symptoms",
+      "turn_id": "P-19"
+    },
+    {
+      "source_id": "N_017",
+      "target_id": "N_001",
+      "type": "EXPOSURE_RISK",
+      "evidence": "I did go hiking um last weekend... there were some people on the hiking trail",
+      "turn_id": "P-18"
+    }
+  ],
+  "_usage": {
+    "prompt_tokens": 5731,
+    "completion_tokens": 13985,
+    "reasoning_tokens": 9253,
+    "cost": 0.0059573100000128,
+    "pass1_nodes": 12,
+    "pass1_edges": 8,
+    "pass2_nodes": 20,
+    "pass2_edges": 13
+  },
+  "_meta": {
+    "method": "self_critic",
+    "pass1": {
+      "nodes": 12,
+      "edges": 8
+    },
+    "pass2": {
+      "nodes": 20,
+      "edges": 13
+    }
+  }
+}

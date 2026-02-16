@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly reflects that the clinician thinks asthma recurrence is the top differential (matches D-35) and that cardiac ischemia is considered less likely (matches D-36). However, the answer is incomplete/truncated and does not state the rest of the clinical plan (exam, treatment trial, contingency), so while what it does say is accurate, it fails to provide the full “overall assessment and proposed clinical plan” asked for in the question and specified in the Gold Answer.",
+    "completeness": "Gold Answer key points: (1) assessment: asthma recurrence top differential pending exam; (2) physical exam planned: quick physical exam + listen to lungs (pulmonary auscultation) and consider further investigations; (3) first-step treatment: obtain/try rescue puffer during walks as a therapeutic trial; (4) contingency: if not helpful, reassess/“come back to the table,” stepwise approach one thing at a time; (5) mention they will talk to supervising physician and return.\n\nGenerated Answer includes only part of (1) and a note about cardiac ischemia being less likely. It omits (2)-(5) entirely. Overall coverage is well under 50% of required points.",
+    "faithfulness": "All included claims (asthma recurrence likely; cardiac ischemia less likely) are grounded in the transcript (D-35, D-36). The response is truncated and does not introduce additional fabricated details. Minor issue: the unfinished parenthetical suggests an incomplete thought, but not a hallucination.",
+    "relevance": "What is provided is relevant to the question (assessment), but because it does not address the requested physical exam components, first-step intervention, and contingency approach, it only partially answers the question."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 2,
+    "faithfulness": 5,
+    "relevance": 3
+  },
+  "average_score": 3.5,
+  "summary": "The answer is factually accurate for the small portion it provides, but it is truncated and misses most of the requested clinical plan elements (exam, rescue inhaler trial, and contingency reassessment), limiting completeness and overall relevance."
+}

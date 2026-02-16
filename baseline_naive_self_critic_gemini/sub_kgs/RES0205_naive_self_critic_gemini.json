@@ -1,0 +1,244 @@
+{
+  "nodes": [
+    {
+      "id": "N_001",
+      "text": "cough",
+      "type": "SYMPTOM",
+      "evidence": "I know that you've been having experiencing a cough.",
+      "turn_id": "D-2"
+    },
+    {
+      "id": "N_002",
+      "text": "mucus",
+      "type": "SYMPTOM",
+      "evidence": "There was some mucus um earlier on",
+      "turn_id": "P-5"
+    },
+    {
+      "id": "N_003",
+      "text": "dry cough",
+      "type": "SYMPTOM",
+      "evidence": "now it's it's all, it’s a dry cough.",
+      "turn_id": "P-5"
+    },
+    {
+      "id": "N_004",
+      "text": "sore throat",
+      "type": "SYMPTOM",
+      "evidence": "Have you had any sore throat?",
+      "turn_id": "D-13"
+    },
+    {
+      "id": "N_005",
+      "text": "runny nose",
+      "type": "SYMPTOM",
+      "evidence": "Have you had any runny nose?",
+      "turn_id": "D-14"
+    },
+    {
+      "id": "N_006",
+      "text": "chest pain",
+      "type": "SYMPTOM",
+      "evidence": "did you have any chest pain at any point?",
+      "turn_id": "D-15"
+    },
+    {
+      "id": "N_007",
+      "text": "acid reflux",
+      "type": "MEDICAL_HISTORY",
+      "evidence": "I’ve got acid reflux",
+      "turn_id": "P-22"
+    },
+    {
+      "id": "N_008",
+      "text": "anxiety",
+      "type": "MEDICAL_HISTORY",
+      "evidence": "I also have anxiety.",
+      "turn_id": "P-22"
+    },
+    {
+      "id": "N_009",
+      "text": "hay fever",
+      "type": "ALLERGY",
+      "evidence": "Just hay fever.",
+      "turn_id": "P-27"
+    },
+    {
+      "id": "N_010",
+      "text": "COVID test",
+      "type": "PROCEDURE",
+      "evidence": "I have had the covid test",
+      "turn_id": "P-35"
+    },
+    {
+      "id": "N_011",
+      "text": "hospital",
+      "type": "LOCATION",
+      "evidence": "I work at the hospital",
+      "turn_id": "P-17"
+    },
+    {
+      "id": "N_012",
+      "text": "avoid foods that worsen reflux",
+      "type": "TREATMENT",
+      "evidence": "I'm just trying to avoid the foods that make things worse for me",
+      "turn_id": "P-25"
+    },
+    {
+      "id": "N_013",
+      "text": "chest soreness",
+      "type": "SYMPTOM",
+      "evidence": "sometimes when I'm coughing too much my chest hurts a little bit.",
+      "turn_id": "P-15"
+    },
+    {
+      "id": "N_014",
+      "text": "difficulty breathing",
+      "type": "SYMPTOM",
+      "evidence": "along with the cough, are you experiencing any difficulty breathing?",
+      "turn_id": "D-11"
+    },
+    {
+      "id": "N_015",
+      "text": "fever",
+      "type": "SYMPTOM",
+      "evidence": "have you noticed any fevers?",
+      "turn_id": "D-12"
+    },
+    {
+      "id": "N_016",
+      "text": "nausea",
+      "type": "SYMPTOM",
+      "evidence": "Have you had any nausea or vomiting?",
+      "turn_id": "D-19"
+    },
+    {
+      "id": "N_017",
+      "text": "vomiting",
+      "type": "SYMPTOM",
+      "evidence": "Have you had any nausea or vomiting?",
+      "turn_id": "D-19"
+    },
+    {
+      "id": "N_018",
+      "text": "belly pain",
+      "type": "SYMPTOM",
+      "evidence": "any belly pain?",
+      "turn_id": "D-20"
+    },
+    {
+      "id": "N_019",
+      "text": "PPE",
+      "type": "INTERVENTION",
+      "evidence": "I'm wearing PPE all the time",
+      "turn_id": "P-17"
+    }
+  ],
+  "edges": [
+    {
+      "source_id": "N_001",
+      "target_id": "N_002",
+      "type": "PRESENTS_WITH",
+      "evidence": "There was some mucus um earlier on, but now it's it's all, it’s a dry cough.",
+      "turn_id": "P-5"
+    },
+    {
+      "source_id": "N_013",
+      "target_id": "N_001",
+      "type": "CAUSED_BY",
+      "evidence": "sometimes when I'm coughing too much my chest hurts a little bit.",
+      "turn_id": "P-15"
+    },
+    {
+      "source_id": "N_011",
+      "target_id": "N_001",
+      "type": "OCCURS_AT",
+      "evidence": "It's everyone's like scared at work when I cough.",
+      "turn_id": "P-35"
+    },
+    {
+      "source_id": "N_001",
+      "target_id": "N_003",
+      "type": "MANIFESTATION",
+      "evidence": "now it's it's all, it’s a dry cough.",
+      "turn_id": "P-5"
+    },
+    {
+      "source_id": "N_001",
+      "target_id": "N_014",
+      "type": "NOT_PRESENT_WITH",
+      "evidence": "along with the cough, are you experiencing any difficulty breathing?\nNo.",
+      "turn_id": "D-11"
+    },
+    {
+      "source_id": "N_001",
+      "target_id": "N_015",
+      "type": "NOT_PRESENT_WITH",
+      "evidence": "have you noticed any fevers?\nUhm, no.",
+      "turn_id": "D-12"
+    },
+    {
+      "source_id": "N_001",
+      "target_id": "N_016",
+      "type": "NOT_PRESENT_WITH",
+      "evidence": "Have you had any nausea or vomiting?\nNo.",
+      "turn_id": "D-19"
+    },
+    {
+      "source_id": "N_001",
+      "target_id": "N_017",
+      "type": "NOT_PRESENT_WITH",
+      "evidence": "Have you had any nausea or vomiting?\nNo.",
+      "turn_id": "D-19"
+    },
+    {
+      "source_id": "N_001",
+      "target_id": "N_018",
+      "type": "NOT_PRESENT_WITH",
+      "evidence": "any belly pain?\nUhm, no.",
+      "turn_id": "D-20"
+    },
+    {
+      "source_id": "N_001",
+      "target_id": "N_004",
+      "type": "PRESENT_WITH",
+      "evidence": "I did initially um for the first two or three days and then that got better.",
+      "turn_id": "P-13"
+    },
+    {
+      "source_id": "N_001",
+      "target_id": "N_005",
+      "type": "PRESENT_WITH",
+      "evidence": "I did initially yeah, I have like had all those flu symptoms for the first couple of days, but the cough just kinda stayed.",
+      "turn_id": "P-14"
+    },
+    {
+      "source_id": "N_011",
+      "target_id": "N_019",
+      "type": "USES",
+      "evidence": "I work at the hospital, but. Um I'm wearing PPE all the time, and I'm very careful so.",
+      "turn_id": "P-17"
+    }
+  ],
+  "_usage": {
+    "prompt_tokens": 5383,
+    "completion_tokens": 3330,
+    "total_tokens": 8713,
+    "pass1_nodes": 13,
+    "pass1_edges": 3,
+    "pass2_nodes": 19,
+    "pass2_edges": 12
+  },
+  "_meta": {
+    "method": "self_critic_gemini",
+    "model": "gemini-2.0-flash",
+    "pass1": {
+      "nodes": 13,
+      "edges": 3
+    },
+    "pass2": {
+      "nodes": 19,
+      "edges": 12
+    }
+  }
+}

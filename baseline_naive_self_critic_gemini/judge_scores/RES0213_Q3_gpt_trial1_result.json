@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Gold Answer diagnosis is anxiety-related/stress-induced chest pain. The Generated Answer instead labels it as “Angina Pectoris (Stress-Induced Angina)” and only secondarily mentions “psychogenic chest pain,” which is a substantial mismatch because angina implies myocardial ischemia and is not supported by the transcript pattern (occurs at rest/when alone, improves with distraction, no exertional worsening). Several supporting observations are partly accurate (occurs when studying/walking alone; increased academic stress; prior anxiety history; hyperventilation when nervous), but the central diagnostic label is incorrect relative to the Gold Answer. It also inaccurately implies the patient said current symptoms feel similar to prior anxiety attacks; the transcript says she had anxiety attacks in high school and worries they could return, not that these episodes are the same.",
+    "completeness": "Key Gold points covered: (1) symptoms occur when alone studying/walking (partially) and (3) high academic stress, (2) history of anxiety attacks, and (4) anxious hyperventilation/hard to take deep breath due to nervousness. Missed or inadequately captured: the explicit improvement with distraction/social interaction/hands-on tasks (a major supporting feature) [P-9, P-29]; the patient explicitly considering stress as a cause [P-8] (only indirectly referenced); and most pertinent negatives supporting non-cardiac/non-pulmonary etiology (no fever, no exertional worsening, occurs at rest, no palpitations outside anxiety, no asthma). Added a non-Gold point (“medication resistance implies not mechanical”), which is not part of the Gold reasoning.",
+    "faithfulness": "Some statements are grounded (studying/walking triggers [P-4], nervous breathing faster [P-19], thesis stress [P-15], father’s heart attack stress [P-8], tried Tylenol/Advil/Alka-Seltzer [P-6]). However, there are multiple issues: the diagnosis of angina is not supported by the transcript; the claim that she identifies deep breaths ‘as the trigger’ specifically due to nervousness overstates [P-19] (deep breath pleuritic component is described, but nervousness is presented as a reaction); the statement that current symptoms feel similar to prior anxiety attacks is not stated; and the inference that lack of response to analgesics rules out musculoskeletal pain is not supported by the transcript. These reduce grounding.",
+    "relevance": "The response addresses the asked task (a diagnosis and the consultation observations supporting it) and stays mostly on-topic, but includes an off-target primary diagnosis (angina) which weakens alignment with the question’s intent."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.75,
+  "summary": "Mostly relevant but the primary diagnosis conflicts with the Gold Answer (anxiety/stress-related chest pain), and several supporting statements are missing key Gold observations or are not fully grounded in the transcript."
+}

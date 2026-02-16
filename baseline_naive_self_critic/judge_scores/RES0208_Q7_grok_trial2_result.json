@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer identifies onset symptoms as shortness of breath (laborious), fatigue/rundown/tiredness/weakness, reduced appetite, and generalized body aches (unspecified onset but grouped there). Recently: subjective fever yesterday. Morning: loss of taste and diminished smell (new). Emerging: dry cough 'on its way', sore throat 'starting', mild headaches (similar to baseline). Generated matches core onset symptoms (SOB/laborious cited, fatigue/weakness/loss of appetite), recent fever and loss of taste, emerging cough/sore throat (though slightly conflates citations: dry throat from cough P8, attributes sore throat feel to cough). Minor discrepancies: omits body aches, smell loss, headaches; minor citation mixup on emerging symptoms but facts consistent overall.",
+    "completeness": "Covers onset: SOB, fatigue/tired/rundown, weakness, appetite loss (4/5 key points, misses aches). Recent: fever, taste loss (2/2, but misses smell in morning phase). Emerging: cough and sore throat feel (2/3, misses headaches). Covers ~85% of Gold's key points with structure matching phases.",
+    "faithfulness": "All claims directly from transcript with accurate citations (P1-P4, P8-P9). Descriptions like 'laborious' breathing, 'dry like on its way' verbatim/paraphrased accurately. No hallucinations; 'emerged overnight' for taste is plausible inference from 'this morning'. Fully grounded.",
+    "relevance": "Perfectly structures response into three phases matching question's timeline (onset couple days, recent incl. fever yesterday/taste morning, emerging at consult). No off-topic content, directly reconstructs symptom timeline."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 5,
+    "relevance": 5
+  },
+  "average_score": 4.5,
+  "summary": "The Generated Answer is highly accurate, complete, and faithful, with excellent relevance, marred only by minor omissions of body aches, smell loss, and headaches, and slight citation conflation in emerging symptoms."
+}

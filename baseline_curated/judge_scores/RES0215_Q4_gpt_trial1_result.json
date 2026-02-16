@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer is largely incorrect relative to the Gold Answer. It explicitly states the doctor did not ask about fever, runny nose, sick contacts, travel, rashes, or phlegm production, but the transcript clearly includes all of these questions: fever [D-7], runny nose [D-8], sick contacts [D-10], travel [D-11], rashes [D-13], and phlegm [D-31]. Consequently, it fails to identify the intended screening targets (infectious etiologies like pneumonia/bronchitis/URI, exposure-related infections, systemic viral/allergic illnesses with rash, productive vs nonproductive cough) and misdirects the differential toward asthma/viral bronchitis without tying it to the asked screening questions. While asthma/reactive airway disease is a reasonable ultimate consideration, the answer contradicts the core factual basis of the question and Gold Answer.",
+    "completeness": "Key Gold Answer elements missing or wrong: (1) identification that fever/runny nose/sick contacts/travel were asked and all denied; (2) linking fever/phlegm to screening for pneumonia/bronchitis vs reactive process; (3) linking runny nose/sick contacts to URTI/viral-induced wheeze; (4) linking travel to exposure-related infections; (5) linking rash to systemic viral illness or allergic reaction; (6) noting pain question and denial; (7) concluding these negatives narrow away from infectious/systemic toward reactive airway disease. The Generated Answer instead focuses on allergies/cold air trigger and past viral infections, which are secondary and do not answer the asked screening/exclusion part. Overall coverage is well under 50%.",
+    "faithfulness": "Multiple hallucinations/unsupported claims: it asserts the doctor did not ask the key screening questions despite clear evidence in transcript that they were asked. It also introduces a “knowledge graph” and concludes the evaluation is focused on “asthma and viral bronchitis,” which is not stated in the transcript. Some cited symptom details (wheeze, cold trigger, Reactine use) are grounded, but the central claims are directly contradicted by the transcript.",
+    "relevance": "The response attempts to address the topic of differential diagnosis, but it does not answer the actual question (what conditions were being screened for by those specific questions and what were the patient’s responses). It is therefore only partially relevant and substantially misaligned with the prompt."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 2
+  },
+  "average_score": 1.25,
+  "summary": "The Generated Answer contradicts the transcript by claiming key screening questions were not asked, misses most Gold Answer points, and includes unsupported reasoning, making it largely incorrect and unfaithful with only partial relevance."
+}

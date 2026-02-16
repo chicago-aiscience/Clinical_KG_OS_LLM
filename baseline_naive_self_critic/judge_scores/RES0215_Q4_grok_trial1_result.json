@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly states that the specific questions about fever [D-7], runny nose [D-8], sick contacts [D-10], recent travel [D-11], rashes [D-13], and phlegm production [D-31] are 'not present' in the transcript, directly contradicting the Gold Answer and the source transcript itself. It misidentifies screened conditions as viral infections vs. seasonal allergies instead of infectious causes (pneumonia, bronchitis, URTI, contagious infections, etc.) as in Gold. Patient responses are not addressed accurately, and narrowing to allergic etiology contradicts Gold's reactive airway disease away from infectious. All facts inconsistent with Gold.",
+    "completeness": "Gold key points: fever screens infectious (pneumonia/bronchitis), runny nose for URTI/viral wheeze, sick contacts for contagious, travel for exposures, rashes for systemic/allergic/viral, phlegm for productive infection, all denied, plus pain and history narrowing to reactive airway. Generated covers 0% of these, instead discussing seasonal allergies, activity/cold triggers, past virals, and Reactine from other transcript parts. No coverage of specified questions/responses.",
+    "faithfulness": "Generated hallucinates absence of exact questions despite clear transcript evidence (e.g., [D-7/P-7] no fever, etc.). References non-existent 'knowledge graph.' Claims unverifiable and fabricates that dialogue segments are missing. Other points like allergies [P-35/36] are grounded but irrelevant to query. Multiple hallucinations.",
+    "relevance": "Question focuses on specific symptoms (fever etc.) and responses narrowing differential. Generated denies their existence, pivots to unrelated viral vs. allergy reasoning based on other symptoms, failing to address the precise query."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 1
+  },
+  "average_score": 1.0,
+  "summary": "The Generated Answer is fundamentally incorrect, unfaithful to the transcript, incomplete, and irrelevant by denying the existence of key questions clearly present and addressing unrelated aspects of the case."
+}

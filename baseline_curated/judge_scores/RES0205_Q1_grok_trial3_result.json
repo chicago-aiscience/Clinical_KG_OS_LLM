@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer specifies resolved symptoms as sore throat (2-3 days, P-13), runny nose (first couple days, P-14), productive cough with whitish clear mucus (4-5 days, P-6), collectively flu symptoms resolved in 3-4 days except cough (P-14). Generated vaguely groups as 'flu-like symptoms' (2-3 days, resolved by 3-4, P-14) and mucus (P-5), missing specifics like sore throat, runny nose, mucus color/timeline. Present symptoms: Gold details dry cough since day 4-5 (P-5/6), 3-4x/hour (P-9), spontaneous (P-10), stable intensity/frequency (P-7/8), chest soreness with coughing not independent pain (P-15/16). Generated covers dry persistent cough (P-2/5/14) and chest soreness (P-15), but misses details. Generated incorrectly categorizes chronic anxiety (P-22) and acid reflux (P-22/25) as illness symptoms/conditions, not part of two-week illness per Gold/transcript context. Misses pertinent negatives (no SOB P-11, fever P-12, N/V P-19, abd pain P-20). Some factual errors/misplacements but core (cough phases, chest soreness) correct.",
+    "completeness": "Gold key points: resolved - sore throat, runny nose, whitish mucus (timelines), flu collective; present - detailed dry cough (timeline/freq/intensity/triggers), chest soreness nuance; negatives - no SOB/fevers/NV/abd pain. Generated covers: resolved flu-like (vague cover of collective/sore/runny), mucus; present cough (basic), chest soreness. Misses: specific resolved symptoms separately, cough details (freq 3-4/hr, spontaneous, stable), soreness nuance, all negatives. Adds irrelevant chronic conditions. Covers ~50-60% of key points (main categories but lacks specifics/details/negatives).",
+    "faithfulness": "All Generated claims verifiable in transcript: flu-like P-14, mucus P-5, cough P-2/5/14, chest soreness P-15, anxiety P-22, reflux P-22/25. Citations accurate (e.g., P-14 for flu/cough, P-5 mucus). No fabrications or hallucinations; chronic conditions are mentioned but contextually misplaced for illness symptoms—still grounded in transcript.",
+    "relevance": "Generated directly structures response around resolved vs present symptoms for two-week illness, matching question. Minor tangent: 'Reported Background Conditions' section adds chronic anxiety/reflux, not specific to acute illness symptoms asked."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 5,
+    "relevance": 4
+  },
+  "average_score": 3.75,
+  "summary": "The Generated Answer captures core symptoms of persistent dry cough and resolved early flu-like features with chest soreness but lacks specificity, details, pertinent negatives, and incorrectly includes chronic conditions as illness symptoms."
+}

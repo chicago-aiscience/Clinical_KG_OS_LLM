@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer details the doctor's direct inquiry about family history of respiratory problems [D-28], mother's disclosure of grandparents' asthma [P-28], doctor's summary [D-30], and differentiation using prior workup, absence of SOB/wheezing even with activity [P-28], contrasted with current dry cough, runny nose, and prior shorter symptoms [P-24]. Generated Answer correctly identifies grandparents' asthma as familial risk and differentiation via workup and absence of SOB/wheezing [P-28], but inaccurately links the inquiry to chest X-ray proposal [D-37] instead of the explicit family history question [D-28], misattributes response to 'patient' instead of mother, and omits symptom contrasts and prior history details; some factual errors but core differentiation correct.",
+    "completeness": "Gold key points: doctor's specific inquiry inviting mom help [D-28]; grandparents asthma [P-28]; doctor summary [D-30]; differentiation (worked up, no SOB/wheezing with activity) [P-28]; current symptoms (dry cough [D-5/6], runny nose [D-11/12]); no wheeze/dyspnea; prior issues shorter/no dry cough [P-24]; acute vs chronic. Generated covers: familial asthma connection broadly; worked up and no SOB/wheezing [P-28]. Misses: inquiry details/summary, current symptom specifics, prior history contrast; covers ~50-60% of key points.",
+    "faithfulness": "Generated claims verifiable: grandparents asthma [P-28]; worked up/no SOB/wheezing with activity [P-28]. Hallucinations/misrepresentations: X-ray proposal [D-37] as 'inquiry' prompting asthma mention (actually post-family history discussion; true inquiry [D-28]); 'patient reported' vs mother [P-28]; 'knowledge graph' not in transcript; inaccurate citations [D-1/D-37] for inquiry; wrong sequence implies X-ray before family history. Multiple inaccuracies/hallucinations.",
+    "relevance": "Generated directly addresses connection of family history to doctor's respiratory inquiry (as risk factor) and differentiation evidence (absence SOB/wheezing, prior workup), matching question parts; minor tangent on X-ray but focused overall."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer captures the core familial asthma differentiation but misrepresents the doctor's inquiry sequence and omits key symptom contrasts, resulting in moderate scores across dimensions."
+}

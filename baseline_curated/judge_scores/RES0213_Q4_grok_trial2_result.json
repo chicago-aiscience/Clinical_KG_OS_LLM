@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer identifies 6 specific conditions ruled out (trauma, cardiac angina, infection, asthma, dyspnea, inherited arrhythmia) with corresponding questions/citations. Generated Answer correctly details screening for palpitations/arrhythmias (aligning with parts of Gold's #2 and #6) using accurate transcript citations [D-20, D-32, P-20]. However, it omits 4 conditions entirely, partially addresses asthma but claims patient response 'not included in transcript' (falsely, as [P-23, P-24] exist), introducing a factual error. Core facts stated are accurate, but significant omissions and one error relative to Gold.",
+    "completeness": "Gold key points: 6 conditions + specific questions/lines for each. Generated covers palpitations/arrhythmias (1 item, ~17%) fully, mentions asthma (~17%) but dismisses; misses trauma [D-5], exertional angina/rest pain [D-10/11], infection [D-12/27], dyspnea [D-19]. Covers 20-49% of key points.",
+    "faithfulness": "Palpitations claims fully verifiable [D-20, P-20, D-32]. Asthma claim 'response not included' unverifiable/false (transcript has [D-23/24, P-23/24]); misrepresents transcript availability. No other hallucinations; mostly grounded but one erroneous claim.",
+    "relevance": "Directly addresses question by listing screened/ruled-out condition(s) with exact questions and patient responses; no tangents or off-topic content."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 2,
+    "faithfulness": 3,
+    "relevance": 5
+  },
+  "average_score": 3.25,
+  "summary": "The Generated Answer is partially correct and relevant but incomplete in covering the Gold Answer's key conditions and includes a hallucinated claim about missing transcript content."
+}

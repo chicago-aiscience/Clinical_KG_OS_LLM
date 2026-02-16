@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer contains significant factual errors. It claims the patient reported fever, nausea, vomiting, and belly pain as part of the initial 'flu symptoms' that later resolved. However, the transcript shows the patient explicitly denied fever [P-12], nausea/vomiting [P-19], and belly pain [P-20]. The Gold Answer correctly identifies these as pertinent negatives.",
+    "completeness": "The answer misses several key points from the Gold Answer, including the specific frequency of the cough (3-4 times per hour), the lack of triggers (spontaneous), the color of the mucus (whitish clear), and the mention of a runny nose as a resolved symptom. It covers about 50% of the actual symptom profile correctly.",
+    "faithfulness": "The answer hallucinates that the patient experienced fever, nausea, vomiting, and belly pain. While the patient mentioned 'flu symptoms' [P-14], they specifically told the doctor 'no' when asked about those individual symptoms. The inclusion of 'medical knowledge graph' references is also extraneous to the transcript content.",
+    "relevance": "The answer directly addresses the question regarding symptoms reported during the illness, separating them into resolved and present categories, although the content within those categories is inaccurate."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer fails significantly by claiming the patient experienced several symptoms that were explicitly denied in the transcript, leading to a poor correctness and faithfulness profile."
+}

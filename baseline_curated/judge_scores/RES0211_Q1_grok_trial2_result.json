@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Generated Answer correctly identifies dry cough, scratchy throat, and headache as reported symptoms from [P-1], matching Gold. However, it inaccurately attributes 'fever' directly to Jessica's report via doctor's summary [D-58], whereas Gold specifies her 'feeling really hot' [P-7, P-9]; adds 'post nasal drip' [P-18] as a current symptom, but this relates to allergies, not the 3-4 day illness. For denials, it wrongly claims no explicit denial of sputum (contradicts [P-5, P-6]), implies absence via dry cough but misses direct query responses, and states no information on nausea [P-11], vomiting, diarrhea [P-12], joint pain [P-13], rashes [P-10], directly contradicting Gold. Significant factual errors and contradictions.",
+    "completeness": "Gold reported symptoms: dry cough/scratchy throat (covered), headache (covered), feeling hot/feverish (partially/misstated as fever), malaise/crappy/icky (missed), tired (missed). Denied: sputum/phlegm (missed/misstated), rashes/skin changes (missed), nausea/vomiting (missed), diarrhea (missed), joint aches (missed), breathing difficulty (missed). Covers 2-3 of ~11 key points (~20-30%).",
+    "faithfulness": "Verifiable: dry cough/scratchy/headache [P-1]. Fever from doctor's inference [D-58], not direct patient report of fever. Post nasal drip [P-18] is allergy-related, not hallucinated but miscontextualized as current symptom. Sputum denial exists [P-5,P-6,D-5,D-6] but claimed not explicit or tied to wrong [D-58]; nausea/joint/rashes denials exist [P-10-13] but claimed absent—multiple inaccuracies and ungrounded claims about denials.",
+    "relevance": "Directly structures response around reported symptoms over 3-4 days and specific denied symptoms (sputum, nausea, joint pain, rashes), with bullet points matching question format; minor issues with accuracy but no off-topic content."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer partially covers main reported symptoms but misses several, inaccurately adds or misattributes others, and fails entirely on explicit denials with factual errors and hallucinations relative to the transcript and Gold Answer."
+}

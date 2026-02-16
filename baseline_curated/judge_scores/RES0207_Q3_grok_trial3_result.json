@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer states the missed Keppra dose connects to the seizure the same night due to disrupted routine [P-8, P-24], with patient recognition in P-9 as spontaneous attribution. Generated Answer correctly identifies Keppra [P-23], seizure [P-8], and patient recognition via exact P-9 quote. However, it introduces a non-existent 'knowledge graph' as source for 'direct cause,' which Gold bases solely on patient's words without external confirmation. It also asserts 'direct cause' more definitively than Gold's patient-focused implication. Core facts align, but extraneous 'knowledge graph' and slight overstatement are minor discrepancies.",
+    "completeness": "Gold key points: (1) Missed Keppra dose same night [P-8, P-24 details on birthday disruption]; (2) Patient recognition in P-9 (quote, spontaneous re: D-9, implies rarity 'usually don't get seizures often'); (3) One-time lapse [P-24]; (4) No clinician confirmation. Generated covers: connection via missed dose to seizure [P-8], Keppra [P-23], explicit P-9 recognition. Misses: P-24 explanation/ birthday context, seizure rarity, spontaneity context, no clinician note. Covers main connection and primary evidence (P-9), but ~60% of detailed points.",
+    "faithfulness": "Claims verifiable: Keppra [P-23], seizure [P-8], P-9 quote/context accurate. Citations correct. Unverifiable/hallucinated: Entire 'provided knowledge graph' reference (absent from transcript); asserts 'direct cause' from graph, not purely transcript/patient words. 'Precipitated the seizure event' aligns with P-9 but amplified via graph. One major fabrication (graph) plus interpretive overreach, not fully grounded.",
+    "relevance": "Generated directly explains missed dose-seizure connection and patient's self-recognition via P-9 quote, precisely matching question's two parts. No tangents or off-topic content."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.5,
+  "summary": "Generated Answer is mostly correct and relevant with strong evidence citation but incomplete in Gold details and unfaithful due to hallucinated 'knowledge graph' reference."
+}

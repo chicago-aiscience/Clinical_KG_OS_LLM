@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer has significant factual errors compared to the Gold Answer: for weight loss, it correctly identifies lung cancer and TB but adds unsupported diagnoses like HIV and claims it 'rules out' chronic conditions more definitively than Gold's 'less likely but does not exclude'; for travel, it incorrectly states no travel information was provided (contradicting [P-23] Sarnia trip) and lists exotic infections like malaria/dengue not aligned with Gold's Legionella/fungal or domestic context; for sick contacts, wrongly implies no report (ignores [P-24]) and focuses on virals vs Gold's person-to-person/TB; for chemical exposure, falsely claims no report (ignores [P-33,P-34] chemical plant work, limited exposure) and adds asbestosis/COPD not precisely matching Gold. Core structure matches but facts contradict.",
+    "completeness": "Gold key points: weight loss screens lung ca/TB, denied makes less likely/not exclude; travel screens endemic/exposure (Legionella/fungal), Sarnia trip/domestic/timing; sick contacts screens person-to-person/TB, denied reduces known exposure/not exclude CAP; chemical screens pneumonitis/occ dz, limited exposure makes less likely; collective favors acute infectious. Generated covers weight loss partially (~70%, misses nuance on exclusion); travel/sick/chemical miss actual responses/citations (~20% covered, wrong assumptions); no collective summary. Overall covers ~40% of key points.",
+    "faithfulness": "Claims about patient responses hallucinate: travel 'no info' vs [P-23]; sick contacts 'did not report' vs [P-24]; chemical 'no exposure' vs [P-33/34]. Some correct citations (e.g., [P-1],[P-9],[P-37],[P-42],[P-19]) for symptoms/smoking/chest pain, but unverifiable additions like ruling out exotics without transcript support. Multiple hallucinations on key responses make it ungrounded.",
+    "relevance": "Perfectly structured around the four specific questions with DDx and narrowing analysis per question; minor additions like extra diagnoses are tangential but directly addresses query without off-topic content."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer is relevant and well-structured but undermined by factual inaccuracies, hallucinations of patient responses, and incomplete coverage of Gold Answer details."
+}

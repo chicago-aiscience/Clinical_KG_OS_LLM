@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer does not identify the key *denied* symptoms/exposures from the transcript (e.g., chest pain, presyncope, GI symptoms, URI symptoms, sick contacts, travel). It incorrectly reframes the history by implying the patient “denied the relationship” between seizure and respiratory symptoms; the patient actually said they were unsure (“I don’t know if that’s related”), not a denial. It also treats shortness of breath and cough as “screenings the patient denied,” but the patient *confirmed* both symptoms. The proposed differentials are overly generic and do not map to the specific negative findings the doctor elicited (cardiac, infectious/URI/COVID-19 epidemiology, GI/systemic).",
+    "completeness": "Gold Answer key points included multiple denied items: chest pain; feeling faint; nausea/vomiting; belly pain; diarrhea; sick contacts; travel; loss of taste/smell; sore throat; runny nose; sputum production (dry cough); and no prior similar episodes. The Generated Answer captures essentially none of these denied screens (it only notes dry cough, and even that is not framed as a denied associated symptom such as sputum). It omits almost all exposures and symptom-denials and does not reflect the systematic differential categories described in the Gold Answer.",
+    "faithfulness": "A small portion is grounded (patient described dry cough). However, multiple statements are not supported or are distorted: claiming the patient denied any relationship between seizure and symptoms is not stated; and characterizing SOB/cough as denied is contrary to the transcript. The differential discussion is speculative and not tied to the transcript’s actual negative screens, indicating weak grounding.",
+    "relevance": "The question asks for (1) specific denied symptoms/exposures and (2) what differentials those negatives address. The response largely fails to list the denied symptoms/exposures and provides only vague differential categories. It is only minimally aligned with the question."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 2
+  },
+  "average_score": 1.5,
+  "summary": "The Generated Answer is largely incorrect and incomplete: it misses nearly all denied screening items and exposures from the transcript, includes a distorted claim about seizure-related denial, and provides only vague, weakly grounded differential reasoning."
+}

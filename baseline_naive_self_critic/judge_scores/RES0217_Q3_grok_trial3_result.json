@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer matches the Gold Answer on exposure history (hiking Friday, gardening Saturday), tick attachment duration (>72 hours [D-6]), and prior history (10-year-old tick bite with bullseye rash requiring antibiotics [P-3]). It correctly notes the despite clauses (not deer tick-like [P-5], no current rash [P-6]). However, geographic risk assessment is inaccurately represented: Gold specifies Strathroy along creek [P-12] and doctor's map check deeming it 'concerning' [D-13]; Generated uses general tick habitats/long grass consistent with activities [D-18], missing specifics. Conclusion infers 'known susceptibility' from prior history (plausible but not explicit) and misattributes 'safer' quote to [D-6] (actual [D-18]). Minor discrepancies, core facts correct.",
+    "completeness": "Gold key points: exposure history [P-1] (covered), duration >72h [D-6] (covered), geographic risk (Strathroy/creek [P-12], map/'concerning' [D-13]) (missed, substituted general habitats), prior history [P-3] (covered), despite not deer tick/no rash (covered), patient's comment all ticks carriers [P-5] (missed), send tick to lab [D-6] (not explicit), 'safer' prophylaxis [D-18] (covered). Covers ~70% of key points (strong on 3/4 main factors, misses/misrepresents geo and extras).",
+    "faithfulness": "All claims verifiable: exposure [P-1], duration [D-6], habitats/geo advice [D-18], prior [P-3], despite [P-5/P-6], prophylaxis rationale [D-6/D-18]. 'Known susceptibility via previous target rash occurrences' inferred from prior event (plausible, minor pluralization error as one occurrence), no major hallucinations; citations accurate except minor quote source.",
+    "relevance": "Perfectly focused on question's specified combination (exposure, duration, geo risk, prior history) with bullet structure, directly addresses despite clauses (not deer tick, no rash), no tangents."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 4,
+    "relevance": 5
+  },
+  "average_score": 4.0,
+  "summary": "The Generated Answer is mostly accurate and relevant but underperforms on completeness and correctness by substituting general habitat advice for the specific geographic risk assessment via map and location in the Gold Answer."
+}

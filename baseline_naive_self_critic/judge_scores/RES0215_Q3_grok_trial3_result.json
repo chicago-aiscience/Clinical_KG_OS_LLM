@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies asthma as the diagnosis, aligning with the Gold Answer's 'pediatric asthma with exercise-induced bronchoconstriction,' though it is less specific (omits 'pediatric,' 'bronchoconstriction,' and 'atopic predisposition' explicitly). Core facts about triggers (exercise, cold weather) and allergies match perfectly, with no factual errors in supporting evidence.",
+    "completeness": "Key points from Gold Answer: 1. Exercise-triggered (covered [P-3]); 2. Episodic/reversible with rest (missed); 3. Cold weather (covered [P-38]); 4. Multiple settings (missed); 5. Seasonal allergies (covered [P-35,P-36]); 6. Nocturnal episode (missed); 7. Pertinent negatives (missed). Covers ~50% of key points (exercise, cold, allergies), misses reversibility, settings, nocturnal, negatives.",
+    "faithfulness": "All claims are directly verifiable in the transcript: wheezy/SOB [P-1,P-2], exercise trigger [P-3], cold weather [P-38], allergies/Reactine [P-35,P-36]. No hallucinations; 'Knowledge Graph' is stylistic and does not introduce ungrounded facts.",
+    "relevance": "Directly states the diagnosis (asthma) and lists specific transcript findings with citations supporting it, perfectly matching the question's request without off-topic content."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 5,
+    "relevance": 5
+  },
+  "average_score": 4.25,
+  "summary": "The Generated Answer is factually accurate and highly faithful/relevant but only partially complete in covering all key supportive points from the Gold Answer."
+}

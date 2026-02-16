@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer states COVID-19 ruled out by 'covid test' [P-35] negative, performed at symptom onset two weeks prior [P-36]. Generated correctly identifies condition and test with citation. However, it incorrectly claims the transcript 'does not explicitly state the exact time lag' despite [P-36] clearly stating 'I had the test done when I first started having symptoms about two weeks ago'. Workplace concerns partially match (scared coworkers [P-35], hospital inferred), but misses specifics like job as clerk [P-34], PPE [P-17], staying home [P-36], return anxiety, meds link. 'Knowledge graph' mention is extraneous. Some factual errors but main points correct.",
+    "completeness": "Gold key points: condition (COVID-19), test ('covid test' [P-35], negative), timing (at onset, 2 weeks prior [P-36]), concerns (hospital clerk [P-34], PPE [P-17], scared coworkers [P-35], staying home [P-36], return without cough [P-36], meds [P-35]). Generated covers condition, test (no explicit negative), partial timing (cough duration but denies test timing detail), partial concerns (scared coworkers, hospital). Misses negative result emphasis, job/PPE/staying home/meds details. Covers ~60% of key points.",
+    "faithfulness": "Claims grounded: condition/test [P-35], cough 2 weeks [P-2], scared coworkers [P-35]. Timing cites [P-35] but wrongly claims no explicit lag (contradicts [P-36]). 'Knowledge graph [PROCEDURE]' hallucinated, not in transcript. Hospital setting verifiable via [P-34/35/17]. Some claims not fully verifiable (timing denial), plausible but with hallucination.",
+    "relevance": "Generated uses bullet points directly addressing each question element (condition, test, timing, concerns) with no off-topic content, perfectly focused on query."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 3,
+    "relevance": 5
+  },
+  "average_score": 3.5,
+  "summary": "The Generated Answer is mostly correct and relevant but has factual errors on test timing explicitness, incomplete coverage of workplace concerns, and a hallucinated 'knowledge graph' reference."
+}

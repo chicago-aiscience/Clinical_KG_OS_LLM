@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Generated Answer accurately states that Friday hiking and Saturday gardening led the doctor to infer tick attachment >72 hours, matching Gold's reference to [D-6]; minor citation error (D-5 is about tick size, not duration, but core fact from D-6 is correct). Geographic part matches: Strathroy on Ontario map as concerning [D-13], justifying antibiotics. No factual contradictions.",
+    "completeness": "Gold key points: patient activities Fri/Sat [P-1], uncertainty [P-1], removal today [D-1], time since outdoors [D-2], >72h [D-6], prophylactic [D-6], Strathroy creek [P-12], map concerning [D-13], abx [D-13]. Generated covers activities → >72h inference [D-6], map/Strathroy concern → abx [D-13]; misses uncertainty, removal timing, D-2, creek detail, exact quotes (~80% coverage of core mechanisms).",
+    "faithfulness": "All claims verifiable: activities [P-1], >72h due to Fri/Sat [D-6], map assessment [D-13], abx justification [D-6,D-13]. Citations mostly accurate (D-6,D-12,D-13 correct; D-5 minor mis-cite but claim grounded). No hallucinations.",
+    "relevance": "Directly explains activities' contribution to >72h estimate and doctor's map use for Strathroy to justify prophylaxis, perfectly matching question's two parts with no off-topic content."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 4,
+    "relevance": 5
+  },
+  "average_score": 4.25,
+  "summary": "Generated Answer is highly accurate, relevant, and grounded but misses some supporting details from Gold for full completeness."
+}

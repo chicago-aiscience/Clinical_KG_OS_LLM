@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer lists four key symptoms: dry cough (2 weeks, nonstop daytime, non-productive), significant breathing difficulty (SOB, hard time breathing esp. severe wheezing), prominent wheezing (a lot, more frequent than bronchodilator), chest tightness (confirmed). Frequency: daytime prominent/near-constant, nighttime less (every other/2 days). Generated covers dry cough (nonstop day, no 2 weeks), breathing difficulties (SOB, hard time, adds triggers), wheezing (a lot, no freq detail), omits chest tightness entirely while falsely claiming no explicit confirmation (contradicts P-20 'Yes' and Gold). Frequency covers difference (day more, night less) but misses specifics. Significant omissions and contradiction on chest (question-specified), some factual errors.",
+    "completeness": "Gold key points: 1. Dry cough details (duration, character, daytime); 2. Breathing diff details; 3. Wheezing details (freq > med); 4. Chest tightness; 5. Day vs night specifics. Covered: cough (partial, misses duration/non-productive), breathing (mostly), wheezing (basic), frequency (main diff, misses 'every other day'); missed: cough 2 weeks, wheezing-med detail, chest entirely. Covers ~60-70% of key points.",
+    "faithfulness": "Symptom claims grounded: cough [P-1,P-14], SOB [P-1], hard breathing [P-19], wheezing [P-15], freq [P-1,P-18], bronchodilator [P-1 etc.], triggers [P-9,P-11] verifiable. However, hallucinates 'Knowledge Graph' (absent), falsely claims chest tightness 'not explicitly confirmed' (contradicts P-20 'Yes'), presents triggers as core breathing symptom detail. Multiple inaccurate/unverifiable claims.",
+    "relevance": "Directly structures answer around symptoms (cough character, breathing, wheezing) and day/night frequency as asked; includes chest note (though wrong); minor extras (triggers, bronchodilator use) are related but tangential."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer covers most symptoms and frequency difference but significantly errs by omitting chest tightness (explicitly confirmed), falsely denying its confirmation, hallucinating a Knowledge Graph, and missing key details like cough duration and wheezing frequency relative to bronchodilator use."
+}

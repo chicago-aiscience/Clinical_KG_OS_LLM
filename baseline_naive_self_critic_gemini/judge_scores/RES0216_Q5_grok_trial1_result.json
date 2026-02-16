@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies asthma as the likely cause and cites relevant symptoms [P-1, P-16] and doctor's assessment [D-35], but it contains a major factual error by claiming the transcript lacks details on skipping the evening maintenance dose [P-19] and failing to refill the rescue inhaler [P-17, P-18], which directly contradicts the Gold Answer's accurate citations and the transcript itself; it also fails to explain how these self-directed changes compromise asthma control, deviating from the Gold's core factual linkage.",
+    "completeness": "Gold key points: asthma history well-controlled [P-16, P-29]; reduced maintenance dosing [P-19]; no rescue refill [P-17, P-18]; doctor's connection of limiting meds [D-34]; symptoms consistent with recurrence [D-35]; patient's note of difference [P-16]; rescue puffer plan [D-35]. Generated covers asthma history/symptoms and doctor's assessment partially (~30%), but misses all medication non-adherence details, doctor's summary linkage, and plan specifics.",
+    "faithfulness": "Claims verifiable: symptoms [P-1, P-16], doctor's assessment [D-35, D-36]. Unverifiable/hallucinated: 'Knowledge Graph' not in transcript; explicitly false note that transcript lacks skipping dose and rescue refill details (directly in P-17-19); doctor's cardiac exclusion slightly misphrased but grounded. Multiple hallucinations undermine grounding.",
+    "relevance": "Addresses asthma relation to symptoms via exacerbation and doctor's view, but ignores/evades the question's core elements of self-directed skipping evening dose and no rescue refill by falsely denying their presence, adding cardiac exclusion tangent; partially on-topic but incomplete focus."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "The Generated Answer partially recognizes the asthma link but introduces hallucinations denying key transcript facts on medication non-adherence, missing the Gold's complete explanation of how non-compliance relates to symptoms."
+}

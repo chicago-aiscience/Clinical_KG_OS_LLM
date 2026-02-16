@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly claims there is no historical context or baseline data in the transcript, directly contradicting P-2 (diagnosis at age 8), D-3/P-3 (now 10), and P-8 (baseline once every two weeks vs. current 5-6 times/week). It partially describes current symptoms but with factual errors like misattributing wheezing to P-18 (actual P-15) and chest tightness to D-20 (actual P-20), and omits key progression details like wheezing frequency exceeding bronchodilator use (P-16/17). Core evolution is misrepresented as unknowable when fully stated in transcript.",
+    "completeness": "Gold Answer key points: diagnosis at 8/now 10 (2-yr history), baseline well-controlled (once/2 wks, triggers exercise/cold/seasons), 2-wk exacerbation (nonstop dry cough, increased wheezing/SOB/chest tightness, bronchodilator 5-6x/wk, wheezing > usage, nighttime every other day, no precipitant). Generated covers ~30%: some current symptoms (cough/SOB/wheezing/chest tightness), triggers (cold/exercise/pollen), increased usage vaguely; misses diagnosis/baseline specifics, evolution timeline, nighttime symptoms frequency, no-precipitant screening.",
+    "faithfulness": "Multiple hallucinations: denies historical data despite P-2/P-8; invents 'knowledge graph' not in input; wrong citations (wheezing [P-18] vs. P-15; chest tightness [D-20] vs. P-20; symptoms frequency [P-18] misused). Some claims grounded (e.g., current cough P-1, triggers P-9/11, SOB P-1), but unverifiable 'marked increase compared to baseline' without quantifying P-8 baseline.",
+    "relevance": "Question focuses on temporal evolution (diagnosis -> baseline -> current exacerbation with specific frequencies); Generated dodges evolution by claiming insufficient data, then shifts to partial current status analysis with tangents (e.g., symptom clusters, efficacy), partially addressing current phase but ignoring progression."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "The Generated Answer significantly errs by denying transcript evidence of historical baseline and evolution, providing incomplete and partially hallucinated coverage of current symptoms while failing to address the question's core progression."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer specifies fevers, fatigue, and muscle aches as evidence of general infectious process (exact match). For additional symptoms preventing ruling out COVID-19, Gold identifies difficulty breathing combined with sore throat and cough. Generated correctly lists general symptoms but incorrectly categorizes difficulty breathing as part of the general infection rather than additional for COVID concern, and omits difficulty breathing from the additional symptoms list (only lists sore throat and cough). This represents some factual errors/misclassification compared to Gold's parsing of D-36, though core symptoms are correct.",
+    "completeness": "Key points from Gold: (1) General infectious: fevers, fatigue, muscle aches (fully covered); (2) Additional for COVID: difficulty breathing/SOB, sore throat, cough (partially covered - sore throat and cough yes, but SOB missing from additional and misplaced); (3) Notes that taste/smell not cited (implicitly covered by not mentioning); (4) Respiratory focus and citations (partially addressed). Covers ~70% of key points due to missing SOB in additional category.",
+    "faithfulness": "All symptoms in Generated (fevers, fatigue, muscle aches, difficulty breathing, sore throat, cough) are directly verifiable in transcript D-36 and earlier patient reports. No hallucinated facts; citations to [D-36] accurate. Grounded fully.",
+    "relevance": "Generated directly structures response around the two-part question (general infectious symptoms and additional for COVID), quoting relevant symptoms with bolding; no off-topic content."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 5,
+    "relevance": 5
+  },
+  "average_score": 4.0,
+  "summary": "The Generated Answer is mostly accurate and grounded but has moderate issues in completeness and correctness due to misclassifying difficulty breathing and omitting it from the additional COVID-specific symptoms per the Gold Answer."
+}

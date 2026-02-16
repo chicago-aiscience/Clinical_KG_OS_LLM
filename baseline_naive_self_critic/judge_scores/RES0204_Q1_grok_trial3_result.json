@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Generated Answer correctly notes cough duration (4-5 days) from [P-2], but incorrectly states the transcript does not specify cough nature (dry/non-productive), contradicting [D-5/P-5/D-6/P-6]; completely misses the runny nose symptom and its clear appearance [D-11/P-11/D-12/P-12], which Gold Answer highlights as a key respiratory symptom; significant contradictions with Gold's facts on symptoms and characteristics.",
+    "completeness": "Gold key points: two symptoms (cough: 4-5 days, dry/non-productive, stayed same; runny nose: couple days, pretty clear; history note; negatives). Generated covers only cough duration partially (~20% coverage), misses runny nose entirely, cough nature/severity details, history, and negatives.",
+    "faithfulness": "Cough duration verifiable [P-2]; but claims 'does not specify productive/non-productive' false—directly contradicted by [D-5/P-5 'dry cough', D-6/P-6 'no gunk']; nasal discharge claim 'not reported' hallucinates absence despite clear evidence [D-11/P-11 'runny nose', D-12/P-12 'pretty clear']; COVID swab irrelevant and misattributed.",
+    "relevance": "Addresses cough as respiratory symptom and attempts characteristics, but ignores second symptom (runny nose) and requested details (cough nature, nasal appearance); includes minor irrelevant swab mention; partially on-topic but incomplete."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "The Generated Answer is significantly incomplete and factually inaccurate, missing the runny nose symptom and misrepresenting the cough as unspecified despite clear transcript evidence, resulting in low scores across dimensions."
+}

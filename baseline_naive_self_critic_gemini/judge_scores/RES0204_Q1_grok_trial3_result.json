@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer details cough (4-5 days, dry/non-productive confirmed by patient, stayed the same, first time like this) and runny nose (couple days, pretty clear, past ones shorter), plus pertinent negatives. Generated correctly identifies cough duration, dry/non-productive nature, lack of improvement (aligns with 'stayed the same'), runny nose duration and clear appearance. Errors: Includes denied sore throat as a 'reported symptom' (misrepresents as reported when it's a denial); references non-existent 'knowledge graph' with fabricated triples. Main facts consistent, but some errors in presentation and extras.",
+    "completeness": "Key Gold points covered: cough 4-5 days (yes), dry/non-productive (yes), stayed same/no improvement (partially), runny nose couple days/clear (yes). Missed: explicit 'stayed the same' phrasing, first-time dry cough note, past runny nose duration comparison, most pertinent negatives (no chest pain, no wheezing/SOB). Covers ~60-70% of key points.",
+    "faithfulness": "Claims like cough/runny nose details verifiable [P-2,P-4-P-6,P-11-P-12]. Sore throat denial verifiable [P-9]. Hallucinations: Entire 'knowledge graph' references and triples ([SYMPTOM] notations) not in transcript; 'classified as... according to knowledge graph' fabricated.",
+    "relevance": "Directly addresses reported respiratory symptoms (cough, runny nose) with required characteristics (dry/non-productive cough, clear nasal discharge). Sore throat denial and knowledge graph are minor off-topic additions, but core focus matches question."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer captures the main respiratory symptoms and characteristics accurately but is undermined by hallucinated knowledge graph references and incorrect inclusion of a denied symptom."
+}

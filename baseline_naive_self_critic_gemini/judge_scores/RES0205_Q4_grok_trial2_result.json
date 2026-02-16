@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies COVID-19 as the condition ruled out and the 'COVID test' as the specific test used, matching the Gold Answer and transcript [P-35]. However, it significantly errs on timing, claiming the test occurred 'during this prolonged period of symptom persistence' and citing [P-13][P-14][P-35], whereas the Gold Answer and transcript [P-36] state it was at symptom onset two weeks prior. Workplace concerns are partially correct (coworkers scared [P-35]) but miss key details like hospital job [P-34], PPE [P-17], staying home, return anxiety, and medication desire. Significant factual errors and omissions contradict Gold Answer.",
+    "completeness": "Gold Answer key points: (1) COVID-19 ruled out; (2) 'covid test' [P-35] negative; (3) at onset, two weeks prior [P-36]; (4) hospital clerk [P-34]; (5) PPE [P-17]; (6) coworkers scared [P-35]; (7) staying home post-test [P-36]; (8) wants to return without coughing [P-36]; (9) medication desire [P-35]. Generated covers (1), partial (2), misses/wrong (3), partial (6); misses (4),(5),(7),(8),(9). Covers ~25-40% of key points.",
+    "faithfulness": "Condition, test, and negative result verifiable [P-35]; coworkers scared verifiable [P-35]. Timing claim ('prolonged period') not verifiable and contradicts [P-36] ('when I first started having symptoms about two weeks ago'); citations [P-13][P-14][P-35] discuss symptom duration but not test timing, indicating misinterpretation or hallucinated connection. No major fabrications but multiple ungrounded/misaligned claims.",
+    "relevance": "Generated Answer uses bullet points to directly address each question element (condition, test, timing, concerns) with no off-topic content or tangents, perfectly matching question structure."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer accurately identifies the condition and test but fails with incorrect timing, incomplete workplace concerns, and unfaithful transcript interpretation, resulting in a low overall score."
+}

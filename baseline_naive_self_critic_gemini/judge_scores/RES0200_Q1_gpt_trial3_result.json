@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the main endorsed respiratory symptoms (worsening cough and shortness of breath) and notes exertional limitation and chest discomfort with coughing, which aligns with the Gold Answer. However, it inaccurately summarizes the sputum baseline as “clear to yellow/white” whereas the Gold Answer (and transcript) indicate baseline was clear-to-white and then became more yellow over the past week. The major correctness error is the claim that the transcript does not contain explicit denials of orthopnea, PND, hemoptysis, palpitations, and fever—these are explicitly addressed/denied in the transcript (hemoptysis denied; orthopnea denied; PND denied; palpitations denied; and patient reports chills and no measured temperature/uncertain fever). This directly contradicts the source and Gold Answer.",
+    "completeness": "It includes: worsening cough, increased SOB, sputum change to yellow, and chest discomfort. It omits key endorsed systemic symptom of chills and the nuance that fever was not measured. It also omits nearly all pertinent negatives listed in the Gold Answer, including the specifically asked commonly screened denials (orthopnea, PND, hemoptysis, palpitations) and numerous other ROS negatives (e.g., dizziness/syncope, GI/GU, ENT, neuro, rash, fatigue, weight loss). Overall, it captures well under half of the Gold Answer’s key points.",
+    "faithfulness": "Several statements are not faithful to the transcript: (1) asserting there were no explicit denials of orthopnea/PND/hemoptysis/palpitations/fever is contradicted by the transcript; (2) sputum baseline is misstated as “clear to yellow/white,” adding “yellow” to baseline in a way that is inconsistent with the transcript’s “clear to white” before the past week. Most other included items are grounded in cited lines.",
+    "relevance": "The answer is generally focused on respiratory/systemic symptoms and denials, which is what the question asks. However, it fails to provide the requested list of denied commonly screened symptoms (and incorrectly says they are not present), reducing how well it addresses the question."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "Partially captures the patient’s worsening cough/SOB and sputum change, but it incorrectly claims key denials are absent and omits many Gold Answer symptoms/pertinent negatives, leading to low correctness, completeness, and faithfulness."
+}

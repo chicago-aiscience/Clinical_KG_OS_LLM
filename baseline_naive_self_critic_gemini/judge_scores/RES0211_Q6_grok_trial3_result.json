@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer fails to address the doctor's specific recap in D-58, instead pulling general symptoms from early patient reports (P-1, P-7, P-18) like dry cough, scratchy throat, malaise, headache, feeling hot (fever), and post-nasal drip, which mismatches the Gold Answer's focus on the doctor's summary points: 3-4 day dry cough with fever/headache, no sputum, limited contacts (brother's cold), no asthma, Claritin only. It incorrectly includes birth control (omitted in doctor's summary) and fabricates Jessica's goal as seeking family doctor attention (P-22 refers to past infrequent visits, not this appointment), contradicting Gold's citation of P-60 (needs medicine or not). Significant contradictions and errors.",
+    "completeness": "Gold key points: doctor's 5 recaps (duration/dry cough/fever/headache, no sputum, contacts/brother cold, no asthma, Claritin only), visit purpose/next steps, Jessica's P-60 goal (medicine?), P-61 (home/rest). Generated covers 0%: no mention of doctor's summary, wrong goal, extraneous details like allergies history, birth control, post-nasal drip.",
+    "faithfulness": "Claims cite transcript (P-1, P-7, P-18, P-15, P-22, P-25/26) but misapply to wrong context (initial symptoms vs. end summary); hallucinates '[KG]' and 'knowledge graph' (absent from transcript); post-nasal drip from allergy history (P-18), not current recap; primary goal fabricated from P-22 (past doctor visits), ignores D-58/P-60; multiple ungrounded elements.",
+    "relevance": "Question specifies 'doctor's summary at the end' (D-58 recaps) and Jessica's 'primary goal for next steps' (P-60 medicine); Generated provides general symptom list and irrelevant goal (seeing family doctor), ignoring end-of-visit summary entirely; largely off-topic."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 2
+  },
+  "average_score": 1.5,
+  "summary": "The Generated Answer is largely incorrect, incomplete, and unfaithful by ignoring the doctor's specific end-of-visit recap in D-58 and fabricating Jessica's goal, focusing instead on unrelated early symptoms and history."
+}

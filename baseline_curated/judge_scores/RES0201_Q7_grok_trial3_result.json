@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer specifies precise timelines (Day 1: sore throat start and worsening; shortly after: fatigue/muscle aches; Day 3: reduced taste only; Day 4: breathing difficulty onset and worsening) and accurate details (smell unaffected, failed self-treatment). Generated Answer correctly identifies sore throat onset 4 days ago but inaccurately describes severity as not abating (Gold says progressively worsened per P-4), provides no timeline for muscle aches/fatigue (Gold: immediately after sore throat per P-26), wrongly claims total smell loss (transcript/Gold: smell unaffected per P-19), omits taste timeline (Gold: 2 days ago), and lacks precise breathing timeline/severity details (Gold: yesterday, worsening). Significant contradictions on smell, timelines, and severity changes warrant score 2.",
+    "completeness": "Gold covers: sore throat (Day1, worsening), fatigue/aches (shortly after, details), taste (Day3, constant/new, smell no), breathing (Day4, constant/worsening/new), failed treatments, overall progression. Generated partially covers sore throat (onset/partial severity/treatments), vaguely mentions aches/fatigue and taste/smell (wrong on smell), breathing (no timeline/severity), misses most timelines, severity trajectories, failed treatments context, and progression summary. Covers ~20-49% of key points, score 2.",
+    "faithfulness": "Claims like sore throat 4 days/very sore/treatments fail verifiable (P-2/3/4/6). Muscle aches/fatigue grounded (P-25/26) but timeline omitted despite P-26. Taste partial ok (P-19/20/21) but smell 'total loss' hallucinated/misread ('but not smell' means unaffected). Breathing timeline 'yesterday' missed (P-8), relies on D-7/D-43 not specifying onset. Multiple unverifiable/misinterpreted details (smell, timelines), score 2.",
+    "relevance": "Generated structures symptoms in attempted chronological order with onset/severity, directly addressing question core, minor issues with precision but no off-topic content, score 4."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer partially addresses chronology and severity but contains factual errors (e.g., smell loss), misses key timelines and progression details from the Gold Answer and transcript."
+}

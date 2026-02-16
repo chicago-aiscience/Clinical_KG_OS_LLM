@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer accurately captures the core relationship between the patient's asthma history, self-directed medication changes (implied via D-34), and current symptoms as an asthma exacerbation per D-35. It correctly cites key transcript sections like P-16, D-34, P-1, D-35, and D-36. Minor discrepancies include not explicitly detailing the morning-only dosing (P-19/P-20) or rescue inhaler specifics (P-17/P-18), instead generalizing 'limiting medication'; attributes a symptom quote loosely to D-36 (actually from P-7); and references a non-existent 'Knowledge Graph'. Core facts align with Gold Answer.",
+    "completeness": "Covers key Gold points: asthma history (P-16), medication limiting (D-34), symptoms (chest tightness/SOB from P-1/P-7), doctor's assessment of recurring asthma (D-35/D-36). Misses specifics like well-controlled for years (P-29), exact skips (P-19/P-20), no rescue refill details (P-17/P-18), phlegm/hoarseness (P-11), feels 'different' (P-16), and proposing rescue puffers (D-35). Covers ~85% of key points focusing on main causal link.",
+    "faithfulness": "Most claims grounded with accurate citations (P-16, D-34, P-1, D-35, D-36). Minor issues: 'Knowledge Graph' is hallucinated/not in transcript; D-36 misattributed for 'harder to get a whole breath' (P-7). 'Clinical correlation' via KG is unverifiable but rest verifiable. No multiple fabrications.",
+    "relevance": "Directly and comprehensively addresses the question with a step-by-step breakdown tying asthma history, medication non-adherence, and symptoms to exacerbation, mirroring the query's focus. No off-topic content."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 4,
+    "relevance": 5
+  },
+  "average_score": 4.25,
+  "summary": "The Generated Answer is mostly accurate and relevant, effectively linking non-adherence to symptoms but with minor gaps in detail, citation slips, and a hallucinated reference."
+}

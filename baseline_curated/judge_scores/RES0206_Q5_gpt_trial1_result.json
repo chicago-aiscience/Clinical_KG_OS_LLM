@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer aligns with the Gold Answer’s core causal story: a substantial smoking history is the major contributor to underlying COPD, and a sick contact plausibly led to a respiratory infection that triggered an acute COPD exacerbation. However, it overstates certainty in a few places (e.g., calling smoking the “direct cause” rather than the primary risk factor, and stating the doctor “confirms” a respiratory infection when the transcript says “maybe… an infection” [D-43]). It also introduces “Knowledge Graph” causal assertions that are not part of the Gold Answer and are not supported by the transcript.",
+    "completeness": "Key Gold Answer points covered: (1) 20-year, 1/2 pack per day smoking history [P-40] as major cause/risk factor; (2) sick friend exposure with walking too close [P-20]; (3) infection symptoms including green/yellow sputum [P-1] and possible fever [P-9]; (4) infection triggering COPD exacerbation with support from [D-43].\nKey points missed vs Gold: (1) she quit smoking when diagnosed and timing of COPD diagnosis (4–5 years ago) [P-7, P-40]; (2) persistent baseline COPD management with maintenance/rescue inhalers [P-26]; (3) fuller infection symptom set (sinus pressure [P-12], headache [P-14]) and the explicit 3-day timeline of worsening [P-1]; (4) her prior experience that being sick worsens COPD [P-3] (though the doctor’s statement is included, the patient’s recognition of the pattern is omitted). Overall, it captures the main chain but not much of the supporting detail emphasized in the Gold Answer.",
+    "faithfulness": "Several elements are not grounded in the transcript: repeated references to a “Knowledge Graph” and specific causal edges (e.g., smoking history --CAUSES--> COPD; sick contact --CAUSES--> respiratory infection) are fabricated relative to the provided source. Additionally, the claim that the doctor “confirms” a respiratory infection is stronger than the transcript wording (“maybe… an infection” [D-43]). The rest (sick contact proximity, sputum color, feeling hot) is supported by cited lines.",
+    "relevance": "The response stays focused on exactly what was asked: how smoking relates to COPD and how sick contact plausibly led to an infection triggering an acute exacerbation. No major irrelevant tangents."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 3,
+    "relevance": 5
+  },
+  "average_score": 3.75,
+  "summary": "Captures the main smoking→COPD and sick-contact→infection→exacerbation logic, but misses several supporting Gold details and includes ungrounded “Knowledge Graph” claims and some overstated certainty."
+}

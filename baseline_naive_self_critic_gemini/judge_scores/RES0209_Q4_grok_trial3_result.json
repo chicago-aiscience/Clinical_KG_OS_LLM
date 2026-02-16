@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly states there is 'no information available' on screening for infectious causes, despite the transcript clearly containing D-21 to D-28 which screen for colds/infections (denied), sick contacts at home/outside (denied), travel (denied), loss of taste/smell (denied), fevers (denied), nausea/vomiting (denied), and belly pain (denied), matching the Gold Answer exactly. It instead focuses on unrelated asthma symptoms and triggers (wheezing, SOB, chest tightness, exercise, cold air, pollen), which are not part of the infectious screening. This is a complete factual contradiction with the Gold Answer.",
+    "completeness": "Gold Answer key points: symptoms screened (colds/infections denied D-21/P-21; taste/smell denied D-25/P-25; fevers denied D-26/P-26; N/V denied D-27/P-27; belly pain denied D-28/P-28; dry cough D-14/P-14); exposures (home/frequent sick denied D-22/P-22; outside sick denied D-23/P-23; travel denied D-24/P-24); explanation of questions (D-29); planned COVID swab despite negatives (D-29). Generated Answer covers 0% of these, instead listing irrelevant asthma-related items.",
+    "faithfulness": "Generated Answer hallucinates absence of infectious screening content explicitly present in transcript (D-21-D-29); misrepresents transcript focus as 'exclusively on asthma'; incorrectly cites D-19 as screening for 'wheezy' with transcription error ('copping your wheezy'); asthma trigger claims are partially verifiable (e.g., P-9, P-11) but irrelevant and do not ground the denial of infection screening, making core claims unverifiable and fabricated.",
+    "relevance": "Generated Answer does not address the question on infectious screening symptoms/exposures/responses/planned test; instead denies existence (falsely) and diverts to unrelated asthma symptoms/triggers, providing largely off-topic content that does not answer what was specifically screened to rule out infections like COVID-19."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 2
+  },
+  "average_score": 1.25,
+  "summary": "The Generated Answer is fundamentally incorrect, incomplete, unfaithful to the transcript, and largely irrelevant by denying and ignoring the explicit infectious screening in D-21-D-29 while focusing on unrelated asthma details."
+}

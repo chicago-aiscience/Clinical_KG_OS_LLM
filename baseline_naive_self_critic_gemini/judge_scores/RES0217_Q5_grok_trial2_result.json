@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer accurately captures the patient's hiking on Friday and gardening on Saturday from [P-1], the doctor's estimation of >72 hours attachment from [D-6], the Strathroy location from [P-12], and the map assessment from [D-13], matching the Gold Answer's core facts. Minor discrepancy: places Strathroy explicitly in the attachment duration section, though hiking was Friday there and gardening Saturday (location unspecified). However, it introduces a hallucinated 'knowledge graph' and '[RISK_FACTOR]' not present in Gold or transcript, creating a factual error.",
+    "completeness": "Gold key points covered: hiking Fri/gardening Sat [P-1] ✓, uncertainty of attachment ✓ (implied), removal today implied ✓, >72h [D-6] ✓, prophylactic abx [D-6/D-13] ✓, Strathroy creek [P-12] partially (omits 'along the creek'), map concerning [D-13] ✓. Misses explicit D-2 confirmation of time lapse and full emphasis on combined prolonged attachment/geographic risk leading to treatment. Covers ~85% of points.",
+    "faithfulness": "Claims like activities [P-1], >72h [D-6], Strathroy [P-12], map [D-13] verifiable with accurate citations. 'Knowledge graph' and '[RISK_FACTOR]' for Strathroy are fabricated/not in transcript. Patient's hope it was from hiking not gardening implied but not hallucinated. Mostly grounded with one clear hallucination.",
+    "relevance": "Perfectly structured into two sections directly matching the question's two parts (attachment duration from Fri/Sat activities; map use for Strathroy), no off-topic content despite minor extra."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 3,
+    "relevance": 5
+  },
+  "average_score": 4.0,
+  "summary": "The Generated Answer is highly relevant, mostly correct and complete, but deducts for a hallucinated 'knowledge graph' reference reducing faithfulness."
+}

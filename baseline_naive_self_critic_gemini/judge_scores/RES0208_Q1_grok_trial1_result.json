@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Step-by-step: Gold Answer lists specific symptoms with citations; Generated accurately reports loss of taste [P-4], fever [P-4], weakness [P-2], decreased appetite [P-2,P-4], sore throat [via D-36, matches P-9], cough [P-7,D-36], headaches [P-11,P-12], muscle aches [D-36, matches P-20]. Minor discrepancies: includes 'difficulty breathing (laborious)' [P-3] which is part of chief complaint excluded by question; relies on doctor's summary [D-36] instead of direct patient quotes for some symptoms; places headaches and weakness differently than Gold but facts match transcript; does not contradict Gold but has categorization shifts. Core facts correct, score 4.",
+    "completeness": "Gold key points: sensory (taste [P-4], smell [P-6], new [P-5]); upper resp (dry cough details [P-7,P-8], sore throat starting [P-9], denied runny [P-10]); musculo (achy muscles [P-20,P-21], weakness [P-2]); const (fever subjective [P-4], dec app [P-2,P-4,P-18], headaches usual [P-11-13]). Generated covers: taste, sore throat, cough, headaches, aches, fever, weakness, dec app. Missed: smell loss, denied runny nose/congestion, specific details like 'dry/on its way' cough, 'starting' sore throat, 'overall achy' not localized, newness of sensory, thermometer absence, usual stress headaches. Covers ~70% of key points (all major symptoms but misses one sensory and denial/details), score 3.",
+    "faithfulness": "All claims verifiable: taste [P-4 exact], breathing [P-3], sore throat/cough/muscle aches [D-36 summarizes patient reports, corroborated by P-9,P-7,P-20]; headaches [P-11,P-12]; fever [P-4]; weakness [P-2]; appetite [P-2,P-4]. Citations accurate. No hallucinations; doctor's summary [D-36] is in transcript and reflects patient's reports faithfully. Minor indirectness via D-36 but grounded, score 5.",
+    "relevance": "Generated uses exact categories from question (sensory, upper resp, musculo, constitutional); lists symptoms beyond chief complaints (minor inclusion of breathing sub-detail); structured directly to answer; no off-topic content, score 5."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 5,
+    "relevance": 5
+  },
+  "average_score": 4.25,
+  "summary": "The Generated Answer is mostly accurate and well-grounded with excellent relevance and structure, but moderately incomplete due to missing smell loss and some details, with minor categorization and citation issues."
+}

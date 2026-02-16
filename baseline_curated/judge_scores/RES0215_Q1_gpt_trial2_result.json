@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the main respiratory symptoms reported at presentation: wheezing (P-1), slight cough (P-1), and shortness of breath/difficulty taking deep breaths (P-1, P-2). However, it is slightly inaccurate on the “earliest symptoms” point: the transcript specifies two earliest symptoms at onset—wheezing and difficulty taking in deep breaths (P-2)—whereas the Generated Answer names only wheezy breathing as earliest (though it does mention difficulty taking deep breaths elsewhere). It also omits other respiratory descriptors present in the Gold Answer (exertional “quite out of breath” [P-3], “hard time catching her breath” [P-32], and non-productive cough [P-31]), but these are more omissions than contradictions.",
+    "completeness": "Covers the core presenting symptom triad from the Gold Answer (wheezing, cough, shortness of breath). Misses several additional respiratory details included in the Gold Answer: (1) exertional dyspnea/“quite out of breath” with tag (P-3), (2) “hard time catching her breath” during episodes and denial of cyanosis (P-32), (3) cough described as non-productive/no phlegm (P-31). For earliest symptoms, it fails to explicitly include “difficulty taking in deep breaths” as co-earliest (P-2). Overall this is substantial but not complete coverage.",
+    "faithfulness": "All statements made are supported by the transcript and the cited turns (P-1, P-2, P-43). No clear hallucinations or unsupported claims are introduced. Minor issue: citing P-43 as an additional wheeze report is acceptable (night wheeziness mentioned), and does not distort meaning.",
+    "relevance": "Directly answers both parts of the question (symptoms at presentation and which were earliest). No meaningful irrelevant content."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 5,
+    "relevance": 5
+  },
+  "average_score": 4.25,
+  "summary": "The answer is accurate and well-grounded for the main presenting symptoms, but it incompletely captures the earliest-symptom description and omits several respiratory details noted in the gold answer."
+}

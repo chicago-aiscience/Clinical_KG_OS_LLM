@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer has significant factual errors compared to the Gold Answer: raspy cough is placed on Sunday instead of Friday [P-3]; fever onset on Monday is completely omitted; chest pain is assigned to Wednesday instead of around Tuesday ('over the last day' [P-20]); yellow sputum with red spots on Sunday is correct; chills on Tuesday is partially correct ('last two days' [P-9]). Runny nose ~1 week ago is missing. Overall, core timeline is distorted with contradictions on key symptom onsets.",
+    "completeness": "Key points from Gold covered: yellow sputum with red spots on Sunday (partial), chills Tuesday-Wednesday (partial), chest pain recent (wrong day), overall worsening (partial via exertional intolerance). Missed entirely: runny nose ~1 week ago [P-16], raspy cough on Friday [P-3], fever on Monday [P-8], precise simultaneous start of sputum components [P-7], pleuritic nature of pain [P-18,P-19], exertional dyspnea and sore throat by Wednesday. Covers ~30-40% of key points, mainly partial symptom timelines.",
+    "faithfulness": "Most claims are grounded with citations (e.g., sputum [P-4,P-6], chills [P-9], chest pain [P-17]), but misinterprets raspy cough onset (P-3 clearly Friday), adds unverified Tylenol start on Monday (P-14 no timing), places chest pain strictly on Wednesday ignoring 'last day' [P-20]; hallucinates 'knowledge graph supports' (no such thing in transcript); includes irrelevant Lipitor [P-26]. Multiple interpretive errors and one clear hallucination.",
+    "relevance": "The answer directly structures a timeline by days from Sunday to Wednesday, addressing symptom onsets (cough, sputum, chills, pain) and worsening (exertional issues), closely matching the question; minor irrelevant additions like Tylenol timing and Lipitor."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer provides a partially relevant timeline but is factually incorrect on key symptom onsets (cough, fever, pain), incomplete in coverage, and includes hallucinations and misinterpretations from the transcript."
+}

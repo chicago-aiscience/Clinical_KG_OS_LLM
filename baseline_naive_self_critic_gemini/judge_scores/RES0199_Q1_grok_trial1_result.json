@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer details respiratory symptoms as dry cough starting 4 days ago, no sputum/blood, stable; GI as diarrhea 2 days ago (liquid, 5-6x/day, no blood), nausea today, vomiting yesterday (2x, food contents, no blood), GI negatives; headache 4 days ago, persistent, bilateral forehead/top, 7/10, no radiation/neck stiffness, unusual; plus smell/fatigue. Generated correctly notes dry cough 4 days, diarrhea liquid 5-6x/day, vomiting 2x yesterday, headache persistent 7/10 4 days. Errors: diarrhea onset as 4 days (Gold/P-28: 2 days), vomiting onset 'few days' (actually yesterday), misses no sputum/blood, nausea, food contents, negatives, headache location etc. Some factual errors but main points (specified in question) correct. Score: 3.",
+    "completeness": "Key Gold points covered: cough dry/4d (partial), diarrhea liquid/5-6x (partial, wrong onset), vomiting 2x (partial), headache persistent/7/10/4d (partial). Missed: cough no sputum/blood/stable, resp negatives (SOB/wheeze/chest pain), diarrhea 2d/no blood, nausea, vomiting details (yesterday/food/no blood), GI negatives (bloating/gas/constipation/appetite), headache bilateral/location/no radiation/neck stiff/unusual, smell loss, fatigue. Covers ~30-40% of Gold key points. Score: 2.",
+    "faithfulness": "All claims verifiable in transcript with accurate citations (e.g., dry cough [P-12], liquid stools 5-6x [P-28], vomiting 2x [P-32], persistent [P-3], 7/10 [P-8], onsets [P-1]). Minor issue: attributes diarrhea/vomiting onset broadly to [P-1] (overall symptoms) instead of specifics (P-28=2d diarrhea, P-32=yesterday vomit), but plausible and not fabricated. No hallucinations beyond 'knowledge graph' mention (not in provided transcript, but minor). Score: 4.",
+    "relevance": "Generated Answer directly structures response around respiratory (cough), GI (diarrhea/vomiting), and headache characteristics, precisely matching question's focus on GI/resp symptoms and specified details (cough nature, diarrhea freq, vomiting num, headache sev). No off-topic content. Score: 5."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 2,
+    "faithfulness": 4,
+    "relevance": 5
+  },
+  "average_score": 3.5,
+  "summary": "The Generated Answer captures core symptom specifics with accurate citations but has factual errors on timings, omits many pertinent details and negatives from the Gold Answer, while remaining highly relevant and grounded."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer specifies COVID swab, self-isolation for patient and husband, physical exam as next step, and consulting supervising doctor before returning. Generated correctly identifies COVID swab [D-53] and self-isolation for patient/husband [D-53,D-54]. However, it inaccurately frames next steps as 'ruling out COVID-19' and 'investigating influenza' without mentioning physical exam [D-52] or consulting the doctor [D-55]; adds unverified 'husband's recent exposure' and hallucinates '[MEDICAL_HISTORY: no flu shot]' tag not in transcript. Some factual errors but core test and isolation correct.",
+    "completeness": "Covers COVID swab (100%) and self-isolation (100%); misses physical exam [D-52] and consulting supervising doctor/returning [D-55] (two major points); patient agreement minor. Covers ~50% of key points.",
+    "faithfulness": "COVID swab, self-isolation, 'keep to yourself', COVID/influenza possibilities verifiable in [D-53,D-54]; 'investigating influenza' and framing as next step plausible but not directly stated; 'husband's recent exposure' loosely from [P-19]; '[MEDICAL_HISTORY: no flu shot]' tag fabricated (no such reference in transcript). Some unverifiable/plausible claims.",
+    "relevance": "Directly structures response around test ordered, precautionary measures for patient/husband, and next steps, closely matching question despite inaccuracies; minor tangent on influenza."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 3,
+    "relevance": 4
+  },
+  "average_score": 3.25,
+  "summary": "The Generated Answer captures the core test and isolation measures accurately but incompletely misses key next steps like physical exam and physician consult while adding plausible but ungrounded details."
+}

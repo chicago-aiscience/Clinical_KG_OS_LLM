@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer is largely incorrect compared with the Gold Answer and the transcript. The transcript explicitly states the symptom order: Jessica first noticed a scratchy throat and then started coughing, and the cough is dry (P-4). The Generated Answer incorrectly claims the transcript does not state the chronological order. It also incorrectly claims there is no mention of feeling hot/fever-like symptoms, despite clear statements that she felt “really hot” and “all the time… night… during the day too” (P-7, P-9).",
+    "completeness": "Key Gold Answer points covered: only that she had dry cough and scratchy throat for 3–4 days (partially). Key points missed: (1) explicit progression scratchy throat → dry cough (P-4); (2) associated symptoms by visit—headache/pounding head (P-1, P-2), malaise/feeling crappy (P-1, P-14), fatigue/tired (P-13); (3) feeling hot as persistent day and night (P-7, P-9) and clinician summary of “a little bit of fever” (D-58); (4) nuance that the exact day feeling hot started relative to throat/cough is not specified, only that it occurred during the same multi-day illness. Overall coverage is well under 20% of the Gold Answer content.",
+    "faithfulness": "The answer is not grounded in the transcript because it denies information that is explicitly present (the throat-then-cough sequence in P-4 and the ‘felt really hot’ statements in P-7 and P-9). These are direct contradictions rather than minor omissions.",
+    "relevance": "The response is focused on the asked items (symptom order and how ‘feeling hot’ relates to the cough/throat timeline) and does not introduce tangential material, but it fails by incorrectly asserting that the transcript lacks those details."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 4
+  },
+  "average_score": 1.75,
+  "summary": "The Generated Answer is highly inaccurate and incomplete, directly contradicting clear transcript evidence about symptom sequence and persistent subjective fever/feeling hot, though it remains on-topic."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the onset as approximately one week prior (matching Gold and [P-1,P-2]). However, it incorrectly states that both stuffy nose and runny nose started concurrently with 'no specific evidence' for which appeared first, directly contradicting the Gold Answer and transcript [P-3] where patient says 'It felt pretty stuffy at first.' It also wrongly claims no change in predominant symptom (ignores [P-3] 'now it's mostly running' and Gold's shift description). Finally, it misstates symptoms as intermittent based only on [P-1] 'on and off,' ignoring the clarification in [P-8] 'pretty constant for the past week' as noted in Gold. These are significant factual errors and contradictions.",
+    "completeness": "Key points from Gold Answer: 1) Onset ~1 week ago; 2) Initial symptom nasal congestion ('stuffy at first'); 3) Shift to predominant rhinorrhea ('now mostly running'); 4) Possible influence of decongestants; 5) Pattern: initially 'on and off' but overall 'pretty constant'; 6) Symptoms not improved. Covered: only onset (partial). Missed: initial symptom specificity, progression/shift, decongestants, full pattern details, lack of improvement. Covers <20% of key points.",
+    "faithfulness": "Onset verifiable [P-1,P-2]. Claim of concurrent onset and 'no specific evidence' for first symptom hallucinates absence of evidence when [P-3] explicitly states 'stuffy at first.' No predominant change ignores direct [P-3] quote. Intermittent only cites [P-1] but ignores contradictory [P-8] clarification, introducing selective hallucination by omission. Multiple ungrounded/misinterpreted claims.",
+    "relevance": "The Generated Answer is structured directly around the question's elements (onset, progression over week, constant/intermittent), with no off-topic content or tangents, perfectly mirroring the query's focus despite factual issues."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer is relevant and correctly notes onset but has significant factual errors, poor completeness, and faithfulness issues by misinterpreting or ignoring key transcript details on symptom sequence, progression, and constancy."
+}

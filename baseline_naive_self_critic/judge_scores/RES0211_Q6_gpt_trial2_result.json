@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer is not factually consistent with the Gold Answer. It incorrectly states that “the doctor's explicit summary is not included,” even though the doctor’s end-of-visit summary is clearly present in D-58. It also misstates Jessica’s primary goal: the transcript explicitly records Jessica’s goal in P-60 (“if I have to like take medicine or something”), which the Generated Answer does not report. While it correctly notes several symptoms (dry cough 3–4 days, scratchy throat, headache, feeling unwell) and her seasonal allergy history, it omits or misrepresents the key recap elements and the stated next-step goal.",
+    "completeness": "Key points from the Gold Answer that are missing or not captured:\n- Doctor’s recap of dry cough + “a little bit of fever” + headache (fever omitted).\n- Doctor’s recap that cough is nonproductive (no sputum).\n- Doctor’s recap of sick contacts: essentially none, except brother had a cold ~2 weeks ago.\n- Doctor’s recap: no asthma.\n- Doctor’s recap: no meds aside from Claritin.\n- Doctor framing of purpose: determine “next steps and where to go from here.”\n- Jessica’s explicit next-step goal: whether she needs medicine (P-60).\n- Jessica’s additional expressed priority: go home and lay down (P-61).\n\nWhat it does include: some symptom history and seasonal allergies. Overall, it covers well under half of the Gold Answer’s key points.",
+    "faithfulness": "Several statements are not well-grounded in the transcript: the claim that the doctor’s summary is “not included” contradicts D-58. The stated “Primary Goal” is inferred rather than quoted and is inaccurate relative to P-60. Some included details (symptoms, allergy history, Claritin use) are grounded in the transcript, but the major missed/incorrect elements reduce faithfulness.",
+    "relevance": "The response is aimed at the asked items (doctor’s recap and Jessica’s goal), but it largely fails to report the actual doctor recap and substitutes an incorrect/inferred goal. It remains on-topic but does not directly answer the question as asked."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "The answer is on-topic but incorrect and incomplete: it misses the documented doctor summary in D-58 and fails to capture Jessica’s explicit goal in P-60, with several key recap findings omitted."
+}

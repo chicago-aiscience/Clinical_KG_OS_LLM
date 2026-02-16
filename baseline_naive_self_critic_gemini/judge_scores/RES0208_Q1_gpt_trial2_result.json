@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Most reported symptoms match the Gold Answer and transcript: loss of taste, early cough, sore throat, subjective fever, weakness, decreased appetite, headaches, and muscle aches are all supported. However, there are minor issues: (1) it re-introduces breathing descriptors (“laborious… deep breaths”) which are essentially part of the chief complaint of shortness of breath rather than an additional symptom; (2) labels fever as “heat intolerance,” which is not stated; (3) cites the clinician summary for sore throat/muscle aches rather than the patient’s own statements (though the underlying facts are still correct). No major contradictions with the Gold Answer.",
+    "completeness": "Key Gold Answer items covered: loss of taste, sore throat, cough, subjective fever, decreased appetite, weakness, headaches, muscle aches. Key items missed or incompletely captured: diminished sense of smell (anosmia/hyposmia); explicit denial of runny nose/congestion; characterization of cough as dry/“on its way” with minimal actual coughing; description of aches as generalized/not localized; nuance that headaches were not more than usual/stress-related. Overall this is closer to ~60–75% of Gold Answer detail.",
+    "faithfulness": "Nearly all statements are grounded in the transcript with appropriate turn references. Minor concerns: “heat intolerance” is not a phrase or concept used by the patient; and relying on [D-36] for symptoms is less direct than using the patient’s reports, but still consistent with what the patient said earlier. No major hallucinated symptoms.",
+    "relevance": "The answer is largely focused on “other symptoms beyond shortness of breath and fatigue” and organizes them by domain as requested. The inclusion of additional breathing descriptors (essentially restating SOB) is a minor relevance drift, but most content directly addresses the question."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 4,
+    "relevance": 4
+  },
+  "average_score": 3.75,
+  "summary": "The generated answer is mostly accurate and grounded, but it misses several specific Gold Answer elements (notably loss of smell and denial of congestion) and omits important symptom qualifiers (dry/minimal cough, generalized aches, headache nuance)."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer only identifies two conditions (shortness of breath/dyspnea and anxiety attacks) as screened and ruled out, partially matching Gold's (5) Primary dyspnea via [D-19], but incorrectly presents anxiety attacks as ruled out (Gold does not list it; transcript shows patient links symptoms to stress/anxiety at times, e.g., [P-8],[P-13],[P-19],[P-20]), while completely missing Gold's other five conditions (injury [D-5], cardiac [D-10,D-20,D-11], infectious [D-12,D-27], asthma [D-23,D-24], inherited arrhythmia [D-31,D-32]), leading to significant factual errors and contradictions with Gold.",
+    "completeness": "Gold covers 6 key conditions with specific inquiries/citations: (1) injury, (2) cardiac, (3) infectious, (4) asthma, (5) dyspnea, (6) arrhythmia. Generated covers only 1 (dyspnea, ~17%), misses 5 entirely, and adds non-Gold anxiety; covers <20%.",
+    "faithfulness": "Claims grounded in transcript with accurate citations ([D-19,P-19] for dyspnea; [D-21,P-20] for anxiety); no fabricated facts, though interpretation of 'ruling out' anxiety is interpretive (patient acknowledges past similarity but doctor does not explicitly exclude as cause), minor stretch but verifiable.",
+    "relevance": "Directly addresses question by listing screened conditions ruled out with inquiries/responses, structured similarly to Gold; no off-topic content, fully focused despite incompleteness."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 1,
+    "faithfulness": 4,
+    "relevance": 4
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer is relevant and mostly faithful to the transcript but severely incomplete and factually inaccurate compared to the Gold Answer, covering only one of six conditions while mischaracterizing anxiety."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer contradicts both the transcript and the Gold Answer. The transcript explicitly states the order: Jessica first noticed a scratchy throat, then started coughing, and the cough is dry [P-4]. The Generated Answer incorrectly says the transcript does not state the chronological order. It also incorrectly claims there is no mention of feeling hot/fever-like symptoms, despite clear statements: “I have felt really hot” [P-7] and “hot like all the time… night… during the day too” [P-9].",
+    "completeness": "Key Gold Answer points missed: (1) initial symptom scratchy throat, followed by dry cough [P-4]; (2) other associated symptoms by visit: headache/pounding head [P-1, P-2], malaise/feeling crappy [P-1, P-14], fatigue/tired [P-13]; (3) feeling hot persisted day and night [P-7, P-9] and relation to cough/throat timeline—present during the same multi-day illness, with exact onset day not specified. The Generated Answer includes only that cough and scratchy throat occurred over 3–4 days, and it incorrectly negates the rest. Coverage is therefore minimal.",
+    "faithfulness": "The Generated Answer is not grounded in the transcript in two major ways: it denies that the symptom order is specified (it is specified in [P-4]), and it denies any mention of feeling hot/fever (explicitly present in [P-7] and [P-9]). These are direct contradictions, indicating poor faithfulness.",
+    "relevance": "The response is aimed at the asked timeline question (order of symptoms and relationship of feeling hot to cough/throat symptoms). However, because it dismisses key information that is actually present, it only partially addresses the question."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 3
+  },
+  "average_score": 1.5,
+  "summary": "The Generated Answer is largely incorrect and unfaithful to the transcript, missing most key timeline details and wrongly stating that feeling hot is not mentioned."
+}

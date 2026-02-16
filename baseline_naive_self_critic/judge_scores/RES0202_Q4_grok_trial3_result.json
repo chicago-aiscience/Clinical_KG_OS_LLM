@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly identifies 'another viral illness' as the condition that would have been added to the differential if presentation differed, whereas the Gold Answer correctly cites [D-45] where the doctor states asthma would be added if there was just cough or shortness of breath without fever; it also wrongly claims fever and dry cough excluded viral illness for COVID, contradicting the Gold's focus on fever excluding asthma in favor of infection.",
+    "completeness": "Gold key points: condition=asthma, hypothetical presentation=just cough/SOB without fever, excluding finding=fever, cites [D-45], supports with no wheezing/SOB. Generated covers 0% of these, instead discussing viral illness and COVID testing.",
+    "faithfulness": "Generated cites [D-44] accurately for 'another viral illness' possibility, but hallucinates that fever/dry cough 'excluded' viral illness for COVID focus (doctor says symptoms align with COVID but could still be viral if negative); ignores [D-45] entirely and fabricates exclusion reasoning not in transcript.",
+    "relevance": "Generated Answer does not address the question about a condition conditionally added/excluded based on presentation differences; it discusses COVID vs. viral illness workup, which is unrelated to the query."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 1
+  },
+  "average_score": 1.25,
+  "summary": "The Generated Answer is fundamentally incorrect, incomplete, and irrelevant, misidentifying the condition and reasoning while hallucinating exclusion logic not present in the transcript."
+}

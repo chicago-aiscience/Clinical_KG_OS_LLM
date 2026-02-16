@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly notes the presence and duration of cough (4–5 days) consistent with the transcript [P-2]. However, it incorrectly states the transcript does not specify whether the cough is productive vs non-productive; the clinician explicitly characterized it as dry and the patient agreed [D-5, P-5], and the patient denied bringing up any “gunk”/sputum [D-6, P-6], making it clearly non-productive. It also incorrectly states that nasal discharge/“runny nose” is not reported; the patient reported a runny nose for the past couple of days [D-11, P-11] and described it as “pretty clear” [D-12, P-12]. These are major contradictions to the source and Gold Answer.",
+    "completeness": "Key points in the Gold Answer include: (1) cough for ~4–5 days, (2) dry/non-productive with no sputum, (3) cough stayed the same (no better/worse), (4) runny nose for a couple of days, (5) nasal discharge clear, plus relevant negatives (no sore throat, chest pain; no wheeze/SOB per mother). The Generated Answer includes only cough duration and a vague ‘not improving’; it omits or denies the dry/non-productive nature, omits the stable course, and omits the runny nose/clear discharge entirely, as well as the pertinent negatives. Coverage is well under 20% of key points.",
+    "faithfulness": "Several statements are not grounded in (and are contradicted by) the transcript: claiming cough productivity is unspecified and claiming nasal discharge is not reported. These are not minor omissions but direct misrepresentations of the documented history. No major added hallucinated clinical details beyond the transcript, but the answer is unfaithful due to these contradictions.",
+    "relevance": "The response is aimed at the asked respiratory symptoms (cough, nasal discharge), but it fails to identify all reported symptoms and misstates key characteristics (productive vs non-productive; presence/appearance of nasal discharge). It is only partially responsive to the question."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.0,
+  "summary": "The answer is partially relevant but largely incorrect and incomplete, missing (and even denying) the clearly documented dry/non-productive cough and clear runny nose described in the transcript."
+}

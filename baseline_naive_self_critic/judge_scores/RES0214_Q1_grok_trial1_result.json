@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the four reported symptoms (fever, stuffy nose, sore throat, muscle ache) matching the Gold Answer's list with accurate citations from P-1 and P-13. However, it introduces a factual error by hallucinating a rash as a reported symptom citing P-38, which refers to a past allergic reaction to penicillin, not a current symptom. For denied symptoms, it contradicts the Gold Answer by claiming denial via 'lack of mention' rather than explicit denials (e.g., P-5 nausea/vomiting 'No', P-7 neck stiffness 'No', P-8 headaches 'Um no', P-10 cough 'No cough', P-24-26 difficulty swallowing 'Uh no, it just hurts' but able to swallow). It cites irrelevant P-27 (neck swelling). Significant contradictions on denial mechanism.",
+    "completeness": "Gold key points: detailed four symptoms (stuffy nose first [P-1, D-2/3], persistent sore throat [P-1], terrible fever 3 days [P-1], muscle aches 2-3 days no joints [P-13-16]); explicit denials with citations for cough [P-10], headaches [P-8], neck stiffness [P-7], nausea/vomiting [P-5], difficulty swallowing [P-24-26]. Generated covers the four symptoms list (80% match, misses temporal/details/clarification on joints). Lists all five denied but misses explicit quotes/citations/details (covers only ~50% of denial key points). Extra irrelevant rash note. Overall 50-79% coverage.",
+    "faithfulness": "Reported symptoms verifiable in transcript [P-1, P-13]. Rash claim [P-38] unverifiable as current symptom (it's allergy history). Denied symptoms: transcript has explicit denials (P-5,7,8,10,24-26), but Generated ignores them, falsely claims 'lack of mention' and cites wrong P-27 (swelling). Multiple inaccuracies: misinterprets silence as denial despite direct questions/answers, hallucinates rash symptom. Not fully grounded.",
+    "relevance": "Directly structures response around reported four symptoms and the five specific denied symptoms from question. Minor tangent with erroneous rash note, but overall focused on question without major off-topic content."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer accurately lists the four reported symptoms but significantly errs on explicit denials by mischaracterizing them as lack of mention, hallucinates a rash symptom, and omits transcript-grounded details/citations."
+}

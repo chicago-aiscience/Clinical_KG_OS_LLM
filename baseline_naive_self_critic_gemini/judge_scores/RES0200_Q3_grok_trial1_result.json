@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer identifies three specific symptoms (worsening cough [P-1,P-5], sputum change from clear-to-white to yellow [P-6], increased dyspnea [P-8]) plus COPD history (5 years [P-2], inhalers [P-11]) and doctor's explicit link [D-52]. Generated Answer covers the three symptoms accurately with correct citations, doctor's quote matches perfectly, and includes COPD history, but inaccurately cites 'couple years ago' from [P-1] instead of corrected 5 years [P-2], slightly misphrases sputum as 'clear to yellow to more yellow' (Gold: clear-to-white to yellow), and omits inhalers; adds unrelated knowledge graph references not in Gold. Core facts consistent with minor discrepancies.",
+    "completeness": "Gold key points: worsening cough [P-1,P-5], sputum changes [P-6], increased dyspnea [P-8], COPD 5 years [P-2], inhalers [P-11], doctor's synthesis [D-52]. Generated covers all three symptoms, COPD history, and full doctor's quote; misses precise COPD duration citation and inhalers, but these are secondary to the specified symptoms and linking; covers ~90% of key points.",
+    "faithfulness": "All symptom claims and citations [P-1,P-5,P-6,P-8] verifiable in transcript; doctor's quote [D-52] accurate. Minor sputum phrasing discrepancy but grounded. However, introduces unmentioned 'knowledge graph' with specific triples (e.g., [SYMPTOM] cough --[ASSOCIATED_WITH]--> copd exacerbation) not present in transcript, hallucinating external support; COPD duration cite to [P-1] ignores correction in [P-2]. Some hallucinated elements but mostly grounded.",
+    "relevance": "Directly addresses the question by listing the exact symptoms (worsening cough, sputum changes, increased dyspnea), COPD history, and doctor's linking quote from [D-52]; knowledge graph addition is a minor off-topic tangent but does not detract from core focus."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 3,
+    "relevance": 4
+  },
+  "average_score": 3.75,
+  "summary": "The Generated Answer is mostly accurate and complete in covering the symptoms, history, and doctor's assessment but includes minor factual discrepancies, omits some contextual details, hallucinates a knowledge graph, and remains highly relevant."
+}

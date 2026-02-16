@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer details two specific inhalers for COPD (daily maintenance and rescue ~once every two weeks per P-26), no home oxygen (P-1), no specific names, hypertension diagnosis without meds due to lifestyle trial first (weight loss, walking; P-23-24), BP OK (P-23), doctor support (D-25), plus lifestyle (rare alcohol P-39, quit smoking P-40), baseline management (P-28,27), no allergies. Generated correctly notes puffers for COPD and no HTN meds but claims inhaler frequency 'not mentioned' (contradicts P-26), misses inhaler types/frequencies, no O2, lifestyle details/reason for no HTN meds (lifestyle first, BP OK), allergies, quit smoking details, and mis-cites smoking quit to P-1 instead of P-40 while linking oddly to HTN; significant errors.",
+    "completeness": "Gold key points: two inhalers + frequencies, no O2, HTN no meds + lifestyle reason (discussed meds, chose lifestyle/weight loss/walking/BP OK), doc support, rare alcohol, quit smoking timing, baseline COPD management/exacerbations when sick, no allergies. Generated covers puffers for COPD (partial), no HTN meds (partial), but misses frequencies, types, O2, full lifestyle/reason for no meds, support, alcohol/smoking details, baseline mgmt, allergies; covers ~20-30% of points.",
+    "faithfulness": "Generated claims grounded in P-1 for puffers (ok) but wrongly states frequency not in transcript (P-26 explicitly details daily + as-needed/every 2 weeks); HTN no meds ok (P-23) but reason ('not prescribed/taking, no adherence mention') ignores P-23 patient explanation (talked but chose lifestyle); smoking cessation wrongly cited to P-1 (actual P-40) and mislinked to HTN; exacerbation details ok but not central; multiple misrepresentations/hallucinations of omissions.",
+    "relevance": "Generated uses sections for COPD/HTN matching question, addresses meds/strategies/freq (even if wrong)/why no HTN meds; minor tangent on current worsening but mostly focused on query."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer has significant factual inaccuracies and omissions compared to the Gold Answer, particularly missing inhaler frequencies and full details on hypertension management rationale, despite being mostly relevant."
+}

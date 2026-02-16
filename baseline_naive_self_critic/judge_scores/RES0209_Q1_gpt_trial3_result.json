@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer accurately reports the key symptom descriptors that it includes: dry cough occurring “almost nonstop throughout the day” (P-1), shortness of breath (P-1), wheezing “a lot” (P-15), and that nighttime symptoms occur less often (“every other day… every two days or so,” P-18). However, it omits some symptom details present in the Gold Answer (e.g., chest tightness, difficulty breathing during episodes) and adds a slightly over-specific claim that cold air makes “the cough” worse—while the transcript supports cold as a trigger for symptoms/asthma generally (P-9, P-11), it is not explicitly linked to cough alone. These are minor issues; no major contradictions with the Gold Answer.",
+    "completeness": "Covers: (1) cough character (dry; near-constant daytime), (2) shortness of breath, (3) wheezing, and (4) day vs night frequency with the specific nighttime interval.\nMisses key Gold Answer elements: cough duration (~2 weeks: P-13/P-14), explicit non-productive detail (doctor asking about “bringing up gunk,” D-15), breathing difficulty framed as “hard time breathing” during episodes (D-19/P-19) and when wheeze is severe (P-16), wheezing occurring more often than bronchodilator use (D-17/P-17), and chest tightness (D-20/P-20). Overall this is substantial but not complete coverage.",
+    "faithfulness": "Most statements are directly supported by cited transcript lines. The main borderline point is attributing cold air specifically to worsening the cough; the transcript indicates cold worsens symptoms/asthma (P-9, P-11) but does not clearly isolate cough. This is a minor extrapolation rather than a clear fabrication. No major hallucinated symptoms are introduced.",
+    "relevance": "The answer stays focused on the asked symptom domains (cough, breathing difficulty, wheeze, chest sensations) and day vs night frequency. It does include trigger information (cold air, exercise), which is slightly beyond the question but still related and not overly distracting. Main relevance limitation is omission of the ‘chest sensations’ (tightness) that the question explicitly asked for."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 4,
+    "relevance": 4
+  },
+  "average_score": 3.75,
+  "summary": "The Generated Answer is largely accurate and transcript-grounded for the symptoms it mentions, but it omits several key Gold Answer details—especially chest tightness, cough duration/nonproductive detail, and episode-level breathing difficulty—reducing completeness and slightly reducing relevance."
+}

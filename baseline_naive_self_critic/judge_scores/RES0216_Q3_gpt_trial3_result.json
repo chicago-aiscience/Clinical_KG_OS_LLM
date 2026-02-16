@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies that the clinician placed recurrent asthma/asthma exacerbation at the top of the differential (explicitly stated at D-35) and that the clinician down-ranked cardiac ischemia due to lack of chest pain (D-36). It is also broadly correct that exertional/walking-associated diffuse chest tightness and difficulty getting a full breath (P-1, P-7, P-9, P-10) were linked to the patient’s asthma history (P-16, P-29) and suboptimal/limited asthma medication use (P-17–P-20; summarized by D-34).\n\nHowever, there are inaccuracies/overinterpretations: it elevates hoarseness/phlegm (P-11) as part of the key rationale even though the doctor’s stated synthesis emphasizes asthma history + exertional tightness + medication underuse, not upper-airway symptoms. It also introduces an external/unsupported statement about a “knowledge graph relationship” between asthma exacerbation and cardiac ischemia, which is not in the transcript and is not part of the clinician’s reasoning.",
+    "completeness": "Key points covered: (1) asthma history; (2) exertional/walking-triggered chest tightness/dyspnea; (3) clinician explicitly made asthma recurrence top differential; (4) absence of pain lowered cardiac ischemia.\n\nKey points missed or only partially captured: (a) specific medication-limiting behavior—skipping the evening maintenance dose (P-19) and not refilling the rescue inhaler for years (P-17–P-18); (b) patient’s own comment that it felt different but could be asthma-related (P-16); (c) lack of new environmental triggers (P-33); (d) the clinician’s proposed therapeutic trial of rescue puffer response as a way to support the diagnosis (D-35).",
+    "faithfulness": "Most claims are grounded in the transcript (symptoms, asthma history, exertional worsening, and deprioritizing cardiac ischemia due to lack of pain). The notable ungrounded element is the “knowledge graph relationship” statement, which is not present in the source and constitutes hallucinated framing. Also, implying hoarseness/phlegm were central to the clinician’s linkage is not supported by the clinician’s summary reasoning.",
+    "relevance": "The response is largely focused on why asthma exacerbation was top differential and how the clinician linked symptoms/history/features. Minor irrelevant content includes the “knowledge graph relationship” remark and the emphasis on hoarseness/phlegm, which are not central to the doctor’s stated reasoning."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 4,
+    "relevance": 4
+  },
+  "average_score": 3.75,
+  "summary": "The Generated Answer captures the core logic (asthma history + exertional chest tightness, with cardiac ischemia down-ranked due to no pain) but misses several key linking details from the Gold Answer and adds a small ungrounded “knowledge graph” claim."
+}

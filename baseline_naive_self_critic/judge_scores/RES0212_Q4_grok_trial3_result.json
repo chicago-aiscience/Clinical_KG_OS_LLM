@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly lists fatigue, sleep disturbance, and chest pain as constitutional symptoms screened for, but these were reported by the patient (admitted, not denied), directly contradicting the Gold Answer and question focus on denied symptoms like night sweats, unexplained weight loss, and hemoptysis; it misrepresents cat allergy as an exposure risk for zoonotic TB (not screened or relevant in transcript), and wrongly attributes chronic bronchitis and feline TB exclusion, ignoring Gold's accurate TB, malignancy, and infection exclusions.",
+    "completeness": "Gold Answer key points: denied constitutional symptoms (night sweats [D5/P5], weight loss [D6-8/P6-8], hemoptysis [D10/P10]); denied exposures (sick contacts [D14/P14, D15/P15, D32/P32], travel [D33-34/P33-34], IV drugs/cocaine/heroin [D39-40/P39-40]); conditions excluded (TB via B symptoms/cough/hemoptysis, malignancy, endemic infections, immunosuppression); additional screens (stiff neck, nausea/vomiting, pain), doctor's summary. Generated covers 0% of these accurately (wrong symptoms listed as screened, cat allergy misrepresented, TB wrongly linked to cats).",
+    "faithfulness": "Claims of fatigue/sleep disturbance/chest pain as 'constitutional symptoms' from screenings are not grounded (patient admitted them [P3,P19,P20]); cat allergy [P27] twisted into 'exposure to cats' for zoonotic TB (hallucinated, cats irrelevant to TB screening in transcript); 'feline/zoonotic TB' and chronic bronchitis links fabricated (transcript screens human contacts/travel/drugs for TB risks, no cat mention for infection); multiple unverifiable/hallucinated facts vs. transcript.",
+    "relevance": "Generated attempts structure matching question (constitutional symptoms/exposures, serious conditions) but fills with incorrect admitted symptoms, irrelevant cat allergy, and fabricated TB rationale, failing to address denied screenings or accurate exclusions, making it largely off-topic."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 2
+  },
+  "average_score": 1.25,
+  "summary": "The Generated Answer is factually inaccurate, incomplete, largely hallucinatory, and poorly relevant, misrepresenting admitted symptoms as screened denials and fabricating irrelevant cat-TB links."
+}

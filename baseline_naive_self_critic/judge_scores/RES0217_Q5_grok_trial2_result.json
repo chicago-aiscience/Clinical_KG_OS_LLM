@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the patient's hiking on Friday and gardening on Saturday [P-1] and the doctor's calculation of attachment duration exceeding 72 hours [D-6], matching the Gold Answer's first part. However, it incorrectly states that the transcript 'do not contain evidence' of the doctor discussing the Ontario Lyme disease distribution map or using Strathroy's position, directly contradicting the Gold Answer and transcript [D-13], which explicitly mentions the map and Strathroy as a 'concerning point' to justify antibiotics. This is a significant factual error on the second half of the question.",
+    "completeness": "Key points from Gold Answer covered: hiking Fri/gardening Sat [P-1], uncertainty [P-1], removal today [implied], doctor's >72h estimate [D-6], prophylactic need [D-6]. Missed/incorrect: doctor's map reference [D-13], Strathroy as concerning [D-13], link to antibiotics [D-13]; patient location [P-12] noted but justification denied. Covers ~60% of key points (duration fully, geography not).",
+    "faithfulness": "Duration claims verifiable [P-1, D-6]. Map denial not verifiable—hallucinates absence despite clear evidence in [D-13]: 'Lyme disease distribution map for Ontario... Strathroy is close enough to be considered a little bit of a concerning point'. Other claims like tick appearance/history plausible but secondary; primary error is fabricating lack of map discussion.",
+    "relevance": "Perfectly structured to address both parts of the question with bolded headings matching query components (**Estimated Tick Attachment Duration**, **Strathroy and the Ontario Lyme Disease Distribution Map**), no irrelevant content or tangents."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer accurately covers the tick attachment duration but factually errs by denying the doctor's use of the Lyme map for Strathroy, leading to incomplete and unfaithful response on the geographic justification."
+}

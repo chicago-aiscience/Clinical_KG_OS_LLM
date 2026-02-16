@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer states smoking is the primary risk factor for COPD, citing [P-40] for 20 years half-pack and quit at diagnosis [P-7, P-40]; Generated correctly identifies it as direct cause with [P-40] but omits quit timing and diagnosis link, calling it 'direct cause' vs 'primary risk factor' (minor semantic difference). Chain in Gold details symptoms [P-1, P-12, P-14, P-9], patient insight [P-23], timeline [P-1], past pattern [P-3]; Generated covers core chain with [P-20, P-1, P-9, D-43] but misquotes [D-43] as 'respiratory infection' (doctor says 'an infection'). Knowledge Graph references absent. Core facts align with minor discrepancies.",
+    "completeness": "Gold key points: smoking as primary risk (covered), 20yr half-pack [P-40] (covered), quit at dx 4-5yrs [P-7,P-40] (missed), persistent damage/inhalers [P-26] (missed). Chain: dog walks/close contact [P-20] (covered), infection symptoms sputum [P-1] (covered), sinus [P-12] (missed), headache [P-14] (missed), fever [P-9] (covered), patient 'got sick' [P-23] (missed), 3 days [P-1] (missed), past worsening [P-3] (missed), doctor [D-43] (covered). Covers ~60% of points.",
+    "faithfulness": "Claims verifiable: smoking [P-40], exposure [P-20], sputum [P-1], fever [P-9], doctor on infection worsening COPD [D-43] (but 'respiratory infection' not exact phrasing). Unverifiable/hallucinated: Entire 'Knowledge Graph' references with causal links (not in transcript), doctor 'confirms respiratory infection' (inferred, not stated). Multiple added fabricated elements.",
+    "relevance": "Generated Answer directly structures response into two sections matching the question's two parts (smoking-COPD relation, sick contact chain to exacerbation), uses transcript citations, no tangents or off-topic content."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.5,
+  "summary": "The Generated Answer is mostly correct and highly relevant but incomplete in covering Gold details and faithfulness suffers from hallucinated Knowledge Graph references."
+}

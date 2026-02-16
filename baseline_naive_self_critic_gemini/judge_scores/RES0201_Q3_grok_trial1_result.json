@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer identifies key symptoms: worsening sore throat (4 days), new/worsening/constant difficulty breathing (1 day), reduced taste (no smell loss, 2 days persistent), fatigue + muscle aches (post-sore throat onset), plus exposure context (grocery/bank), no sick contacts/travel, up-to-date immunizations, with doctor's explicit statement [D-43]. Generated Answer only mentions sore throat/difficulty swallowing and muscle ache, omitting critical difficulty breathing and fatigue; misinterprets P-19 as 'loss of smell with taste presence' (actual: reduced taste WITHOUT smell loss); introduces unrelated 'Knowledge Graph'; significant errors/omissions contradict Gold's accurate symptom profile.",
+    "completeness": "Gold key points: doctor's [D-43] statement (covered), sore throat details (partially, misses progression/timing), breathing (missed entirely), taste details w/o smell loss (mentioned but inverted), muscle aches + fatigue (only aches), screening [D-19] (missed), exposure/immunizations/context (missed). Covers ~25% (doctor quote, partial sore throat/muscle ache/taste).",
+    "faithfulness": "Citations [P-2, P-25, P-19, D-43] accurate to transcript; however, claims 'loss of smell (anosmia)' and 'loss of smell with taste presence' directly contradict P-19 ('maybe taste a little bit but not smell'); 'Knowledge Graph association' and 'fulfilling criteria' not in transcript (hallucinated); multiple unverifiable/misstated claims.",
+    "relevance": "Addresses symptom combination for COVID suspicion and taste/smell role, directly quoting doctor and citing symptoms; minor irrelevance in 'Knowledge Graph' and inverted sensory interpretation, but focused on question without major off-topic content."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "Generated Answer has significant factual inaccuracies, especially inverting taste/smell symptoms and omitting key breathing difficulty, resulting in low correctness/completeness/faithfulness despite decent relevance."
+}

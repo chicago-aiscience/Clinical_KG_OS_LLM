@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer lists two current medications: Avodart for enlarged prostate (BPH) [P-25, P-26] and Tums as-needed for reflux [P-27]. Generated Answer only mentions Tums for reflux [P-27] and omits Avodart entirely, which is a significant factual error by omission, though the details on Tums and the regimen change are accurate.",
+    "completeness": "Gold key points: 1) Avodart for BPH; 2) Tums as-needed for reflux; 3) Stopped prior reflux prescription med after identifying helpful foods/diet; 4) Doctor's positive response; 5) No allergies. Generated covers Tums for reflux (~25%) and regimen change with reason (~50%), missing Avodart/BPH entirely and extras like as-needed, doctor's response, allergies; covers ~50-60% of core points.",
+    "faithfulness": "All claims in Generated Answer (Tums for reflux, stopped prior med due to diet management) are directly verifiable in [P-27] with accurate citations; no hallucinations or unverifiable details.",
+    "relevance": "Generated Answer directly addresses current Tums/reflux and the reflux regimen change/why with structured format, but incomplete on full current meds list; no off-topic content."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 5,
+    "relevance": 4
+  },
+  "average_score": 3.5,
+  "summary": "The Generated Answer is faithful and relevant but significantly incomplete and incorrect by omitting the patient's Avodart for BPH, covering only about half the key points."
+}

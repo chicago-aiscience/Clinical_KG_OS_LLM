@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies several non–chief-complaint symptoms from the transcript: loss of taste [P-4], early/incipient dry cough [P-7, P-8], mild sore throat [P-9], subjective fever/warmth [P-4], weakness [P-2], decreased appetite/reduced intake [P-2, P-4], headaches (not clearly worse than usual) [P-11, P-12], and muscle aches/overall achiness [P-20, P-21].\nHowever, it includes “difficulty breathing/laborious breathing” [P-3], which is essentially part of the chief complaint (shortness of breath) and the question asked for symptoms beyond SOB and fatigue. It also introduces the term “heat intolerance,” which is not stated in the transcript (the patient reported feeling hot/warm, not intolerance). The muscle-ache item is attributed to the physician summary [D-36] rather than the patient’s direct report [P-20], though the symptom itself is correct.",
+    "completeness": "Gold Answer key points: (1) loss of taste; (2) diminished smell; (3) early dry cough with minimal actual coughing; (4) mild sore throat; (5) denies runny nose/congestion; (6) generalized myalgias/overall achy, not localized; (7) weakness; (8) subjective fever; (9) decreased appetite/reduced intake; (10) mild headaches, likely usual stress headaches.\n\nGenerated Answer includes: (1) taste loss; (3) cough (but misses/understates “dry/minimal” detail); (4) sore throat; (7) weakness; (8) fever; (9) decreased appetite; (10) headaches (but misses “not more than usual/likely stress”). It misses (2) smell change entirely, misses (5) explicit denial of congestion/rhinorrhea, and misses the localization qualifier for myalgias (6). Overall coverage is roughly 60–70% of the Gold Answer’s key points.",
+    "faithfulness": "Most statements are supported by the transcript. Minor issues: “heat intolerance” is not stated; sore throat and muscle aches are supported but are cited via the clinician’s summary [D-36] rather than the patient’s own statements [P-9], [P-20]. No major fabricated symptoms beyond that phrasing/citation problem.",
+    "relevance": "The response is largely focused on additional symptoms, as asked. The main relevance issue is the inclusion of laborious breathing/deep-breath difficulty [P-3], which overlaps with the excluded chief complaint of shortness of breath."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 4,
+    "relevance": 4
+  },
+  "average_score": 3.75,
+  "summary": "The Generated Answer is mostly accurate and grounded but is missing several key symptoms (notably loss of smell and denial of congestion) and includes a chief-complaint-related breathing detail plus a minor unsupported phrasing (“heat intolerance”)."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the condition as 'cardiac ischemia' (minor terminology variation from Gold's 'cardiac ischemic picture'; both refer to [D-36]). It accurately notes chest tightness rather than pain ([D-36], consistent with [P-5]) and lack of shortness of breath with exercise per doctor's characterization ([D-36]). However, it incompletely represents the nature of complaints by not addressing the doctor's summary of 'more tightness' vs. classic exertional dyspnea and omits key absent symptoms (anxiety, sweating, impending doom [D-6, P-6]). The added 'Knowledge Graph' claim and 'rule out' language introduce discrepancies not in Gold or transcript, though core facts align.",
+    "completeness": "Gold key points: condition ('cardiac ischemic picture'), nature (tightness not pain [P-5, D-36], not SOB with exercise [D-36, contrasts P-7]), absences (no pain [P-5], no anxiety/sweaty/doom [P-6, D-6]). Generated covers condition, tightness vs. pain/SOB (~60-70%), but misses explicit screening of anxiety/doom symptoms, pertinent negatives, and doctor's full rationale phrasing. Patient relief [P-35] omitted (minor). Covers majority but not all key evidence categories fully.",
+    "faithfulness": "Most claims grounded: condition/tightness/no pain/SOB phrasing verifiable in [D-36], breathing/activity in [P-1,P-5,P-9]. Doctor's deprioritization direct from [D-36]. However, 'Knowledge Graph' entirely fabricated (no mention in transcript), and 'rule out cardiac ischemia' extrapolates beyond 'lower on differential' [D-36]; implies external unverifiable source. Minor plausibility but introduces hallucination.",
+    "relevance": "Directly names condition and structures evidence into 'nature of chest complaints' (tightness, breathing/activity, not SOB) and 'absence' (no pain), mirroring question's request for both categories cited by doctor. Concise and focused despite extraneous final sentence."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 3,
+    "relevance": 5
+  },
+  "average_score": 3.75,
+  "summary": "The Generated Answer is mostly accurate and relevant but incomplete in covering all cited symptom absences and faithfulness undermined by hallucinated 'Knowledge Graph' reference."
+}

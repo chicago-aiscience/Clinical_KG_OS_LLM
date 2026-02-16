@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Step-by-step: Gold Answer states patient's sole medication is bronchodilator (rescue inhaler), administered via puffer, patient denies other meds, doctor specifically asked about 'one that you take every day no matter what' (daily controller), patient does not have it. Generated correctly IDs bronchodilator puffer as only med and puffer admin. However, it falsely claims 'transcript does not contain a specific dialogue where the doctor asks about a daily controller medication' (contradicts D-5/P-5), uses wrong evidence (P-12 allergies irrelevant), hallucinates 'Knowledge Graph'. Significant contradictions on doctor's question and evidence.",
+    "completeness": "Gold key points: sole bronchodilator rescue as-needed (D-4/P-4 etc.), puffer (D-7/P-7), no other meds (multiple), doctor asked about daily controller/'every day no matter what' that patient lacks (D-5/P-5), restated as-needed (D-6), clinical sig of increased use (P-8), allusion to med change (D-43). Generated covers bronchodilator puffer and no daily controller (~30-40%: med/admin), misses doctor specifically asking about daily controller type, no-other-meds explicit, as-needed detail, all citations/context/sig. 20-49% coverage.",
+    "faithfulness": "Med claim verifiable P-1 (and more). Admin cites hallucinated 'Knowledge Graph' (not in transcript). Daily controller: wrong evidence (P-12 allergies, P-1), explicitly denies D-5 dialogue exists (untrue), adds 'inhaled corticosteroid' (plausible but ungrounded). Multiple hallucinations and unverifiable/misstated claims.",
+    "relevance": "Generated structures response directly matching question parts (Medication, Administration, Daily Controller), no off-topic content or tangents, fully focused despite inaccuracies."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 2.75,
+  "summary": "While correctly identifying the patient's bronchodilator puffer as their sole asthma medication, the Generated Answer significantly errs by denying the doctor's explicit question about a daily controller medication, hallucinating evidence sources, and omitting key contextual details from the Gold Answer."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer is factually accurate in the symptoms it lists (loss of taste [P-4], fever [P-4], weakness [P-2], decreased appetite [P-2, P-4], headaches [P-11, P-12], muscle aches [P-20 via D-36], sore throat [P-9 via D-36], cough [P-7 via D-36]), all verifiable from patient reports. Minor discrepancies include categorizing headaches and weakness differently from Gold (musculoskeletal vs. constitutional), attributing some directly to doctor's summary instead of patient's words, and including 'laborious breathing' [P-3] which is part of the chief complaint of shortness of breath, not 'beyond'. No major errors or contradictions.",
+    "completeness": "Gold key points: sensory (taste loss [P-4], smell loss [P-6], new [P-5]); upper resp (dry cough starting/minimal [P-7/8], mild sore throat starting [P-9], denied runny nose [P-10]); musculoskeletal (generalized aches [P-20/21], weakness [P-2]); constitutional (subjective fever [P-4], decreased appetite [P-2/4/18], usual mild headaches [P-11-13]). Generated covers: taste, sore throat, cough, headaches, muscle aches, fever, weakness, appetite (80-90%). Missed: smell loss, newness of sensory symptoms, cough/sore throat details (dry/starting/mild/minimal), denial of runny nose/congestion, ache localization details.",
+    "faithfulness": "All claims are grounded in transcript: loss of taste [P-4], laborious breathing [P-3], sore throat [P-9, D-36], cough [P-7, D-36], headaches [P-11/12], muscle aches [P-20/21, D-36], fever [P-4], weakness [P-2], appetite [P-2/4]. Citations accurate or verifiable via patient statements even when using doctor summary (which reflects patient reports). No hallucinations or unverifiable details.",
+    "relevance": "Perfectly addresses the question by categorizing symptoms beyond chief complaints (SOB/fatigue) into the exact domains requested (sensory, upper resp, musculoskeletal, constitutional). Minor off-point inclusion of 'difficulty breathing (laborious)' under upper resp, but overall focused and structured directly matching query."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 5,
+    "relevance": 5
+  },
+  "average_score": 4.5,
+  "summary": "The Generated Answer is highly faithful and relevant, with strong correctness and completeness, but minor issues include missing smell loss and runny nose denial, plus extraneous breathing description."
+}

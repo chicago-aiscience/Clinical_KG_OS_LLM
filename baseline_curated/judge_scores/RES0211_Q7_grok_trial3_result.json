@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold specifies initial symptom as scratchy throat first [P-4], followed by dry cough, then other symptoms like headache; Generated lumps dry cough and scratchy throat together as first based on [P-1], lists headache second and hot third based on mention order, which introduces minor discrepancy since P-4 clarifies throat before cough and initial report in P-1 includes headache alongside; relation of hot as concurrent matches Gold and transcript; doctor's summary [D-58] correctly referenced; core facts on symptoms and timeline consistent, minor order inaccuracy.",
+    "completeness": "Key Gold points covered: 3-4 days [P-1], main symptoms (throat/cough, headache, hot), hot as part of same illness/concurrent [P-7, D-58]; missed: precise order of scratchy throat before cough [P-4], additional symptoms like malaise [P-1,P-14], fatigue [P-13], detailed hot description (persistent day/night, clothing [P-9]), explicit progression from upper airway to systemic; covers ~60-70% of key points.",
+    "faithfulness": "All claims directly verifiable: 3-4 days [P-1], symptoms order from P-1/P-4/P-7, concurrent hot [P-1,P-7,D-58], post-nasal drip [P-18]; no fabricated facts, citations accurate, interpretations plausible and grounded in transcript despite minor inference on order.",
+    "relevance": "Directly lists symptom order numerically and explains hot's relation to cough/throat timeline as concurrent within 3-4 days, perfectly matching question focus; minor mention of post-nasal drip is tangential but not distracting."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 5,
+    "relevance": 5
+  },
+  "average_score": 4.25,
+  "summary": "The Generated Answer is mostly accurate and highly faithful/relevant but has minor factual discrepancies in symptom order and misses some details on completeness."
+}

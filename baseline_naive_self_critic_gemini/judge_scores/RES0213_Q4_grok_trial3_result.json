@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Generated Answer only identifies two conditions (shortness of breath and anxiety attacks) partially aligning with one Gold point (primary dyspnea), but mischaracterizes anxiety attacks as ruled out (patient reports history and possible recurrence, not ruled out), misses five other key conditions (trauma, cardiac disease, infection, asthma, inherited arrhythmia), and inaccurately presents these as the primary screenings, leading to significant factual discrepancies with Gold.",
+    "completeness": "Gold lists 6 key conditions with specific inquiries: (1) trauma [D-5], (2) cardiac [D-10,D-20,D-11], (3) infectious [D-12,D-27], (4) asthma [D-23,D-24], (5) dyspnea [D-19], (6) arrhythmia [D-31,D-32]. Generated covers only dyspnea (~17% coverage) with partial details and adds unlisted anxiety, missing 83%+ of key points.",
+    "faithfulness": "Citations [D-19, P-19] for dyspnea and [D-21, P-20] for anxiety are accurate and verifiable in transcript; interpretations of 'ruling out' are plausible based on responses but not explicitly stated by doctor, with minor overreach on anxiety (transcript suggests stress/anxiety as ongoing factor, e.g., P-13,P-22), no major fabrications.",
+    "relevance": "Answer directly structures response like Gold (lists conditions, inquiries, responses ruling out), addressing question format precisely, though content is selectively narrow and incomplete; no off-topic content."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 1,
+    "faithfulness": 4,
+    "relevance": 4
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer is narrowly relevant and mostly faithful to the transcript but significantly incomplete and factually inaccurate compared to the comprehensive Gold Answer by missing most screened conditions."
+}

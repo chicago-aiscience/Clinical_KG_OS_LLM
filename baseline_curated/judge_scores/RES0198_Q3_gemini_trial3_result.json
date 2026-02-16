@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The generated answer correctly identifies the viral diagnosis and mentions some supporting symptoms like stuffy/runny nose and the one-week duration. However, it references a 'Knowledge Graph' that was not provided in the source transcript. It accurately quotes the doctor's conclusion from [D-39].",
+    "completeness": "The generated answer is missing a significant portion of the Gold Answer's content. Specifically, it fails to mention: (1) discharge quality (clear vs. colored), which is key for bacterial differentiation; (2) the absence of systemic features like cough, sore throat, and fever; and (3) the specific evidence against an allergic cause (lack of history, lack of exposure to triggers like dust or animals). It covers the 'viral' evidence but fails the 'rather than allergic or bacterial' part of the question.",
+    "faithfulness": "The generated answer hallucinates the presence of a 'provided knowledge graph' and specific tags like '[DIAGNOSIS]', which do not exist in the source transcript. While the clinical facts retrieved from the text (symptoms, duration) are accurate, the metadata reference is a hallucination of the context.",
+    "relevance": "The answer is only partially relevant. While it explains why the doctor thought it was viral, it largely ignores the second half of the prompt: providing evidence to rule out allergic or bacterial causes. It provides a conclusion without the specific negative findings (no fever, no allergies, etc.) that the Gold Answer highlights as the 'evidence' for the differential diagnosis. Any mention of allergic/bacterial origins in the GA is purely a summary statement without the supporting facts from the transcript (except for the daycare mention).\",\n      \"scores\": {\n        \"correctness\": 4,\n        \"completeness\": 2,\n        \"faithfulness\": 3,\n        \"relevance\": 3\n      },\n      \"average_score\": 3.0,\n      \"summary\": \"The generated answer focuses only on the viral evidence and misses all the specific negative findings that rule out bacterial or allergic causes, while also hallucinating a 'knowledge graph' reference.\"\n    }\n  ]\n}"
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 2,
+    "faithfulness": 3,
+    "relevance": 3
+  },
+  "average_score": 3.0,
+  "summary": "The generated answer identifies the viral diagnosis but fails to provide the specific evidence ruling out allergic or bacterial causes, and it hallucinates a 'knowledge graph' as a source."
+}

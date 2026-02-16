@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The four reported symptoms are essentially correct (fever, stuffy nose, sore throat, muscle aches), though the citation for muscle ache is incorrect (muscle aches are introduced at P-13, not P-1). The major factual error is the second part: the transcript clearly shows explicit denials of nausea/vomiting (P-5), neck stiffness (P-7), headaches (P-8), cough (P-10), and difficulty swallowing (P-24–P-26). The Generated Answer incorrectly states that only cough was denied and that there is “no evidence” of the other denials.",
+    "completeness": "Key points in Gold Answer: 4 reported symptoms + explicit denials of 5 clinically significant symptoms (cough, headache, neck stiffness, nausea/vomiting, difficulty swallowing). Generated Answer includes all 4 symptoms, but only includes 1/5 required denials (cough) and omits the other four. Overall it captures roughly half of the required items but is notably incomplete regarding the requested denials.",
+    "faithfulness": "Several statements are not grounded in the transcript as presented: it claims there is no evidence the patient explicitly denied headache, neck stiffness, nausea, or difficulty swallowing, but those denials are explicitly present at P-5, P-7, P-8, and P-24–P-26. Also, muscle ache is attributed to P-1, which does not mention it. These are multiple transcript-inconsistent claims.",
+    "relevance": "The response is structured to answer exactly what was asked: (1) four reported symptoms and (2) which of the specified symptoms were denied. There is no substantial off-topic material."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.0,
+  "summary": "Focused on the question, but it contains major transcript-inconsistent errors by missing/denying multiple explicitly stated symptom denials (nausea, headache, neck stiffness, difficulty swallowing), with minor citation issues for muscle aches."
+}

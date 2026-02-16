@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "- Correctly identifies sore throat onset at ~4 days before consult and that it was very sore with dysphagia for food (matches [P-2]).\n- Does not state the documented progressive worsening of sore throat over the 4 days ([P-4]).\n- For dyspnea, the transcript clearly states difficulty breathing started yesterday ([P-8]) and is worsening ([P-9]) and constant ([P-10]); the Generated Answer is vague (“likely refers… though the transcript specifies only that ‘that’ started yesterday”), which is inaccurate because the symptom is explicitly identified as difficulty breathing.\n- Mentions muscle aches and reduced taste but fails to correctly place them in time (muscle aches started immediately after sore throat [P-26]; reduced taste started ~2 days ago [P-20] and is constant [P-21]).\n- Adds speculative framing around COVID context that is not needed for the symptom chronology.",
+    "completeness": "Gold answer key points vs generated answer:\n- Sore throat timeline: onset 4 days ago (covered) + worsening over 4 days (missed) + impact on swallowing/fluids (partially covered: swallowing food mentioned; fluids OK not mentioned) + failed self-treatment (missed).\n- Fatigue/myalgias: started immediately after sore throat (missed), tired but not weak (missed; only muscle aches mentioned).\n- Taste change: started 2 days ago (missed), constant (missed), no smell loss (covered).\n- Dyspnea: started yesterday (implicitly but not clearly stated), worsening (missed), constant (missed), new/unlike before (missed).\nOverall, it captures only a minority of the required chronology and severity changes.",
+    "faithfulness": "- Most statements are drawn from the transcript (sore throat severe; swallowing food; muscle aches; some taste change; no smell change).\n- However, it introduces speculation (“Given… COVID-19… this likely refers to…”) and incorrectly claims the transcript is nonspecific about what started yesterday; the transcript explicitly ties “started yesterday” to difficulty breathing.\n- Omits several transcript-supported details, but omission affects completeness more than faithfulness.",
+    "relevance": "- The response attempts to provide a chronological symptom timeline, which is the core of the question.\n- However, it includes some unnecessary speculation about COVID context and fails to describe how each symptom changed in severity over time, limiting how well it answers the question."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 2,
+    "faithfulness": 3,
+    "relevance": 4
+  },
+  "average_score": 3.0,
+  "summary": "The answer is generally on-topic and partially accurate (sore throat onset), but it is incomplete and vague about key timing and severity trends (especially dyspnea, taste change, and myalgias), with some speculative and slightly misleading phrasing."
+}

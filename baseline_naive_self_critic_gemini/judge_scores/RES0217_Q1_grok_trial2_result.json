@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies local symptoms as redness, tenderness, and soreness from [P-1], consistent with Gold. However, it significantly errs on systemic symptoms by claiming the patient 'reported' joint pain based on local soreness [P-1], contradicting the transcript where the doctor specifically screened for 'any other joint pain' [D-7] and the patient denied it [P-7], as stated in Gold. Fever and headaches are correctly noted as screened and denied. This contradiction on a core systemic symptom (joint pain denial) makes it a significant factual error.",
+    "completeness": "Gold local key points: location details, stuck good, skin soreness not joint, red/tender, little red/tender, no bullseye rash, fine aside tenderness, healthy. Generated covers redness, tenderness, soreness (core symptoms). Systemic: Gold lists joint pain, fever/ill, headaches all denied with citations; Generated covers screening for all three but only accurately denies fever/headaches, misses joint pain denial and adds incorrect report. Covers ~60% (core local symptoms, 2/3 systemic denials).",
+    "faithfulness": "Local claims verifiable in [P-1] and [P-6]. Systemic: joint pain screening [D-7] verifiable but denial [P-7] ignored, hallucinating that local skin soreness constitutes 'reporting' joint pain (patient clarified 'not the joint itself' [P-1] and denied other joint pain). Fever [D-8]/headaches [D-19] verifiable denials [P-8,P-19]. [D-13] reference plausible but doctor's summary aligns with no systemic symptoms. Multiple misinterpretations/hallucinations on joint pain.",
+    "relevance": "Generated directly structures response around local symptoms at site and specific systemic symptoms (fever, joint pain, headaches) screened, mirroring question despite errors; no off-topic content."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer partially captures local symptoms accurately but significantly errs by misclassifying denied joint pain as reported, reducing correctness, completeness, and faithfulness while remaining highly relevant."
+}

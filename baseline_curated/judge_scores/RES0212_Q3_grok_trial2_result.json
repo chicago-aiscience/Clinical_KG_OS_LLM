@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer specifies 'acute lower respiratory tract infection, most likely acute bronchitis with possible bacterial superinfection or early community-acquired pneumonia, superimposed on a pre-existing chronic cough.' Generated Answer gives a vague 'respiratory infection,' missing the specificity (e.g., acute bronchitis, bacterial superinfection, pneumonia, chronic cough superposition). It correctly identifies contributions of productive cough (worsening, phlegm), greenish sputum (infectious suggestion), and subjective fever (systemic), but lacks nuances like sputum not definitively bacterial, transition from dry to productive cough, and distinction from chronic conditions via absent symptoms. References to non-existent 'Knowledge Graph' introduce factual discrepancies. Main point of infection is correct, but significant vagueness and extras warrant 3.",
+    "completeness": "Gold key points: specific diagnosis including acute LRTI/bronchitis/CAP on chronic cough; productive cough as recent transition atop 3-month history [P-2,P-12]; greenish sputum suggesting infection/inflammation, concern for bacterial [P-9]; subjective nighttime fevers as systemic response [P-4]; doctor's synthesis [D-47] distinguishing acute from chronic (no sweats/weight loss); no vitals/exam. Generated covers basic diagnosis (infection), contributions of each feature with citations, doctor's summary. Misses: specific dx terms, chronic cough in dx, sputum nuance (not definitive bacterial), full transition detail, absent symptoms distinction, no vitals note. Covers ~60-70% of key points: 3.",
+    "faithfulness": "Generated claims verifiable: productive cough/phlegm [P-2], greenish sputum [P-9, D-47], fever 'hot at night' [P-4], doctor's summary [D-47]. Hallucinations: 'Knowledge Graph explicitly states' green sputum/subjective fever indicate respiratory infection (no KG in transcript); minor citation error (green not in [P-2]); implies doctor 'arrives at clinical conclusion of respiratory infection' (doctor only summarizes symptoms, no dx stated). Multiple hallucinated facts (KG references central to explanations): 2.",
+    "relevance": "Generated directly states diagnosis ('respiratory infection') and explains each of the three features (productive cough, green sputum, subjective fever) with transcript evidence, tying to question; minor KG mentions but no off-topic content. Perfectly addresses question: 5."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.25,
+  "summary": "The Generated Answer captures the core idea of a respiratory infection but is incomplete and less precise than the Gold, with faithfulness undermined by hallucinations of a Knowledge Graph."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the first symptom as a stuffy nose and that fever followed and had been present for 3 days at presentation, consistent with [P-1] and the doctor’s confirmation [D-2–D-3]. It also correctly notes ongoing sore throat and presence of muscle aches. However, it does not clearly preserve the Gold Answer’s sequence that sore throat developed after the stuffy nose and around fever onset; it lists fever before sore throat, which slightly muddles chronology. The husband comparison is broadly correct (husband symptomatic ~1 week vs patient fever 3 days), but it does not capture the Gold Answer’s more specific inference that husband’s onset preceded the patient’s fever onset by ~4 days.",
+    "completeness": "Key points covered: (1) stuffy nose first, (2) fever followed and duration 3 days, (3) sore throat present/ongoing, (4) husband has similar symptoms for ~1 week. Key points missed or under-specified relative to Gold: (1) sore throat timing in the sequence (developed after stuffy nose and present around fever onset), (2) muscle aches timing (past 2–3 days) and explicit concurrence with fever as confirmed in [D-15–P-16], (3) the more explicit relative timeline inference (husband starting several days before the patient’s fever onset), and (4) husband described as doing “the same as me” [P-20].",
+    "faithfulness": "All included symptoms (stuffy nose, fever 3 days, sore throat ongoing, muscle aches, husband with similar symptoms for a week) are supported by the transcript. The statement that the husband’s illness began earlier than the patient’s 3-day fever period is a reasonable inference from [P-19] and [P-1] and does not introduce new unsupported clinical facts.",
+    "relevance": "The answer stays focused on symptom chronology and explicitly compares the patient’s timeline with her husband’s onset, which directly addresses the question."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 5,
+    "relevance": 5
+  },
+  "average_score": 4.25,
+  "summary": "Mostly accurate and well-grounded, but it incompletely captures the detailed symptom sequence and timing (especially sore throat and myalgias) and provides a less specific comparison to the husband’s earlier onset than the Gold Answer."
+}

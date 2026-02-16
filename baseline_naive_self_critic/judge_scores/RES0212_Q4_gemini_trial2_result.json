@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer fails significantly on factual accuracy. It lists symptoms the patient reported (fatigue, sleep disturbance, chest pain) instead of the constitutional symptoms the patient denied (night sweats, weight loss, hemoptysis) as requested by the prompt. Most egregiously, it claims the transcript does not detail the symptoms screened for in P-5 and P-6, when the questions about night sweats (D-5) and weight loss (D-6) are explicitly in the text. It also introduces 'Feline/Zoonotic Tuberculosis,' which is not mentioned in the transcript or Gold Answer.",
+    "completeness": "The Generated Answer misses almost all key points from the Gold Answer. It fails to mention the denial of night sweats, weight loss, hemoptysis, sick contacts (roommate, class), travel history, and drug use. These are the core elements of the screening process described in the transcript and the Gold Answer.",
+    "faithfulness": "The Generated Answer contains significant hallucinations. It claims the symptoms being screened for are 'not detailed' in the provided text despite the transcript explicitly listing them. It also hallucinates the specific term 'Feline/Zoonotic Tuberculosis' as a primary concern for the screening.",
+    "relevance": "The Generated Answer is largely irrelevant because it focuses on symptoms the patient has, whereas the question specifically asks for symptoms and risks the patient 'denied'. By misinterpreting the core constraint of the question, it provides an answer that does not address the clinical reasoning requested."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 2
+  },
+  "average_score": 1.25,
+  "summary": "The Generated Answer is highly inaccurate, missing almost all key points, hallucinating that information is missing from the transcript, and failing to focus on the 'denied' symptoms requested by the prompt."
+}

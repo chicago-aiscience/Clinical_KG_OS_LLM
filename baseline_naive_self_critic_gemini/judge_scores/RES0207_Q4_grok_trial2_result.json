@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer comprehensively lists denied symptoms grouped by category (cardiac: chest pain, faintness; infectious: taste/smell loss, sore throat, runny nose, sick contacts, travel; GI: nausea/vomiting, belly pain, diarrhea; plus dry cough/sputum, no prior episodes) with accurate mappings to DDs. Generated Answer only covers GI symptoms fully and partial infectious (taste/smell, sore throat, misses runny nose), omits all cardiac symptoms, exposures, sputum, priors; misattributes GI symptoms to cardiac DDs (e.g., nausea as classic for MI, contradicting Gold's cardiac mapping to chest pain/faintness); names specific unmentioned DDs like MI/COVID/gastroenteritis. Significant discrepancies and errors.",
+    "completeness": "Gold key points: ~10 specific denied items across cardiac (2), infectious (5), GI (3), other (2), plus DD category inferences. Generated covers GI (3/3), partial infectious (2/5), 0 cardiac/exposures/other; partial/misaligned DD coverage. Covers ~25-30% of key points.",
+    "faithfulness": "Symptoms listed verifiable in transcript with citations. However, DD linkages (e.g., GI symptoms for MI, 'classic presentation', COVID standards) and interpretations (isolate cardiac from respiratory) not in transcript, representing hallucinated medical reasoning; plausible but not grounded solely in dialogue.",
+    "relevance": "Directly lists denied symptoms/exposures and links to cardiac/infectious/GI DDs as queried, structured response; no off-topic content despite incompleteness/errors."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 3,
+    "relevance": 4
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer partially identifies some denied symptoms and infers relevant DD categories but misses key cardiac/infectious items, misattributes symptoms to wrong DDs, and introduces ungrounded medical interpretations."
+}

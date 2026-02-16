@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer states patient is not taking any prescribed medications overall [P-23], previously took anxiety meds 2-3 years ago [P-24], manages acid reflux with diet only [P-25], no treatment for hay fever [P-27], no meds for cough yet [P-35, D-37]. Generated Answer correctly notes no meds for cough, diet for reflux with specifics, no current anxiety treatment. Minor discrepancies: misses explicit overall no meds statement, past anxiety med detail, hay fever entirely; adds irrelevant 'knowledge graph' not in transcript. Core facts consistent.",
+    "completeness": "Gold key points: (1) no current prescribed meds [P-23]; (2) past anxiety meds [P-24]; (3) reflux diet details [P-25]; (4) no reflux meds; (5) hay fever no treatment [P-27]; (6) cough no meds prescribed yet [P-35/D-37]. Covered: (3) fully, (4) fully, (1) implied for cough/anxiety, (6) partially (asks for meds, no current). Missed: (2), (5), explicit overall no meds, doctor plan. Covers ~60-70% of key points.",
+    "faithfulness": "All symptom/treatment claims verifiable: cough details [P-2/5/15/35], COVID [P-35], reflux diet [P-25], anxiety mention [P-22]. Citations accurate. Minor hallucination: 'provided knowledge graph' not in transcript. No other fabrications; mostly grounded.",
+    "relevance": "Directly addresses question by listing current med/treatment status by condition (cough, reflux, anxiety), including reflux management and no prescribed meds where applicable. Symptom details contextualize cough status without derailing focus; highly relevant."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 4,
+    "relevance": 5
+  },
+  "average_score": 4.0,
+  "summary": "The Generated Answer is mostly accurate and relevant, with good grounding in the transcript but misses some key details from the Gold Answer like hay fever, past anxiety medication, and an explicit overall no-meds statement."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "- Correctly identifies the doctor’s stated plan: to “go review your story with the doctors” (matches [D-47]).\n- Correctly captures key elements of the doctor’s end-summary: chronic cough with recent worsening, nighttime awakening, green sputum, and no blood (all consistent with [D-47]).\n- Adds an explicit diagnosis/label (“respiratory infection”) that the doctor did not state in the transcript; this is an overreach vs the Gold Answer.\n- Incorrectly implies the doctor noted constitutional symptoms “other than fatigue and potential pain” and includes “subjective fever” as part of the end-summary; these are not stated by the doctor at [D-47].\n- Misstates what guides next steps: Gold indicates next steps are guided by the supervising physician’s assessment after review (and no tests/treatment were ordered). The generated answer instead says specific symptoms guide next steps, which is not what the doctor said at the end.",
+    "completeness": "- Includes the plan to review with other doctors (covered).\n- Includes most of the doctor’s summary assessment elements (cough duration, worsening in last 3 days, nighttime awakening, green sputum, no blood, no constitutional symptoms) though it muddies this by adding fatigue/pain.\n- Misses/does not clearly state that no diagnostic tests, imaging, or treatments were ordered.\n- Misses the key Gold point that the next steps would be guided by the supervising physician’s assessment after the case review, not by a specific symptom list.\n- Does not include the doctor’s prompt asking if the patient had anything else to add and the patient’s exercise-related concern (minor omission).",
+    "faithfulness": "- Mentions a “knowledge graph” and uses it to justify a diagnosis; this content is not in the transcript.\n- Attributes to the doctor an assessment of “respiratory infection” and an end-summary including fever/fatigue/pain framing that is not present in [D-47].\n- Some components are grounded (review with doctors, green sputum, no blood, nighttime waking), but there are multiple unsupported additions.",
+    "relevance": "- Directly addresses all three parts of the question (plan, summary assessment, what guides next steps).\n- Minor tangents/extra structure (“knowledge graph”) but still focused on the asked items."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 3.0,
+  "summary": "The answer captures the stated plan and much of the end-of-visit symptom summary, but adds unsupported diagnostic labeling and other details, and it misses that next steps hinge on the supervising physician’s assessment with no tests/treatments ordered."
+}

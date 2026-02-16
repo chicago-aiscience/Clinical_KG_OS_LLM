@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer correctly identifies the plan from [D-33] as relaying information to another doctor and comprehensively lists key clinical information in 5 categories with specifics and citations. Generated Answer incorrectly claims the transcript only includes patient statements up to [P-26] with no doctor's dialogue or concluding remarks, missing the explicit plan entirely. It partially covers some symptom details, OTC failures, stress, smoking, family history, and anxiety but omits duration (1.5 weeks), rest/alone/distraction/not exercise triggers, all pertinent negatives (trauma, fevers, asthma, dyspnea, palpitations, family sudden death), psychosocial details (thesis stress specifics, living alone, multivitamin), and inaccurately truncates smoking history. Significant contradictions and omissions make it factually inaccurate.",
+    "completeness": "Gold key points: plan (relay to doctor, no further actions) - 0% covered; symptom characteristics (sharp pain 1.5wks, 20min episodes at rest/alone, distraction relief, deep breaths worse/not exercise) - ~40% (sharp/deep breath/20min but misses duration/contexts); failed OTC - 100%; pertinent negatives (trauma/fevers/asthma/dyspnea/palps/family) - 0%; relevant history (anxiety/smoking/father MI) - ~70%; psychosocial (thesis/living alone/vit) - ~40%. Overall covers ~30-40% of key points, missing plan and major details.",
+    "faithfulness": "Generated citations ([P-1,3,6,8,13,14,20,21]) are mostly accurate for covered claims, but hallucinates transcript content by falsely stating it only has patient statements [P-1]-[P-26] excluding all [D-#] and later [P-#], ignoring [D-33] plan and later details (e.g., no asthma [P-23/24], family clarifications [P-30-32]). Smoking 'less than 5' is approximate but ok; anxiety 'similar symptoms' plausible from [P-20/21] but stretched. Multiple hallucinations/misrepresentations about source material.",
+    "relevance": "Question asks for doctor's stated plan from concluding remarks (ignored via wrong disclaimer) and key info gathered (partially summarized). Focuses on clinical info but disclaimer/off-base transcript claim introduces irrelevance; still attempts to address core elements."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "The Generated Answer significantly errs by misrepresenting the transcript, omitting the explicit plan, and incompletely covering key clinical details, resulting in low factual accuracy and completeness."
+}

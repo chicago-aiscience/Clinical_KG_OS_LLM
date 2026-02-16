@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer precisely details the doctor's recap in D-58 (dry cough 3-4 days with fever/headache, no sputum, limited contacts sick except brother 2 weeks ago, no asthma, Claritin only) and Jessica's goal in P-60 (know if needs medicine). Generated Answer incorrectly states no explicit doctor summary exists (D-58 is verbatim), lists patient-reported symptoms/history instead of doctor's recap (e.g., adds scratchy throat/tiredness not in recap, omits fever/brother/asthma), and misstates goal as seeking treatment inferred from P-25 Claritin rather than P-60 quote; significant contradictions.",
+    "completeness": "Gold key points: 5 specific doctor recap items, visit framing, Jessica's medicine question (P-60), rest desire (P-61). Generated covers dry cough duration vaguely (~1 point), Claritin (~1 point), but attributes to patient not doctor, misses 3/5 recap points entirely (fever/headache precise phrasing, sputum, contacts/asthma), wrong goal source/details; covers ~20-30%.",
+    "faithfulness": "Cites exist in transcript (P-1 dry cough etc., P-25 Claritin) but fabricates absence of doctor summary (D-58 present), hallucinates goal from P-25 inference instead of direct P-60/P-61 statements, shifts focus to patient reports over doctor recap; multiple unverifiable/misattributed claims.",
+    "relevance": "Partially addresses clinical findings/goal but deviates by using patient reports vs required doctor summary, infers wrong next steps; includes some symptom overlap but off-topic history emphasis and denial of summary."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "Generated Answer significantly misses the doctor's specific recap in D-58, relies on patient reports instead, and inaccurately infers Jessica's goal, leading to low factual alignment and completeness."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Gold Answer specifies that the clinician screened for infectious/COVID symptoms (recent cold/infection, loss of taste/smell, fever, nausea/vomiting, belly pain; and that cough was dry/nonproductive) and exposure history (sick contacts at home, sick contacts outside home, travel), all denied, and planned a COVID swab despite negative screening. The Generated Answer is largely incorrect relative to this: it focuses on asthma triggers (cold air, pollen, exercise, pets) rather than infectious screening, and it incorrectly states the planned “diagnostic test” was “increased usage of bronchodilator,” which is not a diagnostic test and is not what was planned in the transcript (COVID swab was planned). Thus it fails to match the Gold Answer’s facts and includes a key contradiction about the planned test.",
+    "completeness": "Key points from the Gold Answer that should be included: (1) asked about recent colds/infections—denied; (2) sick contacts at home—denied; (3) contact with sick people outside home—denied; (4) travel—denied; (5) loss of taste/smell—denied; (6) fever—denied; (7) nausea/vomiting—denied; (8) belly pain—denied; (9) cough confirmed dry/nonproductive; (10) COVID swab planned despite negative screen. The Generated Answer covers essentially none of these infectious screening/exposure elements and does not mention the COVID swab. It instead discusses non-infectious triggers and treatment response. Therefore coverage is <20%.",
+    "faithfulness": "Some statements are grounded in the transcript (cold air worsens symptoms; spring/pollen; no pets besides goldfish; exercise as trigger; wheezing reported; bronchodilator helps). However, the answer repeatedly uses speculative language (“doctor likely screened”) and introduces content not supported by the transcript (references to a “knowledge graph,” claims about “implied negative screening for infection not captured,” and labeling bronchodilator increase as the planned diagnostic test). The core claim about what diagnostic test was planned is not supported and contradicts the transcript (COVID swab planned). Overall, there are multiple hallucinated/unsupported elements.",
+    "relevance": "The question asks specifically about infectious/COVID symptom and exposure screening, the patient’s responses, and the diagnostic test planned despite negative screening answers. The Generated Answer mainly discusses asthma triggers (cold, pollen, exercise, pets) and medication use, and it omits the infectious screening and COVID swab. Thus it does not address the asked content."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 1
+  },
+  "average_score": 1.25,
+  "summary": "The Generated Answer is largely incorrect and incomplete for the infectious/COVID screening question, omits the planned COVID swab, and instead discusses asthma triggers and an unsupported “diagnostic test,” with several ungrounded claims."
+}

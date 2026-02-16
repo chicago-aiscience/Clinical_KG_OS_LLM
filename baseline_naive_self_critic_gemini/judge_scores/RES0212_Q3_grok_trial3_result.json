@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer diagnoses acute lower respiratory tract infection (acute bronchitis with possible bacterial superinfection or early CAP on chronic cough); Generated specifies 'bacterial infection such as bacterial bronchitis or pneumonia,' which aligns on acute bacterial process but overstates certainty of bacterial etiology (green sputum 'highly specific' vs Gold's 'raises concern'), misses chronic cough context, and inaccurately ties fevers to night sweats (patient denied [P-5]); core diagnosis similar but with factual discrepancies in explanations. Score: 3.",
+    "completeness": "Gold covers nuanced diagnosis with chronic context, detailed contributions of each feature (productive cough as transition, green sputum suggestive, subjective fevers as systemic), doctor's synthesis [D-47], and absences; Generated covers the three features' contributions with citations but partial matches (e.g., cough duration overstated as 3 months productive), misses chronic superposition, doctor's summary, distinguishing from chronic conditions, and lacks ~50% depth. Score: 3.",
+    "faithfulness": "Claims like productive cough [P-2], green sputum [P-9] verifiable; fever inquiry [D-4/D-5] ok but misconstrues as patient confirmation (actual [P-4] subjective hot, denied sweats [P-5]); hallucinations include '[Knowledge Graph]' (absent), implying night sweats/sleep disruption as fever manifestation (not in transcript), and overstating green sputum specificity beyond transcript. Multiple unverifiable/hallucinated elements. Score: 2.",
+    "relevance": "Directly states diagnosis and bullets precise contributions of the three specified features with transcript ties; no off-topic content, perfectly matches question structure. Score: 5."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.25,
+  "summary": "The Generated Answer is relevant and mostly correct on core diagnosis but incomplete in nuance, with faithfulness issues from hallucinations and minor misinterpretations."
+}

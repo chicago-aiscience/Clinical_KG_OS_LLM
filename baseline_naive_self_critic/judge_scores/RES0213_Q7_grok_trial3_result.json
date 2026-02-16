@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer provides a precise chronological timeline starting with smoking at age 18 [P-18], overlapping teen anxiety [P-21], 8-year gap [P-22], smoking escalation to 10 cigs past 2 years then reduction few months ago [P-18, P-14], father's heart attack [P-8, P-30], recent weeks' thesis stress [P-15, P-16], and new chest pain 1.5 weeks ago [P-2, P-3, P-17], with relations via stress and possible anxiety return. Generated Answer inverts order (starts with teen anxiety), omits smoking start/escalation details, father's heart attack, specific thesis time crunch, 8-year gap; incorrectly claims prior chest pain association with teen anxiety (contradicts P-17 'never felt this pain before'; P-20 is heart flutter only); introduces unverifiable 'knowledge graph'. Significant errors and omissions make it inconsistent with Gold.",
+    "completeness": "Gold key points: smoking start age 18, teen anxiety, 8-yr gap, smoking 10 cigs past 2 yrs/cut few mo ago, father HA, Masters thesis stress last couple weeks, chest pain onset 1.5 wk ago (new), stress/anxiety links, worse alone. Generated covers: teen anxiety ~8 yrs ago, current smoking reduction, general school stress/quitting, chest pain details/onset; misses smoking onset/escalation timing, father HA, specific recent thesis crunch, 8-yr gap, newness emphasis. Covers ~30-40% of points.",
+    "faithfulness": "Claims like 'knowledge graph' linkages ([PAST_CONDITION] etc.) not in transcript (hallucinated). 'Recurrence of chest pain symptoms previously associated with teenage anxiety [P-21][P-20]' unverifiable/misrepresented (P-17 denies prior pain; P-20 heart flutter only). Stress/school busy [P-13] grounded but incomplete (misses [P-15/16]). Chest pain description accurate [P-1-6]. Multiple hallucinations.",
+    "relevance": "Addresses timeline and phase relations but starts wrong (anxiety before smoking vs question's 'starting from smoking'), incomplete coverage, off-topic knowledge graph intrusions; still attempts chronological trace and correlations to stress/anxiety."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "The Generated Answer has significant factual inaccuracies, incomplete timeline coverage, hallucinations including fabricated knowledge graph references, and partial relevance to the specified question structure."
+}

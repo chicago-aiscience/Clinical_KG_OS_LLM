@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer specifies: runny nose ~1 week ago; Friday: raspy cough first; Sunday: cough worsens to 'really bad' + yellow sputum with red spots starting together; Monday: fever starts (felt hot) + sputum continues; Tue-Wed: chills; Tue: chest pain noticed 'over last day'. Generated Answer incorrectly places raspy cough onset on Sunday (Gold: Friday mild, Sunday worsens); fever on Sunday citing [P-5] (but [P-5] indicates fever 'next day' after Sunday, i.e., Monday per [P-8]); chest pain vaguely on Wednesday (Gold: last day ~Tue); misses runny nose and Friday cough; sputum correct on Sunday. Significant factual errors/contradictions on key symptom onsets.",
+    "completeness": "Gold key points: runny nose (missed), Friday raspy cough (missed), Sunday bad cough+sputum (partial, cough day wrong), Mon fever (day wrong), Tue-Wed chills (covered), Tue chest pain (timing wrong), Wed full picture w/ dyspnea/sore throat (partial in progression). Covers ~30-40% accurately (sputum, chills partial; progression vague); misses early cough, runny nose, precise timings. Score 2.",
+    "faithfulness": "Claims like cough 'began earlier... aligns with Sunday' misinterprets [P-1,P-3] (Friday raspy); fever Sunday [P-5] wrong (fever Mon [P-8]); chest pain undated but presented as Wed current ok but Gold more precise; adds 'clinical knowledge' unnecessary; multiple misreadings of timeline in transcript (e.g., [P-3] Friday cough, [P-20] pain last day). Multiple inaccuracies/hallucinations in timing. Score 2.",
+    "relevance": "Directly structures timeline by day for specified symptoms (cough, sputum, fever, chills, pain) and describes worsening progression, perfectly matching question focus with no off-topic content. Score 5."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer addresses the question structure but contains significant factual inaccuracies in symptom onset timings compared to the Gold Answer and transcript, reducing correctness, completeness, and faithfulness."
+}

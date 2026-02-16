@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer emphasizes the patient's self-directed reduction in maintenance inhaler (skipping evening dose [P-19]) and failure to refill rescue inhaler ([P-17,P-18]) as key factors compromising asthma control, leading to symptom recurrence, supported by doctor's summary [D-34]. Generated Answer correctly identifies asthma exacerbation link via history [P-16], symptoms [P-1], and doctor's assessment [D-35], but falsely claims transcript lacks details on skipping dose and refill (directly contradicted by [P-17-20]), omitting these core causal relations; significant errors in ignoring/denying pivotal facts central to Gold.",
+    "completeness": "Gold key points: asthma history [P-16,P-29]; maintenance reduction [P-19,P-20]; no rescue refill [P-17,P-18]; doctor's med limiting summary [D-34]; symptoms (tightness, exertion/deep breath, phlegm [P-1,P-4,P-9,P-11]); recurrence assessment [D-35]; feels different [P-16]; rescue proposal [D-35]. Generated covers: history/symptoms [P-1,P-16]; assessment [D-35]; cardiac exclusion [D-36] (~25-30% coverage); misses all medication non-compliance details, doctor's summary, phlegm, treatment.",
+    "faithfulness": "Generated citations [P-1,P-16,D-35,D-36] accurate; however, hallucinates 'Knowledge Graph' (absent from transcript); falsely asserts 'transcript does not contain specific details regarding skipping evening dose or failing to refill rescue inhaler' (directly refuted by [P-17-20,D-34]); multiple unverifiable/hallucinated claims about transcript content.",
+    "relevance": "Question focuses on linking asthma history + specific med non-compliance (skip evening maintenance, no rescue refill) to symptoms; Generated addresses asthma-symptom link broadly but explicitly avoids med changes by denying their presence, introducing cardiac exclusion (secondary); partially on-topic but dodges question's core premises."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "Generated Answer partially captures asthma recurrence but significantly errs by hallucinating absence of key medication non-compliance details central to the question and Gold Answer, resulting in incomplete and unfaithful evaluation."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Compared to the Gold Answer, the Generated Answer correctly notes that the doctor screened for chest pain and that the patient denied it (this is supported by D-7/P-7). However, it incorrectly attributes the denial to P-34 (“I don’t, no”), which in the transcript is the patient denying smoking (D-34/P-34), not chest pain. It also adds specific cardiac examples (angina/MI) and other causes (asthma/infections) that are not stated in the transcript (though they are plausible), and it misuses the cited snippet to support the chest-pain denial. Overall, there is a significant factual/citation error despite a partially correct high-level point.",
+    "completeness": "The Gold Answer lists multiple denied symptoms/exposures across cardiac/cardiopulmonary (chest pain, presyncope), infectious/URI (loss of taste/smell, sore throat, runny nose; sick contacts; travel), GI/systemic (nausea/vomiting, belly pain, diarrhea), respiratory characterization (no sputum/dry cough), and no prior similar episodes. The Generated Answer includes only chest pain and omits essentially all other screened negatives and exposures, as well as the broader differential categories suggested by them. This is well under 20% of key points.",
+    "faithfulness": "The answer is not well-grounded in the transcript because it cites the wrong line/quote (P-34) as evidence for denied chest pain, and uses a smoking-related denial to support a chest-pain claim. It also introduces differential examples (angina/MI, asthma) not mentioned in the transcript. While these additions are plausible, they are not directly supported, and the key evidence citation is incorrect.",
+    "relevance": "The response is on the general topic (screening negatives and differential narrowing) and mentions one relevant screened symptom (chest pain) and a related differential category (cardiac). However, it fails to address most of what the question asks (other symptoms/exposures denied and the differential categories those negatives map to), so it is only partially responsive."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.0,
+  "summary": "The Generated Answer is partially relevant but highly incomplete and contains a major transcript-grounding error (mis-citing a smoking denial as chest-pain denial), resulting in low overall quality versus the Gold Answer."
+}

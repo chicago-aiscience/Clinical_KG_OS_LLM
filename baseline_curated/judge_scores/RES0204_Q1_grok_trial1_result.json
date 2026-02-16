@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer accurately details cough as dry/non-productive (D-5/P-5, D-6/P-6), stable (D-7/P-7), 4-5 days (P-2/P-4), runny nose couple days and 'pretty clear' (D-11/P-11, D-12/P-12), plus history/negatives. Generated correctly identifies two symptoms and approximate durations but incorrectly states transcript lacks info on cough nature (productive/non-productive) and nasal appearance, missing/contradicting these core facts; 'not improving' approximates but not exact to 'stayed the same'. Significant factual errors on key characteristics.",
+    "completeness": "Gold key points: cough (4-5 days, dry, non-productive, stayed same), runny nose (couple days, pretty clear), never had like this before, no sore throat/chest pain/SOB/wheeze. Generated covers: cough 4-5 days/not improving (~partial duration/severity), runny nose couple days. Misses: dry/non-productive, clear appearance, stayed same, history, negatives. Covers ~25% of key points.",
+    "faithfulness": "Verifiable: symptoms cough/runny nose, durations [P-2, P-11] accurate citations. Unverifiable/hallucinated: 'transcript does not provide specific information' on cough productive/non-productive (directly contradicted by D-5/P-5 dry, D-6/P-6 no gunk) and nasal appearance (D-12/P-12 pretty clear); mentions non-existent 'knowledge graph'. Multiple hallucinated/misstated facts about transcript content.",
+    "relevance": "Question asks specific respiratory symptoms reported, characteristics incl cough nature and nasal appearance. Generated directly structures response around two symptoms with subsections for characteristics/nature/appearance, even noting perceived lacks; no tangents, perfectly focused."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer correctly identifies the symptoms and durations but inaccurately denies transcript details on cough nature and nasal discharge characteristics, resulting in low correctness, completeness, and faithfulness despite high relevance."
+}

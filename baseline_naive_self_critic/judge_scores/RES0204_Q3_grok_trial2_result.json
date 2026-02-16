@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer details specific present symptoms (dry non-productive cough 4-5 days not improving, clear runny nose) and extensive pertinent negatives (fever/chills, sore throat, normal taste/smell, chest pain, muscle pain, etc.), no sick contacts/travel, family asthma hx, novelty/persistence despite no high-acuity features leading to X-ray, and COVID swab per explicit protocol. Generated correctly identifies persistent cough driving X-ray [D-37], COVID protocol [D-39], and some absences, but omits runny nose (key present symptom in question/Gold), inaccurately attributes X-ray explanation to D-39 (it's D-38), adds external 'clinical knowledge,' and partially lists absences (misses sore throat/taste-smell/muscle aches explicitly). Core rationales match but with minor factual omissions/discrepancies.",
+    "completeness": "Gold key points: presents (dry cough details [P-2,5-7], runny nose [P-11-12]); negatives (fever/chills [P-13], sore throat [P-9], taste/smell [P-10], chest pain [P-15], muscle pain [P-14], headaches [P-18], N/V/abd [P-16-17]); no contacts/travel [P-19-22,20]; family asthma/novelty/persistence/no high-acuity → X-ray [D-37]; COVID protocol quote [D-39]. Generated covers: persistent cough → X-ray; COVID protocol; partial absences (fevers/chills/chest pain/SOB/wheezing). Missed: runny nose, full negatives list (esp. question-specific: sore throat/taste-smell/muscle aches), contacts/travel, family hx/novelty, explicit tie of combination to decision. Covers ~60-70% of points.",
+    "faithfulness": "Claims verifiable: cough duration/not improving [P-2,7]; X-ray for 'better look' [D-37]; X-ray explanation [D-38]; COVID for 'these symptoms' [D-39]; no fevers/chills [P-13]. Unverifiable/plausible: no SOB/wheezing (inferred from [P-28] mom, not direct denial); 'not life-threatening' reasonable. Hallucinations: 'knowledge graph' (absent); 'clinical knowledge cough warrants X-ray'; 'to rule out COVID' (protocol, not explicit); minor citation error (D-39 for X-ray expl). Some not directly in transcript but plausible, minor extras.",
+    "relevance": "Directly addresses why doctor ordered X-ray (persistent cough) and COVID swab (protocol), notes role of absent severe findings in proceeding to screening; structured by test rationales. Tangents: external clinical knowledge; misses explicit nasal discharge but focuses on question's diagnostic workup reasoning. Mostly on-topic."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 3,
+    "relevance": 4
+  },
+  "average_score": 3.5,
+  "summary": "The Generated Answer captures core rationales for ordering tests with good relevance and correctness but lacks completeness in covering all present/absent symptoms and introduces minor hallucinations from external knowledge."
+}

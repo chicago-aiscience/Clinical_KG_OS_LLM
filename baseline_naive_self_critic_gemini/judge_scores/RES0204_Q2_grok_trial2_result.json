@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer accurately identifies two proposed procedures (chest X-ray [D-37, D-39] and COVID swab [D-39]) with specific rationale for the swab (institutional protocol for respiratory symptoms). Generated Answer incorrectly claims no diagnostic procedures or rationale are mentioned, asserting the transcript 'cuts off prior to the doctor making any medical decisions,' which contradicts the explicit proposals in D-37 and D-39. This is a complete factual contradiction.",
+    "completeness": "Gold key points: confirmation of no medications [D-27, P-27]; no significant history; chest X-ray proposed to 'get a better look' [D-37]; COVID swab due to protocol 'with anyone that comes in with these symptoms lately' [D-39]; explanations and plan [D-39, D-40]. Generated covers 0% of these, instead denying their existence.",
+    "faithfulness": "Generated claims unverifiable and false: no proposals or rationale, transcript cuts off before decisions (but D-37/D-39 explicitly propose chest X-ray and COVID swab with rationale). Citations to early transcript (e.g., [D-4], [P-2]) are accurate but irrelevant; main claims hallucinate transcript content by omission/denial.",
+    "relevance": "Generated directly addresses the question by stating it cannot be answered due to lack of information in transcript, with no off-topic content or tangents."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 5
+  },
+  "average_score": 2.0,
+  "summary": "The Generated Answer is factually incorrect, incomplete, and unfaithful to the transcript by falsely claiming no diagnostic proposals or COVID swab rationale are present, despite clear evidence in D-37 and D-39, though it remains relevant in structure."
+}

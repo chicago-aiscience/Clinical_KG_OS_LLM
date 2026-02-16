@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer lists specific transcript citations for productive cough with yellow custard sputum and red spots [P-4,P-6], fever [P-8], chills [P-9], exertional dyspnea without rest dyspnea [P-10,P-11], detailed right-sided constant dull pleuritic chest pain [P-17-P-21], and smoking history [P-37,P-38] as predisposing. Generated Answer accurately covers core symptoms with correct citations (sputum [P-4,P-6], chills [P-9], dyspnea [P-10], right chest pain [P-17], pleuritic worsening), but has minor discrepancies like implying bacterial specificity without Gold's nuance, linking sore throat [P-15] to chest pain mechanism (not directly matching), and external 'knowledge graph' references not in Gold; core facts remain consistent.",
+    "completeness": "Gold key points: sputum details [P-4,P-6] (covered), fever [P-8] (implied but not explicitly cited, partial), chills [P-9] (covered), exertional dyspnea details [P-10,P-11] (P-10 covered, misses 'crummy' after stairs and rest denial), full chest pain details including constant/dull/at rest [P-17-P-21] (partial, covers pleuritic but misses some), pleuritic pleural inflammation explanation (covered well), smoking predisposition (missed entirely). Covers ~85% of key points, missing smoking and some pain/dyspnea nuances.",
+    "faithfulness": "Claims like sputum, chills [P-9], dyspnea [P-10], right pain [P-17], pleuritic worsening [implied P-18,P-19] verifiable in transcript. Hallucinations include 'knowledge graph' for fever-chills and exertion-pain links (not in transcript), stretching P-15 sore throat to chest pain, describing pain as 'sharp, position-dependent' (transcript says dull, worsens with breath/cough). Some unverifiable/plausible extras but multiple external references.",
+    "relevance": "Directly addresses question by listing transcript findings supporting LRTI/pneumonia and explaining pleuritic pain's role in supporting diagnosis via pleural inflammation; minor tangents like knowledge graph and pathophysiology details but stays focused on clinical reasoning from symptoms."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 3,
+    "relevance": 4
+  },
+  "average_score": 3.75,
+  "summary": "The Generated Answer is mostly accurate and relevant, covering key transcript findings for pneumonia with good pleuritic explanation, but minor hallucinations via external 'knowledge graph' and omissions like smoking reduce completeness and faithfulness."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The answer correctly identifies the main symptoms reported at presentation: wheezing, shortness of breath, and a slight cough (all supported by [P-1]). It also includes “difficulty taking in deep breaths,” which is indeed reported by the mother as part of the initial symptom set ([P-2]). However, it is not fully correct about the *earliest* symptoms: the transcript states the first-noticed symptoms were **both** wheezing **and** difficulty taking deep breaths ([P-2]), whereas the Generated Answer states only wheezing was earliest.",
+    "completeness": "Gold Answer key points: (1) wheezy x 4–5 days, (2) short of breath, (3) slight cough (more recent), (4) exertional dyspnea/out of breath with activity (tag) [P-3], (5) hard time catching breath during episodes and denial of cyanosis [P-32], (6) earliest symptoms were wheeze + difficulty deep breaths [P-2], (7) cough non-productive [P-31].\nGenerated Answer includes (1)-(3) and mentions difficulty taking deep breaths, but misses (4)-(7) and does not correctly list *all* earliest symptoms. Overall, it covers the core presentation symptoms but omits several qualifying details included in the Gold Answer.",
+    "faithfulness": "Statements about wheezing, slight cough, and shortness of breath are directly supported by [P-1]. “Difficulty taking in deep breaths” is supported by [P-2]. The only notable issue is framing: it lists difficulty deep breaths under “at presentation” while citing an onset-focused question ([P-2]); still, the symptom itself is in the transcript. No clear hallucinated symptoms are introduced.",
+    "relevance": "The response stays focused on the requested information: respiratory symptoms reported and which were earliest at onset. No major tangents."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 4,
+    "relevance": 5
+  },
+  "average_score": 3.75,
+  "summary": "Captures the main reported symptoms (wheeze, SOB, slight cough) but incompletely answers which symptoms were earliest, omitting the concurrently first-noted difficulty taking deep breaths and other qualifying details from the Gold Answer."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer states assessment includes symptoms consistent with COVID and patient otherwise generally well [D-16, P-16]; Generated misses 'generally well' and only partially matches. Gold includes possible additional tests [D-40] and supervising consult [D-40]; Generated incorrectly states no additional tests/follow-up and no mention of supervising physician consult, direct contradictions. Test, isolation, timeline match accurately. Significant factual errors on key management elements.",
+    "completeness": "Gold key points: assessment (COVID consistent + generally well), COVID swab test, isolation details, timeline (1-2 days), possible additional tests, supervising consult + more questions, reassurance. Generated covers: partial assessment (COVID consistent), test/method/timeline, isolation. Misses: generally well, additional tests mention, supervising consult, more questions, reassurance. Covers ~50-60% of points.",
+    "faithfulness": "Claims on assessment, test/swab, timeline, isolation verifiable [D-39]. 'Anosmia/ageusia' plausible interpretation but not verbatim. Incorrectly claims 'no additional tests' despite [D-40] 'might be a couple other tests'; denies supervising consult despite [D-40] explicit mention. 'Knowledge graph' not in transcript (hallucination). Multiple unverifiable/incorrect absence claims.",
+    "relevance": "Generated uses structured sections (Assessment, Tests, Management, Additional) directly mirroring question elements (assessment, tests/method/timeline, self-care/isolation, additional/follow-up/consult). No off-topic content, fully focused despite inaccuracies."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer correctly covers core assessment and primary test/isolation but significantly errs by denying mentions of additional tests and supervising physician consultation present in the transcript and Gold Answer, reducing correctness, completeness, and faithfulness."
+}

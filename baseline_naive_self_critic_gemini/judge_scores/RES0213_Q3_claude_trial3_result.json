@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly diagnoses 'Angina Pectoris' and 'Stress-Induced Angina' as the primary conclusion, when the Gold Answer clearly identifies 'anxiety-related or stress-induced chest pain' as the diagnosis. Angina pectoris typically refers to cardiac ischemia, which contradicts the evidence presented. The Generated Answer does mention 'Psychogenic Chest Pain' but frames it incorrectly alongside angina. The supporting observations are mostly accurate but the fundamental diagnostic conclusion is wrong.",
+    "completeness": "The Generated Answer covers approximately 60% of the key points from the Gold Answer. It captures: the correlation with solitary activities, anxiety history, academic stress, breathing patterns during episodes, and medication resistance. However, it omits several critical points: the explicit resolution when distracted by social interaction or hands-on tasks, the 8-year gap in anxiety treatment, pertinent cardiac negatives (no exertional worsening, no palpitations outside anxiety), and pulmonary negatives (no asthma, no fevers). The coverage is partial.",
+    "faithfulness": "The Generated Answer is mostly grounded in the transcript with accurate citations [P-4], [P-19], [P-20], [P-8], [P-15], [P-6]. However, there is a problematic claim about 'Angina Pectoris' being the diagnosis, which is not supported by the transcript or clinical context. The transcript evidence points away from cardiac ischemia (pain at rest, no exertional worsening), making the angina diagnosis a misinterpretation rather than hallucination, but still unfaithful to the clinical picture presented.",
+    "relevance": "The Generated Answer addresses the question by attempting to provide a diagnosis and supporting observations. However, by incorrectly identifying angina pectoris as the primary diagnosis, it partially misses the core point. The supporting observations are relevant to anxiety-related chest pain, but the diagnostic framing creates confusion. Approximately 70% of the content is relevant to answering the question correctly."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 3,
+    "relevance": 3
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer makes a critical diagnostic error by identifying 'Angina Pectoris' as the primary diagnosis instead of anxiety-related chest pain. While it correctly identifies many supporting observations (solitary occurrence, anxiety history, academic stress, breathing patterns), it misses key clinical negatives and the resolution pattern with distraction. The response is partially grounded in the transcript but misinterprets the clinical picture. Coverage is incomplete at ~60%, and the incorrect primary diagnosis significantly undermines correctness and relevance despite identifying valid supporting observations."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer specifies diagnostic tests (physical exam of bite site, tick to lab for ID, blood for serology), prophylactic antibiotics (no specifics, due to >72h and geography), physician consultation (talk to doctor, supervised encounter), and preventive advice (ticks in long grass/woods-fields, waving legs, insecticide for garden). Generated covers all core elements accurately but adds erroneous 'continue statin for cholesterol' under treatments (only patient history noted, no plan mentioned [D-14/15]). Minor phys exam detail expansion ('assess exposures') not contradicting Gold's 'bite site'. Citations mostly match. Minor discrepancies, core facts correct.",
+    "completeness": "Key Gold points covered: all 3 diagnostics (tick lab [100%], blood [100%], phys exam [~90%, misses exact 'bite site' emphasis]); antibiotics rationale and intent [100%]; phys consult [100%]; preventive (long grass/intersection [100%], insecticide [100%], misses 'waving motion' and 'easy to spot'). Extra cholesterol not in Gold. Covers 85-95% of Gold keys.",
+    "faithfulness": "All claims verifiable: tick/blood/phys exam [D-18]; abx [D-6/D-13/D-18]; consult [D-18/D-22]; preventive [D-18]. Citations accurate (e.g., [D-18]). Minor issue: phys exam purpose ('other exposures') inferred from earlier dialogue but not explicit for exam; cholesterol continuation hallucinated as 'plan/treatment' (only history, no advice). No major fabrication.",
+    "relevance": "Structure mirrors question exactly (diagnostics lab/phys, treatments, phys consult, preventive garden/outdoor). No off-topic content; cholesterol fits under 'treatments' category attempted."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 4,
+    "relevance": 5
+  },
+  "average_score": 4.25,
+  "summary": "Generated Answer is highly accurate and complete with minor additions/hallucinations like cholesterol continuation, but fully grounded and relevant to the clinical plan."
+}

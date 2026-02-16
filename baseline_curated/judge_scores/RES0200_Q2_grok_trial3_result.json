@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer accurately lists Ventolin and Spiriva as current respiratory inhalers, atorvastatin as current non-respiratory med, specifies Ventolin ~10 times past week [P-12], and diuretic as previously prescribed but discontinued without approval. Generated Answer correctly identifies inhalers and atorvastatin, but incorrectly presents the diuretic as a current med 'being on' ([P-35] refers to past use per [P-34]), and factually errs by claiming Ventolin frequency is 'not stated' despite explicit transcript evidence of ~10 times/week [P-12]; also minor citation inaccuracy ([P-33] is condition, not med). These are significant factual errors on key elements like current meds and frequency.",
+    "completeness": "Gold key points: Ventolin/Spiriva current; Ventolin 10x/week; atorvastatin current; diuretic past, discontinued own. Generated covers inhalers (100%), atorvastatin (yes), discontinued diuretic (yes), but misses Ventolin frequency entirely and conflates diuretic as current; covers ~60% accurately (inhalers, atorva, discontinuation) but misses/errs on frequency and med status.",
+    "faithfulness": "Claims for inhalers [P-11] verifiable; atorvastatin [P-38] verifiable (though cites [P-33] plausibly related); diuretic past use verifiable but misrepresented as current; discontinuation [P-35] verifiable. However, falsely claims Ventolin frequency 'not stated' or only 'increased' [P-11]—directly contradicts [P-12] ('almost 10 times'); this is hallucination/omission of transcript fact, with multiple unverifiable/misstated details.",
+    "relevance": "Directly structures response around meds prior (resp/non), Ventolin use, discontinued med; addresses all question parts despite errors; no off-topic content."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer is mostly relevant and covers major meds but has significant errors in factual accuracy and faithfulness by misrepresenting the diuretic as current, denying the explicit Ventolin frequency from transcript, reducing overall quality."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer contains multiple factual errors compared with the Gold Answer/transcript. It incorrectly states the cough duration as “maybe for like a month” based on [P-19], when the patient clearly reports having a cough for ~3 months [P-2, P-13]. It does not state that sleep disruption occurred nightly for the last month; it only generally notes sleep disruption. It correctly identifies greenish sputum [P-9] but omits that this productive change began ~3 days prior [P-12]. It incorrectly claims there is no report of subjective fever, despite the patient stating she has felt “hot at night in the past couple days” [P-4].",
+    "completeness": "Key required timeline elements per the question/gold answer: (1) initial onset ~3 months ago during pole dancing class—missed/incorrect; (2) progression as intermittent/dry for ~2 months—missed; (3) nightly sleep disruption beginning ~1 month ago—partially captured but not “pretty well every night” and not clearly timed; (4) productive greenish sputum starting ~3 days ago—color captured but timing missed; (5) subjective fevers developing in past couple days—missed/incorrectly denied. Overall, it covers only a small portion of the requested timeline.",
+    "faithfulness": "Several statements are not faithful to the transcript. The answer selectively uses [P-19] to imply onset at one month, contradicting explicit statements of 3-month duration [P-2, P-13]. It also states the transcript does not report fever, which directly contradicts [P-4]. While the green sputum detail is grounded in [P-9], the overall narrative contains contradictions and omissions that make it poorly grounded.",
+    "relevance": "The response is structured as a timeline and targets the requested elements (onset, sleep disruption, sputum, fever). However, it fails to trace the complete timeline and introduces incorrect claims (especially about fever), so it is only mostly relevant rather than fully responsive."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The answer is mostly on-topic but substantially incorrect and incomplete, notably misstating onset (1 month vs 3 months), omitting timing of productive sputum, and falsely denying subjective fevers documented in the transcript."
+}

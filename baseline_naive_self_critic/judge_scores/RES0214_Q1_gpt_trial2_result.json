@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Reported symptoms: correctly identifies the four main symptoms in the Gold Answer (fever, stuffy nose, sore throat, muscle aches). However, it incorrectly states the patient “also reported a rash” later; the transcript indicates a rash occurs with penicillin allergy, not a current symptom. For denials, it lists the correct set (cough, headache, neck stiffness, nausea, difficulty swallowing), but it wrongly claims these were denied due to “lack of mention” and misrepresents the transcript (the patient explicitly denied each when asked). It also cites [P-27] as an explicit negative relevant to that list, but [P-27] is about neck swelling, not those key symptoms.",
+    "completeness": "Includes all four presenting symptoms and names all five queried negative symptoms. However, it does not accurately capture that these were *explicitly denied when asked* (as required by the question), and it omits the key nuance around swallowing (she said no difficulty swallowing—‘it just hurts’—and confirmed she could swallow food/liquids without coughing/aspiration). It also doesn’t mention vomiting alongside nausea (asked together), though nausea denial is included.",
+    "faithfulness": "Contains multiple elements not grounded as stated: (1) claims the patient reported a rash as a symptom; (2) asserts denial based on “lack of mention,” despite clear explicit denials in the transcript; (3) uses an inaccurate citation ([P-27]) to support denial of the queried symptoms. These are notable faithfulness issues relative to the transcript.",
+    "relevance": "Mostly focused on the asked items (four reported symptoms and denials of the specified clinically significant symptoms). Minor irrelevant tangent about a rash/allergy and some unnecessary commentary about “lack of mention.”"
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 3.0,
+  "summary": "The answer identifies the main reported symptoms and names the correct denied symptoms, but it mischaracterizes the denials (explicit vs implied), includes an incorrect rash claim, and uses inaccurate support/citations, reducing correctness and faithfulness."
+}

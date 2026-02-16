@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "- Nasal symptoms: Correctly identifies stuffy nose and runny nose, but omits the key evolution (stuffy first, then mostly runny) and duration (1 week).\n- Character of discharge: Incorrect/insufficient. The transcript explicitly states the discharge was “mostly clear” [P-5]; the Generated Answer does not mention “clear” and instead vaguely references “congestion and drainage,” which is not the discharge character.\n- Denied symptoms: Lists several true denials (cough, sore throat, SOB, fevers/chills, loss of taste/smell), but wrongly claims the patient did not explicitly say “no” (they did at [P-4], [P-7], [P-16]).",
+    "completeness": "Key Gold Answer points covered vs missed:\n- Covered: stuffy nose; runny nose; denials of cough, sore throat, shortness of breath, fevers/chills, loss of taste/smell.\n- Missed: discharge described as “mostly clear”; denial of post-nasal drip/back-of-throat drainage (“just mostly for my nose”); timeline/details (1 week; initially on-and-off; stuffy first then mostly running); mild fatigue.\nOverall, it captures some major denials but misses multiple key nasal/discharge specifics.",
+    "faithfulness": "- Some statements are not faithful to the transcript:\n  - Claims the patient did not explicitly state “no,” which contradicts multiple explicit “No” responses.\n  - Attributes characterization of discharge to the physician’s phrasing at [D-6] rather than the patient’s explicit description at [P-5].\n- The denied-symptom list is mostly consistent with transcript content, but the justification (“not reported and consequently not present”) is an inference and undermines grounding.",
+    "relevance": "The response is largely focused on the asked elements (nasal symptoms, discharge, denied associated symptoms). Minor irrelevant framing (“knowledge graph”) and includes extra non-target denials (headache/nausea/vomiting), but still mostly addresses the question."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 3,
+    "relevance": 4
+  },
+  "average_score": 3.0,
+  "summary": "Partially answers the question with some correct symptom denials, but it fails to report the key discharge description (“mostly clear”) and includes statements that contradict the transcript (e.g., claiming the patient did not explicitly say “no”)."
+}

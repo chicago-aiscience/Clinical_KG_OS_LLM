@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer lists respiratory symptoms including increased cough frequency [P-1], increased green-yellow sputum [P-1], hemoptysis [P-1], worsened dyspnea [P-1], and reduced exercise tolerance [P-4]. Systemic symptoms include possible fever [P-9-11], sinus pressure [P-12], mild headache [P-14]. Most bothersome is cough [P-12]. Generated correctly identifies main respiratory symptoms from [P-1] (cough, sputum, hemoptysis, dyspnea) and cough as most bothersome [P-12], but omits reduced exercise tolerance, fever, and headache; inaccurately states she 'did not report' fever/headache 'during this specific description in [P-1]' implying exclusion despite later reports in context of worsening; minor citation error citing [P-1] for most bothersome. Some factual errors/omissions but core respiratory facts correct.",
+    "completeness": "Key Gold points covered: increased cough, sputum production/color, hemoptysis, dyspnea (4/5 respiratory); sinus pressure (1/3 systemic); most bothersome cough (1/1). Missed: reduced exercise tolerance [P-4], fever [P-9-11], headache [P-14]. Gold pertinent negatives not required by question. Covers ~60-70% of key symptom points.",
+    "faithfulness": "All listed respiratory symptoms directly verifiable in [P-1]; sinus pressure in [P-12]; most bothersome cough in [P-12]. Statement 'did not report other... during [P-1]' verifiable as true for [P-1] specifically, though later symptoms relate to episode. Minor citation inaccuracy including [P-1] for most bothersome (actual [P-12]). No hallucinations, mostly grounded.",
+    "relevance": "Directly structures response around respiratory symptoms, systemic symptoms, and most bothersome symptom, perfectly matching question; minor explanatory note on scope of [P-1] does not detract significantly."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 4,
+    "relevance": 5
+  },
+  "average_score": 3.75,
+  "summary": "The Generated Answer accurately captures core respiratory symptoms and most bothersome symptom but is incomplete in systemic symptoms and exercise tolerance, with minor factual and citation discrepancies."
+}

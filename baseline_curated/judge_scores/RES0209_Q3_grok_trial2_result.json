@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer details classic asthma symptoms with precise citations (e.g., dry cough P-1/P-14, SOB P-1/P-19, wheezing P-15, chest tightness P-20), known asthma diagnosis, bronchodilator relief and specific escalation from once every two weeks to 5-6x/week (P-8), wheezing more frequent than use (P-17), triggers, and crucially negative infection screening to differentiate from new condition. Generated matches symptoms and history accurately, notes increase and triggers, but cites chest tightness to D-20 (question, not confirmation), vaguely describes increase without specific P-8 frequency, omits relief/reversibility and wheezing frequency details; introduces non-existent 'knowledge graph' as evidence (hallucination, minor factual addition). Core facts consistent, minor discrepancies.",
+    "completeness": "Gold key points: symptoms (4 specific), asthma history, bronchodilator relief/escalation (specific freq), wheezing frequency, triggers, infection rule-out (multiple negatives), supports exacerbation. Generated covers symptoms (4), history, general escalation, triggers; misses specific bronchodilator frequency (P-8), relief, wheezing > use, detailed infection screening (key for 'rather than new condition'), med adjustment hint. Covers ~60-70% (main symptoms/history/triggers but lacks differentiation details).",
+    "faithfulness": "All cited transcript quotes accurate (P-1, P-15, etc.); symptoms/triggers/history verifiable. Hallucinates 'knowledge graph' repeatedly as linking symptoms/bronchodilator to asthma (not in transcript, fabricated evidence source). Vague escalation cites P-1 only (actual freq in P-8). Some unverifiable claims (knowledge graph) but core content grounded; minor hallucination.",
+    "relevance": "Directly addresses question by explaining exact symptoms + bronchodilator increase as pointing to asthma worsening vs new condition; structured evidence list focused, minor extras (sister, allergies) tangential but supportive."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 3,
+    "relevance": 5
+  },
+  "average_score": 3.75,
+  "summary": "The Generated Answer is mostly correct and relevant but incomplete in key differentiators like specific bronchodilator frequency and infection rule-out, with minor faithfulness issues from hallucinated 'knowledge graph' references."
+}

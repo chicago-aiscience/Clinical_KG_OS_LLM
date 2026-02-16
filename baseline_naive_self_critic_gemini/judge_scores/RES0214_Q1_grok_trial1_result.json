@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer identifies four symptoms (stuffy nose, sore throat, fever, muscle aches) accurately from transcript. Generated Answer correctly lists these four symptoms with appropriate citations, matching Gold. However, Gold lists explicit denials of all five symptoms (cough [P-10], headache [P-8], neck stiffness [P-7], nausea/vomiting [P-5], difficulty swallowing [P-24-26]), all verifiable in transcript. Generated incorrectly states only cough denied and 'no evidence' for the other four, directly contradicting Gold and transcript evidence. This is a significant factual error/contradiction on the second key part of the question.",
+    "completeness": "Gold key points: 1. Stuffy nose [P-1, P-2]; 2. Sore throat [P-1]; 3. Fever [P-1, P-3]; 4. Muscle aches [P-13-16]. All four covered in Generated. Denials: all five listed in Gold. Generated covers only cough (1/5), misses headache, neck stiffness, nausea, difficulty swallowing, and falsely claims no evidence. Additional Gold details like timing/clarifications partially missed. Covers ~60% of key points (full symptoms, partial denials).",
+    "faithfulness": "Symptoms claims verifiable: fever/stuffy nose/sore throat [P-1], muscle ache [P-13]. Cough denial [P-10] accurate. However, claims of 'no evidence' for headache [but P-8 explicit 'no'], neck stiffness [P-7 'No'], nausea [P-5 'No'], difficulty swallowing [P-24-26 explicit] are hallucinated absences, contradicting transcript. Multiple hallucinated facts about transcript content.",
+    "relevance": "Generated directly lists the four symptoms and addresses the specific five denial symptoms queried, stating which (only cough) denied per its analysis. No tangents or off-topic content; perfectly focused on question despite errors."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.0,
+  "summary": "Generated Answer accurately identifies the four reported symptoms but significantly errs by underreporting denials of four clinically significant symptoms, hallucinating their absence in the transcript."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer specifies stuffy nose first 'just before' fever, sore throat around fever onset and ongoing, fever for 3 days, muscle aches concurrent with fever (2-3 days). Generated correctly identifies stuffy nose first, fever for 3 days, mentions sore throat ongoing and muscle aches, but implies sore throat and muscle aches as subsequent after fever rather than concurrent/around onset (minor discrepancy). Husband's timeline: Gold notes ~4 days before patient's fever; Generated notes past week vs 3-day fever (approximately correct, core fact intact). No major errors, minor timing nuances differ.",
+    "completeness": "Gold key points: 1) Stuffy nose first (covered). 2) Sore throat around fever onset, ongoing (partially: ongoing noted but timing as subsequent). 3) Fever 3 days after stuffy nose (covered). 4) Muscle aches concurrent 2-3 days (partially: mentioned but timing as subsequent). 5) Husband similar symptoms past week (~4 days before patient's fever, covered approximately). 6) Ongoing similar symptoms (covered). 7) Staggered onset/household transmission note (implied but not explicit). Covers ~85% of key points, misses precise timings and transmission inference.",
+    "faithfulness": "All claims verifiable: stuffy nose 'just before' fever [P-1], fever 3 days [P-1], sore throat [P-1], muscle aches past 2-3 days [P-13,P-14], husband similar symptoms past week [P-19,P-20]. Citations accurate. No hallucinations; 'subsequently mentioned' for muscle aches reflects conversation order, timing grounded in patient's report. Fully grounded in transcript.",
+    "relevance": "Generated Answer directly structures response around patient's symptom chronology (first stuffy nose, then fever/sore throat/muscle aches) and husband timeline comparison, perfectly matching question without off-topic content."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 5,
+    "relevance": 5
+  },
+  "average_score": 4.5,
+  "summary": "The Generated Answer is highly relevant and faithful to the transcript with strong coverage and only minor discrepancies in the precise timing of sore throat and muscle aches relative to the Gold Answer."
+}

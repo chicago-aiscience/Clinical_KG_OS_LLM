@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the key requested characteristics: dry cough, diarrhea frequency (5–6/day), vomiting count (two episodes), and headache severity (7/10). However, it contains important timing inaccuracies versus the Gold Answer/transcript: it states diarrhea began ~4 days ago, but the patient said it began ~2 days ago (P-28). It also implies vomiting onset was “a few days back,” whereas the more specific history is vomiting occurred yesterday with two episodes (P-32). These errors lower factual accuracy, though the core symptom characteristics asked in the question are largely correct.",
+    "completeness": "It covers the explicitly requested specifics (nature of cough, diarrhea frequency, number of vomiting episodes, headache severity) and includes cough/headache onset. It omits several Gold Answer details (e.g., no sputum/blood, cough stability, nausea today, vomiting content/no blood, and associated negatives), some of which help characterize the symptoms. Given the question focus, the main requested elements are present, but overall it does not capture a number of additional characteristics included in the Gold Answer.",
+    "faithfulness": "Most statements are grounded in the transcript with bracketed citations. However, the diarrhea onset (~4 days) is not supported (contradicted by P-28), and the vomiting timing is presented in a way that conflicts with the clearer account in P-32. The phrase “knowledge graph information provided” is also not supported by the transcript. These issues indicate some unfaithful/inaccurate use of the source.",
+    "relevance": "The response stays focused on gastrointestinal and respiratory symptoms and the requested characteristics (cough type, diarrhea frequency, vomiting count, headache severity). It does not add major tangential content."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 3,
+    "relevance": 5
+  },
+  "average_score": 4.0,
+  "summary": "The answer is relevant and captures the main requested symptom characteristics, but it has notable timing errors (especially diarrhea onset) and misses several descriptive details included in the Gold Answer."
+}

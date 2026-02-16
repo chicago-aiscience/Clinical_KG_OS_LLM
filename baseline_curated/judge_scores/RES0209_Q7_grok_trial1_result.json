@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer details diagnosis at age 8 (now 10), baseline bronchodilator use once every two weeks with specific triggers, and current two-week exacerbation with precise symptom escalation (nonstop dry cough, wheezing > bronchodilator use, SOB, chest tightness) and usage to 5-6 times/week; Generated Answer correctly notes diagnosis at 8, current symptoms (cough, SOB, wheezing), and general increase in usage/triggers but omits baseline frequency specifics, current precise frequency, chest tightness, wheezing nuance, two-week duration, and no precipitant; misattributes exercise trigger to diagnosis time and links nighttime symptoms to bronchodilator use; main evolution point correct but significant factual discrepancies on key metrics.",
+    "completeness": "Gold key points: diagnosis age 8/now 10, baseline bronchodilator once/2wks, triggers (exercise/cold/seasonal), two-week exacerb, symptoms (dry cough nonstop, wheezing lots, SOB, chest tight), bronchodilator 5-6x/wk, wheezing>use, nighttime every other day, no precipitant; Covered: diagnosis age 8, current symptoms (cough/SOB/wheezing), vague bronchodilator increase, some triggers; Missed: current age, baseline freq, two-week period, chest tightness, precise usage freqs, wheezing>use detail, no precipitant; covers ~60% (main progression partially).",
+    "faithfulness": "Verifiable: diagnosis [P-2], current symptoms/cough/wheezing/SOB [P-1,P-15], bronchodilator more [P-1,P-8], triggers [P-9,P-11]; Unverifiable/hallucinated: exercise trigger 'at diagnosis', nighttime symptoms 'indicating near-daily bronchodilator use' (P-18 is symptoms only, not use), baseline nighttime 'not happening as much' (P-18 current), 'knowledge graph provided' (absent); multiple misinterpretations and fabrications.",
+    "relevance": "Directly structures temporal evolution (diagnosis, baseline vs current, triggers), addresses symptom/usage changes per question, minor tangent on triggers but focused on progression without off-topic content."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer captures the general progression of asthma worsening but lacks completeness and faithfulness due to omitted specifics, factual misattributions, and hallucinations regarding bronchodilator frequencies and baseline details."
+}

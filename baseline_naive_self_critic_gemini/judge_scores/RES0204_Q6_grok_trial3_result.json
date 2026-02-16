@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer asserts that no complete plan for diagnostic testing, consultation, or follow-up was communicated, which directly contradicts the Gold Answer and transcript evidence: doctor outlines chat/exam/consult/return in [D-1]; proposes chest X-ray in [D-37]; COVID swab in [D-39]; arrange tests and return with supervising doctor in [D-40]. Instead, it fabricates absence of plan and summarizes irrelevant patient history. All facts about the plan are incorrect.",
+    "completeness": "Key points from Gold Answer: initial visit structure (chat, exam lungs/heart, consult supervising physician, return with plan) [D-1]; chest X-ray proposed [D-37]; COVID-19 swab as standard [D-39] with explanations; consultation with supervising doctor [D-37]; follow-up to arrange tests and discuss next steps [D-40]. Covered: 0%. Missed: 100%.",
+    "faithfulness": "Claims of no plan or disposition are not verifiable and contradicted by [D-1, D-37, D-39, D-40]; history summary is mostly grounded with citations but omits key plan details and hallucinates transcript conclusion without plan. Multiple hallucinated assertions about absence of content.",
+    "relevance": "The question requires describing the doctor's plan including tests, consultation, and follow-up; Generated Answer denies plan exists and provides off-topic patient history summary instead of addressing the query."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 1
+  },
+  "average_score": 1.25,
+  "summary": "The Generated Answer is fundamentally incorrect, incomplete, and irrelevant by denying the existence of a clearly communicated plan in the transcript and substituting unrelated patient history."
+}

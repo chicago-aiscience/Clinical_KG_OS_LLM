@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly notes the core symptom pattern of nasal congestion/rhinorrhea for ~1 week (P-1, P-2) and references the clinician’s statement that this is “most likely a viral infection like the common cold” (D-39). It also correctly mentions the clinician’s remark that symptoms can take “a few weeks” to resolve (D-39). However, it introduces a non-transcript source (“knowledge graph”) and claims it explicitly links daycare exposure and Tylenol Cold to viral infection; that evidence is not part of the visit and is therefore factually unsupported relative to the Gold Answer/transcript. It also overstates daycare exposure as a ‘critical factor’ without acknowledging the nephew was not sick (P-12).",
+    "completeness": "Key Gold Answer points covered: (i) nasal congestion/runny nose and ~1 week duration; (ii) clinician expectation of a few weeks for symptom relief; (iii) daycare as a plausible viral exposure. Key points missed: (i) absence of cough, sore throat, SOB, fever/chills, and post-nasal drip (P-4, P-6, P-7); (ii) clear discharge/no colored discharge (P-5); (iii) lack of allergic triggers/exposures (no fumes/dust/animals) and no allergy history (P-22, P-28); (iv) arguments against bacterial cause (no fever, no headache, clear discharge) (P-7, P-14, P-5); (v) symptom progression from stuffy to mostly runny (P-3); (vi) lack of recent similar episodes (P-9). Overall, it captures a minority of the differentiating evidence.",
+    "faithfulness": "Several statements are not grounded in the transcript: repeated references to a “provided knowledge graph,” claims that it “explicitly links daycare exposure” to viral infection, and that Tylenol Cold is ‘associated with viral infections in the knowledge graph.’ These constitute multiple hallucinated/extra-source justifications. Transcript-grounded elements (duration, daycare mention, clinician’s viral impression) are accurate, but the added fabricated evidentiary basis reduces faithfulness.",
+    "relevance": "The response is generally on-topic (it attempts to justify viral vs other causes using symptoms, duration, and exposure, and cites the clinician’s conclusion). However, it does not directly address allergic vs bacterial differentiation as asked (e.g., clear discharge, lack of fever, lack of allergen exposure), and the ‘knowledge graph’ discussion is a distracting tangent."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.75,
+  "summary": "Partially answers the question with some correct transcript-based points, but misses many key differentiators (clear discharge, absent systemic/lower-respiratory features, lack of allergy exposures) and adds non-transcript “knowledge graph” claims that undermine faithfulness."
+}

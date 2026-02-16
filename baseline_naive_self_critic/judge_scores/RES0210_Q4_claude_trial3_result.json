@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly claims that the doctor did not ask about weight loss, recent travel, sick contacts, or chemical exposure. The Gold Answer clearly references these questions with specific dialogue markers: [D-22] for weight loss, [D-23] for travel, [D-24] for sick contacts, and [D-34] for chemical exposure. These exchanges are present in the transcript. The Generated Answer then provides alternative analysis that was not requested and contradicts the factual record.",
+    "completeness": "The Generated Answer fails to address any of the question's requirements. It does not identify the differential diagnoses associated with each of the four questions, does not discuss how the patient's responses helped narrow or maintain the differential, and instead provides irrelevant analysis of other symptoms. It covers 0% of the required key points from the Gold Answer.",
+    "faithfulness": "The Generated Answer contains a major hallucination by asserting that questions about weight loss, travel, sick contacts, and chemical exposure were never asked, when they clearly appear in the transcript at [D-22], [D-23], [D-24], and [D-34]. The alternative analysis provided discusses symptoms and risk factors but fabricates the premise that the requested information does not exist in the source material.",
+    "relevance": "The Generated Answer does not address the question asked. Instead of analyzing the differential diagnoses associated with the four specific questions (weight loss, travel, sick contacts, chemical exposure), it denies these questions exist and provides unrelated analysis of other clinical findings. This is completely off-topic relative to the specific question posed."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 1
+  },
+  "average_score": 1.0,
+  "summary": "The Generated Answer fails on all evaluation dimensions. It incorrectly denies that the doctor asked about weight loss, travel, sick contacts, and chemical exposure when these questions clearly appear in the transcript ([D-22], [D-23], [D-24], [D-34]). This fundamental error means it addresses none of the question's requirements regarding differential diagnoses for these specific screening questions. Instead, it provides irrelevant analysis of other symptoms not asked about. The response contains major factual errors, covers none of the required content, halluccinates the absence of documented questions, and is completely off-topic."
+}

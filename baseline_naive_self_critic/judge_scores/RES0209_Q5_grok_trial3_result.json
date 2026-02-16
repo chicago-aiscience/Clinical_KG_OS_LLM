@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the three triggers (exercise, cold air, pollen) with accurate citations matching the Gold Answer and transcript. It also correctly notes the family history of asthma in the sister and the exacerbation via increased bronchodilator use. However, it introduces significant errors: repeatedly references a non-existent 'knowledge graph'; misstates the clinical picture as 'suspicion of asthma' when the patient has a confirmed diagnosis since age 8; and hallucinates that goldfish could be a suspected allergen trigger, which contradicts the transcript and Gold Answer. These contradict the Gold Answer's precise focus on diagnosed asthma exacerbation and undiagnosed allergies suspicion.",
+    "completeness": "Key points from Gold Answer covered: three triggers with citations (exercise P-9, cold P-9/P-11, pollen P-11); family history (sister's asthma P-32). Partially covered: exacerbation via increased inhaler use (P-8 implied). Missed: explicit note of no other triggers (P-10); clinician's allergy probing and agreement ('that would make sense' D-13); no other family allergies (P-34); clinician's medication change suggestion (D-43) indicating insufficient rescue-only regimen. Covers ~60% of key points.",
+    "faithfulness": "Claims on triggers, symptoms (P-1, P-8, P-9, P-11, P-32), and goldfish (P-39) are verifiable in transcript. However, multiple hallucinations: 'knowledge graph' and its linkages not present; goldfish positioned as potential allergy focus not in transcript; 'suspicion of asthma' fabricates new diagnosis doubt despite confirmed history (P-2); environmental ruling out pets twisted to suspect goldfish.",
+    "relevance": "Directly addresses triggers, family history, exacerbation, and allergies (via pollen), relating them as in the question. Minor to moderate tangents: knowledge graph references and goldfish elaboration are off-topic; slight misframing as 'suspicion of asthma' instead of allergies but still ties to question elements."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer captures core triggers and family history but is undermined by hallucinations like 'knowledge graph' and goldfish suspicion, factual errors on diagnosis status, and incomplete coverage of clinician's allergy insights."
+}

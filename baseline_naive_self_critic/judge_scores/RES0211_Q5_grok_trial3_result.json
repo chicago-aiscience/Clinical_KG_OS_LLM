@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly claims that family history of father's allergies (present in P-33), cousin's asthma (P-30), and brother's recent cold (P-39, summarized as ~2 weeks in D-58) are missing from the transcript, directly contradicting the Gold Answer and transcript facts. It misinterprets the farm living situation (confirmed P-43-P-44, P-42, with only a dog P-48, not denying farm residence) and suggests symptoms match seasonal allergies despite Gold noting they precede allergy season (P-16-P-17). It introduces a non-existent 'Knowledge Graph.' These are significant contradictions with Gold Answer, making it mostly incorrect.",
+    "completeness": "Gold Answer covers: family hx (dad allergies P-33, cousin asthma P-30), allergies not yet seasonal (P-16/17), brother cold ~2wks (P-39/D-58), farm living (P-43/44), homeschool COVID (P-41), isolated household (P-42/45/46), only dog (P-48), pointing to intra-household transmission. Generated covers none of these key points (denies family hx and brother cold as missing, minimizes farm, ignores isolation/COVID context), covering <20%.",
+    "faithfulness": "Generated hallucinates absence of documented facts (family hx, brother cold) that are verifiable in transcript (P-30/33/39). Misreads farm as 'standard residence' contradicting P-42/43/44. Cites symptoms and own allergies accurately (P-1/16/20/25/48) but core claims (missing info, allergy conclusion) ungrounded and implausible given transcript. References fictional 'Knowledge Graph.' Multiple hallucinated facts.",
+    "relevance": "Question asks how specified factors (dad allergies, cousin asthma, brother cold, farm/homeschool COVID) collectively relate to symptoms. Generated denies most factors as missing/erroneous, pivots to patient's own allergies and non-farm home, failing to analyze or relate the queried elements directly."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 1
+  },
+  "average_score": 1.0,
+  "summary": "The Generated Answer is largely incorrect, unfaithful to the transcript, incomplete, and irrelevant by denying transcript facts and failing to address the specified relationships."
+}

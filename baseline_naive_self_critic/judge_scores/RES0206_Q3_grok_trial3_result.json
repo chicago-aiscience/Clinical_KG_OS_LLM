@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer clearly separates symptoms supporting COPD exacerbation (increased dyspnea [P-1], cough frequency [P-1], sputum volume [P-1], exercise tolerance [P-4]) from those supporting infection (green-yellow sputum [P-1], fever [P-9], sinus pressure [P-12], headache [P-14], sick contact [P-20]), with sputum/fever distinguishing infectious trigger. Generated Answer lists some overlapping symptoms (cough, sputum color, fever, sinus) but inaccurately claims they primarily indicate COPD exacerbation per non-existent 'knowledge graph,' contradicting Gold's distinction of infection trigger; misses key COPD symptoms like dyspnea and exercise tolerance; significant contradictions on differentiation.",
+    "completeness": "Gold key points: COPD symptoms (dyspnea, cough freq, sputum vol, exercise tol); infection symptoms (sputum color, fever, sinus, headache, sick contact); distinction via sputum/fever; past pattern [P-3]; excluded triggers [P-38, P-26]; no obj findings. Generated covers cough freq [P-1], sputum color/vol vaguely [P-1], fever [P-9], sinus [P-12], sick contact [P-20], past [P-3] (~50-60% coverage); misses dyspnea, exercise tol, headache, exclusions, no obj findings.",
+    "faithfulness": "Claims grounded in transcript include cough [P-1], sputum [P-1], fever [P-9], sinus pressure [P-12, but calls 'stuffy nose'], sick contact [P-20], past [P-3], doctor's assessment [D-43]. Multiple hallucinations: repeated 'knowledge graph' references not in transcript, false associations (sputum/fever as KG indicators of COPD exac, stuffy nose from KG); infers COVID-19 specifically beyond transcript.",
+    "relevance": "Directly structures response around symptoms supporting dual assessment and differentiation of sputum/fever, matching question; minor off-topic via hallucinated KG but overall focused."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.75,
+  "summary": "Generated Answer partially covers relevant symptoms but introduces hallucinations via 'knowledge graph' claims and contradicts Gold by blurring/misrepresenting the distinction between infection trigger and COPD exacerbation."
+}

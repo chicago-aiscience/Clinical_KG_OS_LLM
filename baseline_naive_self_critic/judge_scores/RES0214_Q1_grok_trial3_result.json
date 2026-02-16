@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the exact four symptoms matching the Gold Answer (fever with duration, stuffy nose preceding it, persistent sore throat, muscle aches not in joints) with appropriate citations. It also correctly lists the five specific symptoms as denied. However, it introduces a factual error by hallucinating a current 'rash' symptom from P-38 (which describes past allergic reaction to penicillin, not a current symptom, absent in Gold). It inaccurately states denials are due to 'lack of mention' rather than explicit responses when asked (contradicting Gold's emphasis), and mis-cites P-27 (neck swelling denial) as an example explicit negative for these symptoms. Some factual errors but main points correct.",
+    "completeness": "Gold key points: detailed four symptoms (stuffy nose first [P-1/2/3], sore throat persistent [P-1], fever terrible 3 days [P-1/3], muscle aches 2-3 days with fever, no joints [P-13/14/15]); explicit denials of the five with cites (cough P-10, headache P-8, neck stiff P-7, nausea/vom P-5, dysphagia details P-24/25/26), plus others. Generated covers all four symptoms with details/cites (~100%), lists all five denials (~100% core), but misses specific timings/clarifications, explicit quotes/cites for denials, and other negatives. Covers 80-99%.",
+    "faithfulness": "Symptoms fully verifiable with accurate transcript cites (P-1, P-13). Rash claim unverifiable/hallucinated as current symptom (P-38 is allergy history, not presenting complaint). Denials grounded in that she didn't affirm them, but 'lack of mention constitutes denial' not accurate (doctor explicitly asked and she denied at P-5/7/8/10/24-26); P-27 cite wrong (neck swelling, not listed symptoms). Multiple hallucinated/misattributed details.",
+    "relevance": "Perfectly structures response around reported four symptoms and the specific five queried as denied, directly matching question. Rash note and vague denial explanation are minor irrelevancies/tangents, no major off-topic content."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 4,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 3.25,
+  "summary": "The Generated Answer accurately lists the four reported symptoms and five denied ones but is undermined by hallucinating a rash symptom, mis-citing evidence, and incorrectly framing denials as lack of mention instead of explicit."
+}

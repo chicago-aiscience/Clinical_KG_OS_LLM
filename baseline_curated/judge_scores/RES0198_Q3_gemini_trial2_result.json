@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The generated answer correctly identifies the core diagnosis and the one-week duration. However, it misses several clinical facts from the gold answer that are necessary to differentiate the condition from bacterial or allergic causes, such as the clear quality of discharge, the lack of fever, and the absence of allergy history. It also hallucinates a 'knowledge graph' as a source of information.",
+    "completeness": "The answer misses the majority of the differential diagnosis reasoning. It fails to mention discharge quality (clear), absent features (no fever, no cough, no sore throat), and the lack of environmental exposures/allergy history. It covers less than 50% of the key points found in the gold answer.",
+    "faithfulness": "The generated answer hallucinates the existence of a 'provided knowledge graph' multiple times to justify its reasoning. While the symptoms and exposure (daycare) are in the transcript, the reference to an external knowledge structure is not grounded in the provided text.",
+    "relevance": "The answer is relevant to the question asked, focusing on why the doctor concluded it was viral. However, it lacks the 'rather than' comparative logic requested by the prompt (ruling out allergic/bacterial) beyond a superficial mention."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.75,
+  "summary": "The answer identifies the diagnosis and duration but relies on hallucinated sources and misses critical clinical evidence (negative symptoms and discharge quality) used to rule out other causes."
+}

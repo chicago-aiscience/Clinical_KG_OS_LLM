@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer cites transcript directly for symptoms (dry cough P-1/P-14, SOB P-1/P-19, wheezing P-15, chest tightness P-20), asthma history (P-2/D-3), bronchodilator relief/escalation (P-1/P-8), triggers (P-9/P-11), and infection screening negatives (P-14/P-21-P-28) to argue worsening asthma vs new condition. Generated Answer correctly identifies symptoms and escalation but introduces fictional 'clinical knowledge graph' (KG) relations (e.g., [dry cough --RELATED_TO--> asthma]) not in transcript or Gold, misattributes chest tightness to P-16 instead of P-20, and omits history, triggers, and infection ruling-out. Main point (worsening asthma) aligns, but significant discrepancies in evidence and method.",
+    "completeness": "Gold key points: classic symptoms (all 4 cited), diagnosis since age 8, reversible relief, exact escalation (once/2wks to 5-6/wk), wheezing > use, exercise/cold triggers, no infections/colds/contacts/etc/dry cough. Generated covers all 4 symptoms, general relief/escalation (not exact freq), but misses diagnosis confirmation, specific triggers, wheezing frequency detail, and entire infection screening (crucial for 'vs new condition'). Covers ~50-60% of key points.",
+    "faithfulness": "Transcript verifies symptoms (P-1 dry cough/SOB, P-14 dry, P-15 wheezing, P-20 chest tightness), escalation (P-8: once/2wks to 5-6/wk), relief (P-1/P-16). However, entire KG framework and specific relations (e.g., [wheezy --RELIEVES--> bronchodilator]) are hallucinated/not verifiable in transcript. Misquotes D-19 ('copping your wheezy'), indirect chest tightness link. Multiple hallucinated elements.",
+    "relevance": "Question specifies exact symptoms + bronchodilator escalation pointing to worsening asthma vs new condition. Generated directly lists those symptoms, ties to asthma/relief/escalation, concludes worsening asthma. KG is extraneous method but content stays on-topic, no major off-topic digressions."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer appropriately highlights the queried symptoms and medication escalation for worsening asthma but relies on hallucinated knowledge graph references and omits key transcript evidence like infection screening and patient history."
+}

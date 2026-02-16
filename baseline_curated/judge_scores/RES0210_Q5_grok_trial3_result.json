@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer precisely details smoking (pack/day [P-37], started age 15 [P-38]), occupational mitigating factors ([P-34]), family history ([P-42]), and ties to mechanisms (mucociliary clearance, pneumonia, COPD, malignancy, hemoptysis). Generated covers core facts (pack/day [P-37], occupation [P-33], family [P-42]) but omits age 15 start, P-34 occupational safety/mitigation (instead amplifies risk), hemoptysis explicitly, and specific mechanisms like pneumonia/COPD; includes irrelevant cannabis [P-40]; interpretations partially contradict Gold on occupational risk. Some factual errors/omissions but main points align. Score: 3.",
+    "completeness": "Gold key points: smoking details (2 citations, mechanisms, relevance to cough/hemoptysis); full occupational details (2 citations, mitigation); family details; collective (infection likely, vigilance malignancy). Generated covers smoking pack/day, partial relation; occupation consultant/Sarnia only; family full; collective high-risk/malignancy vigilance. Misses age 15, P-34 details, hemoptysis, pneumonia/COPD/mucociliary, ~50-60% coverage. Score: 3.",
+    "faithfulness": "Generated claims cite transcript accurately (e.g., [P-37], [P-33], [P-42], symptoms [P-1/15/17/18]); relations (smoking irritation, occupational irritants, family predisposition) plausible and grounded in general knowledge + transcript; minor stretch linking cannabis irrelevantly and assuming occupational exposure despite P-34 (but P-34 not contradicted directly); no major fabrications. Score: 4.",
+    "relevance": "Generated directly structures response around the three exact risk factors from question, elicits specific details with citations, explains relations to presentation (cough, pain etc.), and collective risk; no tangents, perfectly on-topic. Score: 5."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 4,
+    "relevance": 5
+  },
+  "average_score": 3.75,
+  "summary": "The Generated Answer is relevant and mostly faithful but lacks completeness in key details (e.g., smoking start age, occupational mitigators) and has minor correctness issues in interpretations and omissions compared to Gold."
+}

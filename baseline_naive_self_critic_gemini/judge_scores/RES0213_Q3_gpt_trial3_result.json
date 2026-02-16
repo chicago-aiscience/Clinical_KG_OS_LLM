@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer diagnosis is **anxiety-related / stress-induced chest pain** (non-cardiac). The Generated Answer instead labels this as **“Angina Pectoris (stress-induced angina)”** while also mentioning psychogenic chest pain. Calling it angina (ischemic heart disease) is not consistent with the Gold Answer and is poorly supported by the transcript (young patient, non-exertional pattern, improves with distraction, pleuritic quality with deep breath). Although the Generated Answer correctly highlights anxiety/stress features and history of anxiety, the primary diagnosis stated is substantially wrong relative to the Gold Answer.",
+    "completeness": "Key Gold elements covered: (1) symptoms occurring during solitary studying/walking (partially) and stress context; (2) past anxiety attacks; (3) academic stress; (4) anxious breathing/hyperventilation-type description; (5) father’s MI contributing to worry.\nKey Gold elements missed or inadequately captured: (a) the **central pattern** that pain **resolves with distraction / being with other people** (P-9, P-29) is not clearly stated; (b) the explicit patient statement that it happens when she is “alone with my thoughts” (P-29) is only loosely paraphrased; (c) multiple **pertinent negatives** supporting non-cardiac/pulmonary causes (no fever, no exertional worsening, occurs at rest, no palpitations except during anxiety, no asthma) are largely omitted.\nAdded point not in Gold: lack of response to OTC meds; while present in transcript, it is not a key Gold support and the inference “not mechanical/musculoskeletal” is not established.",
+    "faithfulness": "Most cited observations (occurs while studying/walking, academic stress, anxiety history, breathing faster when nervous, tried Tylenol/Advil/Alka-Seltzer) are supported by the transcript. However, the diagnostic framing as **angina pectoris** / “stress-induced angina” is not grounded in the consultation narrative and conflicts with the symptom pattern (improves with distraction, not exertional), making the overall conclusion partially unfaithful to the source and the Gold reasoning.",
+    "relevance": "The answer stays focused on proposing a diagnosis and listing consultation observations, which is what the question asks. However, it introduces an inappropriate cardiac diagnosis (angina), which detracts from directly answering what the combined findings point toward per the Gold Answer."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 3,
+    "relevance": 4
+  },
+  "average_score": 3.0,
+  "summary": "The response is clinically focused and uses several correct anxiety-related observations, but its primary diagnosis of angina is inconsistent with the Gold Answer and it omits key supporting features (especially symptom resolution with distraction and pertinent negatives)."
+}

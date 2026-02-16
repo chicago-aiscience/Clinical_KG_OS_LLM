@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly claims that the doctor's stated plan is 'not included' in the transcript, directly contradicting the Gold Answer and the explicit plan in [D-58] (physical exam, consult physician, return to discuss next steps). It also misrepresents environmental factors by including 'colder weather' (not a home-specific factor assessed immediately before the plan) and omitting key ones like smoking [P-53], pets [P-55], fireplaces [P-56], and air filters [P-57], while only partially covering townhouse [P-50] and carpets [P-54]. This results in significant factual errors and contradictions.",
+    "completeness": "Gold Answer key points: doctor's plan (3 steps: physical exam, consult physician, discuss next steps), offer for questions [P-58], no specific tests; environmental factors (smoking [P-53], carpets [P-54], pets [P-55], fireplaces [P-56], air filters [P-57], townhouse [P-50], family context [P-49]). Generated covers 0% of plan points and only ~2 (townhouse, carpets) out of 7+ environmental points, <20% coverage.",
+    "faithfulness": "Main claim 'doctor's plan not included' is unverifiable and false per [D-58]; 'colder weather' verifiable in [P-38] but not a home environmental factor assessed before plan (D-53 to D-57 sequence); townhouse [P-50] and carpets [P-54] verifiable, but overall multiple inaccuracies and failure to ground in full transcript, with hallucinated absence of plan.",
+    "relevance": "Partially addresses environmental factors but completely misses/denies the doctor's plan (core first part of question), includes irrelevant 'colder weather' tangent, and does not cover the sequence 'before formulating that plan' accurately."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 2
+  },
+  "average_score": 1.5,
+  "summary": "The Generated Answer is fundamentally incorrect and incomplete by denying the existence of the doctor's plan despite clear evidence in the transcript, covering only a fraction of environmental factors."
+}

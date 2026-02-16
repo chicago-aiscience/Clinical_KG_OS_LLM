@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly states there is 'no explicit evidence' of the doctor's stated plan, directly contradicting the transcript [D-43] and Gold Answer, which quotes the plan to consult the supervising physician and return to discuss next steps. Self-care mentions Tylenol accurately but attributes it solely to cough relief (minor discrepancy, as Gold links to fever [P-8]); misses expectoration [P-13] and 'taking it easy' [P-10] as self-care. Aggravating factors match well (deep breathing [P-18/P-19], exertion [P-10], coughing [P-19]). Alleviating factors partially match (resting [P-10], Tylenol) but miss expectoration [P-13]. No mention of clinical management implications. Significant errors due to missing/denied plan and incomplete self-care.",
+    "completeness": "Covers ~60% of Gold key points: aggravating factors fully (deep breathing, coughing, exertion); partial self-care/alleviating (Tylenol, resting); misses doctor's plan entirely, expectoration as self-care/alleviating, fever context for Tylenol, and management implications note.",
+    "faithfulness": "Most claims verifiable with accurate citations (e.g., Tylenol [P-14], deep breathing [P-18/P-19], exertion [P-10]); adds plausible throat rawness from coughing [P-15]. However, falsely claims transcript 'concludes with [P-42]' (ignores [D-43/D-44]) and 'no explicit evidence' of plan, which is hallucinated absence contradicting transcript.",
+    "relevance": "Perfectly structured to directly address all three question components (doctor's plan, self-care, aggravating/alleviating factors) with no off-topic content."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 3,
+    "relevance": 5
+  },
+  "average_score": 3.25,
+  "summary": "The Generated Answer is mostly relevant and grounded but has significant factual errors and incompleteness, particularly in denying the doctor's explicit plan and omitting key self-care elements like expectoration."
+}

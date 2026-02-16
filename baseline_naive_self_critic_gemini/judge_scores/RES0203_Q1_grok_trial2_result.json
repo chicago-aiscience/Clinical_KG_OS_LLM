@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer specifies partial loss for both smell (can detect very strong bad odors) and taste (can taste very salty foods but not normal things like banana). Generated Answer correctly identifies partial loss for smell but incorrectly states complete loss for taste, contradicting both Gold and transcript (P-4). Cough is noted as mild but misses 'dry' and other details like non-productive. Duration (two days), consistency, timing, and no triggers are omitted. Significant factual errors on taste degree and incomplete symptom details.",
+    "completeness": "Gold key points: 3 symptoms (decreased smell partial with details, taste loss partial with details, mild dry cough), all for 2 days; smell/taste consistent; cough dry/non-productive, consistent, same onset, no triggers. Generated covers symptoms list, partial smell (no details), complete taste (wrong), mild cough (misses dry/details); misses duration, consistency, specifics on perceptions, cough details. Covers ~30% of key points.",
+    "faithfulness": "Transcript [P-1] supports initial reports of reduced smell/taste and mild dry cough; [P-4] explicitly states partial losses for both (smell not totally gone for bad odors, taste salty yes but not banana); [P-5,P-6,P-7,P-8,P-21] support consistency, dry, etc. Generated accurately cites [P-1] but hallucinates/misrepresents taste as complete (ignores [P-4]); uses 'anosmia/ageusia' not in transcript but descriptive; multiple inaccuracies on degrees/details.",
+    "relevance": "Generated Answer directly lists sensory (smell/taste) and respiratory (cough) symptoms with degrees and cites transcript, structured to match question; no off-topic content, though incomplete and partially erroneous."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer partially addresses the symptoms but contains a significant factual error by misclassifying taste loss as complete instead of partial, misses key details and coverage from the Gold Answer, and strays from transcript faithfulness."
+}

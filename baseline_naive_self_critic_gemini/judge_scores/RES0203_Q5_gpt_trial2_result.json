@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Gold Answer identifies the key potential exposure as a hiking trip ~2 weeks prior where strangers “brushed by” the patient and their partner [P-18, P-19]. The Generated Answer instead claims the exposure event was the patient’s household living situation with parents/sibling [P-29]. While living with family is true, it was not presented by the patient as the specific exposure event explaining symptoms, and no household illness was reported. The Generated Answer correctly notes the symptom cluster (loss of smell/taste, dry cough) and that the clinician felt symptoms were consistent with COVID-19 and ordered testing [D-39], but it gets the central exposure detail wrong.",
+    "completeness": "Key Gold Answer points covered: online school/staying home context (partially), COVID-consistent symptoms and testing recommendation (covered). Key points missed: the hiking trip two weeks prior, location proximity, close contact with strangers (“brushed by”), denial of known sick contacts, and that patient couldn’t identify another exposure source. Overall, it omits the main exposure history that the question asks for.",
+    "faithfulness": "Statements that the patient lives with parents and a younger sibling are grounded in the transcript [P-29]. However, framing this as the patient’s identified potential exposure event that could explain symptoms is not supported by the transcript (the patient instead cited hiking and incidental contact with others [P-18]). The symptom-based link to suspected COVID-19 is supported by [P-1] and [D-39].",
+    "relevance": "The response attempts to answer both parts of the question (exposure event and connection to suspected COVID-19) and discusses symptoms/testing. However, it does not provide the correct specific exposure event from the transcript, which is the core of the question."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 3,
+    "relevance": 3
+  },
+  "average_score": 2.5,
+  "summary": "The answer is partially grounded and symptom discussion is relevant, but it misidentifies the key exposure event (hiking/close contact with strangers) and therefore is incomplete and substantially incorrect for the main question."
+}

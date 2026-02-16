@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly states there are no explicit concluding remarks or stated management plan, directly contradicting the Gold Answer and transcript [D-33] which clearly outlines the plan to pass information to another doctor for evaluation. It partially covers some key clinical information (e.g., stress, anxiety history, family history, smoking, some symptom details) but omits or inaccurately represents others (e.g., no mention of 1.5-week duration, 20-minute episodes, rest/distraction pattern, specific failed OTC meds like Alka-Seltzer, many pertinent negatives like no trauma/fevers/asthma, living alone, multivitamin). Introduces unsubstantiated 'nausea-like symptoms' and KG references not in transcript. Significant factual errors and contradictions warrant a score of 2.",
+    "completeness": "Gold Answer covers the explicit plan from [D-33] and five detailed categories of key information: (1) full symptom characteristics, (2) failed OTC treatments, (3) pertinent negatives, (4) relevant history, (5) psychosocial context. Generated Answer misses the plan entirely (0%), covers partial symptoms (~20%), psychological stress (~50%), anxiety history (~50%), family/smoking (~70%), but misses failed meds, most negatives, living alone/multivitamin. Overall covers ~30-40% of key points, score of 2.",
+    "faithfulness": "Claims unverifiable: no concluding remarks (contradicts [D-33]), dialogue ends on anxiety (ends on [D-33]), nausea-like symptoms (absent), KG links (not in transcript). Some claims grounded (e.g., stress [P-15], anxiety [P-20/21], family [P-8], smoking [P-13/18]) with accurate citations, but multiple hallucinations and misrepresentations of transcript structure. Score of 2.",
+    "relevance": "Partially addresses key clinical information gathered (relevant but incomplete/off-topic with KG), but entirely fails to address the stated plan from concluding remarks, instead denying it exists. Some off-topic KG content. Score of 3."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "The Generated Answer significantly underperforms by missing the explicit plan, hallucinating elements like KG and nausea, and providing incomplete/inaccurate coverage of key clinical information."
+}

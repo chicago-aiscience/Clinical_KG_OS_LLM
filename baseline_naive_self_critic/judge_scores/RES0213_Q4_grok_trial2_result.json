@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Generated Answer identifies only 'Cardiac Issues (Heart Attack)' partially matching Gold's cardiac disease screening (exertional angina, palpitations, family history), but misses specifics like exertional worsening [D-10], palpitations [D-20], rest pain [D-11]; incorrectly frames as prompted solely by patient without doctor's direct probes; adds 'Anxiety Attacks' which Gold does not list as ruled out—in fact, patient's responses suggest it as likely cause, not excluded; entirely misses trauma/injury [D-5], infection/fevers [D-12,D-27], asthma [D-23,D-24], dyspnea [D-19], inherited arrhythmias [D-31,D-32]. Significant factual errors and contradictions warrant score of 2.",
+    "completeness": "Gold covers 6 key conditions with specific inquiries/citations: (1) Trauma [D-5], (2) Cardiac (multiple), (3) Infectious [D-12,D-27], (4) Asthma [D-23,D-24], (5) Dyspnea [D-19], (6) Inherited arrhythmia [D-31,D-32]. Generated covers ~10-20% via partial cardiac overlap; misses 5 entirely, adds irrelevant anxiety. Score: 1 (<20%).",
+    "faithfulness": "Partial grounding: family history [D-30-32], palpitations/anxiety link [D-20,P-20]; but hallucinates 'doctor screened for cardiac risk factors, likely inquiring about family history' (doctor did ask but more specifically sudden death/arrhythmias); misinterprets P-20 as 'excluding chest pain as independent' when it links symptoms to anxiety; infers unasked 'anxiety screening' via triggers; claims 'ruling out' anxiety opposite of transcript intent. Multiple hallucinations: score 2.",
+    "relevance": "Structure mimics Gold (lists conditions with inquiries/responses) and addresses screening/ruling out, but focuses on wrong/incomplete conditions (anxiety not ruled out, misses most Gold points), making it partially relevant with off-topic content: score 3."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.0,
+  "summary": "The Generated Answer is largely incorrect and incomplete, covering only a minor portion of the Gold Answer's ruled-out conditions while hallucinating anxiety as ruled out and misrepresenting cardiac screening."
+}

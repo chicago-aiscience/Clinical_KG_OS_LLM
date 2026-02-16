@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer is largely incorrect relative to the Gold Answer and the transcript. It states no diagnostic tests were ordered, but the doctor clearly ordered a chest X-ray and a COVID swab (D-37). It states no self-isolation instructions were given, but the doctor explicitly instructed the patient (if discharged) to stay away from everyone including his wife and self-isolate as much as possible (D-37). It states no timeline for results was mentioned, but the doctor said results should be out in 24–48 hours (D-37) and that a public health nurse would advise what to do if positive (D-37). It also misses that disposition (admit vs discharge) would be based on the results (D-37). These are direct contradictions of key transcript content.",
+    "completeness": "Key Gold Answer elements covered vs missed:\n- Diagnostic tests ordered (CXR + COVID swab): MISSED (and contradicted).\n- Physical exam planned (look at chest/physical exam): PARTIALLY covered (mentions physical exam but omits “look at your chest”).\n- Self-isolation instructions (stay away from everyone incl. wife; self-isolate as much as possible; public health nurse guidance if positive): MISSED (and contradicted).\n- Timeline for results (24–48 hours): MISSED (and contradicted).\n- Admit vs discharge criteria (based on results; no numeric thresholds): PARTIALLY addressed only in the sense of noting no numeric thresholds, but misses the explicit statement that the decision would be based on results.\nOverall, it captures only a small fraction of the required plan components.",
+    "faithfulness": "Although the answer does not invent many new clinical details, it repeatedly makes negative claims (e.g., no tests ordered, no isolation advice, no results timeline) that are directly refuted by the transcript (D-37). This constitutes unfaithful summarization/misrepresentation of the source content. The only clearly grounded item it includes is the plan to do a physical exam (D-38).",
+    "relevance": "The response is structured to address each part of the question (tests, physical exam, isolation instructions, timeline, admit/discharge criteria) and stays on-topic. However, it mostly answers by incorrectly stating that these elements were not present."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.0,
+  "summary": "The Generated Answer is on-topic but largely contradicts the transcript and omits most key management-plan elements (tests, isolation, result timeline, and disposition basis)."
+}

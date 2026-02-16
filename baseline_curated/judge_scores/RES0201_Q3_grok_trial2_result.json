@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer accurately lists sore throat, worsening difficulty breathing, reduced taste (without smell loss), fatigue/muscle aches as key symptoms supporting COVID suspicion per [D-43]; Generated incorrectly specifies only sore throat and breathing as explicitly cited (doctor said 'some symptoms' generally), fabricates doctor citing them specifically, misstates patient had loss of smell (patient said 'not smell' [P-19]), omits fatigue/muscle aches and exposure details, and contradicts Gold on smell status; significant errors including invented specificity and sensory reversal.",
+    "completeness": "Gold key points: doctor's statement [D-43], sore throat details [P-2,P-4], breathing details [P-8-10], reduced taste details [P-19-21, no smell loss], fatigue/aches [P-25-26], screening [D-19], exposure/immunizations; Generated covers doctor's statement, sore throat, breathing, partial taste but wrongly adds smell loss; misses fatigue/aches, details, screening, exposure; covers ~30-40% (2 main symptoms + partial sensory).",
+    "faithfulness": "Transcript verifies sore throat [P-2-4], breathing [P-7-11], reduced taste only no smell loss [P-19]; [D-43] is general 'some symptoms'; Generated hallucinates doctor specifying sore throat/breathing, 'loss of smell', entire 'Knowledge Graph' and COVID indicators not in transcript; multiple unverifiable/hallucinated claims.",
+    "relevance": "Directly addresses symptom combination for COVID suspicion and taste (mislabeled smell) role, though with errors and extraneous Knowledge Graph; mostly on-topic with minor off-topic invention."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "Generated Answer has significant factual errors, hallucinations like invented Knowledge Graph and smell loss reversal, incomplete coverage of symptoms, but remains mostly relevant to the question."
+}

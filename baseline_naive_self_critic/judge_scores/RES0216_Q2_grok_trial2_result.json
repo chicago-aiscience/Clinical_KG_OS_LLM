@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer lists three medications (salbutamol inhaler, Ramipril for HTN, occasional Tylenol for headaches) with accurate citations and details two specific adherence gaps for asthma: reducing daily inhaler from BID to QD (skipping evenings, [P-19]) and no rescue inhaler refill for ~2 years ([P-17,P-18]). Generated Answer correctly lists the three medications and conditions with proper citations but inaccurately reports adherence changes vaguely as 'limiting' medication ([D-34]) without mentioning dosing frequency reduction; it also incorrectly focuses on a future rescue plan ([D-35]) instead of past changes and hallucinates 'knowledge graph' confirmations. Significant omissions and misdirections contradict Gold's precise facts on adherence.",
+    "completeness": "Key points from Gold: 1) salbutamol (daily inhaler); 2) Ramipril for HTN [P-24,P-26]; 3) Tylenol occasional for headaches [P-27]; 4) daily inhaler prescribed BID but only morning lately [P-19]; 5) no issues with reduced dose [P-20]; 6) no rescue refill ~2 years, none available [P-17,P-18]; 7) not stopped daily recently [P-19]; 8) clinician summary of limiting [D-34]; 9) two gaps (halved frequency, no rescue). Generated covers 1-3 fully (~33%); partially covers 8 (~vague limiting); misses 4-7,9 entirely (~0% for adherence specifics). Overall ~40% coverage.",
+    "faithfulness": "Meds and citations [P-24,P-25,P-26,P-27] verifiable in transcript. 'Limiting' from [D-34] and future rescue plan [D-35] grounded. However, 'knowledge graph' mentioned twice for Ramipril/asthma links is fully hallucinated (no KG in transcript). No mention of specific dosing changes verifiable as described. Multiple unverifiable/hallucinated elements (KG, implied current rescue status via future plan).",
+    "relevance": "Directly lists current meds/conditions addressing first part of question. Attempts adherence changes but vaguely/off-topic with future plan instead of past dosing/rescue details; minor tangents (KG) but mostly focused on question."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer accurately captures current medications and conditions but substantially underperforms on detailing past asthma adherence changes, missing key specifics and introducing hallucinations."
+}

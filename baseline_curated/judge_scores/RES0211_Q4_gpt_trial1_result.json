@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer contains multiple factual errors relative to the Gold Answer and transcript. It incorrectly states that the transcript does not contain responses about eczema, EpiPen use, and night sweats—these are explicitly discussed (night sweats at D-9/P-9; EpiPen at D-21/P-21; eczema at D-32/D-33/P-33). It mis-cites asthma screening as occurring at D-58 (that is the physician’s summary); asthma was asked at D-29/P-29. It also incorrectly claims Jessica was not taking any medications other than Claritin, omitting/contradicting her stated birth control use (P-25 to P-28). While it accurately notes dry cough/scratchy throat/headache/feeling hot and that she denied asthma, the overall content is substantially inaccurate compared with the Gold Answer.",
+    "completeness": "The Gold Answer key screening areas include: night sweats (and response), productive cough/phlegm (and response), severe allergic reaction signs (breathing difficulty/facial swelling) and EpiPen status, personal asthma, family asthma history, eczema family history, plus rashes/skin changes, GI symptoms, and joint pain. The Generated Answer covers only a small subset (partially: asthma; general symptoms) and omits most targeted screening items and Jessica’s narrowing responses. Coverage is well under 20% of the Gold Answer’s key points.",
+    "faithfulness": "Several statements are not grounded in the transcript or are contradicted by it: claiming the transcript lacks eczema/EpiPen/night-sweats responses; claiming she takes no meds other than Claritin; and incorrect citation of D-58 for asthma/medication questioning. Some elements are grounded (dry cough, feeling hot, seasonal allergies), but the answer includes multiple clear unfaithful claims and citation errors.",
+    "relevance": "The question asks which specific conditions were systematically screened for through targeted questioning and Jessica’s responses. The Generated Answer addresses screening only narrowly (asthma, medication history) and shifts into general diagnostic interpretation (URI vs allergies), while failing to enumerate the asked-about conditions from the prompt and transcript. It is partially on-topic but does not adequately answer what was asked."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.0,
+  "summary": "Partially addresses the topic but is largely incorrect and incomplete, with multiple contradictions of the transcript and major omissions of the systematic screening elements."
+}

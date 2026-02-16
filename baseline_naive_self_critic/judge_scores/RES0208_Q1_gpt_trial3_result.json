@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The generated answer correctly identifies several non–chief-complaint symptoms supported by the transcript: loss of taste [P-4], generalized aches [P-20], subjective fever/feeling hot [P-4], and decreased appetite/reduced intake [P-2, P-4]. However, it introduces a mild inaccuracy by attributing “feels dry” to the throat [P-8]; in context, the patient is describing an early dry cough sensation (“it feels dry like it’s on its way”), not explicitly throat dryness. It also includes “laborious” breathing/difficulty with deep breaths [P-3], which is essentially elaboration of the chief complaint (shortness of breath) rather than an additional symptom beyond it.",
+    "completeness": "Key Gold Answer elements included: (1) loss of taste, (2) subjective fever, (3) decreased appetite/reduced intake, (4) generalized body aches. Key Gold Answer elements missed: (1) diminished sense of smell [P-6], (2) early dry cough ‘on its way’ with minimal coughing [P-7, P-8], (3) mild sore throat starting [P-9], (4) explicit denial of runny nose/congestion [P-10], (5) generalized weakness [P-2], and (6) mild headaches noted as similar to usual stress headaches [P-11–P-13]. Overall, the answer captures less than half of the specific additional symptoms described in the Gold Answer.",
+    "faithfulness": "Most statements are grounded in the transcript with appropriate references (taste loss, feeling hot, aches, poor appetite). The main faithfulness issue is the subtle misinterpretation of [P-8] as throat dryness rather than a dry cough sensation. The mention of a “knowledge graph provided” is extraneous and not supported by the prompt, but it does not materially change the clinical content.",
+    "relevance": "The response is largely focused on the requested additional symptom domains (sensory, UR, musculoskeletal, constitutional). However, it partially drifts by rehashing shortness-of-breath descriptors (laborious breathing) despite the question asking for symptoms beyond shortness of breath and fatigue."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 2,
+    "faithfulness": 4,
+    "relevance": 4
+  },
+  "average_score": 3.5,
+  "summary": "Mostly accurate and relevant but misses several key symptoms from the gold answer (smell loss, cough, sore throat, no congestion, weakness, headaches), resulting in low completeness despite generally faithful reporting."
+}

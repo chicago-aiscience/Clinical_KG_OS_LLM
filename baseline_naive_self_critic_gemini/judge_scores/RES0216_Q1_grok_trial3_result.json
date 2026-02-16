@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies chest tightness (duration, character, exacerbations) and dyspnea/SOB as present symptoms, aligning with Gold's description from P-1, P-5, P-7, P-9, P-10. It accurately notes denial of chest pain (P-1, P-5). However, it completely omits upper airway symptoms (hoarseness, phlegm, throat clearing from P-11), misrepresents SOB as denied with exercise (citing D-36 doctor's paraphrase, but patient reported exacerbation on walks contradicting this), includes irrelevant items like asthma history and worry as 'present symptoms' (not new complaints this visit), and falsely states that denials for cough, fevers, night sweats, chills, weight loss are absent from transcript (they are explicitly denied in P-11 to P-15 and anxiety/sweating in P-6). These are significant factual errors and contradictions with Gold.",
+    "completeness": "Gold key present points: 3-day diffuse chest tightness not localized/not pain (P-1,P-8,P-5), worse on inspiration/walking/getting up/deep breaths (P-1,P-5,P-9,P-10), difficulty full breath (P-7), upper airway (hoarse, phlegm, throat clearing, no cough P-11). Covered: tightness details and SOB (~60% of present). Missed: diffuse nature explicitly, all upper airway. Gold denied: chest pain (P-5), anxiety/sweating/doom (P-6), cough (P-11), fevers (P-12), night sweats (P-13), chills (P-14), weight loss (P-15). Covered: only pain (~15% of denies). Overall covers ~30-40% of key points.",
+    "faithfulness": "Claims on tightness and SOB verifiable (P-1,P-7,P-9). Asthma history and worry grounded (P-16,P-1). Pain denial accurate (P-5). However, SOB 'denied with exercise' misrepresents D-36 (doctor's summary; patient reported dyspnea on exertion P-1,P-7,P-9). Critical hallucination: asserts 'text segments do not contain patient's explicit responses' for cough/fevers etc. (D-11+), but P-11 to P-15 explicitly deny them; P-6 denies anxiety/sweating. Multiple inaccurate claims about transcript content.",
+    "relevance": "Directly structures response around reported symptoms (chest/respiratory) and explicitly denied screened symptoms as per question, with bullet lists. Minor tangents: asthma history and worry as 'symptoms'; note on missing data. No major off-topic content."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer captures core chest tightness and dyspnea but omits upper airway complaints and most denied symptoms while hallucinating absences in the transcript and misrepresenting exertional dyspnea."
+}

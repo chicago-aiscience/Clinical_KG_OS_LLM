@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer identifies Lipitor for cholesterol (correctly captured) and Tylenol (OTC acetaminophen) taken at home for fever/symptoms with partial effectiveness ('helps a little bit' [P-14]). Generated Answer correctly notes Lipitor and condition but erroneously states no OTC medications despite explicit mention of Tylenol in transcript, leading to significant factual error on OTC usage and effectiveness; also references non-transcript 'knowledge graph'.",
+    "completeness": "Gold key points: Lipitor for cholesterol [P-25-27] (covered), Tylenol OTC for symptoms, effectiveness 'little bit' [P-14] (missed), no other meds, non-medication relief [P-13] (not covered). Covers only Lipitor (~25% of key points).",
+    "faithfulness": "Lipitor claim verifiable [P-25-26]; 'no OTC' claim contradicted by [P-14] Tylenol mention; introduces unverifiable 'knowledge graph'; minor misspelling 'soar throat' vs transcript 'sore throat' [P-15]; multiple ungrounded assertions.",
+    "relevance": "Directly structures response around prescribed/OTC meds, conditions, and OTC effectiveness per question; no off-topic content despite errors."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 2.75,
+  "summary": "Generated Answer correctly identifies the prescribed medication but completely misses the OTC Tylenol and its reported partial effectiveness, resulting in significant inaccuracies and incompleteness."
+}

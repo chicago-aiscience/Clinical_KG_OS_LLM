@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer specifies 'acute lower respiratory tract infection, most likely acute bronchitis with possible bacterial superinfection or early community-acquired pneumonia, superimposed on a pre-existing chronic cough.' Generated Answer states 'bacterial infection of the respiratory tract, such as bacterial bronchitis or bacterial pneumonia,' which is similar but more definitively bacterial without hedging or noting the chronic cough context. Explanations have errors: productive cough misstated as present for three months (actually acute productive phase on chronic intermittent); greenish sputum concern for bacterial is consistent but Generated calls it 'highly specific'; fevers tied inaccurately to night sweats inquiry and fatigue rather than direct [P-4] report. Core diagnosis aligns but with discrepancies and factual errors in details.",
+    "completeness": "Gold covers precise diagnosis with chronic context, detailed contributions of each feature (productive as transition [P-2,P-12], green raises bacterial concern [P-9], subjective fevers [P-4]), doctor's synthesis [D-47], absences distinguishing acute from chronic, no vitals. Generated covers the three features and a similar diagnosis but misses chronic cough superposition, doctor's summary, distinguishing absences, and notes on lack of confirmation; partial coverage of explanations (e.g., cough duration wrong, fevers indirect). Covers about 60-70% of key points.",
+    "faithfulness": "Most claims grounded: productive cough [P-2], green sputum [P-9]. However, cough duration misrepresented as chronic productive; fevers cite inquiries [D-4,D-5] but evidence is [P-4], ties inaccurately to denied night sweats [P-5] and fatigue [P-19]; hallucinates '[Knowledge Graph]' not in transcript; medical interpretations (green=neutrophils/bacterial) plausible but not verifiable in transcript itself. Multiple hallucinated or unverifiable elements.",
+    "relevance": "Directly states diagnosis and explains each of the three specified features (productive cough, sputum color, subjective fever) with transcript citations, addressing the question precisely despite inaccuracies; no major off-topic content."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.25,
+  "summary": "The Generated Answer is mostly relevant and captures the main diagnostic idea but has factual inaccuracies, incomplete coverage of Gold's nuances, and hallucinations reducing faithfulness."
+}

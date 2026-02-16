@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the symptom cluster (dry cough, shortness of breath, wheezing, chest tightness) as classic for asthma in a child with known asthma and links increased rescue bronchodilator use to worsening control. However, it contains minor factual/attribution issues: it cites chest tightness as supported by D-20 (the clinician question) rather than the patient’s confirmation at P-20, and it does not accurately state the key quantitative change in bronchodilator use (once every two weeks → 5–6 times/week), only describing it qualitatively. It also introduces “knowledge graph” assertions not present in the Gold Answer/transcript.",
+    "completeness": "Gold Answer key points covered: classic asthma symptom profile; established asthma diagnosis; triggers (exercise, cold air, pollen/spring) and family history mentioned; increased bronchodilator use noted in general.\nKey points missed: the explicit magnitude of bronchodilator escalation (P-8: once every two weeks → 5–6 times/week); bronchodilator providing relief/reversibility (P-1); wheezing occurring even more frequently than bronchodilator use (D-17/P-17); and the clinician’s negative infectious/alternate-etiology screen (no cold/infection, sick contacts, travel, fever, loss of taste/smell, productive cough, GI symptoms). Overall coverage is partial (~50–79%).",
+    "faithfulness": "Most statements are grounded in the transcript (symptoms, asthma history, triggers). However, the answer references a “knowledge graph” and uses it as justification—this is not in the transcript and is therefore an ungrounded addition. It also mis-cites chest tightness to D-20 instead of P-20 and does not cite the specific bronchodilator frequency change from P-8. These issues reduce transcript-grounding.",
+    "relevance": "The response largely addresses the question by tying the classic asthma symptom constellation and increased rescue inhaler use to worsening asthma rather than a new condition. Minor tangents (knowledge-graph discussion, family history/allergy elaboration) and the failure to include the explicit before/after bronchodilator frequency slightly weaken directness, but it remains mostly on-topic."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 3,
+    "relevance": 4
+  },
+  "average_score": 3.5,
+  "summary": "Mostly correct and relevant, but only partially complete and weakened by ungrounded “knowledge graph” references, mis-citation of chest tightness, and omission of key Gold Answer elements (notably the explicit inhaler-use escalation and negative infectious screen)."
+}

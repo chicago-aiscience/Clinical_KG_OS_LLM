@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer specifies that the doctor cited 'fevers and fatigue and muscle aches' for general infectious process, and 'difficulty breathing' plus 'sore throat and cough' as additional symptoms preventing ruling out COVID-19 (D-36). Generated Answer incorrectly includes 'difficulty breathing', 'sore throat', and 'cough' under general infection symptoms, and attributes COVID-19 concern to 'loss of taste' and 'loss of smell' (not cited by doctor in assessment), contradicting Gold; also references non-existent 'knowledge graph'. Significant contradictions.",
+    "completeness": "Gold key points: general infection = fevers/fatigue/muscle aches; additional/COVID = difficulty breathing/sore throat/cough; loss of taste/smell not explicitly cited; respiratory focus leads to COVID swab. Generated covers fevers/fatigue/muscle aches (~50% of general) but misplaces respiratory symptoms and replaces COVID symptoms with taste/smell (~20-30% overall coverage).",
+    "faithfulness": "Generated quotes D-36 partially accurately but misinterprets grouping; hallucinates 'knowledge graph' (absent from transcript) confirming symptoms and linking taste/smell to COVID diagnosis; doctor did not cite taste/smell in D-36 assessment for COVID concern, only elicited them earlier; multiple unverifiable/hallucinated elements.",
+    "relevance": "Generated structures response around 'evidence of general infectious process' and 'additional distinct symptoms for COVID-19', directly mirroring question structure; minor off-topic tangent via 'knowledge graph', but overall focused on addressing the query."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer has significant factual errors in attributing symptoms to the doctor's cited categories, hallucinates a knowledge graph, and fails to cover the correct key points from the Gold Answer, though it maintains relevant structure."
+}

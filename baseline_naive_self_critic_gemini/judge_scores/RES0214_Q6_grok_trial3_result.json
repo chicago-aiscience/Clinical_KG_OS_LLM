@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer accurately captures the COVID-19 swab order and self-isolation recommendation for the patient and husband, matching the Gold Answer's core facts from [D-53] and [D-54]. However, it inaccurately frames the next steps as primarily 'ruling out COVID-19' and 'investigating influenza,' omitting the explicit physical exam [D-52] and consultation with the supervising doctor [D-55] stated in the Gold Answer; it also introduces a hallucinated '[MEDICAL_HISTORY: no flu shot]' tag and mischaracterizes the husband's symptoms as 'recent exposure.' These are significant discrepancies in the next steps, though the main elements of test and precautions are correct.",
+    "completeness": "Key points from Gold Answer covered: COVID-19 swab (100%), self-isolation for patient and husband (100%), patient agreement implied. Missed entirely: physical exam as immediate next step [D-52], consultation with supervising doctor before returning [D-55]. Partially covers next steps via swab but adds unsubstantiated influenza investigation, covering roughly 60-70% of key points.",
+    "faithfulness": "Claims about COVID swab, self-isolation, and 'keep to yourself' are directly verifiable in [D-53] and [D-54]. Influenza possibility is mentioned [D-54] but not as a specific ordered investigation. Minor hallucinations include '[MEDICAL_HISTORY: no flu shot]' (not in transcript format; flu shot info is in [D-53]/[P-53]) and framing husband's symptoms as 'recent exposure' (actually similar symptoms for a week [P-19]). Overall mostly grounded with minor unverifiable details.",
+    "relevance": "The answer directly structures response around the question's elements (test ordered, precautionary measures for patient/husband, next steps), with clear headings and transcript citations, containing no significant off-topic content."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 4,
+    "relevance": 5
+  },
+  "average_score": 3.75,
+  "summary": "The Generated Answer is mostly correct and relevant on the test and precautions but incomplete and partially inaccurate on next steps, missing key elements like physical exam and physician consultation."
+}

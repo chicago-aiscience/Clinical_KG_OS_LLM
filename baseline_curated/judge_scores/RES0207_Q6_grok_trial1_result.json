@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer claims there is insufficient data because the transcript contains only patient statements [P-1] to [P-35] with no doctor statements [D-xx], but the provided transcript clearly includes doctor statements from [D-1] to [D-38], including [D-37] which directly details the next steps discussed in the Gold Answer. This is a complete factual error and contradicts the Gold Answer's accurate summary of the doctor's communication.",
+    "completeness": "Key points from Gold Answer: doctor will review info with another doctor [D-37]; come back shortly to discuss [D-37, D-38]; possible tests and moving forward [D-37]; collaborative decision-making; no specific tests ordered; patient agreement [P-37]; farewell [D-38]. Generated Answer covers 0% of these points, instead refusing to answer based on a false premise about the transcript.",
+    "faithfulness": "Generated Answer hallucinates that no doctor statements are in the transcript ('only statements from the patient [P-1] through [P-35]'), but the transcript has full dialogue including [D-37]: 'I'm going to go over it with the doctor was working today and now we'll come back shortly... if there's any tests we want to do'. Patient info listed is accurate but irrelevant; main claim is entirely fabricated and not grounded in the transcript.",
+    "relevance": "The Generated Answer does not address the question about the doctor's communicated next steps, decision-makers, or follow-up actions; it dismisses the query entirely by falsely claiming missing transcript data, providing no relevant information."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 1
+  },
+  "average_score": 1.0,
+  "summary": "The Generated Answer is entirely incorrect, ungrounded, and irrelevant due to a hallucinatory misreading of the transcript that ignores all doctor statements, failing to cover any aspects of the Gold Answer."
+}

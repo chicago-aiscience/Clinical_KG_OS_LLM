@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer states symptoms began one week prior with stuffy nose first [P-3], shifting to mostly runny [P-3], influenced by decongestants [P-10], initially 'on and off' [P-1] but clarified as 'pretty constant' [P-8] overall. Generated Answer correctly identifies one-week onset, stuffy first then to runny [P-3], but inaccurately states both symptoms began together (minor discrepancy) and claims intermittent based solely on [P-1], contradicting Gold's emphasis on constant [P-8]; misses decongestants. Significant contradictions on symptom pattern and omissions lead to score of 2.",
+    "completeness": "Gold key points: 1-week onset [P-1,P-2]; stuffy first [P-3]; shift to runny [P-3]; decongestant influence [P-10]; initial on/off [P-1] but constant [P-8]; continuous overall, no improvement [P-1]. Generated covers onset, stuffy first, shift to runny (~50%); misses decongestants, constant clarification, no improvement, nuanced pattern assessment. Covers 50-79% of key points, score 3.",
+    "faithfulness": "All claims in Generated Answer (onset [P-1], stuffy first to runny [P-3], on/off [P-1]) are directly verifiable in transcript with accurate citations; no hallucinated facts or unverifiable details, fully grounded, score 5.",
+    "relevance": "Generated Answer is structured chronologically with sections on onset, progression, and summary bullets directly addressing which symptom first, predominant change, and frequency; no off-topic content, perfectly focused on question, score 5."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 5,
+    "relevance": 5
+  },
+  "average_score": 3.75,
+  "summary": "The Generated Answer accurately describes the symptom progression from stuffy to runny nose but fails on completeness and correctness by missing decongestant influence and misrepresenting symptoms as intermittent rather than constant."
+}

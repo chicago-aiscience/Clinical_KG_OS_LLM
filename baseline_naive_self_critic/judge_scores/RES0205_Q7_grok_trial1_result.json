@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer provides a precise timeline: flu-like symptoms ~2 weeks ago onset; sore throat 2-3 days resolved; runny nose/other flu 3-4 days resolved; whitish clear mucus productive cough first 4-5 days; dry cough after; intensity same, freq stable 3-4x/hr spontaneous; no fevers; only dry cough + soreness now. Generated correctly notes cough 2 weeks, flu-like first couple days, mucus whitish clear first 4-5 days, transition to dry after, others resolved 3-4 days. Errors: incorrectly phases mucus as initial 1-3 + 4-5 (it's first 4-5 total); omits intensity remained same, freq stable/details; no mention of no fevers or COVID test; calls soreness 'chest pain'; some factual discrepancies but core timeline intact.",
+    "completeness": "Gold key points: onset 2wks flu [P2]; sore throat 2-3d [P13]; runny/flu resolve 3-4d [P14]; mucus 4-5d whitish clear [P6]; dry after [P5/6]; intensity same [P7]; freq stable 3-4/hr spontaneous [P8-10]; no fever [P12]; soreness [P15/16]; COVID neg [P35/36]. Generated covers: cough 2wks; flu first 1-3d; mucus 4-5d appearance; transition; others 3-4d resolve; soreness. Misses: sore throat specific, intensity/freq no change details (key to question), no fever, COVID, precise freq. Covers ~60% of key points.",
+    "faithfulness": "Claims grounded: citations [P2,5,6,14,15] accurate to transcript. Mucus first 4-5 days correct [P6]; flu/others resolve [P14]; dry now [P5]; soreness [P15]. Unverifiable/hallucinated: 'knowledge graph' referenced twice (not in transcript); implies separate mucus phases not exact; 'chest pain' stretches 'hurts a little/sore'. Mostly verifiable but some fabrication.",
+    "relevance": "Directly structures timeline addressing question: initial flu timing, mucus duration/appearance, transition, other symptoms resolution, cough details. Minor issues: odd phasing, misses intensity/freq changes explicitly, soreness as proxy for intensity; no off-topic content."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 3,
+    "relevance": 4
+  },
+  "average_score": 3.25,
+  "summary": "The Generated Answer captures the core symptom timeline adequately but has factual discrepancies, omissions of key details like cough intensity/frequency stability, and minor hallucinations, resulting in moderate performance."
+}

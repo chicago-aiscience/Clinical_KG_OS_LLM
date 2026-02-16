@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The answer correctly identifies (1) onset ~3 months ago and (2) sleep disruption beginning ~1 month ago, and (3) recent change to productive greenish sputum in the past few days. However, it contains a major factual error regarding fevers: the transcript explicitly states she has felt “hot at night in the past couple days” (subjective fevers) [P-4], whereas the generated answer claims she did not confirm subjective fevers. It also understates specificity: sputum production began ~3 days ago [P-12] and nocturnal cough was “pretty well every night” for the last month [P-21], which the generated answer does not fully reflect.",
+    "completeness": "Key points from the gold answer that are covered: onset ~3 months ago; sleep disruption ~1 month; productive greenish sputum in the last few days. Key points missed/insufficient: (a) the cough was dry and intermittent for roughly the first ~2 months (“sometimes there, sometimes goes away”) [P-2]; (b) the nocturnal awakenings were essentially nightly and explicitly not present for all three months [P-21]; (c) subjective fevers/feeling hot at night in the last couple days [P-4]; (d) the ~3-day timing for productive sputum [P-12].",
+    "faithfulness": "Most statements are grounded in the transcript, but the claim that she has not explicitly confirmed subjective fevers contradicts [P-4]. The mention of night sweats inquiry is true, but it is used to support an incorrect inference (no fevers). Citations also include an odd reference to [D-13] for onset, though onset is supported by [P-2] and [P-13]. Overall, there is a notable unfaithful/contradictory element regarding fever.",
+    "relevance": "The response is largely focused on the requested cough timeline (onset, sleep disruption, sputum change). The night sweats discussion is a minor tangent but still related to constitutional symptom timing; however, it detracts by misrepresenting the fever information."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.75,
+  "summary": "The answer captures the broad timing of onset, sleep disruption, and productive green sputum, but it incorrectly denies subjective fevers and omits key nuances (intermittent dry phase and nightly awakenings), reducing correctness, completeness, and faithfulness."
+}

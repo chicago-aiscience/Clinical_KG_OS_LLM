@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer provides a precise timeline: runny nose ~1 week ago, raspy cough Friday, cough worsens Sunday with yellow sputum + red spots starting together, fever Monday, chills Tue-Wed, chest pain noticed last day (Tue). Generated Answer inaccurately states raspy cough 'couple of days' prior (ignores Friday onset), fever 'next day' after cough vaguely (not specifying Monday), sputum Sunday correct, chills last two days correct, but chest pain lacks day and wrongly attributes 'raw' feeling to chest via sore throat citation (P-15). Worsening description vague and misses key progressions like exertional dyspnea. Significant factual discrepancies.",
+    "completeness": "Gold covers runny nose, Fri raspy cough, Sun bad cough + sputum + red spots, Mon fever, Tue-Wed chills, Tue chest pain onset, exertional dyspnea, sore throat, overall worsening to hemoptysis/fever/chills/pain/dyspnea. Generated covers sputum Sunday, chills last two days partially; misses runny nose, precise Fri cough, Sun cough worsening, Mon fever exactly, chest pain day, dyspnea, sore throat as separate; worsening phases incomplete/vague. Covers ~30-40% of key points.",
+    "faithfulness": "Claims like cough 'couple days' [P-1] partial but ignores P-3 Friday; fever [P-5] ok but context wrong; sputum [P-6,P-7] ok; chills [P-9] ok. Hallucinates 'knowledge graph'; misquotes P-15 (sore throat raw) as chest raw; P-5 not about ignoring cough; links pain to coughing progression inaccurately; unverifiable 'prodromal/infectious signs'. Multiple hallucinations and citation errors.",
+    "relevance": "Directly structures timeline for the five specified symptoms and worsening over week, though inaccurate; minor extras like self-treatment but focused on question."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer partially addresses the timeline and worsening but contains significant factual inaccuracies, incomplete coverage, and hallucinations compared to the Gold Answer."
+}

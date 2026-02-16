@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer contains several factual errors compared with the Gold Answer/transcript. It incorrectly states Jessica did not explicitly deny sputum production; in fact she clearly denied bringing anything up ([P-5]) and denied phlegm ([P-6]). It also incorrectly claims the transcript contains no information about nausea, joint pain, or rashes; Jessica explicitly denied nausea/vomiting ([P-11]), denied joint aches ([P-13]), and effectively denied rashes/skin changes (“I don’t think so” [P-10]). It labels “fever” based on the doctor’s summary ([D-58]); the patient’s report is feeling persistently hot ([P-7], [P-9]), which is close but the Generated Answer does not accurately capture the specificity. It adds post-nasal drip ([P-18]), which is mentioned but is not part of the core 3–4 day symptom cluster emphasized in the Gold Answer.",
+    "completeness": "It captures only some reported symptoms (dry cough, scratchy throat, headache) but misses several key reported symptoms in the Gold Answer: feeling ‘crappy/icky’/malaise ([P-1], [P-2], [P-14], [D-15]), feeling persistently hot day and night with clothing detail ([P-7], [P-9]), and tiredness ([P-13]). For denied symptoms, it misses/incorrectly excludes sputum/phlegm denial, rash/skin change denial, nausea/vomiting denial, diarrhea denial ([P-12]), joint aches denial, and denial of breathing difficulty from allergies ([P-18]). Overall it covers well under half of the Gold Answer’s key points.",
+    "faithfulness": "Several statements are not grounded or are contradicted by the transcript. The claim that Jessica did not explicitly deny sputum is contradicted by [P-5] and [P-6]. The claim that there is no information about nausea, joint pain, or rashes is contradicted by [P-10], [P-11], and [P-13]. While “post nasal drip” is grounded in [P-18], its inclusion as a main 3–4 day symptom is not clearly supported. These contradictions constitute multiple unfaithful elements.",
+    "relevance": "The answer attempts to address exactly what was asked (symptoms over 3–4 days and symptoms denied when asked) and stays on-topic, but due to major omissions and incorrect denials, it does not effectively satisfy the question."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The response is on-topic but substantially incorrect and incomplete, especially in falsely claiming the transcript lacks explicit denials for sputum, nausea/vomiting, rashes, and joint aches, and omitting several key reported symptoms."
+}

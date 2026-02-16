@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer accurately identifies the stuffy nose as the first symptom 'just before' the fever, matching Gold [P-1, confirmed D-2/P-2/D-3/P-3]. It correctly notes fever for 3 days, ongoing sore throat [P-1], and muscle aches [P-13]. Husband's symptoms for a week, indicating earlier onset, aligns with Gold. Minor discrepancy: sore throat listed after fever without specifying 'around fever onset,' and muscle aches as 'subsequently' vs. concurrent (Gold notes 2-3 days overlap [P-14/P-15]); core facts consistent. No major errors.",
+    "completeness": "Gold key points: (1) stuffy nose first just before fever [P-1,D2-3]; (2) sore throat around fever onset/ongoing [P-1]; (3) fever 3 days [P-1,D3]; (4) muscle aches concurrent past 2-3 days [P13-16]; (5) husband similar symptoms past week (~4 days before patient's fever) [P19-20]; (6) staggered household transmission [D51/53]. Generated covers stuffy nose first, fever 3 days, sore throat ongoing, muscle aches, husband week-long symptoms/earlier onset. Misses precise sore throat timing, muscle ache duration/concurrency details, exact 4-day gap, doctor's transmission note. Covers ~85-90% of key points.",
+    "faithfulness": "All claims grounded: stuffy nose 'just before' [P-1]; fever 3 days, sore throat [P-1]; muscle aches [P-13]; husband similar symptoms past week [P-19]. Citations accurate to transcript. 'Subsequently mentioned' for muscle aches interpretive but verifiable [P-13 after initial report]. No hallucinations or unverifiable details; fully grounded.",
+    "relevance": "Directly structures response around question: patient's progression (numbered chronology: first symptom, subsequent), then explicit husband timeline comparison. No tangents, perfectly focused."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 5,
+    "relevance": 5
+  },
+  "average_score": 4.5,
+  "summary": "The Generated Answer is highly faithful and relevant, with strong correctness and good completeness, minor gaps in precise symptom timing details."
+}

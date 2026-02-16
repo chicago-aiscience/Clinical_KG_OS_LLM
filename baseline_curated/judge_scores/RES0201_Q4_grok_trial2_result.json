@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly identifies only loss of smell as a denied symptom, missing the Gold Answer's comprehensive list (cough, runny nose, headaches, chest pain, loss of smell, fever, chills/night sweats, plus prior breathing issues, sick contacts, travel). It misframes patient responses (e.g., partial taste loss acknowledged, full smell denial). Differentials are largely invented or incorrect (e.g., anosmia as primary for common cold/influenza, contrary to evidence; uses positive symptoms like SOB instead of negatives), contradicting Gold's note of no explicit differentials in transcript and specific interpretations like narrowing from upper respiratory infections.",
+    "completeness": "Gold key points: denied cough [D15/P15], runny nose [D16/P16], headaches [D17/P17], chest pain [D18/P18], loss of smell [D19/P19], fever [D23/P23], chills/night sweats [D24/P24], prior breathing difficulty [D11/P11], sick contacts [D12/P12], travel [D13/P13]; screening pattern for differentials like upper resp infection, relevance of no chest pain to SOB, no fever/chills but still COVID suspicion, past mono noted. Generated covers only loss of smell (~10-15% coverage), misses all others and differential insights.",
+    "faithfulness": "Transcript verifies denials of cough (P15), runny nose (P16), headaches (P17), chest pain (P18), smell (P19 'not smell'), fever (P23), chills (P24), etc., which Generated ignores. Partial taste loss admitted (P19/P20), not fully denied as implied. Differentials (mono, strep, cold/flu exclusions) not in transcript; hallucinations include anosmia as 'primary' for cold/flu (false; more COVID-specific) and using positive SOB to distinguish rather than negatives. Doctor suspects COVID despite some negatives [D43].",
+    "relevance": "Addresses question by listing one denied symptom and attempting differentials vs COVID, but largely off-topic due to missing most negatives, inventing unsupported exclusions (e.g., strep/mono via positives), and incorrect COVID symptom profiling."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.0,
+  "summary": "The Generated Answer is significantly incomplete and factually inaccurate, covering only one minor negative finding while hallucinating unsupported differentials and ignoring the transcript's systematic screening of multiple denied symptoms."
+}

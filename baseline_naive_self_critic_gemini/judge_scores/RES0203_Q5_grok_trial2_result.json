@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Gold Answer identifies the hiking trip two weeks ago with the partner, where 'some people kind of brushed by us' [P-18], as the specific potential exposure event the patient pinpointed, noting they could not recall other sources [P-18] and denied sick contacts [P-17]. The Generated Answer incorrectly states the living situation with family [P-29] as the specific exposure event identified by the patient, which the patient did not identify as such; this is a major factual contradiction with the Gold Answer.",
+    "completeness": "Key points from Gold Answer: patient in high school online [P-36,P-37], mostly home [D-38,P-38], specific exposure hiking 2 weeks ago with partner, people brushed by [P-18,P-19], no other sources or sick contacts [P-17,P-18], lives with family but no illness [P-29], doctor tests due to symptoms [D-39]. Generated covers online classes/staying home (partial), symptoms, doctor test recommendation, but completely misses the hiking exposure (core point) and wrongly frames family living as exposure; covers <20% accurately.",
+    "faithfulness": "Transcript verifies living with parents/sibling [P-29], online classes [P-37], staying home [P-38], symptoms [P-1], doctor notes COVID consistency [D-39]; however, patient explicitly identifies hiking as potential exposure [P-18] ('I don't see where else...'), not family living, and denies sick contacts [P-17]; Generated hallucinates family living as the 'specific potential exposure event identified by the patient', which is not grounded in transcript.",
+    "relevance": "Generated Answer attempts to directly address the question by naming an exposure event (family living) and linking to COVID suspicion via symptoms/test, staying within the question's scope of exposure history and connection to diagnosis, with no major off-topic content; however, it uses the wrong event."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 1.75,
+  "summary": "The Generated Answer fails by misidentifying household living as the patient's specific exposure event instead of the hiking incident highlighted in the Gold Answer and transcript, resulting in poor factual accuracy, completeness, and faithfulness."
+}

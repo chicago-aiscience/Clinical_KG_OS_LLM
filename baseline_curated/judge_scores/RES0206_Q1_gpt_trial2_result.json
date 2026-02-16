@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly lists several key reported symptoms: increased cough, increased green/yellow sputum, small amounts of blood with hard coughing (hemoptysis), and worsened shortness of breath—all consistent with the Gold Answer/transcript [P-1]. It also correctly includes possible fever/feeling hot [P-9]. However, it is factually incorrect in identifying the **most bothersome** symptom as shortness of breath; the patient explicitly states **the cough** was “the most bothersome” [P-12]. This is a major error relative to the question’s second part.",
+    "completeness": "It captures 4 main respiratory symptoms (cough, sputum, hemoptysis, dyspnea) and one systemic symptom (possible fever). It **omits** other symptoms included in the Gold Answer: reduced exercise tolerance/functional limitation (walking dog/block became trickier) [P-4], sinus pressure [P-12], and mild headache [P-14]. It also omits the pertinent negatives listed in the Gold Answer (though these are less central to the question). Overall, it covers a majority but not all key points, and it misses the correct “most bothersome” symptom.",
+    "faithfulness": "Most symptom claims are well-grounded in the transcript with appropriate citations. However, the statement that the patient identified **shortness of breath as the primary/most bothersome symptom** is not supported and directly contradicts the transcript (patient says cough is most bothersome) [P-12]. This constitutes a significant unfaithful interpretation/hallucinated emphasis.",
+    "relevance": "The answer stays focused on the asked items (respiratory symptoms, systemic symptoms, and most bothersome symptom) and does not add major tangential content. The main issue is incorrectness/incompleteness rather than irrelevance."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 3,
+    "relevance": 5
+  },
+  "average_score": 3.5,
+  "summary": "Mostly relevant and partially accurate for reported symptoms, but it misses several systemic/functional symptoms and incorrectly states that shortness of breath (rather than cough) was the most bothersome symptom."
+}

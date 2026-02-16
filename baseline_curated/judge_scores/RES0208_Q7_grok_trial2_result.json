@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer categorizes symptoms into onset (SOB, fatigue/rundown/tired/weakness/reduced appetite, laborious breathing, body aches), day before (subjective fever), morning (loss of taste/smell, new), emerging (dry cough 'on its way', sore throat 'starting', mild headaches not new). Generated correctly identifies onset SOB/fatigue/malaise and recent fever/loss of taste. Errors: misplaces muscle aches and SOB to emerging (Gold has at onset), wrong citation for sore throat [P-6 is smell, not sore throat], attributes cough primarily to doctor [D-36 summary] instead of patient's 'starting' [P-7/8], omits smell/headaches/reduced appetite/weakness/labourious detail, adds 'knowledge graph' not in Gold/transcript. Some factual errors but core timeline structure correct.",
+    "completeness": "Covered: onset SOB/fatigue (incl. rundown/tired/weak as malaise), fever yesterday, loss taste morning. Partial: sore throat/cough emerging (but misplaced muscle aches/SOB). Missed: weakness/reduced appetite/labourious breathing explicitly, body aches onset, smell morning (new), headaches emerging, dry 'on way'/'starting' qualifiers, sensory newness [P-5]. Covers ~60-70% of key points.",
+    "faithfulness": "Most claims verifiable: SOB/fatigue/fever/taste/sore throat/cough/muscle aches from cited P/D turns. Issues: [P-6] inaccurately cited for sore throat (it's smell); cough/muscle aches/SOB attributed partly to doctor summary [D-36] rather than patient reports; 'worsening SOB' inferred but not explicit; 'knowledge graph' entirely absent from transcript (hallucination). Some unverifiable/inaccurate details but mostly grounded.",
+    "relevance": "Perfectly structures response into 3 timeline phases directly matching question (onset couple days ago, recent fever day before/loss taste morning, emerging at consultation), no off-topic content."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 3,
+    "relevance": 5
+  },
+  "average_score": 3.5,
+  "summary": "The Generated Answer provides a mostly accurate and relevant timeline reconstruction but has some factual misplacements, omissions, citation errors, and a hallucinated reference, leading to moderate scores across dimensions."
+}

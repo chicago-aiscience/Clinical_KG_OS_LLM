@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer contains several factual errors relative to the Gold Answer/transcript. It incorrectly claims the transcript does not contain responses about eczema, EpiPen use, and night sweats, when these are explicitly present (night sweats question/answer at D-9/P-9; EpiPen at D-21/P-21; eczema family history at D-32/D-33/P-33). It misstates medication use by implying she was taking only Claritin; Jessica also reports taking birth control (P-25–P-28) and says she is not taking Claritin right now (P-25). It cites the wrong line for asthma screening (uses D-58 rather than D-29/P-29), and D-58 is a summary, not the original targeted questioning. While it correctly notes Jessica denied asthma, the overall account is substantially inaccurate.",
+    "completeness": "The Gold Answer key points include screening for: night sweats (and response), productive cough/sputum, severe allergic reaction symptoms (breathing difficulty/facial swelling), EpiPen use, personal asthma, family asthma history, eczema family history, rashes/skin changes, GI symptoms (nausea/vomiting/diarrhea), and joint pain. The Generated Answer covers only a small subset (mainly asthma and a general symptom summary) and omits nearly all the targeted screening items and Jessica’s corresponding responses. Coverage is well under 20% of Gold Answer elements.",
+    "faithfulness": "Multiple statements are not grounded in the transcript or are contradicted by it: the claim that eczema/EpiPen/night sweats are not addressed; the claim she is not taking medications other than Claritin; and several mis-citations (e.g., using D-58 for asthma screening). It also adds interpretive conclusions (URI vs allergy) that are not stated in the transcript. Overall, there are multiple unfaithful/hallucinated or contradictory elements.",
+    "relevance": "The question asks which specific conditions were systematically screened through targeted questioning and Jessica’s responses. The Generated Answer partially addresses this (mentions asthma and some symptom review) but largely fails to list the specific targeted screens requested (night sweats, eczema, EpiPen-type reactions, etc.) and thus only partially answers the question."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 2
+  },
+  "average_score": 1.75,
+  "summary": "The Generated Answer is largely incomplete and contains multiple transcript-contradicted claims and misstatements, addressing only a small part of the targeted screening described in the Gold Answer."
+}

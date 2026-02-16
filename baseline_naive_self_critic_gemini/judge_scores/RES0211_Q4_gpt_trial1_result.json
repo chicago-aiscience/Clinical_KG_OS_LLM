@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer contains multiple statements that contradict the Gold Answer and the transcript. It incorrectly claims that eczema, severe allergic reactions/EpiPen screening, and night sweats were “not explicitly screened for,” when the transcript clearly includes targeted questions about night sweats (D-9), breathing difficulty/facial swelling and EpiPen (D-18, D-21), and eczema (D-32–D-33). It also incorrectly states Jessica “did not explicitly answer” the asthma question, though she answered “No” (P-29). It further implies there was no relevant sick contact, despite Jessica reporting her brother had a cold a few weeks ago (P-39–P-40). While it correctly notes the doctor screened for asthma and asked about illness exposure, the major omissions and contradictions substantially reduce accuracy.",
+    "completeness": "Key items from the Gold Answer mostly missing: (1) night sweats screening and response, (2) productive vs non-productive cough/phlegm denial, (3) severe allergic reaction screening (breathing difficulty/facial swelling) and mild symptoms only, (4) EpiPen status, (5) family history of asthma specifics (cousin only), (6) eczema family history denial, (7) rash/skin change denial, (8) GI symptom denial, (9) joint pain denial. The Generated Answer mainly covers asthma and exposure history, plus some allergy-timing context, but captures only a small fraction of the required differential-narrowing Q&A.",
+    "faithfulness": "Several claims are not grounded or directly contradicted by the transcript: stating certain screenings were not discussed (they were), claiming Jessica did not answer about asthma (she did), and suggesting no sick contacts (brother had a cold). It also references a “knowledge graph provided,” which is not part of the transcript evidence. Some content is grounded (dry cough, seasonal allergies, asthma question), but there are multiple unfaithful assertions.",
+    "relevance": "The response is on-topic (screening questions and responses to narrow the differential), but it focuses on only two conditions and incorrectly dismisses several explicitly asked screening questions that are central to the prompt (asthma, eczema, EpiPen-level allergy, night sweats). Thus it is only partially responsive."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "Partially on-topic but largely inaccurate and incomplete, with multiple contradictions of the transcript (missing/denying key screenings like night sweats, EpiPen-level allergy, eczema) and several unfaithful statements."
+}

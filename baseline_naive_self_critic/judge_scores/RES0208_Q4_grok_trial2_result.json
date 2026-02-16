@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly claims that the transcript does not explicitly contain the doctor asking about chest pain (D-16), palpitations/fast heartbeat (D-17), runny nose/congestion (D-10), and nausea/vomiting (D-15), which directly contradicts the Gold Answer and transcript evidence. It lists unrelated or inaccurately characterized symptoms (e.g., cough not fully denied [P-7/P-8], appetite reduced/not denied [P-2/P-4], taste/smell loss present [P-4/P-6]) instead of the Gold's list of 8 denied symptoms. Differentiation logic has partial overlap (e.g., cardiac, URI, GI) but is undermined by factual errors and false premise of absence in transcript. Overall, mostly incorrect and contradictory.",
+    "completeness": "Gold Answer covers 8 specific denied symptoms with citations (runny nose [D-10/P-10], vision/hearing [D-14/P-14], nausea/vomiting [D-15/P-15], chest pain [D-16/P-16], palpitations [D-17/P-17], abdominal pain [D-18/P-18], urinary [D-19/P-19], numbness [D-22/P-22]) and detailed differentiation (cardiac, GI, common cold, neuro, towards infection/COVID [D-36]). Generated covers 0% of these key points accurately, instead listing 3 irrelevant/mischaracterized symptoms and partial differentiation without matching specifics. <20% coverage.",
+    "faithfulness": "Claims of absent questions (chest pain etc.) are false and not verifiable in transcript (they are present). Citations like [P-8] for cough denial inaccurate (patient says 'maybe starting' [P-7]). Introduces 'knowledge graph' not in transcript/prompt (hallucination). Other claims (e.g., appetite denial) contradict transcript (patient reports reduced intake). Largely fabricated content.",
+    "relevance": "Addresses question structure by listing 'denied' symptoms and discussing differentiation for respiratory distress causes, but focuses on wrong symptoms and assumes unasked questions, making it partially off-topic from accurate review-of-systems details."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 3
+  },
+  "average_score": 1.5,
+  "summary": "The Generated Answer is fundamentally inaccurate, hallucinates absences in the transcript, misses all key denied symptoms from the Gold Answer, and provides unreliable differentiation."
+}

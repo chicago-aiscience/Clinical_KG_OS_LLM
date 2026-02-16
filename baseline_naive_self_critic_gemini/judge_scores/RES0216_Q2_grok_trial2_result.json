@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer misses Tylenol (occasional for headaches, per Gold [P-27]), lists only two meds vs. Gold's three; incorrectly claims no specific historical adherence changes despite Gold and transcript detailing skipping evening daily inhaler dose for 'a while' [P-19], now only morning [P-19/P-20], and no rescue refill for couple years [P-17/P-18]; simplifies salbutamol as 'daily' without dosing details or rescue distinction, contradicting Gold's core facts on adherence evolution.",
+    "completeness": "Gold key points: meds/conditions (salbutamol asthma [P-25], Ramipril HBP [P-24/P-26], Tylenol headaches [P-27]) - covers Ramipril and salbutamol (67%); adherence changes (BID prescribed but skipping PM 'for a while' now only AM [P-19/P-20], no rescue couple years/none available [P-17/P-18], not stopped recently [P-19], limiting meds [D-34], two gaps) - covers none, denies existence (~0%); overall 20-49% coverage.",
+    "faithfulness": "Grounded claims: Ramipril HBP [P-26], salbutamol mentioned [P-25] verifiable; ungrounded: 'knowledge graph' (absent), 'no specific information' on adherence changes (falsely denies P-17-P-20 details on dosing skips, rescue absence over years), implies only current daily without PM skip or rescue history; multiple hallucinations of data absence.",
+    "relevance": "Directly structures response around meds/conditions and adherence changes per question, but partially evades adherence history by claiming lack of info instead of extracting from transcript; no major off-topic content, remains focused on query elements."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "The Generated Answer partially covers medications but significantly underperforms on factual accuracy, completeness, and faithfulness by omitting Tylenol, denying explicit historical adherence changes present in the transcript, and hallucinating data gaps."
+}

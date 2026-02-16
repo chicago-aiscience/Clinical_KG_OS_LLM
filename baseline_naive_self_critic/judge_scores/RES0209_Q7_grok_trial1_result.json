@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer specifies diagnosis at age 8, now 10; baseline bronchodilator use 'once every two weeks or so' (P-8); current 2-week exacerbation with use 'almost everyday like five six times a week' (P-8), dry cough nonstop daytime, increased wheezing (more frequent than use, P-17), SOB (P-1,P-19), chest tightness (P-20), nighttime every other/2 days (P-18), triggers exercise/cold/seasonal, no precipitant. Generated correctly notes diagnosis age 8/now 10, current symptoms (cough dry continuous daytime P-1, SOB P-1, wheezing P-15, nighttime P-18), bronchodilator increase to near-daily, triggers exercise/cold/pollen. Errors/omissions: does not specify baseline or exact current frequency (vague 'near-daily' vs precise 5-6x/week); says past week vs clarified 2 weeks; misses chest tightness, wheezing>use nuance, no precipitant; adds goldfish as trigger (P-39 not identified as trigger, hallucinated); adds family history not in Gold evolution focus. Some factual errors and significant omissions on key evolution metrics, but core progression correct: 3.",
+    "completeness": "Gold key points: diagnosis age/duration; baseline use freq low, triggers; 2wk exac details (symptoms: cough, wheezing incr, SOB, tightness; use freq high; wheezing>use; nighttime; no precipitant). Generated covers: diagnosis/age; current symptoms (cough, SOB, wheezing, nighttime); use increase vague; triggers. Misses: baseline freq specific, exact current freq, chest tightness, wheezing nuance, 2wk duration precise, no precipitant; extras like goldfish/family. Covers ~60% (core symptoms/current increase yes, precise evolution metrics no): 3.",
+    "faithfulness": "Claims mostly grounded: age D-3/P-2; symptoms P-1/15/18/19; triggers P-9/11; use increase P-1/P-8 implied but vague. Citations accurate where given. Hallucinations/misrep: goldfish as 'potential trigger' (P-39 denies pets/just goldfish, not trigger); baseline freq omitted (P-8 explicit); current freq not quoted (P-8); P-9 'use it more' contextualized wrongly as current exac main vs triggers. Some claims not directly verifiable or twisted (goldfish major hallu), others plausible but incomplete: 3.",
+    "relevance": "Directly addresses evolution from diagnosis to baseline (vaguely) to current exac with symptoms/use increase; structured temporally; minor tangents (family hx, goldfish wrong but framed as risk factors); focused on question's timeline progression: 4."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 3,
+    "relevance": 4
+  },
+  "average_score": 3.25,
+  "summary": "The Generated Answer captures the general progression of asthma worsening and bronchodilator use increase but lacks precise frequencies, omits key symptoms/details from Gold, and includes a hallucinated trigger, resulting in moderate performance across dimensions."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Gold Answer diagnoses 'anxiety-related or stress-induced chest pain,' supported by specific situational patterns, history, stress details, breathing symptoms, patient insight, and pertinent negatives. The Generated Answer proposes 'Conversion Disorder (or Psychogenic Pain Disorder),' which is a mismatch—Conversion Disorder typically involves neurological symptoms like paralysis rather than isolated pain, and psychogenic pain is an outdated term; while psychologically linked, it contradicts the Gold's precise framing of anxiety/stress-induced pain without formal psychiatric labeling. Supporting points overlap partially (anxiety history, stress) but diverge on diagnosis and omit key Gold elements like detailed situational triggers and negatives. Significant factual contradiction on diagnosis warrants score 2.",
+    "completeness": "Gold key points: 1) Situational (alone vs. distracted, cites P-4,P-9,P-29); 2) Anxiety history (P-21,P-22); 3) Thesis stress (P-13,P-15,P-16); 4) Nervousness/breathing (P-19); 5) Patient links to stress (P-8); 6) Negatives (fevers P-12, exertional P-10, rest P-11, palpitations P-20, asthma P-23/24). Generated covers anxiety history (P-21), general stress (P-13), some anxiety-like pain (P-20), family fear/stress (P-8), no med relief (P-6, not in Gold keys); misses detailed situational citations, thesis specifics, breathing details, all negatives. Covers ~30% of keys. Score 2.",
+    "faithfulness": "Claims grounded: anxiety history [P-21], stress [P-13], anxiety-like [P-20], family fear [P-8], meds [P-6]. Hallucinations: repeated 'knowledge graph' (nonexistent), 'prompt notes,' interpretive 'displaced expression of conflict to gain attention/reduce stress' (not in transcript), 'organic nature ruled out' (overreach). Multiple unverifiable/hallucinated elements. Score 2.",
+    "relevance": "Directly names diagnosis and lists supporting observations with transcript citations, addressing question core; minor off-topic via hallucinations like knowledge graph. Score 4."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer misidentifies the diagnosis as Conversion Disorder instead of anxiety/stress-induced pain, covers only partial Gold points with hallucinations like 'knowledge graph,' though it remains mostly relevant."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer details hereditary risk (epilepsy runs in family, mom had it [P-26], genetic predisposition linked to patient's epilepsy [P-8]), medication non-adherence (missed Keppra [P-23], due to daughter's birthday [P-24], patient attributes seizure to this [P-9], normally infrequent seizures). Generated Answer covers core facts: forgot medication [P-9], epilepsy in family/mom [P-26], family history confirms predisposition [P-8, P-26]. Minor discrepancies: omits Keppra name, birthday detail, infrequent seizures note, but no factual errors or contradictions.",
+    "completeness": "Gold key points: 1) Family history of epilepsy (mom) [P-26]; 2) Links to patient's epilepsy diagnosis [P-8]; 3) Missed Keppra [P-23]; 4) Forgot due to birthday [P-24]; 5) Patient links to seizure [P-9]; 6) Infrequent seizures normally. Generated covers 1,2,3(partial),5; misses 4,6. Covers ~80% of key points.",
+    "faithfulness": "All cited claims [P-9, P-26, P-8] verifiable in transcript and accurate. 'Knowledge graph' reference unverifiable/not in transcript, introducing minor hallucinated element, but core content grounded.",
+    "relevance": "Generated Answer directly structures response around medication risk, hereditary risk, and family history relation to diagnosis, perfectly matching question without off-topic content."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 4,
+    "relevance": 5
+  },
+  "average_score": 4.25,
+  "summary": "The Generated Answer is highly accurate, relevant, and mostly complete/faithful, with minor omissions of details and a small unverifiable reference."
+}

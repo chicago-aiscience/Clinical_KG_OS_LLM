@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies most reported symptoms from the mother (dry cough worsening over days, runny nose, fatigue, fever details, loss of taste, reduced appetite), aligning with Gold. However, it inaccurately presents 'trouble swallowing' as a reported symptom when the mother was uncertain (P-15), omits shortness of breath uncertainty (P-8), and completely errs on the second part of the question: claims none of the specified symptoms (wheezing, sore throat, chest pain, chills, GI) were explicitly asked and denied, contradicting the transcript and Gold (e.g., D-7 wheezing denied P-7; D-14 sore throat denied P-14; D-13 chest pain denied P-13; D-19 chills denied P-19; D-22/23 GI denied P-22/23). It hallucinates incorrect doctor questions (e.g., seizures in D-44 is future advice, not current inquiry) and misattributes denials to P-32 (allergies). Significant contradictions on key denied symptoms.",
+    "completeness": "Covered from Gold: dry cough progression [P-1,P-5,P-12], fever details [P-1,P-2], fatigue [P-1,P-25], decreased appetite [P-15], possible loss of taste [P-17], runny nose [P-16]. Missed: shortness of breath uncertain [P-8]. Completely misses all explicit denials (sputum/blood [P-6], wheezing [P-7], chest pain/heart racing [P-13], sore throat [P-14], chills/night sweats [P-19], rashes [P-20], GI issues [P-22,P-23], etc.), which form ~50% of Gold's key points. Covers ~50-60% overall.",
+    "faithfulness": "Symptom claims mostly verifiable (e.g., cough [P-1,P-5,P-12], fever [P-1,P-2], etc.). However, hallucinations include: 'knowledge graph' (not in transcript); none of listed symptoms asked (false, e.g., D-7,D-13,D-14,D-19); doctor asking about seizures/neuro now (D-44 is hypothetical future); denials linked to P-32 (allergies, unrelated). Multiple unverifiable/misrepresented claims in denial section.",
+    "relevance": "Directly structures response around reported respiratory/systemic symptoms and doctor's questions/denials, mirroring question. Minor off-topic invention of non-asked symptoms, but focused on query without tangents."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer is partially correct and complete on reported symptoms but has significant factual errors, hallucinations, and omissions on explicitly asked-and-denied symptoms, undermining overall quality."
+}

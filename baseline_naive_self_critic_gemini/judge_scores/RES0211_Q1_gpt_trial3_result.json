@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The generated answer correctly identifies several reported symptoms (dry cough, scratchy throat, headache, feeling “really hot,” and feeling crappy/malaise) and correctly notes denial of breathing difficulty and lack of sputum/phlegm overall. However, it contains a major factual error in the parenthetical note: it claims nausea, joint pain, and rashes were “not mentioned,” when the transcript explicitly includes the doctor asking about these and Jessica denying them (nausea/vomiting [P-11], joint aches [P-13], rashes/skin changes [P-10]). It also frames sputum denial via a clinical definition rather than citing her explicit denial, though the underlying point is consistent with the transcript.",
+    "completeness": "Key reported symptoms in Gold Answer covered: dry cough, scratchy throat, headache, feeling hot, malaise/crappy. Missed from Gold Answer: explicit “icky” feeling, tiredness, and the more specific characterization that she felt hot persistently day and night. Key denied symptoms missed: rashes/skin changes, nausea/vomiting, diarrhea, and joint aches. Included extra symptoms (congestion/post-nasal drip) that are in the transcript but not part of the Gold Answer’s key symptom list.",
+    "faithfulness": "Most items are grounded in the transcript (cough/throat/headache/hot; plugged up/post-nasal drip; denial of SOB). But there are notable unfaithful elements: (1) the statement that nausea/joint pain/rashes were not mentioned contradicts the transcript; (2) “Fever” is inferred from “felt really hot” and justified with an external “Knowledge Graph definition,” which is not in the transcript. These reduce faithfulness.",
+    "relevance": "The response is largely focused on listing symptoms experienced and symptoms denied, matching the question. The only minor detour is the external/definitional commentary (e.g., “Knowledge Graph definition,” clinical definition of dry cough), but it remains mostly on-task."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 3.0,
+  "summary": "Partially answers with several correct symptoms, but misses multiple explicit denials and includes a clear contradiction to the transcript, lowering correctness and faithfulness."
+}

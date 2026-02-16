@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer details onset 4-5 days ago [P-1], trigger playing tag/out of breath [P-3], initial wheezing/difficulty deep breaths [P-2], fluctuating episodic pattern resolving with rest/recurring with activity [P-5,P-6], recent slight non-productive cough [P-1,P-31], single nocturnal wheeziness with trouble falling asleep [P-43,P-44], and negatives (no cyanosis [P-32], no fever [P-7], fine otherwise [P-9]). Generated correctly captures onset, trigger (tag/activity), and cough emergence but inaccurately attributes fluctuating pattern to past viral infections [P-15] (not this episode), adds unemphasized colder weather [P-38] and allergies [P-35] not central to Gold's progression, incorrectly cites [P-1] for tag (actual [P-3]), references nonexistent 'knowledge graph', and wrongly denies nocturnal episode despite clear transcript evidence—significant contradictions especially on nocturnal episode and extraneous causal links.",
+    "completeness": "Gold key points: 1) onset 4-5 days; 2) trigger tag/out of breath; 3) initial wheezing/difficulty deep breaths; 4) fluctuating: episodes resolve on rest, recur with activity; 5) recent cough, slight/non-productive; 6) single nocturnal wheeziness/trouble asleep; 7) negatives (no cyanosis/fever/well between). Generated covers: 1) fully; 2) fully; 3) partially (wheezy/SOB but misses deep breaths); 4) partially (fluctuating but wrong attribution, misses rest/activity detail); 5) partially (slight cough, misses non-productive); 6) none (denies); 7) none. Covers ~50% of key points, misses nocturnal entirely and several details.",
+    "faithfulness": "Claims verifiable: onset/trigger/cough [P-1,P-3]; colder weather [P-38]; allergies [P-35]. Unverifiable/hallucinated: 'knowledge graph' (absent); fluctuating due to past virals [P-15] (misapplied to current); no nocturnal info (falsely denies [P-43,P-44]); tag in [P-1] (wrong, it's [P-3]). Multiple hallucinations/misattributions, not fully grounded.",
+    "relevance": "Generated structures response around question elements (onset/trigger, fluctuating, cough, nocturnal) with sections matching query; adds minor tangents (past history, allergies, weather) but remains mostly focused on symptom development/progression without major off-topic digressions."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer partially addresses the symptom progression with correct onset and trigger but includes factual errors, hallucinations like a nonexistent knowledge graph, incorrect denial of the nocturnal episode, and incomplete coverage of key details from the Gold Answer."
+}

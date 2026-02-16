@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer introduces significant factual errors by claiming resolved symptoms including fever (denied in [P-12]), nausea/vomiting (denied in [P-19]), and belly pain (denied in [P-20]), incorrectly attributing them to [P-14]'s vague 'flu symptoms.' It also misattributes sore throat primarily to [P-14] instead of [P-13]. Persisting symptoms like dry cough and chest soreness are mostly accurate but lack details on frequency, triggers, and stability from Gold. Fabricated 'knowledge graph' references contradict Gold's transcript grounding. Overall, significant contradictions to Gold's accurate summary.",
+    "completeness": "Gold key points covered: persistent cough (partial), resolved sore throat/mucus/flu symptoms (partial, misses runny nose explicitly), persisting dry cough and chest soreness (with no independent pain). Missed: precise timelines (e.g., sore throat 2-3 days, mucus 4-5 days, flu symptoms 3-4 days), cough details (3-4x/hour, spontaneous, stable intensity/frequency), explicit pertinent negatives (no SOB, fevers, etc.). Invents non-existent symptoms, covering ~50-60% accurately. Score reflects partial coverage polluted by extras.",
+    "faithfulness": "Multiple hallucinations: fever, N/V, belly pain not in transcript (explicitly denied); 'knowledge graph' entirely fabricated; misuses [P-14] for denied symptoms. Verifiable claims: dry cough [P-5,P-6], mucus early [P-6], sore throat initial [P-13], chest soreness with coughing [P-15,P-16]. But pervasive unverifiable/inaccurate details make it ungrounded.",
+    "relevance": "Directly structures response around resolved vs. persisting symptoms matching the question; minor irrelevance from fabricated knowledge graph, but focused on reported symptoms without major tangents."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer has significant factual inaccuracies and hallucinations by inventing resolved symptoms contradicted by the transcript, partially covering Gold points but undermining reliability."
+}

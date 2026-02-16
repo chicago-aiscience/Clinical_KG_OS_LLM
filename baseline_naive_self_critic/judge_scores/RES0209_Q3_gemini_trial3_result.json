@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The generated answer contains a significant factual error: it claims chest tightness is not in the transcript, but it is explicitly confirmed in P-20. It also fails to explain the logic of why these factors point to asthma 'rather than a new respiratory condition,' whereas the gold answer explains that infectious etiologies were ruled out (denial of fever, sick contacts, etc.).",
+    "completeness": "The generated answer misses several key points from the gold answer. Specifically, it omits the specific frequency of bronchodilator use (once every two weeks to five or six times per week) which was provided in the prompt and transcript. Most importantly, it completely ignores the clinician's screening for infectious etiologies (no fever, no travel, etc.), which is the primary evidence for why this is NOT a new respiratory condition.",
+    "faithfulness": "The answer is partially unfaithful to the source material because it explicitly states that chest tightness is not cited in the transcript segments, which is incorrect (P-20: 'Do you feel it gets tight in your chest?' 'Yes'). This is a 'negative hallucination.'",
+    "relevance": "The answer is relevant to the question of identifying an asthma exacerbation but fails to address the comparative aspect of the question (why it is not a new condition) and fails to incorporate the specific metrics asked for in the prompt."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 3,
+    "relevance": 4
+  },
+  "average_score": 2.75,
+  "summary": "The answer fails to recognize key transcript details like chest tightness, ignores the provided frequency metrics, and misses the differential diagnosis logic required to rule out a new condition."
+}

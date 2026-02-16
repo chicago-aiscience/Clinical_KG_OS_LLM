@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies COVID-19 as the diagnosis investigated and that the test was negative, matching the Gold Answer. It accurately notes the hospital work environment, persistent cough, initial flu-like symptoms resolving except cough, and concern about coughing at work. Minor discrepancy: attributes some doctor questioning (e.g., fever, breathing) as part of prompting the investigation, but the test occurred prior to this consultation (two weeks ago at symptom onset), so these questions are post-testing H&P rather than prompting factors.",
+    "completeness": "Key Gold points covered: diagnosis (COVID-19), test disclosure and negative result [P-35], hospital worker [P-17/P-34], persistent cough, initial flu-like symptoms [P-14], coworkers scared [P-35]. Partially covers occupational exposure and PPE [P-17]. Missed or less detailed: explicit listing of flu-like symptoms (sore throat [P-13], runny nose [P-14]), precise test timing (two weeks ago [P-36]), staying home since testing [P-36]. Covers ~85% of key points.",
+    "faithfulness": "All claims are verifiable in the transcript with accurate citations (e.g., [P-14], [P-35], [P-17]). Persistence of cough despite resolved flu symptoms [P-14], hospital work and PPE [P-17], work anxiety [P-35], doctor questions on symptoms [D-11/12/13/etc.]. Minor interpretive stretch: 'fearing they might spread an infection' inferred from context of scared coworkers and prior test but not explicitly stated; doctor's questions framed as prompting investigation though they post-date the test. No major hallucinations.",
+    "relevance": "The Generated Answer is structured to directly address the question with sections on diagnosis, evidence prompting investigation, and testing results, with no off-topic content."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 4,
+    "relevance": 5
+  },
+  "average_score": 4.25,
+  "summary": "The Generated Answer is highly accurate, relevant, and grounded but has minor discrepancies in attributing prompting factors and misses some details on symptom specifics and test timing."
+}

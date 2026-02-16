@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer is factually incorrect relative to the Gold Answer. The transcript *does* contain the doctor’s stated end-of-visit plan in [D-37] (and is foreshadowed in [D-1]). The Generated Answer incorrectly claims that no plan/physical exam/next-steps process is included and that the transcript ends at [P-35], despite [D-36]–[D-38] clearly following.",
+    "completeness": "Key points from the Gold Answer that are missed:\n- Physical exam components: listening to heart and lungs (auscultation) and a “quick physical exam” [D-37].\n- Next-steps process: consult the supervising physician, review what was discussed, then return to the patient to decide next steps [D-37], consistent with [D-1].\n- Patient agreement to plan [P-37].\nThe Generated Answer provides none of these elements, so coverage is essentially absent.",
+    "faithfulness": "The Generated Answer is not well-grounded in the provided transcript: it asserts the transcript ends at [P-35] and that no subsequent doctor plan is included, which directly conflicts with the actual content in [D-36]–[D-38]. This is a major unfaithful claim (effectively a denial of present transcript content).",
+    "relevance": "The response is framed as answering the question about end-of-consultation plan and next steps, but it fails to provide the requested details and instead incorrectly states they are not present. It is on-topic in intent but does not substantively address the question."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 3
+  },
+  "average_score": 1.5,
+  "summary": "The Generated Answer is on-topic but largely incorrect and incomplete, and it is unfaithful to the transcript by denying clearly stated plan and exam elements found in [D-37]."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer is largely consistent with the Gold Answer: it correctly links Jessica’s scratchy throat, dry/nonproductive cough, subjective fever/feeling hot, headache, and malaise to a typical URI pattern, and it appropriately notes that lack of sputum argues against a productive lower-respiratory process. Minor inaccuracies include: (1) it states GI and joint symptoms are “not explicitly detailed” in the transcript, when they are explicitly asked about and denied ([P-11], [P-12], [P-13]); and (2) it introduces “knowledge graph” support, which is not part of the transcript or Gold Answer. These do not overturn the main conclusion but are factual/grounding issues.",
+    "completeness": "Key Gold Answer points covered: scratchy throat → cough sequence; dry cough; subjective fever/feeling hot; headache; malaise/“crappy”; lack of sputum/phlegm; absence of GI symptoms and joint pain as helpful negative findings. Key points missing or underemphasized: the typical 3–4 day timeline as a URI-consistent course (it mentions duration but doesn’t connect it to typical URI timeline), fatigue ([P-13]), household exposure from brother’s recent cold ([P-39]), and the explicit linkage that the doctor summarized and framed next steps based on this constellation (it partially cites [D-58] but doesn’t mention the exposure piece). Overall coverage is substantial but not complete.",
+    "faithfulness": "Most claims are grounded in the transcript with appropriate citations for cough, throat, feverishness, headache, malaise, and absence of GI/joint symptoms. However, the reference to a “knowledge graph” is not supported by the transcript, and the statement that GI/joint symptoms are not explicitly detailed contradicts the transcript where they are directly denied. There is also some added interpretation (e.g., ruling out pneumonia/bronchitis) that is plausible but not explicitly stated. These issues lower faithfulness.",
+    "relevance": "The response directly addresses how the symptom pattern (upper-airway symptoms + mild systemic symptoms + absence of sputum/GI/joint pain) supports the assessment of an upper respiratory infection, with minimal extraneous content."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 3,
+    "relevance": 5
+  },
+  "average_score": 4.0,
+  "summary": "The Generated Answer is clinically aligned with the Gold Answer and addresses the question well, but it misses a few Gold details (e.g., sick contact) and includes some ungrounded/incorrect statements (notably the “knowledge graph” reference and mischaracterizing GI/joint symptom documentation)."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer does not match the Gold Answer’s identified screening items. It incorrectly emphasizes fatigue/sleep disturbance/chest pain as the key “screened” constitutional symptoms, whereas the Gold Answer’s core denied constitutional symptoms were night sweats, unexplained weight loss/loose clothes, and hemoptysis. It also introduces incorrect clinical interpretations (e.g., calling this “chronic bronchitis”) and incorrectly links cat exposure to “feline/zoonotic tuberculosis,” which is not supported by the transcript or Gold Answer. It omits or misstates the exposure-risk screening (sick contacts, travel, IV drug use, cocaine/heroin use). Overall, it contains major factual/clinical errors relative to the Gold Answer.",
+    "completeness": "Key Gold Answer points missed: (1) denial of night sweats, (2) denial of unexplained weight loss/loose-fitting clothes, (3) denial of hemoptysis, (4) denial of sick contacts (class, recent contacts, roommate), (5) denial of recent travel/exotic locales, (6) denial of cocaine/heroin and IV drug use, (7) denial of stiff neck, nausea/vomiting, body pain, and (8) the purpose of these questions in excluding TB/chronic infections (and hemoptysis reducing concern for TB/malignancy). The Generated Answer covers essentially none of these correctly and instead adds non-Gold items (cats) and mischaracterizations. Coverage is well under 20%.",
+    "faithfulness": "Multiple claims are not grounded in the transcript: references to a “knowledge graph,” labeling the condition “chronic bronchitis,” and asserting cat exposure as a TB (\"feline/zoonotic tuberculosis\") risk. It also implies the transcript is vague about screened denials when in fact the transcript explicitly documents denials (night sweats, weight loss, blood in sputum, travel, sick contacts, drug use). Therefore, the answer contains substantial hallucination and misrepresentation.",
+    "relevance": "The response is loosely on-topic (constitutional symptoms/exposures and excluding serious disease like TB), but it fails to identify the specific denied symptoms and exposure risks actually asked in the visit and gives incorrect serious-condition rationale. Thus it only partially addresses the question."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 2
+  },
+  "average_score": 1.25,
+  "summary": "The Generated Answer is largely incorrect, omits nearly all key denied screening items and exposure risks from the transcript/Gold Answer, and includes several unsupported or hallucinated clinical claims (e.g., cat-associated “zoonotic TB” and “chronic bronchitis”)."
+}

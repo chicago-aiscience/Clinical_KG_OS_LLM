@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer directly contradicts the transcript and Gold Answer. The consultation *does* include an end-of-visit summary and plan in [D-47] and a closing statement in [D-48]. The doctor’s stated plan (“go review your story with the doctors”), summary assessment (chronic cough worsened over last 3 days, nighttime waking, green sputum, no blood, no constitutional symptoms), and what would guide next steps (supervising physician’s assessment after review) are all present in the transcript and captured in the Gold Answer. The Generated Answer incorrectly claims these are not available and that the conversation ends at [P-47].",
+    "completeness": "Key points from the Gold Answer that should have been included but were omitted:\n- End-of-consult plan: “go review your story with the doctors” [D-47].\n- Summary assessment: cough for months, worse last 3 days, nighttime awakening, greenish sputum, no blood, no constitutional symptoms [D-47].\n- Next steps guided by: supervising physician review/assessment; no tests or treatments ordered in this excerpt.\nThe Generated Answer provides none of these and instead asserts the information is missing.",
+    "faithfulness": "Multiple statements are not grounded in the transcript:\n- Claim that there is no doctor turn after [P-47] is false (there is [D-48]).\n- Claim that the consultation has not reached a conclusion is false (there is an explicit summary and plan in [D-47] and closing in [D-48]).\n- It lists symptoms like “night sweats” and “pleuritic chest pain” as part of the HPI; in the transcript the patient denies night sweats [P-5] and does not report pleuritic chest pain (only pain when coughing) [P-3].\nThese constitute clear unfaithfulness/hallucination.",
+    "relevance": "The response attempts to address the asked elements (plan, assessment, guiding info), but it does so by incorrectly stating they are unavailable. It does not actually answer the question with the content present in the transcript."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 2
+  },
+  "average_score": 1.25,
+  "summary": "The Generated Answer is incorrect and incomplete, contradicting the transcript by claiming the end-of-visit summary/plan is missing and adding unsupported symptom details."
+}

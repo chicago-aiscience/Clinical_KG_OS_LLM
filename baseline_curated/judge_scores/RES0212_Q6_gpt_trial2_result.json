@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "- The plan statement (“review your story with the doctors”) matches [D-47] and the Gold Answer.\n- The Generated Answer’s summary assessment adds an unstated diagnosis (“respiratory infection”). In [D-47] the doctor only summarizes duration/worsening, nocturnal awakening, green sputum, no blood, and no constitutional symptoms; no diagnosis is explicitly given.\n- It also states “no constitutional symptoms other than fatigue and potential pain,” which conflicts with the doctor’s phrasing (“otherwise you don't have any constitutional symptoms”) and misattributes “potential pain” (doctor notes chest pain only with cough earlier).\n- “Subjective fever … [D-47]” is incorrect: fever/hot-at-night is discussed earlier ([P-4]) but is not included in the end summary at [D-47].\nOverall: core plan correct, but key interpretive/diagnostic elements are inaccurate or misattributed.",
+    "completeness": "Gold Answer key points vs Generated Answer:\n- ✅ Plan: will review story with supervising doctors.\n- ✅ End-of-visit summary elements: cough for a while, worse last 3 days, nighttime waking, green sputum, no blood, no constitutional symptoms.\n- ❌ Missing: explanation that this implies trainee/student presenting to supervising physician.\n- ❌ Missing: patient’s added concern that cough interferes with exercise and doctor’s response (“We’ll see what we can do”).\n- ❌ Missing/incorrect: that no tests/treatment were ordered; next steps depend on supervising physician’s assessment after review.\n- ❌ Replaces Gold’s “next steps guided by supervising physician” with a list of symptoms “driving the plan,” which is not what Gold emphasizes.\nNet: partial coverage with several omissions.",
+    "faithfulness": "- Multiple statements are not grounded in the transcript: “respiratory infection” diagnosis; references to a “knowledge graph”; attributing fever mention to [D-47].\n- Some content is grounded (green sputum, worsening 3 days, waking at night, no blood, no constitutional symptoms), but the added diagnostic interpretation and miscitation reduce faithfulness.",
+    "relevance": "- The answer is generally on-topic (plan, assessment, what guides next steps).\n- However, it introduces irrelevant/external elements (“knowledge graph”) and shifts the ‘next steps’ framing away from the supervising physician review described in the Gold Answer."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 3.0,
+  "summary": "Captures the stated plan and several end-summary symptom details, but adds an unsupported diagnosis, includes ungrounded/miscited elements, and omits key Gold points about supervision, lack of orders, and what would guide next steps."
+}

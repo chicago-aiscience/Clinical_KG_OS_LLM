@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer details precise timelines (headache/cough 4 days ago, stable severity [P-9, P-11]; diarrhea 2 days ago [P-28]; vomiting yesterday [P-32]; anosmia 1 day [P-24]) with headache specifics (7/10, bilateral, atypical). Generated correctly identifies initial symptoms (headache/cough 4 days ago [P-1]), GI 'few days back' (vague but aligns roughly with 'few days back' in [P-1] and 2 days for diarrhea), anosmia 1 day ago [P-24], dry cough [P-12], and persistence [P-3]; however, it implies but does not explicitly state stable severity for headache/cough, missing some precise relative timings and details, representing minor discrepancies with core facts intact.",
+    "completeness": "Gold key points: initial H/C 4da stable; H details (persistent/7/10/bilateral/atypical); dry cough stable; GI (diarrhea 2da liquid 5-6x, N/V few days back, vomit yesterday 2x food); anosmia 1da; negatives. Generated covers: initial H/C 4da; GI few days after (N/V/D); anosmia 1da; dry cough; H persistent (implies stable). Misses: explicit stability quotes, exact 2da diarrhea, vomit timing/contents, H rating/location/atypical, negatives, cough stability detail. Covers ~75-80% of key points, strong on timeline but lacks depth on severity stability and GI specifics.",
+    "faithfulness": "All claims directly verifiable: initial/GI [P-1], anosmia [P-24], dry cough [P-12], persistent [P-3]; minor interpretive stretch implying persistence applies to cough/condition broadly (supported by [P-9/11] stable but not cited), no hallucinations or fabrications.",
+    "relevance": "Generated directly structures response as numbered timeline addressing onset order, relative timing of GI/anosmia to initial symptoms, and symptom persistence (touching on H/C stability indirectly), with no off-topic content; perfectly matches question focus."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 4,
+    "relevance": 5
+  },
+  "average_score": 4.25,
+  "summary": "The Generated Answer is mostly accurate and relevant with a clear timeline but lacks explicit details on symptom severity stability and some GI timing specifics from the Gold Answer."
+}

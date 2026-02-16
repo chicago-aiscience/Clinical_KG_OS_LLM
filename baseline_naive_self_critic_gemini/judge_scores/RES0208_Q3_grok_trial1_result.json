@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the doctor's cited symptoms for general infectious process (fevers, fatigue, muscle aches from D-36) matching Gold exactly. For COVID-19 concern, it accurately lists difficulty breathing, sore throat, and cough from D-36. However, it introduces minor errors by attributing patient's 'feeling hot' (fever, already in general) and loss of taste as corroborating evidence for COVID via a 'knowledge graph' (not in transcript or Gold), and implies these were part of the doctor's COVID reasoning, whereas Gold notes taste/smell were elicited but not cited in D-36 assessment. Core facts correct with minor discrepancies.",
+    "completeness": "Covers 100% of Gold's core symptoms for general infection (fevers, fatigue, muscle aches) and COVID concern (difficulty breathing, sore throat, cough). Misses Gold's nuance on 'very cool sort of a sore throat and cough', explicit note that taste/smell not named in D-36, focus on respiratory findings, and downstream actions (swab, isolation). Adds extraneous patient reports and KG references not in Gold. Covers ~85-90% of key points.",
+    "faithfulness": "Main claims grounded in transcript: symptoms directly from D-36 and patient reports (P-1, P-4, P-20). Citations accurate. However, 'knowledge graph' references are hallucinated (absent from transcript), and linking loss of taste/hot specifically to COVID diagnosis via KG or as doctor's reasoning is not verifiable in transcript—doctor did not cite them in D-36 for COVID. Some unverifiable/plausible additions.",
+    "relevance": "Perfectly structured to directly answer the question with sections on general infectious symptoms cited and distinct symptoms for COVID not ruled out, using transcript citations. No off-topic content."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 3,
+    "relevance": 5
+  },
+  "average_score": 4.0,
+  "summary": "The Generated Answer is mostly accurate and relevant, faithfully covering the doctor's cited symptoms but with minor additions of ungrounded elements like knowledge graph and uncited patient symptoms."
+}

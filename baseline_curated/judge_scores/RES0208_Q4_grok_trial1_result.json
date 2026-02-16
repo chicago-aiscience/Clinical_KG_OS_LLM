@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer lists 8 specific denied symptoms (runny nose/congestion, vision/hearing changes, nausea/vomiting, chest pain, palpitations, abdominal pain, urinary symptoms, numbness/tingling) with citations. Generated Answer incorrectly focuses on sore throat (affirmed by patient) and minimal cough (not fully denied) as 'negated,' missing nearly all Gold's list. Differentiations in Generated partially overlap (chest pain, runny nose) but invent pneumonia distinction and claim absent anosmia (contradicting transcript where smell/taste loss is present). Significant factual discrepancies and contradictions with Gold.",
+    "completeness": "Gold key points: explicit list of 8 denied symptoms + detailed differentiations (cardiac, GI, cold, neuro). Generated covers sore throat/cough (wrong), mentions chest pain and runny nose in diffs, but misses vision/hearing, nausea/vomiting, palpitations, abdominal pain, urinary, numbness; incomplete diffs (no cardiac specifically, no neuro/GI full). Covers ~20-30% (partial chest pain, runny nose).",
+    "faithfulness": "Transcript verifies denied symptoms like runny nose [P-10], chest pain [P-16], palpitations [P-17], nausea [P-15], etc. Generated correctly notes some (runny nose absent, chest pain) but fabricates sore throat/cough as negated (sore throat affirmed [P-9], cough minimal [P-8]); hallucinates pneumonia pleuritic pain differentiation, 'knowledge graph,' absent anosmia (patient reports smell/taste loss [P-4,P-6]). Multiple ungrounded claims.",
+    "relevance": "Generated directly lists 'asked about and negated' symptoms and discusses differentiation for working diagnosis (infection/COVID) from others (pneumonia, URI), aligning with question's two parts despite errors; minor tangents like knowledge graph but overall focused."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer has significant factual errors, poor coverage of denied symptoms, multiple hallucinations, but remains mostly relevant to the question."
+}

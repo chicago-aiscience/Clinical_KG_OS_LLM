@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies COVID-19 as the diagnosis investigated, matching the Gold Answer. It accurately notes the negative test result and cites [P-35]. Evidence prompting investigation includes persistence of cough ([P-14, P-35]), hospital work ([P-17, P-34]), PPE use ([P-17]), and work anxiety from coughing scaring others ([P-35]), which aligns closely with Gold's emphasis on occupational exposure, persistent cough, flu-like symptoms, and coworkers' fear. Minor discrepancy: Generated attributes some differential diagnosis to doctor's questions during consult (e.g., fever [D-12]), but the test occurred prior to this visit; however, core facts remain consistent.",
+    "completeness": "Key points from Gold covered: diagnosis (COVID-19), patient disclosure of test [P-35], hospital worker [P-17/P-34], occupational risk, persistent cough, flu-like symptoms resolution [P-14], coworkers scared [P-35], PPE [P-17], negative result [P-35]. Partially covered/missed: explicit listing of specific flu-like symptoms (sore throat [P-13], runny nose [P-14]), precise test timing at symptom onset two weeks prior [P-36], and patient staying home since [P-36]. Covers ~85-90% of key points.",
+    "faithfulness": "All claims are directly verifiable in the transcript: persistence/long cough [P-2, P-35, P-14], hospital worker [P-17, P-34], PPE [P-17], work fear [P-35], doctor's questions on fever [D-12], breathing [D-11], sore throat [D-13], nausea/vomiting [D-19], belly pain [D-20], test negative [P-35]. Citations accurate, no hallucinations or unverifiable details.",
+    "relevance": "Perfectly addresses the question by structuring response into diagnosis, evidence prompting investigation, and testing results, with no off-topic content or tangents."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 5,
+    "relevance": 5
+  },
+  "average_score": 4.5,
+  "summary": "The Generated Answer is highly faithful and relevant, with strong correctness and completeness, minor gaps in exhaustive coverage of Gold's evidence details."
+}

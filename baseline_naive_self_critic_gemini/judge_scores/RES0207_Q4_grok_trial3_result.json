@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Generated Answer correctly identifies some denied symptoms (GI: nausea/vomiting, belly pain, diarrhea; sensory: loss of taste/smell, sore throat) with accurate citations, but omits key ones from Gold (chest pain, feeling faint, runny nose, sick contacts, travel, sputum production, prior SOB episodes). It misattributes GI symptoms to ruling out cardiac causes (e.g., claiming nausea/belly pain classic for MI, which overlooks chest pain/syncope as primary cardiac screens in Gold/transcript), and incompletely covers infectious screens (misses runny nose/exposures). Core pattern recognized but significant discrepancies/omissions.",
+    "completeness": "Gold key points covered: nausea/vomiting, belly pain, diarrhea, loss of taste/smell, sore throat (5/12). Missed: chest pain, feeling faint, runny nose, sick contacts, travel, sputum (dry cough), prior SOB episodes. Partial DD pattern coverage (GI fully, infectious partially, cardiac misrepresented/missed). Covers ~40% of key points.",
+    "faithfulness": "All listed symptoms verifiable in transcript with accurate denials (e.g., [D-13/P-13], etc.). Citations mostly precise (grouped appropriately). DD inferences (e.g., GI for cardiac, taste/smell for COVID) not explicitly in transcript but plausible interpretations; no outright fabrications, though cardiac linkage stretches transcript grounding.",
+    "relevance": "Directly lists denied symptoms/exposures and links to cardiac/infectious/GI DDs as per question; structured response focused on query without off-topic content, despite incompleteness."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 4,
+    "relevance": 4
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer partially addresses the question by correctly identifying some denied symptoms and inferring relevant DDs but is incomplete and has factual errors in symptom coverage and DD attributions compared to the Gold Answer."
+}

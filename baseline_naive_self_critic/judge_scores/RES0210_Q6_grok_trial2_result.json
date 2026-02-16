@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly states there are no Doctor statements or turns (e.g., [D-X]), despite the transcript containing numerous [D-1] to [D-44] utterances, including the explicit plan at [D-43] to consult the supervising physician and return to discuss next steps, which directly contradicts the Gold Answer's accurate citation. It partially covers self-care (Tylenol [P-14]) but misses expectoration [P-13] and taking it easy [P-10]. Aggravating factors include exertion [P-10,P-11] and coughing [P-15,P-19], but downplays deep breathing [P-18,P-19] as not explicit. Introduces unverifiable 'knowledge graph' references not in the transcript. Significant factual errors on the core plan and omissions.",
+    "completeness": "Key Gold points covered: Tylenol self-care/effect [P-14] (partial), exertion aggravating [P-10,P-11], coughing aggravating (partial via [P-15]), rest alleviating [P-10], Tylenol alleviating. Missed entirely: doctor's plan/quote [D-43], expectoration self-care/relief [P-13], deep breathing aggravating [P-18,P-19], chest pain specifics [P-19], clinical management implications. Covers ~40% of key points.",
+    "faithfulness": "Multiple claims not grounded: 'no statements or turns attributed to the Doctor' (false, full [D-] turns present); 'knowledge graph' references (absent from transcript, hallucinated); Tylenol 'relieving cough' (context is general help post-fever/cough discussion, not explicit); coughing as primary from [P-15] sore throat (accurate but stretched); deep breathing dismissed despite [P-18,P-19]. Citations partial/misleading; unverifiable additions.",
+    "relevance": "Directly structures response around question components (plan, self-care, aggravating, alleviating factors), with focused bullet points; minor off-topic via hallucinated 'knowledge graph' but no major tangents."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer has significant factual errors (especially missing the doctor's plan), hallucinations (knowledge graph, no D-statements), partial coverage, but remains mostly relevant in structure."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer contains several factual errors compared with the Gold Answer/transcript. It incorrectly states the patient had fever initially; the patient explicitly denied fevers [P-12]. It also incorrectly states nausea/vomiting and belly pain occurred initially and resolved; the patient explicitly denied nausea/vomiting [P-19] and abdominal pain [P-20]. It correctly notes early mucus that later resolved into a dry cough (consistent with [P-5, P-6]) and correctly includes chest soreness only with excessive coughing (consistent with [P-15, P-16]). It mentions sore throat as resolved, which is correct, but it cites the wrong line ([P-14] instead of [P-13]).",
+    "completeness": "Key Gold Answer points covered: (1) two-week persistent cough, (2) early mucus then dry cough, (3) chest soreness with coughing, (4) sore throat resolved. Key points missed: (a) runny nose resolved, (b) timing details (mucus first 4–5 days; sore throat 2–3 days), (c) current cough frequency (3–4 times/hour), (d) spontaneous/no triggers, (e) intensity/frequency stable, and (f) pertinent negatives list (no SOB, no fever, no N/V, no abdominal pain). Overall coverage is well under ~80% of Gold key items.",
+    "faithfulness": "Multiple claims are not supported by the transcript and in fact contradict it (fever, nausea/vomiting, belly pain). The inclusion of a “medical knowledge graph” is also not grounded in the transcript. Additionally, at least one citation is inaccurate (sore throat attributed to [P-14]). While some symptom statements are grounded (cough character, mucus timeline broadly, chest soreness), the answer includes several hallucinations/contradictions.",
+    "relevance": "The response is generally focused on the question (symptoms resolved vs still present). Minor irrelevant content includes the “medical knowledge graph” statements, but most of the content pertains to symptoms."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The answer is symptom-focused but includes several major hallucinated/contradictory symptoms (fever, GI symptoms) and omits multiple key cough descriptors and resolved symptoms from the gold answer."
+}

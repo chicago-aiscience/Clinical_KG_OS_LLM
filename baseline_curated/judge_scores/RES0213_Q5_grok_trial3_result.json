@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer is mostly consistent with the Gold Answer on core facts like father's heart attack in 50s scaring the patient [P-8], smoking struggles [P-13], and stress from school/thesis contributing to anxiety mimicking heart symptoms [P-8, P-19]. However, it has factual errors: incorrectly states 'transcript does not confirm current active smoking' (contradicts P-14 where patient reports smoking 5 cigarettes/day); fabricates 'knowledge graph' references linking to 'diagnosis of heart disease concern' and stress-chest pain, not present in transcript or Gold; omits 'last year' timing and father's ongoing heart doctors [P-30]; misses paternal grandfather details. Main points correct but discrepancies present.",
+    "completeness": "Gold key points covered: family history (father HA in 50s scares her [P-8]); smoking history (trying to quit, hard [P-13]); stressors (school/thesis pressure [P-15,16], anxiety breathing [P-19], past anxiety [P-22]). Partially covered: interactions via stress uncertainty [P-8]. Missed: father HA 'last year' and 'sees heart doctors' [P-30]; exact smoking details (started 18, 10/day 2yrs, now 5/day [P-18,14]); specific stressors (living alone [P-26,27], nervous about running [P-28]); grandfather accident [P-30]. Covers ~70% of key points.",
+    "faithfulness": "Claims mostly verifiable: father HA fear [P-8], stress/smoking hard [P-13], anxiety breathing [P-19], symptoms when alone/studying [P-29]. Citations accurate where used. Hallucinations: repeated 'knowledge graph' references (e.g., 'diagnosis indicated by family history in knowledge graph', stress linked to chest pain) not in transcript; incorrect claim 'no current active smoking' contradicts P-14 ('smoking 5 cigarettes a day'). Multiple hallucinated elements.",
+    "relevance": "Perfectly structures response around the three specified factors (family history, smoking, psychosocial stressors), explaining contributions/interactions with transcript illustrations, directly matching the question without off-topic content."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.25,
+  "summary": "The Generated Answer effectively addresses the question with good relevance but is undermined by factual inaccuracies on smoking status, omissions of key details, and hallucinations about a non-existent knowledge graph."
+}

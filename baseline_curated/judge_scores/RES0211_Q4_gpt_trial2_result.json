@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer contains multiple factual inaccuracies relative to the Gold Answer and transcript. It incorrectly states that the transcript does not contain responses about eczema, EpiPen use, and night sweats—these are explicitly present (night sweats D-9/P-9; EpiPen D-21/P-21; eczema D-32–33/P-33). It mis-cites asthma screening as occurring at D-58 (that is a summary); the asthma question/denial is at D-29/P-29. It also inaccurately summarizes medications: Jessica reports she takes birth control in addition to Claritin (P-25), and she states she is not currently taking Claritin (“but I haven't like right now,” P-25), so “not taking anything other than Claritin” is incorrect. While the description of dry cough/scratchy throat/headache/feeling hot is consistent with the transcript, the overall answer conflicts with key elements of the Gold Answer.",
+    "completeness": "Key Gold Answer screening points mostly missing: night sweats characterization and response; productive cough/phlegm denial; severe allergic reaction symptoms (breathing difficulty/facial swelling) and response; explicit EpiPen confirmation; family history of asthma (cousin only); eczema family history denial; rashes/skin changes denial; GI symptoms denial; joint pain denial. The Generated Answer covers only a small subset (asthma in general terms, some symptom recap) and omits the systematic differential-narrowing Q&A emphasized in the Gold Answer.",
+    "faithfulness": "Several claims are not grounded or are contradicted by the transcript: asserting the transcript lacks eczema/EpiPen/night sweats responses; claiming she was taking only Claritin; and citing D-58 as the asthma confirmation. The added interpretive conclusion about URI vs allergies is plausible but not what the question asked and is not explicitly stated in the transcript. Overall, there are multiple unfaithful elements.",
+    "relevance": "The question asks which conditions were systematically screened via targeted questioning (e.g., asthma, eczema, EpiPen-level allergy, night sweats) and Jessica’s responses. The Generated Answer largely fails to enumerate these screening areas and instead focuses on asthma/meds and a speculative narrowing toward URI. It partially addresses the topic (asthma) but is largely nonresponsive to the specific requested screening items."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 2
+  },
+  "average_score": 2.0,
+  "summary": "The answer is partially on-topic but contains multiple transcript-contradicted statements and omits most of the systematically screened conditions and corresponding patient responses highlighted in the Gold Answer."
+}

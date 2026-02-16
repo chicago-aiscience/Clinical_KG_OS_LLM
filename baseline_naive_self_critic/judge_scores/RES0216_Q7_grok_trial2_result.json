@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer has significant factual errors compared to the Gold Answer: it claims symptoms 'progressed' and 'evolved' to include difficulty breathing and secondary symptoms like hoarseness/phlegm, contradicting the Gold's accurate report that symptoms have been 'staying the same' and 'pretty steady' [P-2, P-3]; it fails to note first symptoms appeared on a walk with dog [P-4]; it incorrectly states the patient 'maintained their daily walking routine' [contra P-22, where reduced to one walk/day]; misses other exacerbators like getting up from chair or big breaths [P-9]; adds irrelevant doctor suspicion. Core onset timing and walk exacerbation partially correct, but errors undermine accuracy.",
+    "completeness": "Key Gold points covered: onset ~3 days [P-1], tightness on inspiration [P-1,P-5], exacerbated by walking dog [P-1,P-9]. Missed or incorrect: first noticed specifically on walk with dog [P-4], no particular trigger [P-3], staying the same/steady [P-2,P-3], always there but worse with getting up from chair/big breath [P-9,P-10], reduced from couple walks/day to one [P-22], no missed work but noticeably limiting [P-21,P-22,P-23]. Covers ~30-40% accurately, with contradictions on evolution and impact.",
+    "faithfulness": "Claims verifiable where cited (e.g., [P-1] tightness on inhale, [P-11] hoarseness/phlegm, [P-16] different from asthma); however, 'progressed/evolved' to dyspnea contradicts steady state [P-2,P-3,P-10]; 'maintained walking routine' misinterprets P-1 ignoring P-22 reduction; adds 'clinical knowledge' and doctor suspicion [D-35,D-36] not central; hoarseness/phlegm verifiable but not tied to tightness evolution in transcript as claimed. Multiple interpretive hallucinations/misreads.",
+    "relevance": "Directly structures response around onset, evolution, exacerbators, and impact on routine, closely mirroring question elements; minor off-topic additions like secondary symptoms, asthma difference, and doctor opinion, but overall focused."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer has significant inaccuracies on symptom evolution and functional impact, partial coverage of key details, faithfulness issues from misinterpretation, but remains mostly relevant to the question."
+}

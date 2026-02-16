@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly claims the transcript does not contain screenings for eczema, EpiPen, and night sweats, directly contradicting the Gold Answer and transcript (e.g., D-9 for night sweats, D-21 for EpiPen, D-32 for eczema). It misattributes asthma screening to D-58 (a summary) instead of actual questions like D-29. It hallucinates a URI diagnosis and allergy differentiation not in Gold. Significant contradictions make it mostly incorrect.",
+    "completeness": "Gold covers night sweats (P-9), productive cough (P-5/P-6), allergies/EpiPen (P-18/19/21), asthma personal/family (P-29/30/31), family eczema (P-33), rashes (P-10), GI (P-11/12), joints (P-13). Generated covers only asthma partially and adds irrelevant medication/symptom review; misses >80% of key points.",
+    "faithfulness": "Multiple claims not grounded: denies existence of eczema/EpiPen/night sweats screenings despite clear transcript evidence (D-9, D-21, D-32-33); wrong citations (D-58 not screening); fabricates URI diagnosis and narrowing logic not in transcript. Largely fabricated.",
+    "relevance": "Partially addresses screening for asthma but denies other listed conditions exist in transcript, adds off-topic URI diagnosis and allergy differentiation not central to question about specific screenings and responses."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 2
+  },
+  "average_score": 1.25,
+  "summary": "The Generated Answer is largely incorrect, incomplete, unfaithful to the transcript, and only partially relevant by denying key screenings that are explicitly present."
+}

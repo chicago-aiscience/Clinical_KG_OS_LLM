@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer integrates family history (father allergies [P-33], cousin asthma [P-30]), notes allergies not active ([P-16,P-17]), brother's cold as exposure ([P-39,D-58]), and household isolation (farm [P-43,P-44], home-schooling [P-41], family dynamics [P-42], limited exposure [P-45,P-46], only dog [P-48]) to suggest intra-household transmission from brother. Generated correctly covers family history as contextual/not direct cause and brother as likely source, but incorrectly states transcript lacks farm/home-schooling info (directly contradicted by citations), adds unrequested symptoms/diagnosis, and misattributes cousin asthma context. Significant discrepancies on key household factors and hallucinated info absence.",
+    "completeness": "Gold key points: family allergies/asthma history with citations; allergies not active; brother cold timing/exposure; farm location; home-schooling/COVID; family work/homebound; no travel; only dog; collective isolation pointing to household transmission. Generated covers family history (~30%), brother exposure (~20%), but entirely misses household details (farm, schooling, isolation) and claims no info, covering <50% overall.",
+    "faithfulness": "Claims on symptoms, brother [P-39,D-58], family [P-33,P-16,D-58] verifiable. However, falsely asserts 'transcript does not contain information' on farm/home-schooling (verifiably present: [P-41-48]); mentions non-existent 'knowledge graph'; infers 'upper respiratory infection' from [D-58] summary loosely. Multiple hallucinations/misrepresentations of transcript content.",
+    "relevance": "Directly addresses family history and brother in relation to symptoms as per question; attempts collective relation but denies household factors (core to question); adds irrelevant symptoms list and diagnosis tangent."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "Generated Answer partially captures family history and brother's exposure but fabricates absence of transcript evidence on key household factors, leading to incomplete and unfaithful evaluation of collective relations."
+}

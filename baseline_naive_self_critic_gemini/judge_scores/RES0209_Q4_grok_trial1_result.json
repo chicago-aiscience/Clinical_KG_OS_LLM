@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly asserts that there is 'no information available' on screening for infectious causes including COVID-19, despite the transcript explicitly containing questions on recent colds/infections (D-21/P-21 denied), sick contacts at home (D-22/P-22 denied), outside sick contacts (D-23/P-23 denied), travel (D-24/P-24 denied), loss of taste/smell (D-25/P-25 denied), fevers (D-26/P-26 denied), nausea/vomiting (D-27/P-27 denied), belly pain (D-28/P-28 denied), dry cough confirmation (D-14/D-15/P-14), explanation linking to infections (D-29), and planned COVID swab (D-29). This directly contradicts the Gold Answer's factual content.",
+    "completeness": "Gold Answer key points: symptoms screened (colds/infections, taste/smell loss, fevers, nausea/vomiting, belly pain, dry cough) all denied with citations; exposures (home contacts, outside contacts, travel) denied; explanation of questions (D-29); COVID swab planned despite negatives (D-29). Generated Answer covers 0% of these, instead listing unrelated asthma symptoms (wheezing, SOB, chest tightness) and triggers (exercise, cold air, pollen).",
+    "faithfulness": "Generated Answer hallucinates absence of infectious screening data present in transcript (D-21 to D-29); misapplies citations (e.g., D-19 for wheezing, not infections); references non-existent 'knowledge graph'; fabricates conclusion that transcript focuses 'exclusively on asthma' while ignoring explicit infection/COVID sections; largely fabricated denial.",
+    "relevance": "Question asks specifically for infectious screening symptoms/exposures to rule out infection/COVID-19, patient responses, and planned test; Generated Answer dismisses this as absent and pivots to irrelevant asthma symptoms/triggers, failing to address the core query."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 1
+  },
+  "average_score": 1.0,
+  "summary": "The Generated Answer is entirely incorrect, incomplete, unfaithful to the transcript, and irrelevant by denying the existence of clear infectious screening details and diverting to unrelated asthma content."
+}

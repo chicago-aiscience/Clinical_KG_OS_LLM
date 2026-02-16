@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the four symptoms the patient reported (fever, stuffy nose, sore throat, and muscle aches). However, it is factually incorrect regarding the symptoms denied. It claims only 'cough' was denied and that there is 'no evidence' for the denial of headache, neck stiffness, nausea, or difficulty swallowing. In reality, the transcript shows the patient denied nausea [P-5], neck stiffness [P-7], headaches [P-8], and difficulty swallowing [P-24].",
+    "completeness": "The answer identifies the four positive symptoms but misses 80% of the requested 'denied' symptoms. It fails to provide the full list of clinically significant symptoms specifically asked for in the prompt (cough, headache, neck stiffness, nausea, and difficulty swallowing).",
+    "faithfulness": "The Generated Answer fails significantly on faithfulness by explicitly stating there is 'no evidence' in the transcript for denials that are clearly present in the provided text. This is a negative hallucination (falsely claiming information is absent).",
+    "relevance": "The Generated Answer is highly relevant in that it directly attempts to answer both parts of the question asked, even though the content of the answer is largely incorrect."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 1,
+    "relevance": 5
+  },
+  "average_score": 2.5,
+  "summary": "The answer correctly identifies the reported symptoms but fails significantly by incorrectly claiming the transcript lacks evidence for the denied symptoms requested."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold diagnosis is anxiety-related/stress-induced chest pain (panic/anxiety-spectrum). Generated Answer instead diagnoses Conversion Disorder/psychogenic pain disorder, which is not supported as the primary conclusion in the Gold Answer and is clinically different (conversion disorder involves neurological symptom incompatibility; “psychogenic pain” framing is broader but still not the intended answer). While the patient’s symptoms are plausibly stress-related, labeling this as conversion disorder is a substantive diagnostic error. Additional inaccuracies include implying symptoms are a ‘displaced expression of conflict’ or ‘to gain attention,’ which is not evidenced in the transcript and is not part of the Gold reasoning.",
+    "completeness": "Gold key supports include: (1) situational pattern—pain when alone with thoughts and resolves when distracted/with others (P-4, P-9, P-29); (2) prior anxiety attacks and concern they may recur (P-21, P-22); (3) major thesis/time-crunch stress (P-13, P-15, P-16); (4) physiologic anxiety features during episodes (breathing faster, hard to get deep breath due to nervousness) (P-19); (5) patient herself suspects stress (P-8); (6) pertinent negatives (no fever, no exertional worsening, occurs at rest, no palpitations except during anxiety, no asthma) (P-10–12, P-20, P-23–24). Generated Answer partially covers (2) and (3) and mentions family worry (P-8) and analgesic nonresponse (P-6), but it inadequately captures the core situational improvement with distraction (it references it vaguely and leans on the prompt rather than transcript quotes), omits P-19 hyperventilation/nervousness, and omits most pertinent negatives that strengthen the anxiety-related interpretation.",
+    "faithfulness": "Some cited elements are grounded (history of anxiety attacks [P-21], academic stress [P-13], father’s heart attack worry [P-8], tried Tylenol/Advil/Alka-Seltzer [P-6]). However, multiple claims are not supported by the transcript: references to a ‘knowledge graph,’ assertions that symptoms are ‘classic’ conversion features used to gain attention, and the inference that lack of response to OTC meds ‘rules out’ organic causes. The transcript does not provide exam findings or diagnostic workup, so ruling out organic disease is not justified from the provided consultation alone.",
+    "relevance": "The answer attempts to provide a diagnosis and supporting observations, which is the right task. However, it focuses on an incorrect diagnostic category (conversion disorder) and adds tangential psychoanalytic/attention-seeking explanations not asked for and not supported, reducing practical alignment with the question."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "The response is partially on-theme (psychological contribution) but gives the wrong primary diagnosis, misses several key supporting observations from the transcript, and includes multiple unsupported/hallucinated claims."
+}

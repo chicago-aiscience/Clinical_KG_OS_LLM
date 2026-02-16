@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly lists symptoms the patient reported (fatigue [P-19], sleep disturbance [P-19,P-20,P-21], chest pain on coughing [P-3]) as results of screening, whereas the Gold Answer and question focus on symptoms and risks the doctor screened for that were denied (e.g., night sweats [D-5/P-5], weight loss [D-6-8/P-6-8], hemoptysis [D-10/P-10], sick contacts [D-14/P-14, D-15/P-15, D-32/P-32], travel [D-33-34/P-33-34], IV drug use [D-40/P-40]). It fabricates cat exposure as a key risk for zoonotic TB, which is not screened or denied in context and not in Gold Answer. Links wrong symptoms to TB exclusion. Major contradictions.",
+    "completeness": "Gold key points: denied constitutional symptoms (night sweats, weight loss, hemoptysis); exposures (sick contacts x3, travel, IVDU/drugs); conditions excluded (TB via B symptoms + cough/hemoptysis, infections via travel, immunosuppression via drugs); others (stiff neck, N/V, pain). Generated covers 0% of these accurately: no mention of night sweats/weight loss/hemoptysis denials, wrong exposures (cats instead of contacts/travel/drugs), wrong conditions (zoonotic TB via cats/fatigue, chronic bronchitis). <20% coverage.",
+    "faithfulness": "Claims like fatigue/sleep disturbance/chest pain as 'screened symptoms' are verifiable but misapplied (these are reported, not denied). Vague denials referenced but unspecified. Hallucinates 'knowledge graph', cat exposure as cough risk, zoonotic TB from cats (plausible but not in transcript or relevant), chronic bronchitis as 'serious condition to exclude'. Multiple misinterpretations and fabrications.",
+    "relevance": "Question asks for denied symptoms/risks screened and conditions excluded (e.g., TB). Generated focuses on reported symptoms, irrelevant cat allergy, and fabricates zoonotic TB link, largely failing to address denials or correct exclusions; structure mimics but content off-topic."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 2
+  },
+  "average_score": 1.5,
+  "summary": "The Generated Answer is factually incorrect, incomplete, and unfaithful to the transcript by listing reported symptoms instead of denied ones, fabricating irrelevant exposures and conditions."
+}

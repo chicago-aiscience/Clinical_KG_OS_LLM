@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies that the patient’s first symptom was a stuffy nose and that she has had fever for three days, and it correctly notes that the husband has had similar symptoms for about a week. However, it contains a major factual error by listing “Rash” as a symptom later in the consultation: the patient explicitly denied rashes/skin changes [P-12], and the only rash mentioned was as an allergic reaction to penicillin [P-38], not part of the current illness. The symptom sequencing is also partly inaccurate: the transcript suggests the sore throat occurred “just before” the fever (along with the stuffy nose) [P-1], whereas the Generated Answer places sore throat after fever and describes it as merely concurrent.",
+    "completeness": "Key points from the Gold Answer that are covered: stuffy nose first; fever present for three days; sore throat present and ongoing; muscle aches present; husband symptomatic for a week. Key points missed or under-specified: (1) sore throat developed before/around fever onset (not after fever), (2) muscle aches are specifically for the past 2–3 days and overlap with fever onset [P-14–P-16], (3) the comparative timing conclusion that the husband’s illness began several days before the patient’s fever onset (Gold estimates ~4 days) is not articulated clearly.",
+    "faithfulness": "Most statements are grounded in the transcript (stuffy nose, fever duration, sore throat persistence, muscle aches, husband ‘past week’). However, the claim that rash was a symptom of the current illness is not supported and contradicts the patient’s denial of rash [P-12]. This constitutes a significant hallucination/misattribution (allergy history presented as symptom).",
+    "relevance": "The answer is mostly focused on the requested timeline of symptoms and comparison to the husband’s onset. The added ‘rash’ item is both inaccurate and distracts from the symptom progression, but the overall structure still addresses the question."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.75,
+  "summary": "The response is generally on-topic and captures some of the timeline, but it mis-sequences key symptoms and incorrectly invents/attributes a rash as part of the illness, reducing correctness and faithfulness."
+}

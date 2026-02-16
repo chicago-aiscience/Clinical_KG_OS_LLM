@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer accurately lists reported symptoms (sore throat with details, difficulty breathing with details, reduced sense of taste, fatigue/muscle aches) and denied symptoms (cough, runny nose, headaches, chest pain, loss of smell, fever, chills/night sweats). Generated Answer misses difficulty breathing entirely (major omission), partially covers sore throat, lists muscle aches and tiredness correctly but incompletely, and misinterprets P-19 by claiming denial of loss of taste when patient reports reduced taste ('maybe taste a little bit'). For denials, it only lists loss of smell and falsely claims other screened symptoms (cough, runny nose, fever, headaches, chest pain) were not mentioned, contradicting explicit denials in transcript. Introduces ungrounded 'knowledge graph'. Significant factual errors and contradictions warrant score of 2.",
+    "completeness": "Gold key points: 4 reported symptoms (sore throat details, breathing details, taste details, fatigue/aches details) and 7+ denied (cough[P-15], runny nose[P-16], headaches[P-17], chest pain[P-18], loss of smell[P-19], fever[P-23], chills[P-24]). Generated covers sore throat partially, muscle aches/tiredness partially, misstates taste; misses breathing completely. Denied: only loss of smell (1/7). Covers ~20-49% of key points, score 2.",
+    "faithfulness": "Claims grounded: sore throat [P-2], aches/tired [P-25] yes; taste misquoted/misinterpreted from P-19 (reports reduced, not denied); loss of smell denial correct but incomplete. Hallucinates: 'knowledge graph' not in transcript; falsely states other symptoms 'not mentioned' when explicitly denied (e.g., P-15-18,23). Multiple inaccuracies and fabrications, score 2.",
+    "relevance": "Structures answer around reported vs denied symptoms as per question, addresses screened symptoms, but includes irrelevant 'knowledge graph' mention and incomplete/wrong content; partially relevant with some off-topic elements, score 3."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "The Generated Answer is significantly incomplete, factually inaccurate on key symptoms like breathing difficulty and taste, unfaithful with hallucinations about missing denials and a non-existent knowledge graph, though somewhat relevant in structure."
+}

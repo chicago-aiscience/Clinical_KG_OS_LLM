@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the onset as one week prior, matching the Gold Answer and transcript [P-1, P-2]. However, it incorrectly states there is no evidence for which symptom appeared first and claims they started concurrently, contradicting both Gold and P-3 ('felt pretty stuffy at first'). It denies any shift in predominant symptom, while Gold and P-3 indicate a change from stuffiness to mostly running. It reports symptoms as intermittent based only on P-1, ignoring the Gold's and P-8's clarification of 'pretty constant'. These are significant factual errors relative to Gold.",
+    "completeness": "Key points from Gold covered: onset one week prior (partial match). Missed: initial symptom was congestion [P-3]; shift from congestion to rhinorrhea [P-3]; possible influence of decongestants [P-10]; pattern initially 'on and off' but clarified as constant [P-1, P-8]. Covers <20% of key points.",
+    "faithfulness": "Generated claims no evidence which symptom first, but P-3 explicitly states 'stuffy at first'; claims no predominant change, but P-3 describes shift ('now it's mostly running'); characterizes as intermittent citing P-1 'on and off', but ignores P-8 'pretty constant for the past week'. Multiple claims not grounded in full transcript, selective omission leading to hallucinated summary.",
+    "relevance": "The answer directly structures response around onset, progression/which first, predominant change, and constant/intermittent pattern, precisely matching the question's requirements with no off-topic content."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer is relevant but significantly incorrect, incomplete, and unfaithful to the transcript by ignoring key evidence of symptom sequence and constancy."
+}

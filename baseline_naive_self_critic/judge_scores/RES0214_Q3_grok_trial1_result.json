@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer highlights fever and sore throat [D-53] as explicit symptoms for infectious etiology like COVID-19, plus broader symptoms [D-24] and husband's case [D-53]; Generated correctly identifies fever and sore throat [D-53] and P-1 self-report, and vaccination history correctly but with wrong citation [P-27 instead of P-53]; hallucinates 'knowledge graph' not present; minor phrasing like 'stuffy throat'; some factual errors but main points align with Gold's core.",
+    "completeness": "Gold key points: fever/sore throat [D-53], broader cluster muscle aches/fever/stuffy nose/sore throat [D-24], husband symptoms [D-53], flu shot question/no [D-53/P-53] prompting influenza [D-54]; Generated covers fever/sore throat and flu shot/no leading to influenza, misses broader symptoms and husband epidemiology; covers ~50-60% of points.",
+    "faithfulness": "Most claims grounded: symptoms [P-1/D-53/D-24], flu inquiry [D-53/D-54]; wrong citation [P-27] is unrelated to flu shot (actual [P-53]); hallucinates entire 'knowledge graph' and its corroboration, not in transcript; 'stuffy throat' misphrasing; multiple hallucinations and citation error.",
+    "relevance": "Generated Answer is structured with clear sections directly addressing the two-part question on symptoms for COVID suspicion and vaccination info for influenza differential; no off-topic content."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.25,
+  "summary": "The Generated Answer captures the core symptoms and vaccination detail but is undermined by incorrect citations, hallucinated knowledge graph, and omission of supporting context like broader symptoms and epidemiology."
+}

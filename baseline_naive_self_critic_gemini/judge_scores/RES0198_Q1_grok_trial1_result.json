@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer accurately cites patient-reported stuffy nose (initially on/off, first stuffy then mostly runny), runny nose for 1 week, clear nasal discharge [P-1-3,5], mild fatigue [P-15], and explicit denials of cough [P-4], post-nasal drip [P-6], sore throat/SOB/fevers/chills [P-7], loss of taste/smell [P-16]. Generated Answer partially correct on stuffy/runny nose [P-1] but misses duration, progression, and clear discharge; incorrectly attributes discharge character to doctor's 'identification' [D-6] (doctor was asking, not stating); wrongly claims patient did not explicitly say 'no' (patient did in P-4, P-7, etc.); includes some accurate denials but misses post-nasal drip and fabricates absence logic. Significant errors and contradictions warrant score 2.",
+    "completeness": "Gold key points: stuffy/runny nose details (duration, progression), clear discharge, fatigue (reported), explicit denials (cough, post-nasal drip, sore throat/SOB/fevers/chills, loss taste/smell), additional negatives. Generated covers basic stuffy/runny, some denials (cough, sore throat, SOB, fevers/chills, loss taste/smell, extras like headache/nausea); misses duration, progression 'stuffy first now running', clear discharge, post-nasal drip denial, fatigue. Covers ~30-40% of key points, score 2.",
+    "faithfulness": "Transcript verifies stuffy/runny [P-1,3]; 'runny' but clear discharge [P-5], not doctor's identification [D-6 is question]; patient explicitly denies with 'No' [P-4,7,14,16,etc.], contradicting Generated's claim of no explicit 'no'; lists inquiries but infers absence incorrectly (e.g., ignores P-6 post-nasal denial). Hallucinates doctor's role in characterizing discharge and patient's denial style. Multiple ungrounded claims, score 2.",
+    "relevance": "Directly structures response to nasal symptoms, discharge character, denied symptoms matching question; minor tangent in intro phrasing ('clinical documentation...knowledge graph' not in transcript) but focused on query elements, score 4."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer has significant factual inaccuracies, misses key details like clear discharge and explicit denial phrasing, and hallucinates doctor's role, despite relevant structure."
+}

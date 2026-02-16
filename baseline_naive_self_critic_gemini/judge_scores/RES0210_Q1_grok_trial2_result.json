@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer accurately describes the sputum as yellow custard with red spots, matching the Gold Answer and transcript [P-4, P-6]. Chest pain location (right side) is correct [P-17]. Quality is mostly correct (constant, worse with cough/deep breath [P-19]), but incorrectly attributes 'raw' feeling to the chest pain area using [P-15], which refers to the throat after coughing, not chest pain. Misses 'dull' quality [P-21]. Systemic symptoms: chills correct [P-9]; fever referenced via [P-5] but Gold provides more detail on subjective nature from Monday [P-8]. Minor discrepancies in symptom attribution and omissions, but core facts align.",
+    "completeness": "Key points from Gold covered: sputum description (yellow custard, red spots) yes; chest pain location (right) yes, quality (constant, worse with cough/breath) partial (misses dull); systemic fever (partial, misses Monday onset, subjective 'felt hot', no measurement); chills yes. Missed: cough timeline (raspy Friday, severe Sunday [P-3]), sputum simultaneous onset Sunday [P-7], dyspnea on exertion [P-10,11], sore throat [P-15], runny nose [P-16], no weight loss [P-22]. Covers 50-79% of Gold key points.",
+    "faithfulness": "All claims verifiable except misattribution of 'raw' [P-15] to chest pain (it's throat); citations accurate [P-4,6,15,17,18,19,9,5]. Sputum, pain details, chills, fever grounded in transcript. Minor hallucination in context linkage.",
+    "relevance": "Perfectly focused on question's specifics: sputum color/appearance, chest pain location/quality, systemic fever/chills. Structured directly with bullet points matching query elements, no tangents."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 4,
+    "relevance": 5
+  },
+  "average_score": 4.0,
+  "summary": "The Generated Answer is highly relevant and mostly correct and faithful, but has minor factual misattribution and incomplete coverage of Gold Answer details."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer identifies COVID-19 as the diagnosis investigated, with evidence including hospital work, flu-like symptoms, persistent cough, coworker concerns, PPE use, and timing; Generated Answer correctly identifies COVID-19 and negative result, mentions hospital work and colleague alarm accurately, but has minor citation errors (D-35 instead of P-34/P-35); core facts match without contradictions.",
+    "completeness": "Gold key points: COVID-19 diagnosis, patient disclosure [P-35], hospital work [P-34/P-17], occupational exposure, flu-like symptoms [P-13/P-14], persistent cough, coworkers scared [P-35], PPE/careful [P-17], test timing [P-36], negative result, stayed home [P-36]. Generated covers: diagnosis, hospital work, coworker alarm (tied to cough), negative result. Missed: flu-like symptoms, PPE, test timing, stayed home, explicit disclosure/occupational exposure detail. Covers ~30-40% of key points.",
+    "faithfulness": "All claims in Generated verifiable in transcript: hospital clerk [P-34], scared at work when coughing [P-35], COVID test negative [P-35]; citations inaccurate (D-35 vs P-34/P-35/P-36) but refer to adjacent dialogue; no hallucinations, fully grounded.",
+    "relevance": "Generated Answer directly structures response to match question components (diagnosis, evidence, testing result) with no off-topic content, perfectly focused."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 2,
+    "faithfulness": 4,
+    "relevance": 5
+  },
+  "average_score": 3.75,
+  "summary": "The Generated Answer is factually accurate and relevant but incomplete in covering the full range of evidence and details from the Gold Answer, with minor citation issues."
+}

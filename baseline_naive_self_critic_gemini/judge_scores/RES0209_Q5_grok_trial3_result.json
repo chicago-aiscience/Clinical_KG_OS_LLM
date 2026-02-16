@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer accurately identifies the three triggers (exercise from P-9, cold air from P-11, pollen from P-11) and family history (sister's asthma from P-32), relating them to exacerbation symptoms and increased bronchodilator use, similar to Gold. It correctly notes allergy suspicion from pollen mention. Minor discrepancies include referencing a non-existent 'knowledge graph' [KG] for trigger validation, separating pollen strictly as an allergy trigger (Gold sees it as asthma trigger prompting allergy suspicion), and not specifying inhaler frequency increase (every 2 weeks to 5-6x/week from P-8). Core facts align, no major contradictions.",
+    "completeness": "Covers: three triggers with partial citations, pollen leading to allergy suspicion (like Gold's D-12/P-12/D-13/D-31), family history (sister's asthma), relation to exacerbation via symptoms and increased inhaler use. Misses: explicit 'no other triggers' (D-10/P-10), detailed clinician revisit of allergies (D-31/P-31), no family allergies/breathing issues (P-33/P-34), exact inhaler frequency escalation (P-8), clinician's medication change suggestion for control (D-43). Covers ~80-90% of Gold's key points.",
+    "faithfulness": "Claims about symptoms (P-1, P-15), triggers (P-9, P-11), family (P-32), and allergy suspicion are verifiable in transcript. However, multiple references to 'knowledge graph' [KG] confirming triggers and linking pollen specifically to allergies are not in transcript—pure hallucination. Citations like [P-1], [P-15] accurate, but [KG] undermines grounding.",
+    "relevance": "Directly addresses how triggers (exercise, cold, pollen) and family history relate to exacerbation (symptoms, inhaler reliance) and allergy suspicion (via pollen), with a summary tying them together. Minor tangents include extra symptom details and [KG] references, but remains focused on question without off-topic content."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 3.5,
+  "summary": "The Generated Answer is mostly correct and relevant but undermined by hallucinated 'knowledge graph' references, slightly reducing completeness and faithfulness compared to the transcript-grounded Gold Answer."
+}

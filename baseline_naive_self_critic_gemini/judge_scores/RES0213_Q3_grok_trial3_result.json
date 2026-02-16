@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Gold Answer diagnoses anxiety-related or stress-induced chest pain, emphasizing non-cardiac etiology supported by pertinent negatives. The Generated Answer incorrectly diagnoses 'Angina Pectoris (specifically Stress-Induced Angina or Psychogenic Chest Pain)', introducing a cardiac term (angina implies ischemia) despite claiming it's anxiety-driven, which contradicts the Gold's core diagnosis and ignores ruling out cardiac pathology; minor points like observations are somewhat accurate but the primary diagnosis is a significant factual error.",
+    "completeness": "Gold key points: 1) situational pattern (alone vs. distracted/engaged [P-4,P-9,P-29]); 2) anxiety history [P-21,P-22]; 3) thesis stress [P-13,P-15,P-16]; 4) nervousness/breathing [P-19]; 5) patient links to stress [P-8]; 6) pertinent negatives (no fevers [P-12], no exertional [P-10], rest pain [P-11], no palpitations except anxiety [P-20], no asthma [P-23,P-24]). Generated covers: partial situational [P-4], breathing [P-19], partial history [P-20,D-21], partial stress [P-15,P-8]; adds medication [P-6] (not Gold). Misses resolution with distraction [P-9,P-29], full stress details, patient stress idea explicitly, all negatives (~50-60% coverage).",
+    "faithfulness": "Observations verifiable: solitary [P-4], breathing/nervousness [P-19], history/similar to anxiety [P-20,D-21], stress/thesis [P-15], father [P-8], meds [P-6]. Citations accurate. However, diagnosis 'Angina Pectoris'/'Stress-Induced Angina' hallucinated (transcript has no cardiac diagnosis, only patient worry [P-8]); 'psychogenic chest pain' plausible but not stated; general claim 'anxiety symptoms often arise in quiet moments' not in transcript.",
+    "relevance": "Generated directly provides a diagnosis and lists specific cited observations supporting reasoning, perfectly matching question structure despite diagnosis error; no irrelevant content."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 3,
+    "relevance": 5
+  },
+  "average_score": 3.25,
+  "summary": "The Generated Answer is relevant and mostly grounded but undermined by an incorrect cardiac-tinged diagnosis, reducing correctness and completeness compared to the Gold Answer's anxiety-focused assessment."
+}

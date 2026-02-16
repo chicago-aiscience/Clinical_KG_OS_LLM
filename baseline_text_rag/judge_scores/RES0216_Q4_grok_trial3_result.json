@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the 'cardiac ischemic picture' as the deprioritized condition with accurate citation [D-36]. It accurately notes chest tightness rather than pain (supported by P-1 and echoed in D-36), lack of exertional dyspnea/out of breath with exercise [D-36], and absence of pain [D-36]. However, it misses the doctor's explicit screening and citation of absent symptoms like anxiety, sweating, or impending doom [D-6, P-6], which the Gold Answer emphasizes as key evidence. Minor citation discrepancy (P-1 vs. Gold's P-5, though both valid). Core facts align, but omission of key absences is a minor discrepancy.",
+    "completeness": "Gold key points: condition ('cardiac ischemic picture'), nature (tightness not pain [P-5], not out of breath with exercise [D-36] despite some SOB [P-7]), absences (no pain [P-5], no anxiety/sweaty/doom [P-6, D-6]). Generated covers: condition (100%), tightness not pain, no exertional SOB, no pain. Misses explicit absences of anxiety/sweaty/doom and doctor's screening thereof; does not note nuance of patient's mild SOB report. Covers ~70% of key points (strong on nature, weak on full absences).",
+    "faithfulness": "All claims directly verifiable: tightness not pain in P-1 ('not really pain... feels a bit tight'); doctor's summary in D-36 verbatim for SOB and pain. Citations accurate (P-1, D-36). No hallucinations or unverifiable details; fully grounded in transcript.",
+    "relevance": "Directly identifies condition and cited symptoms (nature: tightness/SOB; absence: no pain), structured as bullet points matching question's request for specific findings. No tangents or off-topic content; perfectly addresses question despite incompleteness."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 5,
+    "relevance": 5
+  },
+  "average_score": 4.25,
+  "summary": "The Generated Answer is factually accurate and highly faithful/relevant but moderately incomplete in covering the full range of absent symptoms cited by the doctor."
+}

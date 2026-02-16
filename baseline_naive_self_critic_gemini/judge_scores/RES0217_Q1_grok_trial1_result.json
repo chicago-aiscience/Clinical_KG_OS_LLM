@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies local symptoms of redness, tenderness, and soreness from [P-1], consistent with Gold. However, it significantly errs on systemic symptoms: it claims the patient 'reported' joint pain rather than denied it ([D-7/P-7]), confusing local skin soreness ([P-1], where patient specifies 'not the joint itself') with systemic joint pain screened separately; fever and headaches denials are correct. This contradiction on a core point lowers the score.",
+    "completeness": "Gold local key points: location details (behind left knee/crease), 'stuck pretty good', sore skin 'not the joint', red/tender, no bullseye rash, 'totally fine' aside tenderness, 'pretty healthy'. Generated covers location, red, tender, sore (~40%). Systemic: covers screening/denials for all three (fever, joint pain, headaches), but misstates joint denial. Partial coverage: 50-79%.",
+    "faithfulness": "Local symptoms verifiable in [P-1]/[P-6]. Joint pain screening [D-7] verifiable, but claim of patient 'reporting' it (equating to local soreness) contradicts explicit denial [P-7] and clarification 'not the joint' [P-1]; fever [D-8/P-8], headaches [D-19/P-19/P-20] verifiable. Doctor summary reference [D-13] ok. Multiple misrepresented claims.",
+    "relevance": "Directly structures response around local symptoms and specific systemic symptoms (fever, joint pain, headaches) per question, with citations; error on joint pain does not introduce tangents."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer partially covers local symptoms accurately but significantly misrepresents the patient's denial of systemic joint pain, leading to lower correctness and faithfulness."
+}

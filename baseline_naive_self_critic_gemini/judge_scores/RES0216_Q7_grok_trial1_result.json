@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer states symptoms began 3 days ago on a walk with dog [P-4], no specific trigger [P-3], staying the same/pretty steady [P-2,P-3], always there but exacerbated by walking dog, rising from chair, big breath [P-9,P-10], noticeable on inspiration [P-1,P-5], reduced walks from couple to one per day [P-22]. Generated correctly notes 3-day onset [P-1], tightness always there esp on inspiration [P-1,P-9], exacerbated by walking dog [P-1,P-9,D-10], rising from chair/deep breath [P-9]; however, it inaccurately describes progression as 'persistent but intermittent' (contradicts 'staying the same' and 'always there' baseline), omits no specific trigger and explicit first notice on walk [P-4], and wrongly states patient maintains normal walking routine (contradicts reduction to one walk [P-22]). Significant contradictions on progression and impact.",
+    "completeness": "Key Gold points covered: 3-day onset (yes), first noticed on walk (implied but not explicit), exacerbated by walks/chair/breath/inspiration (yes), always there baseline (partial). Missed/contradicted: no specific trigger (missed), staying the same/steady (missed, called intermittent), reduced to one walk/day (contradicted as maintains normal), no work missed/limiting activity (missed). Covers ~40-50% of key points.",
+    "faithfulness": "Most claims grounded: onset [P-1], always there/worse on walk [P-9,D-10], exacerbators [P-1,P-9]. Unverifiable/hallucinated: 'Knowledge graph data... [KG]' (no KG in transcript), 'intermittent' (not in transcript, contradicts 'always there' [P-9]), 'maintains normal daily walking routine' (contradicts [P-22]). Multiple hallucinated/misrepresented facts.",
+    "relevance": "Generated Answer is structured directly around onset/development, progression, exacerbating factors, and impact on walking routine, perfectly matching the question's focus with no off-topic content aside from minor irrelevant KG mention."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer has significant factual inaccuracies and omissions compared to the Gold Answer, including contradictions on symptom progression and impact on walking routine, plus hallucinations, despite being relevant and partially grounded."
+}

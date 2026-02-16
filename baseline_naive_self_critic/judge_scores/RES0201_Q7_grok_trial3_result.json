@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer provides precise timeline: sore throat Day 1 (4 days ago, worsening over 4 days), muscle aches/fatigue shortly after, reduced taste Day 3 (2 days ago, constant), breathing difficulty Day 4 (yesterday, constant and worsening). Generated Answer correctly identifies sore throat onset 4 days ago but vaguely groups 'new symptom or worsening yesterday' without explicitly naming breathing difficulty or its details; misplaces muscle aches and taste as 'current status' without their specific timelines; omits fatigue distinction, self-treatment failure, and sore throat progression details; significant discrepancies in timeline and symptom details.",
+    "completeness": "Gold key points: sore throat Day1/worsening/food issues; aches/fatigue immediately after; taste Day3 constant/new/no smell; breathing Day4 constant/worsening/new/alarming; self-treatment failed; overall progression. Generated covers sore throat onset/severity partially, vague yesterday symptom (breathing), muscle aches and taste mentions; misses aches timing (immediately after), taste timing (2 days), breathing specifics, fatigue, self-treatment, sore throat worsening explicitly; covers ~30-40% of key points.",
+    "faithfulness": "Claims verifiable: sore throat details [P-2], yesterday onset [P-8], aches [P-25], taste [P-19]; but introduces unnecessary vagueness ('only \"that\"' despite clear breathing context [P-7/P-8]), ignores explicit timings for aches [P-26 'immediately after'], taste [P-20 'two days ago']; infers COVID context [D-43] accurately but speculates 'likely' breathing; some plausible but ungrounded timeline placements; minor hallucinations in vagueness and omissions.",
+    "relevance": "Directly attempts chronological structure starting with sore throat, addresses symptom development and some severity, but vague on specifics, order incomplete, minor tangent to COVID inference; mostly focused on question."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 3,
+    "relevance": 4
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer partially captures the sore throat onset but fails to provide accurate chronological order, timings, and severity changes for other symptoms compared to the Gold Answer, resulting in low correctness and completeness."
+}

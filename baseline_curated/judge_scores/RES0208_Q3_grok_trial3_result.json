@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer specifies that the doctor cited 'fevers and fatigue and muscle aches' strictly for general infectious process, with 'difficulty breathing' and emerging 'sore throat and cough' as additional distinct symptoms preventing ruling out COVID-19; Generated Answer incorrectly includes 'difficulty breathing', 'sore throat', and 'cough' under general infection evidence and attributes COVID concern to 'loss of taste' and 'loss of smell' (not cited by doctor in D-36), leading to significant contradictions and factual errors.",
+    "completeness": "Key points from Gold: general infection symptoms (fevers, fatigue, muscle aches); additional COVID-related (difficulty breathing, sore throat, cough); note that loss of taste/smell not explicitly cited in assessment; focus on respiratory findings. Generated covers fevers/fatigue/muscle aches (~30%) but misses correct additional symptoms, adds incorrect ones (taste/smell), and ignores non-citation of anosmia/ageusia.",
+    "faithfulness": "Generated misquotes D-36 by grouping dyspnea/sore throat/cough with infection evidence (transcript separates with 'and then'); hallucinates 'knowledge graph' (absent from source); fabricates that loss of taste/smell are the distinct COVID symptoms cited by doctor (patient-reported earlier, not in D-36 assessment); multiple ungrounded claims.",
+    "relevance": "Generated structures response around the two parts of the question (general infection evidence and additional COVID symptoms) with direct headings, staying mostly on-topic despite errors and extraneous 'knowledge graph' reference."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer has significant factual inaccuracies and hallucinations compared to the Gold Answer, misattributing symptoms and introducing non-existent sources, though it remains structurally relevant to the question."
+}

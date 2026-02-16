@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Step-by-step: Gold Answer correctly identifies stuffy nose (congestion), runny nose (rhinorrhea) for 1 week, initially stuffy now mostly running [P-1-P-3], clear discharge [P-5], and explicit denials of cough [P-4], post-nasal drip [P-6], sore throat/shortness of breath/fevers/chills [P-7], loss of taste/smell [P-16]. Generated Answer partially matches nasal symptoms from [P-1] but omits duration and evolution; incorrectly states no description of discharge character despite [P-5] 'mostly clear'; fabricates absence of denials despite multiple explicit 'No' responses in transcript matching Gold. Significant contradictions on discharge and denials lead to score 2.",
+    "completeness": "Key points from Gold: (1) stuffy nose/congestion, runny nose/rhinorrhea for 1 week [P-1,P-2]; (2) initially stuffy, now mostly running [P-3]; (3) mostly clear discharge [P-5]; (4) denied cough [P-4]; (5) no post-nasal drip [P-6]; (6) no sore throat/SOB/fevers/chills [P-7]; (7) no loss taste/smell [P-16]; (8) mild fatigue/other negatives. Generated covers only basic nasal symptoms (~25% coverage), misses discharge entirely, misses all denials; score 2.",
+    "faithfulness": "Generated claims grounded in [P-1] for symptoms (accurate); [P-10] for runny nose persistence (minor stretch); but hallucinates 'no description of discharge character' despite direct [P-5] 'mostly clear'; hallucinates 'no evidence' of denials despite [P-4,P-6,P-7,P-16] explicit 'No'; cites irrelevant [P-11],[P-23] for denials. Multiple unverifiable absences and wrong citations indicate multiple hallucinations; score 2.",
+    "relevance": "Generated Answer is structured directly around the question's three parts (nasal symptoms, discharge character, related symptom denials) with no off-topic content or tangents; perfectly focused despite inaccuracies; score 5."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer partially captures nasal symptoms but significantly errs by denying the existence of discharge character description and symptom denials that are explicitly present in the transcript and Gold Answer."
+}

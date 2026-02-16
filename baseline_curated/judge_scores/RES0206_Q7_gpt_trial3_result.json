@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Generated answer is largely consistent with the Gold Answer: baseline COPD is described as manageable with inhalers; over 3 days she developed increased cough, green/yellow sputum, occasional blood with forceful coughing, worse dyspnea, and possible fever. However, it understates uncertainty about fever (patient says “may have had a fever”) and does not explicitly report the patient’s own statement that this is “probably the worst” episode. No direct contradictions to the Gold Answer, but a few mild over-interpretations (e.g., “disciplined…medication adherence”).",
+    "completeness": "Key Gold Answer points covered: baseline well-managed COPD with puffers; maintenance + rescue inhaler use; acute 3-day deterioration with increased cough, increased green-yellow sputum, hemoptysis, worsened dyspnea; possible fever.\nKey points missed: (1) explicit trajectory statement that symptoms have been “maybe getting a little worse” and “definitely haven’t gotten better” over the 3 days; (2) functional decline details (used to walk around the block/multiple dog walks; now “trickier,” though she could still walk to appointment); (3) explicit comparison that patient says this is “probably the worst” she has had; (4) prior exacerbation context—ED visits ~2x in 3 years and never hospitalized overnight, implying prior episodes were less severe.",
+    "faithfulness": "Most statements are grounded in transcript with correct citation references. Minor embellishments/unverifiable phrasing include “knowledge graph” (not in transcript) and implying strong “medication adherence”/discipline beyond what is stated. Otherwise, no major hallucinated clinical facts.",
+    "relevance": "Answer is focused on symptom evolution over 3 days and compares severity to baseline/prior episodes. However, it incompletely addresses the ‘improve vs worsen during that time’ portion (implied worsening but does not explicitly cite the patient’s answer to that question) and only loosely compares to prior exacerbations (does not mention prior ED visits/hospitalization history)."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 4,
+    "relevance": 4
+  },
+  "average_score": 3.75,
+  "summary": "Mostly accurate and on-topic description of baseline-to-acute worsening, but it omits several key comparison and trajectory details (explicit worsening statement, functional decline, “worst episode” quote, and prior ED/no-admission history) and contains minor embellishment."
+}

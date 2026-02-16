@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly states Jessica is 'currently taking Claritin,' contradicting the transcript [P-25] and Gold Answer, which specify she carries it 'just in case' but is not actively taking it. It completely omits the birth control 'Deyo' (oral contraceptive, 3-month pill), a key current medication in both transcript and Gold. Past treatments mention allergy shots but omit dosing details ('once a week for a little while in winter') and no EpiPen. It misattributes a doctor note on allergy flaring to [D-58], which summarizes current symptoms, not allergies. Adds family history, plausible but not core. Significant errors and omissions vs Gold.",
+    "completeness": "Gold key points: Claritin (carrying, not taking, allergies, just in case); Deyo (taking, oral BC, 3 months); no med allergies; allergy shots (some years, weekly in winter); no EpiPen, seasonal allergies details. Generated covers Claritin (incorrectly as taking) and allergy shots (partially, misses dosing/not every year fully matched). Misses Deyo entirely, no allergies mention, no EpiPen, no shot dosing precision, no carrying distinction. Covers ~25-30% of key points.",
+    "faithfulness": "Most claims grounded: Claritin for seasonal allergies [P-16, P-25]; shots from allergist some years [P-16]; family history [P-33]. However, 'currently taking Claritin' contradicts [P-25]; no evidence for doctor noting allergy flaring in [D-58] (it's symptom summary); omits verifiable details like 'just in case' and Deyo [P-25-28]. Multiple misinterpretations and omissions, some hallucinated attribution.",
+    "relevance": "Directly addresses current medications (Claritin) and past allergist treatments (shots) with indications, notes lack of dosing; minor tangent on family history. No off-topic content, focused on question despite incompleteness."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer has significant factual errors (e.g., Claritin status, missing birth control), incomplete coverage, faithfulness issues from misinterpretation, but remains mostly relevant."
+}

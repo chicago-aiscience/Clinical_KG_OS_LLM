@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer details cough as 3 months initially dry/intermittent/recurrent, productive greenish gross gunk past 3 days (no blood, no foul smell), wakes nightly last month causing fatigue/poor sleep, chest discomfort only on cough, subjective fevers (hot at night past couple days, no temp), impaired exercise, origin at pole class. Denials: night sweats, wt loss, hemoptysis, N/V, stiff neck, body pain, sick contacts. Generated correctly notes 3-month intermittent cough, gross greenish gunk, pain on cough; associated sleep disturbance/fatigue/exercise limit; partial denial of pain. However, significant discrepancies: omits initial dry nature and 3-day productive onset, sputum no blood/no smell, fevers, cough origin, precise sleep details (nightly last month), most denials (only partial pain). These omissions contradict full factual consistency with Gold.",
+    "completeness": "Gold key points: symptoms - 3mo cough (initial dry/intermittent/Pole origin), 3-day productive greenish gross gunk (no blood/smell), nightly wake last mo/fatigue/sleep poor, chest discomfort cough only, fevers hot night no temp, exercise impair; denials - night sweats, wt loss/clothes, hemoptysis, N/V, stiff neck, body pain, 3 sick contacts (~16 points). Generated covers: 3mo intermittent cough, gross greenish gunk (no timing), pain cough, sleep disturb/fatigue, exercise; denial pain partial (~6 partial points). Covers ~30-40% (20-49%), misses fevers, sputum details, cough history precision, most denials.",
+    "faithfulness": "All Generated claims directly verifiable in transcript with accurate citations: cough 3mo/intermittent [P-2], gross [P-2,P-9], hurts cough [P-3], gunk/greenish [P-2,P-9], sleep waking/sleep not great/tired [P-19], exercise [P-47], pain denial except cough/just tired [P-3,P-19]. No hallucinations or unverifiable details; minor paraphrasing but grounded.",
+    "relevance": "Generated directly addresses question by structuring respiratory symptoms (cough/sputum chars), associated symptoms (sleep/fatigue/activity), explicit denials; no off-topic content, uses transcript citations, perfectly focused despite incompleteness."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 5,
+    "relevance": 5
+  },
+  "average_score": 3.5,
+  "summary": "The Generated Answer is faithful and relevant but lacks correctness and completeness due to significant omissions of key symptoms like fevers and sputum details, precise cough chronology, and most explicit denials compared to the Gold Answer."
+}

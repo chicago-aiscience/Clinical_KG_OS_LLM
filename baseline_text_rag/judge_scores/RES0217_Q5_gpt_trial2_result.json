@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly captures the clinician’s two main justifications: (1) exposure on Friday and Saturday leading the doctor to estimate attachment duration >72 hours (as stated explicitly in [D-6]) and (2) use of the Ontario Lyme distribution map to judge Strathroy as “close enough…a concerning point,” supporting antibiotics (per [D-13]). Minor issues: it attributes the >72-hour inference partly to [D-5], which is about deer-tick identification rather than duration; otherwise the described logic is consistent with the Gold Answer.",
+    "completeness": "Key Gold Answer points covered: hiking Friday + gardening Saturday used in estimating prolonged attachment; doctor concluded >72 hours; doctor referenced Ontario Lyme map; Strathroy considered concerning; decision to proceed with prophylactic antibiotics. \nKey points partially/missed: patient’s explicit uncertainty about when tick attached (“don’t really know when I got it” [P-1]); that she noticed/removed it “earlier today” [D-1]; doctor’s intermediate reasoning about time since last outdoors to first noticing it [D-2]. Overall, it includes the core reasoning but omits some supporting timeline details.",
+    "faithfulness": "The answer is largely grounded in the transcript, but the bracketed citations are somewhat inaccurate: [D-5] does not support the >72-hour estimate, and the Strathroy location comes from [P-12] rather than [D-12]. The substantive claims themselves are supported by [D-6] and [D-13]. No major hallucinated facts beyond citation miscues.",
+    "relevance": "Directly answers both parts of the question (attachment-duration rationale and map-based geographic-risk rationale) without irrelevant tangents."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 4,
+    "relevance": 5
+  },
+  "average_score": 4.25,
+  "summary": "The Generated Answer addresses both requested rationales accurately and succinctly, but misses a few supporting timeline details and includes minor citation inaccuracies."
+}

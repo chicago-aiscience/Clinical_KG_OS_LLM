@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Most reported symptoms and frequency details align with the Gold Answer: dry cough described as almost nonstop during the day (P-1), shortness of breath (P-1), wheezing a lot (P-15), and nighttime symptoms less frequent at about every other day/every two days (P-18). No direct contradictions to the Gold Answer. However, the Generated Answer omits or softens some clinically important specifics (e.g., chest tightness) and adds a mild inference that cold air specifically worsens the cough (the transcript supports cold as an asthma trigger, but not explicitly the cough).",
+    "completeness": "Key Gold Answer points covered: (1) dry cough and near-constant daytime cough; (2) shortness of breath; (3) wheezing; (4) daytime > nighttime frequency and nighttime every other day/every two days.\nKey points missed: (1) duration of symptoms ~2 weeks (P-13/P-14); (2) explicit non-productive nature beyond “dry” (doctor asked about bringing up gunk, D-15); (3) breathing difficulty described as “hard time breathing” during episodes and when wheezing is severe (D-19/P-19, P-16); (4) chest tightness (D-20/P-20); (5) wheezing occurring even more often than bronchodilator use (D-17/P-17). Overall coverage is roughly 60–75% of Gold Answer content.",
+    "faithfulness": "Most statements are grounded in the transcript with appropriate references (P-1, P-15, P-18, P-9). Minor overreach: stating cold air makes the cough worse/‘triggered by cold air specifically’ extrapolates from cold worsening symptoms/asthma generally (P-9, P-11) rather than explicitly the cough. No major hallucinations.",
+    "relevance": "The response is focused on the requested symptom types (cough character, breathing difficulty, wheeze) and day vs night frequency. It includes some trigger information (cold/exercise) that is not explicitly asked for, but it is not overly distracting. Main relevance remains high."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 4,
+    "relevance": 5
+  },
+  "average_score": 4.0,
+  "summary": "Accurate and largely transcript-grounded but misses several key symptom details highlighted in the Gold Answer (notably chest tightness, 2-week duration, and severity/frequency nuances), while remaining highly relevant to the question."
+}

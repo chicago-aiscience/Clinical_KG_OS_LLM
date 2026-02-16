@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer completely misidentifies the infectious screening elements outlined in the Gold Answer; instead of covering symptoms like recent colds/infections, loss of taste/smell, fevers, nausea/vomiting, belly pain, and dry cough, plus exposures like sick contacts and travel (all denied), it focuses on unrelated asthma triggers such as cold weather, pollen, exercise, pets, and wheezing, and incorrectly states the planned diagnostic test as increased bronchodilator use rather than a COVID swab, resulting in factual contradictions across all key aspects.",
+    "completeness": "Gold Answer key points: infectious symptoms screened (colds/infections, taste/smell loss, fevers, nausea/vomiting, belly pain, dry cough - all denied); exposure history (sick at home/frequent contacts, sick outside home, travel - all denied); purpose of questions; COVID swab planned despite negatives. Generated Answer covers 0% of these, instead listing unrelated triggers (cold, pollen, pets, exercise, wheezing) with responses and wrong test.",
+    "faithfulness": "Generated Answer cites transcript segments accurately for asthma triggers (e.g., P-9, P-11, P-39 for cold, pollen, exercise, pets), but hallucinates that these constitute 'screening to rule out infection' or distinguish from infection (not stated in transcript for these items); infection screening is explicitly in D-21-D-28 and separate; also fabricates 'implied negative screening for infection not captured' when it is captured, and misstates bronchodilator increase as the 'diagnostic test planned' instead of COVID swab (D-29). Multiple hallucinated connections and purposes.",
+    "relevance": "The question specifically asks for screening to rule out infectious causes (incl. COVID-19) symptoms/exposures, patient responses, and planned diagnostic test (COVID swab); Generated Answer addresses unrelated asthma/environmental triggers and wrong test, failing to directly address the infectious rule-out focus despite superficially structured response."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 1
+  },
+  "average_score": 1.25,
+  "summary": "The Generated Answer is largely incorrect, incomplete, and unfaithful by hallucinating non-infectious asthma triggers as the screening for infection rule-out and misidentifying the planned test, rendering it irrelevant to the question."
+}

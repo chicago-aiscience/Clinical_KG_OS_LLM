@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer accurately identifies the triad of symptoms (dry cough worsening over days, fever ~101°F, possible loss of taste) matching the Gold Answer's key facts and doctor's statements from [D-44] and [D-45] on COVID alignment and fever indicating infection over asthma. Core facts are fully consistent, but minor discrepancies arise from extraneous references to a 'knowledge graph,' [LAB_RESULT], [SYMPTOM], and [KG], which are not in the Gold Answer or transcript.",
+    "completeness": "Covers all key points from Gold: dry cough worsening [P-1,P-5,P-12], fever details [P-1,P-2], loss of taste [P-17], alignment with COVID [D-44], fever distinguishing infection from asthma [D-45]; minor omission of explicit 'systemic involvement (fatigue, decreased appetite)' in conclusion, but triad and reasoning fully addressed (100%).",
+    "faithfulness": "Symptom descriptions and citations [P-1,P-2,P-5,P-12,P-17,D-44,D-45] are verifiable in transcript; however, multiple hallucinated elements including 'knowledge graph' references, [LAB_RESULT], [SYMPTOM], [KG], and claims like 'dry cough points to both COVID-19 and infection' per KG are not grounded in transcript.",
+    "relevance": "Directly and comprehensively addresses the question by detailing the exact symptom combination (respiratory, temperature, taste change) and doctor's collective use for COVID alignment and infectious conclusion, with no off-topic content."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 5,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 4.0,
+  "summary": "The Generated Answer is factually accurate and complete in covering the Gold Answer's core symptoms and reasoning but is undermined by multiple hallucinations referencing a non-existent knowledge graph."
+}

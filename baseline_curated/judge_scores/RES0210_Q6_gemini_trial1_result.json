@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly claims that the doctor's plan and self-care measures are not present in the transcript. These are explicitly stated in [D-43] (consulting with a supervising physician) and [P-14]/[P-13] (Tylenol and expectorating). It also fails to identify alleviating factors that were mentioned.",
+    "completeness": "The answer misses approximately 70% of the key points from the Gold Answer. It fails to address the doctor's plan, misses all self-care measures, and misses all alleviating factors. It only successfully identifies a few aggravating factors (deep breathing and physical exertion).",
+    "faithfulness": "The model 'hallucinates' the absence of information. It claims the transcript does not include the doctor's statements regarding next steps or self-care, even though these are present in the provided text. It also references a 'Knowledge Graph' which was not part of the provided source context.",
+    "relevance": "While the response follows the structure of the question, it provides negative answers (claiming information is missing) for most of the prompt, making it only partially relevant to the user's information needs. It focuses well on the aggravating factors it did find but fails the rest of the query."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "The Generated Answer fails significantly by claiming that most of the requested information (plan, self-care, and alleviating factors) is missing from the transcript when it is clearly present."
+}

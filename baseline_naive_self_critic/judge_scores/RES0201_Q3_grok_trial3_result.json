@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer identifies the symptom constellation as sore throat, worsening difficulty breathing, reduced taste, and fatigue/muscle aches, all cited from transcript; Generated Answer only highlights sore throat and reduced taste as primary (vaguely mentions others), omits breathing and fatigue entirely (key symptoms), misinterprets P-19 by claiming olfactory function is affected ('not smell' means no loss of smell, not affected smell), and fabricates 'Knowledge Graph' links not present in Gold or transcript, leading to significant factual errors and contradictions.",
+    "completeness": "Gold key points: doctor statement [D-43], sore throat details [P-2,P-4], breathing details [P-8-10], taste details [P-19-21], fatigue/aches [P-25-26], screening [D-19], testing rationale [D-43], exposure/immunizations [P-12-14]; Generated covers doctor statement, partial sore throat/taste; misses breathing, fatigue, screening specifics, exposure details (~25% coverage).",
+    "faithfulness": "Claims like sore throat/taste citations verifiable [P-2,P-6,P-19]; doctor statement accurate [D-43]; but hallucinates entire 'Knowledge Graph' section with non-existent symptom-diagnosis links, misreads P-19 as olfactory dysfunction (patient reports no smell loss), alters 'reduced taste' to 'loss of taste'; multiple unverifiable/hallucinated elements.",
+    "relevance": "Addresses question by identifying sore throat/reduced taste as leading to suspicion and discussing taste vs. smell, but omits key symptoms like breathing, adds off-topic fabricated KG, partially diluting focus."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "The Generated Answer partially identifies relevant symptoms but omits critical ones like dyspnea and fatigue, misinterprets the taste/smell report, and hallucinates a non-existent knowledge graph, resulting in low factual accuracy and completeness."
+}

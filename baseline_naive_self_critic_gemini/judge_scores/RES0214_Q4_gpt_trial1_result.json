@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the ordered test as a COVID-19 swab (matches Gold: “we'll be ordering a covid swab no matter what” [D-53]). It also correctly states the main rationale for prioritizing COVID-19: household clustering/possible transmission from the husband and the clinician’s statement that COVID is the first rule-out if the husband has it and the patient has it [D-53], consistent with Gold. Minor overstatement: it says the patient “likely contracted the virus from him,” which is not explicitly stated (the transcript supports shared exposure/household transmission concern, but not definitive direction of transmission).",
+    "completeness": "Key points covered: COVID swab ordered; COVID prioritized due to husband having similar symptoms and clinician explicitly saying COVID is first to rule out [D-53]; acknowledges infectious presentation. Key points partially/missed: the explicit self-isolation instruction and its public health/containment motivation (Gold cites [D-53] and [D-54]) is only indirectly mentioned, without clearly stating the doctor instructed self-isolation; the sequencing that influenza was raised as a possibility only after COVID rule-out discussion and after learning she had not received a flu shot [P-53, D-54] is not included.",
+    "faithfulness": "Most claims are grounded in the transcript with appropriate citations (COVID swab; husband similar symptoms; fever/sore throat; “first thing to rule out”). However, references to a “knowledge graph” are not in the transcript and therefore constitute hallucinated/unverifiable content. The statement implying likely transmission from husband is plausible but not directly stated.",
+    "relevance": "The answer directly addresses both parts of the question: (1) what test was ordered and (2) why COVID-19 was prioritized over influenza. No major irrelevant tangents beyond the unsupported “knowledge graph” mention."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 3,
+    "relevance": 5
+  },
+  "average_score": 4.0,
+  "summary": "Accurately identifies the COVID swab and the main household-transmission rationale, but omits some Gold details (self-isolation/flu-shot sequencing) and introduces an ungrounded “knowledge graph” claim that reduces faithfulness."
+}

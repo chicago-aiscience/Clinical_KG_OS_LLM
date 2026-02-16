@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer provides precise chronology: sore throat Day 1 (4 days ago, worsening), fatigue/muscle aches shortly after (immediately after sore throat), reduced taste Day 3 (2 days ago, constant), breathing Day 4 (yesterday, worsening, constant), smell unaffected, failed treatments, progressive worsening. Generated Answer correctly identifies sore throat onset at 4 days but omits worsening (P-4), vaguely handles systemic symptoms without 'immediately after' (P-26), misstates sensory as partial taste loss AND total smell loss (P-19 says 'maybe taste a little bit but not smell' meaning smell unaffected, contradicting Gold), omits taste timeline (P-20), and provides no timeline or severity details for breathing (misses P-8,9,10). Significant contradictions on smell, timelines, and severity changes.",
+    "completeness": "Gold key points: Day 1 sore throat (onset, worsening, swallowing issues); shortly after fatigue/aches (tired not weak); Day 3 taste (reduced, constant, new, smell unaffected); Day 4 breathing (onset yesterday, constant, worsening, novel); failed treatments; overall progression. Generated covers sore throat onset/partial severity (~25%), systemic symptoms vaguely (~20%), sensory inaccurately (~10%), breathing vaguely (~10%); misses day structure, most severity changes, exact timelines, smell detail, progression summary. Covers ~20-49%.",
+    "faithfulness": "Claims verifiable? Sore throat onset/timeline P-2 ok, but severity 'did not abate' ignores 'getting worse' P-4; systemic P-25 ok but timeline 'not quantified' contradicts P-26 'immediately after'; sensory misinterprets P-19 as smell loss (patient denies smell issue), ignores P-20 timeline; breathing cites D-7/D-43 (doctor prompts/plans, not onset P-8). Adds 'medical knowledge' not in transcript. Multiple misinterpretations/hallucinations (smell loss, vague timelines).",
+    "relevance": "Directly structures as chronological symptom list with onset/severity changes, matching question focus on order from sore throat onset and severity over time; minor tangent with unprovided 'medical knowledge' but no major off-topic content."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer attempts chronological structure but has significant factual errors, incomplete coverage, and hallucinations regarding timelines, smell, and severity changes compared to the Gold Answer and transcript."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Gold Answer accurately identifies the four specific questions (weight loss [D-22], travel [D-23], sick contacts [D-24], chemical exposure [D-34]) from the transcript, links each to targeted differentials (e.g., lung cancer/TB for weight loss, infections for travel/sick contacts, occupational disease for chemicals), and explains how patient responses narrow or maintain them. The Generated Answer falsely claims 'no evidence' these questions were asked, despite direct quotes in the transcript, and instead analyzes unrelated symptoms (e.g., cough, chills, chest pain) with incorrect differentials (e.g., angina, heart attack). This introduces major factual contradictions and errors compared to Gold.",
+    "completeness": "Gold key points: (1) Weight loss screens cancer/TB, denial less likely; (2) Travel screens infections (e.g., Legionella), Sarnia trip timing relevant; (3) Sick contacts screens infections/TB, denial reduces likelihood; (4) Chemical exposure screens pneumonitis, limited exposure less likely; overall favors acute infection. Generated covers 0% of these, ignoring all four questions/responses and fabricating alternative analysis of other symptoms.",
+    "faithfulness": "Generated hallucinates absence of explicit transcript questions [D-22/P-22, D-23/P-23, D-24/P-24, D-34/P-34], references undefined 'Knowledge Graph' not in source, and fabricates unverifiable links (e.g., chest pain to angina despite transcript describing pleuritic pain worsened by breathing/coughing [P-18/P-19]). No claims grounded in the specified questions; largely fabricated denial and tangent.",
+    "relevance": "Question focuses exclusively on the four named questions, their screened differentials, and impact of responses. Generated denies questions exist, refuses to analyze them, and pivots to unrelated symptom-based differentials (e.g., cardiovascular, lung cancer from smoking), missing the direct query entirely."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 1
+  },
+  "average_score": 1.0,
+  "summary": "The Generated Answer is entirely incorrect, fabricating the absence of the key questions from the transcript, ignoring the Gold Answer's analysis, and providing irrelevant alternative differentials."
+}

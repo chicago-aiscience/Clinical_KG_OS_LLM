@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The generated answer is factually incorrect. It explicitly states that the doctor does not ask about fever, runny nose, sick contacts, recent travel, rashes, or phlegm production. However, the transcript contains these exact questions: fever (D-7), runny nose (D-8), sick contacts (D-10), travel (D-11), rashes (D-13), and 'bringing anything up' which refers to phlegm (D-31). Because it denies the existence of these questions, it fails to identify the conditions being screened for (pneumonia, URI, etc.) as detailed in the Gold Answer.",
+    "completeness": "The answer misses 100% of the key points required by the prompt regarding the specific screening questions. It does not list the conditions the doctor was attempting to exclude (infectious causes, systemic conditions, etc.) through those specific inquiries. While it discusses asthma and triggers, it ignores the primary focus of the question.",
+    "faithfulness": "The generated answer directly contradicts the source transcript. It claims information is missing when it is clearly present in multiple dialogue turns. This is a significant hallucination or failure of information retrieval.",
+    "relevance": "The answer fails to address the specific components of the question. Instead of explaining how the listed symptoms helped narrow the diagnosis, it provides an alternative analysis based on a false premise that the requested information was unavailable in the text."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 1
+  },
+  "average_score": 1.0,
+  "summary": "The generated answer incorrectly claims the required information is absent from the transcript and fails to answer the clinical screening questions provided in the prompt."
+}

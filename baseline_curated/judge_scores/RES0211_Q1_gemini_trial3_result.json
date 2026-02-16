@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer contains major factual errors. It incorrectly states that the transcript does not contain information regarding nausea, joint pain, or rashes, and claims Jessica did not deny these. In the transcript, Jessica explicitly denies rashes (P-10), nausea and vomiting (P-11), and joint pain (P-13). This directly contradicts the Gold Answer and the provided source text.",
+    "completeness": "The Generated Answer covers the reported symptoms (dry cough, scratchy throat, headache, fever) but misses others like malaise ('feeling crappy/icky') and tiredness. Crucially, it fails to list any of the denied symptoms specifically requested in the prompt, claiming they were not mentioned.",
+    "faithfulness": "The Generated Answer fails significantly on faithfulness by claiming information is missing from the transcript when it is clearly present. Claiming that the patient did not explicitly deny symptoms that were asked about and answered with 'No' (P-10, P-11, P-12, P-13) is a failure of grounding.",
+    "relevance": "The Generated Answer is relevant in that it attempts to answer both parts of the prompt (reported symptoms and denied symptoms), but the substance of the second part is factually incorrect."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 2,
+    "faithfulness": 1,
+    "relevance": 5
+  },
+  "average_score": 2.25,
+  "summary": "The Generated Answer correctly identifies reported symptoms but completely fails the second half of the prompt by incorrectly claiming that the transcript lacks information about the denied symptoms."
+}

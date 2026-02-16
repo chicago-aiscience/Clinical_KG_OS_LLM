@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer specifies 'COVID-19' while Generated uses 'COVID' (minor naming discrepancy, equivalent); condition, test (covid swab), and core social contact detail (walking dogs with sick friend, too close) match exactly with accurate citations [D-43, P-20]; extra phrase 'cited in the knowledge graph' not in Gold or transcript but does not contradict core facts.",
+    "completeness": "Key points from Gold covered: condition (COVID-19), test (swab [D-43]), main social detail (friends walking dogs outside, one sick, walked too close [P-20]); missed: patient's uncertainty about friend's COVID test [P-21], doctor's screening for COVID symptoms (smell/taste/confusion/muscle aches denied [P-32/33/34/35]), travel denial [P-31], and explanatory context on why testing warranted despite denials; covers ~60-70% of Gold's points.",
+    "faithfulness": "All primary claims (condition, test quote [D-43], social contact quote [P-20]) directly verifiable in transcript; minor hallucination in 'established the risk factor of exposure cited in the knowledge graph' (no knowledge graph in transcript); no other fabrications.",
+    "relevance": "Generated Answer directly and concisely addresses all three parts of the question (condition, test, prompting social detail) with structured format and summary; no off-topic content."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 4,
+    "relevance": 5
+  },
+  "average_score": 4.0,
+  "summary": "The Generated Answer is mostly accurate and relevant, faithfully grounded in the transcript with proper citations, but misses some contextual details from the Gold Answer on additional screenings and prompts, resulting in moderate completeness."
+}

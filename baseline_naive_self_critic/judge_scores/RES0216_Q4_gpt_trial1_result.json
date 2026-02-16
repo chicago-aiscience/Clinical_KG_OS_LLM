@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the deprioritized condition as cardiac ischemia/“cardiac ischemic picture,” consistent with the Gold Answer and the transcript (D-36). It accurately reports that the clinician cited the lack of chest pain and that the complaint was more “tightness” than pain (P-5, D-36). However, it adds an unsupported assertion that a “knowledge graph” rule (“no pain rules out cardiac ischemia”) applies, which is not stated in the transcript and overstates diagnostic certainty.",
+    "completeness": "Key points in Gold Answer: (1) condition: cardiac ischemic picture lower on differential; (2) chest complaint characterized as tightness rather than pain; (3) clinician noted patient didn’t really get out of breath with exercise (i.e., not classic exertional dyspnea pattern) (D-36); (4) pertinent negatives: no chest pain (P-5), no anxiety/sweating/impending doom (P-6) screened by clinician (D-6). Generated Answer covers (1) and (2)/(4) partially (no pain), but omits the clinician’s exertional dyspnea remark and omits the other absent “red flag” symptoms (anxiety, sweating, impending doom).",
+    "faithfulness": "Most statements are grounded in the transcript (tightness, harder to breathe, no pain). However, the reference to a “knowledge graph” and a rule that ‘no pain rules out cardiac ischemia’ is not in the transcript and constitutes an ungrounded/hallucinated element.",
+    "relevance": "The response stays focused on the asked elements (which diagnosis was lowered and what symptom findings supported that). The only minor distraction is the ‘knowledge graph’/rules-out framing, but overall it addresses the question."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 3,
+    "relevance": 4
+  },
+  "average_score": 3.5,
+  "summary": "Identifies the correct deprioritized diagnosis and one key supporting symptom pattern (tightness without pain) but misses several clinician-cited negatives (no exertional dyspnea pattern; no anxiety/sweats/impending doom) and includes an ungrounded ‘knowledge graph rules out’ claim."
+}

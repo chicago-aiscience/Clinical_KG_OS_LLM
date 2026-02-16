@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly notes the patient denied loss of smell (P-19), but it omits most of the negative symptom screen documented in the transcript (cough, runny nose, headache, chest pain, fever, chills/night sweats, etc.). It also treats “current smoking status” as a screened symptom/negative finding; while the clinician did ask about smoking, it is not part of the symptom review asked for in the question and not listed as such in the Gold Answer’s negative symptom screen. Several interpretation statements are also questionable/overstated (e.g., that denial of smell loss with some taste loss is “often associated with COVID-19” and helps distinguish from influenza/common cold), which is not supported by the Gold Answer and is not clearly established by the transcript.",
+    "completeness": "Key negatives in Gold Answer that are missing: denial of cough, runny nose, headaches, chest pain, fever, chills/night sweats; denial of prior similar breathing difficulty; denial of sick contacts; denial of recent travel. The Generated Answer only captures loss of smell (1 item) and adds smoking cessation (not a core negative symptom screened for). This is well under 20% of the Gold Answer’s key points.",
+    "faithfulness": "Loss of smell denial and quitting smoking are grounded in the transcript. However, the answer introduces differential/exclusion reasoning (common cold vs influenza; COPD exacerbation triggered by smoking) that is not discussed in the transcript, whereas the Gold Answer explicitly notes that differential diagnoses were not discussed. The claim that the clinician “likely assessed” smoking as a COVID risk factor is also an inference not stated. Overall, multiple claims go beyond what is supported.",
+    "relevance": "Partially addresses the question by identifying one screened negative symptom (anosmia) and attempting to relate it to alternative diagnoses. However, it misses most of the requested negative findings and focuses on smoking status, which is not central to the symptom denial screening asked for. Some content is tangential."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.0,
+  "summary": "Captures only one of the documented negative symptom findings and adds unsupported/inferred differential reasoning, resulting in low correctness, very poor completeness, and limited faithfulness despite partial relevance."
+}

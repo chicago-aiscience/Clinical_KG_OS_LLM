@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer emphasizes doctor's synthesis including history of asthma, medication non-adherence (skipping evening dose P-19, no rescue refill P-17/18 as per D-34), specific symptoms (diffuse tightness worse on exertion P-1/7/9/10), patient's acknowledgment it could be related (P-16), no environmental triggers (P-33), absence of cardiac symptoms (D-36), and therapeutic trial (D-35). Generated Answer correctly identifies asthma history (P-16), key symptoms (chest tightness P-1, SOB P-7, exertion trigger), absence of pain/cardiac (P-1, D-36), and trial (D-35), with accurate citations; however, it introduces unsubstantiated 'knowledge graph' references not in Gold or transcript and omits medication non-adherence as a key link, but no direct contradictions.",
+    "completeness": "Key Gold points covered: asthma history (1), symptoms consistent with bronchospasm (3 partial), absence cardiac (reinforced), therapeutic trial. Missed: medication limiting/non-adherence (2, central in D-34), patient notes it could be related (4), no env triggers (5), full symptom details like constant but worse on exertion/getting up (P-9/10). Covers ~60-70% of key points.",
+    "faithfulness": "Most claims verifiable: symptoms (P-1/7), history (P-16/25), cardiac diff (D-36), trial (D-35). However, repeated 'knowledge graph' references (e.g., salbutamol classification, treatment support) are not in transcript, pure hallucination; minor misattribution of doctor noting maintenance/rescue directly in D-35 (inferred from history). Multiple hallucinated elements.",
+    "relevance": "Directly structures response around symptoms/clinical features, history, and doctor's linking logic, mirroring question; no off-topic content, even secondary hypertension framed appropriately."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.5,
+  "summary": "The Generated Answer is relevant and mostly factually correct but incomplete in covering medication non-adherence and faithfulness suffers from hallucinated 'knowledge graph' references."
+}

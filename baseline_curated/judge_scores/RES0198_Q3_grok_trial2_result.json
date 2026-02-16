@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Step-by-step: Gold Answer emphasizes symptom type (congestion/rhinorrhea without cough, sore throat, etc.), clear discharge, 1-week duration, progression, no allergic exposures/allergies/prior episodes, no fever/headache for bacterial, and daycare exposure. Generated correctly notes stuffy/runny nose (matches type), 1-week duration, doctor's viral conclusion quote, and daycare exposure. No direct contradictions in stated facts, but omits core differentiators (e.g., absent features, clear discharge as vs bacterial, no allergies/exposures vs allergic) and introduces non-Gold element (KG links, not in Gold). Minor discrepancies but core matching facts present; score 3.",
+    "completeness": "Step-by-step: Gold key points: (1) symptom type/absent features (no cough[P-4], no sore throat/SOB/fever[P-7], no post-nasal[P-6]); (2) clear discharge[P-5]; (3) 1-week duration[P-2]/constant[P-8]; (4) progression[P-3]; (5) vs allergic (no fumes/dust/animals[P-22], no allergies[P-28], no recent priors[P-9]); (6) vs bacterial (no fever[P-7]/headache[P-14], clear discharge); (7) daycare plausible exposure[P-11]. Generated covers basic symptoms (stuffy/runny), duration, doctor's timeline note, daycare exposure (~3 partial points). Misses absent features, discharge quality, progression, all vs allergic/bacterial details. Covers ~30-40% of key points; score 2.",
+    "faithfulness": "Step-by-step: Claims like symptoms[P-1,P-3], duration[P-1,P-2], constant[P-8 implied], doctor's quote[D-39] verifiable with accurate citations. Exposure from P-11 verifiable but misquoted slightly ('live with who goes to daycare' vs 'nephew who I live with who goes to daycare'). Hallucinations: 'provided knowledge graph' and its explicit links to daycare/viral/diagnosis/treatments not in transcript at all—multiple unverifiable/hallucinated facts; score 2.",
+    "relevance": "Step-by-step: Question asks for evidence from symptoms (type/duration/discharge/absent) and exposure supporting viral over allergic/bacterial. Generated structures response around symptom profile/duration, exposure, doctor's assessment directly addressing this; minor tangent via hallucinated KG but overall focused and on-topic; score 4."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer partially captures basic symptoms, duration, and exposure but misses critical differentiators against allergic/bacterial causes and hallucinates knowledge graph references, leading to moderate correctness and low completeness/faithfulness."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Generated Answer aligns well with Gold Answer on core symptoms (scratchy throat [P-1/P-4], dry cough [P-1/P-4], headache [P-1/P-2]) and absences (no sputum [inferred dry/P-5/P-6], no GI [P-11/P-12], no joint pain [P-13]), explaining support for URI via upper airway irritation vs lower. Minor discrepancies: uses 'tired [P-13]' as proxy for subjective fever rather than direct citations [P-7/P-9]; adds unemphasized allergies exclusion [P-16] not central to Gold; incorrect citations for absences ([P-1/P-13] instead of precise [P-11/P-12/P-13]). Core facts correct, no contradictions.",
+    "completeness": "Key Gold points covered: scratchy throat, dry cough/non-productive, subjective fever (proxied), headache, no sputum/phlegm, no GI (nausea/vomiting/diarrhea), no joint pain. Partially: malaise ('crappy' [P-1/P-14]). Missed: explicit fever details [P-7/P-9], 3-4 day timeline [P-1/P-3], fatigue distinctly [P-13 as separate], brother exposure [P-39], doctor summary [D-58]. Covers ~80% of Gold's key points focused on question's symptoms/absences.",
+    "faithfulness": "All claims verifiable: symptoms [P-1/P-2/P-4], dry/no sputum [P-1/P-5/P-6], tired/malaise [P-1/P-13/P-14], allergies temporal [P-16], absences [P-11/P-12/P-13]. Minor unverifiable: citations for GI/joint as [P-1/P-13] (P-1 lacks absences); plausible inferences (pharynx/larynx irritation, pneumonia rule-out) grounded in dry cough. No hallucinations.",
+    "relevance": "Directly addresses question by linking specified symptoms (dry cough, scratchy throat, headache, proxied fever) and absences (sputum, GI, joint pain) to URI via upper airway localization, viral systemic signs, and exclusion of alternatives; minor tangent on allergies but still relevant to differential."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 4,
+    "relevance": 5
+  },
+  "average_score": 4.25,
+  "summary": "The Generated Answer effectively supports the URI assessment with the question's key symptoms and absences, showing strong relevance and grounding, but has minor citation inaccuracies and omits some Gold details like timeline and exposure."
+}

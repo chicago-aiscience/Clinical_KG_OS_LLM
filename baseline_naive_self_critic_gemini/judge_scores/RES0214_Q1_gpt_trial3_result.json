@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The four reported symptoms are essentially correct (fever, stuffy nose, sore throat, muscle aches), consistent with the Gold Answer. However, the Generated Answer is factually wrong in stating that the patient only explicitly denied cough and that there is “no evidence” she denied headache, neck stiffness, nausea, or difficulty swallowing. In the transcript, she clearly denies nausea/vomiting [P-5], neck stiffness [P-7], headaches [P-8], cough [P-10], and difficulty swallowing (she says no difficulty swallowing; it only hurts) [P-24–P-26]. Additionally, the citation implying muscle ache is in [P-1] is incorrect (muscle aches appear at [P-13]). These errors substantially contradict the Gold Answer and transcript.",
+    "completeness": "Reported symptoms: covers all 4 key symptoms (fever, stuffy nose, sore throat, muscle aches). Denials: captures only 1 of the 5 specifically asked clinically significant negatives (cough) and misses/incorrectly denies the presence of explicit denials for headache, neck stiffness, nausea/vomiting, and difficulty swallowing. Therefore, it covers well under 80% of the key points from the Gold Answer.",
+    "faithfulness": "Multiple statements are not grounded in the transcript: the claim that there is no evidence the patient denied headache/neck stiffness/nausea/difficulty swallowing directly conflicts with explicit denials in the transcript. Also, the citation [P-1] for muscle ache is not supported by [P-1]. These are significant faithfulness issues (contradiction/incorrect citation).",
+    "relevance": "The response stays focused on the exact question: it lists four reported symptoms and addresses which of the specified symptoms were denied. There is no notable off-topic content."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 2.75,
+  "summary": "While it correctly lists the four presenting symptoms, it incorrectly claims most key denied symptoms were not explicitly denied, contradicting the transcript and missing major Gold Answer elements."
+}

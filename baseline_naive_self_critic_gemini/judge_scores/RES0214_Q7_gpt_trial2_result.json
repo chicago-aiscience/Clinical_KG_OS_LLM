@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies that the illness began with a stuffy nose and that the patient has had fever for three days at presentation, and it correctly notes the husband has had similar symptoms for about a week. However, it misrepresents the sequencing/timing of the sore throat by implying it followed the fever (\"followed by...fever...as well as a sore throat\"), whereas the transcript indicates the sore throat was present before/around fever onset (\"just before that I had a stuffy nose...and I had a sore throat\"). It also omits the key temporal detail that muscle aches started 2–3 days ago and overlap with the fever (rather than being an undated later symptom).",
+    "completeness": "Key Gold Answer points covered: (1) stuffy nose as first symptom, (2) fever present for three days at presentation, (3) sore throat present and ongoing (though timing relative to fever is incomplete/partly incorrect), (4) husband symptomatic for ~1 week.\nKey points missed or insufficiently specified: (1) explicit progression including sore throat developing after stuffy nose and before/around fever, (2) muscle aches timeframe (past 2–3 days) and that they coincide with fever, (3) comparison statement that husband’s onset preceded hers by several days (approx. ~4 days before her fever onset) and that his symptoms are still ongoing/similar (“same as me”).",
+    "faithfulness": "Nearly all statements are drawn from the transcript (stuffy nose, fever 3 days, sore throat present, muscle aches, husband sick 1 week). The main issue is an interpretation error about ordering (implying sore throat followed fever), which is not faithful to the timeline implied in P-1. No major hallucinated symptoms or extraneous facts are introduced.",
+    "relevance": "The answer stays focused on the requested symptom chronology and comparison to the husband’s timeline, without tangential content."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 4,
+    "relevance": 5
+  },
+  "average_score": 3.75,
+  "summary": "The answer is relevant and mostly grounded in the transcript but has an important timeline/sequencing error (sore throat relative to fever) and omits key timing details (muscle aches overlap with fever; husband’s earlier onset by several days)."
+}

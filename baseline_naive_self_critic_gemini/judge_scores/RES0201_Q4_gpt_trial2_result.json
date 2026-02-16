@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer is not factually consistent with the transcript/Gold Answer. Most importantly, it incorrectly states the patient “did not report trouble breathing,” when the patient explicitly reported difficulty breathing starting yesterday and worsening ([P-7]–[P-10]). It also frames loss of smell as helping “rule out classic COVID-19,” which is an overclaim not supported by the Gold Answer (and anosmia is not required for COVID). It introduces an unsupported interpretation that the negative findings support mononucleosis/recurrence of mono; the Gold Answer explicitly notes no differential was discussed beyond COVID suspicion and testing. It also omits multiple specific negative findings that were actually screened and denied (cough, runny nose, headache, chest pain, fever, chills/night sweats, etc.).",
+    "completeness": "Key negative findings in the Gold Answer: cough denied; runny nose denied; headaches denied; chest pain denied; loss of smell denied; fever denied/doesn’t think so; chills/night sweats denied; denied prior similar breathing difficulty; denied sick contacts; denied travel. The Generated Answer only captures loss of smell (partially) and misses nearly all other screened negative findings and contextual negatives (contacts/travel, prior dyspnea). Coverage is well under 20% of required items.",
+    "faithfulness": "Multiple statements are not grounded in the transcript and/or directly contradict it: claiming no trouble breathing; implying a “knowledge graph” linkage; asserting mono recurrence as a supported differential; stating absence of ‘COVID-specific symptoms’ beyond anosmia. The transcript does not document a mono differential workup or that dyspnea was absent. Overall, the answer contains significant hallucination and misrepresentation of documented symptoms.",
+    "relevance": "The response attempts to address (1) negative findings and (2) how they relate to distinguishing COVID-19 from other conditions, so it is thematically related. However, it focuses narrowly on anosmia and an unsupported mono differential while failing to list the specific negatives asked for. Despite being on-topic, it does not adequately address the question’s requested inventory of screened negatives."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 3
+  },
+  "average_score": 1.5,
+  "summary": "The Generated Answer is largely inaccurate and incomplete, with major contradictions to the transcript (notably dyspnea), substantial omissions of screened negative symptoms, and unsupported/hallucinated differential reasoning."
+}

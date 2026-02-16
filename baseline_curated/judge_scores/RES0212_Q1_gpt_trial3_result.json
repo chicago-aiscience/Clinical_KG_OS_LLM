@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer captures some core facts correctly (productive cough for ~3 days with greenish sputum; pain with coughing; subjective feeling hot at night; fatigue; cough waking her at night). However, it contains important inaccuracies/overstatements relative to the Gold Answer: (1) cough duration is misstated as “at least a month” instead of ~3 months; (2) it frames the patient as denying “pain” without clarifying she did have chest discomfort specifically with coughing (Gold: no chest pain at rest, but hurts when coughing); (3) it attributes “no blood in it” to a doctor summary line rather than the patient’s explicit denial at P-10 (fact is correct but poorly supported).",
+    "completeness": "It is missing many key elements from the Gold Answer. Missing reported details: the cough was initially dry/intermittent and recurrent over 3 months; no foul smell noticed; exercise limitation; the “nightly for the last month” detail (it mentions waking at night but not the frequency/time course clearly). Missing explicit denials: night sweats, weight loss/loose clothes, nausea/vomiting, stiff neck, body pain/tenderness, and lack of sick contacts (class/around her/roommate). It includes eczema, which is not part of the asked respiratory/associated symptom set.",
+    "faithfulness": "Several statements are not well-grounded or are weakly grounded in the transcript: “persisted for at least a month” conflicts with the stated 3-month history; “more frequent” is not explicitly stated; the citation for sleep disturbance uses [D-47] (doctor summary) rather than the patient’s direct statements [P-20/P-21]. The inclusion of eczema is transcript-supported but not relevant to the symptom question. Overall, there are multiple transcript-grounding/citation issues, though not wholesale fabrication.",
+    "relevance": "The response is mostly focused on respiratory and associated symptoms, but it omits many of the explicitly denied symptoms the question asks for, and it adds eczema (irrelevant to the question). Despite these issues, most content is at least in the general domain of symptoms/history."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 2,
+    "faithfulness": 3,
+    "relevance": 4
+  },
+  "average_score": 3.0,
+  "summary": "The answer is partially correct and mostly on-topic but misses many key denied symptoms and several cough characteristics, and it includes some inaccuracies and weak transcript grounding."
+}

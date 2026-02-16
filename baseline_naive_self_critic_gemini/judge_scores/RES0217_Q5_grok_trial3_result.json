@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer accurately captures the patient's hiking on Friday and gardening on Saturday from [P-1], the doctor's estimation of >72 hours attachment from [D-6], the Strathroy location from [P-12], the map reference and 'concerning point' from [D-13], and the decision for antibiotics. It matches the Gold Answer's core facts on timeline contribution to duration and map use for risk. Minor discrepancy: places Strathroy detail in duration section (though relevant overall) and omits Gold's specifics like uncertainty quote [P-1], removal 'earlier today' [D-1], and [D-2]. No direct contradictions.",
+    "completeness": "Key points from Gold covered: hiking Fri/gardening Sat [P-1]; >72h estimate [D-6]; prophylactic abx [D-6]; Strathroy location [P-12]; map check and 'concerning point' [D-13]; abx decision [D-13]. Missed/minor coverage: explicit uncertainty 'don't know when' [P-1]; removal 'earlier today' [D-1]; doctor's note on time since outdoors [D-2]; 'along the creek' detail; full combo reasoning phrasing. Covers ~85-90% of key points.",
+    "faithfulness": "Claims verifiable: activities [P-1]; >72h [D-6]; Strathroy creek [P-12]; map and 'concerning point' [D-13]; abx [D-13]. Hallucination: 'knowledge graph indicating Strathroy is a [RISK_FACTOR]' not in transcript (doctor uses map only). Minor misplacement of location in duration section. Mostly grounded with one unverifiable/hallucinated addition plausible in context but not transcript-supported.",
+    "relevance": "Directly addresses both question parts: explains hiking/gardening timeline to >72h duration via [D-6]; details doctor's map use for Strathroy risk justifying abx via [D-13]. Structured response with headings matching question; no off-topic content."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 3,
+    "relevance": 5
+  },
+  "average_score": 4.0,
+  "summary": "The Generated Answer is mostly accurate and complete, directly relevant, but includes a hallucinated 'knowledge graph' reference reducing faithfulness."
+}

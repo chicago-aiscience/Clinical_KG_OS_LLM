@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer accurately captures the doctor's assessment that symptoms are consistent with COVID-19, correctly identifies the two diagnostic tests (COVID swab and chest X-ray) with accurate paraphrasing from [D-43], and precisely restates the isolation instructions including the condition for continuation (symptoms persist even if test negative). Minor phrasing like 'to confirm the diagnosis' is interpretive but not erroneous, as testing follows suspicion; specific symptoms listed (sore throat, swallowing) align with patient's report and doctor's concern. No factual contradictions with Gold Answer.",
+    "completeness": "Key points from Gold: assessment (COVID-like symptoms) - covered; tests (COVID swab, chest X-ray with reasons tied to breathing/COPD) - tests listed but reasons (breathing difficulty [P-8/9/10], COPD [P-27]) not explicitly stated; isolation until results - covered; continued isolation if symptomatic post-negative test - covered exactly; procedural notes (heads up, consult supervising doctor [D-1/D-44], patient agreement [P-43/44]) - missed entirely. Covers core elements of question (assessment, tests, isolation/conditions) at ~85%, missing supporting context.",
+    "faithfulness": "All claims directly verifiable in transcript: assessment and tests from [D-43]; isolation details exact from [D-43]; symptoms referenced earlier in dialogue (sore throat [P-2/4], breathing [P-8/10]). Paraphrases like 'respiratory status via imaging' and 'internal condition of chest' grounded in 'get an idea of what's going on in there' [D-43]. No hallucinations or unverifiable additions; citations accurate.",
+    "relevance": "Perfectly structured to address the question: assessment, specific tests, isolation instructions, and exact condition for continued isolation post-results. No tangents or off-topic content; directly mirrors question components."
+  },
+  "scores": {
+    "correctness": 5,
+    "completeness": 4,
+    "faithfulness": 5,
+    "relevance": 5
+  },
+  "average_score": 4.75,
+  "summary": "The Generated Answer is highly accurate, faithful, and relevant, with strong coverage of core elements but minor gaps in contextual details like X-ray rationale and procedural notes."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer diagnoses acute lower respiratory tract infection (acute bronchitis with possible bacterial superinfection or early CAP on chronic cough), accurately explaining each feature with transcript support: productive cough (3 days acute on 3 months chronic), greenish sputum (infectious etiology), subjective nighttime fevers (systemic response). Generated Answer diagnoses Bacterial Pneumonia or Acute Bacterial Bronchitis (partial overlap but adds pneumonia without support, ignores chronic cough); misstates cough as ~1 month (vs. 3 days acute/3 months), ignores fevers [P-4] and claims none explicit (contradiction), substitutes fatigue/sleep issues, hallucinates 'Knowledge Graph'. Significant factual errors and contradictions.",
+    "completeness": "Gold key points: specific diagnosis with chronic context, precise cough timeline [P-2,P-12], sputum as suggestive [P-9], fevers [P-4], doctor's summary [D-47], absent symptoms. Generated covers partial diagnosis, sputum, cough (inaccurately), but misses fevers entirely (uses fatigue instead), chronic cough context, doctor's synthesis, absences. Covers ~30-40% of key points.",
+    "faithfulness": "Generated mis-cites durations ([P-1,P-19] imply month but contradicts [P-2,P-12]'s 3 months/3 days); denies fevers despite [P-4] 'feeling hot at night'; adds unverified 'Knowledge Graph' and strong bacterial specificity not directly in transcript; fatigue/sleep [P-19,P-20] present but not substitute for fevers. Multiple inaccuracies and hallucinations.",
+    "relevance": "Directly structures response around diagnosis and three features (cough, sputum, 'fever' via proxy), addressing question format despite errors; minor tangent with Knowledge Graph and fatigue."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "Generated Answer partially aligns on diagnosis and sputum but has significant factual errors, ignores key fever evidence, misrepresents cough timeline, and hallucinates external references, resulting in low correctness, completeness, and faithfulness."
+}

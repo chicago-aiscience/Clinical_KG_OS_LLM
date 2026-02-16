@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer lists 8 specific denied symptoms: runny nose/congestion, vision/hearing changes, nausea/vomiting, chest pain, palpitations, abdominal pain, urinary symptoms, numbness/tingling, with citations. Generated Answer incorrectly lists sore throat and cough as denied (patient affirmed sore throat [P-9] and possible cough [P-7/P-8]); mentions chest pain and runny nose tangentially but misses most others and misattributes; hallucinates absence of anosmia (present [P-6]); references non-existent 'knowledge graph'. Significant factual errors and contradictions with Gold.",
+    "completeness": "Gold key points: exact list of 8 denied symptoms with citations; specific differentiations (cardiac: chest pain/palps; GI: nausea/abd pain; cold: runny nose; neuro: vision/hearing/numbness; overall to infection/COVID). Generated covers runny nose and chest pain partially (~2/8 symptoms, 20-25%); wrong on sore throat/cough (not denied); incomplete/wrong differentiations (misses palps, nausea, neuro, urinary; adds pneumonia/URI/COVID but inaccurately). Covers <50%, score 2.",
+    "faithfulness": "Generated claims sore throat/cough denied - not verifiable, contradicted by [P-8/P-9]; chest pain absence verifiable [D-16/P-16]; runny nose verifiable [D-10/P-10]; but 'loss of smell absent' fabricated (present [P-6]); 'knowledge graph' not in transcript; pneumonia pleuritic pain plausible but not cited properly; multiple unverifiable/hallucinated claims (e.g., anosmia absence, explicit denials). Multiple hallucinations.",
+    "relevance": "Directly attempts to list denied symptoms and explain differentiation for working diagnosis (infection/COVID); stays on respiratory distress causes; minor tangents (wrong symptoms, pneumonia/COVID specifics) but overall focused on question elements."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer has significant factual inaccuracies, misses most key denied symptoms, includes hallucinations, but remains mostly relevant to the question."
+}

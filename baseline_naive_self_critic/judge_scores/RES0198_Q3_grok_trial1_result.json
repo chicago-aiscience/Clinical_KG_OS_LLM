@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer details specific evidence like absent cough [P-4], no sore throat/SOB/fever/chills [P-7], no post-nasal drip [P-6], clear discharge [P-5], one-week constant duration [P-2, P-8], progression [P-3], no allergy exposures/allergies/priors [P-22, P-28, P-9], no fever/headache [P-7, P-14], and daycare exposure [P-11]. Generated Answer correctly notes stuffy/runny nose [P-1, P-3], week duration [P-1, P-2], doctor conclusion [D-39], and cold duration [D-39], but omits most differentiators against allergic/bacterial (e.g., no clear discharge mention, absent features, exposures), mischaracterizes 'on and off' [P-1] as supportive (contradicts later 'constant' [P-8]), and vaguely implies allergy differential without specifics; some factual errors and significant omissions lead to score 3.",
+    "completeness": "Key Gold points: (1) symptom type w/o lower/systemic (cough, sore throat etc.); (2) clear discharge; (3) 1wk duration/constant/progression; (4) vs allergic (no exposures/allergies/priors); (5) vs bacterial (no fever/headache/clear); (6) daycare exposure. Covered: basic stuffy/runny nose (part of 1), week duration (part of 3), doctor conclusion. Missed: absent features details, discharge quality, progression, all vs allergic/bacterial specifics, exposure. Covers ~25-30% of key points; score 2.",
+    "faithfulness": "All claims in Generated verifiable: stuffy/runny [P-1,P-3], week [P-1,P-2], on/off [P-1], constant implied, doctor correlation/conclusion/Tylenol/cold duration [D-39]; allergy history asked [D-28] but 'discussed differential' minor stretch (doctor didn't explicitly discuss); no fabrications or inaccurate citations; score 5.",
+    "relevance": "Directly addresses evidence for viral vs allergic/bacterial via symptoms/duration/doctor conclusion, but shallow on discharge/absent features/exposure and vs differentiators; minor tangents to COVID/treatment; mostly relevant; score 4."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 2,
+    "faithfulness": 5,
+    "relevance": 4
+  },
+  "average_score": 3.5,
+  "summary": "The Generated Answer is factually grounded and relevant but incomplete in covering key differentiating evidence against allergic/bacterial causes and has minor inaccuracies, resulting in a moderate evaluation."
+}

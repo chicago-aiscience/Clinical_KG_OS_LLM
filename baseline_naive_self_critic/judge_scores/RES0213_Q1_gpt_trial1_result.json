@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly notes the pain is “very sharp/strong,” is pleuritic (with deep breath), and lasts ~20 minutes. However, it contains a major factual error: it states the chest pain is felt “only during episodes of anxiety attacks” and not otherwise, citing [P-20]. In the transcript, [P-20] refers to heart flutter/palpitations during anxiety attacks, not the chest pain. The transcript instead links the chest pain to being alone (walking/studying) and notes it goes away or is unnoticed when distracted/with others. This contradiction substantially reduces accuracy.",
+    "completeness": "Key elements from the Gold Answer that are missing or insufficiently covered include: (1) onset/time course of ~1.5 weeks and initial description as “uncomfortable/odd” before clarifying sharp pain; (2) intermittent recurrence “here and there,” not constant; (3) typical situations where it occurs (sitting studying, walking to school, especially when alone) versus where it resolves/goes unnoticed (at school, talking to people, with classmates, hands-on tasks/distraction); (4) confirmation it can occur at rest; (5) not worse with exercise (walking stays the same; no strenuous exercise recently); (6) no prior episodes and no injury. The answer adds treatment response (OTCs) which is true but not asked and does not compensate for missing core situational features.",
+    "faithfulness": "Several statements are grounded (sharp/strong, deep breath trigger, ~20 min duration, OTCs not helping). But the central situational claim about anxiety attacks causing the pain is not supported by the transcript and misuses the citation [P-20]. This is a significant ungrounded/hallucinated interpretation relative to the source.",
+    "relevance": "The response is generally aimed at the requested characteristics (quality, duration, occurrence vs resolution situations). However, it introduces non-requested context (family history/stress) and, more importantly, mischaracterizes the key ‘when it occurs vs resolves’ pattern by incorrectly tying it to anxiety attacks rather than solitude vs distraction. Thus it is only partially responsive."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "Captures some basic pain descriptors (sharp/pleuritic, ~20-minute episodes) but misses most key situational features and includes a major unsupported error (pain only during anxiety attacks), leading to low overall performance."
+}

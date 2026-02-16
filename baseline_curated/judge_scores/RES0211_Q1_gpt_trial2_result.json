@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies several reported symptoms (dry cough, scratchy throat, headache) and notes the clinician’s summary of “little bit of fever” (though the patient’s own description was primarily “felt really hot” rather than a confirmed fever). However, it contains major factual errors versus the Gold Answer/transcript: it incorrectly claims Jessica did not explicitly deny sputum production and that the transcript contains no information about nausea, joint pain, or rashes—when she explicitly denied sputum/phlegm [P-5, P-6], denied nausea/vomiting [P-11], denied joint aches [P-13], and effectively denied rashes/skin changes [P-10]. It also fails to report key symptoms she did endorse (malaise/feeling crappy/icky, persistent feeling hot day and night, tiredness).",
+    "completeness": "Reported symptoms: includes dry cough, scratchy throat, headache, and mentions fever/hot feeling only indirectly; adds post-nasal drip (present but not a key Gold symptom for the 3–4 day illness). It omits major Gold symptoms: feeling “crappy/icky” (malaise), persistent feeling hot day and night, and tiredness.\nDenied symptoms: misses nearly all key denials from the Gold Answer—sputum/phlegm, rashes/skin changes, nausea/vomiting, diarrhea, joint aches, and denial of breathing difficulty. Overall coverage is well under half of the Gold Answer points.",
+    "faithfulness": "Several statements are contradicted by the transcript (e.g., claiming she did not explicitly deny sputum; claiming no transcript information on nausea/joint pain/rashes). These are not just omissions but incorrect assertions about what was said. The remaining included items (dry cough, scratchy throat, headache, post-nasal drip mention) are grounded in the transcript.",
+    "relevance": "The answer attempts to address both parts of the question (symptoms over 3–4 days and symptoms denied when asked) and stays focused on symptom reporting/denials, with minimal tangential content. However, relevance is reduced somewhat because it incorrectly asserts absence of information about key denied symptoms that were explicitly discussed."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The response is on-topic but substantially inaccurate and incomplete, especially by incorrectly claiming key denials (sputum, nausea/vomiting, rashes, joint pain) were not present in the transcript and by omitting several endorsed symptoms (malaise, persistent feeling hot, tiredness)."
+}

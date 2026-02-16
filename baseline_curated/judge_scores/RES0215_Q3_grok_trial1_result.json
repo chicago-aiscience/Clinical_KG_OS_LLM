@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer specifies 'pediatric asthma with exercise-induced bronchoconstriction in the context of an atopic predisposition'; Generated Answer states 'Asthma', which is factually accurate at a high level but lacks the precision on pediatric context, exercise-induced component, and atopic predisposition emphasis. Core diagnosis matches, symptoms and some triggers cited correctly match Gold, but Generated downplays exercise triggers present in transcript (e.g., P-3, P-6) by noting they are from 'prompt' rather than transcript. Minor discrepancies, no major errors.",
+    "completeness": "Gold key points: 1. exercise-triggered (P-3,P-41,P-6); 2. episodic/reversible with rest (P-6,P-33); 3. cold worsens (P-38); 4. multiple settings (P-38); 5. seasonal allergies (P-35,P-36); 6. nocturnal episode (P-43,P-44); 7. pertinent negatives (no fever P-7, runny nose P-8, contacts P-10, phlegm P-31). Generated covers: cold worsens (3), allergies (5), partial intermittent/nocturnal resolve (partial 2/6). Misses exercise, multiple settings, full reversibility with rest, negatives. Covers ~50% of key points.",
+    "faithfulness": "Claims verifiable: wheezing/SOB/cough/difficulty breathing (P-1,P-2); cold trigger (P-38); allergies/Reactine (P-35,P-36); resolve own (P-43, and implicitly others). Hallucination: '[MEDICAL_HISTORY]' citation not in transcript; minor error in attributing allergies to 'patient' (child). 'Knowledge graph' reference unverifiable. Mostly grounded with one erroneous citation.",
+    "relevance": "Directly states diagnosis (Asthma) and lists supporting transcript findings addressing question on diagnosis and evidence. Minor tangent in note distinguishing 'prompt' vs transcript triggers, but stays focused on clinical suggestion from findings."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 4,
+    "relevance": 4
+  },
+  "average_score": 3.75,
+  "summary": "The Generated Answer is mostly correct and relevant with good faithfulness to the transcript but incomplete in covering key supporting points from the Gold Answer, particularly exercise triggers and pertinent negatives."
+}

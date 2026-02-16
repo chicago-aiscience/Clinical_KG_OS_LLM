@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer emphasizes two key self-directed changes: skipping evening maintenance inhaler (P-19, P-20) and not refilling rescue inhaler (P-17, P-18), both compromising asthma control, alongside asthma history and symptom consistency. Generated Answer correctly identifies asthma history (P-16), lack of rescue inhaler (P-17), symptoms (P-1, P-7), and doctor's assessment (D-35, D-36), but completely omits the skipping of evening maintenance dose, a core fact in both question and Gold. It also introduces 'knowledge graph' references not present anywhere, which is inaccurate. Main point of asthma relation is correct, but significant omissions and hallucinations make it partially accurate.",
+    "completeness": "Gold key points: asthma history well-controlled (covered), reduced maintenance to morning-only (missed), no rescue refill (covered), doctor notes limiting meds (D-34 implied but not cited), detailed symptoms (tightness, exertion/deep breath, phlegm - partially covered), feels different (covered), recurrence assessment and rescue plan (covered). Covers ~60% (asthma hx, rescue, some symptoms, dx), misses maintenance skipping and full symptom details/doctor summary.",
+    "faithfulness": "Most claims grounded: symptoms (P-1), history (P-16), no rescue (P-17), doctor dx (D-35,36). However, multiple hallucinations: 'knowledge graph's definition of asthma exacerbation' (no knowledge graph in transcript), 'knowledge graph links rescue puffer to exacerbation treatment' (fabricated reference). 'asthma exacerbation' vs transcript's 'asthma reoccurring' is minor rephrasing but tied to hallucinated source. Some unverifiable claims.",
+    "relevance": "Directly addresses relation of asthma history and medication non-adherence (rescue focus) to symptoms, structuring response around clinical evidence, history, and rescue lack. Misses maintenance skipping from question but no off-topic content; remains focused on asthma exacerbation explanation."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer correctly links asthma history and lack of rescue inhaler to symptoms but omits the critical skipping of evening maintenance dose and hallucinates a 'knowledge graph,' reducing completeness and faithfulness."
+}

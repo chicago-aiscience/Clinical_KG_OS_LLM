@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Compared with the Gold Answer, the Generated Answer is largely inaccurate. It identifies only one true negative (no loss of smell), but omits multiple other explicit negative findings (no cough, no runny nose, no headache, no chest pain, no chills/night sweats, no sick contacts, no travel; and the patient said they did not think they had fever). It also incorrectly shifts focus to positives (sore throat, difficulty breathing) rather than the negatives asked for. The differential discussion is not supported by the transcript and includes questionable claims (e.g., implying anosmia is a primary symptom of common cold/influenza; and using dyspnea to “exclude” mono/strep without transcript support).",
+    "completeness": "Key negatives in the Gold Answer that are missed: cough, runny nose, headache, chest pain, fever (patient: “I don’t think so”), chills/night sweats, prior similar breathing difficulty, recent sick contacts, and recent travel. The Generated Answer includes only one of these (no loss of smell) and does not address how the other negatives narrow the differential as described in the Gold (e.g., lack of cough/runny nose arguing against typical URI; lack of chest pain noted as relevant with dyspnea; lack of fever/chills noted but COVID still suspected). Overall coverage is far below 50%.",
+    "faithfulness": "Several elements are not grounded in the transcript: the transcript contains no explicit differential diagnosis discussion (mono vs strep vs influenza), yet the answer asserts distinctions/exclusions based on these. It also adds general clinical claims (e.g., anosmia as a primary symptom of common cold/influenza) not present in the transcript. The only clearly transcript-grounded negative it cites is preserved smell (“not smell” meaning no loss of smell).",
+    "relevance": "The response is only partially aligned with the question. It attempts to list negative findings and relate them to differential diagnosis, but it largely fails to enumerate the specific denied symptoms that were actually screened, and it relies on speculative, non-transcript differentials. Thus, it does not adequately answer what was asked."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 2
+  },
+  "average_score": 1.75,
+  "summary": "The Generated Answer captures only one negative finding and adds unsupported differential claims, missing most of the explicitly denied symptoms and their intended diagnostic implications."
+}

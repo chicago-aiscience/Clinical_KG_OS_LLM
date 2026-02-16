@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly claims the transcript lacks historical context about diagnosis age and baseline bronchodilator frequency; both are explicitly stated (diagnosed at 8; baseline use ~once every two weeks). It also fails to report the key quantitative escalation to “almost everyday… five six times a week,” and it misattributes “every other day/every two days” to wheezing generally rather than specifically nighttime symptoms. While it correctly notes current dry cough, shortness of breath, wheeze, chest tightness, and triggers (exercise/cold/pollen), the main longitudinal evolution is not accurately answered.",
+    "completeness": "Gold key points: (1) Dx at age 8 and now age 10 (2-year history) — missed; (2) baseline rescue use once every ~2 weeks — missed (and explicitly denied as unavailable); (3) triggers (exercise/cold; seasonal winter/spring) — mostly included; (4) 2-week exacerbation with near-nonstop dry cough, increased wheeze, SOB, chest tightness — mostly included; (5) bronchodilator escalation to near-daily 5–6x/week — missed; (6) wheeze more frequent than bronchodilator use (uses only when very hard to breathe) — missed; (7) nighttime symptoms every other day/every two days — not clearly/accurately framed; (8) no infectious precipitant — missed. Overall coverage is well under half of the Gold Answer’s required elements.",
+    "faithfulness": "Many symptom/trigger statements are grounded in the transcript, but there are notable ungrounded or misleading elements: stating it is ‘not possible’ to address diagnosis/baseline contradicts the transcript; referencing a ‘knowledge graph’ is not in the source; and the ‘every other day/every two days’ line is presented as general wheezing frequency rather than nighttime symptoms. These issues reduce grounding, though the answer does not introduce extensive fabricated clinical events.",
+    "relevance": "The question asks for the evolution over time (dx at 8 → baseline q2 weeks → current 2-week exacerbation with 5–6x/week use). The Generated Answer largely avoids that longitudinal comparison and focuses on current symptoms, even stating the evolution cannot be answered. Thus it only partially addresses the prompt."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 3,
+    "relevance": 2
+  },
+  "average_score": 2.25,
+  "summary": "The answer is partially grounded for current symptoms/triggers but incorrectly denies available historical details and omits the key longitudinal progression and bronchodilator-use escalation central to the question."
+}

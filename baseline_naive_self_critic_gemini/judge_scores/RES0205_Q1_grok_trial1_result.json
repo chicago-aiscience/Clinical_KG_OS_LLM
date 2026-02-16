@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Step-by-step: Gold Answer accurately lists resolved symptoms (sore throat [P-13], runny nose [P-14], productive mucus [P-6], flu symptoms resolved in 3-4 days [P-14]) and persisting (dry cough details [P-5,6,7,8,9,10], chest soreness [P-15,16]) with negatives (no SOB [P-11], no fevers [P-12], no N/V [P-19], no abd pain [P-20]). Generated fabricates fever (denied [P-12]), claims N/V and belly pain occurred then resolved (denied [P-19,20], not in P-14), misses runny nose and cough details (frequency, triggers, stability), adds unrelated knowledge graph. Significant contradictions and errors vs Gold/transcript warrant score 2.",
+    "completeness": "Gold key points: resolved - sore throat (2-3d), runny nose (couple days), whitish mucus (4-5d), flu symptoms resolved 3-4d except cough; persisting - dry cough since day 4-5, 3-4x/hr, spontaneous, stable intensity/freq, chest soreness from cough (no indep pain); negatives - no SOB/fevers/NV/abd pain. Generated covers: resolved sore throat/mucus; persisting dry cough/chest soreness. Missed: runny nose, all timelines, cough frequency/triggers/stability details, flu collective, all negatives. Covers ~30-40% of points: score 2.",
+    "faithfulness": "Claims like fever/N/V/belly pain as initial resolved symptoms unverifiable (denied [P-12,19,20], P-14 only vague flu/sore/runny); knowledge graph entirely absent from transcript (hallucination); sore throat/mucus/dry cough/chest soreness verifiable [P-5,6,13,15,16]; wrong citations (e.g., P-14 for fever/NV). Multiple hallucinated facts: score 2.",
+    "relevance": "Answer directly categorizes symptoms as resolved vs persisting per question, focused on reported symptoms during illness; minor off-topic tangents (knowledge graph) do not derail core focus: score 4."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer is relevant in structure but marred by significant factual errors, hallucinations of unreported symptoms, multiple deviations from the transcript, and incomplete coverage of Gold Answer key points."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly states that the doctor's plan is not included because the transcript ends at [P-44], but the full transcript extends to [D-59] including [D-58] where the plan is explicitly stated (physical exam, consult physician, discuss next steps). It also misidentifies environmental factors as colder weather and seasonal allergies, which are not the home-specific factors (smoking, carpets, pets, fireplaces, air filters) detailed in the Gold Answer and transcript [D-53] to [D-57]. This results in factual contradictions with the Gold Answer.",
+    "completeness": "Gold Answer key points: doctor's plan (physical exam, consult physician, return to discuss next steps, offer questions); home environmental factors (no smoking [P-53], new carpets [P-54], no pets [P-55], no wood fireplaces/stoves [P-56], air filters changed [P-57], townhouse [P-50]). Generated Answer covers none of the plan (claims absent) and none of the specific home factors, instead mentioning irrelevant colder weather and seasonal allergies. Covers 0% of key points.",
+    "faithfulness": "Generated Answer hallucinates that the transcript ends at [P-44], ignoring later segments [D-50] to [D-59] with the plan and home assessment. Claims about colder weather [P-38] and seasonal allergies [P-35] are verifiable but not the home environmental factors queried or preceding the plan. No citations to [D-58] or home assessment questions; largely fabricated absence of content.",
+    "relevance": "Generated Answer attempts to address the question by denying the plan's presence and listing some environmental triggers, but focuses on incorrect details (outdoor weather, allergies) rather than the doctor's home assessment and stated plan, making it partially on-topic but misguided."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 3
+  },
+  "average_score": 1.5,
+  "summary": "The Generated Answer is fundamentally incorrect and incomplete, hallucinating the transcript's end and missing the explicit plan and home environmental assessment, resulting in low scores across dimensions."
+}

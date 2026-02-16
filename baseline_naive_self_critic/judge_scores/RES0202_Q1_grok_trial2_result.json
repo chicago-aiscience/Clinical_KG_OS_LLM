@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Step-by-step: Gold lists specific reported symptoms (dry cough with timeline/worsening, fever details, fatigue, dec appetite, poss taste loss, mild runny nose, uncertain SOB) and detailed denied symptoms (sputum/blood, wheezing, chest pain/heart racing, sore throat, chills/night sweats, skin changes, GI issues, nausea/vom, urine changes, dizziness/fainting, confusion, vision/hearing fine, swallowing uncertain). Generated correctly identifies dry cough worsening, runny nose, fever >100, fatigue, poss taste loss, and links appetite to P-17 (though appetite also in P-15). However, misses cough timeline (3 days), fever specifics (100.1/101), SOB uncertainty, separate appetite note; crucially, incorrectly states no specific symptoms like wheezing/sore throat/chest pain/chills/GI were asked/denied (they were explicitly asked and denied in D-6/7/13/14/19/22/23 etc.), and adds irrelevant neuro symptoms from D-44 advice as 'asked and denied' which were not. Significant contradictions on denied symptoms.",
+    "completeness": "Key points from Gold covered: dry cough worsening (partial, misses 3-day timeline), fever (partial, misses exact values), fatigue, poss taste loss, runny nose, appetite (partial). Missed: cough start Wed eve/progression details, fever first Friday, SOB uncertain w/ decreased activity, all denied symptoms (wheezing, chest pain, sore throat, chills, GI, etc. - 12+ points), swallowing uncertain, vision/hearing. Covers ~25-30% of key points (6 partial reported out of ~20 total).",
+    "faithfulness": "Claims on reported symptoms verifiable (citations P-1,16,17,8 accurate). Runny nose 'look at' likely typo for 'little'. However, 'none of specific symptoms explicitly asked' false - transcript shows explicit asks/denials (D-7 wheezing P-7 no; D-13 chest pain P-13 no; D-14 sore throat P-14 no; D-19 chills P-19 no; D-22/23 GI P-22/23 no). Hallucinates neuro symptoms (seizures etc.) as 'explicitly asked and denied' - D-44 is advice for worsening, not Hx inquiry; P-8/P-15 not explicit denials. Mentions unmentioned 'knowledge graph'. Multiple misreadings/hallucinations.",
+    "relevance": "Directly structures answer into mother-reported resp/systemic symptoms and doctor-asked/denied, matching question parts. Minor tangent on neuro symptoms from later advice, but focused on symptoms; no major off-topic content."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer partially covers reported symptoms but significantly errs by denying explicit doctor inquiries and denials of key symptoms like wheezing and sore throat, leading to low correctness, completeness, and faithfulness."
+}

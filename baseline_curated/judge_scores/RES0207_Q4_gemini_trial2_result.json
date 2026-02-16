@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The generated answer correctly identifies that chest pain was screened and denied. However, it incorrectly attributes the patient's denial 'I don't, no' (P-34) to the chest pain question, when that quote actually refers to smoking status. The actual denial for chest pain is at P-7 ('No'). It also misses the vast majority of other symptoms and exposures listed in the Gold Answer.",
+    "completeness": "The answer is highly incomplete. It only identifies one symptom (chest pain) and one differential category (cardiac). It misses infectious symptoms (taste/smell, sore throat, runny nose), exposures (sick contacts, travel), gastrointestinal symptoms (nausea, vomiting, belly pain, diarrhea), and clinical history (sputum, prior episodes).",
+    "faithfulness": "The answer contains a significant hallucination/misattribution: it claims that P-34 ('I don't, no') is the patient's response to a question about symptoms associated with shortness of breath. P-34 is actually a response to 'Do you smoke?'. Additionally, it refers to the patient as 'her' without evidence of gender in the transcript.",
+    "relevance": "The answer addresses the prompt but fails to provide the breadth of 'specific symptoms and exposures' requested, focusing only on a single item. It provides a very narrow response to a comprehensive question."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 2
+  },
+  "average_score": 1.75,
+  "summary": "The generated answer is significantly under-representative of the source text, misses nearly all key clinical points, and contains incorrect transcript citations."
+}

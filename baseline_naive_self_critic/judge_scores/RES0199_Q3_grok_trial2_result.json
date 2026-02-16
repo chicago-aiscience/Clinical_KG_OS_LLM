@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer identifies the doctor's suspicion of COVID-19 based on overlapping symptoms including dry cough, persistent headache, GI symptoms, fatigue, and loss of smell [D-52]. Generated Answer correctly attributes suspicion to headache, cough, nausea, vomiting, and diarrhea [P-1, D-52], which are core facts, and identifies loss of smell as characteristic. Minor discrepancies: omits fatigue, dry cough specifier, and pertinent negatives from Gold; introduces minor error by linking to 'loss of taste' via knowledge graph instead of directly to smell. Core facts consistent, no major contradictions.",
+    "completeness": "Gold key points: doctor states rule out COVID due to symptom overlap [D-52]; constellation (dry cough [P-12], headache [P-3,P-5], GI [P-1,P-28,P-32], fatigue [P-19], loss of smell [P-24]); doctor asked smell/taste [D-24]; anosmia characteristic; alternative viral illness [D-52]; pertinent negatives (no fever [P-18], no runny nose [P-23], no aches [P-27]). Generated covers: suspicion [D-52], partial combo (headache, cough, nausea/vomiting/diarrhea), loss of smell characteristic [P-24]. Missed: fatigue, dry cough detail, doctor query [D-24], alternative, pertinent negatives. Covers ~60-70% of key points.",
+    "faithfulness": "Generated claims verifiable: symptoms from [P-1], loss of smell [P-24], doctor statement [D-52]. Unverifiable/hallucinated: 'knowledge graph explicitly links loss of taste to COVID-19 [DIAGNOSIS] covid --[INDICATES]--> [SYMPTOM] loss of taste' – no knowledge graph or DIAGNOSIS notation in transcript; patient reported smell, not taste. Doctor asked about both smell/taste [D-24], but Generated fabricates external graph and shifts to taste. Multiple hallucinated elements.",
+    "relevance": "Generated Answer uses bold sections to directly address 'Symptom Combination Leading to Suspicion' and 'Characteristic Symptom', perfectly matching the two-part question with no tangents or off-topic content."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.5,
+  "summary": "The Generated Answer is mostly correct and highly relevant but incomplete in covering the full symptom constellation and pertinent negatives from the Gold Answer, with faithfulness reduced by hallucinated references to a knowledge graph and loss of taste."
+}

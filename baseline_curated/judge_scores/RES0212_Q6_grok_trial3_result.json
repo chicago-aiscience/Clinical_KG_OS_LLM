@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the doctor's plan to 'review the patient's story with the doctors' [D-47], matching the Gold Answer. The summary assessment partially aligns, capturing the cough duration/worsening, greenish sputum, no blood, sleep disturbance, and no constitutional symptoms from [D-47], but introduces a 'respiratory infection' diagnosis not conveyed by the doctor, misattributes 'fatigue and potential pain' as part of the doctor's emphasized constitutional symptoms (these are from patient history, not doctor's summary), and inaccurately includes subjective fever in the assessment conveyed. For guiding next steps, it lists specific symptoms as 'driving the plan,' but the doctor indicated the entire 'story' would be reviewed, with no specific info highlighted; Gold emphasizes supervising physician review of history without tests. Some factual errors but core plan and summary gist correct.",
+    "completeness": "Gold key points: (1) summary assessment details (cough ~3mo/'little while', bad 3 days, nighttime awakening, greenish sputum no blood, no constitutional symptoms explicitly stated, lowers concern for serious illness); (2) plan to review story with doctors; (3) asked if anything else, patient wants to feel better for exercise, doc 'we'll see what we can do'; (4) no tests/treatments ordered; (5) next steps guided by supervising physician after history review. Generated covers plan fully, most assessment details (misses explicit 3mo link, concern-lowering interpretation), but misses patient/doc exchange at end, explicit no tests, supervising role details; partially covers next steps but reframes as symptom list vs. history review. Covers ~60-70% of key points.",
+    "faithfulness": "Plan verifiable in [D-47]. Assessment claims mostly grounded in [D-47] (cough details, sputum, no blood, no constitutional, implied sleep from history), but 'respiratory infection' diagnosis and 'Knowledge Graph' references are hallucinations (absent from transcript); fever from [P-4] but not in doctor's summary/plan; fatigue/pain from patient [P-3,P-19] but not doctor's conveyed assessment. Multiple hallucinated elements (diagnosis, KG links, misframed guiding symptoms).",
+    "relevance": "Structured response directly addresses the three question parts (plan, assessment, guiding info) with focused sections; minor off-topic via invented diagnosis and KG, but overall on-target."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer adequately covers the doctor's plan and core summary assessment from the transcript but is undermined by hallucinated diagnoses, extraneous knowledge graph references, and inaccuracies in what guides next steps."
+}

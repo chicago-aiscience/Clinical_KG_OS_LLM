@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies some denied symptoms (GI: nausea/vomiting, belly pain, diarrhea; loss of taste/smell, sore throat) with accurate citations, but omits key ones from Gold (chest pain, feeling faint for cardiac; runny nose, sick contacts, travel for infectious; dry cough/sputum, prior SOB). It misattributes GI symptoms to cardiac differentials (e.g., MI presentation), which contradicts Gold's categorization (chest pain/faint for cardiac). Infectious coverage partial and specifies COVID-19 unmentioned in Gold/transcript. Significant discrepancies in symptom list and DD linkages.",
+    "completeness": "Gold key points: cardiac (chest pain, faint) - 0%; infectious/URI (taste/smell, sore throat, runny nose) - 67% (misses runny nose); epi infectious (contacts, travel) - 0%; GI (nausea/vom, belly pain, diarrhea) - 100%; sputum/dry cough - 0%; no prior episodes - 0%; DD pattern inference - partial but inaccurate. Covers ~25-40% of symptoms and partial DDs, missing major categories like cardiac symptoms.",
+    "faithfulness": "Symptoms listed verifiable in transcript with citations. However, DD explanations hallucinate specifics: 'classic MI presentation with nausea/belly pain' not in transcript; 'standard COVID screening' external knowledge; 'gastroenteritis mimicking respiratory' plausible but ungrounded; no transcript support for explicit DDs like MI, COVID, gastroenteritis. Multiple interpretive hallucinations beyond Gold's pattern inference.",
+    "relevance": "Directly structures response around denied symptoms/exposures and DDs (cardiac, infectious, GI) as per question, with relevant headings and explanations tied to dyspnea; no off-topic content, though incomplete."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer partially addresses the question with some accurate symptom listings but is incomplete, factually inaccurate in DD attributions, and introduces ungrounded hallucinations."
+}

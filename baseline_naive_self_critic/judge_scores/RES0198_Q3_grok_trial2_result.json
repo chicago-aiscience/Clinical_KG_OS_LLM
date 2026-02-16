@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer details specific symptom types (congestion, rhinorrhea, absent cough/SOB/fever/post-nasal drip), clear discharge, 1-week constant duration, progression, no allergy exposures/allergies/prior episodes, no bacterial indicators (fever, colored discharge), daycare exposure. Generated Answer correctly notes stuffy/runny nose, 1-week duration, doctor's viral conclusion [D-39], but inaccurately implies allergies were 'discussed but not fully confirmed' (doctor only briefly asked, patient denied [P-28]), misstates symptoms as primarily 'on and off' (P-8 notes constant), omits clear discharge, absent features, contrasts to bacterial/allergic, and progression; core viral symptoms mentioned but lacks precise contrasts.",
+    "completeness": "Gold key points: (1) symptom type/absent features, (2) clear discharge, (3) duration/timing, (4) progression, (5) anti-allergic evidence (exposures/allergies/history), (6) anti-bacterial (no fever/clear discharge), (7) daycare exposure. Generated covers symptom type (stuffy/runny) partially (~1), duration partially (~1), doctor's conclusion; misses absent features, discharge quality, progression, all anti-allergic/bacterial points, exposure specifically—covers ~20-30% of key points.",
+    "faithfulness": "Claims like stuffy/runny nose [P-1,P-3,D-39], duration [P-2], OTC like Tylenol cold [D-39] verifiable. 'On and off' from [P-1] ok but ignores constant [P-8]. Hallucinates 'knowledge graph' (absent from transcript), implies allergies 'discussed' as differential (only queried D-28/P-28/D-22/P-22, no discussion), 'diagnostic correlation' to allergies vague/unverifiable; multiple added details not grounded.",
+    "relevance": "Directly addresses evidence for viral conclusion via symptoms/duration [symptom characteristics], mentions allergy differential vaguely; tangents to COVID/pandemic/treatment plan but stays mostly on-topic without major off-topic content."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer partially captures main symptoms and doctor's conclusion but lacks completeness in key differentiating evidence, specific transcript details, and introduces minor hallucinations."
+}

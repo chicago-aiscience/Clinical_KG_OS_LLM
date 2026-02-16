@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies sore throat starting ~4 days ago and difficulty swallowing food while tolerating fluids. However, it contains a major factual error regarding taste: the transcript indicates a reduced sense of taste (“maybe taste a little bit”) starting ~2 days ago and constant, not that the patient “confirmed they have not lost their taste.” It also omits a key reported symptom from the transcript/gold answer: difficulty breathing starting yesterday, constant, and worsening. The explicit denials are also incorrectly/insufficiently reported (it only lists loss of smell, while the patient also denied cough, runny nose, headaches, chest pain, fever, chills/night sweats).",
+    "completeness": "Reported symptoms: includes sore throat, dysphagia, fatigue, myalgias, and mentions taste (but inaccurately). It misses the major symptom of difficulty breathing and misses timing/trajectory details (worsening sore throat; breathing constant/worsening; taste onset 2 days ago/constant; fatigue/myalgias started immediately after sore throat; not weak). Denials: only includes loss of smell, missing cough, runny nose, headaches, chest pain, fever, and chills/night sweats (and also misses denied sick contacts and travel noted in the gold answer). Overall coverage is well under half of the gold answer key points.",
+    "faithfulness": "Most statements are drawn from the transcript (sore throat, dysphagia, myalgias, fatigue, no smell loss). However, the claim that the patient “confirmed they have not lost their taste” is not supported and contradicts the transcript’s indication of reduced taste. Additionally, the answer’s denials section is incomplete relative to what is explicitly stated in the transcript, though incompleteness is not itself hallucination. Net: contains a notable unfaithful interpretation about taste.",
+    "relevance": "The response is aimed at listing reported symptoms and explicitly denied screened symptoms, which is what the question asks. However, it fails to list most of the commonly screened symptoms the patient denied and omits a major presenting symptom (shortness of breath), limiting its usefulness. Still, it stays on-topic."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 3,
+    "relevance": 4
+  },
+  "average_score": 2.75,
+  "summary": "The answer is on-topic but substantially incomplete and includes a key factual misrepresentation about taste, while omitting major reported symptoms (difficulty breathing) and most explicit denials (cough, runny nose, headache, chest pain, fever, chills/night sweats)."
+}

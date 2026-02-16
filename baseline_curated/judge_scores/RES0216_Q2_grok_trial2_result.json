@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer lists three medications (salbutamol for asthma, Ramipril for hypertension, occasional Tylenol for headaches) with specific citations. Generated Answer lists only two (Salbutamol and Ramipril), omitting Tylenol. For asthma adherence, Gold details prescribed twice-daily maintenance inhaler reduced to morning-only due to self-skipping evening dose (P-19, P-20), and no rescue inhaler refilled in couple years (P-17, P-18). Generated incorrectly states patient 'maintains adherence' to daily maintenance (contradicting reduction) and misattributes salbutamol fully without clarifying distinction. Mentions non-existent 'knowledge graph'. Significant factual errors and contradictions.",
+    "completeness": "Gold key points: 3 meds/conditions (salbutamol-asthma, Ramipril-HBP, Tylenol-headaches); maintenance dosing prescribed 2x/day but reduced to 1x/day morning-only for a while; no rescue refill/needed in couple years; justifications and clinician notes. Generated covers Ramipril, salbutamol (partial), rescue unavailability; misses Tylenol entirely, misses maintenance dose reduction (claims full adherence), misses twice-daily prescription detail and skipping history. Covers ~30-40% of key points.",
+    "faithfulness": "Cites P-25, P-26, P-17 accurately for mentions, but 'knowledge graph confirms' conditions/types is hallucinated (no knowledge graph in transcript). Claims 'maintains adherence to daily maintenance' misreads P-17 (ignores P-19 reduction); plausible standard knowledge on meds but unverifiable claims like full adherence contradict transcript (P-19 explicitly states skipping night dose). Rescue details verifiable. Multiple hallucinated/inaccurate elements.",
+    "relevance": "Directly structures response around current meds/conditions and asthma adherence changes/dosing/rescue availability, matching question. Minor tangent in note distinguishing inhalers, but overall focused without off-topic content."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer has significant factual inaccuracies and omissions, particularly missing one medication and misstating maintenance inhaler adherence, while introducing hallucinations, though it remains mostly relevant."
+}

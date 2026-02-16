@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies dry cough nature [P-12] and lists basic GI symptoms (nausea, vomiting, diarrhea) and respiratory cough from [P-1]. However, it has significant factual errors: misclassifies headache as respiratory; incorrectly states diarrhea frequency not specified (contradicts P-28: 'five or six times a day'); vomiting episodes not specified (contradicts P-32: 'two times'); headache lacks numerical severity (contradicts P-8: '7/10'). Omits timelines, locations, negatives, and other details matching Gold. Significant contradictions with Gold.",
+    "completeness": "Gold key points: dry cough 4 days ago, no sputum/blood, stable [P-1,P-11-13]; resp negatives (no SOB, wheezing, chest pain); diarrhea 2 days ago, liquid stools 5-6x/day, no blood [P-28-29]; nausea today, vomiting yesterday 2 episodes food contents no blood [P-32-34]; GI negatives (no bloating/gas, constipation, appetite change); headache 4 days persistent bilateral forehead/top, 7/10, no radiation/stiffness, unusual; loss of smell, fatigue. Generated covers only basic symptoms list and dry cough nature (~20-30% coverage), misses all specifics, timelines, negatives.",
+    "faithfulness": "Claims verifiable: dry cough [P-12]. But multiple hallucinated absences: diarrhea frequency [P-28 exists], vomiting number [P-32 exists], headache 1-10 scale [P-8 exists]. Citations mostly vague [P-1]; ignores precise later details. Other claims like 'for a few days' plausible but not grounded accurately. Multiple ungrounded denials.",
+    "relevance": "Perfectly addresses question by structuring around GI/respiratory symptoms and exact specifics requested (cough nature, diarrhea freq, vomiting num, headache sev), with no off-topic content despite errors."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer identifies basic symptoms and cough nature but significantly errs by denying key specifics present in the transcript and misclassifying headache, resulting in low correctness, completeness, and faithfulness."
+}

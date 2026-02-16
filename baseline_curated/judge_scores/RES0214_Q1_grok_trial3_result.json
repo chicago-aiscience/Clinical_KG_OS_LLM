@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies and lists the four symptoms (fever, sore throat, stuffy nose, muscle ache) matching the Gold Answer, with appropriate citations from P-1 and P-13. However, it factually errs by stating that the transcript does not contain explicit denials of cough (present in P-10), headache (P-8), neck stiffness (P-7), nausea (P-5), and difficulty swallowing (P-24-P-26), directly contradicting the Gold Answer and the full transcript provided. It also fabricates 'inquiries about ear pain,' which is absent. This constitutes significant factual errors and contradictions on the second half of the question.",
+    "completeness": "Gold Answer key points: four symptoms (stuffy nose [P-1,P-2], sore throat [P-1], fever [P-1,P-3], muscle aches [P-13-P-16]) - all fully covered by Generated. Explicit denials of cough [P-10], headaches [P-8], neck stiffness [P-7], nausea/vomiting [P-5], difficulty swallowing [P-24-P-26] - none covered; instead, explicitly contradicted as absent. Additional Gold points like no joint pain clarification covered implicitly. Covers symptoms (100%) but 0% of core denials (question's second part), approximately 50% overall.",
+    "faithfulness": "Symptoms claims verifiable in transcript with accurate citations (P-1, P-13). Denial claims not grounded: transcript clearly has P-10 ('No cough'), P-8 ('no headaches'), P-7 ('No'), P-5 ('No'), P-24-P-26 (no difficulty swallowing). Generated hallucinates their absence, references non-existent 'ear pain' inquiry, and limits to [P-1],[P-13] ignoring other patient responses. Multiple hallucinated facts about transcript content.",
+    "relevance": "Generated Answer is structured directly around the question: lists exactly four reported symptoms and addresses 'explicitly denied symptoms' section naming the five specified (cough, headache, neck stiffness, nausea, difficulty swallowing). No off-topic content or tangents; perfectly focused despite errors."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer correctly captures the four reported symptoms but significantly errs by hallucinating the absence of explicit denials for the specified clinically significant symptoms clearly present in the transcript."
+}

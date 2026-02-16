@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer contains significant factual errors. It incorrectly states the patient denied chest pain at [P-34], when [P-34] is actually about smoking ('I don't, no'). The correct denial of chest pain occurs at [P-7]. The answer also completely misses the majority of symptoms and exposures screened for, including infectious symptoms (loss of taste/smell, sore throat, runny nose), GI symptoms (nausea, vomiting, belly pain, diarrhea), epidemiological factors (sick contacts, travel), and other findings like presyncope and sputum production. The answer only correctly identifies chest pain as one screened symptom.",
+    "completeness": "The Generated Answer covers less than 20% of the key points from the Gold Answer. It mentions only one symptom (chest pain) and one differential category (cardiac), while the Gold Answer comprehensively lists 12 specific denied symptoms/exposures and addresses three major differential categories (cardiac, infectious, gastrointestinal). The answer fails to mention the vast majority of screening questions documented in the transcript.",
+    "faithfulness": "The answer contains a significant hallucination by citing [P-34] as the location where chest pain was denied, when [P-34] actually addresses smoking. This is a clear citation error. However, the claim that chest pain was denied is factually true (it occurred at [P-7]), and the connection to cardiac differential is reasonable and grounded in clinical logic, though not explicitly stated in the transcript.",
+    "relevance": "The answer partially addresses the question by identifying one denied symptom (chest pain) and one differential diagnosis category (cardiac). However, it fails to provide the comprehensive list of denied symptoms and exposures requested in the question, and only mentions one of multiple differential diagnosis categories being addressed. The response is narrowly focused on a single aspect of what was asked."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 1,
+    "faithfulness": 3,
+    "relevance": 2
+  },
+  "average_score": 2.0,
+  "summary": "The Generated Answer is inadequate, scoring 2.0/5.0 overall. While it correctly identifies that chest pain was denied and relates this to cardiac differential diagnosis, it contains a significant citation error ([P-34] vs [P-7]) and catastrophically fails in completeness by mentioning only 1 of 12+ denied symptoms/exposures from the transcript. The answer misses infectious screening (taste/smell, sore throat, runny nose, sick contacts, travel), GI symptoms (nausea, vomiting, abdominal pain, diarrhea), presyncope, and sputum characteristics. This represents coverage of less than 10% of the relevant content, making it insufficient for clinical documentation or decision-making purposes."
+}

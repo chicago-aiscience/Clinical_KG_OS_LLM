@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the condition as 'cardiac ischemia' (equivalent to Gold's 'cardiac ischemic picture' from [D-36]). It accurately notes chest tightness rather than pain ([D-36], matching Gold and [P-5]) and references the lack of primary shortness of breath with exercise ([D-36]). However, it only mentions absence of pain and omits the doctor's screening and patient's denial of anxiety, sweating, or impending doom ([D-6], [P-6]), which Gold emphasizes as key pertinent negatives. Additionally, it introduces a 'Knowledge Graph' not present in the Gold or transcript, fabricating reasoning. Core facts are correct with minor omissions and one extraneous claim.",
+    "completeness": "Key Gold points covered: condition ([D-36]), nature of complaints (tightness not pain, not classic exertional SOB [D-36]). Partially covers absence (no pain [D-36], [P-5]) but misses denial of anxiety/sweating/impending doom ([D-6/P-6]) and patient relief ([P-35]). Covers ~80% of evidence details and main structure.",
+    "faithfulness": "Most claims verifiable: condition/tightness/no pain/SOB nuance from [D-36]; breathing/activity from [P-1/P-5]. However, final sentence hallucinates a 'Knowledge Graph' indicating symptoms 'rule out' ischemia, not in transcript (doctor only says 'lower on differential'). 'Rule out' is stronger than transcript/Gold. One significant hallucination with unverifiable details.",
+    "relevance": "Directly addresses question by naming condition and splitting evidence into 'nature of chest complaints' (tightness vs SOB) and 'absence' (no pain), with citations. Minor irrelevant addition (Knowledge Graph) does not detract from focus."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.75,
+  "summary": "The Generated Answer is mostly correct and relevant but incomplete in listing all cited absent symptoms and unfaithful due to hallucinating a Knowledge Graph."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly states that the transcript does not contain patient responses for eczema, EpiPen use, and night sweats, despite clear evidence in the transcript (e.g., D-9/P-9 for night sweats, D-21/P-21 for EpiPen, D-32/P-33 for eczema). It only partially covers asthma screening (citing the summary D-58 instead of direct questioning at D-29) and omits most other screenings listed in the Gold Answer (productive cough D-5/D-6, severe allergies D-18, family asthma D-30/D-31, rashes D-10, GI D-11/D-12, joints D-13). It introduces an inferred diagnosis of URI, which is not part of the Gold Answer or question focus, leading to significant factual discrepancies.",
+    "completeness": "Gold Answer key points: night sweats (D-9/P-9), productive cough (D-5/D-6/P-5/P-6), severe allergies/EpiPen (D-18/P-18/P-19, D-21/P-21), personal asthma (D-29/P-29), family asthma (D-30/P-30/P-31), family eczema (D-32/D-33/P-33), rashes (D-10/P-10), GI symptoms (D-11/D-12/P-11/P-12), joint pain (D-13/P-13). Generated covers only asthma partially (~10-20% coverage), missing all others; adds irrelevant medication history and symptom review.",
+    "faithfulness": "Multiple claims not grounded: falsely asserts absence of eczema/EpiPen/night sweats in transcript; mis-cites D-58 as screening site (actual screenings earlier); infers URI diagnosis without transcript support for final dx; adds allergy timeline differentiation plausible but not verifiable as 'narrowing' per Gold. Core asthma denial is verifiable (D-29), but overall multiple inaccuracies.",
+    "relevance": "Addresses question partially by discussing asthma screening and responses, but dismisses listed examples (eczema, EpiPen, night sweats) incorrectly, diverts to medication history, symptom recap, and diagnostic inference (URI), introducing off-topic content."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.0,
+  "summary": "The Generated Answer is significantly incomplete and factually inaccurate, missing most screened conditions and responses from the Gold Answer while hallucinating transcript absences and adding irrelevant diagnostic inferences."
+}

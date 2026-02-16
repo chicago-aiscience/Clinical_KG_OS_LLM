@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer accurately lists reported symptoms (dry cough worsening over 3 days, fever ~100-101°F on Friday, fatigue, decreased appetite, possible loss of taste, mild runny nose, uncertain SOB) and explicitly denied symptoms (sputum/blood, wheezing, chest pain/heart racing, sore throat, chills/night sweats, skin changes/rashes, GI issues like diarrhea/constipation/blood in stool, N/V, urinary changes, dizziness/fainting, confusion/memory loss; vision/hearing fine; swallowing uncertain). Generated Answer correctly identifies dry cough, fever, and fatigue but misrepresents uncertain SOB as reported 'harder time breathing,' omits decreased appetite/loss of taste/runny nose, incorrectly claims no explicit denials for chest pain/sore throat/chills/GI despite clear 'No' responses (e.g., P-13, P-14, P-19, P-22, P-23), and hallucinates unrelated knowledge graph/asthma link; significant factual errors and contradictions.",
+    "completeness": "Covers core reported symptoms cough/fever/fatigue (~50% of reported: misses appetite/taste/runny nose); partially lists some asked/denied symptoms (chest pain, heart racing, sore throat, chills/night sweats, partial GI, N/V) but omits many (wheezing, sputum/blood, skin/rashes, urine changes, dizziness, confusion, vision/hearing) and fails to affirm denials; overall ~30-40% coverage of Gold key points.",
+    "faithfulness": "Most claims grounded with citations (e.g., cough P-1/P-5/P-12 equivalent, fever P-1/P-2, fatigue P-1/P-8/P-25); however, misinterprets P-8 SOB as affirmative rather than uncertain, wrongly asserts no explicit denials despite direct 'No' from P (P-6,7,13,14,19,22,23 etc.), and fabricates knowledge graph/asthma diagnosis link not in transcript; multiple inaccuracies and hallucinations.",
+    "relevance": "Directly structures response into reported respiratory/systemic symptoms and doctor-asked symptoms, addressing the question's two parts despite errors in denial identification and extraneous asthma mention; minor off-topic element but mostly focused."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer partially covers main reported symptoms but omits several, misrepresents uncertain SOB, incorrectly denies explicit patient denials for key symptoms, and includes hallucinations, leading to low factual accuracy and completeness."
+}

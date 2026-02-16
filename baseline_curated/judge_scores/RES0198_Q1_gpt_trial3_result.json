@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the patient’s main nasal symptoms as nasal congestion (“stuffy nose”) and rhinorrhea for ~1 week (supported by P-1/P-2). However, it contains major factual errors compared with the Gold Answer and transcript: (1) it incorrectly states there was no description of discharge character, despite the patient explicitly saying it was “mostly clear” (P-5); and (2) it incorrectly states there was no evidence the patient denied cough, sore throat, post-nasal drip, or loss of taste/smell, despite explicit denials of cough (P-4), back-of-throat drainage/post-nasal drip (P-6), sore throat (P-7), and loss of taste/smell (P-16). These errors substantially undermine accuracy.",
+    "completeness": "Key Gold Answer points covered: nasal congestion + runny nose; ~1 week duration. Key points missed: progression from initially stuffy to mostly running (P-3); discharge character “mostly clear” (P-5); explicit denials of cough (P-4), post-nasal drip/back-of-throat drainage (P-6), sore throat (P-7), and loss of taste/smell (P-16). (Mild fatigue and other negatives were in Gold Answer but are not central to the question.) Overall, the answer includes less than half of the requested/Gold key elements.",
+    "faithfulness": "Several claims are not faithful to the transcript: the answer asserts the discharge character is not described and that denials of key related symptoms are not present, both directly contradicted by the transcript (P-5, P-4, P-6, P-7, P-16). While not adding many new fabricated facts, it misrepresents what is explicitly stated, which is a significant grounding failure.",
+    "relevance": "The response is structured to address the asked elements (nasal symptoms, discharge character, denied related symptoms). It includes minor irrelevant commentary (mentioning nephew/diabetes as justification for lack of denials) but remains largely focused on the question."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The answer is on-topic but substantially inaccurate and incomplete, incorrectly denying documented clear discharge and multiple explicit symptom denials in the transcript."
+}

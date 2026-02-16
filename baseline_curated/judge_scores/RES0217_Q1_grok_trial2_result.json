@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer accurately identifies the main local symptoms (redness, tenderness, soreness of skin not joint) matching Gold, but has significant errors in systemic symptoms: misattributes joint pain denial to P-1 (local clarification, not systemic denial at P-7); incorrectly cites P-6 for headaches denial (P-6 is rash denial, actual at P-19); wrongly claims no explicit fever denial (P-8 denies explicitly). These contradictions to Gold's accurate citations and facts warrant a low score.",
+    "completeness": "Gold key points covered: local - location implied, redness/tender/sore/skin not joint (yes), but misses 'stuck pretty good', explicit no bullseye rash, 'totally fine/pretty healthy'; systemic - all three screened/denied mentioned but inaccurately. Covers ~60% effectively.",
+    "faithfulness": "Local claims verifiable (P-1, P-6); systemic claims have inaccurate citations: joint pain P-1 not denial of systemic (hallucinated as denial); headaches wrong P-6; fever incorrectly states no denial despite P-8. Multiple unverifiable/misattributed claims.",
+    "relevance": "Directly structures response around local symptoms at site and specific systemic screenings (fever, joint pain, headaches) denied, perfectly matching question focus with no tangents."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer is relevant and partially complete with correct local symptoms but undermined by significant factual errors, inaccurate citations, and hallucinations in systemic symptom denials compared to Gold."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly includes 'scratchy throat' and 'post-nasal drip' as part of the clinical findings recapped by the doctor in the summary [D-58]. While these were discussed earlier in the visit, the doctor did not mention them in the final recap. It also misses several negative findings that the doctor did recap, such as the absence of sputum, the absence of asthma, and the exclusion of medications other than Claritin.",
+    "completeness": "The Generated Answer misses several key points from the Gold Answer: 1) The recap of 'not bringing anything up' (no sputum), 2) the recap of having 'no asthma', 3) the recap of taking 'no medications aside from Claritin'. Additionally, it misses Jessica's specific response in P-60 regarding her goal of knowing if she needs medicine and her priority for rest in P-61.",
+    "faithfulness": "The Generated Answer hallucinations/misattributions occur in the 'Key Clinical Findings' section. It cites [D-58] for 'Scratchy Throat' and 'Post-Nasal Drip', but the transcript shows the doctor does not mention these in that specific turn. These symptoms appear in [P-1] and [P-18] respectively.",
+    "relevance": "The answer is highly relevant and structured to address both parts of the question (the doctor's recap and the patient's goal)."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 3,
+    "relevance": 5
+  },
+  "average_score": 3.5,
+  "summary": "The Generated Answer misses several negative findings from the doctor's recap and misattributes earlier symptoms to the summary block, while also failing to capture the patient's specific request for medication."
+}

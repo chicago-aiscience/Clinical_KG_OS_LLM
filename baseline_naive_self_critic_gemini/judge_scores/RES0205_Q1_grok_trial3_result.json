@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer lists resolved symptoms as sore throat (P-13), runny nose (P-14), productive mucus (P-6), collectively flu symptoms resolved in 3-4 days except cough. Persisting: detailed dry cough (timing, frequency, triggers, stability from P-5-10), chest soreness with coughing but no independent pain (P-15-16), pertinent negatives (no SOB P-11, fever P-12, N/V P-19, abd pain P-20). Generated incorrectly attributes resolved fever (denied P-12), N/V (denied P-19), belly pain (denied P-20) to P-14 'flu symptoms'; misses runny nose; partial on sore throat/mucus/chest soreness but wrong citations and adds extraneous knowledge graph; significant contradictions on denied symptoms being present then resolved.",
+    "completeness": "Covered: sore throat resolved, mucus resolved, dry cough persisting, chest soreness. Missed: runny nose resolved, cough persistence 2 weeks explicitly, cough details (3-4x/hour P-9, spontaneous P-10, stable intensity P-7/frequency P-8, started day 4-5), no independent chest pain nuance, all pertinent negatives; adds non-existent symptoms (fever, N/V, belly pain). Covers roughly 20-40% of key points.",
+    "faithfulness": "Hallucinations: fever, N/V, belly pain as initial symptoms (explicitly denied P-12,19,20); misattributes to P-14 which only vaguely references prior-mentioned symptoms; 'medical knowledge graph' entirely fabricated/not in transcript; sore throat detail verifiable but wrong citation (P-13 not P-14); mucus, dry cough, chest soreness verifiable in transcript. Multiple hallucinated facts.",
+    "relevance": "Directly structures response into resolved vs. persisting symptoms matching question; minor tangent with knowledge graph but overall focused on reported symptoms."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer has significant factual errors and hallucinations by inventing denied symptoms as resolved, misses key details like runny nose and cough characteristics, while remaining mostly relevant in structure."
+}

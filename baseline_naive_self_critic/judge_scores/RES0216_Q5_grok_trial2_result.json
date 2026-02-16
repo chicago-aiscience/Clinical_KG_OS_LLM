@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer details specific self-directed changes: skipping evening maintenance inhaler [P-19, P-20] and not refilling rescue inhaler for years [P-17, P-18], linked to symptoms consistent with asthma recurrence [D-35]. Generated Answer correctly identifies asthma history [P-16], medication limiting [D-34], symptoms [P-1], and doctor's assessment [D-35, D-36] as causing exacerbation, but does not explicitly detail the exact changes (morning-only dosing, no rescue refill), instead implying them via D-34. Core causal relationship is accurate with minor lack of specificity.",
+    "completeness": "Gold key points: asthma history/well-controlled [P-16, P-29]; specific non-adherence (maintenance morning-only [P-19,20], no rescue refill [P-17,18]); doctor summary [D-34]; symptoms (tightness on exertion/deep breath [P-1,4,9], phlegm/hoarseness [P-11]); feels different [P-16]; consistent with recurrence [D-35]; propose rescue [D-35]. Generated covers history, non-adherence summary [D-34], main symptoms [P-1], recurrence [D-35], non-cardiac [D-36]; misses exact non-adherence details, phlegm/hoarseness, 'feels different', rescue proposal (covers ~85%).",
+    "faithfulness": "Claims grounded: asthma [P-16], limiting meds [D-34], symptoms [P-1, P-7 implied in D-36], recurrence [D-35, D-36]. Citations accurate. Minor hallucination: 'Knowledge Graph' not in transcript (unverifiable external reference). No other fabrications; self-management directly from transcript.",
+    "relevance": "Generated Answer directly explains causal link between asthma history, self-reduced meds, and current symptoms as exacerbation, with step-by-step structure mirroring question's focus on relation to chest tightness/breathing difficulty; no off-topic content."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 4,
+    "relevance": 5
+  },
+  "average_score": 4.25,
+  "summary": "The Generated Answer is mostly accurate and complete in linking non-adherence to asthma exacerbation but misses some specific details and includes a minor hallucinated reference."
+}

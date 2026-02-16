@@ -1,0 +1,279 @@
+{
+  "nodes": [
+    {
+      "id": "N_001",
+      "text": "stuffy nose",
+      "type": "SYMPTOM",
+      "evidence": "I've had the stuffy nose um that's been on and off",
+      "turn_id": "P-1"
+    },
+    {
+      "id": "N_002",
+      "text": "runny nose",
+      "type": "SYMPTOM",
+      "evidence": "as well as a runny nose for the past week",
+      "turn_id": "P-1"
+    },
+    {
+      "id": "N_003",
+      "text": "congestion",
+      "type": "SYMPTOM",
+      "evidence": "It felt pretty stuffy at first",
+      "turn_id": "P-3"
+    },
+    {
+      "id": "N_004",
+      "text": "fever",
+      "type": "SYMPTOM",
+      "evidence": "Any other symptoms like sore throat, shortness of breath, fevers or chills?",
+      "turn_id": "D-7"
+    },
+    {
+      "id": "N_005",
+      "text": "chills",
+      "type": "SYMPTOM",
+      "evidence": "Any other symptoms like sore throat, shortness of breath, fevers or chills?",
+      "turn_id": "D-7"
+    },
+    {
+      "id": "N_006",
+      "text": "sore throat",
+      "type": "SYMPTOM",
+      "evidence": "Any other symptoms like sore throat, shortness of breath, fevers or chills?",
+      "turn_id": "D-7"
+    },
+    {
+      "id": "N_007",
+      "text": "shortness of breath",
+      "type": "SYMPTOM",
+      "evidence": "Any other symptoms like sore throat, shortness of breath, fevers or chills?",
+      "turn_id": "D-7"
+    },
+    {
+      "id": "N_008",
+      "text": "fatigue",
+      "type": "SYMPTOM",
+      "evidence": "A little bit",
+      "turn_id": "P-15"
+    },
+    {
+      "id": "N_009",
+      "text": "loss of taste",
+      "type": "SYMPTOM",
+      "evidence": "Any loss of sense of taste or smell",
+      "turn_id": "D-16"
+    },
+    {
+      "id": "N_010",
+      "text": "loss of smell",
+      "type": "SYMPTOM",
+      "evidence": "Any loss of sense of taste or smell",
+      "turn_id": "D-16"
+    },
+    {
+      "id": "N_011",
+      "text": "chest pain",
+      "type": "SYMPTOM",
+      "evidence": "Any sort of like chest pain or racing sensation of racing of your heart or anything like that?",
+      "turn_id": "D-17"
+    },
+    {
+      "id": "N_012",
+      "text": "Type One Diabetes",
+      "type": "MEDICAL_CONDITION",
+      "evidence": "Um I have type one diabetes.",
+      "turn_id": "P-23"
+    },
+    {
+      "id": "N_013",
+      "text": "allergy",
+      "type": "MEDICAL_CONDITION",
+      "evidence": "Any allergies at all?",
+      "turn_id": "D-28"
+    },
+    {
+      "id": "N_014",
+      "text": "autoimmune disease",
+      "type": "MEDICAL_CONDITION",
+      "evidence": "Any autoimmune diseases?",
+      "turn_id": "D-31"
+    },
+    {
+      "id": "N_015",
+      "text": "daycare",
+      "type": "LOCATION",
+      "evidence": "who goes to daycare",
+      "turn_id": "P-11"
+    },
+    {
+      "id": "N_016",
+      "text": "apartment",
+      "type": "PLACE",
+      "evidence": "I live in an apartment by myself",
+      "turn_id": "P-33"
+    },
+    {
+      "id": "N_017",
+      "text": "school",
+      "type": "PLACE",
+      "evidence": "I'm in school right now",
+      "turn_id": "P-32"
+    },
+    {
+      "id": "N_018",
+      "text": "nephew",
+      "type": "PERSON",
+      "evidence": "My I have um a nephew who I live with",
+      "turn_id": "P-11"
+    },
+    {
+      "id": "N_019",
+      "text": "nose",
+      "type": "BODY_PART",
+      "evidence": "just mostly for my nose",
+      "turn_id": "P-6"
+    },
+    {
+      "id": "N_020",
+      "text": "common cold",
+      "type": "DIAGNOSIS",
+      "evidence": "it seems like it's most likely a viral infection like the common cold",
+      "turn_id": "D-39"
+    },
+    {
+      "id": "N_021",
+      "text": "viral infection",
+      "type": "DIAGNOSIS",
+      "evidence": "most likely a viral infection like the common cold",
+      "turn_id": "D-39"
+    },
+    {
+      "id": "N_022",
+      "text": "COVID-19",
+      "type": "DIAGNOSIS",
+      "evidence": "some of these symptoms can also be seen in covid patients, so we will also get a swab done for you",
+      "turn_id": "D-39"
+    },
+    {
+      "id": "N_023",
+      "text": "decongestant",
+      "type": "MEDICATION",
+      "evidence": "I've tried like decongestants",
+      "turn_id": "P-10"
+    },
+    {
+      "id": "N_024",
+      "text": "Tylenol Cold",
+      "type": "MEDICATION",
+      "evidence": "use over the counter medications uh like Tylenol Cold",
+      "turn_id": "D-39"
+    },
+    {
+      "id": "N_025",
+      "text": "insulin",
+      "type": "MEDICATION",
+      "evidence": "you have your insulin medication",
+      "turn_id": "D-24"
+    },
+    {
+      "id": "N_026",
+      "text": "swab",
+      "type": "PROCEDURE",
+      "evidence": "we will also get a swab done for you",
+      "turn_id": "D-39"
+    }
+  ],
+  "edges": [
+    {
+      "source_id": "N_020",
+      "target_id": "N_001",
+      "type": "CAUSES",
+      "evidence": "most likely a viral infection like the common cold",
+      "turn_id": "D-39"
+    },
+    {
+      "source_id": "N_020",
+      "target_id": "N_002",
+      "type": "CAUSES",
+      "evidence": "most likely a viral infection like the common cold",
+      "turn_id": "D-39"
+    },
+    {
+      "source_id": "N_020",
+      "target_id": "N_003",
+      "type": "CAUSES",
+      "evidence": "most likely a viral infection like the common cold",
+      "turn_id": "D-39"
+    },
+    {
+      "source_id": "N_025",
+      "target_id": "N_012",
+      "type": "INDICATED_FOR",
+      "evidence": "you have your insulin medication",
+      "turn_id": "D-24"
+    },
+    {
+      "source_id": "N_024",
+      "target_id": "N_020",
+      "type": "INDICATED_FOR",
+      "evidence": "use over the counter medications uh like Tylenol Cold",
+      "turn_id": "D-39"
+    },
+    {
+      "source_id": "N_001",
+      "target_id": "N_019",
+      "type": "LOCATED_IN",
+      "evidence": "just mostly for my nose",
+      "turn_id": "P-6"
+    },
+    {
+      "source_id": "N_002",
+      "target_id": "N_019",
+      "type": "LOCATED_IN",
+      "evidence": "mostly running",
+      "turn_id": "P-3"
+    },
+    {
+      "source_id": "N_003",
+      "target_id": "N_019",
+      "type": "LOCATED_IN",
+      "evidence": "It felt pretty stuffy at first",
+      "turn_id": "P-3"
+    },
+    {
+      "source_id": "N_026",
+      "target_id": "N_022",
+      "type": "TEST_FOR",
+      "evidence": "we will also get a swab done for you",
+      "turn_id": "D-39"
+    },
+    {
+      "source_id": "N_018",
+      "target_id": "N_015",
+      "type": "ATTENDS",
+      "evidence": "My I have um a nephew who I live with who goes to daycare",
+      "turn_id": "P-11"
+    }
+  ],
+  "_usage": {
+    "prompt_tokens": 5514,
+    "completion_tokens": 17596,
+    "reasoning_tokens": 10745,
+    "cost": 0.00742414,
+    "pass1_nodes": 25,
+    "pass1_edges": 10,
+    "pass2_nodes": 26,
+    "pass2_edges": 10
+  },
+  "_meta": {
+    "method": "self_critic",
+    "pass1": {
+      "nodes": 25,
+      "edges": 10
+    },
+    "pass2": {
+      "nodes": 26,
+      "edges": 10
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the hiking exposure event from [P-18], matching the Gold Answer's core fact. However, it introduces a 'Knowledge Graph Link' claiming 'hiking exposure --[INDICATES]--> covid-19,' which is not present in the Gold Answer or transcript, representing a factual error. The symptom consistency link aligns with Gold and transcript [P-1, D-39], but the overall connection explanation deviates from Gold's emphasis on limited exposures. Some factual errors but main point correct.",
+    "completeness": "Gold key points: patient context (high school online, staying home [P-36/37, D-38/P-38]); specific hiking details (with partner, two weeks ago, half-hour away, people brushed by [P-18/19]); no other exposures/sick contacts [P-17/18]; lives with family [P-29]; immunizations up-to-date [P-20]; doctor tests due to symptoms [D-39]. Generated covers only the hiking exposure partially (misses partner, distance) and symptom consistency; misses context, denials of other exposures, family, immunizations. Covers ~25-40% of key points.",
+    "faithfulness": "Exposure claim verifiable in [P-18]. Symptom claims verifiable in [P-1, D-39]. However, the entire 'Knowledge Graph Link' section with [MEDICAL_HISTORY] and [DIAGNOSIS] tags is not in transcript—pure hallucination. Multiple hallucinated elements present.",
+    "relevance": "Directly names the specific exposure event and attempts to connect it to COVID-19 diagnosis via symptoms, addressing the question. The hallucinatory knowledge graph is a minor tangent but does not derail focus."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer correctly identifies the key exposure event but is incomplete in covering Gold details, includes transcript-ungrounded hallucinations, and has partial factual alignment."
+}

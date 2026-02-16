@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer states patient tried no treatments or OTC meds [D-9/P-9, D-24/P-24]. Generated correctly notes no explicit treatments for symptoms but erroneously includes past alcohol [P-33] and edibles [P-34] under self-treatments/history, which are social history not symptom treatments, introducing irrelevant and inaccurate framing. Doctor's recommendation matches on test and core isolation but omits explicit 'no medication prescribed'. Main points mostly align but with factual error on patient history.",
+    "completeness": "Key Gold points covered: patient no treatments (partially), COVID swab test [D-39], self-isolation until results and potentially longer if symptoms persist [D-39]. Missed: explicit no OTC/tried anything [D-9/P-9], no regular meds [D-24/P-24], results take 1-2 days [D-39], no medication prescribed, possible other tests/supervising consult [D-40]. Covers ~60-70% of keys.",
+    "faithfulness": "Patient no treatments grounded [D-9/P-9]; test/isolation perfectly verifiable [D-39]. Alcohol/edibles verifiable in transcript but hallucinated as relevant to 'self-treatments/history' for symptoms (social hx only, not treatments). Minor other omissions but no major fabrications.",
+    "relevance": "Directly structures response around patient's self-treatments and doctor's recommendation/intervention/instructions, perfectly matching question despite minor irrelevant addition."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 3,
+    "relevance": 5
+  },
+  "average_score": 3.5,
+  "summary": "The Generated Answer is mostly accurate and relevant but introduces an irrelevant hallucinated connection of past substance use to self-treatments and misses some completeness details from the Gold Answer."
+}

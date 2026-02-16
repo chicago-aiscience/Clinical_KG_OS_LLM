@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer specifies geographic risk as hiking in Strathroy along the creek [P-12] and doctor assessing it via Ontario Lyme map as 'close enough to be considered a little bit of a concerning point' [D-13]. Generated Answer instead attributes geographic risk to general tick habitats (woods/fields, long grass) from [D-18], which is advice to patient rather than specific risk assessment; this is a significant discrepancy. Other facts (exposure [P-1], duration >72h [D-6], prior history [P-3]) match. Conclusion interprets prior rash as 'known susceptibility', which is not explicitly stated (patient was successfully treated). Some factual errors but main point correct.",
+    "completeness": "Gold key points: exposure uncertainty Fri/Sat [P-1]; duration >72h [D-6]; specific geo Strathroy/map [P-12/D-13]; prior bite/rash/antibiotics [P-3]; despite not deer tick [P-5]/no rash [P-6]; patient's view on all ticks [P-5]; send tick to lab [D-6]; safer to prophylax [D-18]. Generated covers exposure, duration, prior history, despite not deer/no rash, safer quote. Misses specific geo details/map, patient's all-ticks comment, lab plan. Covers ~60-70% of key points.",
+    "faithfulness": "All citations accurate and verifiable: [P-1], [D-6], [P-3], [D-18]. Geographic claim grounded in [D-18] tick habitat description, though not the doctor's specific risk rationale. 'Known susceptibility' interpretive from prior rash but not hallucinated (based on [P-3]); no multiple fabrications. Minor unverifiable interpretive detail, mostly grounded.",
+    "relevance": "Generated directly structures answer around the question's specified combination (exposure history, tick duration, geographic risk, prior history), addresses 'despite' clauses (not deer tick, no rash), and concludes on prophylaxis recommendation. Perfectly focused, no off-topic content."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 4,
+    "relevance": 5
+  },
+  "average_score": 3.75,
+  "summary": "The Generated Answer is mostly accurate and relevant but underperforms on completeness and correctness by misrepresenting the specific geographic risk assessment with general habitat advice instead of the transcript's Strathroy/map details."
+}

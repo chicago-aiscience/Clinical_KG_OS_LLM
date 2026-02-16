@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer specifies the exact order from P-4: first scratchy throat, then dry cough, followed by other symptoms like headache and malaise by the visit time; feeling hot is persistent but without specified onset relative to throat/cough. Generated Answer incorrectly lumps dry cough and scratchy throat as the first symptoms together from P-1 (ignoring P-4's sequence), places headache second and feeling hot third (not supported), calls hot 'fever' prematurely, and omits malaise/fatigue; significant errors in symptom order and details contradict Gold.",
+    "completeness": "Gold key points: 3-4 days (covered), initial scratchy throat then dry cough (missed order, lumped), headache/malaise/fatigue (headache covered, malaise/fatigue missed), hot persistent all day/night no exact timing (missed persistence/clothing, concurrent covered broadly), progression upper to systemic (missed). Covers duration, main symptoms partially, relation vaguely; ~60% coverage.",
+    "faithfulness": "Citations accurate (P-1, P-7, D-58, P-18); claims like 3-4 days, symptoms listed verifiable; however, invented strict numbered order (1. cough/throat, 2. headache, 3. hot) not directly in transcript (P-4 contradicts by throat before cough); post-nasal drip is allergy-related, not core progression; concurrent hot plausible but order hallucinated; some unverifiable sequence.",
+    "relevance": "Directly provides symptom order and relation of hot to cough/throat as concurrent within 3-4 days, matching question focus; minor mention of post-nasal drip but overall on-topic."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 3,
+    "relevance": 5
+  },
+  "average_score": 3.25,
+  "summary": "The Generated Answer partially addresses the question with a plausible but factually incorrect symptom order, missing key details from the Gold Answer while remaining grounded and relevant."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer diagnoses acute lower respiratory tract infection (acute bronchitis with possible bacterial superinfection or early CAP on chronic cough). Generated Answer diagnoses bacterial respiratory tract infection (bacterial bronchitis or pneumonia), which is similar but more definitively bacterial (Gold hedges 'possible') and omits chronic context/acute-on-chronic distinction. Explanations for productive cough note duration but miss acute worsening/transition; greenish sputum interpretation stronger ('highly specific') than Gold's ('raises concern, not definitive'); fevers mis-cites doctor's questions over patient's direct report (P-4 'feeling hot at night') and links to denied night sweats. Core diagnosis and contributions align with minor discrepancies.",
+    "completeness": "Gold key points: precise diagnosis (acute LRTI/bronchitis +/- bacterial on chronic cough), productive cough as acute transition atop 3mo intermittent (P-2/P-12), greenish sputum as infectious concern for bacterial (P-9), subjective fevers as systemic (P-4), doctor's synthesis (D-47) distinguishing acute from chronic via absent symptoms, no vitals/exam. Generated covers diagnosis (partial), three features' contributions (partial, misses acute/chronic nuance, doctor's summary, absences); covers ~60-70% of key points.",
+    "faithfulness": "Claims grounded: productive cough (P-2), greenish sputum (P-9). Issues: fevers cite doctor's questions (D-4/D-5) not patient's report (P-4); attributes fatigue focus (P-19) over fever; links to denied night sweats (P-5) as 'manifestation'; invokes non-existent '[Knowledge Graph]'; interpretive claims on green sputum/neutrophils plausible but not verbatim from transcript. Some hallucinated elements (KG, night sweats link) but mostly verifiable.",
+    "relevance": "Directly names diagnosis and breaks down each of the three exact features' contributions with transcript citations; minor interpretive tangents but perfectly focused on question."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 3,
+    "relevance": 5
+  },
+  "average_score": 3.75,
+  "summary": "The Generated Answer is mostly correct and relevant but incomplete in capturing the acute-on-chronic nuance and faithfulness issues from hallucinations and mis-citations reduce its quality."
+}

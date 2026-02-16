@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer contradicts the Gold Answer by claiming inhaler frequency is 'not documented' despite [P-26] explicitly stating a daily maintenance inhaler and rescue inhaler used 'once every two weeks'; it also incorrectly states hypertension is not mentioned, ignoring [P-22] and [P-23]; minor correct points like using puffers [P-1] are overshadowed by these significant errors and contradictions.",
+    "completeness": "Gold key points: two inhalers with frequencies [P-26], no oxygen [P-1], no med names, HTN diagnosis [P-22], no antihypertensives [P-23], reason (lifestyle changes: weight loss/walking [P-23/P-24]), BP OK, doc support [D-25], quit smoking [P-40], rare alcohol [P-39], well-managed baseline [P-28], no allergies [P-29/30]. Generated covers only 'uses puffers' and 'manageable' [P-1] (<20%).",
+    "faithfulness": "Generated hallucinates absence of inhaler frequency ([P-26] directly states it) and hypertension details ([P-22/23]); wrongly cites limited segments [D-4]-[P-12] while full transcript provided; claims unverifiable and fabricates incompleteness, not grounded in transcript.",
+    "relevance": "Generated attempts to address by claiming information missing but fails to provide actual details from transcript, misdirects with wrong segment citations, and does not answer the question's core elements (meds, strategies, frequencies, reason for no HTN meds)."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 1
+  },
+  "average_score": 1.0,
+  "summary": "The Generated Answer is largely incorrect, incomplete, unfaithful to the transcript, and fails to address the question by fabricating the absence of key details explicitly present."
+}

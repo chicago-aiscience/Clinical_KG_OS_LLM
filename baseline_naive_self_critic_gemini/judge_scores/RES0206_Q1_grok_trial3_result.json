@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer accurately captures the main respiratory symptoms from [P-1] (increased cough, sputum, hemoptysis, dyspnea), sinus pressure from [P-12], and identifies cough as most bothersome from [P-12], consistent with Gold. However, it has factual errors: omits reduced exercise tolerance [P-4] listed in Gold as respiratory; incorrectly states patient 'did not report' fever [P-9-11] or headache [P-14] 'during this specific description in [P-1]' implying she didn't report them at all, contradicting Gold which includes them as systemic symptoms reported during the acute worsening; minor wrong citation of [P-1] for most bothersome. Significant discrepancies in systemic symptoms coverage.",
+    "completeness": "Gold key points: Respiratory (increased cough freq [P-1], incr sputum green-yellow [P-1], hemoptysis [P-1], worsened dyspnea [P-1], reduced exercise tol [P-4]); Systemic (fever [P-9-11], sinus pressure [P-12], headache [P-14]); most bothersome cough [P-12]. Generated covers increased cough, sputum, hemoptysis, dyspnea (partial), sinus pressure, most bothersome cough (6/8 key points, ~75%, misses exercise tol, fever, headache). Pertinent negatives in Gold not required by question.",
+    "faithfulness": "All respiratory claims directly verifiable in [P-1]; sinus pressure in [P-12]; denial of other systemic symptoms 'during ... [P-1]' verifiable as they appear later; most bothersome verifiable in [P-12] (minor issue citing [P-1] inaccurately). No hallucinations, fully grounded with accurate citations except minor.",
+    "relevance": "Perfectly structures response into respiratory symptoms, systemic symptoms, and most bothersome symptom, directly addressing the question with no off-topic content."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 4,
+    "relevance": 5
+  },
+  "average_score": 3.5,
+  "summary": "The Generated Answer is mostly accurate on core respiratory symptoms and most bothersome symptom but has significant errors by omitting key systemic symptoms (fever, headache) and exercise tolerance while incorrectly denying some reports."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies COVID-19 as the ruled-out condition and a COVID test as the test used, consistent with the transcript and Gold Answer ([P-35]). However, it is factually incorrect about timing: the transcript explicitly states the test was done when symptoms first started about two weeks ago ([P-36]), whereas the Generated Answer claims the timing is not explicitly detailed. It also adds an unsupported implication about needing “exclusionary documentation.”",
+    "completeness": "It covers: (1) COVID-19 ruled out, (2) COVID test used, and (3) two workplace concerns (hospital clerk role and coworkers being scared when she coughs). It misses key Gold Answer details: negative result wording (“I don't have it”), the explicit timing at symptom onset ~2 weeks ago ([P-36]), PPE/infection-control context ([P-17]), that she stayed home after the test, and her concern about returning to work while still coughing ([P-36]) and desire for medication partly driven by this ([P-35]). Overall this is roughly 50–79% coverage.",
+    "faithfulness": "Most claims are grounded in the transcript (COVID test, hospital clerk, coworkers scared). However, it introduces non-transcript elements (“Knowledge Graph,” “need for exclusionary documentation”) and incorrectly states the timing is not explicit despite a clear statement in [P-36]. These issues reduce faithfulness.",
+    "relevance": "The answer is focused on the requested elements (condition, test, timing, workplace concerns). Minor tangents include references to a “Knowledge Graph” and documentation, but overall it remains on-topic."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 3,
+    "relevance": 4
+  },
+  "average_score": 3.25,
+  "summary": "Identifies COVID-19 and the COVID test correctly and notes key workplace anxiety, but incorrectly claims the test timing is unspecified (it was at symptom onset ~2 weeks prior) and omits several workplace-context details from the Gold Answer."
+}

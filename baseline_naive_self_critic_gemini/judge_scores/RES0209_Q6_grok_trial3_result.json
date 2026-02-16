@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly states that 'the provided context does not include the clinician's response, diagnosis, or the specific plan' and claims it ends at [P-32], but the full transcript extends to [D-44] and includes explicit mentions of the COVID swab ([D-29]), medication changes ([D-43]), and consultation with the supervising physician ([D-29], [D-43]). This directly contradicts all facts in the Gold Answer, making it mostly incorrect.",
+    "completeness": "Gold Answer key points: 1) COVID swab diagnostic test in pandemic context; 2) suggestion to change medication regimen (e.g., from rescue-only to better control); 3) next steps with consultation to supervising physician and return to patient. Generated Answer covers 0% of these, instead summarizing unrelated symptoms and history.",
+    "faithfulness": "Generated Answer hallucinates that the transcript ends early at [P-32] and lacks the plan, but verifiable content includes the plan in [D-29] and [D-43]; symptom summary is grounded but minor and off-topic; largely fabricated claim about transcript content.",
+    "relevance": "The question specifically asks for the clinician's overall plan including COVID test, med changes, and physician consultation; Generated Answer refuses to answer citing missing info (falsely), provides symptom list instead, and concludes with asthma diagnosis support—largely off-topic and does not address the question."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 1
+  },
+  "average_score": 1.0,
+  "summary": "The Generated Answer fails across all dimensions by falsely denying the presence of the clinician's plan in the transcript and providing irrelevant symptom details instead of the required plan summary."
+}

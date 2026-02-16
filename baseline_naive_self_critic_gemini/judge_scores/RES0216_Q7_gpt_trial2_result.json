@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly states onset ~3 days prior and describes inspiratory tightness without focal pain, consistent with [P-1, P-5, P-9]. However, it fails to accurately report symptom trajectory: the patient explicitly said it is “staying the same” and “pretty steady” [P-2, P-3], whereas the answer characterizes it as “persistent but intermittent,” which is not an accurate reflection of the patient’s report (“kind of always there”). Most importantly, it incorrectly states the patient “maintains their normal daily walking routine,” contradicting [P-22] where the patient reports reducing from a couple walks per day to typically one. These inaccuracies are clinically meaningful.",
+    "completeness": "Key Gold Answer elements covered: ~3-day onset; baseline constant tightness; worse with walking; worse with deep breath; worse getting up from chair (included). Key elements missed or inadequately captured: (1) first noticed specifically while out on a walk [P-4] (the answer implies association but does not clearly state first appearance during the walk); (2) explicit statement that symptoms have been staying the same/steady over 3 days [P-2, P-3]; (3) functional impact on walking routine (reduced to one walk/day) [P-22] (the answer states the opposite); (4) impact on work (no missed work) and overall day-to-day function being noticeable but not dramatically limiting [P-21–P-23].",
+    "faithfulness": "There is hallucinated/unverifiable content: “Knowledge graph data confirms…” and “[KG]” are not present in the transcript. The claim that the patient maintains a normal walking routine is not supported and directly conflicts with transcript evidence [P-22]. Other statements are generally grounded in the transcript.",
+    "relevance": "The response is mostly focused on the asked domains (onset, progression, exacerbating factors, impact on walking), but it omits or misstates the most important part of functional impact on walking frequency and does not clearly answer the “better/worse/same” question. Still, it largely stays on-topic."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The answer is on-topic and captures some symptom features, but it contains major contradictions about functional impact and progression and includes hallucinated “knowledge graph” content, making it only partially accurate and incomplete."
+}

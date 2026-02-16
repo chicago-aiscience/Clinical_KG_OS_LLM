@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the condition as 'cardiac ischemia' (equivalent to Gold's 'cardiac ischemic picture' from [D-36]). It accurately notes the doctor's citation of lack of shortness of breath with exercise [D-36] and absence of chest pain [D-36], corroborated by patient statements [P-1, P-5]. However, it omits the doctor's specific screening and negation of anxiety, sweating, or impending doom [D-6, P-6], which Gold Answer highlights as key absent symptoms. Core facts align, but minor omissions create slight discrepancies.",
+    "completeness": "Gold key points: condition ('cardiac ischemic picture' [D-36]); nature of complaints (tightness not pain [P-5], not classic exertional dyspnea/SOB [D-36, P-7]); absences (no pain [P-5], no anxiety/sweaty/impending doom [D-6, P-6]). Generated covers: condition; nature (no SOB [D-36], tightness implied via no pain); absence (no pain [D-36, P-1]). Misses explicit anxiety/sweat/doom absences and clinician screening details. Covers ~80% of key points.",
+    "faithfulness": "All claims verifiable: condition [D-36]; no SOB with exercise directly from [D-36]; no pain from [D-36] and patient [P-1]; no hallucinations or unverifiable details. Citations accurate and grounded in transcript.",
+    "relevance": "Directly addresses the question by specifying the condition and doctor-cited symptom findings (nature: SOB/pain characteristics; absences: pain), with clear structure and no off-topic content."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 5,
+    "relevance": 5
+  },
+  "average_score": 4.5,
+  "summary": "The Generated Answer is highly faithful and relevant, with strong correctness and good completeness, but misses some absent symptoms detailed in the Gold Answer."
+}

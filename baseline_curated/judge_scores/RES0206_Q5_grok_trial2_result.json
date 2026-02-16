@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer states smoking is the primary risk factor (not 'direct cause'), includes quitting at diagnosis 4-5 years ago [P-7, P-40], and persistent COPD damage requiring inhalers [P-26]; Generated calls it 'direct cause', cites only [P-40], omits quitting and inhalers. Chain in Generated partially matches: exposure [P-20] correct, infection symptoms limited to sputum [P-1] and fever [P-9] (misses sinus [P-12], headache [P-14], patient suggestion [P-23]); misquotes [D-43] as confirming 'respiratory infection' (actual: 'an infection'). Introduces Knowledge Graph not in Gold. Minor discrepancies but core facts mostly align.",
+    "completeness": "Gold key points: smoking details (half pack/20y [P-40], quit at dx 4-5y [P-7,P-40]), persistent COPD/inhalers [P-26]; exposure details [P-20]; infection signs (sputum [P-1], sinus [P-12], headache [P-14], fever [P-9]); patient suggestion [P-23]; 3-day worsening [P-1]; past pattern [P-3]; doctor [D-43]. Generated covers: smoking basic [P-40]; exposure [P-20]; partial infection (sputum, fever); partial doctor [D-43]. Misses quitting, inhalers, sinus/headache, [P-23], [P-1] timeline, [P-3]. Covers ~50-60% of key points.",
+    "faithfulness": "Citations [P-40, P-20, P-1, P-9, D-43] verifiable and accurate in transcript. However, [D-43] says 'an infection', not 'respiratory infection'. Major issue: entire 'Knowledge Graph' with causal arrows (e.g., 'smoking history --[CAUSES]--> copd') is fabricated, not in transcript. Multiple hallucinated elements despite mostly grounded claims.",
+    "relevance": "Generated Answer directly structures response around the two-part question (smoking-COPD relation, sick contact chain to exacerbation) with no off-topic content or tangents; perfectly focused."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.5,
+  "summary": "The Generated Answer is mostly correct and highly relevant but incomplete in covering Gold details, with faithfulness reduced by hallucinated Knowledge Graph references."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer accurately traces: 3mo onset (P-2,P-13), intermittent dry 2mo (P-2), 1mo nightly sleep disruption causing fatigue (P-19,P-21), 3days productive greenish (P-2,P-9,P-12), couple days subjective fevers (P-4), acute-on-chronic pattern (D-47). Generated covers onset (3mo, class), sleep disruption (1mo), productive (few days, green), but incorrectly states no explicit confirmation of subjective fevers (contradicts P-4 'feeling hot at night past couple days'), confuses with night sweats (denied P-5), misses intermittent/dry nature, 'nightly' emphasis (P-21), fatigue link, exact 3days, pattern. Significant error on fevers (key question point), other core facts ok.",
+    "completeness": "Gold key points: onset 3mo class, intermittent dry ~2mo, 1mo nightly disruption/fatigue, 3days productive gross green gunk, couple days subj fevers no temp, D-47 summary, pattern. Generated covers: onset 3mo/class, 1mo sleep disruption, few days productive green gunk (~75% timing/productivity). Misses: intermittent dry, exact nightly last mo/fatigue, 3days precise, fevers entirely, summary/pattern. Covers 3/5 main timeline points partially.",
+    "faithfulness": "Generated claims grounded except: fevers section hallucinates 'no explicit confirmation of subjective fevers/night sweats' (P-4 confirms subj fevers 'hot at night past couple days'; night sweats separate/denied D-5/P-5); misattributes inquiry. Sleep cites P-19 but omits P-21 nightly detail. Productive cites accurate (P-2,P-9,P-12 implies 3days). Onset ok. Multiple errors on fevers (hallucinated absence, wrong conflation).",
+    "relevance": "Generated directly structures timeline in bullets addressing onset, sleep disruption, productive cough, fevers per question; no off-topic content, fully focused despite errors."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.0,
+  "summary": "Generated Answer provides a mostly accurate timeline structure but significantly errs by denying subjective fevers present in transcript and Gold, reducing correctness, completeness, and faithfulness."
+}

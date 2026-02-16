@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer details specific present symptoms (dry cough 4-5 days non-improving, clear runny nose) and multiple absent findings (no fever/chills, sore throat, normal taste/smell, no chest/muscle/back pain, headaches, N/V/abd pain, no sick contacts/travel) leading to X-ray due to persistence despite absent high-acuity markers and novelty, and COVID swab per protocol. Generated accurately captures persistent cough driving X-ray [P-2, D-37], COVID protocol [D-39], some negatives (chest pain, N/V, fever/chills, taste/smell), family asthma absence [P-28], and new onset. Minor discrepancies: interprets negatives as ruling out traumas/GI (plausible but not Gold's 'absent high-acuity markers'); omits some details but no factual errors.",
+    "completeness": "Gold key points: present (cough details, runny nose); negatives (fever/chills, sore throat, taste/smell, chest pain, muscle/back pain, headaches, N/V/abd pain, no contacts/travel); family asthma but patient clear; cough novelty/persistence → X-ray; protocol → swab. Generated covers: cough details/persistence (yes), some negatives (chest pain, N/V, fever/chills, taste/smell, asthma absence, new onset implied); X-ray/COVID reasons (yes). Missed: runny nose entirely, sore throat, headaches, full muscle/back/abd, no contacts/travel. Covers ~60-70% of enumerated points.",
+    "faithfulness": "All claims verifiable: cough [P-2], X-ray need [D-37], chest pain [P-15], N/V [P-16], COVID protocol [D-39], fever/chills [P-13], taste/smell [D-10, P-10], asthma [P-28], activity tolerance [P-28]. Interpretations (ruling out traumas/GI, new onset) plausible and grounded in denials/novelty [P-24 implied]; no fabrications or inaccurate citations.",
+    "relevance": "Directly addresses question by breaking down how present (cough) and absent findings (selected negatives) plus context led to each test; focused structure with no off-topic content."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 5,
+    "relevance": 5
+  },
+  "average_score": 4.25,
+  "summary": "The Generated Answer is mostly accurate and highly faithful/relevant but misses some key present/absent findings from the Gold Answer, reducing completeness."
+}

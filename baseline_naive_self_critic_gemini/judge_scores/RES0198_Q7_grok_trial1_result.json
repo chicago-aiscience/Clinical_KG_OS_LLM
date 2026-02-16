@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Gold Answer accurately identifies the onset as one week ago [P-1,P-2], stuffy nose first [P-3], shift to predominantly runny [P-3], possible influence of decongestants [P-10], and a nuance between initial 'on and off' [P-1] and later 'pretty constant' [P-8]. The Generated Answer correctly notes onset one week ago but incorrectly states no evidence for which symptom first (contradicts P-3), no predominant change (contradicts P-3), and symptoms as intermittent (ignores P-8 clarification, over-relies on P-1). These are significant factual contradictions with the Gold Answer.",
+    "completeness": "Key points from Gold: 1) onset 1 week [P-1,P-2] - covered; 2) stuffy first [P-3] - missed/denied; 3) shift to runny [P-3] - missed/denied; 4) decongestant influence [P-10] - missed; 5) pattern nuance (on/off to constant) [P-1,P-8] - partially attempted but missed nuance/misstated as purely intermittent; 6) no improvement [P-1] - missed. Covers only ~1 key point (<20%).",
+    "faithfulness": "Generated claims 'no specific evidence' for which symptom first, but P-3 explicitly states 'stuffy at first'; claims no predominant change, but P-3 says 'now it's mostly running'; characterizes as intermittent citing P-1 'on and off', ignoring P-8 'pretty constant for the past week'. Multiple claims not verifiable or contradict transcript (hallucinated absence of evidence and no change).",
+    "relevance": "The Generated Answer directly addresses onset, progression (which first and predominant change), and constant/intermittent nature, with no off-topic content, perfectly matching the question's focus."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer has significant factual inaccuracies and omissions compared to the Gold Answer, poor faithfulness to the transcript by ignoring key utterances, and low completeness, despite being highly relevant."
+}

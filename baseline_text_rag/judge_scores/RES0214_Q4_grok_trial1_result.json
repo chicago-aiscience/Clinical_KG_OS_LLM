@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the COVID-19 swab test with accurate citation [D-53], matching the Gold Answer. It captures the core rationale of prioritizing COVID-19 due to the husband's similar symptoms [D-53, P-19], which is consistent with the Gold's emphasis on household transmission. However, it simplifies the rationale by adding 'fever and sore throat' (true from transcript but not the primary epidemiological focus in Gold) and omits the explicit prioritization phrasing and self-isolation context, representing minor discrepancies while keeping core facts intact.",
+    "completeness": "Key points from Gold Answer: (1) COVID-19 swab ordered [D-53] - covered; (2) epidemiological context/household transmission (husband's symptoms [P-19]) - partially covered via husband mention; (3) doctor's explicit statement on prioritizing COVID if husband has it [D-53] - covered; (4) self-isolation instruction [D-53, D-54] - missed; (5) urgency for transmissible infection [D-54] - missed; (6) influenza as secondary, post flu shot query [P-53, D-54] - minimally covered (mentions influenza implicitly via prioritization). Covers ~60-70% of key points, missing details on self-isolation and full flu context.",
+    "faithfulness": "All claims in Generated Answer are directly verifiable: covid swab ordered [D-53]; prioritization due to fever/sore throat presentation [D-53 context, patient symptoms]; husband's similar symptoms leading to COVID first [D-53, P-19]. Citations accurate, no hallucinated facts or unverifiable details; fully grounded in transcript.",
+    "relevance": "Generated Answer directly addresses both parts of the question: names the diagnostic test (COVID swab) and explains the rationale for prioritizing it over influenza (husband's symptoms, symptoms), with no off-topic content or tangents."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 5,
+    "relevance": 5
+  },
+  "average_score": 4.25,
+  "summary": "The Generated Answer is factually accurate and highly faithful/relevant but moderately complete, missing some nuanced rationale details from the Gold Answer."
+}

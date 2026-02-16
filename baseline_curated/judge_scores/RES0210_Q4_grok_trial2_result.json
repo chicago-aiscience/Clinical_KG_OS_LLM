@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer has significant factual errors compared to the Gold Answer: it incorrectly states that the patient's negative response to weight loss is not explicitly detailed in the transcript (it is at [P-22]); claims no information on recent travel in the transcript (it is at [P-23], trip to Sarnia); misinterprets chemical exposure response as maintaining occupational differential when patient minimized exposure ([P-34]) and Gold says it makes it less likely; proposes irrelevant differentials like malaria/Lyme for domestic Sarnia travel (Gold specifies Legionella/fungal); omits key ties like smoking/family history for cancer, TB links; wrong impacts (e.g., chemical maintains vs. narrows away). Main structure present but core facts contradicted.",
+    "completeness": "Gold key points: precise differentials for each question (weight loss: cancer/TB; travel: Legionella/fungal; sick contacts: resp infections/TB; chemical: pneumonitis/occupational); specific response impacts (denials lessen likelihoods, Sarnia timing noted); collective favoring acute infectious. Generated covers the 4 questions with differentials and impacts but misses accurate DDs (e.g., no Legionella, family hx), precise response quotes/impacts (wrong summaries), and overall summary. Covers ~50-60% structurally but content shallow/mismatched: partial coverage.",
+    "faithfulness": "Multiple claims not verifiable/contradict transcript: weight loss denial 'not explicitly detailed' (false, [P-22]); no travel info (false, [P-23]); no sick contacts reported (false, [P-24]); infers weight loss absence solely from acute onset ignoring direct denial; chemical response spun to 'maintain occupational' despite patient's minimization ([P-34]). Intro symptoms verifiable but analysis hallucinates absences/misreads. Multiple errors.",
+    "relevance": "Directly structures response around the 4 specific questions with differentials and response impacts as asked; minor intro tangent on symptoms but perfectly focused overall."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer addresses the question's structure but contains significant factual inaccuracies, transcript misreads, and mismatched differentials compared to the Gold Answer."
+}

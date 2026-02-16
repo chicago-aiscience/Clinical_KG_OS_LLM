@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly states that the 20-year smoking history and sick contact exposure are not mentioned in the transcript, directly contradicting the Gold Answer and explicit transcript evidence ([P-40] details 20-year half-pack-a-day smoking history; [P-20] describes sick friend during dog walks, sometimes too close). It hallucinates a 'knowledge graph' not present in the input and vaguely attributes exacerbation to a generic infection per [D-43], missing the full causal chain and smoking-COPD link central to Gold. Major factual contradictions on core elements.",
+    "completeness": "Gold key points: (1) smoking as primary COPD risk factor with specifics (duration, quit timing, persistent damage/inhalers); (2) sick contact details (dog walks, sick friend, proximity); (3) infection symptoms (sputum, sinus, fever, etc.); (4) patient recognition of pattern; (5) doctor corroboration. Generated covers ~10%: vague infection trigger/exacerbation symptoms/link per [D-43]/[P-1]; misses smoking entirely, sick contact, full chain, history/pattern.",
+    "faithfulness": "False claims of absent smoking/sick contact details ungrounded (directly in [P-40]/[P-20]); 'knowledge graph' fully hallucinated (no such element in transcript); partial grounding in [D-43] (infection worsening COPD), [P-1] symptoms, but multiple fabrications undermine overall.",
+    "relevance": "Directly denies addressing the two-part question (smoking-COPD relation; sick contact chain to exacerbation) by claiming lack of data, then pivots to generic infection trigger; partially touches exacerbation mechanism but ignores/misattributes key triggers, making it largely off-topic from query specifics."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 2
+  },
+  "average_score": 1.5,
+  "summary": "The Generated Answer is fundamentally flawed, denying transcript-evident facts, hallucinating elements, and failing to cover or accurately address the question's core components compared to the Gold Answer."
+}

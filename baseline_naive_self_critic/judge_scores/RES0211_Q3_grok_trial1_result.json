@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer emphasizes specific symptoms including subjective fever [P-7, P-9], timeline of 3-4 days, malaise, fatigue, brother's cold, and doctor's summary. Generated Answer accurately covers dry cough, scratchy throat, headache, no sputum (inferred and explicit), no GI symptoms, no joint pain, malaise ('crappy'), and fatigue ('tired'), but does not explicitly address subjective fever (uses 'tired' as proxy, which is a minor discrepancy as fever is separately reported), omits timeline, brother's exposure, and doctor's summary. Core facts align without contradictions.",
+    "completeness": "Gold key points: scratchy throat [P-4], dry cough [P-1,P-4], subjective fever [P-7,P-9], headache [P-1,P-2], malaise [P-14,D-15], fatigue [P-13], 3-4 days [P-1,P-3], no sputum/phlegm [P-5,P-6], no nausea/vomiting [P-11], no diarrhea [P-12], no joint pain [P-13], brother cold [P-39], doctor summary [D-58]. Generated covers scratchy throat, dry cough/no sputum, headache, malaise (crappy), fatigue (tired), no GI (nausea/diarrhea), no joint pain (~8/14 points, 57%), misses fever details, timeline, brother, doctor summary.",
+    "faithfulness": "All claims verifiable: scratchy throat/dry cough [P-1,P-4], headache [P-1,P-2], crappy [P-1,P-14], tired [P-13], allergies timing [P-16], no sputum explicit [P-5,P-6], no GI [P-11,P-12], no joints [P-13]. Minor issues: GI absence cited [P-1] (incorrect, actually [P-11,P-12]), 'tired as proxy for fever' plausible but fever explicitly [P-7,P-9] not cited/used; no major hallucinations, 'pharynx/larynx' inferred reasonably.",
+    "relevance": "Directly explains how listed symptoms (dry cough, scratchy throat, headache; absences of sputum, GI, joints) and additional malaise/fatigue support URI diagnosis via structured clinical reasoning matching question; minor addition of allergies exclusion is relevant context from transcript."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 4,
+    "relevance": 5
+  },
+  "average_score": 4.0,
+  "summary": "The Generated Answer is mostly accurate and relevant, faithfully grounded in the transcript, but moderately incomplete in covering all key points from the Gold Answer such as explicit fever, timeline, exposure history, and doctor's summary."
+}

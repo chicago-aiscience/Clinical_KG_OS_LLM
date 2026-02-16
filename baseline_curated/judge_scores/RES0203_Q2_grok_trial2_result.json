@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer states patient tried no treatments or OTC meds [D-9, P-9] and no regular meds [D-24, P-24]. Generated correctly notes no explicit treatments for symptoms but inaccurately frames past alcohol [P-33] and edibles [P-34] as relevant 'self-treatments/history,' which they are not (not for current symptoms). Doctor's recommendation matches (COVID swab test [D-39], isolation instructions), but omits no medication prescribed, results timeline ('day or two'), and potential other tests/consult [D-40]. Core facts correct with minor irrelevant addition and omissions.",
+    "completeness": "Key Gold points covered: no prior treatments (partially, misses explicit citations and no regular meds detail), COVID swab test, self-isolation instructions (including continuation if negative but symptomatic). Missed: explicit 'no OTC tried' context, no regular medications, no medication prescribed statement, results take 'day or two,' potential other tests and supervising doctor consult. Covers ~80% of key points.",
+    "faithfulness": "All claims grounded in transcript: no treatments [P-9], alcohol/edibles [P-33/34] (though miscontextualized as treatments), swab test and isolation [D-39]. Citations accurate. Minor issue: alcohol/edibles not treatments for symptoms (plausible past history but hallucinated relevance), no outright fabrication.",
+    "relevance": "Directly addresses patient's prior treatments (none) and doctor's recommendation (test + instructions). Minor tangent: irrelevant past alcohol/edibles under self-treatments section, but structure otherwise focused on question."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 4,
+    "relevance": 4
+  },
+  "average_score": 4.0,
+  "summary": "The Generated Answer is largely correct, complete, faithful, and relevant but weakened by irrelevant inclusion of past substance use and omission of minor details like results timeline and further potential tests."
+}

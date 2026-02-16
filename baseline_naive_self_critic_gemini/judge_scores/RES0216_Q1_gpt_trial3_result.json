@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The answer correctly identifies the main present complaint of diffuse chest tightness for ~3 days and difficulty getting a full breath/dyspnea, worse with exertion/inspiration. However, it contains major inaccuracies: (1) it claims the transcript segments do not contain explicit patient denials of fever/night sweats/chills/weight loss/cough, but the transcript clearly includes those denials (P-11 to P-15); (2) it lists “Shortness of Breath with Exercise” as explicitly denied, relying on the clinician’s paraphrase in D-36, but the patient actually reports breathing is harder and symptoms worsen with walks (P-1, P-7, P-9, P-10), so this is misleading and contradicts the patient’s report. It also misframes chest pain denial by citing P-1 rather than the clearer explicit denial at P-5 (minor).",
+    "completeness": "Present symptoms: partially covered (chest tightness; difficulty getting a full breath), but missed key upper-airway/respiratory symptoms in the gold answer: hoarseness, increased phlegm, and throat clearing with no cough (P-11). Denials: largely missed—did not include explicit denials of anxiety/sweating/impending doom (P-6), fevers (P-12), night sweats (P-13), chills (P-14), unexplained weight loss (P-15), and cough (P-11). Overall coverage is well under 50% of the gold answer’s key negatives.",
+    "faithfulness": "Several statements are not faithful to the transcript: it asserts the patient’s explicit denials of fever/night sweats/chills/weight loss/cough are not present in the provided text, when they are clearly present (P-11 to P-15). It also treats D-36 (clinician summary) as an explicit patient denial of exertional dyspnea, which is not supported given the patient’s own descriptions of harder breathing and worsening with walking (P-1, P-7, P-9, P-10). Other included items (chest tightness, difficulty getting a full breath, worry, asthma history) are supported.",
+    "relevance": "The response is generally aimed at summarizing present symptoms and denials, but it fails to answer a large portion of the question (most of the explicitly denied screening symptoms) and introduces some less-relevant items (asthma history, worry) while omitting the requested upper-airway symptoms."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "Captures the main chest tightness/dyspnea complaint but misses most explicit denials and upper-airway symptoms and includes key unfaithful/incorrect claims about absent denials and exertional dyspnea."
+}

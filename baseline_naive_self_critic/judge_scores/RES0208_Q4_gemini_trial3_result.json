@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly states that the transcript does not contain the doctor asking about chest pain, palpitations, runny nose, and nausea. In reality, these are explicitly asked about in the transcript: D-10 (runny nose), D-15 (nausea), D-16 (chest pain), and D-17 (palpitations). It also mischaracterizes the patient's reports on taste and appetite as 'denials' when the patient actually confirmed a loss of taste and decreased appetite.",
+    "completeness": "The Generated Answer fails to list several other symptoms negated by the patient found in the Gold Answer, such as changes in vision/hearing, abdominal pain, urinary symptoms, and numbness/tingling. It only focuses on the symptoms provided as examples in the prompt's parenthetical.",
+    "faithfulness": "The Generated Answer contains a significant hallucination by claiming the specific symptoms mentioned in the question are not present in the transcript. This is a direct contradiction of the provided text. It also references an external 'knowledge graph' not included in the provided context.",
+    "relevance": "While the Generated Answer attempts to explain how the absence of symptoms helps differentiate the diagnosis, it does so based on the false premise that those symptoms were not explicitly asked about in the transcript. This undermines the relevance of the answer to the specific clinical encounter provided."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 2,
+    "faithfulness": 1,
+    "relevance": 2
+  },
+  "average_score": 1.5,
+  "summary": "The Generated Answer fails significantly by falsely claiming the transcript lacks the very symptoms the question asks about, despite them being clearly present in the text."
+}

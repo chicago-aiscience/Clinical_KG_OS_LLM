@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The answer correctly identifies several screened-and-denied items (nausea/vomiting, abdominal pain, diarrhea; loss of taste/smell; sore throat) and correctly frames them broadly as part of an infectious vs GI vs other workup. However, it makes a key interpretive error by tying the GI-denial cluster (nausea/vomiting/abdominal pain) to ruling out cardiac etiologies like MI, whereas the transcript’s explicit cardiac/cardiopulmonary screening was via chest pain and presyncope. It also omits other explicitly denied respiratory/infectious screening symptoms (runny nose) and epidemiologic exposures (sick contacts, travel), making its symptom list factually incomplete relative to what was asked and denied in the visit.",
+    "completeness": "Gold Answer key denied screens include: chest pain, feeling faint, sick contacts, travel, loss of taste/smell, sore throat, runny nose, nausea/vomiting, belly pain, diarrhea, sputum (dry cough), and no prior similar SOB episodes. The generated answer covers only: nausea/vomiting, belly pain, diarrhea, loss of taste/smell, sore throat. It misses chest pain, feeling faint, runny nose, sick contacts, travel, sputum/dry cough, and prior-episode denial. This is well under ~50% of the key items.",
+    "faithfulness": "The listed denied symptoms are grounded in the transcript, but several explanatory statements go beyond what is supported: e.g., presenting nausea/abdominal pain/vomiting as a ‘classic’ MI screen and claiming these negatives help isolate cardiac causes (the transcript instead shows cardiac screening with chest pain/presyncope). The discussion of COVID-19 screening is a reasonable inference from taste/smell questioning, but terms like ‘standard’ and some differential elaboration are not directly evidenced in the transcript. Overall, there are some plausible but not fully grounded inferences and at least one misattribution of intent.",
+    "relevance": "The response is generally on-task: it attempts to list denied symptoms/exposures and connect them to differential categories (infectious, cardiac, GI). However, it fails to address several key exposures and symptoms the doctor actually screened (sick contacts, travel, runny nose, chest pain, presyncope, sputum), so it only partially answers what was asked."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 2,
+    "faithfulness": 3,
+    "relevance": 4
+  },
+  "average_score": 3.0,
+  "summary": "Partially addresses the question with some correct denied symptoms and broad differential framing, but misses many screened negatives/exposures and misattributes the cardiac screening to GI-type questions rather than chest pain/presyncope."
+}

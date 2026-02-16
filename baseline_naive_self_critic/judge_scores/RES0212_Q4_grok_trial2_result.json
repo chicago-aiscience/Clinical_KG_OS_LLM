@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly identifies reported symptoms (fatigue [P-19], sleep disturbance [P-19], chest pain [P-3]) as screened constitutional symptoms, whereas the Gold Answer specifies denied symptoms like night sweats [D-5/P-5], unexplained weight loss [D-6-8/P-6-8], and hemoptysis [D-10/P-10]. It misattributes vague denials [P-5/P-6] without specifying symptoms and fabricates cat exposure as an infection risk (it's an allergy [P-27]). Serious conditions like feline/zoonotic TB are invented, contradicting Gold's TB exclusion based on night sweats/weight loss. Overall, factual errors and contradictions throughout.",
+    "completeness": "Gold key points: denied night sweats, weight loss, hemoptysis; exposures (sick contacts [D-14/15/32], travel [D-33/34], IV drugs/cocaine [D-39/40]); exclusions (TB, malignancy, endemic infections, immunosuppression). Generated covers none specifically: lists admitted symptoms instead of denied, wrong exposure (cats), partial TB mention with wrong rationale (zoonotic from cats). Covers <20% of key points.",
+    "faithfulness": "Generated claims fatigue/sleep disturbance/chest pain as screened constitutional symptoms—not verifiable as such in transcript (patient volunteered, not doctor-screened denials). Cat allergy [P-27] twisted into infection exposure risk. Feline/zoonotic TB and chronic bronchitis links hallucinated—not in transcript. Vague denials misapplied. Multiple ungrounded claims and fabrications.",
+    "relevance": "Generated attempts structure matching question (constitutional symptoms/exposures, serious conditions) but populates with incorrect admitted symptoms, wrong exposures (cats), and hallucinated conditions (feline TB), failing to address denied screenings or accurate exclusions for chronic cough. Largely off-topic content despite superficial relevance."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 2
+  },
+  "average_score": 1.25,
+  "summary": "The Generated Answer is factually inaccurate, incomplete, unfaithful to the transcript with hallucinations, and largely irrelevant by misidentifying reported symptoms as denied screenings and inventing unsupported risks/conditions."
+}

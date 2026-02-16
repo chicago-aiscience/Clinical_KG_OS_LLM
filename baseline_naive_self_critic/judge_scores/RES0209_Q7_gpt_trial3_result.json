@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Compared with the Gold Answer, the Generated Answer captures the broad trajectory (diagnosed at 8, now 10; recent worsening with dry cough/SOB/wheeze and increased bronchodilator use). However, it contains a clear factual error: it labels “goldfish” as a potential trigger, which is not supported by the transcript (the patient only states they have goldfish; no symptom association). It also implies some details imprecisely (e.g., baseline use is not accurately described/quantified; escalation frequency not explicitly stated as 5–6x/week).",
+    "completeness": "Key Gold Answer points covered: diagnosis at 8 and current age 10; baseline relatively well-controlled; triggers include exercise/cold and possible spring pollen; recent (2-week) exacerbation with dry cough, SOB, wheezing; nighttime symptoms.\nKey points missed or inadequately covered: explicit baseline bronchodilator frequency (“once every two weeks”); explicit current frequency (“almost every day… five six times a week”); clarification that symptoms began as “past week” then clarified to “last two weeks”; chest tightness; the important nuance that wheezing episodes occur more often than bronchodilator use (uses it only when really bad); lack of infectious precipitant after negative screening.",
+    "faithfulness": "The answer includes at least one definite hallucination (goldfish as a trigger). It also uses a few shaky/incorrect supports (e.g., citing P-9 for increased use rather than for exercise/cold triggers). Several statements are more interpretive than grounded (e.g., triggers ‘likely causing’ the current exacerbation) and omit transcript-grounded nuance (wheezing more frequent than inhaler use; no infectious trigger).",
+    "relevance": "Mostly focused on symptom/bronchodilator evolution over time, which matches the question. Minor tangents include family history (not asked) and the goldfish trigger claim (irrelevant and incorrect)."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 3.0,
+  "summary": "Partially correct and mostly relevant, but missing several key timeline/usage nuances and includes an ungrounded (hallucinated) goldfish trigger, reducing faithfulness and overall quality."
+}

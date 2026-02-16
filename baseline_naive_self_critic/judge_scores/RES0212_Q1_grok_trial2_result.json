@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer has significant factual errors compared to the Gold Answer: cough duration incorrectly stated as 'approximately one month [P-1]' (Gold and transcript [P-2] indicate three months chronic with recent worsening); misses key details like initial dry/intermittent nature, onset during pole dancing [P-13], productive only past three days [P-12], sputum no blood [P-10]/no foul smell [P-11], subjective fevers [P-4], exercise impairment [P-47]; chest pain described as occurring with cough but Gold specifies discomfort only when coughing not at rest; denials only vaguely lists two ([P-5] night sweats, [P-6] weight loss) without naming them or including others like hemoptysis, nausea/vomiting, stiff neck, body pain, sick contacts.",
+    "completeness": "Key points from Gold covered partially: cough (incomplete/wrong duration), chest discomfort with cough, greenish gross sputum (misses no blood/smell/3-day duration), fatigue/sleep disturbance from cough waking her nightly last month; misses full cough history (3 months dry intermittent recurrent, pole dancing onset), fevers, exercise impact; denials cover only ~10% (2 out of many: night sweats, weight loss vaguely, misses hemoptysis, nausea/vomiting, stiff neck, pain, sick contacts). Covers 20-49%.",
+    "faithfulness": "Most claims verifiable in transcript (e.g., greenish sputum [P-9], hurts when cough [P-3], tired/sleep [P-19], denials [P-5,P-6]); however, cough duration 'one month [P-1]' is inaccurate hallucination (P-1 has no duration, P-2 says 3 months); references non-existent 'knowledge graph'; infers 'cough causes chest pain' plausible but not directly stated; multiple interpretive errors and extraneous KG mention indicate hallucination.",
+    "relevance": "Directly structures response around reported respiratory/associated symptoms (cough, chest pain, sputum, fatigue, sleep) and denied symptoms with transcript citations, closely matching question focus on symptoms, cough/sputum characteristics, and explicit denials; minor tangent with unmentioned knowledge graph."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer is significantly incomplete and factually inaccurate, covering only partial symptoms with errors like wrong cough duration and vague denials, while remaining mostly relevant and grounded in the transcript."
+}

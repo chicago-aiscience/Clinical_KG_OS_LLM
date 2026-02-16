@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer states all three symptoms began simultaneously two days prior, with specific confirmation for cough [P-1,P-2,D-6,P-6]; sensory symptoms and cough both 'pretty consistent' without worsening or fluctuation [D-5,P-5,D-8,P-8]; partial sensory loss details [P-4]; no prior similar symptoms [D-3,P-3]. Generated Answer correctly identifies two-day onset and concurrent symptoms, no worsening/fluctuation, and no prior history as core conclusion, but has minor discrepancies: hedges on simultaneity (says no specified order despite P-6 confirmation), claims patient 'does not mention' prior symptoms citing only P-1 (ignores direct denial in P-3), omits partial loss persistence details. Core facts align, minor errors.",
+    "completeness": "Key Gold points: simultaneous onset all three (incl. cough confirmation), consistent sensory (no fluct), consistent cough (no worsen), no intermittent/variable, partial sensory persisted, no prior history. Generated covers ~80-90%: two-day concurrent onset, no worsening/fluctuation, no prior; misses specific cough simultaneity confirmation, exact 'consistent' quotes/locations, partial nature details (strong odors/salty/banana), emphasis on non-intermittent.",
+    "faithfulness": "All claims grounded: two-day onset [P-1,P-2], concurrent [P-1,P-6 implied], no worsening [inferred, confirmed P-5,P-8], mild cough [P-1], decline from baseline [P-1,P-4], no prior mention conclusion correct but phrasing 'does not mention [P-1]' inaccurate as P-3 directly denies. Citations accurate to P-1; no hallucinations or fabrications, minor over-reliance on P-1 vs. full transcript verifiable claims.",
+    "relevance": "Generated Answer directly structures response around onset timing/relative beginnings, severity/fluctuation, and prior experience, perfectly matching question elements with no tangents or off-topic content."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 4,
+    "relevance": 5
+  },
+  "average_score": 4.25,
+  "summary": "The Generated Answer is mostly accurate and complete, faithfully grounded with strong relevance, but misses some specific transcript details and citations on simultaneity confirmation, consistency, partial loss, and prior symptom denial."
+}

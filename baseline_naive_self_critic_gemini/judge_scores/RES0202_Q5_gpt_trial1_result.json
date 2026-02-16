@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies school attendance as the suspected source (symptoms began after returning from school; mother wondered about COVID from school) and correctly states the school had not notified them of any exposure. However, it is somewhat inaccurate/misleading in how it handles “sick contacts”: the transcript explicitly says there were no known sick contacts outside of school and that it was hard to say within school. The answer instead says there were no known sick students at school (losing the nuance of uncertainty) and introduces the sister as a “potential contact,” which is not a reported sick contact (it is a clinician instruction to isolate). It also omits the mother’s statement that the school required a COVID test for return and for exposure notification to other families.",
+    "completeness": "Key Gold Answer points covered: (1) mother suspected school/COVID exposure; (2) symptoms started after school; (3) school had not contacted them about exposures. Missing/undercovered: (1) explicit statement of no known sick contacts outside school; (2) nuance that school exposure was “kinda hard to say” rather than “no known sick students”; (3) school requirement for COVID test to return and to enable notifying other families; (4) ancillary narrowing factors in Gold Answer (no travel, no environmental exposures). Overall coverage is partial.",
+    "faithfulness": "Most statements are grounded in the transcript (P-1, P-2, P-39). The main faithfulness issue is framing the sister as an “external contact” in the context of sick contacts; the transcript only mentions isolating from the sister, not that she was a sick contact. Otherwise, no major fabricated facts are present.",
+    "relevance": "The response is mostly focused on school attendance and sick contacts/school notification, which directly answers the question. It includes a minor tangent about the doctor’s isolation recommendation (sister) that is not central to the asked comparison of school vs outside-school sick contacts."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 4,
+    "relevance": 4
+  },
+  "average_score": 3.75,
+  "summary": "The answer captures the school-based suspicion and lack of school notification, but it omits and slightly distorts key details about known sick contacts outside school and the school’s COVID-test/exposure-notification context."
+}

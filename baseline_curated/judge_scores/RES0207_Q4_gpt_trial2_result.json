@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly notes that the doctor screened for chest pain and the patient denied it (D-7/P-7). However, it incorrectly cites P-34 (“I don’t, no”), which in the transcript refers to smoking status, not chest pain. It also adds specific cardiac examples (angina/MI) not stated in the transcript (though they are plausible differentials), and misgenders the patient (“her”). Overall, it contains one core correct element but also clear factual/citation errors.",
+    "completeness": "Gold Answer key denied items include: chest pain, presyncope, GI symptoms (n/v, belly pain, diarrhea), infectious/URI symptoms (loss of taste/smell, sore throat, runny nose), exposures (sick contacts, travel), sputum (dry cough), and lack of prior similar SOB episodes. The Generated Answer covers only chest pain and omits all other screened symptoms/exposures and most of the differential-category mapping. This is well under 20% of required content.",
+    "faithfulness": "Only the general claim that chest pain was asked/denied is supported by the transcript. The provided citation is wrong (P-34 is about smoking), and the answer introduces additional details not present (e.g., angina/MI, asthma/infections as explicit alternatives). Multiple elements are therefore not directly grounded in the transcript.",
+    "relevance": "It addresses the question in a limited way by discussing one screened symptom (chest pain) and linking it to cardiac differentials. However, it fails to answer the main thrust of the question (the full set of denied symptoms/exposures and the broader differential categories implied). Still, the content is on-topic rather than tangential."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.0,
+  "summary": "The answer is narrowly focused and substantially incomplete, with incorrect citation and several unguided additions beyond the transcript, despite capturing that chest pain was screened and denied."
+}

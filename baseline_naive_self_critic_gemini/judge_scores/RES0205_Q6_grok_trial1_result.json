@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly claims that the transcript does not contain the doctor's stated plan, physical exam components, or next steps process, asserting it ends abruptly at P-35 with no subsequent doctor responses. However, the Gold Answer accurately cites D-37, where the doctor explicitly states the plan (listen to heart and lungs, quick physical exam, consult supervising doctor, review discussion, reconvene for next steps), foreshadowed in D-1. This is a complete contradiction and factual error.",
+    "completeness": "Gold Answer key points: multi-step plan from D-37 (auscultation of heart/lungs, quick physical exam), collaborative process (consult supervising physician, review everything discussed, return to discuss next steps), foreshadowed in D-1, patient agreement in P-37, no diagnosis/meds yet. Generated Answer covers 0% of these points, instead denying their existence.",
+    "faithfulness": "Generated Answer hallucinates that the transcript ends at P-35 with no further doctor input on plans, but the transcript continues through D-38/P-38, with D-37 directly providing the plan details. No verification in transcript for the claim of abrupt ending or absence of plan; this is fabricated.",
+    "relevance": "Generated Answer directly attempts to address the question by analyzing the transcript for the doctor's plan, exam components, and next steps process, claiming they are absent. It stays focused on the query without significant off-topic content, though factually wrong."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 5
+  },
+  "average_score": 2.0,
+  "summary": "The Generated Answer is factually incorrect, incomplete, and unfaithful to the transcript by falsely claiming the absence of a clearly stated plan in D-37, though it remains relevant in attempting to answer the question."
+}

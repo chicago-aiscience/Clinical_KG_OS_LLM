@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer precisely lists the 5 key points recapped by the doctor in D-58: (1) 3-4 day dry cough with fever/headache; (2) no sputum; (3) no recent sick contacts except brother 2 weeks ago with cold; (4) no asthma; (5) no meds except Claritin. It also correctly identifies Jessica's primary goal from P-60 as knowing 'if I have to take medicine or something,' with secondary note on P-61. Generated Answer incorrectly attributes scratchy throat and post-nasal drip to D-58 recap (these are from P-1/P-18, not recapped); partially covers cough/fever/headache/brother but omits no sputum, no asthma, Claritin explicitly; misstates Jessica's goal as doctor's 'next steps' framing rather than her words on medicine. Significant factual errors and contradictions with Gold's strict focus on D-58 recap.",
+    "completeness": "Gold key points: doctor's 5 recap items + Jessica's medicine goal (P-60) + rest desire (P-61). Generated covers ~40%: parts of (1) cough/fever/headache and (3) brother exposure; misses (2) no sputum, (4) no asthma, (5) Claritin/meds; wrong goal (uses doctor's words, ignores P-60 medicine query and P-61 rest). Does not cover 80%+.",
+    "faithfulness": "Generated claims doctor 'summarized...confirming' scratchy throat/post-nasal drip citing D-58 (not present; from earlier P turns); cough/fever/headache/brother grounded but citations mix early P with D-58; brother's detail accurate [D-58/P-39]; goal misattributes doctor's framing [D-58] as Jessica's without citing P-60. Multiple claims not verifiable in D-58 summary, introducing hallucinated recap elements.",
+    "relevance": "Directly structures response around 'Key Clinical Findings Recapitulated by the Doctor' (per question's 'doctor's summary') and 'Jessica’s Primary Goal'; minor tangent in adding non-recapped symptoms but overall focused on question without off-topic content."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "Generated Answer partially addresses the doctor's D-58 recap with some accurate elements but adds hallucinated non-recapped symptoms, omits key points like no asthma/sputum/Claritin, and incorrectly attributes the goal to the doctor's framing rather than Jessica's explicit medicine query."
+}

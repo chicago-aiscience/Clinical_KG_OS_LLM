@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer’s central claim—“no evidence… the doctor asked about weight loss, recent travel, sick contacts, or chemical exposure”—is directly contradicted by the transcript (D-22, D-23, D-24, D-34). Therefore it fails to provide the Gold Answer’s intended differential links (weight loss→lung cancer/TB; travel→exposure/endemic infections; sick contacts→respiratory infections/TB exposure; chemical exposure→chemical pneumonitis/occupational lung disease). It also introduces alternative differentials (angina/MI) not supported by the Gold Answer and only weakly supported by the transcript, and mischaracterizes chest pain as exertional rather than pleuritic (worse with deep breath/cough).",
+    "completeness": "Misses essentially all key points from the Gold Answer:\n- Does not connect weight loss question to lung cancer/TB or interpret denial appropriately.\n- Does not connect recent travel to exposure/endemic infections (e.g., Legionella/fungal) or interpret Sarnia travel.\n- Does not address sick contacts question’s purpose or interpret denial.\n- Does not connect chemical exposure question to chemical pneumonitis/occupational lung disease or interpret limited exposure.\n- Does not synthesize that responses favor acute infectious etiology over chronic/occupational.\nOnly tangentially mentions lung cancer risk from smoking/family history, but not in the context of the doctor’s weight-loss screening question.",
+    "faithfulness": "Multiple statements are not grounded in the transcript:\n- Claims the doctor did not ask about weight loss/travel/sick contacts/chemical exposure (false; explicitly present).\n- References a “Knowledge Graph” and attributes relationships to it (not in provided source).\n- States chest pain is “exacerbated by exertion” based on the Knowledge Graph; transcript emphasizes worse with deep breath/cough.\nThese constitute major ungrounded or contradictory claims.",
+    "relevance": "The response does not answer the asked question (mapping each targeted question to the differentials being screened and how the patient’s answers narrow/maintain them). It largely pivots to an unrelated differential discussion after incorrectly stating the questions were not asked. Some content is broadly about differential diagnosis, but it is not responsive to the prompt’s specific focus."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 2
+  },
+  "average_score": 1.25,
+  "summary": "The Generated Answer contradicts the transcript’s documented questions, omits the Gold Answer’s differential mappings almost entirely, and includes several ungrounded additions, making it largely incorrect and unfaithful to the source."
+}

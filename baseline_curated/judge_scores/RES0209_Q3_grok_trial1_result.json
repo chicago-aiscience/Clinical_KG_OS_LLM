@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer details precise symptom citations (e.g., dry cough P-1/P-14, SOB P-1/P-19, wheezing P-15, chest tightness P-20), exact bronchodilator escalation (P-8: once every two weeks to 5-6x/week), wheezing frequency exceeding use (D-17/P-17), reversible relief (P-1), triggers (P-9/P-11), and comprehensive infection screening negatives (P-14/P-21-P-28). Generated Answer matches core symptoms and asthma diagnosis (P-2), but uses imprecise bronchodilator increase citation (P-1 instead of P-8, omits exact frequencies), cites D-20 for chest tightness (question, not P-20 confirmation), omits wheezing > use and infection rule-out; adds family history (P-32) not emphasized in Gold. Core facts consistent, minor discrepancies in details/citations.",
+    "completeness": "Gold key points: classic symptoms with citations, long-standing asthma dx, bronchodilator relief/escalation details, wheezing frequency, triggers, infection screening negatives, need for med adjustment. Generated covers symptoms (dry cough/SOB/wheezing/chest tightness), asthma history (P-2), vague increase (P-1), triggers (P-9/P-11), allergy link. Misses: precise escalation freq, wheezing > use, reversible benefit emphasis, full infection screening (crucial for vs new condition), nighttime symptoms, med adjustment hint. Covers ~60-70% of key points.",
+    "faithfulness": "Symptoms verifiable (P-1 dry cough/SOB, P-15 wheezing, P-20 chest tightness confirmation though cited D-20); history (P-2), triggers (P-9/P-11), increase mentioned (P-1, details in P-8). Hallucinations: multiple 'knowledge graph' references (symptoms/history, bronchodilator, allergies) not in transcript; interpretive claims like 'airways constricting more frequently' plausible but not directly stated. Citations mostly accurate but incomplete (e.g., bronchodilator freq). Multiple unverifiable/hallucinated elements.",
+    "relevance": "Directly addresses question by affirming the specified symptom combination + bronchodilator increase points to worsening asthma vs new condition; structures response around evidence list concluding same; minor additions (family history, allergies) contextually relevant to asthma, no off-topic content."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.5,
+  "summary": "The Generated Answer is mostly correct and relevant but incomplete in covering infection rule-out and precise escalation details from Gold, with faithfulness reduced by hallucinated 'knowledge graph' references."
+}

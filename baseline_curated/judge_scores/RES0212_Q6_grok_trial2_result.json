@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer details the doctor's exact summary from [D-47]: cough for ~3 months worsened last 3 days, nighttime awakening, greenish sputum no blood, no constitutional symptoms; plan to review story with doctors; next steps guided by supervising physician post-review, no tests ordered. Generated correctly captures plan and core symptom summary but introduces unstated 'respiratory infection' diagnosis, attributes 'fatigue and potential pain' to doctor's assessment (patient-reported, not doctor-conveyed), and lists 'subjective fever' as guiding info (mentioned by patient but not in doctor's summary). These are significant additions/misattributions not in Gold or doctor's conveyed assessment, though main symptoms match.",
+    "completeness": "Key Gold points covered: plan to review story [100%], symptom summary (duration, worsening, sputum, no blood, no constitutional symptoms) [~80%]; misses explicit lowering concern for serious illness (TB/malignancy), patient's final comment/exercise interference [P-47], doctor's 'we'll see what we can do' [D-48], and emphasis no tests/treatments ordered with next steps solely by supervising physician. Covers ~70% of keys.",
+    "faithfulness": "Plan and core summary verifiable in [D-47]; sputum, cough details in transcript. Hallucinations: 'respiratory infection' diagnosis not stated (inferred via absent KG); 'constitutional symptoms other than fatigue/pain' misrepresents doctor's 'no constitutional symptoms'; fever as guiding [P-4] not in doctor's end-summary [D-47]; references to KG not in provided transcript. Multiple unverifiable/inaccurate claims.",
+    "relevance": "Directly structures response around the three question parts (plan, summary assessment, guiding info); minor off-topic via unstated diagnosis and KG references but stays focused on end-of-consultation elements."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer captures the core plan and symptom summary but introduces hallucinated diagnosis and extraneous details, reducing correctness, completeness, and faithfulness while remaining relevant."
+}

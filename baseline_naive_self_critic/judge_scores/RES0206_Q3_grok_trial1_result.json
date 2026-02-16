@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer specifies symptoms for COPD exacerbation (increased dyspnea [P-1], cough frequency [P-1], sputum volume [P-1], exercise tolerance [P-4]) and infection (green-yellow sputum [P-1], fever [P-9], sinus pressure [P-12], headache [P-14], sick contact [P-20]), with sputum/fever distinguishing infectious trigger. Generated identifies cough, green-yellow sputum, fever, sinus pressure correctly but misses dyspnea, sputum volume, exercise tolerance, headache; incorrectly attributes distinctions to non-existent 'knowledge graph'; blurs distinction by calling sputum indicator of COPD exacerbation primarily; some factual errors but core symptoms and doctor's assessment align partially.",
+    "completeness": "Gold key points: doctor's assessment quote [D-43]; COPD sym: dyspnea, cough freq, sputum vol, exercise tol; infection sym: sputum color, fever, sinus, headache, sick contact; distinction via sputum/fever; excluded triggers (exposures [P-38], inhaler use [P-26]); patient history [P-3]. Generated covers cough [P-1], sputum color [P-1], fever [P-9], sinus [P-12], sick contact [P-20], partial doctor's assessment [D-43]; misses dyspnea, sputum vol, exercise tol, headache, exclusions, patient history quote; covers ~60% of key points.",
+    "faithfulness": "Claims grounded: cough/sputum/fever/sinus/sick contact/exposure cited correctly from transcript [P-1,P-9,P-12,P-20,D-43]. Hallucinations: repeated 'knowledge graph' references (associates stuffy nose, links sputum/fever to COPD exacerbation) not in transcript; infers stuffy nose from sinus pressure; multiple unverifiable details.",
+    "relevance": "Directly lists symptoms supporting dual assessment (COPD exacerbation + infection) with citations; addresses distinction of sputum/fever per question; minor tangents via COVID emphasis and knowledge graph, but focused on question."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer partially captures key symptoms supporting the dual diagnosis but introduces hallucinations about a 'knowledge graph' and misses several Gold points, leading to moderate correctness and completeness with low faithfulness."
+}

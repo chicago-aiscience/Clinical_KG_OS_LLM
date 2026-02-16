@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly notes that the presentation could represent asthma recurrence/exacerbation and cites the clinician’s statement that asthma is “top of the differential” [D-35]. However, it contains major factual errors relative to the Gold Answer and transcript: it incorrectly claims the transcript does not mention skipping the evening maintenance dose or not refilling the rescue inhaler—both are explicitly stated ([P-17]–[P-20]). It also introduces an unsupported “Knowledge Graph” claim. Additionally, its wording about symptoms being “triggered by walking rather than exercise” is inaccurate/illogical (walking is exertion) and does not reflect the nuanced differential discussion.",
+    "completeness": "Key Gold Answer points covered: (1) asthma history and current symptoms possibly consistent with asthma recurrence; (2) clinician considers asthma most likely [D-35].\nKey points missed: (1) patient reduced maintenance inhaler from BID to morning-only [P-19, P-20]; (2) patient stopped refilling/does not have rescue inhaler for years [P-17, P-18]; (3) how these self-directed changes could worsen control and relate to new symptoms; (4) exertional/deep-breath worsening and associated hoarseness/phlegm [P-1, P-9, P-11]; (5) rationale for needing rescue inhaler during activity and doctor’s proposed step to obtain it [D-35]; (6) patient notes it feels different than past asthma [P-16]. Overall coverage is well under half of the Gold Answer’s key points.",
+    "faithfulness": "Several statements are not grounded or directly contradict the transcript: the “Knowledge Graph” reference is not in the transcript; the note stating the transcript lacks details on skipped evening dosing and lack of rescue inhaler is contradicted by [P-17]–[P-20]. While some cited elements are present (asthma history, clinician’s assessment), the presence of contradicted and extraneous claims lowers faithfulness substantially.",
+    "relevance": "The answer is generally on-topic (linking asthma history and symptoms to possible asthma recurrence), but it fails to address the core of the question—how the patient’s self-directed medication nonadherence (skipping evening maintenance dose and not refilling rescue inhaler) could relate to symptoms. The added focus on excluding cardiac causes is secondary and does not compensate for missing the medication-adherence linkage."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "Partially identifies asthma recurrence as a possibility, but it omits the key medication-adherence factors and incorrectly claims they are not in the transcript, with additional ungrounded content."
+}

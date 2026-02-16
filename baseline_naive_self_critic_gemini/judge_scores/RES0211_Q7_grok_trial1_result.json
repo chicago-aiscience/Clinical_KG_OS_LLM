@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer specifies the order as first scratchy throat [P-4], then dry cough, with other symptoms like headache, malaise, fatigue by visit time; feeling hot is persistent during the illness with no exact timing relative to throat/cough. Generated Answer incorrectly lumps dry cough and scratchy throat as simultaneous initial symptoms without specifying throat first, claims feeling hot as subsequent after respiratory symptoms and malaise/headache (contradicting Gold's note of no specified timing), and introduces non-existent 'Knowledge Graph' mappings. These are significant factual errors and contradictions on sequence and timing.",
+    "completeness": "Gold key points: 3-4 days duration; first scratchy throat then cough; headache (pounding/milder); malaise/crappy; fatigue; persistent hot (day/night, clothing detail); no exact hot timing; doctor’s fever summary; progression from upper airway to systemic. Generated covers duration, cough/throat/headache/malaise/hot-as-fever but misses fatigue, hot details (persistent/clothing), doctor summary, accurate order/progression/hot timing; covers ~50-60% with inaccuracies.",
+    "faithfulness": "Transcript verifies: 3-4 days [P-1,P-3]; first throat then cough [P-4]; cough dry [P-4,P-5,P-6]; headache [P-1,P-2]; malaise [P-1,P-14]; hot persistent [P-7,P-9]. But Generated hallucinates 'Knowledge Graph' and symptom associations (e.g., cough associated_with malaise, hot same_as fever via KG), and infers unverified sequence 'hot followed initial complaints/respiratory/systemic' (hot mentioned after first-symptom question, but no explicit order; P-1 lists cough/throat/malaise/headache without hot). Multiple hallucinated elements.",
+    "relevance": "Generated directly structures response around symptom order (1-3) over 3-4 days and hot's relation to cough/throat (subsequent), addressing the question without major off-topic content."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer addresses the question with a structured timeline but contains significant factual inaccuracies on symptom order, hallucinates a Knowledge Graph, and incorrectly infers the timing of feeling hot relative to other symptoms."
+}

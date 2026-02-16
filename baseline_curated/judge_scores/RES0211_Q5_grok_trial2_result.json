@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer accurately cites transcript for family history (father allergies [P-33], cousin asthma [P-30]), notes allergies not active ([P-16,P-17]), brother's cold ([P-39,D-58]), and household isolation (farm [P-43,P-44], homeschool [P-41], limited exposure [P-42,P-45,P-46], dog only [P-48]), concluding intra-household transmission likely. Generated Answer correctly covers family history and brother's cold but fabricates absence of household/farm/homeschool info despite clear transcript evidence, contradicting Gold; adds unrequested symptoms list and 'diagnosis' not emphasized in Gold. Significant discrepancies on key question elements.",
+    "completeness": "Gold key points: family history allergies/asthma, allergies inactive, brother's cold timeline/exposure, farm living, homeschool/COVID isolation, parental work/homebound status, no travel, dog only, collective intra-household likelihood. Generated covers family history (~50%) and brother's cold fully, but entirely misses household isolation factors (farm, homeschool, limited exposure), failing ~50% of points; adds extraneous symptoms/diagnosis.",
+    "faithfulness": "Generated claims mostly verifiable (family [P-33,P-30], brother [P-39,D-58], allergies inactive [P-16]), but hallucinates 'transcript does not contain information' on farm ([P-43,P-44]), homeschool ([P-41]), and invents non-existent 'knowledge graph'; implies diagnosis 'upper respiratory infection [D-58]' (D-58 does not state diagnosis, only summarizes symptoms/cold exposure). Multiple unverifiable/false claims.",
+    "relevance": "Directly structures response around question's factors (family history, brother's cold) but dismisses household situation as absent, partially addressing collective relation; includes irrelevant symptoms recap and diagnosis tangent, but core focus aligns with query."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "Generated Answer partially covers family history and brother's cold accurately but hallucinates absence of key transcript details on household isolation, leading to incomplete and unfaithful evaluation of collective factors."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer claims there were no negative findings for symptoms like fever, dyspnea, or sore throat and that the doctor did not screen for them, which directly contradicts the Gold Answer and transcript where the doctor explicitly asks about and confirms absence of fever [D-10/P-10], difficulty breathing (dyspnea) [D-11/P-11], sore throat [D-13/P-13], headaches [D-12/P-12], chills/night sweats [D-14/P-14], muscle aches/weakness [D-15/P-15], chest pain [D-22/P-22], sputum/blood [D-7/P-7], and cough triggers [D-21/P-21]. This makes it mostly incorrect or contradictory to the Gold Answer.",
+    "completeness": "Gold Answer covers key negative findings (no fever, no dyspnea, no headaches, no sore throat, no chills/night sweats, no muscle aches/weakness, no chest pain, no sputum/blood, no cough triggers) with citations, plus no chronic conditions/meds/etc., and explains their role in the clinical picture; Generated Answer lists none of these (<20% coverage), instead focusing only on positive symptoms.",
+    "faithfulness": "Generated Answer fabricates that screening for fever, dyspnea, sore throat etc. did not occur and were not mentioned, but all are directly verifiable in transcript (D-7, D-10-D-15, D-21-D-22 with patient denials); largely hallucinates the content by denying documented negatives.",
+    "relevance": "Question specifically asks for list of negative findings from review of systems (e.g., fever, dyspnea, sore throat) and their role in clinical picture; Generated denies any negatives exist, lists positives instead, and dismisses absences' role, making it largely off-topic."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 2
+  },
+  "average_score": 1.25,
+  "summary": "The Generated Answer is fundamentally flawed, hallucinating the absence of a systematic review of systems for key negative symptoms that are clearly documented in the transcript and Gold Answer."
+}

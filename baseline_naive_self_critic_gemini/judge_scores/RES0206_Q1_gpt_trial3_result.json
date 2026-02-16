@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer accurately reports the main respiratory symptoms from the transcript: increased cough, increased green/yellow sputum, small amounts of blood with hard coughing, and worse shortness of breath (all consistent with [P-1]). However, it incorrectly states she did not report systemic symptoms such as fever or headache; the patient did report a possible fever/feeling very hot ([P-9]–[P-11]) and a mild headache ([P-14]). It also mis-cites the “most bothersome” symptom as being supported by [P-1]; the explicit statement that cough was most bothersome occurs at [P-12].",
+    "completeness": "It covers several key respiratory symptoms (cough, sputum, hemoptysis, dyspnea) and identifies cough as most bothersome. It misses other key elements in the Gold Answer: reduced exercise tolerance/functional limitation ([P-4]), possible fever ([P-9]–[P-11]), and mild headache ([P-14]). It mentions sinus pressure, which is correct. It does not include the pertinent negatives listed in the Gold Answer (though those are not strictly required unless expected). Overall coverage is partial.",
+    "faithfulness": "Most respiratory claims are directly grounded in the transcript. However, the statement that she did not report fever or headache is contradicted by the transcript ([P-9]–[P-11], [P-14]). Additionally, the citation [P-1] for the most bothersome symptom is not supported; the relevant quote is at [P-12]. These issues reduce faithfulness.",
+    "relevance": "The response is focused on the asked content: respiratory and systemic symptoms during the 3-day worsening and the most bothersome symptom. No major irrelevant tangents."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 3,
+    "relevance": 5
+  },
+  "average_score": 3.5,
+  "summary": "Captures the main respiratory symptoms and identifies cough as most bothersome, but omits key systemic/functional symptoms (fever, headache, reduced exercise tolerance) and includes transcript-contradicted statements and a citation error."
+}

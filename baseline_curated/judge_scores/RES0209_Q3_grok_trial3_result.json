@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer is mostly consistent with the Gold Answer on core facts: symptoms (dry cough, SOB, wheezing, chest tightness) match with citations close to Gold's (e.g., P-1, P-15 vs. Gold's P-1/P-14, P-15, P-20); asthma history since age 8 (P-2); bronchodilator increase (vaguely via P-1, consistent with Gold's P-8 but lacks specifics); triggers (exercise P-9, cold/pollen P-11). No direct contradictions. Minor discrepancies: cites D-20 question for chest tightness instead of P-20 affirmation; vague on exact frequency shift ('sharp increase' vs. Gold's 'once every two weeks to five or six times per week'); adds family history (P-32 sister) and suspected allergies not emphasized in Gold; introduces 'knowledge graph' not in Gold (factual addition but not erroneous to core). Misses Gold's emphasis on bronchodilator relief, wheezing frequency > use, and infection screening. Core point of worsening asthma correct: score 4.",
+    "completeness": "Gold key points: symptom profile with citations (covered partially), asthma diagnosis (covered), bronchodilator relief/reversible (mentioned vaguely), specific escalated use & wheezing > use (increase covered vaguely, wheezing freq missed), triggers (covered), infection screens (dry cough noted, but all denials of colds/contacts/travel/fever/etc. completely missed), exacerbation needing adjustment (implied). Covers symptoms (~100%), history (100%), triggers (100%), increase (~50% precise), but misses ~30% including crucial rule-out of new condition via screens and specifics: ~70-80% coverage: score 4.",
+    "faithfulness": "Most claims verifiable: symptoms cited accurately from transcript (P-1 dry cough/SOB, P-15 wheezing; D-20 leads to P-20 tightness); history P-2/P-32; triggers P-9/P-11; increase alluded in P-1 (verifiable, though P-8 more precise). Hallucinations: repeated 'knowledge graph' references (3x) claiming it links symptoms/bronchodilator/allergies to asthma—not in transcript, fabricated. Interpretive claims like 'airways constricting' plausible but not direct. Multiple hallucinated elements: score 2.",
+    "relevance": "Directly addresses question by focusing on exact symptom combination (dry cough, SOB, wheezing, chest tightness) + bronchodilator increase as evidence for worsening asthma vs. new condition; structures around these with evidence. Minor tangents: family history, knowledge graph. Perfectly focused overall: score 5."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.75,
+  "summary": "The Generated Answer effectively highlights the key symptoms and history supporting worsening asthma but is undermined by multiple hallucinations referencing a non-existent 'knowledge graph' and omissions of precise bronchodilator use details and infection screening."
+}

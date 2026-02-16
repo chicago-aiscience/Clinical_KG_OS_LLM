@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer emphasizes that BOTH patient [P-1] and doctor [D-2, D-39] identified COVID-19 as needing to be ruled out; Generated Answer only attributes identification to the doctor [D-39] and omits the patient's concern, creating a factual discrepancy with the question's requirement for 'both'. Core condition (COVID), test (swab), turnaround (48 hours), and main instruction (isolation) are accurate. Unnecessary mention of Type 1 diabetes is factually correct but irrelevant to the condition to rule out. Minor to some errors, main point correct.",
+    "completeness": "Gold key points: (1) Both patient and doctor identified COVID (missed patient part); (2) COVID swab test 'today' (covers swab, misses 'today'); (3) 48 hours (covered); (4) Stay isolated/not see anyone (covered); (5) Further instructions from public health (missed). Covers ~60-70% of key points (condition partial, test partial, time full, instructions partial).",
+    "faithfulness": "All claims in Generated Answer are directly verifiable in transcript: COVID [D-39], swab [D-39], 48 hours [D-39], isolation [D-39], Type 1 diabetes [P-23]. Citations accurate, no hallucinations or unverifiable details.",
+    "relevance": "Generated Answer is structured to directly address the four question elements (condition, test, time, instructions) with bullet points. Minor irrelevant tangent on Type 1 diabetes (explaining it's not the condition), but overall highly focused on the question."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 5,
+    "relevance": 4
+  },
+  "average_score": 3.75,
+  "summary": "The Generated Answer is mostly accurate and grounded but incomplete in covering both parties identifying COVID and some instructional details, with a minor irrelevant note."
+}

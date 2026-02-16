@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer lists respiratory symptoms: increased cough frequency, increased green-yellow sputum, hemoptysis, worsened dyspnea, reduced exercise tolerance. Systemic: possible fever, sinus pressure, mild headache. Most bothersome: cough [P-12]. Generated correctly lists main respiratory symptoms (cough, sputum, hemoptysis, SOB) from [P-1], and fever. However, misses reduced exercise tolerance [P-4], sinus pressure [P-12], headache [P-14]; incorrectly states shortness of breath as most bothersome (citing [P-1], but patient explicitly says cough is most bothersome [P-12]). Significant contradiction on key element (most bothersome symptom).",
+    "completeness": "Gold key points: 5 respiratory (cough, sputum, hemoptysis, dyspnea, exercise tol), 3 systemic (fever, sinus, headache), 1 most bothersome (cough). Generated covers 4 respiratory, 1 systemic, 0 for most bothersome (wrong one). ~50-60% coverage (core respiratory good, but misses several and errs on critical point).",
+    "faithfulness": "All respiratory and fever claims verifiable in cited [P-1] and [P-9]. Most bothersome claim (SOB as primary/most bothersome) not verifiable in transcript and contradicts [P-12] (cough stated as most bothersome); it's a misinterpretation/hallucination of priority despite [P-1] describing SOB. No other fabrications, mostly grounded but with key error.",
+    "relevance": "Directly structures response around respiratory symptoms, systemic symptoms, and most bothersome symptom, perfectly matching question structure with no off-topic content."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 3,
+    "relevance": 5
+  },
+  "average_score": 3.25,
+  "summary": "The Generated Answer accurately captures core respiratory symptoms and one systemic symptom but misses others, has a significant factual error on the most bothersome symptom, and is otherwise well-grounded and relevant."
+}

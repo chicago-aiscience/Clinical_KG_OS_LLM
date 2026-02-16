@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the hiking event with partner two weeks ago and people brushing by (from P-18), which matches the core fact in Gold. Minor discrepancies include 'brushed shoulders' (transcript says 'brushed by us') and incomplete details like location (P-19). The connection via symptoms is accurate (P-1, D-39), but introduces a fabricated 'knowledge graph' not in Gold or transcript, slightly undermining full consistency.",
+    "completeness": "Gold key points: HS online (P-36/37), mostly home (D-38/P-38), hiking 2 weeks ago w/ partner, 30min away (P-18/19), people brushed by, no other sources (P-18), no sick contacts (P-17), lives w/ family (P-29), immunizations (P-20), doctor tests due to symptoms (D-39). Generated covers only the hiking event (partial) and symptom consistency link (~25-30% coverage), missing all contextual low-exposure details, household, no other exposures, etc.",
+    "faithfulness": "Hiking details verifiable in P-18 (minor phrasing diff). Symptoms in P-1 and doctor note in D-39 accurate. 'Knowledge graph' with [MEDICAL_HISTORY]-->COVID-19 is entirely hallucinated, not in transcript. One major unverifiable fabrication.",
+    "relevance": "Directly states the exposure event and attempts to link to COVID diagnosis via symptoms, addressing the question core. Knowledge graph is a minor off-topic tangent but doesn't derail focus."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer captures the key exposure event accurately but is incomplete in context, introduces hallucination via knowledge graph, and remains mostly relevant."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer contains a major factual error by stating that the transcript does not contain instances of the doctor asking about chest pain, palpitations, runny nose, and nausea. These are explicitly found in turns D-10, D-15, D-16, and D-17. The Gold Answer correctly identifies these and several others.",
+    "completeness": "The Generated Answer fails to list the majority of the symptoms asked about and negated (vision/hearing changes, abdominal pain, urinary symptoms, numbness/tingling). It only discusses the clinical implications of the symptoms it falsely claimed were missing.",
+    "faithfulness": "The Generated Answer hallucinates that the requested information is absent from the source text. It explicitly claims the transcript does not contain the symptoms listed in the prompt, which is directly contradicted by the provided transcript text.",
+    "relevance": "While the Generated Answer attempts to address the clinical differentiation aspect of the question, it does so based on the false premise that the data was not in the transcript, thus failing to properly link the transcript evidence to the diagnosis."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 2
+  },
+  "average_score": 1.25,
+  "summary": "The Generated Answer incorrectly asserts that the transcript lacks the specific symptoms mentioned in the prompt, when they are clearly present, leading to a failure across all evaluation dimensions."
+}

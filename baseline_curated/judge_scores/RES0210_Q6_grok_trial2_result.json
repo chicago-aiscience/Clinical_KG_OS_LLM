@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Generated Answer incorrectly states that the doctor's plan and self-care measures are not present in the transcript, directly contradicting Gold Answer which cites D-43 for the plan ('go over this with the physician I’m working with and... back shortly together to talk... next steps') and P-14/P-13/P-10 for Tylenol (helps a little), expectoration (temporary relief), and rest. Aggravating factors partially match (exertion P-10, deep breathing P-18 correct; coughing listed but cites P-15 sore throat instead of Gold's P-19 chest pain). Introduces non-existent 'Knowledge Graph' and pleuritic pain alignment not in transcript. Significant contradictions on key facts.",
+    "completeness": "Gold key points: 1) Doctor plan (D-43); 2) Self-care (Tylenol P-14 helps little, expectoration P-13 temp relief, rest P-10); 3) Aggravating (deep breath P-18, coughing worsens chest pain P-19, exertion P-10/11); 4) Alleviating (Tylenol, expectoration, rest); 5) Clinical relevance. Generated covers ~30%: partial aggravating (exertion, deep breath, coughing but incomplete/wrong cite); misses doctor plan entirely, all self-care, all alleviating, clinical notes. Covers 20-49%.",
+    "faithfulness": "Cites are accurate where used (P-10, P-18 correct; P-15 for coughing but misapplies to chest vs throat). However, falsely claims absence of doctor plan (verifiable D-43), self-care (P-14 Tylenol, P-13 expectoration), alleviating (P-13/14). Hallucinates 'Knowledge Graph' and 'pleuritic chest pain' details not in transcript. Multiple unverifiable absences and fabrications.",
+    "relevance": "Directly structures response around question components (doctor plan, self-care, aggravating/alleviating), lists factors with cites; minor tangent with non-existent Knowledge Graph but overall focused on query despite incompleteness."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "Generated Answer partially covers aggravating factors but factually errs by denying presence of doctor plan and self-care measures that are explicitly in the transcript, with hallucinations like Knowledge Graph, resulting in low correctness, completeness, and faithfulness."
+}

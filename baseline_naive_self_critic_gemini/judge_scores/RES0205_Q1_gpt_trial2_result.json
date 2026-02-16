@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer contains several factual inaccuracies compared with the Gold Answer/transcript: it incorrectly states the patient had fever initially (patient explicitly denied fevers [P-12]); it incorrectly states nausea/vomiting and belly pain occurred initially and resolved (patient explicitly denied nausea/vomiting [P-19] and abdominal pain [P-20]); it cites sore throat as supported by [P-14], but sore throat is actually discussed at [P-13] (and [P-14] is about runny nose/flu-like symptoms). While it correctly notes mucus was present early and later transitioned to a dry cough, and correctly captures chest soreness with coughing, the incorrect added symptoms are significant.",
+    "completeness": "Key Gold Answer elements missing or inadequately captured include: (1) runny nose as an initial symptom; (2) timeline/details of productive cough with whitish/clear mucus for first 4–5 days; (3) current cough frequency (3–4 times/hour); (4) spontaneity/no triggers; (5) stable intensity and frequency; (6) explicit pertinent negatives (no dyspnea, no fever, no N/V, no abdominal pain) as negatives rather than resolved symptoms. It partially covers: persistent cough and chest soreness, and that mucus resolved/dry cough persists.",
+    "faithfulness": "Multiple statements are not grounded in the transcript and contradict it: fever, nausea/vomiting, and belly pain as initial/resolved symptoms. The inclusion of a \"medical knowledge graph\" relationship is also not part of the transcript. Some claims are grounded (persistent dry cough; earlier mucus; chest soreness when coughing), but overall there are several hallucinated/unverifiable elements.",
+    "relevance": "The response is generally on-topic (it attempts to list resolved vs ongoing symptoms), but it adds irrelevant/unsupported \"knowledge graph\" content and mischaracterizes several denied symptoms as resolved symptoms. Still, the structure addresses the question directly."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The answer is mostly focused on listing symptoms, but it has multiple major inaccuracies (adding fever/N/V/abdominal pain) and omits several key symptom details from the transcript."
+}

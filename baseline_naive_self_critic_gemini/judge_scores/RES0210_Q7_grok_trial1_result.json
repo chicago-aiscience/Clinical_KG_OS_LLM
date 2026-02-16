@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer specifies: runny nose ~1 week ago; Friday raspy cough; Sunday cough worsens to bad + yellow sputum w/ red spots start together; Monday fever starts + sputum continues; Tue/Wed chills (last 2 days); chest pain over last day (~Tue). Generated Answer incorrectly places raspy cough onset on Sunday (cites P-1 but ignores P-3 Friday raspy); fever on Sunday (misreads P-5 as Sunday when it's 'next day' after Sunday = Monday); chest pain on Wednesday (ignores P-20 'last day'); misses runny nose and precise progression. Some factual errors (e.g., days off) but core symptoms and rough progression align partially. Score: 3.",
+    "completeness": "Key Gold points covered: Sunday sputum w/ red (100%); chills Tue/Wed; worsening to pain, dyspnea, sore throat by Wed. Missed/partially: runny nose; Friday raspy cough (places on Sun); Monday fever precise (shifts to Sun); sputum continuation Mon; chest pain ~Tue (shifts to Wed). Covers ~60% of key timeline points with inaccuracies. Score: 3.",
+    "faithfulness": "Verifiable: sputum Sun [P-4,P-6]; chills last 2 days [P-9]; pain current/worse w/ breath/cough [P-17-21]; winded [P-10]; sore throat [P-15]. Unverifiable/misread: raspy cough Sun (P-3 says Fri raspy, Sun bad); fever Sun [P-5] (P-5,P-8 say Mon); ignores P-20 'last day' for pain. Multiple misinterpretations/hallucinated onsets not directly in transcript. Score: 2.",
+    "relevance": "Directly addresses timeline for specified symptoms (cough, sputum, fever, chills, pain) and worsening; structured by days; minor extras like 'clinical knowledge' but focused. Score: 4."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer offers a relevant timeline structure but is undermined by factual inaccuracies in symptom onset dates, incomplete coverage of early symptoms, and some misreadings of the transcript."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer identifies fevers, fatigue, and muscle aches as evidence of general infection (exact match). For COVID concern, Gold specifies 'difficulty breathing' combined with 'sore throat and cough'. Generated correctly lists fevers/fatigue/muscle aches for infection but incorrectly groups 'difficulty breathing' with infection instead of COVID concern and omits it from additional symptoms, listing only sore throat/cough. Minor discrepancy in symptom grouping and omission of dyspnea from COVID symptoms, but core symptoms facts are accurate.",
+    "completeness": "Gold key points: 1) fevers/fatigue/muscle aches for infection (covered); 2) difficulty breathing + sore throat/cough for COVID (partially covered: sore throat/cough yes, difficulty breathing missed and misgrouped); 3) taste/smell not cited in assessment (not addressed); 4) respiratory focus, orders (not covered). Covers main symptoms but misses key inclusion of dyspnea in COVID concern and additional context, approx 60-70% coverage.",
+    "faithfulness": "All claims directly from [D-36]: fevers/fatigue/muscle aches ('some sort of an infection'), difficulty breathing ('and then the difficulty breathing'), sore throat/cough ('very cool sort of a sore throat and cough'). No hallucinations; fully verifiable in transcript.",
+    "relevance": "Directly addresses the question by specifying symptoms for general infection and additional for COVID concern with clear structure and bolding; no off-topic content."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 5,
+    "relevance": 5
+  },
+  "average_score": 4.25,
+  "summary": "The Generated Answer is mostly accurate and grounded in the transcript but has minor errors in symptom grouping and incompleteness by omitting difficulty breathing from the COVID-specific concerns."
+}

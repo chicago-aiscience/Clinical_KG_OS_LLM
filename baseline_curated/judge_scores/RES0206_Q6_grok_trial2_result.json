@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer details physical exam (vitals incl. temp, chest auscultation), COVID swab, labs (bloodwork implied), clinical impression (COPD exacerbation from infection), disposition based on labs/vitals, attending consult, patient agreement. Generated covers exams (physical, vitals, chest), COVID swab (minor rephrase to 'rule out infection' vs specific COVID), labs/vitals in criteria, attending consult. Misses explicit clinical impression and patient agreement; adds 'knowledge graph' not in transcript but doesn't alter facts. Core facts consistent, minor discrepancies in phrasing and omissions.",
+    "completeness": "Gold key points: 1. Physical exam/vitals/chest; 2. COVID swab + labs; 3. Impression; 4. Disposition criteria (labs/vitals); 5. Attending consult; 6. Patient agreement. Generated covers 1, partial 2 (COVID + labs), 4, 5. Misses 3 and 6. Covers ~80-90% of key points, focused on question's specified elements (exams/tests/consults/criteria).",
+    "faithfulness": "All claims directly from [D-43]: physical exam/vitals/chest listen ('do it physical exam and look at your vitals and listen to your chest'), COVID swab ('covid swab'), labs/vitals decision ('labs in your vital signs'), attending consult ('talk to my attending'). 'Rule out other potential causes' aligns with 'rule out covid... instead of other things'. No hallucinations in content; 'knowledge graph' is extraneous intro but claims verifiable.",
+    "relevance": "Generated Answer directly structures response as the 'comprehensive plan' with sections matching question: examinations, diagnostic testing, consultations, criteria for admission/discharge. No off-topic content, perfectly focused."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 5,
+    "relevance": 5
+  },
+  "average_score": 4.5,
+  "summary": "The Generated Answer is highly faithful and relevant, with strong correctness and good completeness, minor omissions of clinical impression and patient agreement but fully addressing the plan's core components."
+}

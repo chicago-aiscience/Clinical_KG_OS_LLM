@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies some local symptoms (redness, tenderness, soreness at the site behind left knee per P-1) matching Gold, but misses key details like 'stuck pretty good,' precise location in crease, soreness specifically of skin/not joint as local symptom, denial of bullseye rash (P-6), and statements of being totally fine/pretty healthy. For systemic, it covers joint pain (D-7/P-7) and fever/illness (D-8/P-8) correctly but falsely claims no headache screening (contradicting D-19/P-19-20 and Gold), and misattributes denials to P-1/P-3 instead of direct P-7/P-8/P-19. Significant contradictions on headaches and incomplete/misplaced local details warrant score 2.",
+    "completeness": "Gold key local points: location details (behind knee/crease), stuck pretty good (P-1), sore skin not joint (P-1), red/tender (P-1/P-6), no bullseye/larger rash (P-6), totally fine aside tenderness (P-18), pretty healthy (P-13). Generated covers redness/tenderness/soreness/location partially (~30-40%). Systemic Gold: joint pain denied (D-7/P-7), fever/ill (D-8/P-8), headaches denied (D-19/P-19-20). Generated covers joint/fever (~66%) but fully misses headaches and direct denials. Overall covers ~20-49% of key points, score 2.",
+    "faithfulness": "Local claims verifiable (red/tender/sore in P-1). Systemic screenings for joint/fever verifiable (D-7/D-8). However, hallucinates/misstates no headache screening (directly in D-19/P-19-20); misattributes denials to P-1/P-3 (P-3 is past tick, not current denial; actual in P-7/P-8/P-19); interprets 'not too bad' (P-3) as current denial (plausible but wrong context). Multiple misattributions and false claim on headaches, score 2.",
+    "relevance": "Answer directly structures response around local symptoms at site and systemic screenings/denials as asked, with citations; minor off-point note on headaches but overall focused on question, score 4."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer partially covers local symptoms but misses key details and rash denial, correctly notes some systemic screenings except falsely denying headache screening with misattributed denials, resulting in significant inaccuracies and incompleteness."
+}

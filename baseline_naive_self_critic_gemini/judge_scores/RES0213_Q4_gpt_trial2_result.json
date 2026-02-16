@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer is only partly accurate. It correctly identifies that the clinician asked about dyspnea/shortness of breath (D-19) and that the patient denied baseline breathing difficulty (P-19), which helps rule out primary dyspnea as a constant accompanying symptom.\n\nHowever, it incorrectly frames “anxiety attacks” as a condition the doctor screened for and “effectively ruled out” as the cause of symptoms. In the transcript, the doctor referenced anxiety attacks as part of past medical history (D-21), and the patient clarified palpitations only occur during anxiety attacks (P-20). This does not rule out anxiety as a contributor to the current chest symptoms, nor was there a direct line of questioning to exclude anxiety as the primary etiology.\n\nAdditionally, the answer fails to capture other explicit screening questions used to rule out key alternative diagnoses (trauma, infection, asthma, exertional angina/cardiac ischemia patterns, inherited arrhythmia/sudden death syndromes).",
+    "completeness": "Gold Answer key ruled-out/screened conditions include: (1) traumatic/musculoskeletal injury (accidents/injuries), (2) cardiac disease/exertional angina pattern (worse with exercise, occurs at rest, palpitations), (3) infectious illness (fever/sick contacts), (4) asthma (childhood/current), (5) primary dyspnea, (6) inherited arrhythmia syndromes (sudden unexplained death/while swimming, family arrhythmias).\n\nGenerated Answer covers only (5) primary dyspnea. It omits (1), (2), (3), (4), and (6), and it substitutes “anxiety attacks” which is not a Gold-listed ruled-out condition. Overall coverage is well under half of required items.",
+    "faithfulness": "The dyspnea portion is well-grounded and accurately cited to D-19/P-19.\n\nThe anxiety portion contains overreach/hallucinated interpretation: it claims anxiety attacks were screened for and effectively ruled out as the consistent cause of symptoms, which is not directly supported by the transcript. The cited lines (D-21, P-20) relate to past anxiety history and palpitations during anxiety, not exclusion of anxiety as a cause of current chest pain. This constitutes a meaningful faithfulness issue.\n\nNo other major fabricated facts are introduced, but multiple key transcript-grounded screening questions are missing.",
+    "relevance": "The response is on-topic (it attempts to list conditions screened for and the questions used), but it is substantially incomplete and includes a partially mischaracterized condition (anxiety attacks). It therefore only partially addresses the question as asked."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 3,
+    "relevance": 3
+  },
+  "average_score": 2.5,
+  "summary": "The answer is partly grounded (dyspnea) but is substantially incomplete versus the Gold Answer and over-interprets anxiety as being ruled out, resulting in low correctness/completeness and only moderate faithfulness/relevance."
+}

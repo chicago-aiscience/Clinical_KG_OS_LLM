@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly identifies shortness of breath and cough as symptoms the patient denied, when the patient actually confirmed them (P-1, P-2, P-4); it also fabricates a denial of relationship to seizure as a screened symptom, whereas the patient said 'I don't know if that's related' (P-8), and ignores all actual denied symptoms listed in Gold like chest pain, faintness, GI symptoms, infectious symptoms/exposures; differentials are wrongly attributed to confirmed symptoms only, contradicting Gold's accurate mapping of denied findings to cardiac/infectious/GI differentials. Major factual errors throughout.",
+    "completeness": "Gold key points: denied chest pain, faintness (cardiac), loss taste/smell/sore throat/runny nose/contact sick/travel (infectious), nausea/vomiting/belly pain/diarrhea (GI), no sputum, no prior episodes. Generated covers 0% of these, instead focusing on confirmed SOB/cough and unrelated seizure discussion.",
+    "faithfulness": "Generated misinterprets transcript: SOB/cough confirmed not denied [D-2/P-1-P4]; seizure volunteered by patient, not screened as denial [P-8-P9]; no verification of actual denied symptoms like [D-7/P7 chest pain no, D-8/P8 faint no, etc.]; hallucinates screenings/denials not present, ignores transcript's many explicit denials.",
+    "relevance": "Fails to address core question of denied symptoms/exposures screened by doctor and differentials they target; instead discusses confirmed chief complaints and tangential seizure, making it largely off-topic."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 2
+  },
+  "average_score": 1.5,
+  "summary": "The Generated Answer is factually inaccurate, incomplete, largely hallucinatory, and off-topic by misidentifying confirmed symptoms as denied and ignoring the transcript's actual negative screenings."
+}

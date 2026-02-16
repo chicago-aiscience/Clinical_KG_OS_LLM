@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer specifies COVID swab, self-isolation for patient and husband, physical exam as next step [D-52], and consulting supervising doctor before returning [D-55]. Generated correctly identifies swab [D-53] and isolation for patient/husband [D-53, D-54], but inaccurately lists swab 'administration' as immediate next step (only 'ordering' mentioned), omits physical exam and doctor consult entirely, and adds unsubstantiated 'ruling out influenza' as a subsequent step (flu mentioned as possibility but no test planned). Main points on test and isolation correct, but significant errors in next steps.",
+    "completeness": "Gold key points: 1) COVID swab, 2) self-isolation patient+husband, 3) physical exam next, 4) consult doctor/return, 5) patient agreement. Covered: 1,2. Missed: 3,4,5. Adds 'social distancing' (rephrasing of isolation) and flu workup (not in Gold). Covers ~50% of key points.",
+    "faithfulness": "Claims on swab ordering and isolation directly verifiable [D-53,D-54]. 'Administration' of swab not in transcript (only ordering). 'Ruling out influenza after COVID' plausible from [D-54] but not stated as planned test/step. No mention of physical exam or consult in Generated, though they are in transcript. Minor hallucinations in phrasing next steps.",
+    "relevance": "Directly structures response around question's elements (test, precautions for patient/husband, next steps), uses bold headings matching query; minor inaccuracy in content but perfectly focused with no off-topic material."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 3,
+    "relevance": 4
+  },
+  "average_score": 3.25,
+  "summary": "The Generated Answer accurately covers the test and isolation but incompletely and inaccurately describes next steps, omitting physical exam and consult while adding unstated flu workup details."
+}

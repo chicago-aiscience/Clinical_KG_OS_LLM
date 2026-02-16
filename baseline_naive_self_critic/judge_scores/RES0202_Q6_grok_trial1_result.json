@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer accurately captures the doctor's assessment as symptoms compatible with COVID-19 and an infection [D-44, D-45], matching the Gold Answer. It correctly details the COVID swab with 24-48 hour turnaround, 14-day isolation including the sister, false negative possibility, alternative of another viral illness if negative, and exact warning signs (high temperature, seizures, weakness, dizziness, fainting). Minor discrepancy: omits the Gold Answer's mention of asthma as a potential differential if no fever [D-45] and explicit statement of no medications/watchful waiting, but core facts are fully consistent.",
+    "completeness": "Key points from Gold Answer covered: assessment (100%), COVID test/turnaround (100%), isolation (100%), false negatives (100%), alternative diagnosis if negative (100%), warning signs (100%). Missed: specific note on asthma differential if no fever [D-45] and explicit 'no medications, watchful waiting'. Covers ~90% of Gold key points.",
+    "faithfulness": "All claims in Generated Answer are directly verifiable in the transcript with accurate citations [D-44, D-45]. No hallucinations; phrasing like 'strict isolation' is a minor paraphrase but grounded ('isolate for 14 days... includes... younger sister'). Warning signs listed precisely match transcript.",
+    "relevance": "Generated Answer is structured to directly and comprehensively address every element of the question (test/turnaround, isolation, alternative dx, false neg, warning signs with examples) with no off-topic content, perfectly focused on the doctor's assessment and plan."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 5,
+    "relevance": 5
+  },
+  "average_score": 4.5,
+  "summary": "The Generated Answer is highly accurate, complete, and faithful, with excellent relevance, missing only minor details from the Gold Answer like the asthma differential."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly claims that the transcript 'does not contain any explicit instances' of the doctor asking about or the patient denying symptoms like chest pain (D-16/P-16), palpitations (D-17/P-17), runny nose (D-10/P-10), and nausea (D-15/P-15), which are explicitly present and match the Gold Answer's list. It instead focuses on unrelated symptoms like SOB (not fully denied) and cough (minimized), fabricating their absence and contradicting both the transcript and Gold Answer on core facts. Significant contradictions throughout.",
+    "completeness": "Gold Answer lists 8 specific denied symptoms (runny nose/congestion, vision/hearing changes, nausea/vomiting, chest pain, palpitations, abdominal pain, urinary symptoms, numbness/tingling) with citations and explanations of diagnostic differentiation. Generated Answer covers none of these, instead discussing SOB, cough, and general DDx without basis in denials. Covers 0% of key points.",
+    "faithfulness": "Generated Answer hallucinates the absence of explicit questions/denials for key symptoms that are verbatim in the transcript (e.g., D-10/P-10, D-15/P-15, etc.). Cites wrong sections (e.g., [D-3], [P-1]) for unrelated content and invokes a non-existent 'knowledge graph.' All major claims about symptom absence are fabricated and unverifiable against transcript.",
+    "relevance": "Generated Answer attempts to address the question by listing 'negated symptoms' (wrongly) and providing clinical differentiation, but pivots to general knowledge and incorrect assertions, including off-topic details like GERD history and rhinitis DDx not tied to explicit negations. Partially relevant but derailed by factual errors."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 3
+  },
+  "average_score": 1.5,
+  "summary": "The Generated Answer is largely inaccurate, hallucinating the absence of explicit pertinent negatives clearly documented in the transcript and Gold Answer, resulting in zero coverage of key points."
+}

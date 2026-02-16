@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Generated Answer incorrectly states that the transcript lacks historical context for diagnosis at age eight (directly in P-2) and baseline bronchodilator use once every two weeks (P-8), contradicting the Gold Answer's accurate summary of these facts. It also misattributes citations (e.g., wheezing to P-18 instead of P-15; chest tightness to D-20 instead of P-20) and vaguely notes an increase without quantifying baseline or current frequency (5-6 times/week from P-8). Core evolution is misrepresented as unknowable. Significant errors.",
+    "completeness": "Gold key points: diagnosis age 8/now 10; baseline infrequent use (once/2wks), triggers (exercise/cold/seasonal); current 2wk exacerbation (cough nonstop, wheezing increased, SOB/chest tight, bronchodilator 5-6x/wk, wheezing > use, nighttime sx, no precipitant). Generated covers current symptoms (cough/SOB/wheezing/chest tight partially), triggers, vague increase/no nighttime specificity, but misses diagnosis age, baseline details, evolution timeline, wheezing frequency vs use. Covers ~30-40% of points.",
+    "faithfulness": "Claims unverifiable: no historical context (falsely, see P-2/P-8); references 'knowledge graph' absent from transcript; wrong citations (P-18 for wheezing, D-20 for chest tightness). Some claims grounded (current symptoms in P-1/P-15/P-19/P-20, triggers P-9/P-11), but multiple inaccuracies and hallucinations about data availability.",
+    "relevance": "Question focuses on temporal evolution (dx -> baseline -> current exacerbation). Generated denies ability to address evolution/baseline (despite evidence), then details only current symptoms/triggers, partially addressing 'current' phase but ignoring progression and baseline comparison."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 2
+  },
+  "average_score": 2.0,
+  "summary": "The Generated Answer significantly misrepresents the transcript by denying historical and baseline data explicitly present, resulting in low factual accuracy, incomplete coverage of the evolution, and hallucinations despite partial relevance to current symptoms."
+}

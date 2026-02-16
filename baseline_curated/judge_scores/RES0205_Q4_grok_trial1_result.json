@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Step-by-step: Gold Answer states COVID-19 ruled out by 'covid test' [P-35] negative, performed at symptom onset two weeks prior [P-36]. Generated correctly identifies condition and test with citations. However, it inaccurately claims the transcript 'does not explicitly state the exact time lag,' contradicting P-36 which explicitly says 'I had the test done when I first started having symptoms about two weeks ago.' Workplace concerns partially match (scared coworkers [P-35]), but miss details like job title [P-34], PPE [P-17], staying home [P-36]. Some factual errors on timing and incomplete details vs Gold.",
+    "completeness": "Key points from Gold: 1. COVID-19 ruled out; 2. 'covid test' [P-35] negative; 3. Test at onset, two weeks prior [P-36]; 4. Hospital clerk [P-34], PPE [P-17]; 5. Coworkers scared [P-35]; 6. Staying home post-test [P-36], wants to return without cough [P-36], meds for work [P-35]. Generated covers 1, 2 (partial, no explicit negative mention), partial 3 (cites onset but denies explicit timing), partial 5 (scared coworkers), implies hospital. Misses negative result emphasis, precise timing, job/PPE/staying home/meds details. Covers ~60% of key points.",
+    "faithfulness": "Claims grounded: Condition/test/scared quote/citations [P-35,P-2] verifiable. Unverifiable/hallucinated: 'knowledge graph [PROCEDURE] covid test' not in transcript. Incorrect: Denies explicit timing despite P-36 clearly stating it. No other fabrications, but misinterpretation of timing explicitness and extraneous knowledge graph reference indicate some hallucination and lack of grounding.",
+    "relevance": "Generated uses bullet structure directly matching question's four parts (condition, test, timing, concerns), focused on transcript details without tangents. Perfectly addresses query despite inaccuracies."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.25,
+  "summary": "The Generated Answer is mostly correct and relevant but has significant errors in denying explicit timing from the transcript, partial coverage of concerns, and a hallucinated knowledge graph reference."
+}

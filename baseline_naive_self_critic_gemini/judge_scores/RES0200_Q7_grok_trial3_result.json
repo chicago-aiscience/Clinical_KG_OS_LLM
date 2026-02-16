@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Step-by-step: Gold Answer specifies chronic cough ~10 years [P-3] (matches Gen); COPD diagnosis clarified to ~5 years [P-2] after initial 'couple years ago' [P-1], but Gen incorrectly states 'roughly a couple years ago' and summarizes as '2 years ago', contradicting Gold and ignoring clarification; cough worsening and sputum change last week [P-1,P-5,P-6] mostly matches (minor wrong citation to [P-3]); acute SOB last few days [P-1,P-8] matches; overall significant factual error on COPD diagnosis timing, a key question point.",
+    "completeness": "Gold key points: 10y cough (covered); ~5y COPD dx with clarification (partially, wrong time); baseline intermittent SOB (missed); 1wk cough worse on exertion (covered); 1wk sputum to yellow (covered); few days intense SOB prompting visit (covered); chills last couple days (missed). Covers main timeline points (cough onset, dx, worsening cough/sputum, acute SOB) but misses baseline SOB, chills, dx clarification details; ~60-70% coverage.",
+    "faithfulness": "All timeline claims verifiable except: wrong citation [P-3] for worsening (it's chronic cough); interprets 'couple years' as 2y ignoring [P-2]; mentions 'knowledge graph information provided' not in transcript (hallucination); physician dx [D-52] verifiable but extra; sputum/cough/SOB timings accurate to transcript; minor unverifiable details and one hallucination, mostly grounded.",
+    "relevance": "Generated Answer directly structures response around the exact 4 timeline elements asked (chronic cough onset, COPD dx, cough/sputum worsening, acute SOB intensification prompting visit), with clear sections and summary; perfectly focused, minor extra physician note."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 4,
+    "relevance": 5
+  },
+  "average_score": 3.5,
+  "summary": "The Generated Answer provides a relevant and mostly faithful timeline but has a significant factual error on COPD diagnosis timing and misses some Gold details like baseline SOB and chills."
+}

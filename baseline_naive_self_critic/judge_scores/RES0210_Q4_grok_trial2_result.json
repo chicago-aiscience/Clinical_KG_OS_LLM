@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly claims there is 'no evidence' that the doctor asked about weight loss [D-22], recent travel [D-23], sick contacts [D-24], or chemical exposure [D-34], despite these being explicitly present in the transcript. It fails to identify the correct differentials (e.g., lung cancer/TB for weight loss, infections for travel/sick contacts, occupational lung disease for chemicals) and how responses narrow them, directly contradicting the Gold Answer's factual analysis.",
+    "completeness": "Key points from Gold Answer completely missed: (1) weight loss screens for cancer/TB, denial lowers likelihood; (2) travel for endemic infections, Sarnia trip timing noted; (3) sick contacts for contagious infections/TB, denial reduces exposure likelihood; (4) chemical exposure for pneumonitis, limited exposure lowers likelihood. Generated covers 0% of these.",
+    "faithfulness": "Claims unverifiable and false absence of questions that are directly in transcript; hallucinates 'Knowledge Graph' not present; fabricates differentials like angina from chest pain without transcript support (pain is pleuritic/right-sided, not exertional classic for angina); largely fabricated.",
+    "relevance": "Does not address the specific questions or their diagnostic intent; instead pivots to unrelated symptom analysis (e.g., angina, cardiovascular), ignoring the query's focus on the four targeted history questions."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 1
+  },
+  "average_score": 1.0,
+  "summary": "The Generated Answer is fundamentally incorrect, ungrounded in the transcript, and irrelevant to the query by denying the existence of the specified questions and failing to analyze their diagnostic purpose."
+}

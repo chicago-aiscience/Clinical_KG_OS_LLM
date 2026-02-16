@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the one-week duration and a shift from stuffy nose to runny nose, aligning with the Gold Answer's core progression. However, it inaccurately infers the initial symptom primarily from decongestant use [P-10] rather than the patient's direct statement [P-3], misattributes the 'on and off' description specifically to congestion (P-1 mentions both symptoms), and completely omits the patient's clarification that symptoms were 'pretty constant' [P-8], contradicting the Gold Answer's reconciliation of intermittency vs. constancy. These are significant factual errors relative to the Gold Answer.",
+    "completeness": "Key points from Gold Answer: 1-week onset [P-1,P-2] (covered), initial stuffiness [P-3] (partially/inferred), shift to rhinorrhea [P-3] (covered via P-10), decongestant influence [P-10] (mentioned but repurposed), initial 'on and off' [P-1] (covered), constant clarification [P-8] (missed), no improvement [P-1] (missed). Covers about 50-60% of points, missing crucial frequency nuance and direct evidence.",
+    "faithfulness": "Most claims are grounded: week duration [P-1], decongestants and runny now [P-10]. However, hallucinates a 'knowledge graph' linking decongestants to congestion (absent from transcript), infers initial symptom evidence from P-10 and interview progression (runny nose discussed early in P-1), and selectively uses P-1 for frequency while ignoring contradictory P-8, introducing unverifiable inferences and fabrication.",
+    "relevance": "The answer is structured directly around onset, symptom order/shift, and frequency, precisely matching the question's requirements on progression, first symptom, change in predominance, and constancy/intermittency, with no off-topic content."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer captures the basic symptom progression and shift but has significant errors in factual evidence, frequency reporting, and faithfulness due to hallucinations and omissions compared to the Gold Answer."
+}

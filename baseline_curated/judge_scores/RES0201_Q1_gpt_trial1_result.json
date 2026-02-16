@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer contains multiple factual errors compared with the Gold Answer and transcript. It omits the patient’s key reported symptom of difficulty breathing (started yesterday, constant, worsening). It misstates the taste symptom: the patient reported reduced taste (\"maybe taste a little bit\") starting ~2 days prior and constant; the Generated Answer incorrectly says the patient \"explicitly denied a loss of taste.\" It also incorrectly claims that cough, runny nose, headaches, chest pain, and fever were \"not mentioned\"—in fact, the patient explicitly denied each of these in the transcript. The only clearly correct items are sore throat with dysphagia, tiredness/muscle aches, and denial of loss of smell.",
+    "completeness": "Key reported symptoms covered: sore throat with swallowing difficulty; tiredness; muscle aches; partial taste change (but inaccurately characterized). Key reported symptoms missed: difficulty breathing (onset, constant, worsening), worsening sore throat, timeline details for taste change, and the 'not weak' clarification. Key explicit denials missed: cough, runny nose, headaches, chest pain, fever, chills/night sweats (and additional negatives like sick contacts/travel noted in the Gold Answer). Overall coverage is well below half of the Gold Answer’s key points.",
+    "faithfulness": "Several statements are not faithful to the transcript: it asserts other screened symptoms were \"not mentioned\" when they were explicitly asked and denied; it claims the patient \"explicitly denied\" loss of taste, which is not supported—patient reported diminished taste. These constitute multiple contradictions/hallucinations relative to the transcript.",
+    "relevance": "The response attempts to list reported symptoms and explicitly denied screened symptoms, so it is on-topic. However, it fails to answer the question adequately because it omits major symptoms and incorrectly reports what was denied versus discussed."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "Partially on-topic but substantially inaccurate and incomplete, with multiple contradictions of the transcript (especially around dyspnea and the explicit denials of common screened symptoms)."
+}

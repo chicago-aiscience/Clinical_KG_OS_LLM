@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer contains significant factual errors and omissions compared to the Gold Answer. It claims the doctor's explicit summary 'is not included in the text,' when in fact the Gold Answer clearly references D-58 where the doctor provides a comprehensive summary. The Generated Answer misses critical findings recapped by the doctor: fever, lack of sputum production, brother's cold two weeks ago, absence of asthma, and medications limited to Claritin. It also fails to capture Jessica's primary goal as stated in P-60 ('if I have to like take medicine or something') and instead makes an incorrect inference about Claritin being 'just in case.' The Generated Answer conflates Jessica's initial complaint with the doctor's summary and her stated goal.",
+    "completeness": "The Generated Answer covers less than 50% of the key points from the Gold Answer. It completely misses: (1) the doctor's actual summary in D-58, (2) the specific five points the doctor recapped (duration, sputum, contacts, asthma, medications), (3) Jessica's explicit statement of her goal in P-60, (4) her desire to go home and rest in P-61, and (5) the framing of 'next steps and where to go from here.' While it mentions some symptoms and allergy history, these are presented as Jessica's report rather than what the doctor recapped, which fundamentally misunderstands the question.",
+    "faithfulness": "The Generated Answer contains a major hallucination by claiming 'the doctor's explicit summary is not included in the text' when D-58 clearly contains this summary. The claim that Jessica's goal is 'to obtain treatment' is an inference not directly grounded in her actual statement. The reference to Claritin being 'just in case' (P-25) is taken out of context—this was said during history-taking, not as part of her goal statement. The answer fabricates the interpretation that having Claritin 'suggests her next step is to obtain treatment' without textual support.",
+    "relevance": "The Generated Answer partially addresses the question but misses the core focus. The question asks for two specific things: (1) what the doctor recapped in the summary at the end, and (2) what Jessica identified as her primary goal. The Generated Answer instead provides Jessica's initial complaints and makes inferences about her goals rather than citing her actual statements in P-60 and P-61. While some content is tangentially related to clinical findings, it doesn't answer what was specifically recapped in the doctor's summary."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 2
+  },
+  "average_score": 2.0,
+  "summary": "The Generated Answer significantly misses the mark by claiming the doctor's summary is not in the transcript when it clearly appears in D-58. It fails to identify the five key clinical findings the doctor recapped and misrepresents Jessica's primary goal by making inferences rather than citing her explicit statement in P-60 about wanting to know if she needs medicine. The answer contains a major hallucination about missing content and lacks faithfulness to the actual statements in the transcript."
+}

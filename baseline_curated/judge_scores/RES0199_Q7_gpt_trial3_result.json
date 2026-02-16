@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the first symptoms (headache and cough starting ~4 days prior) and correctly places loss of smell as the most recent symptom beginning ~1 day prior. It accurately describes the headache as persistent and the cough as dry. However, it is imprecise about the gastrointestinal timeline: it states GI symptoms began “few days back,” but does not reflect the more specific detail that diarrhea began ~2 days ago and that vomiting occurred yesterday with nausea today. It also does not explicitly state that headache and cough severity stayed the same over the four days (as in the Gold Answer). These are omissions/overgeneralizations rather than direct contradictions.",
+    "completeness": "Covers: initial symptoms (headache/cough first), anosmia started ~1 day ago, headache persistent with location, cough dry. Misses: headache severity rating (7/10) and explicit statement that it stayed the same over 4 days; explicit statement cough remained stable (“around the same”); specific GI chronology (diarrhea started ~2 days ago with 5–6 liquid stools/day; vomiting occurred yesterday x2; nausea present today); pertinent negatives (no fever/chills; no worsening respiratory symptoms). Overall includes roughly half to two-thirds of key Gold Answer points.",
+    "faithfulness": "Statements made are supported by the transcript (headache/cough onset at 4 days; GI symptoms mentioned a few days back; smell loss ~1 day; headache persistent; cough dry). No clear hallucinated symptoms or timing. The main issue is lack of specificity rather than introducing false details.",
+    "relevance": "Directly addresses the asked illness progression: first symptoms, when GI symptoms and smell loss began relative to initial symptoms, and description of headache/cough course. No major irrelevant content."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 5,
+    "relevance": 5
+  },
+  "average_score": 4.25,
+  "summary": "Mostly accurate and well-focused, but notably incomplete on GI symptom specifics and on explicitly stating that headache and cough severity remained stable over the four days."
+}

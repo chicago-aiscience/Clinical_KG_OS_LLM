@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer directly contradicts the transcript and the Gold Answer by stating that Jessica’s father’s allergies, cousin’s asthma, farm living situation, and home-schooling during COVID are “not mentioned” in the source text. In fact, these are explicitly stated: father has allergies [P-33], cousin has asthma [P-30], she lives on a farm [P-43–P-44], and is doing school from home during COVID [P-41–P-42]. Because it denies key, clearly documented context, its overall conclusion (“cannot be deduced”) is incorrect. It does correctly note that Jessica’s allergy season hasn’t started yet [P-16–P-17] and that her brother had a cold a few weeks ago [P-39], but the major error dominates.",
+    "completeness": "Gold Answer key points covered: \n- Mentions brother had a cold a few weeks ago (covered).\n- Notes current episode likely differs from her typical seasonal allergies because allergy season hasn’t started yet (covered).\n\nGold Answer key points missed: \n- Family history of allergic/respiratory conditions as contextual risk (father allergies; cousin asthma) (missed/denied).\n- Isolation/limited contacts due to COVID home-schooling, mother WFH, father works on farm, doesn’t leave house, no travel → makes intra-household viral exposure most likely (missed/denied).\n- Farm outside London context (missed/denied).\n- Only a dog; not an animal farm → reduces animal exposure concern (missed).\n\nOverall, it covers a minority of the Gold Answer’s contextual synthesis.",
+    "faithfulness": "Multiple statements are not grounded in the transcript: the claim that the family history and living situation details are “not mentioned” is false (they are clearly in the transcript). It also references a “Knowledge Graph” ([KG]) which is not part of the provided transcript, constituting hallucinated sourcing. While some symptom/history statements are grounded, the answer contains major unfaithful elements.",
+    "relevance": "The question asks how these factors collectively relate to her current URI symptoms. The Generated Answer partially addresses the relationship via allergy timing and brother’s cold, but it explicitly rejects/omits discussion of the farm/COVID isolation and family history components that are central to the question. Thus it is only partially responsive."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 2,
+    "faithfulness": 1,
+    "relevance": 3
+  },
+  "average_score": 1.75,
+  "summary": "The Generated Answer is largely incorrect and unfaithful because it denies multiple clearly documented contextual factors (family history, farm/COVID isolation) and introduces non-transcript “Knowledge Graph” content, resulting in low completeness and accuracy."
+}

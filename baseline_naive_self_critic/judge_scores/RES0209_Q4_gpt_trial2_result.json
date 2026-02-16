@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Gold Answer states the clinician screened for infectious symptoms/exposures (recent cold/infection, sick contacts, contact outside home, travel, loss of taste/smell, fever, nausea/vomiting, belly pain; and confirmed nonproductive dry cough) and, despite negatives, planned a COVID swab. The Generated Answer instead focuses on asthma/environmental triggers (cold air, pollen, exercise, pets) and wheezing, which are not the infectious-rule-out items asked in the question. It also incorrectly identifies the planned action as “increased usage of bronchodilator” as a diagnostic test, which contradicts the transcript (planned COVID swab). Therefore, it is largely factually inconsistent with the Gold Answer.",
+    "completeness": "Key Gold Answer elements missing: all infectious symptom screening items (recent cold/infection, loss of taste/smell, fever, GI symptoms), all infectious exposure history (sick contacts in/outside home, travel), and the planned COVID swab. The Generated Answer includes none of these and substitutes unrelated asthma trigger history. Completeness relative to Gold is therefore <20%.",
+    "faithfulness": "Many statements are not responsive to what was actually asked in the transcript for infectious screening (though cold air/pollen/pets/exercise are mentioned elsewhere in the transcript, they are not the infectious screening component). The claim of “implied negative screening for infection not captured in the transcript” is false because infectious screening is explicitly captured (D-21 to D-28). The statement that the doctor planned “increased usage of bronchodilator” as a diagnostic test is not supported and is incorrect. Overall, there are multiple unsupported/misrepresented claims.",
+    "relevance": "The question asks specifically about infectious/COVID screening symptoms and exposure history, the patient’s responses, and the diagnostic test planned despite negative screens. The Generated Answer focuses on non-infectious asthma triggers and management, and does not answer the infectious screening/testing question."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 1
+  },
+  "average_score": 1.25,
+  "summary": "The Generated Answer fails to report the infectious/COVID symptom and exposure screening or the planned COVID swab, instead substituting asthma trigger history and an incorrect ‘diagnostic test,’ making it largely incorrect, incomplete, and not responsive to the question."
+}

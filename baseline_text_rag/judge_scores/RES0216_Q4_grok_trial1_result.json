@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the condition as 'cardiac ischemic pictures' from [D-36], matching the Gold Answer. It accurately cites the nature of symptoms: chest tightness rather than pain (supported by P-1 and echoed in Gold's P-5 reference), lack of exertional dyspnea/out of breath with exercise [D-36], and no pain [D-36]. However, it has a minor discrepancy in citation (P-1 vs. Gold's P-5) and omits the Gold Answer's emphasis on absent symptoms like anxiety, sweating, or impending doom [P-6, D-6], though the stated facts remain consistent with the Gold Answer.",
+    "completeness": "Key points from Gold Answer: (1) Condition: cardiac ischemic picture [D-36] - covered. (2) Nature of complaints: tightness not pain [P-5] - covered (P-1); not classic exertional dyspnea [D-36, notes P-7 nuance] - partially covered as 'didn't get out of breath'; (3) Absence: no pain [P-5], no anxiety/sweaty/doom [P-6] - partially covered (no pain), fully misses anxiety etc. Covers ~60-70% of key points (condition + main nature points, misses full absences).",
+    "faithfulness": "All claims are directly verifiable in the transcript: condition deprioritized [D-36]; tightness not pain [P-1, P-5]; no out of breath with exercise [D-36]; no pain [D-36, P-5]. Citations accurate to transcript; no hallucinations or unverifiable details.",
+    "relevance": "Directly addresses the question by naming the condition and listing doctor-cited symptom evidence from [D-36], focusing on nature of chest complaints (tightness, no pain, no exertional SOB). No irrelevant content, but partially misses the 'absence of certain symptoms' aspect specified in the question."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 5,
+    "relevance": 4
+  },
+  "average_score": 4.0,
+  "summary": "The Generated Answer is factually accurate and well-grounded in the transcript but moderately incomplete in covering all key symptom evidences, particularly absent symptoms, from the Gold Answer."
+}

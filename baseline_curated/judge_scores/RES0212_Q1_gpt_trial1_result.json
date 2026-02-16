@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer contains notable factual errors compared with the Gold Answer. It states the cough has persisted “for at least a month,” whereas the patient reported a cough for ~3 months with worsening/productive symptoms only in the last ~3 days. It also lists “Pain” as an explicitly denied symptom, but the patient denied generalized body pain/tenderness while reporting discomfort when coughing (so framing this as a denied symptom is misleading). It omits key correct details such as the initial dry/intermittent nature and the lack of noticed sputum odor, and it does not accurately capture the explicit denials listed in the Gold Answer.",
+    "completeness": "It captures only a subset of key points: productive cough with green sputum/gunk, pain with coughing, sleep disturbance, subjective fever/hot at night, and fatigue. It misses multiple Gold Answer elements: 3-month duration and intermittency, initially dry cough, onset context (pole dancing class), duration of nocturnal waking (last month, pretty well nightly), no foul smell noticed, exercise impairment, and most explicit denials (night sweats, weight loss/loose clothes, nausea/vomiting, stiff neck, body pain/tenderness, and denial of sick contacts). Overall coverage is well under 50%.",
+    "faithfulness": "Most statements are grounded in the transcript (cough, green sputum, pain with cough, feeling hot at night, fatigue). However, there are several issues: incorrect cough duration (“at least a month”), an inaccurate/overbroad characterization of denied “pain,” and a questionable citation to [D-47] for sleep disturbance/blood (it is a clinician summary, not the patient’s direct report). These reduce faithfulness but the answer is not largely fabricated.",
+    "relevance": "The response is generally aimed at respiratory/associated symptoms and explicit denials, but includes irrelevant content (eczema history) and fails to list most of the explicitly denied symptoms asked for in the question. Thus it is only partially responsive."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 3,
+    "relevance": 3
+  },
+  "average_score": 2.5,
+  "summary": "Partially grounded but clinically incomplete and contains key inaccuracies (notably cough duration and mischaracterized denials), with many explicit denied symptoms omitted."
+}

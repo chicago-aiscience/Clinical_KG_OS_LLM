@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies several key reported symptoms from the Gold Answer (dry cough, scratchy throat, malaise/'crappy overall', headache, feeling hot), but mischaracterizes 'feeling hot' as 'fever' with reference to a non-existent 'Knowledge Graph'; adds congestion and post-nasal drip as primary symptoms (from P-18, allergy context, not explicitly tied to 3-4 day illness); for denials, correctly notes dry cough implies no sputum but misses or incorrectly states absence of transcript mentions for rashes (P-10), nausea/vomiting (P-11), diarrhea (P-12), and joint aches (P-13), leading to significant omissions and contradictions with Gold.",
+    "completeness": "Key reported points from Gold covered: dry cough/scratchy throat (100%), headache (100%), malaise/crappy (100%), feeling hot (partially, misses day/night persistence and clothing details). Misses tiredness (P-13). Key denied points from Gold: sputum/phlegm (covered indirectly), but misses rashes/skin changes, nausea/vomiting, diarrhea, joint aches, breathing difficulty explicitly. Adds extras (congestion, post-nasal drip, SOB denial). Covers ~60% of Gold's key points (strong on reported symptoms, weak on denials).",
+    "faithfulness": "All listed reported symptoms verifiable with citations (P-1, P-7, P-18); dry cough implies no sputum (plausible, P-1/P-4/P-5/P-6); SOB denial verifiable (P-18). However, congestion/post-nasal drip framed as main symptoms despite allergy context ('not really have them right now', P-16); hallucinates 'Knowledge Graph definition of fever' (not in transcript); incorrect note claiming nausea/joint pain/rashes 'not mentioned in transcript segments' (they are in P-10 to P-13). Some plausible but contextually stretched claims.",
+    "relevance": "Directly structures response around reported symptoms (past 3-4 days) and denied symptoms, with bullet lists matching question; minor tangents (KG reference, incomplete note on examples); addresses core question well despite gaps."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 3,
+    "relevance": 4
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer captures most reported symptoms accurately but adds irrelevant ones, misses key denied symptoms, and includes minor hallucinations, resulting in partial alignment with the Gold Answer."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer states the missed Keppra dose connected to the seizure on the same night due to disrupted dinner routine (P-8, P-24), with patient recognition in P-9 ('I kind of forgot to take my med. I think that might have yeah'), noting rarity of seizures, spontaneous mention after D-9, birthday context, and no clinician confirmation. Generated Answer correctly identifies missed Keppra (P-23) as precipitating factor for seizure and quotes P-9 accurately for patient realization. Core facts match, but introduces extraneous 'Knowledge Graph' with fabricated RISK_FACTOR/PRECIPITATES/SYMPTOM notation not in Gold or transcript, representing a minor discrepancy.",
+    "completeness": "Gold key points: 1) seizure same night as missed dose due to disrupted dinner/birthday (P-8, P-24); 2) patient spontaneous attribution in P-9 after D-9; 3) seizures usually rare (P-9); 4) one-time lapse context (P-24); 5) no clinician causality confirmation. Generated covers: missed dose precipitates seizure; Keppra (P-23); P-9 recognition/quote. Misses timing/routine/birthday details, rarity, spontaneity context, no clinician note. Covers ~30-40% of key points.",
+    "faithfulness": "Transcript verifies: Keppra (P-23), seizure last night (P-8), forgot med attribution (P-9, P-24), quote in P-9 accurate. However, 'Knowledge Graph' with [RISK_FACTOR] forgot medication --[PRECIPITATES]--> [SYMPTOM] seizure is entirely hallucinated, not present or implied in transcript. Causal precipitation inferred plausibly from patient but KG structure is fabricated, indicating multiple hallucinated elements.",
+    "relevance": "Question asks for connection of missed dose to seizure and evidence of patient's recognition. Generated directly addresses both with structured sections 'Connection to the Seizure' and 'Patient’s Realization', citing transcript; minor tangent via hallucinated KG but overall perfectly focused on question."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.25,
+  "summary": "The Generated Answer correctly identifies the core causal link and patient recognition from P-9 but is incomplete in covering contextual details and faithfulness due to hallucinated Knowledge Graph content."
+}

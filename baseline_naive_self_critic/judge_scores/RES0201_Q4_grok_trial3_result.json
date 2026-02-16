@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Step-by-step: Gold Answer lists specific denied symptoms: cough [D-15/P-15], runny nose [D-16/P-16], headaches [D-17/P-17], chest pain [D-18/P-18], loss of smell [D-19/P-19], fever [D-23/P-23], chills/night sweats [D-24/P-24], plus prior breathing issues, sick contacts, travel. Generated Answer only correctly identifies loss of smell denial but misrepresents it alongside taste loss (which was partial positive), adds current smoking denial (not a symptom screened for), ignores the majority of Gold's list, and fabricates interpretations like COVID pattern distinguishing from cold/flu or COPD exac (Gold notes no explicit differentials beyond COVID suspicion). Significant contradictions and omissions make core facts inconsistent.",
+    "completeness": "Gold key points: Comprehensive list of 7+ denied symptoms with citations, plus contextual denials (prior breathing, contacts, travel), and implications for differentials (e.g., no cough/runny nose narrows from URI, no chest pain relevant to dyspnea, fever/chills noted but COVID still pursued). Generated covers only ~1 key point (loss of smell), misses 90%+ (cough, runny nose, headaches, chest pain, fever, chills, etc.), adds irrelevant smoking, partial differential discussion not matching Gold. Covers <20%.",
+    "faithfulness": "Verifiable claims: Loss of smell denial [P-19] accurate; smoking cessation [P-34] accurate. Unverifiable/hallucinated: 'Screened for COVID symptoms such as loss of taste and breathing difficulties' (these were positives); 'clinical pattern often associated with COVID-19 distinguishing from cold/influenza' (not in transcript, doctor only notes COVID-like symptoms [D-43]); COPD exac vs infection distinction (plausible given COPD [P-27] but not discussed, multiple symptoms screened ignored). Multiple hallucinated facts and interpretations not grounded in transcript.",
+    "relevance": "Question focuses on doctor-screened denied symptoms (negative findings) and their role in excluding/distinguishing differentials from COVID-19. Generated partially lists negatives (smell, smoking) and attempts distinctions, but smoking is not a symptom, misses core screened symptoms (cough etc.), shifts to positives/social history, and off-topic differentials (COPD exac not in Gold/transcript focus). Partially relevant with off-topic content."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.0,
+  "summary": "The Generated Answer is significantly incomplete and inaccurate, covering only a tiny fraction of the denied symptoms listed in the Gold Answer while adding irrelevant non-symptom details and ungrounded differential interpretations."
+}

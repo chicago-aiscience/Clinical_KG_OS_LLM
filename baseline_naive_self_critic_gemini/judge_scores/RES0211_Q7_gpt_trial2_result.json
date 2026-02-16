@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly states that Jessica’s initial symptoms were a dry cough and scratchy throat together (citing [P-1]). In the transcript, when explicitly asked what she first noticed, Jessica says her throat was scratchy first and then she started coughing ([P-4]), so the symptom order is wrong. It also asserts that “feeling hot…followed the onset” of respiratory/systemic symptoms and implies escalation; the Gold Answer (and transcript) explicitly note the timeline is not specified relative to throat/cough onset, only that it was part of the same multi-day illness. The Generated Answer’s claim of a later onset for feeling hot is therefore not supported and conflicts with the Gold Answer.",
+    "completeness": "Key Gold Answer points missing or inadequately covered: (1) the explicit sequence scratchy throat → then dry cough ([P-4]); (2) the persistent/constant nature of feeling hot day and night (“all the time,” day and night, clothing detail) ([P-7], [P-9]); (3) the fact that the transcript does not specify when the hot sensation began relative to throat/cough (Gold explicitly highlights this uncertainty); (4) fatigue/tiredness ([P-13]). It does mention headache and malaise, but overall coverage of required timeline details—especially about “feeling hot”—is incomplete.",
+    "faithfulness": "Several statements are not grounded in the transcript: references to a “Knowledge Graph” are extraneous and not part of the provided source; the inference that feeling hot likely represented “a subsequent change” and “escalation in severity” is speculative and not stated. The key timeline claim (feeling hot occurred after cough/throat) is also not supported by the transcript. Hence, multiple ungrounded additions reduce faithfulness.",
+    "relevance": "The response stays on the question of symptom order and the relationship of feeling hot to the cough/throat timeline, with little off-topic content. However, it adds speculative interpretation about escalation that isn’t asked for."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The answer is on-topic but gives an incorrect symptom sequence and an unsupported timeline for “feeling hot,” omits key details (persistent day/night heat, fatigue, and timeline uncertainty), and includes speculative/unverifiable claims."
+}

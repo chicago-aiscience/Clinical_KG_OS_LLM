@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Generated Answer accurately captures chest tightness and SOB details from transcript (e.g., [P-1], [P-7]), but misses key present symptoms like upper airway complaints (hoarseness, phlegm, throat clearing [P-11]) and incorrectly presents historical seasonal allergies as a current symptom. Critically, it underreports denials: only lists chest pain, but patient explicitly denied cough ([P-11]), anxiety/sweating/impending doom ([P-6]), fevers ([P-12]), night sweats ([P-13]), chills ([P-14]), and weight loss ([P-15]), directly contradicting Gold and transcript. Falsely claims fevers/chills/etc. 'not mentioned' despite clear denials.",
+    "completeness": "Covers chest tightness (duration/triggers partial), SOB; misses diffuse nature [P-8], full triggers [P-9], upper airway symptoms [P-11], and all but one denial (chest pain). Gold's key points on systematic denials (D-5 to D-15) and cardiac context [D-36] mostly absent. Covers ~30% of Gold points.",
+    "faithfulness": "Claims grounded where stated (e.g., tightness [P-1], SOB [P-7]), citations accurate, but hallucinates absences: fevers/night sweats/etc. 'not mentioned' (falsely, denied P-12-15); cough 'not explicitly denied' (false, [P-11]); includes doctor interpretations [D-35/36] as patient symptoms; seasonal allergies as 'reported symptom' despite being inactive history [P-32]. Multiple inaccuracies/misrepresentations.",
+    "relevance": "Directly structures response around present symptoms (chest/respiratory) and denied screened symptoms, matching question; minor tangent on allergies history and doctor notes, but focused overall."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "Generated Answer partially captures present chest/SOB symptoms but significantly underreports explicit denials and misses upper airway complaints, leading to factual incompleteness and faithfulness issues."
+}

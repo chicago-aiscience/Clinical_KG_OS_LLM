@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer accurately reports some facts from the transcript that align with the Gold Answer (e.g., overall achy body [P-20], loss of appetite [P-2], headaches [P-11], partial cough description [P-8]), but has significant discrepancies: misplaces headaches under sensory changes (Gold puts under constitutional), includes 'run-down' and weakness under constitutional despite them bordering on chief complaint fatigue and Gold placing weakness under musculoskeletal, omits key symptoms like loss of taste/smell, fever, sore throat, and denial of runny nose/congestion, and partially misrepresents cough as 'dry throat sensation' and 'lack of coughing' without noting it as emerging; core facts stated are correct but incomplete representation leads to moderate inconsistency with Gold.",
+    "completeness": "Gold key points: sensory (taste loss P4, smell diminishment P6, newness P5), upper resp (early dry cough P7-8, sore throat P9, denied runny nose P10), musculo (achy P20-21, weakness P2), constitutional (fever P4, appetite loss P2/4/18, headaches P11-13). Generated covers: headaches (partial), partial cough/dry (P8), achy (P20), weakness/run-down (P1-2, misplaced), appetite (P2). Misses entirely: taste, smell, sore throat, runny nose denial, fever; covers ~30% of key points.",
+    "faithfulness": "All claims in Generated are directly verifiable in transcript with accurate citations: headaches P11, dry throat from cough P8, lack of coughing P8, achy P20, run-down P1, weak P2, appetite P2; no hallucinations or unverifiable details.",
+    "relevance": "Generated Answer directly structures response around the exact categories requested (sensory, upper resp, musculo, constitutional), excludes chief complaints, and focuses solely on reported symptoms from consultation; no tangents or off-topic content."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 2,
+    "faithfulness": 5,
+    "relevance": 5
+  },
+  "average_score": 3.75,
+  "summary": "The Generated Answer is faithful and relevant but suffers from low completeness and moderate correctness due to missing major symptoms like anosmia/ageusia, fever, and sore throat while misplacing some points."
+}

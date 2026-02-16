@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer states smoking (half pack/day for 20 years, quit at diagnosis 4-5 years ago [P-7,P-40]) is primary risk factor for COPD with persistent damage requiring inhalers [P-26]; Generated correctly identifies smoking as primary risk factor with accurate quote [P-40] but omits quit timing, persistence, and inhalers. Chain in Gold links sick contact [P-20] to infection (specific symptoms: sputum [P-1], sinus [P-12], headache [P-14], fever [P-9], patient suggestion [P-23], past pattern [P-3]) triggering exacerbation [P-1, D-43]; Generated covers exposure [P-20], some symptoms (sputum, cough, fever), and [D-43] but adds unmentioned COVID specificity. Core facts consistent with minor discrepancies (omissions and COVID assumption). Score: 4.",
+    "completeness": "Key Gold points covered: smoking history [P-40], exposure details/close contact [P-20], green-yellow sputum [P-1], fever [P-9], doctor confirmation [D-43]. Missed: quit at diagnosis [P-7], persistent COPD/inhalers [P-26], sinus pressure [P-12], headache [P-14], patient 'got sick' [P-23], past COPD worsening when sick [P-3], 3-day progression. Covers ~70% of key points. Score: 3.",
+    "faithfulness": "Transcript quotes accurate ([P-40], [P-20], [P-1], [P-9], [D-43]). However, multiple Knowledge Graph references (e.g., smoking--[RISK_FACTOR]-->COPD, sick friend-->[COVID], symptoms-->[exacerbation]) are entirely fabricated/not in transcript. COVID-19 specificity plausible but not directly stated (doctor mentions ruling out). Multiple hallucinated elements. Score: 2.",
+    "relevance": "Answer directly structures response to both question parts (smoking-COPD relation, sick contact chain to exacerbation) with numbered steps; no tangents or off-topic content. Score: 5."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.5,
+  "summary": "The Generated Answer is mostly correct and relevant but incomplete in covering all Gold key points and introduces hallucinated Knowledge Graph elements undermining faithfulness."
+}

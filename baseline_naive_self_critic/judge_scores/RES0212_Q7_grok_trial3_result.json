@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly states the cough onset as 'maybe for like a month' citing [P-19], but Gold Answer (and transcript [P-2, P-13]) correctly identifies 3 months ago; it misattributes sleep disruption timeline without noting 'every night for last month' [P-21]; productive sputum timeline (3 days [P-12]) omitted; fevers wrongly denied despite [P-4] 'feeling like hot at night past couple days' matching Gold. Significant factual errors and contradictions vs Gold.",
+    "completeness": "Gold key points: 3mo onset [P-2,P-13], intermittent dry [P-2], 1mo nightly sleep disruption [P-19,P-21], 3d greenish productive [P-2,P-9,P-12], couple days subjective fevers [P-4], acute-on-chronic summary. Generated covers sleep disruption partially (~20%), sputum description (~20%), misses onset timeline, intermittency, exact productive timing, fevers entirely; ~20-40% coverage.",
+    "faithfulness": "Misinterprets [P-19] as onset duration (actually sleep); sleep claim partial/accurate [P-19]; sputum verifiable [P-9]; fabricates 'no information' on fevers despite clear [P-4]; ignores 3mo onset [P-2,P-13], 3d productive [P-12], monthly sleep [P-21]; multiple misreads/hallucinated absences.",
+    "relevance": "Structured sections directly mirror question elements (onset, sleep, productivity, fevers), no off-topic content, fully focused despite inaccuracies."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer is mostly inaccurate and incomplete, missing key timelines and denying fevers present in transcript, though structured relevantly."
+}

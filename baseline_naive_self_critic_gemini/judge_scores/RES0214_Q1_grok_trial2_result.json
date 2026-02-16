@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies and lists the four symptoms (fever, stuffy nose, sore throat, muscle ache) matching the Gold Answer's key facts, with minor citation issues (muscle ache not in [P-1], actually [P-13]). However, it factually errs on the denials, claiming only cough was denied and no evidence for headache, neck stiffness, nausea, or difficulty swallowing, directly contradicting the Gold Answer and transcript ([P-8] headache, [P-7] neck stiffness, [P-5] nausea/vomiting, [P-24-26] difficulty swallowing). This is a significant factual error on the second core part of the question.",
+    "completeness": "Covers all four key symptoms from Gold (stuffy nose, sore throat, fever, muscle aches). Misses four of five denials: headache [P-8], neck stiffness [P-7], nausea [P-5], difficulty swallowing [P-24-26]; only covers cough [P-10]. Lacks Gold's details like timing and clarifications (e.g., no joint pain but muscle aches [P-13]). Covers ~50-60% of key points.",
+    "faithfulness": "Symptoms verifiable in transcript ([P-1] for first three, [P-13-16] for muscle ache). Cough denial verifiable [P-10]. However, claims of 'no evidence' for other denials are not grounded and contradict transcript (explicit denials at [P-7], [P-8], [P-5], [P-24-26]). Muscle ache citation [P-1] inaccurate. Multiple hallucinated absences.",
+    "relevance": "Directly addresses both parts of the question: lists the four reported symptoms and specifies denials among the exact five listed (cough, headache, neck stiffness, nausea, difficulty swallowing). No irrelevant content or tangents."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer accurately captures the four reported symptoms but fails completely on identifying the explicit denials of four out of five clinically significant symptoms, resulting in significant factual errors, incompleteness, and lack of faithfulness to the transcript."
+}

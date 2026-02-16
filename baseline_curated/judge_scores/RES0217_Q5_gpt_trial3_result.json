@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The first part (Friday hiking + Saturday gardening leading the clinician to estimate >72 hours) is broadly consistent with the transcript and Gold Answer, correctly referencing the doctor’s statement: “if you're out on Friday and Saturday… longer than at least 72 hours” [D-6]. However, the second part is factually incorrect: the Generated Answer claims Strathroy’s position on the Ontario Lyme distribution map is “not present” and that the doctor relied “solely” on attachment duration and prior bullseye rash. In fact, the transcript explicitly includes the map reference and conclusion: “Lyme disease distribution map… Strathroy is close enough to be considered… concerning… moving forward with antibiotics” [D-13]. The emphasis on the prior bullseye rash as a justification is also inaccurate; it was discussed, but the map + duration were the stated drivers for prophylaxis in the Gold Answer.",
+    "completeness": "Key Gold Answer points covered: (1) outdoor exposure Friday/Saturday with uncertainty about when tick attached; (2) doctor’s calculation of >72 hours; (3) prophylactic antibiotics linked to prolonged attachment.\nKey points missed/incorrect: (1) patient removed tick earlier today as the anchor for duration reasoning [D-1]; (2) doctor’s explicit use of the Ontario Lyme distribution map; (3) assessment that Strathroy is “close enough” to be concerning and this supported moving forward with antibiotics [D-13]. Given that roughly half the question (geographic justification) is omitted/contradicted, coverage is well below 50%.",
+    "faithfulness": "Several statements are not faithful to the transcript: the claim that the distribution map detail is not present directly contradicts [D-13]. The statement that the doctor relied on prior bullseye rash for justification is not supported as a primary rationale; the doctor actually described it as reassuring that there was no rash now [D-7]. The comment about a “typical window for bacterial transmission to be prevented” is plausible general knowledge but is not stated in the transcript. Overall, multiple key claims are either contradicted by or not grounded in the provided source.",
+    "relevance": "The answer attempts to address both parts of the question (duration estimate and geographic/map-based justification). However, it becomes partially non-responsive to the second half by denying the presence of the map-based reasoning, which is exactly what the question asks about. Thus it is only partially relevant overall."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "Partially answers the attachment-duration component, but directly contradicts the transcript and Gold Answer regarding the Ontario Lyme map/Strathroy-based justification, resulting in low correctness, completeness, and faithfulness."
+}

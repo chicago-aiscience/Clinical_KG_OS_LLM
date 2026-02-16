@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer fails to correctly identify the chronological order of symptoms requested. It groups the cough and scratchy throat together based on the order they were mentioned in the interview (P-1), whereas the Gold Answer correctly identifies from P-4 that the scratchy throat was the initial symptom, followed by the cough. Additionally, the Generated Answer includes post-nasal drip (P-18), which in the transcript is discussed in the context of her chronic allergies rather than the current 3-4 day illness progression.",
+    "completeness": "The Generated Answer misses several key systemic symptoms mentioned in the Gold Answer, such as general malaise ('feeling crappy') and fatigue. It also fails to provide the specific detail found in the Gold Answer regarding the 'feeling hot' being constant (day and night).",
+    "faithfulness": "The answer is generally faithful to the transcript but misinterprets the sequence. It bases the 'order' of symptoms on when the patient said them to the doctor (P-1) rather than the onset sequence the patient explicitly described in P-4 ('I first noticed... and then...').",
+    "relevance": "The Generated Answer is relevant as it directly attempts to answer the multi-part question regarding symptom order and the relationship of feeling hot to the timeline."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 4,
+    "relevance": 5
+  },
+  "average_score": 3.75,
+  "summary": "The Generated Answer provides a decent overview but fails to capture the specific chronological onset of symptoms (throat then cough) described in the transcript, instead relying on the order of mention."
+}

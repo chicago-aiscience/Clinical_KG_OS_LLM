@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly states that school attendance was suspected as the source (symptoms began after returning from school; mother explicitly raised concern about COVID from school [P-1, P-2]) and correctly notes the school had not contacted the family about exposures [P-39]. However, it contains a notable error/misattribution: it says the mother mentioned the younger sister as a “potential contact,” when in the transcript it was the doctor recommending isolation from the sister, not the mother reporting a contact or exposure [D-44]. It also implies there were no external contacts mentioned, but the mother explicitly reported no known sick contacts outside of school [P-38].",
+    "completeness": "Key Gold Answer points covered: (1) school-based suspicion [P-1, P-2]; (2) no notification from school about exposures [P-39]. Key points missed: (1) mother explicitly said no known sick contacts outside of school [P-38]; (2) mother said at school it was “kinda hard to say” (uncertainty rather than “no known sick students”) [P-38]; (3) mother stated the school required a COVID test for return so the school could notify other families about exposure [P-41]. Additional Gold details about travel/environment were not asked in the question, so their omission does not reduce completeness for this specific question.",
+    "faithfulness": "Most statements are grounded in the transcript (school suspicion; no school notification). The main faithfulness issue is attributing the sister ‘potential contact’ to the mother; that detail comes from the clinician’s advice, not the mother’s report [D-44]. Also, saying “No other external contacts are mentioned” conflicts with the mother’s explicit statement about no sick contacts outside school [P-38].",
+    "relevance": "The answer is generally focused on school attendance as the suspected source and on sick contacts/exposure notifications. The discussion of isolating from the sister is somewhat tangential to the specific question about reported sick contacts/exposures, but still within the broader theme of contacts."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 3,
+    "relevance": 4
+  },
+  "average_score": 3.25,
+  "summary": "Partly accurate and mostly relevant, but it omits key details about sick contacts outside school and the school’s COVID-test/exposure-notification context, and it misattributes the sister-as-contact point to the mother."
+}

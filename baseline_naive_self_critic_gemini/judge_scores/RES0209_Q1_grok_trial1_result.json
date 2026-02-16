@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer lists four key symptoms: dry cough (2 weeks, nonstop day), breathing difficulties (SOB, hard time breathing), wheezing (a lot, more frequent than bronchodilator), chest tightness (confirmed yes). Frequency: day prominent/constant, night less (every other/2 days). Generated covers cough (dry, nonstop day), breathing (SOB, hard time), wheezing (a lot), frequency diff (day persistent, night less). Misses cough duration (2 weeks), wheezing > bronchodilator detail, night specific freq. Adds triggers (cold/pollen) as breathing exacerbants (accurate but not core symptoms). Critically, omits chest tightness from symptoms and incorrectly states patient 'did not explicitly confirm' it, contradicting transcript P-20 ('Yes') and Gold. Some factual errors (chest denial) but core symptoms and freq correct.",
+    "completeness": "Gold key points: 1) dry cough ~2wks nonstop day; 2) SOB + hard breathing esp severe wheeze; 3) wheezing a lot + >bronchodilator use; 4) chest tight yes; 5) day prominent/constant vs night every other/2 days. Covered: cough char/day (yes), breathing diff (partial), wheezing (partial, misses freq detail), freq diff (partial, misses night specifics). Missed: cough duration, wheezing freq detail, chest entirely, night exact freq. Covers ~70% of key points.",
+    "faithfulness": "All main claims grounded: cough [P-1,P-14], SOB [P-1], hard breathing [P-19], wheezing [P-15], day freq [P-1], night less [P-18], triggers [P-9,P-11]. Citations accurate. Chest note hallucinates non-confirmation (P-20 explicitly 'Yes'); KG mention unverifiable in transcript. Minor hallucination on chest.",
+    "relevance": "Directly lists symptoms (cough char, breathing, wheezing) and day/night freq as asked; addresses chest indirectly via note. Minor tangents (triggers, bronchodilator use, KG). Highly focused on question."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 4,
+    "relevance": 5
+  },
+  "average_score": 3.75,
+  "summary": "Generated Answer is mostly accurate and relevant but incomplete (misses chest tightness and details) with a factual error denying chest confirmation."
+}

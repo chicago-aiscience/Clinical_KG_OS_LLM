@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly states that the transcript does not contain the doctor asking about chest pain [D-16], palpitations [D-17], runny nose [D-10], or nausea [D-15], directly contradicting the Gold Answer and transcript evidence. It lists cough, appetite loss, and taste loss as denied symptoms, but these were not explicitly denied (cough is minimal per P-8, appetite/taste are reported as impaired). Differentiation explanations partially align with Gold but are based on false premises about symptom absence confirmation. Significant factual errors and contradictions warrant a score of 2.",
+    "completeness": "Gold Answer covers 8 specific denied symptoms (runny nose/congestion, vision/hearing changes, nausea/vomiting, chest pain, palpitations, abdominal pain, urinary symptoms, numbness/tingling) with citations and detailed differentiation (cardiac, GI, cold, neuro exclusions). Generated lists only 3 incorrect 'denied' symptoms (cough, appetite, taste) without citations to denials, covers partial differentiation for cardiac, URI, GI but misses vision/hearing, abdominal/urinary/neuro symptoms, specific citations, and full COVID/infection rationale. Covers approximately 20-49% loosely, score 2.",
+    "faithfulness": "Claims of missing key symptoms (chest pain etc.) are hallucinations as they are explicitly in transcript (D-10,15,16,17). Cough not fully denied (P-7,8 indicate emerging), appetite/taste are positive findings of loss (P-2,4), not negations. References 'knowledge graph' absent from transcript. Other claims like differentiation plausible but not all verifiable in transcript without hallucinated absences. Multiple inaccuracies, score 2.",
+    "relevance": "Directly attempts to list denied symptoms and explain differentiation for respiratory distress causes, mirroring question structure, though with incorrect details and minor tangents to non-denied symptoms. Mostly relevant with flaws, score 4."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer is significantly inaccurate and incomplete, hallucinating the absence of key transcript elements while misidentifying denied symptoms, though it remains mostly relevant to the question."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies COVID-19 as the condition ruled out and the COVID test as the specific test used, matching the Gold Answer and transcript [P-35]. However, it inaccurately states that the timing of the test relative to symptom onset is 'not explicitly detailed,' contradicting the transcript [P-36] where the patient explicitly says the test was done 'when I first started having symptoms about two weeks ago,' which the Gold Answer accurately cites. Workplace concerns are partially correct (hospital job [P-34], coworkers scared [P-35]), but omit key details like PPE use [P-17], staying home post-test, and desire to return without coughing [P-36]. This represents some factual errors but main points mostly correct.",
+    "completeness": "Key points from Gold Answer: COVID-19 ruled out (covered), covid test negative [P-35] (implied but not explicitly 'negative'; covered), timing at onset two weeks prior [P-36] (missed, incorrectly called not detailed), hospital clerk [P-34] (covered), PPE [P-17] (missed), coworkers scared [P-35] (covered), staying home and eagerness to return [P-36] (missed), medication desire driven by concerns (missed). Covers condition, test, job, scared coworkers (~50-60% of points).",
+    "faithfulness": "Claims like condition/test/citations [P-35, P-34] verifiable in transcript. However, 'Knowledge Graph' is hallucinated (no mention in transcript). Timing 'not explicitly detailed' is false [P-36]. 'Exclusionary documentation' not in transcript (hallucinated). Multiple hallucinated or contradicted claims.",
+    "relevance": "Generated Answer directly structures response to each part of the question (condition, test, timing, concerns) with no off-topic content, perfectly addressing the query despite inaccuracies."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.25,
+  "summary": "The Generated Answer is mostly relevant and covers core elements but has factual errors on test timing, misses key completeness details, and includes hallucinations like 'Knowledge Graph' and 'documentation'."
+}

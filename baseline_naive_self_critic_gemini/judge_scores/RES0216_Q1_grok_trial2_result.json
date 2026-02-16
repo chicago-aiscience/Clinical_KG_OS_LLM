@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Generated Answer correctly identifies chest tightness as the primary symptom with accurate details on duration, constancy, and exacerbation (e.g., walking), and correctly notes denial of chest pain. However, it misses upper airway symptoms (hoarseness, phlegm, throat clearing from P-11), inaccurately claims denial of shortness of breath with exercise (citing D-36, but patient reports harder breathing on walks and difficulty getting a full breath in P-1, P-7, P-9), lists asthma history and worry as current symptoms (not new complaints this visit), and erroneously states that explicit denials for fevers, night sweats, chills, weight loss, cough are missing from the transcript (they are explicitly denied in P-11 to P-15). These are significant factual errors and contradictions with Gold Answer.",
+    "completeness": "Gold key points covered: chest tightness details (partially, misses 'diffuse all over', specific triggers like inspiration/getting up); difficulty full breath/SOB (covered as dyspnea); misses all upper airway symptoms (hoarse, phlegm, throat clearing). Denied symptoms: only chest pain covered accurately; misses anxiety/sweating/doom (P-6), fevers (P-12), night sweats (P-13), chills (P-14), weight loss (P-15), cough (P-11). Adds irrelevant/extraneous points like asthma history and worry. Covers ~30-40% of key points.",
+    "faithfulness": "Claims on chest tightness and dyspnea grounded with accurate citations (P-1, P-7, P-9). However, hallucinated absence of denial responses for fevers etc. (explicit in P-11-P-15); misinterprets D-36 as patient denial of SOB on exercise when patient affirms it; lists asthma and worry as symptoms not directly claimed as present complaints; some plausible but adds unverified 'shortness of breath with exercise denial'. Multiple hallucinated/misrepresented facts.",
+    "relevance": "Directly structures response around reported symptoms and explicitly denied ones, addressing the question on present respiratory/chest/upper airway complaints and screened symptoms (fevers etc.); minor tangents include asthma history and worry, but overall focused without major off-topic content."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer partially captures chest tightness and some denials but misses key upper airway symptoms and most explicit denials, includes factual errors and hallucinations about missing transcript details, resulting in low correctness, completeness, and faithfulness."
+}

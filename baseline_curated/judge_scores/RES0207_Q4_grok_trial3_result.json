@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly states that chest pain was screened for and denied by the patient (true per [D-7, P-7]), and links it appropriately to cardiac differentials like angina/MI, consistent with the Gold Answer's categorization. However, it inaccurately attributes the denial to 'I don't, no' [P-34], which is actually the patient's response to smoking ([D-34, P-34]), not chest pain ('No' [P-7]). This introduces factual errors in citation and quote, though the core fact aligns partially with Gold.",
+    "completeness": "Gold Answer covers multiple denied items across categories: chest pain, feeling faint (cardiac), loss of taste/smell/sore throat/runny nose/contact/travel (infectious), nausea/belly pain/diarrhea (GI), dry cough/no sputum, no prior SOB. Generated covers only chest pain (1 key point), missing 90+% including all exposures, other symptoms, and full differential mapping. Covers <20% of key points.",
+    "faithfulness": "Chest pain denial is verifiable in transcript ([D-7, P-7]); cardiac inference is plausible and aligns with Gold. However, wrong quote ('I don't, no') and citation ([P-34] for smoking, not chest pain) are hallucinations/misattributions. Mentions 'respiratory distress' not directly in transcript phrasing. Multiple unverifiable details present.",
+    "relevance": "Answer directly addresses part of the question by listing one denied symptom (chest pain) and linking to cardiac differentials, with no off-topic content or tangents; remains focused despite incompleteness."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer is factually partially accurate and relevant for one symptom but severely incomplete in listing denied symptoms/exposures and their differentials, marred by hallucinated citations."
+}

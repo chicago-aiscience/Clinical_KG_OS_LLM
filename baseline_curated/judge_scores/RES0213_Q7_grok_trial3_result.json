@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Gold Answer provides a precise chronological timeline starting with smoking at age 18 [P-18], teenage anxiety attacks [P-21] with an 8-year gap [P-22], smoking increase to 10 cigarettes/day for the last two years and reduction a few months ago [P-14, P-18], father's recent heart attack [P-8, P-30], escalation of academic stress in the last couple of weeks due to thesis time crunch [P-15, P-16], and chest pain onset 1.5 weeks ago [P-2, P-3, P-17], with links via stress and possible returning anxiety [P-8, P-22, P-9, P-29]. The Generated Answer omits most of these specifics (no age 18 start, no 8-year gap, no smoking escalation details, no father's heart attack, no thesis details), starts timeline incorrectly from current quitting/school stress, vaguely mentions past anxiety without teen context, covers chest pain description adequately but inaccurately notes 'no exact duration of onset' despite [P-2], and adds non-factual Knowledge Graph elements; significant factual discrepancies and omissions make core timeline incorrect.",
+    "completeness": "Gold key points: smoking start ~18, teen anxiety + 8yr gap, 2yr smoking peak + recent cut, dad HA, recent wks thesis stress, 1.5wk chest pain new, stress/anxiety links when alone. Covered: chest pain 1.5wks onset + desc (~20%), vague recent school stress, vague past anxiety, current smoking quit (~20%). Missed: all smoking history details, teen specifics/gap, dad HA, thesis time crunch, sequential phase relations. Covers ~20-49% of key points.",
+    "faithfulness": "Transcript-grounded claims: current smoking quit hard w/ school stress [P-13], past anxiety like heart flutter [P-20], chest pain desc/onset 1.5wks sharp on deep breath 20min episodes [P-1-3,6], occurs alone/studying [P-29], nervousness rapid breathing [P-19] - verifiable. Hallucinations: entire 'Knowledge Graph' references ([MEDICAL_HISTORY], stress CAUSES chest pain) not in transcript; minor misstatement on onset duration. Multiple unverifiable/hallucinated elements.",
+    "relevance": "Question requires specific timeline trace from smoking start -> teen anxiety -> recent academic stress escalation -> chest pain 1.5wks ago, with phase relations. Generated provides loose structure (current lifestyle -> past anxiety -> chest pain -> relations via stress), addresses stress-chest pain link somewhat, but ignores specified sequence/phases (no smoking start, no teen details), adds off-topic KG; partially relevant with tangents."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "The Generated Answer inadequately traces the required timeline with significant omissions of key historical details, introduces transcript-external hallucinations, and deviates from the question's sequential structure."
+}

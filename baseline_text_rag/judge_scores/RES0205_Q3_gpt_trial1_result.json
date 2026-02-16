@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the investigated diagnosis as COVID-19 and correctly states that testing was negative. The stated prompting evidence (hospital worker status; coworkers alarmed by coughing) is also consistent with the transcript content, though the answer omits other key reasons emphasized in the Gold Answer (viral/flu-like symptom constellation, persistent cough as clinical concern, PPE note, timing of test). The only clear inaccuracies are the cited transcript references (it attributes key facts to D-35 rather than the patient’s statements at P-34/P-35, and test timing is not mentioned).",
+    "completeness": "Key Gold Answer points covered: (1) COVID-19 was investigated; (2) occupational context as a hospital worker; (3) coworkers’ concern; (4) negative result. Key points missed: (1) the specific symptom constellation (initial sore throat/runny nose/flu-like symptoms); (2) the persistent nature of the cough as part of the rationale; (3) patient’s PPE/being careful at work; (4) timing of the test (at symptom onset ~2 weeks ago); (5) stayed home awaiting symptom resolution before returning to work. Overall, this is substantially incomplete relative to the Gold Answer.",
+    "faithfulness": "All main claims are supported somewhere in the transcript (COVID test done and negative; works at a hospital; coworkers scared when she coughs). However, the answer’s citations are inaccurate: it cites D-35 for hospital-worker status, coworkers’ alarm, and the negative test, but these are in patient turns (P-34/P-35). Because the supporting evidence is present but the attribution/citation is wrong, faithfulness is only moderate.",
+    "relevance": "The response stays focused on exactly what was asked: the diagnosis investigated, the evidence prompting it, and the testing result. No notable tangents."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 2,
+    "faithfulness": 3,
+    "relevance": 5
+  },
+  "average_score": 3.5,
+  "summary": "Clinically correct and relevant (COVID-19 ruled out with a negative test), but it misses several key supporting details from the Gold Answer and uses inaccurate transcript citations/attribution."
+}

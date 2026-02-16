@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer frames factors as atopic/environmental profile leading to hyperresponsive airways and exercise-induced symptoms like asthma; Generated correctly identifies allergies [P-35/36], virals [P-15], carpets [P-54], cold [P-38], and exercise triggers [P-3] but inaccurately links past virals directly to 'current wheezy symptoms' (transcript shows past resolved virals, not current association), includes erroneous [KG] citation, vaguely concludes 'susceptible respiratory system' without Gold's precise atopic/hyperresponsiveness/asthma context or notes on no antibiotics [P-16]/no carpet temporal link; some factual errors but core elements present.",
+    "completeness": "Gold key points: atopic from allergies/OTC [P-35/36]; virals trigger hyperresponsiveness [P-15/16]; carpets potential irritant no temporal link [P-54]; cold bronchospasm trigger [P-38]; other env negatives [P-53-57]; exercise/rest pattern [P-3/6/41] → hyperresponsive airways. Covered: allergies, virals, carpets, cold, exercise. Missed: atopic/asthma link, viral mechanism/no abx, carpet caveat, other env factors, rest resolution, specific hyperresponsiveness diagnosis; ~60% coverage.",
+    "faithfulness": "Most claims grounded: symptoms/activity/cold/carpets/allergies verifiable [P-1-3,15,35,36,38,54]; [KG] is hallucinated/unverifiable; past virals 'associated with current wheezy symptoms' not in transcript (past separate from current onset); 'new carpets may contribute to irritation' plausible but speculative/not stated; minor hallucinations but mostly grounded.",
+    "relevance": "Directly lists and connects specified factors (allergies, virals, carpets, cold) to exercise-induced pattern, adds relevant symptom context; minor introductory repetition but focused on question without off-topic content."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 3,
+    "relevance": 4
+  },
+  "average_score": 3.25,
+  "summary": "Generated Answer covers the key factors superficially with some inaccuracies and hallucinations but remains mostly relevant and grounded."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer states doctor's assessment as asthma reoccurring 'in some capacity' at top of differential pending exam (D-35). Generated incorrectly calls it 'asthma exacerbation' and claims cardiac ischemia is a 'primary differential' (not stated; D-36 says cardiac lower). Generated wrongly states patient has 'existing rescue puffers (salbutamol)' despite transcript (P-17/P-18) confirming patient lacks rescue inhaler and hasn't refilled in years; Gold correctly notes need to obtain them. Core assessment partially aligns but significant contradictions on differentials and medication availability.",
+    "completeness": "Gold key points: assessment (asthma top, pending exam); PE (quick exam, lung auscultation, further invx if needed); initial tx (obtain rescue puffers for trial on walks); contingency (reassess if no help, stepwise); consult doc. Generated covers assessment (partially), PE (lungs only), tx trial on walks, contingency; misses pending exam nuance, obtaining puffers (says existing), further invx/consult doc, stepwise emphasis. Covers ~60% with inaccuracies.",
+    "faithfulness": "Generated hallucinations: 'existing rescue puffers' (contradicts P-17/18); cardiac as 'primary differential' (D-36 lowers it); cites D-34 incorrectly for puffers (D-34 is about daily dose). 'Hoarseness/phlegm consistent with asthma' plausible but not doctor-stated. Core claims like asthma top (D-35), lung exam (D-35), contingency (D-35) verifiable, but multiple unverifiable/inaccurate details.",
+    "relevance": "Generated directly structures response around assessment, PE, first-step tx, and contingency, perfectly matching question structure with no off-topic content."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer captures the main structure but introduces significant factual errors and hallucinations regarding medication availability and differentials, reducing correctness and faithfulness while partially covering key points."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly identifies the clinical findings included in the doctor's summary (D-58). It claims 'Scratchy Throat' and 'Post-Nasal Drip' were part of the recap, but the transcript shows the doctor did not include these in the D-58 summary statement. Additionally, it identifies the patient's goal as 'next steps and where to go from here,' which were the doctor's words in D-58, rather than Jessica's own response in P-60 ('know if I have to like take medicine') or P-61 ('go home soon and lay down').",
+    "completeness": "The answer misses several key clinical findings that the doctor actually recapped in D-58, specifically that Jessica was not bringing anything up (no sputum), that she does not have asthma, and that she is not taking any medications besides Claritin. It also fails to capture Jessica's specific goal for medicine and rest, focusing only on the doctor's framing of the goal.",
+    "faithfulness": "The Generated Answer hallucinates that 'Scratchy Throat' and 'Post-Nasal Drip' were recapped in the doctor's summary [D-58]. While these were mentioned earlier in the transcript (P-1, P-18), they were not part of the final recap. It misattributes the source location for these claims.",
+    "relevance": "The Generated Answer is highly relevant in that it specifically addresses both parts of the prompt (the clinical findings and the patient's goal), even though the content provided is inaccurate and incomplete compared to the Gold Answer."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 2,
+    "faithfulness": 3,
+    "relevance": 5
+  },
+  "average_score": 3.25,
+  "summary": "The answer identifies the correct summary block but incorrectly adds findings not present in that summary and misses the patient's specific identification of her goals."
+}

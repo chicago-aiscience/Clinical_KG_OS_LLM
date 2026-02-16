@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer details evening birthday celebration causing missed Keppra dose [P-24], seizure later that night with patient feeling fine after and going to bed [P-8]; morning sudden SOB and dry cough starting ~3 hours prior [P-1, P-2, P-4, P-11], temp check at 37.4°C [P-5, P-6], first time SOB [P-3], decided to seek care due to uncertainty [P-1], mentioned seizure unsure if related [P-8]. Generated misplaces seizure details (says 'while in bed' and 'woke up after' not accurate to P-8), omits birthday reason for missed dose, ignores cough entirely, falsely claims temp check not documented (contradicts P-5/6), misses 3-hour onset and prior SOB history; adds irrelevant knowledge graph hallucination. Significant errors and contradictions warrant score 2.",
+    "completeness": "Gold key points: 1) evening bday disruption → missed Keppra; 2) later night seizure, fine after → bed; 3) morning SOB + dry cough; 4) ~3hrs before consult; 5) temp 37.4°C morning; 6) never SOB before; 7) seek care due to uncertainty; 8) mentioned seizure unsure related. Generated covers: missed med → seizure night before (partial), morning SOB → seek care. Misses bday reason, cough, 3hr timing, temp check, SOB novelty, relation uncertainty. Covers ~25% of key points → score 2.",
+    "faithfulness": "Generated claims: seizure 'during the night while in bed'/'woke up after' [P-8] – P-8 says 'seizure last night... fine after... went to bed', no 'in bed' or explicit waking; forgot med [P-9] ok; hallucinates 'knowledge graph confirms... [RISK_FACTOR]' not in transcript; SOB [P-1] ok; falsely states 'transcript segments do not explicitly document a temperature check' despite P-5/6; adds consultation history (epilepsy, family, Keppra) not core timeline events and cites accurately but off-topic. Multiple hallucinations and misrepresentations → score 2.",
+    "relevance": "Question seeks timeline of clinical events (seizure, resp onset, temp check, seek care decision) from evening before to consult. Generated provides structured timeline covering evening seizure, morning SOB/seek care, but omits cough/temp, adds extraneous consult history; still directly attempts timeline reconstruction with minor off-topic elements → score 4."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer partially reconstructs the timeline but omits critical details like cough, precise symptom timing, temperature check, and medication lapse reason, while introducing hallucinations and factual errors."
+}

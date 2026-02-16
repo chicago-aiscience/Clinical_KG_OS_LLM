@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer lists respiratory symptoms: increased cough frequency [P-1], increased green-yellow sputum [P-1], hemoptysis [P-1], worsened dyspnea [P-1], reduced exercise tolerance [P-4]. Systemic: possible fever [P-9-11], sinus pressure [P-12], mild headache [P-14]. Most bothersome: cough [P-12]. Generated correctly lists cough, sputum, hemoptysis, dyspnea from [P-1], and fever, but misses reduced exercise tolerance, sinus pressure, and headache. Critically, it incorrectly states shortness of breath as most bothersome citing [P-1], contradicting Gold and transcript [P-12] where cough is explicitly most bothersome. This is a significant factual error/contradiction.",
+    "completeness": "Key points from Gold: 5 respiratory (cough freq, sputum, hemoptysis, dyspnea, exercise tol), 3 systemic (fever, sinus pressure, headache), 1 most bothersome (cough). Generated covers 4 respiratory (misses exercise tol), 1 systemic (fever; misses sinus pressure, headache), 0 for most bothersome (wrong symptom). Covers ~50-60% of key points.",
+    "faithfulness": "All listed symptoms (cough, sputum, hemoptysis, SOB, fever) are directly verifiable in transcript with accurate citations [P-1, P-9]. However, claim that patient 'identified shortness of breath as the primary symptom' is not verifiable and contradicts [P-12] where cough is most bothersome; this is a hallucinated interpretation/misrepresentation despite citing [P-1] for emphasis on SOB.",
+    "relevance": "Generated Answer is structured perfectly around respiratory/systemic symptoms and most bothersome symptom, directly addressing the question with no off-topic content or tangents."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 3,
+    "relevance": 5
+  },
+  "average_score": 3.25,
+  "summary": "The Generated Answer accurately captures core respiratory symptoms from the initial complaint but misses several symptoms, omits pertinent systemic ones, and significantly errs by misidentifying shortness of breath instead of cough as most bothersome."
+}

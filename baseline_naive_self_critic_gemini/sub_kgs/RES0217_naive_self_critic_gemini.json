@@ -1,0 +1,251 @@
+{
+  "nodes": [
+    {
+      "id": "N_001",
+      "text": "tick removal",
+      "type": "MEDICAL_HISTORY",
+      "evidence": "So I understand you removed insects from your leg earlier today?",
+      "turn_id": "D-1"
+    },
+    {
+      "id": "N_002",
+      "text": "soreness",
+      "type": "SYMPTOM",
+      "evidence": "back of my knee was starting to just feel a bit sore",
+      "turn_id": "P-1"
+    },
+    {
+      "id": "N_003",
+      "text": "redness",
+      "type": "SYMPTOM",
+      "evidence": "it's still kind of red and tender there",
+      "turn_id": "P-1"
+    },
+    {
+      "id": "N_004",
+      "text": "tenderness",
+      "type": "SYMPTOM",
+      "evidence": "it's still kind of red and tender there",
+      "turn_id": "P-1"
+    },
+    {
+      "id": "N_005",
+      "text": "tick bite",
+      "type": "MEDICAL_HISTORY",
+      "evidence": "I have actually had a tick in the past",
+      "turn_id": "P-3"
+    },
+    {
+      "id": "N_006",
+      "text": "target rash",
+      "type": "SYMPTOM",
+      "evidence": "I actually had that kind of target rash thing that they talk about",
+      "turn_id": "P-3"
+    },
+    {
+      "id": "N_007",
+      "text": "antibiotics",
+      "type": "TREATMENT",
+      "evidence": "I had to take antibiotics for a bit",
+      "turn_id": "P-3"
+    },
+    {
+      "id": "N_008",
+      "text": "Lyme disease",
+      "type": "DIAGNOSIS",
+      "evidence": "the big concern for us is a disease called Lyme disease",
+      "turn_id": "D-5"
+    },
+    {
+      "id": "N_009",
+      "text": "Strathroy",
+      "type": "LOCATION",
+      "evidence": "We were uh in Strathroy along the creek.",
+      "turn_id": "P-12"
+    },
+    {
+      "id": "N_010",
+      "text": "prophylactic antibiotics",
+      "type": "TREATMENT",
+      "evidence": "we're likely going to have to put you on antibiotics just as kind of a prophylactic at the very least",
+      "turn_id": "D-6"
+    },
+    {
+      "id": "N_011",
+      "text": "high cholesterol",
+      "type": "MEDICAL_HISTORY",
+      "evidence": "just for my cholesterol",
+      "turn_id": "P-14"
+    },
+    {
+      "id": "N_012",
+      "text": "statin",
+      "type": "MEDICATION",
+      "evidence": "Yeah, I take a uh statin",
+      "turn_id": "P-15"
+    },
+    {
+      "id": "N_013",
+      "text": "physical exam",
+      "type": "PROCEDURE",
+      "evidence": "after we do a quick physical exam",
+      "turn_id": "D-18"
+    },
+    {
+      "id": "N_014",
+      "text": "blood work",
+      "type": "PROCEDURE",
+      "evidence": "just send some blood work",
+      "turn_id": "D-18"
+    },
+    {
+      "id": "N_015",
+      "text": "headaches",
+      "type": "SYMPTOM",
+      "evidence": "no headaches?",
+      "turn_id": "D-19"
+    },
+    {
+      "id": "N_016",
+      "text": "hiking",
+      "type": "ACTIVITY",
+      "evidence": "I was hiking on Friday",
+      "turn_id": "P-1"
+    },
+    {
+      "id": "N_017",
+      "text": "gardening",
+      "type": "ACTIVITY",
+      "evidence": "Saturday I was out in my garden",
+      "turn_id": "P-1"
+    },
+    {
+      "id": "N_018",
+      "text": "joint pain",
+      "type": "SYMPTOM",
+      "evidence": "do you have any other joint pain?",
+      "turn_id": "D-7"
+    },
+    {
+      "id": "N_019",
+      "text": "fever",
+      "type": "SYMPTOM",
+      "evidence": "Have you been feeling ill or have been feverish in the last little while?",
+      "turn_id": "D-8"
+    },
+    {
+      "id": "N_020",
+      "text": "ill feeling",
+      "type": "SYMPTOM",
+      "evidence": "Have you been feeling ill or have been feverish in the last little while?",
+      "turn_id": "D-8"
+    },
+    {
+      "id": "N_021",
+      "text": "tick identification",
+      "type": "PROCEDURE",
+      "evidence": "send the tick off to a local laboratory so they can identify the species for it definitively",
+      "turn_id": "D-18"
+    }
+  ],
+  "edges": [
+    {
+      "source_id": "N_002",
+      "target_id": "N_001",
+      "type": "MANIFESTATION_OF",
+      "evidence": "it was behind my left uh knee",
+      "turn_id": "P-1"
+    },
+    {
+      "source_id": "N_003",
+      "target_id": "N_001",
+      "type": "MANIFESTATION_OF",
+      "evidence": "it was behind my left uh knee",
+      "turn_id": "P-1"
+    },
+    {
+      "source_id": "N_004",
+      "target_id": "N_001",
+      "type": "MANIFESTATION_OF",
+      "evidence": "it was behind my left uh knee",
+      "turn_id": "P-1"
+    },
+    {
+      "source_id": "N_006",
+      "target_id": "N_005",
+      "type": "MANIFESTATION_OF",
+      "evidence": "I actually had that kind of target rash thing that they talk about",
+      "turn_id": "P-3"
+    },
+    {
+      "source_id": "N_007",
+      "target_id": "N_005",
+      "type": "TREATS",
+      "evidence": "I had to take antibiotics for a bit",
+      "turn_id": "P-3"
+    },
+    {
+      "source_id": "N_010",
+      "target_id": "N_008",
+      "type": "PREVENTS",
+      "evidence": "we're likely going to have to put you on antibiotics just as kind of a prophylactic at the very least, just want to make sure that um you're not at risk of developing Lyme disease",
+      "turn_id": "D-6"
+    },
+    {
+      "source_id": "N_009",
+      "target_id": "N_008",
+      "type": "RISK_FACTOR",
+      "evidence": "Strathroy is close enough to be considered a little bit of a concerning point, so I think that we will be moving forward with antibiotics",
+      "turn_id": "D-13"
+    },
+    {
+      "source_id": "N_012",
+      "target_id": "N_011",
+      "type": "TREATS",
+      "evidence": "Yeah, I take a uh statin",
+      "turn_id": "P-15"
+    },
+    {
+      "source_id": "N_001",
+      "target_id": "N_016",
+      "type": "RELATED_TO",
+      "evidence": "I was hiking on Friday",
+      "turn_id": "P-1"
+    },
+    {
+      "source_id": "N_001",
+      "target_id": "N_017",
+      "type": "RELATED_TO",
+      "evidence": "Saturday I was out in my garden",
+      "turn_id": "P-1"
+    },
+    {
+      "source_id": "N_021",
+      "target_id": "N_001",
+      "type": "RELATED_TO",
+      "evidence": "send the tick off to a local laboratory so they can identify the species for it definitively",
+      "turn_id": "D-18"
+    }
+  ],
+  "_usage": {
+    "prompt_tokens": 6339,
+    "completion_tokens": 3891,
+    "total_tokens": 10230,
+    "pass1_nodes": 15,
+    "pass1_edges": 8,
+    "pass2_nodes": 21,
+    "pass2_edges": 11
+  },
+  "_meta": {
+    "method": "self_critic_gemini",
+    "model": "gemini-2.0-flash",
+    "pass1": {
+      "nodes": 15,
+      "edges": 8
+    },
+    "pass2": {
+      "nodes": 21,
+      "edges": 11
+    }
+  }
+}

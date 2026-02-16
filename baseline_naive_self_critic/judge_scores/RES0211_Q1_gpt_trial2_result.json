@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies several of Jessica’s reported symptoms (dry cough, scratchy throat, feeling “crappy,” headache). However, it contains major factual errors about denied symptoms: it states the transcript does *not* contain explicit denials of sputum/phlegm, nausea/vomiting, joint pain, or rashes, when Jessica explicitly denied all of these ([P-5], [P-6], [P-10], [P-11], [P-13]). It also incorrectly treats sputum denial as only “implicit” via the word “dry,” despite explicit denials. Additionally, it mischaracterizes the duration as “unspecified,” even though Jessica clearly states “three or four days” ([P-1], [P-3]).",
+    "completeness": "Key reported symptoms from the Gold Answer that are missing: feeling “really hot”/feverish and hot day and night ([P-7], [P-9]), feeling “icky”/malaise framing ([P-2], [P-14], [D-15]), and tiredness ([P-13]). Key denied symptoms missed (despite being asked in the question and present in transcript): sputum/phlegm ([P-5], [P-6]), rashes/skin changes ([P-10]), nausea/vomiting ([P-11]), diarrhea ([P-12]), joint aches ([P-13]), and not feeling unable to breathe due to allergies ([P-18]). Overall, it covers well under half of the Gold Answer’s key points.",
+    "faithfulness": "Several statements are not faithful to the transcript: claiming there are no explicit denials of sputum, nausea, joint pain, or rashes contradicts the transcript directly. The mention of a “knowledge graph” is also not supported by the provided materials. While the reported symptoms it lists are grounded, the denials section includes multiple contradictions to what was actually said.",
+    "relevance": "The response attempts to address the question (reported symptoms over 3–4 days and denied symptoms when asked). However, it omits multiple symptoms and, more importantly, incorrectly asserts that key denials are not present. It remains on-topic but does not adequately answer the asked items."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "The answer is on-topic but substantially incomplete and contains major contradictions to the transcript regarding explicitly denied symptoms, resulting in low correctness, completeness, and faithfulness."
+}

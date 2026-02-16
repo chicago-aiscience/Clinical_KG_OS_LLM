@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer makes a significant factual error by stating that the doctor's explicit summary is not included in the text. In the provided transcript, D-58 is a direct and explicit summary provided by the doctor. Because of this error, the answer fails to identify the specific clinical findings recapped at the end (e.g., absence of asthma, no sputum, recent contact with the brother) and instead pulls general information from the start of the visit.",
+    "completeness": "The Generated Answer misses several key points from the Gold Answer that were explicitly mentioned in the D-58 summary: the lack of sputum production, the specific mention of the brother's cold, and the negative history for asthma. It also misses the specific goal Jessica stated in P-60 ('if I have to like take medicine or something') and her desire to go home and rest (P-61).",
+    "faithfulness": "The Generated Answer hallucinates the absence of the summary ('the doctor's explicit summary is not included in the text'). While the symptoms it lists are present in the transcript (P-1, P-13), it misattributes Jessica's primary goal to a suggestion from P-25 rather than her explicit statement in the closing summary (P-60).",
+    "relevance": "The Generated Answer attempts to address the question but fails to use the specific context requested ('In the doctor's summary at the end of the visit'). By ignoring the summary in D-58, it provides a general overview of the patient's complaints rather than the requested recap and final goal statement."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 2
+  },
+  "average_score": 1.75,
+  "summary": "The Generated Answer incorrectly claims the summary is missing from the transcript and consequently fails to address the specific points and goals discussed at the end of the visit."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer lists four main reported symptoms: sore throat with details (onset, worsening, dysphagia), difficulty breathing (onset yesterday, constant, worsening, novel), reduced sense of taste (onset 2 days ago, constant), fatigue/muscle aches (onset after sore throat, tired with aches but not weak). Generated Answer correctly identifies sore throat, dysphagia, fatigue, and muscle aches but completely misses difficulty breathing (major omission, contradicted by absence). Misrepresents reduced sense of taste as 'not lost their taste' despite patient confirming onset and constancy [P-19-P-21]. Adds extraneous details like mono history and remedies (not core current symptoms). Denied symptoms incomplete (only loss of smell vs. Gold's cough, runny nose, headaches, chest pain, loss of smell, fever, chills). Significant factual errors and omissions compared to Gold.",
+    "completeness": "Gold key reported points: sore throat (4/4 details partial), breathing (0/4), taste (1/3 misrepresented), fatigue/aches (2/3). Denied: 1/7 (only loss of smell). Covers sore throat, dysphagia (subpoint), fatigue/ache; misses breathing entirely, details on taste/denials. Approximately 25-40% coverage.",
+    "faithfulness": "All cited claims verifiable in transcript (e.g., sore throat [P-2], aches [P-25]). No fabricated facts. However, taste interpretation ('confirmed they have not lost their taste') is misleading as patient reports reduced/constant taste issue [P-19-P-21], introducing minor unverifiable spin. Breathing omission not hallucination but lack of coverage. Mostly grounded.",
+    "relevance": "Directly structures response around reported symptoms and explicit denials as per question. Addresses clinical symptoms and screened items (cough etc. implied by focus, though incomplete). Minor extraneous details (mono, remedies) but focused on question."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 4,
+    "relevance": 4
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer partially captures reported symptoms like sore throat and fatigue but critically misses difficulty breathing, misrepresents taste changes, and incompletely lists denials, leading to low correctness and completeness despite being grounded and relevant."
+}

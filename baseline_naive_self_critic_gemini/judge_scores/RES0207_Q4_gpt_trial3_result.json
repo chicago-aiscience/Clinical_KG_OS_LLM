@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies several denied symptoms (nausea/vomiting, abdominal pain, diarrhea, loss of taste/smell, sore throat) that are present in the transcript and also aligns broadly with the idea that these questions help sort infectious vs GI causes. However, it inaccurately ties the GI symptom screen to “classic” myocardial infarction presentation as the main cardiac screen, whereas the transcript’s explicit cardiac/cardiopulmonary screening was chest pain and presyncope (feeling faint). It also omits other key negative respiratory/infectious screens (e.g., runny nose) and exposure risks (sick contacts, travel) that are central in the Gold Answer. These issues make the clinical interpretation partially incorrect vs the Gold Answer.",
+    "completeness": "Key Gold Answer items covered: GI negatives (N/V, belly pain, diarrhea) and infectious symptom negatives (loss of taste/smell, sore throat) and a general infectious/cardiac/GI differential framing.\nKey Gold Answer items missed: chest pain; feeling faint; runny nose; sick contacts; travel; sputum production/dry cough characterization; denial of prior similar episodes/previous SOB. Overall, the Generated Answer captures well under ~50–60% of the Gold Answer’s enumerated negatives/exposures.",
+    "faithfulness": "The specific denied symptoms it lists are grounded in the transcript. However, the added inference that the GI screen was primarily to rule out myocardial infarction is not supported by the transcript (the doctor’s direct cardiac screen was chest pain/presyncope) and is therefore a questionable, partly ungrounded interpretation. Other inferential statements (e.g., COVID-related screening) are plausible but not explicitly stated in the encounter. Net: some grounded content with some overreach/misattribution.",
+    "relevance": "It generally addresses the question (what was denied and what categories of differential those negatives address) and stays on-topic. The main weakness is omission of several important denied symptoms/exposures asked in the transcript, not irrelevance."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 2,
+    "faithfulness": 3,
+    "relevance": 4
+  },
+  "average_score": 3.0,
+  "summary": "Partially correct and on-topic, but misses several major denied symptoms/exposures from the transcript and misattributes the cardiac differential primarily to GI symptom screening rather than the explicit chest pain/presyncope questions."
+}

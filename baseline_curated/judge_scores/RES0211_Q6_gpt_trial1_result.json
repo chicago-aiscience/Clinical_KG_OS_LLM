@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly notes parts of the doctor’s recap: 3–4 days of dry cough, “a little bit of fever,” headache, and that the brother was sick ~2 weeks earlier. However, it is inaccurate in important ways: it adds “scratchy throat” and “post-nasal drip” as items the doctor recapped in the end-of-visit summary (D-58), but those are not included in D-58. It also fails to state several recap elements that are explicitly in D-58 (no sputum production, no asthma, no meds except Claritin, and the point that no one else has been sick besides the brother). For Jessica’s primary goal, it incorrectly substitutes the doctor’s framing (“next steps…”) for Jessica’s stated goal in P-60 (“if I have to like take medicine or something”), so the key ‘next step’ she wanted is misrepresented.",
+    "completeness": "Gold Answer key points: (1) 3–4 day dry cough + little fever + headache (covered); (2) no sputum production (missed); (3) no sick contacts except brother with cold ~2 weeks ago (partially covered—brother mentioned but not the ‘no one else’); (4) no asthma (missed); (5) no meds aside from Claritin (missed); plus Jessica’s goal of whether she needs medicine (missed) and her desire to go home/lay down (missed). Overall, it captures only a minority of the required recap items and misses the central patient-stated next step.",
+    "faithfulness": "Several statements are not grounded in the specified portion of the transcript (the doctor’s summary in D-58): ‘scratchy throat’ and ‘post-nasal drip’ were discussed earlier (P-1, P-18) but are not recapped in D-58, so attributing them to the end summary is unsupported. The claim about Jessica’s primary goal is also not faithful to P-60, where she specifically asks whether she needs medicine. These issues constitute multiple transcript-grounding errors.",
+    "relevance": "The response stays focused on the two things asked (doctor’s recap findings and Jessica’s goal/next steps) and does not add major unrelated tangents. However, it is only partially responsive because it omits and misstates key elements of Jessica’s stated goal and several recap findings."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.75,
+  "summary": "Partially correct and on-topic, but it misses several explicit recap items from D-58 and misstates Jessica’s primary goal (medicine question), with additional unsupported attribution of symptoms to the end-of-visit summary."
+}

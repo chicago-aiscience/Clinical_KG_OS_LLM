@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer accurately captures key symptoms like productive cough with yellow 'custard' sputum [P-6] and red spots [P-4, P-6], exertional dyspnea [P-10], and pleuritic chest pain worsening with deep breaths [P-19] and coughing [P-18], matching Gold. It correctly notes right-sided pain [P-17] and interprets hemoptysis. However, it attributes fever only to [P-5] (subjective) without Gold's detail from [P-8], entirely omits chills [P-9], skips constant dull pain at rest [P-20, P-21], and excludes smoking risk [P-37, P-38]. No contradictions, but minor discrepancies in detail coverage vs. Gold.",
+    "completeness": "Gold key points: (1) productive cough yellow sputum + red spots [P-4,6] - covered; (2) fever [P-8] + chills [P-9] - fever partial, chills fully missed; (3) exertional dyspnea [P-10,11] - covered; (4) right chest pain constant/dull, worsens deep breath/cough, present at rest [P-17-21] - partial (right side, worsening covered; constant/dull/rest missed); (5) pleuritic pain supporting pleural involvement - covered well; (6) smoking risk [P-37,38] - missed. Covers ~60-70% of points.",
+    "faithfulness": "Claims on sputum [P-4,6], cough [P-1,6], fever [P-5], dyspnea [P-10], pain [P-17-19] verifiable in transcript. However, multiple references to non-existent 'knowledge graph provided,' its relations (e.g., [TRIGGER] exertion --> short of breath, deep breath --> chest pain), and correlations are hallucinations not grounded in transcript. Pleuritic mechanism explanation plausible but externally sourced, not transcript-based.",
+    "relevance": "Answer directly lists specific transcript findings supporting LRTI/pneumonia (cough, sputum, fever, dyspnea) and explains pleuritic pain's role in pleural inflammation with citations, perfectly addressing the question despite extraneous knowledge graph mentions."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 3.25,
+  "summary": "The Generated Answer is factually accurate and relevant with good transcript citations but lacks completeness by missing chills, full pain details, and smoking, while hallucinating a knowledge graph reduces faithfulness."
+}

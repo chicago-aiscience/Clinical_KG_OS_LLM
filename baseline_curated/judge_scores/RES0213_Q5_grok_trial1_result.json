@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer accurately summarizes family history (father's HA in 50s last year, scares her [P-8, P-30], grandpa accident [P-30]), smoking (started ~18, peaked 10/day for 2 years, now ~5/day, hard to quit [P-13,14,18]), stressors (Masters thesis pressure [P-15,16], living alone [P-26,27], nervous about running [P-28]), and connections (stress-related? but worried heart [P-8], nervous breathing [P-19], past anxiety [P-22]). Generated Answer matches core facts on family (dad HA 50s [P-8]), smoking (trying to quit, hard, prior 10/day now less [P-13]), stressors (thesis/school stress, alone studying/walking [P-29], anxiety breathing [P-19]). Minor discrepancies: phrases smoking as not 'current active' (she reports 5/day currently), omits grandpa/living alone/running details, adds interpretive 'cycle of anxiety'; hallucinates 'knowledge graph' and 'diagnosis' not in Gold/transcript. Core facts consistent.",
+    "completeness": "Gold key points: family details/cites (covered mostly, misses grandpa [P-30]); smoking details/cites (covered well); stressors specifics (covers thesis pressure, misses living alone [P-26,27], nervous running [P-28]); connections (covers stress/heart worry [P-8], breathing/anxiety [P-19], adds anxiety attacks but misses past history [P-22] explicitly). Covers contributions/interactions/illustrations for all three factors with transcript details; ~85% of key points (strong on main factors, misses some sub-details).",
+    "faithfulness": "Claims mostly verifiable: family worry [P-8], smoking struggle [P-13], stress triggers [P-29], breathing [P-19], pain on breath [P-3]. Citations accurate where used. Unverifiable/hallucinated: 'knowledge graph' mentions (twice, linking to diagnosis/symptoms - absent from transcript); 'hyperventilation' (plausible from 'breathing faster' [P-19]); 'subconsciously increase fear' (interpretation). Multiple fabricated elements (KG) but core content grounded in transcript.",
+    "relevance": "Directly structures response around the three specified factors (family, smoking, stressors), their contributions to heart concern, interactions (anxiety cycle, stress mimicking cardiac), and transcript illustrations with citations. No off-topic content; perfectly addresses question."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 3,
+    "relevance": 5
+  },
+  "average_score": 4.0,
+  "summary": "The Generated Answer is mostly accurate and complete in covering the key factors and connections from the Gold Answer, with strong relevance, but reduced by hallucinated 'knowledge graph' references and minor omissions."
+}

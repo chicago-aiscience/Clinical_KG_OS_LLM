@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the patient's asthma history [P-16], exertional chest tightness [P-1, D-34], medication reduction [D-34], and ruling out cardiac ischemia due to no pain [D-36] as key factors, aligning with the Gold Answer's main points. However, it inaccurately emphasizes hoarseness and phlegm [P-11] as presenting symptoms central to the diagnosis (Gold does not), misattributes Salbutamol specifically as the reduced daily med (contextually rescue, but Gold specifies maintenance skipping and no rescue refill), omits patient acknowledgment of possible relation [P-16], no new triggers [P-33], and therapeutic trial [D-35]; also introduces 'asthma exacerbation' vs Gold's 'asthma reoccurring'. Some factual errors but core facts correct.",
+    "completeness": "Gold key points: (1) asthma history [P-16,P-29] covered; (2) specific med limiting (evening skip [P-19], no rescue [P-17,18]) partially as general reduction; (3) exertional tightness/SOB [P-1,7,9,10] covered; (4) patient notes possible relation [P-16] missed; (5) no triggers [P-33] missed; (6) no cardiac sxs [D-36] covered; (7) puffer trial [D-35] implied but not explicit. Covers ~60% of key points (history, symptoms exertional, med reduction general, cardiac exclusion).",
+    "faithfulness": "Claims like asthma history [P-16], symptoms tightness [P-1], exertional [D-34], med reduction [D-34], recurrence [D-35], no pain cardiac low [D-36] verifiable in transcript. Hoarseness/phlegm [P-11] verifiable but not doctor-linked to dx. Salbutamol [P-25] verifiable. However, 'knowledge graph relationship' fully hallucinated/not in transcript; implies hoarseness key to dx (not grounded); 'clinical features: new onset triggered by walking' accurate but oversimplifies. Multiple hallucinated/inaccurate linkages.",
+    "relevance": "Directly structures response around symptoms, history, clinical features, and doctor's linking (history+exertion->recurrence, no pain->rule out cardiac), matching question; minor off-topic additions like hoarseness emphasis and knowledge graph."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer reasonably addresses the core elements leading to asthma as top differential but is undermined by extraneous symptoms, incomplete coverage of medication details and linkages, and hallucinated content like a knowledge graph."
+}

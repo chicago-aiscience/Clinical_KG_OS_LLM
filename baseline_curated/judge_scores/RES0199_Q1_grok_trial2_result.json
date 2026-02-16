@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the main GI (nausea, vomiting, diarrhea) and respiratory (cough) symptoms, accurately describes the cough as mostly dry [P-12], and notes two vomiting episodes [P-32], matching Gold. However, it erroneously states the transcript 'does not provide a specific frequency' for diarrhea despite [P-28] ('five or six times a day') and Gold including it. For headache severity, it cites persistence [P-3] and feeling 'really sick' [P-1] instead of the 7/10 rating [P-8] specified in Gold and question. Omits timelines (e.g., cough/diarrhea/headache starts), diarrhea nature (liquid), vomiting details (food contents), and negatives. Significant factual errors and omissions vs. Gold. Score: 2",
+    "completeness": "Key points from Gold: cough (dry, 4 days ago [P-1,P-12], stable [P-11], no sputum/blood [P-13], negatives SOB [P-14], wheezing [P-15], chest pain [P-16]); diarrhea (2 days ago [P-28], liquid stools, 5-6x/day [P-28], no blood [P-29]); nausea (today), vomiting (yesterday, 2x [P-32], food contents [P-34], no blood [P-33]); GI negatives (no bloating/gas [P-36], constipation [P-37], appetite change [P-31]); headache (4 days [P-1], persistent/bilateral forehead/top [P-3,P-5], 7/10 [P-8], no radiation [P-6]/stiffness [P-7], unusual [P-10]); extras (smell loss [P-24], fatigue [P-19]). Generated covers symptom lists, cough nature (partial), vomiting number; misses diarrhea freq/nature/timing, headache severity/location/timing, all negatives, extras, cough details beyond nature. Covers 20-49% of key points. Score: 2",
+    "faithfulness": "All stated symptom claims (dry cough [P-12], 2 vomits [P-32], persistent headache [P-3], sick [P-1]) verifiable in transcript with accurate citations. However, claim of no specific diarrhea frequency contradicts [P-28] ('five or six times a day'), representing a misreading/hallucinated absence. No other ungrounded patient facts or inaccurate citations. Some inaccurate claims. Score: 3",
+    "relevance": "Structured response lists GI/respiratory symptoms then specifically addresses requested characteristics (cough nature, diarrhea frequency, vomiting number, headache severity), directly matching question without extraneous content. Score: 5"
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 3,
+    "relevance": 5
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer identifies core symptoms and partially covers requested specifics like cough nature and vomiting episodes but inaccurately denies diarrhea frequency detail, omits headache severity rating and other characteristics, leading to moderate overall quality."
+}

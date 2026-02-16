@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly claims the transcript ends at [P-47] with no doctor response, ignoring [D-47] (which contains the summary assessment and plan) and [D-48]; it contradicts the Gold Answer's accurate extraction of the doctor's summary (cough for a little while, worse last 3 days, greenish sputum no blood, no constitutional symptoms), plan (review story with doctors), and next steps (guided by supervising physician), making it mostly incorrect.",
+    "completeness": "Gold key points: summary assessment in [D-47] (cough duration/severity, sputum details, no constitutional symptoms); plan to review with doctors [D-47]; patient addendum [P-47]; 'We'll see what we can do' [D-48]; no tests/treatments; next steps by supervising physician. Generated covers 0% of these, instead denying their existence.",
+    "faithfulness": "Generated hallucinates that consultation lacks conclusion (ends at [P-47], no doctor turn after), but [D-47]/[D-48] exist; fabricates 'pleuritic chest pain, night sweats' as HPI elements (night sweats denied [P-5], pain only when coughing [P-3]); no verification of claims against full transcript.",
+    "relevance": "Generated directly addresses the question by asserting the plan/assessment/next steps are unavailable in the transcript, with no off-topic tangents, though factually wrong."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 5
+  },
+  "average_score": 2.0,
+  "summary": "The Generated Answer is factually inaccurate, incomplete, and unfaithful to the transcript by denying the existence of the doctor's summary, plan, and next steps clearly stated in [D-47] and [D-48], despite being relevant in structure."
+}

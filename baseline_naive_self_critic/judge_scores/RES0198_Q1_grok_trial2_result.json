@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer accurately lists stuffy/runny nose for 1 week, progression (stuffy first, now running), discharge 'mostly clear' [P-5], and explicit denials for cough [P-4], post-nasal drip [P-6], sore throat/SOB/fevers/chills [P-7], loss of taste/smell [P-16]. Generated partially covers nasal symptoms and progression but inaccurately states runny 'mostly run since the beginning' (contradicts P-3 'stuffy at first'), completely misses 'mostly clear' discharge, wrongly claims no explicit denials for sore throat/cough/etc. despite 'No' responses in P-4/P-7/P-16, and omits fatigue; significant errors and contradictions warrant score 2.",
+    "completeness": "Gold key points: stuffy/runny nose 1 week (covered), progression stuffy first now running (partially), clear discharge (missed), fatigue (missed), denials cough/post-nasal/sore throat/SOB/fevers/loss taste/smell (only post-nasal via P-6 partially covered, others missed), additional negatives (missed). Covers nasal symptoms ~50% but misses core discharge character and most denials (~4/5 missed), ~30-40% coverage, score 2.",
+    "faithfulness": "Generated cites P-1/P-3/P-6/P-10 accurately for nasal symptoms/post-nasal but misinterprets P-3 progression as 'mostly run since beginning' (not verbatim, contradicts), fabricates absence of explicit denials despite verifiable 'No' in P-4/P-7/P-16, misses P-5 clear discharge despite relevance; multiple misgrounded claims and incorrect assertions about transcript content, score 2.",
+    "relevance": "Generated uses exact structure matching question (nasal symptoms, discharge character, denied symptoms) with no tangents or off-topic content, perfectly focused despite inaccuracies, score 5."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer is well-structured and relevant but has significant factual inaccuracies, misses key details like clear discharge and explicit denials, and misinterprets the transcript."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer accurately captures symptom onset one week ago (P-1, P-2), initial stuffiness (P-3), shift to runny (P-3), decongestant influence (P-10), initial 'on and off' (P-1) clarified to 'pretty constant' (P-8), and lack of improvement (P-1). Generated Answer correctly notes week duration and progression from stuffy to runny but uses incorrect citations (D-3/D-4 instead of P-3) and falsely claims no information on constant/intermittent despite direct patient response in P-8 ('pretty constant'), contradicting Gold and introducing significant factual error.",
+    "completeness": "Gold key points: 1-week onset, stuffy first, shift to runny, decongestant role, 'on and off' to constant clarification, no improvement. Generated covers onset duration (~20%), first symptom, predominant change (~50% total), but entirely misses constant/intermittent pattern, decongestants, and improvement status (covers ~50-60%).",
+    "faithfulness": "Claims on duration and progression grounded in P-2/P-3, but citations inaccurate (D-3/D-4 refer to doctor questions, not patient answers); major hallucination/misread: asserts no answer to D-8 on constant/intermittent when P-8 explicitly states 'pretty constant for the past week', introducing unverifiable false claim.",
+    "relevance": "Directly addresses core question elements (onset, first symptom, predominant change) but evades constant/intermittent by wrongly claiming absent; no off-topic content, remains focused on nasal symptoms."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer partially captures symptom progression but contains significant factual errors, incorrect citations, and hallucinates absence of key information on symptom constancy, leading to incomplete and unfaithful evaluation."
+}

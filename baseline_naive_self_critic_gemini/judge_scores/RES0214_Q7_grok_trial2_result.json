@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the stuffy nose as the first symptom just before others [P-1], followed by fever (3 days) and sore throat (ongoing) [P-1], and mentions muscle aches [P-13]. It notes husband's symptoms for a week vs. her 3-day fever [P-19]. However, it has minor discrepancies: does not precisely state sore throat around fever onset, muscle aches concurrent with fever (2-3 days) [P-13-16], doctor's confirmation of progression [D-2/3], or the ~4-day staggered difference for husband with household transmission context [P-19/20, D-51/53]. Core facts are accurate.",
+    "completeness": "Key points from Gold covered: first symptom stuffy nose [P-1], followed by fever/sore throat [P-1], muscle aches mentioned [P-13], husband timeline (week vs. 3 days) [P-19]. Missed: 'just before' precision for stuffy nose to fever with doctor confirmation [D-2,P-2,D-3,P-3]; sore throat specifically around fever onset; muscle aches concurrent with fever (2-3 days) [P-14-16]; detailed husband comparison (~4 days earlier, staggered onset, similar/ongoing symptoms [P-20], doctor's transmission note [D-53]). Covers ~60% of key points.",
+    "faithfulness": "All claims directly verifiable: stuffy nose/sore throat before fever [P-1]; fever 3 days, sore throat ongoing [P-1]; muscle ache [P-13]; husband week [P-19], her fever 3 days. Citations accurate. No hallucinations; 'later in consultation' is accurate description of dialogue flow, and timings grounded in transcript.",
+    "relevance": "Directly addresses chronological progression (stuffy nose first, then fever/sore throat/muscle ache) and husband timeline comparison, with no off-topic content. Perfectly focused on question."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 5,
+    "relevance": 5
+  },
+  "average_score": 4.25,
+  "summary": "The Generated Answer is mostly correct and highly faithful/relevant but lacks completeness in precise timings and full husband comparison details."
+}

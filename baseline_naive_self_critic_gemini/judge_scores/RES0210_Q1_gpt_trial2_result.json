@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The generated answer correctly reports the sputum as “yellow custard” with “spots of red” (blood-tinged) and correctly places the chest pain on the right side, worsened by coughing and deep breathing. However, it incorrectly pulls in “raw” from P-15 (which refers to a sore/raw throat after coughing) as part of the chest pain description, which is a factual misattribution. It also omits key qualifying descriptors of the chest pain present in the Gold Answer (constant, dull, present even when lying down), though omissions weigh more under completeness than correctness.",
+    "completeness": "Compared with the Gold Answer, it covers: sputum color/appearance and presence of blood; right-sided chest pain with pleuritic worsening; systemic chills and presence of fever. It misses several Gold Answer details: chest pain being constant/dull and present even at rest/lying down; fever characterization (subjective, started Monday, not measured, persisted until visit); mild dyspnea on exertion; additional symptoms (sore throat after coughing, resolved runny nose) and pertinent negative (no weight loss). Overall, it captures some but not most of the Gold Answer’s symptom detail.",
+    "faithfulness": "Most statements are directly supported by cited transcript lines. The main issue is interpretive: it uses the “raw” quote (P-15) in the chest pain section, which is grounded in the transcript but applied to the wrong symptom. No clear fabricated symptoms beyond this misclassification.",
+    "relevance": "It addresses the question’s requested categories (sputum description; chest pain location/quality; systemic fever/chills) with minimal tangential content. The only mild relevance issue is the inclusion/misplacement of the sore throat ‘raw’ detail within the chest pain description."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 4,
+    "relevance": 4
+  },
+  "average_score": 3.5,
+  "summary": "Partially correct and mostly grounded, but it omits several key symptom qualifiers (especially chest pain and fever details) and misattributes the ‘raw’ throat symptom to chest pain."
+}

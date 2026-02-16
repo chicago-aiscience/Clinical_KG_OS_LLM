@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the deprioritized condition as a “cardiac ischemic picture” and accurately reports the clinician’s stated rationale: symptoms were tightness rather than pain, and the clinician noted the patient did not really get out of breath with exercise and had no pain associated with it. These points align with D-36 and patient reports (P-1/P-5). No clear contradictions with the Gold Answer are present.",
+    "completeness": "Key Gold Answer points covered: (1) condition lowered = cardiac ischemic picture; (2) chest complaints = tightness rather than pain; (3) clinician comment about not really getting out of breath with exercise; (4) absence of pain. Key points missed: the doctor/patient explicitly screened and denied associated “red flag” symptoms (anxiety, sweating, feeling of impending doom) (D-6/P-6), which the question explicitly asks for (“absence of certain symptoms”). Also omitted nuance that patient did report some difficulty getting a full breath (P-7) while clinician still characterized it as not classic exertional dyspnea.",
+    "faithfulness": "All included claims are supported by the transcript: cardiac ischemia lower on differential (D-36), tightness vs pain (P-1 and also P-5), and ‘didn’t really get out of breath with exercise’ and ‘no pain’ (D-36). No hallucinated symptoms are introduced. Minor issue: it does not cite the stronger ‘no pain’ quote (P-5), but P-1 still supports the claim.",
+    "relevance": "The answer stays focused on the asked elements (which condition was lowered and what symptom findings supported that). However, it incompletely addresses the ‘absence of certain symptoms’ portion by not mentioning the denied anxiety/sweating/impending-doom screen."
+  },
+  "scores": {
+    "correctness": 5,
+    "completeness": 3,
+    "faithfulness": 5,
+    "relevance": 4
+  },
+  "average_score": 4.25,
+  "summary": "Accurate and transcript-grounded identification of cardiac ischemia as lower on the differential with appropriate supporting symptoms, but incomplete because it omits the key pertinent negatives (anxiety/sweating/impending doom) explicitly asked for."
+}

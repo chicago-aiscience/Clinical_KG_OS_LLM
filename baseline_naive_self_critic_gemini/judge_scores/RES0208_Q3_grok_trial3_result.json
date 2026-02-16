@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Generated Answer correctly identifies the general infectious symptoms as fevers, fatigue, and muscle aches from D-36, matching Gold. It also correctly lists difficulty breathing, sore throat, and cough as additional symptoms for COVID concern from D-36. However, it erroneously includes patient's self-reported 'feeling hot' (fever, already in general) and loss of taste as part of the doctor's COVID reasoning, and references a non-existent 'knowledge graph' linking them to COVID; Gold explicitly notes loss of taste/smell were elicited but not cited by doctor in D-36 assessment. This introduces factual errors on what the doctor specifically cited.",
+    "completeness": "Covers key Gold points: general symptoms (fevers, fatigue, muscle aches); additional COVID symptoms (difficulty breathing, sore throat, cough). Misses Gold's nuance that loss of taste/smell were not explicitly named in D-36, doctor's focus on respiratory findings, and subsequent orders/isolation. Adds extraneous patient reports and knowledge graph. Covers ~80-90% of core points.",
+    "faithfulness": "Main claims from D-36 (symptoms listed) verifiable in transcript. Patient quotes [P-1,P-20,P-4] accurate but not central to doctor's assessment. Hallucinates 'knowledge graph' entirely absent from transcript; misattributes loss of taste/hot as doctor's COVID corroboration (doctor did not cite them in D-36 summary). Multiple unverifiable/hallucinated elements.",
+    "relevance": "Directly structures response around the two-part question (general infection symptoms vs. COVID-specific), citing transcript. Minor off-topic additions like knowledge graph and extra patient symptoms, but overall focused."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 4,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 3.25,
+  "summary": "The Generated Answer is mostly accurate on core symptoms cited by the doctor but reduced by hallucinations like a non-existent knowledge graph and misattribution of uncited symptoms to the COVID concern."
+}

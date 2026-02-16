@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly states that the specific screening questions about fever [D-7], runny nose [D-8], sick contacts [D-10], recent travel [D-11], rashes [D-13], and phlegm production [D-31] were not captured in the transcript, which is false as they are explicitly present with negative patient responses [P-7, P-8, P-10, P-11, P-13, P-31]; it fails to accurately identify the screened conditions (e.g., infectious causes like pneumonia/bronchitis, URTI, contagious infections, exposure-related issues, systemic/viral with rashes, productive cough) as detailed in the Gold Answer, instead focusing on unrelated asthma triggers, resulting in major contradictions.",
+    "completeness": "Key points from Gold Answer: screenings for infectious pneumonia/bronchitis (fever), URTI/viral wheeze (runny nose), contagious etiologies (sick contacts), exposure infections (travel), systemic/allergic/viral with rashes (rashes), productive vs. reactive cough (phlegm), all with negative responses narrowing to reactive airway disease; Generated Answer covers 0% of these, as it denies the questions' existence and discusses unrelated triggers like cold weather, allergies, and exercise instead.",
+    "faithfulness": "Generated Answer hallucinates the absence of the specified questions despite their clear presence in the transcript with exact citations; it cites other transcript sections [P-38, P-35, etc.] for asthma reasoning but fabricates non-existence of key screening queries, introducing multiple unverifiable and incorrect claims not grounded in the transcript.",
+    "relevance": "The question specifically asks about conditions screened via the listed questions (fever, runny nose, etc.) and narrowing responses; Generated Answer dismisses these questions as absent, pivoting to general differential toward asthma using unrelated transcript elements, making it largely off-topic from the precise query."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 2
+  },
+  "average_score": 1.25,
+  "summary": "The Generated Answer is fundamentally incorrect, incomplete, and unfaithful by denying the existence of key transcript questions central to the Gold Answer and query, rendering it largely irrelevant."
+}

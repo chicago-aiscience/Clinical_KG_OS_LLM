@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer lists specific endorsed symptoms: worsening cough over week beyond COPD baseline with triggers (stairs), increased SOB last few days severe on short walks, sputum clear-to-white to yellow, chest discomfort on coughing, chills last couple days no measured fever. Generated correctly notes SOB worsening few days [P-1,P-8 partial], chronic cough increased week [P-1 partial], sputum change [P-6 ok minor phrasing]. Errors: Misclassifies high cholesterol [P-33] and past BP meds [P-34] as 'systemic symptoms endorsed' (these are history, not symptoms); misses chest discomfort [P-13], chills [P-29]; wrongly claims NO explicit denials for orthopnea [P-9], PND [P-10], palpitations [P-14], hemoptysis [P-7 explicit 'No'], fever (implied no measured). Significant contradictions on denials and omissions. Score: 2.",
+    "completeness": "Gold key points: Endorsed - worsening cough details/triggers, SOB details/severity, sputum change, chest discomfort, chills/no fever measure; Negatives - hemoptysis, orthopnea, PND, palpitations, plus long list (calf pain etc.). Generated covers partial SOB, partial cough, sputum change (~25% endorsed); misses cough triggers, chest discomfort, chills, all negatives (claims absent). Adds irrelevant history. Covers 20-49%. Score: 2.",
+    "faithfulness": "Claims verifiable: SOB [P-1,P-8], cough [P-1], sputum [P-6]. Citations accurate. Unverifiable/hallucinated: 'Systemic symptoms' as high cholesterol/BP history (in transcript but not symptoms); 'transcript does not contain explicit denials' for orthopnea/PND/palpitations/hemoptysis/fever - contradicted by [P-7 no blood, P-9 no SOB laying, P-10 no PND, P-14 no palpitations]; implies no hemoptysis only by yellow sputum (ignores direct denial). Multiple misreads/hallucinations on denials. Score: 2.",
+    "relevance": "Structure addresses respiratory/systemic endorsed, sputum change, denials per question. But partial coverage, adds off-topic history as 'symptoms', wrongly dismisses denials core to question (e.g., orthopnea/PND/hemoptysis/palpitations explicitly listed). Partially relevant with off-topic/misguided content. Score: 3."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "The Generated Answer partially captures core respiratory symptoms and sputum change but misses key details like triggers, chest discomfort, chills, and especially all pertinent negative denials which are explicitly stated in the transcript, while incorrectly including medical history as endorsed symptoms."
+}

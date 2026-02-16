@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer details diagnosis at age 8 (now 10), baseline bronchodilator use once every two weeks (P-8), triggers (exercise, cold, seasonal), and two-week exacerbation with dry nonstop cough, increased wheezing/SOB/chest tightness, bronchodilator 5-6x/week, wheezing > use, nighttime symptoms, no precipitant. Generated correctly notes diagnosis/age, current symptoms (cough, SOB, wheezing, nighttime), increased use to near-daily, triggers; however, factual errors include missing exact baseline/current frequencies, stating exacerbation as 'past week' (vs clarified two weeks), omitting chest tightness/wheezing>use/no precipitant, and incorrectly listing goldfish as a trigger (P-39 only mentions having goldfish, not as trigger). Some errors but core progression correct.",
+    "completeness": "Key Gold points covered: diagnosis age/baseline infrequency implied/current symptoms (cough/SOB/wheezing/nighttime)/increased use/triggers. Missed: exact baseline 'once every two weeks'/current '5-6x/week'/chest tightness/wheezing exceeds use/no precipitant screening/precise two-week duration. Covers ~60-70% of key points.",
+    "faithfulness": "Most claims grounded (e.g., symptoms from P-1/P-15/P-18, age D-3/P-2, triggers P-9/P-11); citations accurate where used. Unverifiable/hallucinated: goldfish as trigger (P-39 not indicative), baseline frequency implied but not cited (exists in P-8), current use frequency not precisely from transcript (P-8 has it but summarized vaguely), triggers framed as current exacerbation drivers (they were also baseline). Some hallucinated facts.",
+    "relevance": "Directly addresses symptom/usage evolution with structured timeline from diagnosis to current exacerbation; minor tangents like family history/goldfish but focused on question."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer captures the overall progression of asthma from mild baseline to exacerbation but misses key factual details like precise bronchodilator frequencies, includes a hallucinated goldfish trigger, and omits some symptom nuances from the Gold Answer."
+}

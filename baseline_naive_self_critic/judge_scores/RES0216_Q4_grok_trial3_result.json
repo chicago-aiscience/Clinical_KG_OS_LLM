@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the condition as 'cardiac ischemia' (minor rephrasing of Gold's 'cardiac ischemic picture' from [D-36]). It accurately notes tightness without pain as per [P-5] and [D-36], aligning with Gold. However, it omits the doctor's specific citation of lack of exertional dyspnea/out-of-breath with exercise ([D-36]) and only partially covers absences by mentioning no pain but missing anxiety, sweating, or impending doom ([D-6, P-6]). It incorrectly implies 'rules out' via a non-existent knowledge graph, contradicting Gold's 'lowered likelihood.' Some factual errors but main point correct.",
+    "completeness": "Gold key points: condition ('cardiac ischemic picture'), nature (tightness not pain; no exertional dyspnea/tightness vs classic dyspnea), absences (no pain; no anxiety/sweaty/doom). Generated covers: condition (~100%), tightness/no pain (~50% of nature). Misses: exertional dyspnea distinction, anxiety/sweaty/doom absences (~50% missed). Covers ~60% of key points.",
+    "faithfulness": "Claims of tightness [P-1,P-5,D-36], difficulty breathing [P-7], no pain [P-5,D-36] verifiable in transcript. However, 'knowledge graph' reference, '[FINDING] no pain --[RULES_OUT]--> [DIAGNOSIS] cardiac ischemia,' and implication of outright 'rules out' are entirely hallucinated/not in transcript. Multiple hallucinated elements.",
+    "relevance": "Directly names condition and structures evidence into 'nature of chest complaints' (tightness/difficulty/no pain) and 'absence' (no pain), matching question's request for both categories. Knowledge graph is minor off-topic tangent but core is focused."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer is mostly correct and relevant but incomplete in covering all cited symptoms from the Gold Answer and faithfulness suffers from hallucinated knowledge graph references."
+}

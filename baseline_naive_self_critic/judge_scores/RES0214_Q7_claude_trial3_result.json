@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the stuffy nose as the first symptom, followed by fever (3 days duration) and sore throat. It accurately notes muscle aches and correctly states the husband had symptoms for the past week. However, it lacks the precise temporal relationships established in the Gold Answer, such as sore throat developing around fever onset, muscle aches appearing 'over the past two to three days' concurrently with fever, and the calculation that husband's illness began approximately four days before the patient's fever onset.",
+    "completeness": "The Generated Answer covers the main symptom progression (stuffy nose → fever → sore throat, plus muscle aches) and mentions the husband's one-week timeline. However, it misses several key details from the Gold Answer: (1) the specific confirmation dialogue between doctor and patient about symptom order [D-2, P-2, D-3, P-3], (2) the temporal overlap between fever and muscle aches explicitly confirmed [D-15, P-15, P-16], (3) the sore throat being 'still ongoing' and 'not going away', (4) the specific calculation that husband's symptoms began ~4 days before patient's fever, and (5) the doctor's interpretation of staggered onset as consistent with household transmission [D-51, D-53].",
+    "faithfulness": "The Generated Answer is well-grounded in the transcript. All claims can be verified: stuffy nose first [P-1], fever for 3 days [P-1], sore throat [P-1], muscle aches [P-13], and husband's symptoms for past week [P-19]. The inference that husband's onset was earlier is reasonable from the transcript. No hallucinated facts are present. Citations could be more explicit but the content is faithful.",
+    "relevance": "The Generated Answer directly addresses the question by describing the chronological progression (stuffy nose → fever → sore throat, muscle aches), identifying which symptom appeared first, and comparing timelines with the husband. It stays focused on the question without irrelevant content. The structure follows the question's requirements closely."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 5,
+    "relevance": 5
+  },
+  "average_score": 4.25,
+  "summary": "The Generated Answer provides a factually accurate and relevant response that correctly identifies the symptom progression and timeline comparison. It demonstrates strong faithfulness to the source material with no hallucinations. However, it lacks the comprehensive detail and precise temporal relationships present in the Gold Answer, including specific dialogue confirmations, the concurrent timing of fever and muscle aches, the calculated 4-day gap between husband and patient symptom onset, and the clinical interpretation of household transmission patterns. The response covers main points but misses nuanced details that would make it complete."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Gold Answer accurately extracts the doctor's summary assessment from [D-47] (cough for a little while, worse last 3 days, greenish sputum no blood, no constitutional symptoms), plan to review story with supervising doctors [D-47], and implies next steps guided by that review, with no tests ordered. The Generated Answer incorrectly claims no doctor turns exist and transcript ends at [P-27], directly contradicting the full transcript provided up to [D-48] and the Gold Answer's facts. This is a complete factual error.",
+    "completeness": "Gold key points: summary assessment details ([D-47]), absence of constitutional symptoms ([D-47], cross-ref P-5-P-8), plan to review with doctors ([D-47]), patient add-on and response ([P-47],[D-48]), no tests/treatments, next steps by supervising MD. Generated Answer covers 0% of these, instead asserting information unavailable.",
+    "faithfulness": "Generated Answer hallucinates that transcript contains only patient turns [P-1] to [P-27] (mentions cat allergy hypothesis), claims no doctor responses or plans; actual transcript has full D-1 to D-48 turns, including exact relevant [D-47]-[D-48]. No verifiable basis for claims of missing doctor parts; largely fabricated absence.",
+    "relevance": "Question asks for doctor's plan, assessment, and next-steps guidance at end; Generated Answer does not provide any, instead off-topic claim of missing transcript data, failing to address or analyze the provided source."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 1
+  },
+  "average_score": 1.0,
+  "summary": "The Generated Answer completely fails by hallucinating an incomplete transcript lacking doctor statements, providing no correct information on the question despite full details in source and Gold Answer."
+}

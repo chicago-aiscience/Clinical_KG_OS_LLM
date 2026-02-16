@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer does not identify the key *denied* symptoms/exposures that were actually screened (e.g., chest pain, presyncope, GI symptoms, sick contacts, travel, loss of taste/smell, sore throat, runny nose). It incorrectly reframes the visit around dyspnea/cough (which were present, not denied) and adds a misleading claim that the patient “denied the relationship” between seizure and respiratory symptoms—where the transcript shows uncertainty (“I don’t know if that’s related”), not a denial. The differential mapping is also inaccurate/overly narrow compared to the Gold Answer’s implied categories (cardiac/cardiopulmonary, infectious/URI/COVID-type, GI/systemic).",
+    "completeness": "Misses nearly all key negatives listed in the Gold Answer:\n- Missed: chest pain; feeling faint; nausea/vomiting; belly pain; diarrhea; sick contacts; travel; loss of taste/smell; sore throat; runny nose; prior similar episodes/previous SOB.\n- Partially mentioned: cough characterization as dry (but not framed as a denied symptom in context of sputum production).\nOverall coverage is well under 20% of the Gold Answer’s key points.",
+    "faithfulness": "Several statements are not well-grounded or are mischaracterized:\n- “Patient denied the relationship between the seizure and the reported respiratory symptoms” is not supported; patient expressed uncertainty.\n- The differential statements (“cardiac issues … addressed by shortness of breath,” “infectious … by the cough”) are generic and not explicitly derived from the transcript’s negative screening pattern.\nWhile some details (dry cough) are present in the transcript, the central claims about denials and the intended screening are not faithfully represented.",
+    "relevance": "The question asks for (1) specific denied symptoms/exposures and (2) what differential categories those negatives address. The Generated Answer largely fails to list the denied items and instead focuses on presenting symptoms and the seizure context, so it only weakly addresses the prompt."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 2
+  },
+  "average_score": 1.75,
+  "summary": "The answer is largely incomplete and partially inaccurate, missing most denied symptoms/exposures and misrepresenting the transcript’s negative screening and implied differential categories."
+}

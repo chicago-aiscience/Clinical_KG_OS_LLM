@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly states that the doctor's complete plan was not communicated, directly contradicting the Gold Answer and transcript evidence (e.g., [D-1], [D-37], [D-39], [D-40]) which detail the plan including exam, consultation, tests (chest X-ray and COVID swab), and follow-up; instead, it summarizes patient history, introducing factual errors about the absence of a plan.",
+    "completeness": "Key points from Gold Answer (initial visit structure [D-1], chest X-ray [D-37], COVID swab with explanations [D-39], consultation with supervising physician [D-37], follow-up to arrange tests and return [D-40]) are completely missed; Generated Answer covers 0% of these, focusing instead on unrelated patient history summary.",
+    "faithfulness": "Generated Answer hallucinates that no plan was communicated despite clear transcript evidence ([D-1], [D-37], [D-39], [D-40]); patient history summary is partially grounded but irrelevant to the question and does not verify claims against the full transcript.",
+    "relevance": "Generated Answer does not address the question about the doctor's plan, instead denying its existence and providing an off-topic clinical summary of patient history."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 1
+  },
+  "average_score": 1.25,
+  "summary": "The Generated Answer is fundamentally incorrect, incomplete, and irrelevant by falsely claiming no plan was communicated and substituting patient history summary."
+}

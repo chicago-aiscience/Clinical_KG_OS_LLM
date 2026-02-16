@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer directly contradicts the transcript and Gold Answer. In the transcript, the doctor explicitly asked about: living situation (\"where do you currently live?\" [D-45]), home/environmental exposures (old carpets, dust, mold, asbestos, pets [D-46]), sick contacts ([D-47]), workplace and workplace sick contacts (where do you work [D-48]; anyone at work been sick [D-50]), and travel ([D-49]). The Generated Answer incorrectly claims there is “no evidence” the doctor questioned these areas, which is factually wrong.",
+    "completeness": "Gold Answer key points include: (1) living situation (apartment in city, alone), (2) environmental triggers (carpets/dust/mold/asbestos/pets) denied, (3) contact with sick individuals (mostly home; possible exposure at work lunch room), (4) workplace (car dealership) and whether coworkers sick (denied), (5) travel (denied), plus substance-use screening and conclusion no clear source identified. The Generated Answer covers essentially none of these; it instead asserts they were not explored. Thus it misses nearly all required content.",
+    "faithfulness": "The Generated Answer is not grounded in the provided transcript because it asserts the doctor did not ask about living situation, workplace, travel, or sick contacts—despite explicit questions and answers about each in the transcript ([D-45]–[D-50]). This is a major misrepresentation of the source content.",
+    "relevance": "The response is on-topic (it attempts to address whether the doctor explored exposure sources), but it fails to answer the question as asked (which requests the specific sources explored) and provides an incorrect denial rather than the requested list. Therefore relevance is low to moderate."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 2
+  },
+  "average_score": 1.5,
+  "summary": "The Generated Answer is largely incorrect and incomplete, contradicting clear transcript evidence that the doctor did systematically assess living environment, workplace exposure, travel, and sick contacts."
+}

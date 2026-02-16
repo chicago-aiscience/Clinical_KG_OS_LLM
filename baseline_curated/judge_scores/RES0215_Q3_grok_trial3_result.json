@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer specifies 'pediatric asthma with exercise-induced bronchoconstriction in the context of an atopic predisposition'; Generated Answer states 'Asthma', which is factually consistent at a high level but less precise (misses 'pediatric', 'exercise-induced bronchoconstriction', 'atopic predisposition'). Core diagnosis matches, symptoms and cited supports are accurate to transcript, but Generated underemphasizes exercise trigger central to Gold and question; minor reference to external 'knowledge graph' not contradicting but extraneous. Overall minor discrepancies, core facts correct.",
+    "completeness": "Gold key points: specific diagnosis phrasing, exercise triggers [P-3,P-6,P-41], reversibility [P-6,P-33], cold weather [P-38], multiple settings [P-38], seasonal allergies [P-35,P-36], nocturnal episode [P-43,P-44], pertinent negatives (fever [P-7], runny nose [P-8], contacts [P-10], phlegm [P-31]). Generated covers: general symptoms [P-1,P-2], cold [P-38], allergies [P-35,P-36], partial intermittent [P-43]; misses exercise details, multiple settings, full reversibility cites, nocturnal, all negatives, precise diagnosis. Covers ~50-60% of key points.",
+    "faithfulness": "All primary claims verifiable: wheeze/SOB/cough [P-1,P-2], cold trigger [P-38], allergies [P-35,P-36], one resolving episode [P-43]; however, hallucinated 'knowledge graph [MEDICAL_HISTORY]' reference for cold air not in transcript; interpretive claims (hallmarks, patterns) plausible but add unverifiable details. Mostly grounded with minor hallucination.",
+    "relevance": "Directly names diagnosis ('Asthma') and lists transcript-supported evidence addressing question's symptoms/triggers; notes prompt's activity trigger but prioritizes transcript details; minor tangent with external knowledge graph, but focused on question's respiratory diagnosis and supports."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 3,
+    "relevance": 4
+  },
+  "average_score": 3.5,
+  "summary": "The Generated Answer is mostly correct and relevant but incomplete in covering key supportive findings from the Gold Answer and includes minor hallucinated external references."
+}

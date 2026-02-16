@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies that the presentation could represent an asthma exacerbation/recurrence and correctly cites the clinician’s impression that asthma is “top of the differential” [D-35]. However, it contains a major factual error by stating that the transcript does not include details about skipping the evening maintenance dose or not refilling the rescue inhaler—those details are explicitly present ([P-19] for skipping the evening dose; [P-17], [P-18] for not refilling/using the rescue inhaler for a couple of years). It also adds an unsupported claim about a “Knowledge Graph” explicitly stating associations, which is not part of the transcript or Gold Answer.",
+    "completeness": "Key Gold Answer points covered: (1) asthma history and current chest tightness/dyspnea, (2) clinician considers asthma recurrence. Key points missed: (1) reduction of maintenance inhaler from twice daily to morning-only and how this could worsen control; (2) failure to refill rescue inhaler for years and the implication that the patient lacks a fast-acting bronchodilator; (3) explicit linkage that the patient has been “limiting” asthma medication [D-34]; (4) exertional worsening/deep breath trigger framing and associated hoarseness/phlegm as consistent with asthma recurrence; (5) rationale for obtaining rescue puffer as first step [D-35]. Overall, it omits the central medication-adherence mechanism asked in the question.",
+    "faithfulness": "Multiple issues reduce grounding: it introduces “Knowledge Graph” content not in the transcript, and it incorrectly claims the transcript lacks the evening-dose skipping and rescue-inhaler non-refill history, despite clear supporting lines [P-19], [P-17], [P-18]. Other cited elements (symptoms and clinician assessment) are supported.",
+    "relevance": "The question specifically asks how asthma history combined with skipping the evening maintenance dose and not refilling rescue inhaler could relate to new symptoms. The response largely addresses asthma recurrence generally but fails to address (and explicitly dismisses) the medication-behavior components that are central to the question, making it only partially responsive."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "Partially identifies asthma recurrence but misses and incorrectly denies the transcript’s key adherence details (skipped evening maintenance dosing and lack of rescue inhaler), includes unsupported “Knowledge Graph” content, and is therefore incomplete and weakly grounded."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer is factually inconsistent with the Gold Answer and the transcript. The transcript explicitly states the symptom order: Jessica first noticed a scratchy throat and then started coughing, and the cough is dry (P-4). The Generated Answer incorrectly claims the transcript does not state the chronological order. It also incorrectly states there is no mention of feeling hot/fever-like symptoms, despite clear mentions of feeling hot (P-7, P-9) and the clinician summarizing “a little bit of fever” (D-58).",
+    "completeness": "It misses essentially all key points from the Gold Answer: (1) scratchy throat preceding dry cough; (2) presence of headache and malaise/fatigue; (3) description of feeling hot as persistent day and night; (4) the fact that the exact day of onset of feeling hot relative to throat/cough is not specified, only that it is part of the same multi-day illness. Instead, it denies the existence of several of these elements.",
+    "faithfulness": "Multiple statements are directly contradicted by the transcript: the order of throat then cough is explicitly stated (P-4), and feeling hot is explicitly stated (P-7, P-9). These are not just omissions; they are negations of documented content, making the answer largely ungrounded/incorrect relative to the provided transcript.",
+    "relevance": "The response is on-topic (it attempts to address symptom order and the timing of feeling hot relative to cough/throat), but because it denies key transcript information and fails to describe the actual progression, it only partially addresses the question’s intent."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 3
+  },
+  "average_score": 1.5,
+  "summary": "The Generated Answer is largely incorrect and unfaithful to the transcript, missing or denying key documented symptom progression and the reported persistent feeling of heat."
+}

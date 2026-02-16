@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly states that inhaler frequency is not documented (contradicts P-26 which specifies daily maintenance and rescue ~once every two weeks) and that hypertension is not mentioned (contradicts P-22, P-23, P-24 which detail diagnosis, no meds, lifestyle choice, BP OK), while Gold Answer accurately reflects these transcript facts; only minor point on general puffer use [P-1] is correct, but core facts are contradicted or omitted.",
+    "completeness": "Key Gold points covered: general puffer use for COPD (minimal); missed: specific inhaler types/frequencies, no home oxygen, HTN diagnosis/management/reason (lifestyle changes, weight loss, walking, BP OK, doctor support), quit smoking, rare alcohol, no allergies, overall management status. Covers <20% of key points.",
+    "faithfulness": "Partial grounding: puffer use [P-1] verifiable; but hallucinates 'frequency not documented' (P-26 exists), fabricates limited transcript range [D-4 to P-12] excluding HTN/inhaler details (full transcript provided), and wrongly claims no HTN discussion; multiple hallucinated absences.",
+    "relevance": "Attempts to structure answer around COPD and HTN per question but derails into unfounded claims of missing info, partially addressing only general COPD management while ignoring HTN entirely."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 3
+  },
+  "average_score": 1.5,
+  "summary": "The Generated Answer is largely incorrect, incomplete, and unfaithful by denying key transcript details present for both COPD inhaler use and hypertension management."
+}

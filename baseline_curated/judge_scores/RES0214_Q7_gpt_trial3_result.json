@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer contains two substantive factual problems relative to the Gold Answer/transcript: (1) It places the sore throat after the fever (“concurrent with the fever”), whereas the transcript indicates the sore throat was already present early (“just before that I had a stuffy nose … and I had a sore throat … I still do”) and is part of the early illness course rather than clearly following the fever. The Gold Answer describes stuffy nose first, then sore throat, then fever. (2) It lists “Rash” as a later symptom of the illness and cites [P-38], but [P-38] refers to a penicillin allergy reaction (“I get a rash”), not a current symptom. The comparison that the husband had similar symptoms for a week is correct but lacks the Gold Answer’s more specific inference (husband preceding her by several days relative to her fever).",
+    "completeness": "Key Gold Answer points covered: stuffy nose as first symptom; fever present for 3 days; sore throat ongoing; muscle aches present for 2–3 days; husband with similar symptoms for a week and thus earlier onset. Key points missed/underdeveloped: explicit ordering of sore throat as the next symptom after stuffy nose (before fever); explicit statement that muscle aches overlap temporally with fever (confirmed by clinician); the Gold Answer’s clearer relative timing inference (husband ~4 days earlier than her fever onset) and note of staggered onset consistent with household transmission (mentioned in clinician’s reasoning).",
+    "faithfulness": "Most statements are grounded in the transcript (stuffy nose, fever duration, muscle aches, husband sick for a week). However, the ‘rash’ item is hallucinated as a presenting symptom (it is only an allergy reaction). The sore-throat timing/ordering is also not well-grounded because the transcript implies sore throat was present early, not newly appearing after fever. These issues reduce faithfulness.",
+    "relevance": "The response is generally focused on symptom chronology and comparison with the husband’s timeline, which directly answers the question. The added ‘rash’ item is irrelevant/misleading for the asked chronology of the current illness but does not dominate the answer."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.75,
+  "summary": "Partially answers the chronology and husband comparison, but includes a major hallucination (rash as a symptom) and misorders the sore throat relative to the fever, reducing correctness and faithfulness."
+}

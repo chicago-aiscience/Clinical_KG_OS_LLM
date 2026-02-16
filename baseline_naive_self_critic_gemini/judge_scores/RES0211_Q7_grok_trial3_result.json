@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer specifies the order as scratchy throat first [P-4], followed by dry cough [P-4], with headache, malaise, and fatigue by visit time; feeling hot is persistent but timing relative to throat/cough unspecified, part of same illness. Generated Answer incorrectly lumps cough and scratchy throat as initial without order (contradicting Gold), claims hot followed respiratory and systemic symptoms (Gold says unspecified), and introduces non-existent 'Knowledge Graph' mappings; significant factual contradictions on sequence and timing.",
+    "completeness": "Gold key points: 3-4 days duration, first scratchy throat then dry cough, headache, malaise/crappy, fatigue, persistent hot all day/night no specific timing, progression upper to systemic. Generated covers 3-4 days, cough/throat (no order), malaise, headache, hot as subsequent; misses precise order, fatigue, hot details (clothing, night sweats denial), doctor fever summary; covers ~60% of points.",
+    "faithfulness": "Claims grounded: cough/throat/headache/malaise/hot from P-1/P-7 ok; but 'Knowledge Graph' with symptom links (e.g., dry cough --ASSOCIATED_WITH--> malaise, feeling hot --SAME_AS--> fever) entirely fabricated, not in transcript; infers hot as 'subsequent/progression/escalation' not verifiable (transcript lacks timeline for hot vs throat/cough); multiple hallucinations.",
+    "relevance": "Directly structures answer around symptom order/progression over 3-4 days and hot's relation to cough/throat as requested; Knowledge Graph tangents minor distractions but core focus matches question."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer has significant factual errors on symptom order and timing, hallucinates a Knowledge Graph, partially covers key points but misses details, and remains mostly relevant."
+}

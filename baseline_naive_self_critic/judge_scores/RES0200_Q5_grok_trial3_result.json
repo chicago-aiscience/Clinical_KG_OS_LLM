@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer factually reports patient's smoking history (current half pack/day reduced from 1-2 packs, citations), doctor's acknowledgment, timelines (cough 10 years, COPD dx 5 years consistent with exposure), no rec drugs, and family history (father lung ca heavy smoker, patient worry, mother healthy, doctor's question). Generated correctly reports smoking details and family facts from transcript. However, it introduces a non-existent 'knowledge graph' to claim smoking as direct RISK_FACTOR for COPD (plausible medically but not stated in Gold or explicitly linked in transcript for relation), and erroneously links family lung cancer directly to COPD risk via KG ('[MEDICAL_HISTORY] lung cancer --[FAMILY_HISTORY_OF]--> [DIAGNOSIS] copd'), which Gold does not do—family hx is reported but not causally tied to patient's COPD. Core transcript facts match, but added causal claims via hallucinated KG are factual errors/discrepancies.",
+    "completeness": "Gold key points: personal smoking current (half pack), change (from 1-2 packs), doctor acknowledgment/resources [D-45], cough 10 yrs [P-3], COPD dx 5 yrs [P-2], timelines consistent w/ exposure, no rec drugs [P-45]; family: father lung ca/smoking [P-43], patient worry [P-43], mother healthy [P-43], doctor question [D-43]. Generated covers: smoking current/change [P-44], family father details/anxiety/mother healthy [P-43]. Misses: doctor acknowledgment/resources, timelines/cough/Dx dates/consistency, no rec drugs, doctor's family hx question. Relates via 'risk factors' but lacks Gold's timeline tie-in. Covers ~60% of key points.",
+    "faithfulness": "Claims on smoking current/change [P-44] and family [P-43] verifiable in transcript. Patient anxiety inferred correctly. However, 'knowledge graph' references entirely fabricated—not in transcript. Smoking as RISK_FACTOR for COPD plausible but not explicitly stated/linked in transcript (doctor diagnoses COPD exacerbation but no causation verbalized). Family lung ca directly linked to COPD via KG relations is hallucinated—not grounded. Multiple unverifiable/hallucinated elements (KG structure, specific links).",
+    "relevance": "Directly addresses question by detailing personal smoking (current level, changes) and family hx, claiming relation to COPD via risk factors. KG tangents slightly off-focus but overall structured around question's elements (personal hx, family hx, relation to COPD dx). No major off-topic content."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer captures core smoking and family history facts from the transcript but introduces hallucinated 'knowledge graph' links, misses several Gold details like timelines and doctor's response, and inaccurately implies direct familial COPD risk."
+}

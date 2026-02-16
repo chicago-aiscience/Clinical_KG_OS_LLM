@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "- Correct: Reports a mostly dry cough with onset ~4 days ago; vomiting occurred yesterday with 2 episodes; headache severity 7/10 and persistent; diarrhea frequency 5–6/day with liquid stools.\n- Incorrect: States diarrhea began ~4 days ago and cites [P-1]; the transcript specifies diarrhea started ~2 days ago [P-28].\n- Partially correct/underspecified: Does not state key characteristics noted in the transcript (e.g., no sputum/blood with cough; no blood in stool or emesis; vomitus was food contents), but these are more omissions than direct contradictions.",
+    "completeness": "Gold Answer key points vs Generated Answer:\n- Cough: Includes dry nature and ~4-day onset (covered). Misses no sputum/blood, stability over 4 days, and respiratory negatives (no SOB/wheeze/chest pain) (missed).\n- Diarrhea: Includes liquid stools and 5–6/day (covered). Misses correct onset (~2 days), and no blood (missed/incorrect onset).\n- Vomiting: Includes 2 episodes yesterday (covered). Misses associated nausea today, no blood, and food contents (missed).\n- Headache: Includes onset, persistence, and 7/10 severity (covered). Misses location (forehead/top, bilateral), no radiation/neck stiffness, and ‘unusual for patient’ (missed).\n- Other relevant symptoms in Gold (loss of smell, mild fatigue) are omitted.\nOverall, it captures some of the asked specifics but omits many clinically relevant characteristics documented in the Gold Answer.",
+    "faithfulness": "- Most included details are grounded in the transcript with appropriate citations (dry cough [P-12], 5–6 diarrhea episodes/day [P-28], vomited twice [P-32], headache 7/10 [P-8]).\n- However, it misattributes diarrhea onset as ~4 days ago using [P-1], which does not support that claim and contradicts [P-28] (~2 days). This is a notable grounding/citation error.\n- Minor non-transcript phrasing (“knowledge graph information provided”) is extraneous but not a factual claim about symptoms.",
+    "relevance": "- The response is largely focused on the requested GI and respiratory symptoms and includes the specifically requested items (nature of cough, diarrhea frequency, vomiting episode count, headache severity).\n- It is slightly limited by not listing other symptom characteristics/negatives that the question broadly asks for (“specific characteristics of each”), but it does not go off-topic."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 3,
+    "relevance": 4
+  },
+  "average_score": 3.5,
+  "summary": "The answer is mostly relevant and includes the key requested numeric details, but it contains a transcript-inconsistent error about diarrhea onset and omits several important symptom characteristics and associated negatives documented in the Gold Answer."
+}

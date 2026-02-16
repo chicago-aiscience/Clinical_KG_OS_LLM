@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer is factually incorrect relative to the Gold Answer. The transcript clearly contains an infectious/COVID screening (colds/infections, sick contacts, travel, loss of taste/smell, fever, GI symptoms) and a planned COVID swab. The Generated Answer incorrectly states that this information is not present and instead summarizes asthma triggers/symptoms. It also misattributes wheeze questioning to D-19 (the wheeze question is at D-15).",
+    "completeness": "It misses essentially all key points from the Gold Answer: (1) screening for recent colds/infections and denial, (2) household and non-household sick contacts and denial, (3) travel and denial, (4) loss of taste/smell and denial, (5) fever and denial, (6) nausea/vomiting and denial, (7) belly pain and denial, and (8) the planned COVID swab despite negative screening. None of these are provided. Completeness is therefore <20%.",
+    "faithfulness": "Multiple statements are not faithful to the transcript: the claim that no infectious/COVID screening exists contradicts D-21 to D-29. Several citations are inaccurate (e.g., wheezing attributed to D-19). The mention of a \"knowledge graph\" is unsupported. While it does reference some real asthma-related content, the overall answer includes major contradictions and mis-citations.",
+    "relevance": "The question asks specifically about infectious/COVID symptom and exposure screening, patient responses, and the planned diagnostic test. The Generated Answer largely fails to address this and instead focuses on asthma symptoms/triggers and claims the requested information is absent. This is only minimally responsive."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 2
+  },
+  "average_score": 1.5,
+  "summary": "The Generated Answer contradicts the transcript by denying the presence of infectious/COVID screening and omits the planned COVID swab, resulting in very low correctness and completeness with poor relevance."
+}

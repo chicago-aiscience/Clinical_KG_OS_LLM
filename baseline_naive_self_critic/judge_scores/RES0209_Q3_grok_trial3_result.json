@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer precisely cites symptoms (dry cough P-1/P-14, SOB P-1/P-19, wheezing P-15, chest tightness P-20), asthma history (P-2/D-3), exact bronchodilator escalation (P-8: once/2wks to 5-6/wk), wheezing more frequent than use (P-17), triggers (P-9/P-11), and infection screening negatives (P-14/P-21-P-28). Generated covers symptoms with partial citations but omits exact frequency increase (vaguely references P-1/P-9 instead of P-8), misses wheezing frequency detail, infection screening, and precise history; includes minor errors like citing cold air to P-1 (actually P-9/P-11) and adds family history emphasis not central to Gold. Main point of worsening asthma correct, but significant discrepancies on key quantified increase and differentials.",
+    "completeness": "Gold key points: all 4 symptoms with cites, dx history, bronchodilator relief/escalation specifics, wheezing freq > use, triggers, full infection screen negatives. Generated covers 3/4 symptoms (notes chest tightness absence), vague escalation, partial triggers, dx implied but not detailed; misses precise freqs, wheezing/use comparison, infection screen (crucial for 'vs new condition'), med adjustment hint. Covers ~50-60% of points.",
+    "faithfulness": "Claims grounded: symptoms P-1/P-15 accurate; bronchodilator helps P-1 yes; triggers P-9/P-11 (cites partly wrong P-1); family P-32 verifiable. Unverifiable/hallucinated: 'Knowledge Graph' links multiple times (absent from transcript); chest tightness 'standard' without transcript cite (exists P-20 but notes absence); escalation details not fully cited/accurate. Multiple hallucinations via external KG references and citation errors.",
+    "relevance": "Directly addresses question by affirming symptom combo + increased use indicate asthma worsening vs new condition; lists specified symptoms and escalation; minor off-topic (family history, KG). Perfectly focused overall with small tangents."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer captures the core conclusion and main symptoms but lacks precision on key quantified details, omits critical differential evidence, and introduces transcript-external hallucinations, resulting in moderate performance."
+}

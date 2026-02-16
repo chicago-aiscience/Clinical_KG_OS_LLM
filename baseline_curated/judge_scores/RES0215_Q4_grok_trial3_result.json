@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly states that the doctor does not ask about fever [D-7], runny nose [D-8], sick contacts [D-10], recent travel [D-11], rashes [D-13], or phlegm production [D-31], directly contradicting the transcript and Gold Answer, which accurately cites these questions and their purposes for screening infectious, URI, contagious, exposure-related, systemic, and productive conditions; instead, it fabricates a focus on asthma and bronchitis without addressing the query's specifics.",
+    "completeness": "Gold Answer covers all specified questions (fever, runny nose, sick contacts, travel, rashes, phlegm), their screening purposes (e.g., pneumonia, URI, contagious infections), patient denials (all negative), and narrowing to reactive airway disease; Generated Answer covers 0% of these, focusing instead on unrelated symptoms, allergies, and cold air triggers.",
+    "faithfulness": "Generated Answer hallucinates that the key questions are absent from the transcript despite clear evidence (e.g., [D-7/P-7] no fever, [D-8/P-8] no runny nose, etc.); mentions a non-existent 'knowledge graph'; some minor citations like [P-1] are accurate but overshadowed by fabrication.",
+    "relevance": "The question specifically asks about conditions screened via the listed questions (fever, etc.) and narrowing responses; Generated Answer denies the questions exist and pivots to general symptoms/history/diagnosis of asthma, completely missing the query's focus."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 1
+  },
+  "average_score": 1.0,
+  "summary": "The Generated Answer is fundamentally flawed, denying the existence of key transcript questions and failing to address the query or match the Gold Answer on all dimensions."
+}

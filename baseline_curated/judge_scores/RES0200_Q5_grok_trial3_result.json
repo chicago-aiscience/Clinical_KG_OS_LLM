@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer factually summarizes patient's smoking history (current half pack/day reduced from 1-2 packs, citations), doctor's acknowledgment and offer of resources, cough/COPD timelines consistent with exposure, other drug screen, family history details (father's lung cancer/smoking, patient's worry, mother's health, doctor's question). Generated Answer correctly captures smoking and family history details from transcript but introduces causal claims ('probable cause', 'directly correlate with etiology') via non-existent 'Knowledge Graph', attributes genetic predisposition (not in Gold or transcript), and includes irrelevant details like diuretic cessation and exacerbation details; core facts match but with interpretive overreach and additions, warranting a 3.",
+    "completeness": "Gold key points: smoking details/citations (covered), doctor's acknowledgment/resources (missed), cough 10yrs/COPD 5yrs consistency (missed), other drugs denied (missed), family details incl. mother/doctor's question/patient worry (partially covered, misses mother/doctor question). Covers ~60% (strong on smoking/family, weak on timelines/response/other screens), score 3.",
+    "faithfulness": "Claims like smoking history [P-44], family [P-43], exacerbation [D-52] verifiable; however, 'Knowledge Graph' causal link entirely hallucinated/not in transcript, 'genetic predisposition' inferred wrongly (father's case tied to his smoking), yellow sputum cited loosely; multiple unverifiable/hallucinated elements, score 2.",
+    "relevance": "Directly addresses smoking history changes, family history, relation to COPD (etiology/risk); minor tangents on exacerbation/diuretic/blood pressure but mostly focused on question, score 4."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer covers core smoking and family history facts relevant to COPD but is undermined by hallucinations like a fictional Knowledge Graph, causal overstatements, and missed details from the Gold Answer."
+}

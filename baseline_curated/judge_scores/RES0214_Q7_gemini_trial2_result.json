@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly identifies a 'Rash' as part of the chronological symptom progression for the patient's current illness. In the transcript [P-12], the patient explicitly denies having a rash. The mention of a rash in [P-38] is specifically related to a past penicillin allergy, not the current presentation. Additionally, while the Generated Answer correctly identifies the stuffy nose as the first symptom, it places the fever before the sore throat, whereas the Gold Answer (and transcript) suggests both the stuffy nose and sore throat preceded or coincided with the start of the fever.",
+    "completeness": "The Generated Answer covers most key points: the starting symptom (stuffy nose), the duration of the fever (3 days), the presence of muscle aches, and the comparison to the husband (one week). It misses the specific calculation provided in the Gold Answer regarding the husband's onset being approximately four days before the patient's fever, but it captures the general relationship.",
+    "faithfulness": "The Generated Answer hallucinates the 'Rash' as a current symptom. This is a significant failure in faithfulness because the transcript contains a direct denial of this symptom in the context of the current illness. The rest of the details are grounded in the transcript.",
+    "relevance": "The Generated Answer is highly relevant, directly addressing the progression, the first symptom, and the comparison with the husband's timeline as requested by the prompt."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 4,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.5,
+  "summary": "The answer identifies the correct sequence of major symptoms but incorrectly includes a rash (which was an allergy, not a current symptom) and lacks some of the specific chronological calculations found in the Gold Answer."
+}

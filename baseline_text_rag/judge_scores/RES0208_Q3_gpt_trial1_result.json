@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold answer: evidence of general infectious process = fevers + fatigue + muscle aches; COVID-not-ruled-out symptoms = difficulty breathing PLUS emerging sore throat and cough. Generated answer incorrectly includes difficulty breathing as evidence of the general infectious process (the doctor separated it from the constitutional infectious symptoms) and omits difficulty breathing as part of the COVID-specific concern. It correctly identifies fever, fatigue, myalgias, sore throat, and cough.",
+    "completeness": "Key points in Gold: (1) fever, (2) fatigue, (3) muscle aches as evidence of infection; (4) difficulty breathing and (5) sore throat and (6) cough as reasons COVID can’t be ruled out. Generated includes (1)-(3) and (5)-(6) but misses (4) under the COVID rationale and misattributes it to the general infection bucket. It also does not note that taste/smell were not cited in the D-36 summary (a secondary but explicit Gold point).",
+    "faithfulness": "All symptoms mentioned in the generated answer (fever, fatigue, muscle aches, difficulty breathing, sore throat, cough) are present in D-36. The main issue is categorization/interpretation (placing dyspnea under “general infection evidence”), not invention of facts.",
+    "relevance": "The response stays focused on the asked distinction (infectious-process symptoms vs additional symptoms prompting COVID not ruled out) and does not add irrelevant material."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 4,
+    "relevance": 5
+  },
+  "average_score": 3.75,
+  "summary": "Mostly grounded in the transcript and relevant, but it misclassifies dyspnea as evidence of general infection and omits dyspnea as part of the COVID-not-ruled-out symptom set, reducing correctness and completeness."
+}

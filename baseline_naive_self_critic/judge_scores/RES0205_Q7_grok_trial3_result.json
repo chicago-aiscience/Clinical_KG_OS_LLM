@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer specifies illness onset ~2 weeks ago with flu-like symptoms; Generated correctly notes cough for 2 weeks but vaguely places flu-like in first 1-3 days without explicit 2-week onset. Mucus correctly whitish clear for first 4-5 days per Gold/P-6, but Generated splits into 'initial 1-3 days' and 'days 4-5 mucus phase,' inaccurately implying separate periods instead of continuous first 4-5 days. Transition to dry after 4-5 days matches. Other symptoms resolution in 3-4 days matches. Gold notes intensity 'kind of the same,' frequency stable at 3-4x/hr, spontaneous; Generated omits these changes/stability and infers intensity from chest soreness only. No fevers, COVID neg omitted. Chest soreness matches but framed as intensity measure. Some factual errors (mucus phasing, missing stability) but core timeline correct.",
+    "completeness": "Gold key points: 2wk onset flu-like; 2-3d sore throat/runny nose/productive cough; resolutions 2-3d/3-4d; mucus 4-5d whitish clear; dry after; intensity same; freq stable 3-4x/hr spontaneous; no fever; only dry cough/soreness; COVID neg. Generated covers: 2wk cough; flu-like 1-3d; mucus 4-5d whitish clear; dry transition; other symp resolve 3-4d; soreness. Misses: explicit 2wk flu onset, sore throat/runny specifics, intensity/freq stability/changes, freq estimate/triggers, no fevers, COVID. Covers ~60% of key points, misses cough change details central to question.",
+    "faithfulness": "All main claims verifiable: 2wk cough [P-2], flu first couple days [P-14], mucus whitish clear first 4-5d [P-6], dry now [P-5,6], others resolve 3-4d [P-14], soreness [P-15,16]. Citations accurate. Minor issue: mucus 'began' in 1-3 implied but actually first 4-5 total. Hallucination: 'knowledge graph provided/referenced' not in transcript. Chest pain called 'chest pain' vs patient's 'hurts a little/sore.' Mostly grounded, one unverifiable addition (KG).",
+    "relevance": "Structured timeline directly addresses question elements: 2wk duration, initial flu (first days), mucus duration/look (4-5d whitish clear), transition (after 4-5), other symp resolve (3-4d), cough intensity (via soreness). Weak on intensity/freq changes (omits stability). No off-topic content, focused on progression."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 4,
+    "relevance": 4
+  },
+  "average_score": 3.5,
+  "summary": "The Generated Answer offers a mostly accurate and relevant structured timeline grounded in the transcript but misphases mucus production, omits cough intensity/frequency stability details, and references a non-existent knowledge graph."
+}

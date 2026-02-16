@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Generated Answer incorrectly claims no doctor's stated plan exists because 'transcript segments conclude with [P-42]', but the transcript continues to [D-43] and [D-44] where the doctor explicitly states the plan to 'go over this with the physician I’m working with and we should be back shortly together to talk to you about the next steps'. This is a significant factual contradiction with the Gold Answer. Other elements like Tylenol effect are partially accurate (helps 'a little bit' [P-14], though Gold specifies for feverish discomfort, not just cough). Aggravating factors (deep breathing [P-18/19], exertion [P-10], coughing [P-19]) align well. Misses expectoration as self-care/alleviating [P-13]. Overall, significant errors on plan and partial elsewhere warrant score 2.",
+    "completeness": "Gold key points: doctor's plan [D-43] (missed entirely); self-care: Tylenol effect [P-14] (covered), expectoration temporary relief [P-13] (missed), taking it easy [P-10] (partially as resting); aggravating: deep breathing [P-18], coughing worsens pain [P-19], exertion/stairs [P-10/11] (all covered); alleviating: Tylenol [P-14], expectoration [P-13], resting [P-10] (partial, misses expectoration); clinical importance noted (partially implied). Covers ~60% (strong on agg/allev, weak on plan/self-care), score 3.",
+    "faithfulness": "Claims verifiable in transcript: Tylenol [P-14], deep breathing [P-18/19], exertion/SOB [P-10], coughing agg [P-15/19], resting [P-10]. However, hallucinates that 'transcript segments conclude with [P-42]' (false, continues to [D-44]), leading to erroneous denial of plan in [D-43]. No other fabrications; citations accurate where used. Some unverifiable detail on transcript extent, but mostly grounded, score 3.",
+    "relevance": "Directly structures response with sections matching question parts (doctor's plan, self-care, agg/allev factors), uses bullet points for clarity, no off-topic content, fully addresses query structure despite errors, score 4"
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 3,
+    "relevance": 4
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer is mostly relevant and grounded but has significant factual errors and omissions, particularly missing the doctor's explicit plan and key self-care details like expectoration."
+}

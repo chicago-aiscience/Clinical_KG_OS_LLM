@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the hiking event two weeks ago with the partner where people 'brushed by' (paraphrased as 'brushed shoulders'), matching Gold and transcript [P-18]. Symptom consistency is accurate [P-1, D-39]. However, it introduces a fabricated 'Knowledge Graph Link' connecting 'hiking exposure' to COVID-19 diagnosis, which is not in the Gold Answer or transcript, representing a factual error. Core exposure fact is correct, but added hallucinated element creates some discrepancies.",
+    "completeness": "Key points from Gold covered: hiking with partner two weeks ago, brushed by people [P-18]. Missed: patient context (high school online, staying home [P-36,37,D-38,P-38]), location half-hour away [P-19], no other exposures or sick contacts recalled [P-17,18], lives with parents/sibling [P-29], immunizations up-to-date [P-20], doctor's testing rationale despite limited exposure [D-39]. Connection partially covered via symptoms, but misses full exposure context link. Covers ~30% of key points.",
+    "faithfulness": "Exposure details verifiable [P-18]. Symptoms and doctor note verifiable [P-1, D-39]. 'Knowledge Graph Link' with [MEDICAL_HISTORY] and [DIAGNOSIS] tags is entirely fabricated, not in transcript. 'Brushed shoulders' is minor paraphrase. Multiple hallucinated elements (knowledge graph structure).",
+    "relevance": "Directly identifies the specific exposure event and attempts to explain connection to COVID-19 diagnosis. Knowledge graph is off-topic tangent but does not derail focus on question."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer correctly identifies the key exposure but is incomplete in context, introduces hallucinations like a knowledge graph, and partially addresses the connection to COVID-19."
+}

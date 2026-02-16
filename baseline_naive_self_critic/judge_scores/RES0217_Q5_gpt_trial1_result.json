@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The first part matches the Gold Answer: it accurately links Friday hiking and Saturday gardening to the physician’s estimate of >72 hours attachment and cites [P-1] and [D-6] appropriately. However, the second part is factually incorrect: the transcript explicitly includes the doctor referencing an Ontario Lyme disease distribution map and stating that “Strathroy is close enough to be considered a little bit of a concerning point,” supporting antibiotics [D-13]. The Generated Answer directly contradicts this by claiming there is no evidence of map discussion.",
+    "completeness": "Covers the attachment-duration reasoning (Friday/Saturday outdoor exposure leading to >72 hours and [D-6]). It omits/denies the key geographic-risk justification from the Lyme map ([D-13]) and therefore fails to capture the combined rationale (duration + geographic risk) used to justify prophylactic antibiotics, which is central to the question and Gold Answer.",
+    "faithfulness": "The timeline/72+ hour estimate is grounded in the transcript. But the claim that the transcript does not contain discussion of the Ontario Lyme disease distribution map is not grounded and contradicts [D-13]. This is a major faithfulness failure (a false negative about content that is present).",
+    "relevance": "The response is focused on the two parts asked (duration estimate and Strathroy/map justification). There are no major tangents, but the second part is relevant yet incorrectly handled."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The answer correctly explains the >72-hour attachment estimate but incorrectly denies the documented Lyme map/Strathroy geographic-risk discussion, making it incomplete and not faithful to the transcript."
+}

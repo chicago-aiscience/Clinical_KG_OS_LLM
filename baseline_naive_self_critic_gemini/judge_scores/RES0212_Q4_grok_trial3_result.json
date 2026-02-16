@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer lists chest pain, nausea/vomiting, and stiff neck as screened symptoms denied by the patient, but these are not the primary constitutional symptoms highlighted in the Gold Answer (night sweats, unexplained weight loss, hemoptysis). It completely omits all exposure risks (sick contacts, travel, IV drug use, cocaine/heroin). It incorrectly states that night sweats were not screened (they were at D-5/P-5) and attributes TB exclusion to the wrong symptoms (e.g., nausea as systemic toxicity, stiff neck for meningitis). Chest pain is not a constitutional symptom. Significant factual discrepancies and contradictions with Gold Answer.",
+    "completeness": "Key points from Gold Answer covered: nausea/vomiting (partial, minor point), stiff neck (minor). Missed: constitutional symptoms (night sweats [D-5/P-5], weight loss/loose clothes [D-6-8/P-6-8], hemoptysis [D-10/P-10]); all exposure risks (sick contacts at class [D-14/P-14], recent contacts [D-15/P-15], roommate [D-32/P-32], travel [D-33-34/P-33-34], IV drugs [D-40/P-40], cocaine/heroin [D-39/P-39]); body pain, closing summary [D-47]. Also includes extra irrelevant chest pain. Covers ~20-30% of key points.",
+    "faithfulness": "Claims about chest pain [D-3/P-3], nausea/vomiting [D-17/P-17, but cited as P-19 incorrectly], stiff neck [D-18/P-18, cited P-19], and tiredness [P-19] are verifiable in transcript. However, hallucinates that night sweats and weight loss were not screened (they were explicitly asked and denied); wrong citations for denials; plausible but ungrounded link of stiff neck/nausea to TB/meningitis without transcript support for that interpretation. Multiple inaccuracies and hallucinations.",
+    "relevance": "Addresses screening for denied symptoms and links to excluding TB/chronic infections in chronic cough context, but focuses on minor/non-constitutional symptoms (chest pain, stiff neck, N/V) while ignoring core constitutional symptoms and all exposure risks specified in question; partial relevance with off-topic elements."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "The Generated Answer has significant factual errors by missing key constitutional symptoms and all exposure risks, incorrectly claiming some were not screened, resulting in low correctness, completeness, and faithfulness despite partial relevance."
+}

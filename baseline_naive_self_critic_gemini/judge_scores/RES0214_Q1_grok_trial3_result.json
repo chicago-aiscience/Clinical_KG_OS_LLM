@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the four key symptoms (fever, stuffy nose, sore throat, muscle ache) matching the Gold Answer's list, including accurate sourcing from the transcript, but contains significant factual errors in the second part by stating the patient only explicitly denied cough and claiming 'no evidence' for denials of headache [P-8], neck stiffness [P-7], nausea [P-5], and difficulty swallowing [P-24-26], directly contradicting both the transcript and Gold Answer.",
+    "completeness": "Covers all four symptoms listed in Gold Answer (stuffy nose, sore throat, fever, muscle aches) but omits key details like timings (e.g., fever 3 days, muscle aches 2-3 days coinciding with fever), persistence of sore throat, and clarification of no joint pain; for denials, covers only 1/5 (cough) while missing headache, neck stiffness, nausea/vomiting, and difficulty swallowing.",
+    "faithfulness": "Symptoms are verifiable in transcript (P-1 for first three, P-13/14 for muscle ache), but muscle ache citation wrongly includes [P-1]; denial of cough verifiable [P-10], however, hallucinates absence of evidence for other denials which are explicitly present (headache [P-8 'Um no, no headaches'], neck stiffness [P-7 'No'], nausea/vomiting [P-5 'No'], difficulty swallowing [P-24 'Uh no, it just hurts', P-25 'Yes', P-26 'No']), making multiple claims ungrounded.",
+    "relevance": "Perfectly focused on answering the two-part question by listing the four reported symptoms and addressing the specific denied symptoms, with no irrelevant content or tangents."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer correctly lists the four symptoms but substantially underperforms on completeness, correctness, and faithfulness by missing four explicit denials and hallucinating their absence."
+}

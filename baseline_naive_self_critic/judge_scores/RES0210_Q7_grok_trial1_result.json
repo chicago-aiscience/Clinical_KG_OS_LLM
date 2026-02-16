@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer specifies: runny nose ~1 week ago; Friday raspy cough first; Sunday cough worsens to 'really bad' with yellow sputum + red spots starting together; Monday fever starts and persists; chills last two days (Tue-Wed); chest pain noticed 'over the last day' (~Tue), dull/constant/worse with breath/cough. Generated Answer incorrectly places raspy cough onset on Sunday (contradicts P-3 Friday raspy, Sunday bad); misses runny nose and Friday entirely; omits fever completely; sputum Sunday correct; chills Tue ok; chest pain Wed (minor discrepancy). Adds irrelevant Tylenol timing and Lipitor. Significant errors in symptom onsets and omissions contradict Gold.",
+    "completeness": "Gold key points: runny nose (missed), Fri raspy cough (missed), Sun cough bad + sputum w/red (partial, cough day wrong), Mon fever (missed), Tue-Wed chills (covered), Tue chest pain (day shifted to Wed), overall worsening w/dyspnea/sore throat (partial via exertional). Covers ~30% (sputum Sun, chills, chest pain vaguely); misses 70% including two required symptoms (raspy cough precise day, fever).",
+    "faithfulness": "Claims grounded? Raspy cough Sunday not in transcript (P-3: Friday raspy); sputum Sun verifiable [P4,6,7]; chills verifiable [P9]; chest pain verifiable [P17,19,20]; Tylenol unspecified timing (P14 vague); 'knowledge graph' hallucinated (absent); exertional [P11] ok but not Tue-specific. Multiple misinterpretations and one fabrication (KG).",
+    "relevance": "Directly attempts timeline of symptoms as asked, labels days Sun-Wed addressing onset to consult; specifies days for most listed symptoms (though inaccurately); minor off-topic (Tylenol, Lipitor, KG summary); mostly focused on progression."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "Generated Answer provides a partial timeline with significant factual errors on symptom onsets (e.g., cough Sunday instead of Friday, misses fever), omissions, and minor hallucinations, though mostly relevant."
+}

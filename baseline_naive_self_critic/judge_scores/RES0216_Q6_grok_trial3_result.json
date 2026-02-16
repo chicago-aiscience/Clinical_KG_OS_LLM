@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer has significant factual errors compared to the Gold Answer and transcript: it incorrectly states the patient has 'existing rescue puffers (salbutamol)' when the patient explicitly does not have rescue inhalers available (P-17, P-18), and the doctor recommends 'having those rescue puffers available' (D-35), implying obtaining them. It misrepresents cardiac ischemia as a 'primary differential diagnosis' when the transcript and Gold Answer indicate it is lower on the differential (D-36). The assessment is overstated as a definitive 'asthma exacerbation' rather than 'asthma reoccurring in some capacity' at the top of the differential pending findings (D-35). Core assessment that asthma is top is correct, but errors are significant.",
+    "completeness": "Key points from Gold Answer covered: asthma at top of differential (partial), PE includes listening to lungs (yes), initial intervention as rescue puffer trial on walks (partial, but wrong on 'existing'), contingency if no improvement (yes). Missed or incomplete: explicit pending exam/findings nuance, need to obtain puffers (not existing), therapeutic trial framing, stepwise 'one thing at a time' (D-36), consulting supervising doctor (D-35, D-37). Covers about 50-79% of key points.",
+    "faithfulness": "Multiple hallucinations: 'existing rescue puffers' contradicts transcript (patient out of rescue for years, no refill); cardiac ischemia as 'primary differential' contradicts D-36 (lowered due to no pain); 'hoarseness/phlegm consistent with asthma re-occurrence' is inferred but not directly stated by doctor; cites D-34/D-35 inaccurately for existing puffers. Assessment claims verifiable but overstated; plan partially grounded but with fabrications.",
+    "relevance": "The Generated Answer is structured to directly address the question with sections on overall assessment, clinical plan (including PE and first-step intervention), and contingency approach, with no off-topic content."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer is relevant and partially complete but undermined by significant factual inaccuracies and hallucinations regarding the patient's access to rescue inhalers and the status of cardiac ischemia on the differential."
+}

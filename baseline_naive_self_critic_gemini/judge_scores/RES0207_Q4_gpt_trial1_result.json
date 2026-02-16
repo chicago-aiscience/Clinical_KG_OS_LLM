@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The answer correctly notes that the patient denied GI symptoms (nausea/vomiting, abdominal pain, diarrhea) and denied loss of taste/smell and sore throat. However, it incorrectly ties the “cardiac” differential primarily to GI symptoms and even conflates belly pain with nausea (\"nausea ('belly pain')\"), whereas the transcript/gold emphasize cardiac/cardiopulmonary screening via **chest pain** and **presyncope** questions. It also omits other explicitly denied symptoms/exposures (e.g., runny nose, sick contacts, travel) and the denied sputum production/dry cough characterization and prior similar episodes, which affects factual alignment with the Gold Answer’s scope.",
+    "completeness": "Key negative findings in the Gold Answer that are **missing** from the Generated Answer include: chest pain; feeling faint; runny nose; sick contacts; travel; sputum production (dry cough); and denial of prior similar SOB episodes. It includes only a subset (GI negatives; loss of taste/smell; sore throat). Overall coverage is well under 80% and closer to the 20–49% band.",
+    "faithfulness": "The listed screened symptoms largely come from the transcript, but several interpretive statements are not grounded in the transcript (e.g., suggesting classic MI presentation based on nausea/abdominal pain, discussion of gastroenteritis mimicking respiratory distress). The transcript does not explicitly connect these negatives to those specific diagnoses, and the cardiac rationale is not supported by the doctor’s actual cardiac screening questions (chest pain/presyncope). Thus, there are multiple ungrounded or weakly supported inferences.",
+    "relevance": "The response is on-topic (negative symptoms/exposures and what differentials they address), but it fails to answer the full question because it omits multiple screened-and-denied items (notably epidemiologic exposures and key cardiopulmonary negatives) and partially misattributes which negatives address cardiac differentials."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 2,
+    "faithfulness": 3,
+    "relevance": 3
+  },
+  "average_score": 2.75,
+  "summary": "Partially accurate and on-topic, but misses several major screened-and-denied symptoms/exposures from the transcript and provides some ungrounded/misplaced differential reasoning, especially for cardiac causes."
+}

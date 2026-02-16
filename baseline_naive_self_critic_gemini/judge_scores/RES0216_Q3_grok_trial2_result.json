@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer emphasizes specific links: asthma history (P-16, P-29), medication non-compliance (skipping evening dose P-19, no rescue refill P-17/18 as per D-34), symptoms of diffuse tightness/SOB on exertion (P-1/7/9/10), patient acknowledgment it could be related (P-16), no environmental triggers (P-33), absence of cardiac symptoms (D-36), and therapeutic trial (D-35). Generated correctly captures asthma history, key symptoms, cardiac exclusion, and trial proposal. However, it omits medication non-compliance (central to doctor's synthesis in D-34), mischaracterizes salbutamol as current rescue use (patient hasn't refilled it, takes 'daily' one), adds unemphasized hoarseness/phlegm as aligning with asthma (not in doctor's reasoning), and claims SOB 'contradicts' cardiac (D-36 focuses on no pain). Some factual errors but core conclusion intact.",
+    "completeness": "Gold key points: (1) asthma history ✓, (2) med non-compliance ✗ (missed entirely), (3) specific symptoms ✓, (4) patient notes could be related ✗, (5) no triggers ✗, (6) no cardiac ✓, (7) trial ✓. Covers symptoms, history, cardiac exclusion, trial (~60% of points); misses med non-compliance, patient relation, triggers.",
+    "faithfulness": "Claims grounded: symptoms/citations (P-1/7/9/10) ✓, asthma history ✓, D-35/36 ✓. Unverifiable/hallucinated: hoarseness/phlegm 'aligns with asthma' (P-11 reported but not doctor's reasoning or emphasized), salbutamol as 'rescue currently prescribed' (contradicts P-17/18 no refill, daily is separate), SOB 'contradicts cardiac' (D-36 says no pain lowers it). Adds plausible but non-transcript reasoning links; some hallucination.",
+    "relevance": "Directly structures answer around symptoms, history, doctor's linking/reasoning with citations; fully addresses question without tangents or off-topic content."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 3,
+    "relevance": 5
+  },
+  "average_score": 3.5,
+  "summary": "Generated Answer captures core elements of symptoms, history, and cardiac exclusion leading to asthma as top differential but misses critical medication non-compliance, adds minor hallucinations, resulting in moderate scores across dimensions."
+}

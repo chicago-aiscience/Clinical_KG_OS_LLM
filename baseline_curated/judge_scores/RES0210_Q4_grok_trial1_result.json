@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer has significant factual errors compared to the Gold Answer: (1) For chemical exposure, Gold states limited exposure makes chemical injury less likely, but Generated claims it maintains occupational differential. (2) For weight loss, Gold cites explicit denial [P-22] screening lung cancer (with smoking/family hx) and TB, but Generated incorrectly states response 'not explicitly detailed' and infers from acute onset. (3) For travel, Gold notes Sarnia trip [P-23] screening Legionella/fungal with timing match, but Generated falsely claims 'no travel info' and lists irrelevant DDs like malaria/Lyme. (4) For sick contacts, Gold notes denial [P-24] reduces person-to-person/TB but not CAP; Generated says 'not reported' and lists COVID/influenza without precise impact. Misses collective favoring acute infection and specific links (e.g., hemoptysis, family hx). Core structure present but facts contradicted.",
+    "completeness": "Gold key points: (Weight loss) screens lung ca/TB, denial less likely; (Travel) Legionella/fungal, Sarnia/timing; (Sick contacts) person-to-person/TB, reduces but not exclude CAP; (Chem) pneumonitis/occ dz, limited exp less likely; collective acute infectious. Generated covers 4 questions with some overlapping DDs (TB/malignancy, occupational dz, contagious resp inf) but misses specifics (lungs ca family/smoking link, Legionella/fungal/Sarnia, TB exposure, exact narrowing), wrong impacts/responses, no collective summary. Covers ~40% of key points.",
+    "faithfulness": "Generated hallucinates/misreads transcript: claims no explicit weight loss response (but [P-22]); no travel info (but [P-23] Sarnia); no sick contacts reported (but [P-24] denial); ignores [P-34] limited chem exp claiming maintenance of occ dz; infers impacts not grounded (e.g., acute onset proxy for no wt loss). Intro symptoms verifiable but irrelevant. Multiple ungrounded/wrong claims.",
+    "relevance": "Directly structures response around the 4 specified questions with DDs and response impacts, closely matching question focus despite errors; minor tangents in intro symptoms and wrong DDs."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer is structurally relevant but marred by factual errors, transcript misreads, hallucinations, and incomplete/misaligned coverage of Gold Answer specifics."
+}

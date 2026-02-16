@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the three triggers (exercise [P-9], cold air/winter [P-9, P-11], pollen/spring [P-11]) and family history (sister with asthma [P-32]), and links them to the exacerbation via increased bronchodilator use [P-1, P-8], matching Gold. However, it introduces factual errors: misstates 'suspicion of asthma' (patient diagnosed at age 8 [P-2], suspicion is for allergies per Gold and D-12/P-12/D-13); repeatedly references non-existent 'knowledge graph'; suggests goldfish as potential trigger. These are significant contradictions and additions not in Gold.",
+    "completeness": "Gold key points: specific triggers with citations (covered), no other triggers (missed), clinician's allergy questions/responses 'that would make sense' [D-12/13/31] (missed), family details no other breathing/allergies [P-33/34] (missed), exacerbation via increased inhaler use [P-8] (covered), clinician's med change suggestion [D-43] (missed). Generated covers ~60% (triggers, family, exacerbation) but omits clinician's allergy suspicion and control suggestions.",
+    "faithfulness": "Claims on triggers, symptoms [P-1/8/9/11/32], pets [P-39] verifiable; but 'knowledge graph' linkages (multiple mentions) not in transcript (hallucination); goldfish as potential allergy trigger 'noted in knowledge graph' fabricated; 'suspicion of asthma' contradicts diagnosed status [P-2]. Multiple hallucinations present.",
+    "relevance": "Directly addresses triggers, family history, relation to exacerbation and allergies; structured response aligns with question; minor tangents on knowledge graph and goldfish but core focus intact."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer captures core triggers, family history, and exacerbation but is undermined by hallucinations (knowledge graph, goldfish trigger) and errors (misstating asthma suspicion), reducing accuracy and faithfulness."
+}

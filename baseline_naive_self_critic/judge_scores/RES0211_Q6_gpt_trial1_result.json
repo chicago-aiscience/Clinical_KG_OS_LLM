@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer contains major factual errors compared with the Gold Answer. Most notably, it states the doctor’s explicit summary “is not included,” but D-58 clearly contains the doctor’s end-of-visit summary. It also misstates Jessica’s primary goal: the transcript explicitly says she wants to know if she needs to “take medicine or something” (P-60), whereas the Generated Answer only generally claims she wants to “address her current symptoms” and infers a next step based on having Claritin. It adds items (scratchy throat, feeling ‘crappy,’ fatigue, allergy-shot history) that were not part of the doctor’s recap and omits several recap elements that were explicitly stated (no sputum, contact history framing, no asthma, only Claritin).",
+    "completeness": "Key Gold Answer points covered: (a) dry cough for 3–4 days (partially). Key points missed: (1) doctor recap included little bit of fever and some headache; (2) explicitly no sputum/bringing anything up; (3) contact history summary including brother’s cold ~2 weeks ago; (4) no asthma; (5) no meds aside from Claritin; (6) doctor’s stated purpose: determine next steps/where to go from here; (7) Jessica’s stated goal: whether she needs medicine; (8) Jessica’s additional desire to go home and lay down. Overall, it covers well under half of what the Gold Answer specifies and focuses on non-recap history (allergies) instead.",
+    "faithfulness": "Several statements are not well-grounded in the provided transcript or misrepresent it: claiming the doctor’s summary is not included contradicts D-58; the ‘primary goal’ is inferred rather than reflecting P-60’s explicit statement; and it implies Claritin possession ‘suggests’ next steps. While some symptom/history details are in the transcript, the answer is not faithful to what was specifically asked (doctor’s recap and Jessica’s next-step goal) and includes interpretive leaps.",
+    "relevance": "The response attempts to address “key clinical findings” and “primary goal,” but it does not actually report the doctor’s recap at the end (despite it being present) and instead summarizes earlier patient-reported symptoms and allergy history. It partially addresses the question but misses the requested focus on the doctor’s concluding summary and Jessica’s explicit next-step goal."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "The Generated Answer is only partially relevant and is undermined by major inaccuracies (denying the presence of the doctor’s summary) and substantial omissions of the key recap points and Jessica’s explicit next-step goal."
+}

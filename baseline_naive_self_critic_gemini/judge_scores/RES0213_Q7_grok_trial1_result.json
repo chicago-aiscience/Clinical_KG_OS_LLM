@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer provides a precise timeline: smoking at ~18 [P-18], teen anxiety attacks [P-21, P-22 with 8-year gap], 10 cigs/day past 2 years then cut to 5 a few months ago [P-18, P-14], father's HA last year [P-8, P-30], recent weeks thesis stress [P-15, P-16], chest pain 1.5 weeks ago first time [P-2, P-17], links to stress/anxiety [P-8, P-22, P-9, P-29]. Generated denies smoking start age specified (contradicts [P-18]), omits 8-year gap/precise smoking escalation/father's HA/recent weeks specificity, adds unverified 'shortness of breath' from past anxiety and [KG:] knowledge graph; core structure present but significant errors/omissions.",
+    "completeness": "Gold key points: smoking ~18, teen anxiety + doctor, 8yr no anxiety, 2yr 10cigs, few mo cut to 5, father HA, last couple wks thesis time crunch, 1.5wk chest pain new, stress cause?, anxiety return?, alone noticeable. Generated covers: smoking current/quitting, teen anxiety, current academic stress, 1.5wk chest pain; misses smoking start/levels timeline, 8yr gap, father HA, precise recent stress timing, anxiety return/alone details; ~30% coverage.",
+    "faithfulness": "Hallucinations: smoking age 'not specified' (falsely, [P-18] says ~18); past anxiety caused 'short of breath' (inferred loosely from [P-19/20] current, not historical); [KG: stress/smoking contribute] not in transcript; 'physical stress of quitting' plausible inference but adds; citations mostly accurate (e.g., [P-2,6,8,19]) but overall multiple ungrounded claims/details.",
+    "relevance": "Directly structures response around smoking, teen anxiety, academic stress, chest pain onset/timing as per question; includes relationships (stress-anxiety-chest pain, smoking); minor tangents via clinical knowledge/KG but focused on timeline/relations."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer partially traces the timeline and relations but with significant factual errors (e.g., denying smoking start age), omissions of key details, and hallucinations, resulting in low correctness, completeness, and faithfulness despite good relevance."
+}

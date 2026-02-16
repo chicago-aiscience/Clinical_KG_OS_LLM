@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the key asthma-suggestive symptom cluster (dry cough, shortness of breath, wheeze, chest tightness) and notes increased bronchodilator use as supporting worsening asthma. However, it introduces an external “clinical knowledge graph” framework not present in the Gold Answer/transcript and makes at least one inaccurate linkage/citation: it implies chest tightness is only indirectly inferred from P-16, whereas the patient directly endorses chest tightness at P-20. It also omits the specific bronchodilator frequency change (once every two weeks to 5–6x/week) emphasized in the question/Gold Answer, though it mentions a “dramatic increase” in general terms.",
+    "completeness": "Gold Answer key points: (1) classic asthma symptom profile (dry cough, SOB, wheeze, chest tightness); (2) known asthma diagnosis since age 8; (3) bronchodilator provides relief; (4) rescue use increased from ~q2weeks to 5–6x/week; (5) wheezing even more frequent than bronchodilator use; (6) typical triggers (exercise, cold air, pollen/spring); (7) negative infectious/other red-flag screen (no URI, fever, sick contacts, travel, anosmia, productive cough, GI symptoms); (8) conclusion: asthma worsening/exacerbation needing med adjustment. Generated Answer covers (1) and partially (3) and (4) (but without the numeric change). It misses (2), (5), (6), and (7), and does not clearly incorporate the “not a new respiratory condition” rationale via negative infectious history. Overall coverage is roughly half of the Gold Answer’s key supporting elements.",
+    "faithfulness": "The answer repeatedly references a “clinical knowledge graph” and specific KG edges (e.g., “RELATED_TO/RELIEVES” relations) that are not in the transcript. These are fabricated relative to the provided source and therefore reduce grounding. While the symptom statements themselves are largely supported by transcript quotes (P-1, P-15), several claims (e.g., KG-based causality, chest tightness being only inferred from P-16) are not faithful to the transcript’s actual content (P-20 is the direct chest tightness endorsement). Multiple ungrounded additions result in a low faithfulness score.",
+    "relevance": "It addresses the core question—why the combination of dry cough, shortness of breath, wheezing, chest tightness, plus increased bronchodilator use, suggests worsening asthma. However, it devotes substantial space to the irrelevant “knowledge graph” framing rather than focusing on the clinical comparison to “new respiratory condition” (e.g., lack of infection signs), which slightly reduces focus."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 3.25,
+  "summary": "The Generated Answer is directionally correct and relevant but is only moderately complete and is poorly grounded due to repeated hallucinated “knowledge graph” content and some misattribution of transcript details."
+}

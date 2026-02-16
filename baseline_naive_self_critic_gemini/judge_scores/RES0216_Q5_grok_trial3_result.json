@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer centers on the patient's self-directed reduction of maintenance inhaler to morning-only dosing [P-19, P-20] and failure to refill rescue inhaler for years [P-17, P-18], linking these to compromised asthma control and current symptoms, with doctor's summary [D-34]. Generated Answer correctly notes asthma history [P-16], symptoms [P-1], and doctor's asthma recurrence assessment [D-35], but falsely claims transcript lacks details on skipping evening dose and no rescue refill (directly contradicted by P-17-P-20), ignoring these core elements of the question and Gold. Introduces unrelated 'Knowledge Graph'. Significant factual errors and omissions relative to Gold.",
+    "completeness": "Gold key points: asthma history/well-controlled [P-16,29]; skipped evening maintenance [P-19,20]; no rescue refill [P-17,18]; doctor's summary on limiting meds [D-34]; symptoms (tightness, exertion, phlegm) [P-1,4,9,11]; asthma likely [D-35]; feels different [P-16]; plan for rescue [D-35]. Generated covers asthma/symptoms [P-1,16], doctor's assessment [D-35,36]; misses all medication non-adherence (central to question/Gold), doctor's med summary, phlegm/hoarseness, 'different' feel. Covers ~25% of points.",
+    "faithfulness": "Generated verifiable claims: symptoms [P-1], asthma history [P-16], doctor's assessment [D-35,36]. Hallucinates 'Knowledge Graph' (absent); falsely states transcript lacks skipping dose/no refill details (explicit in P-17-P-20); misrepresents cardiac exclusion as key (tangential). Multiple inaccuracies and fabrications about transcript content.",
+    "relevance": "Addresses asthma-symptom link and doctor's view, but question specifies relation via skipping dose/no rescue refill, which Generated denies exists in transcript and ignores; adds off-topic Knowledge Graph and cardiac details. Partially relevant but evades core query elements."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "The Generated Answer partially links asthma to symptoms but significantly errs by denying key transcript details on medication non-adherence central to the Gold Answer and question, with hallucinations reducing overall quality."
+}

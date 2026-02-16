@@ -1,0 +1,202 @@
+{
+  "nodes": [
+    {
+      "id": "N_001",
+      "text": "Cough",
+      "type": "SYMPTOM",
+      "evidence": "I have been coughing a lot over the past week or so",
+      "turn_id": "P-1"
+    },
+    {
+      "id": "N_002",
+      "text": "Shortness of breath",
+      "type": "SYMPTOM",
+      "evidence": "feeling very short of breath",
+      "turn_id": "P-1"
+    },
+    {
+      "id": "N_003",
+      "text": "Asthma",
+      "type": "DIAGNOSIS",
+      "evidence": "I was diagnosed when I was eight",
+      "turn_id": "P-2"
+    },
+    {
+      "id": "N_004",
+      "text": "Increased bronchodilator usage",
+      "type": "TREATMENT",
+      "evidence": "I've been using it a lot now... now I'm using it like almost everyday",
+      "turn_id": "P-1"
+    },
+    {
+      "id": "N_005",
+      "text": "Wheezing",
+      "type": "SYMPTOM",
+      "evidence": "I've been wheezing a lot",
+      "turn_id": "P-15"
+    },
+    {
+      "id": "N_006",
+      "text": "Chest tightness",
+      "type": "SYMPTOM",
+      "evidence": "it gets tight in your chest",
+      "turn_id": "P-20"
+    },
+    {
+      "id": "N_007",
+      "text": "Cold air",
+      "type": "TRIGGER",
+      "evidence": "the cold also makes it worse",
+      "turn_id": "P-9"
+    },
+    {
+      "id": "N_008",
+      "text": "Exercise",
+      "type": "TRIGGER",
+      "evidence": "when I like, run around after gym during recess",
+      "turn_id": "P-9"
+    },
+    {
+      "id": "N_009",
+      "text": "Nighttime symptoms",
+      "type": "SYMPTOM",
+      "evidence": "having it at night time",
+      "turn_id": "P-18"
+    },
+    {
+      "id": "N_010",
+      "text": "Family history of asthma",
+      "type": "MEDICAL_HISTORY",
+      "evidence": "my sister has asthma too",
+      "turn_id": "P-32"
+    },
+    {
+      "id": "N_011",
+      "text": "Pollen",
+      "type": "TRIGGER",
+      "evidence": "spring with like pollen and stuff",
+      "turn_id": "P-11"
+    },
+    {
+      "id": "N_012",
+      "text": "Goldfish",
+      "type": "TRIGGER",
+      "evidence": "we have just like well I guess we have goldfish",
+      "turn_id": "P-39"
+    },
+    {
+      "id": "N_013",
+      "text": "Age 10",
+      "type": "DEMOGRAPHIC",
+      "evidence": "You're 10 now",
+      "turn_id": "D-3"
+    }
+  ],
+  "edges": [
+    {
+      "source_id": "N_001",
+      "target_id": "N_003",
+      "type": "INDICATES",
+      "evidence": "coughing a lot... short of breath... I was diagnosed when I was eight",
+      "turn_id": "P-1"
+    },
+    {
+      "source_id": "N_002",
+      "target_id": "N_003",
+      "type": "INDICATES",
+      "evidence": "short of breath... I was diagnosed when I was eight",
+      "turn_id": "P-1"
+    },
+    {
+      "source_id": "N_004",
+      "target_id": "N_003",
+      "type": "TREATS",
+      "evidence": "my bronchodilator helps... but I've been using it a lot now",
+      "turn_id": "P-1"
+    },
+    {
+      "source_id": "N_001",
+      "target_id": "N_004",
+      "type": "CAUSES",
+      "evidence": "I've been coughing a lot... and my bronchodilator helps... but I'm using it a lot now",
+      "turn_id": "P-1"
+    },
+    {
+      "source_id": "N_005",
+      "target_id": "N_003",
+      "type": "INDICATES",
+      "evidence": "I've been wheezing a lot",
+      "turn_id": "P-15"
+    },
+    {
+      "source_id": "N_006",
+      "target_id": "N_003",
+      "type": "INDICATES",
+      "evidence": "it gets tight in your chest",
+      "turn_id": "P-20"
+    },
+    {
+      "source_id": "N_007",
+      "target_id": "N_003",
+      "type": "TRIGGERS",
+      "evidence": "the cold also makes it worse",
+      "turn_id": "P-9"
+    },
+    {
+      "source_id": "N_008",
+      "target_id": "N_003",
+      "type": "TRIGGERS",
+      "evidence": "when I like, run around after gym during recess",
+      "turn_id": "P-9"
+    },
+    {
+      "source_id": "N_009",
+      "target_id": "N_003",
+      "type": "INDICATES",
+      "evidence": "having it at night time",
+      "turn_id": "P-18"
+    },
+    {
+      "source_id": "N_010",
+      "target_id": "N_003",
+      "type": "PREVALENT_IN",
+      "evidence": "my sister has asthma too",
+      "turn_id": "P-32"
+    },
+    {
+      "source_id": "N_011",
+      "target_id": "N_003",
+      "type": "TRIGGERS",
+      "evidence": "spring with like pollen and stuff",
+      "turn_id": "P-11"
+    },
+    {
+      "source_id": "N_012",
+      "target_id": "N_003",
+      "type": "TRIGGERS",
+      "evidence": "we have just like well I guess we have goldfish",
+      "turn_id": "P-39"
+    }
+  ],
+  "_usage": {
+    "prompt_tokens": 5413,
+    "completion_tokens": 11590,
+    "reasoning_tokens": 7641,
+    "cost": 0.0049909300000128,
+    "pass1_nodes": 11,
+    "pass1_edges": 11,
+    "pass2_nodes": 13,
+    "pass2_edges": 12
+  },
+  "_meta": {
+    "method": "self_critic",
+    "pass1": {
+      "nodes": 11,
+      "edges": 11
+    },
+    "pass2": {
+      "nodes": 13,
+      "edges": 12
+    }
+  }
+}

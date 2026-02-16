@@ -1,0 +1,244 @@
+{
+  "nodes": [
+    {
+      "id": "N_001",
+      "text": "shortness of breath",
+      "type": "SYMPTOM",
+      "evidence": "I've just been feeling really short of breath",
+      "turn_id": "P-1"
+    },
+    {
+      "id": "N_002",
+      "text": "feeling tired",
+      "type": "SYMPTOM",
+      "evidence": "just like super tired",
+      "turn_id": "P-1"
+    },
+    {
+      "id": "N_003",
+      "text": "weakness",
+      "type": "SYMPTOM",
+      "evidence": "feel a bit weak like I've just been feeling really tired",
+      "turn_id": "P-2"
+    },
+    {
+      "id": "N_004",
+      "text": "difficulty breathing",
+      "type": "SYMPTOM",
+      "evidence": "hard to hard to get like super deep breaths",
+      "turn_id": "P-3"
+    },
+    {
+      "id": "N_005",
+      "text": "feeling hot",
+      "type": "SYMPTOM",
+      "evidence": "I felt really hot",
+      "turn_id": "P-4"
+    },
+    {
+      "id": "N_006",
+      "text": "loss of taste",
+      "type": "SYMPTOM",
+      "evidence": "couldn't really taste my breakfast",
+      "turn_id": "P-4"
+    },
+    {
+      "id": "N_007",
+      "text": "loss of smell",
+      "type": "SYMPTOM",
+      "evidence": "not able to smell well",
+      "turn_id": "P-6"
+    },
+    {
+      "id": "N_008",
+      "text": "cough",
+      "type": "SYMPTOM",
+      "evidence": "feel like I maybe could be starting one",
+      "turn_id": "P-8"
+    },
+    {
+      "id": "N_009",
+      "text": "sore throat",
+      "type": "SYMPTOM",
+      "evidence": "starting to feel a little bit like that",
+      "turn_id": "P-9"
+    },
+    {
+      "id": "N_010",
+      "text": "headache",
+      "type": "SYMPTOM",
+      "evidence": "I have had a little bit",
+      "turn_id": "P-11"
+    },
+    {
+      "id": "N_011",
+      "text": "muscle aches",
+      "type": "SYMPTOM",
+      "evidence": "overall achy",
+      "turn_id": "P-20"
+    },
+    {
+      "id": "N_012",
+      "text": "loss of appetite",
+      "type": "SYMPTOM",
+      "evidence": "didn't eat much",
+      "turn_id": "P-4"
+    },
+    {
+      "id": "N_013",
+      "text": "reflux",
+      "type": "MEDICAL_HISTORY",
+      "evidence": "I have some um like reflux",
+      "turn_id": "P-25"
+    },
+    {
+      "id": "N_014",
+      "text": "prostate issues",
+      "type": "MEDICAL_HISTORY",
+      "evidence": "my my prostate's a little big",
+      "turn_id": "P-25"
+    },
+    {
+      "id": "N_015",
+      "text": "Avodart",
+      "type": "TREATMENT",
+      "evidence": "I take avodart",
+      "turn_id": "P-26"
+    },
+    {
+      "id": "N_016",
+      "text": "infection",
+      "type": "DIAGNOSIS",
+      "evidence": "sounds like you have some sort of an infection",
+      "turn_id": "D-36"
+    },
+    {
+      "id": "N_017",
+      "text": "COVID-19",
+      "type": "DIAGNOSIS",
+      "evidence": "We can't necessarily rule out covid just yet",
+      "turn_id": "D-36"
+    },
+    {
+      "id": "N_018",
+      "text": "physical exam",
+      "type": "PROCEDURE",
+      "evidence": "do a physical exam",
+      "turn_id": "D-37"
+    },
+    {
+      "id": "N_019",
+      "text": "chest X Ray",
+      "type": "PROCEDURE",
+      "evidence": "do a chest X Ray",
+      "turn_id": "D-37"
+    },
+    {
+      "id": "N_020",
+      "text": "COVID swab",
+      "type": "PROCEDURE",
+      "evidence": "a covid swab",
+      "turn_id": "D-37"
+    },
+    {
+      "id": "N_021",
+      "text": "financial advisor",
+      "type": "PROFESSION",
+      "evidence": "I work as a financial advisor",
+      "turn_id": "P-31"
+    }
+  ],
+  "edges": [
+    {
+      "source_id": "N_001",
+      "target_id": "N_002",
+      "type": "ASSOCIATED_WITH",
+      "evidence": "feeling really short of breath really rundown. Just like super tired",
+      "turn_id": "P-1"
+    },
+    {
+      "source_id": "N_003",
+      "target_id": "N_002",
+      "type": "CAUSES",
+      "evidence": "feel a bit weak like I've just been feeling really tired",
+      "turn_id": "P-2"
+    },
+    {
+      "source_id": "N_004",
+      "target_id": "N_001",
+      "type": "CAUSES",
+      "evidence": "hard to hard to get like super deep breaths",
+      "turn_id": "P-3"
+    },
+    {
+      "source_id": "N_005",
+      "target_id": "N_016",
+      "type": "INDICATES",
+      "evidence": "I felt really hot",
+      "turn_id": "P-4"
+    },
+    {
+      "source_id": "N_006",
+      "target_id": "N_017",
+      "type": "INDICATES",
+      "evidence": "not able to smell well",
+      "turn_id": "P-6"
+    },
+    {
+      "source_id": "N_007",
+      "target_id": "N_017",
+      "type": "INDICATES",
+      "evidence": "feel like I maybe could be starting one",
+      "turn_id": "P-8"
+    },
+    {
+      "source_id": "N_008",
+      "target_id": "N_017",
+      "type": "INDICATES",
+      "evidence": "starting to feel a little bit like that",
+      "turn_id": "P-9"
+    },
+    {
+      "source_id": "N_011",
+      "target_id": "N_017",
+      "type": "INDICATES",
+      "evidence": "overall achy",
+      "turn_id": "P-20"
+    },
+    {
+      "source_id": "N_012",
+      "target_id": "N_017",
+      "type": "INDICATES",
+      "evidence": "didn't eat much",
+      "turn_id": "P-4"
+    },
+    {
+      "source_id": "N_014",
+      "target_id": "N_013",
+      "type": "TAKEN_FOR",
+      "evidence": "I take avodart",
+      "turn_id": "P-26"
+    }
+  ],
+  "_usage": {
+    "prompt_tokens": 5951,
+    "completion_tokens": 13238,
+    "reasoning_tokens": 8417,
+    "cost": 0.00571147,
+    "pass1_nodes": 18,
+    "pass1_edges": 9,
+    "pass2_nodes": 21,
+    "pass2_edges": 10
+  },
+  "_meta": {
+    "method": "self_critic",
+    "pass1": {
+      "nodes": 18,
+      "edges": 9
+    },
+    "pass2": {
+      "nodes": 21,
+      "edges": 10
+    }
+  }
+}

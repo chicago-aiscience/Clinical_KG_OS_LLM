@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer states the sole medication is a bronchodilator (rescue inhaler) administered via a 'puffer', with explicit denial of other meds and doctor inquiring about a daily 'every day no matter what' controller which patient lacks (citing D-4,P-4,D-5,P-5,D-6,P-6,D-7,P-7,D-30,P-30,D-43). Generated correctly identifies bronchodilator as sole med but errs significantly: claims administration unspecified (contradicts D-7/P-7 'puffer'), denies doctor asked about daily controller (directly contradicts D-5/P-5), misattributes citations (e.g., P-1 for med instead of precise spots). Significant contradictions on core facts warrant score 2.",
+    "completeness": "Gold key points: 1) bronchodilator/rescue as sole med (as-needed); 2) via puffer; 3) no other meds; 4) doctor asked about daily controller ('every day no matter what'); 5) patient lacks it; 6) clinical context of increased use. Generated covers ~1 (sole bronchodilator) partially; misses 2 entirely, 3 partially (no explicit denial noted), 4/5 entirely, 6 partially via triggers. Covers 20-49% of points, score 2.",
+    "faithfulness": "Claims grounded: sole bronchodilator yes (P-1/P-4 etc.); increased use/triggers verifiable (P-1/P-8/P-9/P-11). Unverifiable/hallucinated: administration 'not specified' (false, D-7/P-7 'puffer'); no doctor ask on daily controller (false, D-5 explicit); wrong citations for symptoms (D-19/D-20 unrelated to meds). Multiple contradictions to transcript, score 2.",
+    "relevance": "Directly structures response to question's three parts (med, administration, daily controller), uses transcript citations, no major tangents despite errors; minor extra on triggers but focused, score 4."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "Generated Answer partially identifies the sole bronchodilator but fabricates absences of key transcript details on administration and doctor inquiry about daily controller, leading to low factual accuracy and completeness."
+}

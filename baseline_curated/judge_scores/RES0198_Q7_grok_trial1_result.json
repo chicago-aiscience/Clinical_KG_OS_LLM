@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer specifies onset one week ago [P-1,P-2], initial symptom stuffy nose [P-3], shift to mostly running [P-3], possible influence of decongestants [P-10], initial 'on and off' [P-1] but clarified as 'pretty constant' [P-8], no improvement [P-1]. Generated correctly notes onset week [P-1], initial stuffy, shift to runny, but infers initial symptom evidence from decongestants [P-10] instead of direct [P-3], misses constant clarification [P-8] sticking to 'on and off' [P-1], some factual discrepancies on evidence and pattern.",
+    "completeness": "Covers: onset (week), initial symptom (stuffy), shift (to runny), decongestants. Misses: direct quotes/citations [P-3], constant clarification [P-8], no improvement [P-1]. Approximately 60-70% coverage.",
+    "faithfulness": "Claims like onset [P-1] and on/off [P-1] verifiable. Initial stuffy linked to decongestants [P-10] partially supported but timing 'before interview progressed' and 'knowledge graph' not in transcript (hallucination). Shift from [P-10] plausible but P-3 direct. Ignores [P-8]. Multiple issues with unverifiable details and fabrications.",
+    "relevance": "Directly structures response around onset, symptom order/predominance shift, frequency; perfectly matches question elements with no off-topic content."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.25,
+  "summary": "The Generated Answer partially captures the progression and shift but has factual errors in evidence citation, misses key constancy clarification, and includes hallucinations like knowledge graph and decongestant timing."
+}

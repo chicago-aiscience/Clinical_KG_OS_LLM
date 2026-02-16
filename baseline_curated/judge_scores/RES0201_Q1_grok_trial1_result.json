@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Generated Answer misses the major symptom of difficulty breathing, which is prominently reported in the transcript [P-7-P-11] and detailed in Gold Answer. It partially covers sore throat but omits timelines and worsening. Muscle aches and tiredness are correctly noted but lack full context. Critically misrepresents reduced sense of taste [P-19-P-21] as denied loss of taste, whereas Gold and transcript indicate reported reduced taste. For denials, only lists loss of smell while claiming others (cough, runny nose, fever, headaches, chest pain) not mentioned, directly contradicting explicit denials in transcript [P-15-P-18, P-23] and Gold. Significant factual errors and contradictions warrant score of 2.",
+    "completeness": "Gold key points reported: sore throat (full details), difficulty breathing (full details), reduced taste (details), fatigue/muscle aches (details). Generated covers partial sore throat, muscle aches, tiredness (partial fatigue/aches), wrong on taste; completely misses breathing (major). Denied: Gold lists cough, runny nose, headaches, chest pain, loss of smell, fever, chills. Generated only loss of smell, misses all others. Covers roughly 20-49% (partial sore throat, aches/tired), score 2.",
+    "faithfulness": "Claims verifiable: sore throat [P-2], aches/tired [P-25] ok. Loss of taste as denied is misinterpretation of [P-19] 'maybe taste a little bit but not smell' (actually reduced taste per later [P-20-P-21]). Denials: loss of smell ok [P-19], but falsely claims cough etc. 'not mentioned' despite explicit denials [P-15-P-18, P-23]. Introduces non-existent 'knowledge graph'. Multiple hallucinated/misstated facts, score 2.",
+    "relevance": "Directly structures response around reported symptoms and explicitly denied screened symptoms, matching question focus with sections; no off-topic content despite inaccuracies, score 4."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer has significant omissions (e.g., breathing difficulty), misrepresentations (e.g., taste), and errors in denials, resulting in low factual accuracy, completeness, and faithfulness despite relevant structure."
+}

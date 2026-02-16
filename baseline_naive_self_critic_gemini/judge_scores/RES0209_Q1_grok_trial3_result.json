@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer lists four key symptoms: dry cough (2 weeks, nonstop daytime), breathing difficulties (short of breath, hard time breathing when wheezing severe), wheezing (a lot, more frequent than bronchodilator use), chest tightness (confirmed). Frequency: daytime prominent/constant, nighttime less frequent (every other/every two days). Generated covers cough (dry, nonstop day), breathing (SOB, hard time), wheezing (a lot), frequency difference (day more, night less). Errors: misses 2-week duration precisely; omits wheezing > bronchodilator use; wrongly states chest tightness 'not explicitly confirmed' despite P-20 'Yes'; adds triggers (cold/pollen) as breathing exacerbants (accurate but extra). Some factual errors but core symptoms mostly correct.",
+    "completeness": "Gold key points: 1. Dry cough ~2wks nonstop day (partial: cough dry/nonstop day, misses duration). 2. Breathing diff SOB/hard time esp severe wheezing (covered). 3. Wheezing a lot + more freq than bronchodilator (partial: wheezing a lot only). 4. Chest tightness (missed). 5. Day prominent/constant vs night every other/2 days/less (partial: day persistent, night less, misses specific night freq). Covers ~60-70% of key points.",
+    "faithfulness": "Claims grounded: cough [P-1,P-14], SOB [P-1], hard breathing [D-19,P-19], wheezing [P-15], day/night [P-1,P-18], bronchodilator [P-1,P-8]. Citations accurate. Minor issue: chest tightness wrongly denied as unconfirmed (P-20 confirms 'Yes'), hallucinates absence; KG note extraneous but not fabricating transcript facts. Triggers [P-9,P-11] verifiable. Mostly grounded with one minor false claim.",
+    "relevance": "Directly addresses symptoms (cough char, breathing, wheezing, freq day/night), structured by symptom and frequency. Misses chest sensations explicitly required; minor tangents (triggers, bronchodilator frequency, KG). Highly focused overall."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 4,
+    "relevance": 4
+  },
+  "average_score": 3.5,
+  "summary": "The Generated Answer covers most symptoms and frequency differences accurately from the transcript but misses chest tightness entirely, understates some details, and erroneously claims chest tightness unconfirmed."
+}

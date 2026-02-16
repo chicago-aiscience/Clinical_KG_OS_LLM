@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Generated Answer accurately captures some local symptoms (redness, tenderness, soreness from P-1) and location, consistent with Gold, but omits key details like 'stuck pretty good', explicit 'not the joint itself', confirmation in P-6, denial of bullseye rash, and 'totally fine' aside from tenderness. For systemic symptoms, it correctly notes joint pain (D-7) and fever/illness (D-8) screening with denials, but incorrectly states no headache screening occurred despite clear evidence in D-19/P-19/P-20, and uses indirect evidence (P-1/P-3) instead of direct denials (P-7/P-8/P-19), leading to significant factual contradictions.",
+    "completeness": "Gold key points: Local - behind left knee/crease, stuck good [P-1], sore skin not joint [P-1], red/tender [P-1/P-6], no bullseye/larger circle [P-6], totally fine aside tenderness [P-18], pretty healthy [P-13]; Systemic - joint pain denied [D-7/P-7], fever/ill denied [D-8/P-8], headaches denied [D-19/P-19/P-20]. Generated covers location, redness/tenderness/soreness (partial local), joint pain/fever screening (partial systemic); misses stuck good, no bullseye, healthy/fine statements, direct denial quotes, and entirely omits headaches screening/denial. Covers ~40-50% of key points.",
+    "faithfulness": "Local symptom claims verifiable in P-1 (red, tender, sore). Systemic screenings for joint pain/fever verifiable (D-7/D-8), but denial evidence (P-1/P-3) not direct responses (actual P-7/P-8); headache claim 'does not indicate screening' directly contradicts transcript (D-19 'no headaches?' P-19 'No'); interprets denials indirectly rather than quoting direct 'No's, introducing some ungrounded interpretation/hallucination.",
+    "relevance": "Directly structures response around local symptoms at site and systemic screenings (joint pain, fever), addressing core question; note on absent headaches is on-topic but erroneous; no major off-topic content."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer partially covers local symptoms and some systemic screenings but has significant errors including denying the headache screening present in the transcript and incomplete coverage of key Gold points."
+}

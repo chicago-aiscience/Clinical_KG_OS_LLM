@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Most elements match the Gold Answer: sputum described as “yellow custard” with “spots of red,” right-sided chest pain that is worse with deep breaths and coughing, and systemic symptoms of fever and chills. However, the Generated Answer incorrectly links “raw” sensation (which refers to the sore/raw throat after coughing [P-15]) to the chest pain quality, which is a factual misattribution. It also omits the specific characterization of the chest pain as “dull,” which is part of the Gold Answer, though it does correctly state it is “always there.”",
+    "completeness": "For the question’s required items, coverage is partial:\n- Sputum color/appearance: included (yellow custard + red spots).\n- Chest pain location: included (right-sided).\n- Chest pain quality: partially included (constant, worse with cough/deep breath), but misses key Gold detail that it is described as “dull” and that it is present even when lying down.\n- Systemic symptoms: includes fever and chills, but misses important Gold details that fever was subjective (no temperature taken), started Monday, and persisted until the visit.\nIt also does not mention other associated symptoms in the Gold Answer (dyspnea on exertion, sore throat, resolved rhinorrhea), though those are not strictly required by the prompt.",
+    "faithfulness": "Nearly all statements are grounded in the transcript with appropriate citations. The main issue is the interpretation that “raw” describes the chest pain; the transcript supports a raw throat after coughing, not chest pain. Otherwise, no clear hallucinated symptoms beyond what is in the transcript.",
+    "relevance": "The answer stays focused on the requested symptom domains (sputum description, chest pain location/quality, fever/chills) with minimal extraneous information."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 4,
+    "relevance": 5
+  },
+  "average_score": 4.0,
+  "summary": "The Generated Answer is largely accurate and relevant, but it misses several key descriptive details (notably fever timing/subjective nature and dull/positional aspects of chest pain) and misattributes “raw” throat sensation to chest pain."
+}

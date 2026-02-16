@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer fails to accurately reflect the Gold Answer's focus on the doctor's specific recap in D-58 (3-4 day dry cough with fever/headache, no sputum, no recent sick contacts except brother 2 weeks ago, no asthma, Claritin only), instead pulling general symptoms from early transcript (e.g., scratchy throat, post-nasal drip not in summary) and including birth control (not recapped); Jessica's goal is misrepresented as seeing family doctor (P-22) rather than knowing if she needs medicine (P-60), leading to significant contradictions.",
+    "completeness": "Gold key points: doctor's 5 recap items + Jessica's medicine goal; Generated vaguely touches dry cough/headache/fever/Claritin (~20% overlap) but misses duration, no sputum, contacts, no asthma, and entirely wrong goal with extras like post-nasal drip/birth control.",
+    "faithfulness": "Claims like symptoms (P-1,P-7,P-18) and meds (P-25,P-26) are in transcript but not from doctor's end-summary; hallucinates [KG] mappings (e.g., feeling hot to fever, Deyo details) not verifiable in transcript; goal from P-22 miscontextualized, not patient's stated next-step goal.",
+    "relevance": "Generated addresses general symptoms/history/meds/goal vaguely but ignores question's specifics on 'doctor's summary at the end' recap and Jessica's 'primary goal for next steps'; largely off-topic by focusing on initial complaints and misstated goal."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 2
+  },
+  "average_score": 1.75,
+  "summary": "The Generated Answer is largely incorrect, incomplete, and unfaithful by recapping general early symptoms instead of the doctor's end-visit summary and fabricating/misstating Jessica's goal."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly asserts that the transcript ends at [P-32] and does not include the clinician's plan, COVID-19 test, medication changes, or consultation with the supervising physician, directly contradicting the Gold Answer and the actual transcript which extends to [D-44] with explicit mentions (e.g., COVID swab in [D-29], medication change in [D-43], consultation in [D-29] and [D-43]). All facts are inconsistent with the Gold Answer.",
+    "completeness": "Gold Answer key points: 1) COVID swab ([D-29]); 2) medication regimen change ([D-43]); 3) consultation with supervising physician ([D-29], [D-43]). Generated Answer covers 0% of these, instead denying their presence and summarizing unrelated symptoms and history.",
+    "faithfulness": "Generated Answer hallucinates that the transcript ends early at [P-32] (false, continues to [D-44]); references non-existent 'knowledge graph' and 'provided context segments'; all claims about missing plan elements are unverifiable and contradicted by transcript; largely fabricated.",
+    "relevance": "Question specifically asks for clinician's overall plan including COVID test, med changes, and physician consultation; Generated Answer refuses to answer claiming insufficient context (falsely), then diverts to symptom summary and asthma diagnosis, failing to address the core query."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 1
+  },
+  "average_score": 1.0,
+  "summary": "The Generated Answer is entirely inaccurate, incomplete, unfaithful to the transcript, and irrelevant by falsely claiming the plan is absent and pivoting to unrelated symptom recap."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer lists specific absent features: bullseye rash (D-6/P-6), joint pain (D-7/P-7), fever/illness (D-8/P-8), headaches (D-19/P-19-20), feeling well (D-18/P-18), no other bites (P-9). Generated covers bullseye (accurately but cites P-1 instead of P-6), joint pain (cites D-7 but misinterprets via P-1, ignoring direct 'No' in P-7), fever/illness (cites D-8 but wrongly links to P-14 for D-18 response). Misses headaches, feeling well, no bites explicitly as absent features. Diagnostics: covers phys exam, tick ID, blood work accurately; misses physician consult. Core facts mostly align but citation errors and omissions create some factual discrepancies.",
+    "completeness": "Gold key points covered: bullseye rash (partial), joint pain (partial), fever (partial); missed: headaches, feeling well otherwise, no other bites. Diagnostics: phys exam, tick ID, blood work covered; missed physician consult. Covers ~60% of key points (3/6 clinical partially, 3/4 diagnostics).",
+    "faithfulness": "Claims mostly grounded: D-6, D-7, D-8, D-18 citations verifiable. However, 'knowledge graph' hallucinated (not in transcript). Joint pain interpretation twists P-1 (pre-D-7) ignoring P-7 'No'. Fever links P-14 (cholesterol) incorrectly to D-18 illness query (actual affirm in P-18). Multiple minor unverifiable/misattributed details.",
+    "relevance": "Generated directly structures response into 'Clinical Features Assessed and Found Absent' and 'Diagnostic Tests Proposed', precisely matching question without tangents."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.25,
+  "summary": "The Generated Answer is mostly correct and relevant but incomplete in covering all absent features like headaches, with faithfulness issues from hallucinations like 'knowledge graph' and citation misinterpretations."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer specifies illness began ~2 weeks ago with flu-like symptoms; first 2-3 days sore throat and runny nose; productive cough with whitish clear mucus for first 4-5 days; transition to dry after day 4-5; intensity and frequency stable (same, no increase, 3-4x/hr, spontaneous); other symptoms resolved 3-4 days; no fevers; only dry cough with soreness remains; COVID negative. Generated Answer correctly notes initial flu-like 2-3 days with productive cough, resolution of other symptoms 3-4 days, transition to dry cough early, persistence, and chest soreness. However, it inaccurately shortens mucus/productive phase to 2-3 days (vs Gold/transcript 4-5 days), omits mucus description ('whitish clear'), does not address cough intensity/frequency changes (stable per P7-P10), and vaguely says 'first few days' for transition. Minor errors in timeline but core sequence matches.",
+    "completeness": "Gold key points: 2-week total duration; initial flu onset; 2-3d sore throat/runny; 3-4d other flu resolve; 4-5d whitish clear mucus; post-4-5 dry persistent; intensity same; freq stable 3-4/hr spontaneous; no fevers; chest soreness; COVID neg/home. Generated covers: initial 2-3d flu+productive; 3-4d other resolve; early transition to dry (productive 2-3d); persistence with soreness. Missed: total 2-week cough duration explicitly; mucus color/thickness; exact 4-5d mucus; cough intensity/freq details/changes; no fevers in timeline; COVID/home. Covers ~60% of key points.",
+    "faithfulness": "Claims mostly verifiable: initial flu/productive P14/P5/P13; resolve 3-4d P14; dry now P5; soreness P15. But mucus duration 'first two or three days' not in transcript (P6: 'first four or five days'), hallucinates precise 'productive phase lasted first two or three days'; introduces 'knowledge graph' [KG] and absences from [KG] not in transcript; transition timeline 'first few days' plausible but shortens P6 explicitly. Multiple unverifiable/inaccurate timeline details and external reference.",
+    "relevance": "Question asks for complete 2-week timeline: initial flu when, mucus duration/look, cough transition, other symptoms resolve when, cough intensity/freq changes. Generated structures response as phased timeline directly addressing progression, symptoms resolution, transition, persistence; no off-topic content, though incomplete on specifics like freq/intensity and mucus details."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer provides a mostly relevant timeline of symptom progression but has factual inaccuracies in mucus duration, omits key details like mucus appearance and cough frequency/intensity stability, and includes minor hallucinations like a non-existent knowledge graph."
+}

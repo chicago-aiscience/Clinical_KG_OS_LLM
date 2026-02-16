@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer is factually incorrect compared with the Gold Answer. The transcript *does* include a concluding doctor summary and plan in [D-47] and a closing statement in [D-48]. The doctor summarizes: cough for a while (~3 months) that worsened over the last 3 days, nighttime awakening, greenish sputum, no blood, and no constitutional symptoms, and states the plan to “go review your story with the doctors.” The Generated Answer wrongly states the consultation “has not reached a conclusion” and that there is “no corresponding Doctor turn” after [P-47], despite [D-48] existing. It also introduces inaccuracies (e.g., mentions night sweats and “pleuritic chest pain” as part of the history; patient denied night sweats and did not report pleuritic chest pain).",
+    "completeness": "The Generated Answer misses essentially all key elements required by the question and present in the Gold Answer/transcript: (1) the end-of-visit plan to review the story with supervising doctors; (2) the doctor’s summary assessment of chronic cough with acute worsening, nocturnal symptoms, green sputum, no blood; (3) the statement that there are no constitutional symptoms; and (4) that next steps would be guided by the supervising physician’s assessment after review. It provides none of these as the final answer.",
+    "faithfulness": "The Generated Answer is not grounded in the provided transcript. It asserts that there is no doctor statement after [P-47], which is directly contradicted by [D-48]. It also claims the transcript includes “night sweats” and “pleuritic chest pain” as part of the history; in the transcript the patient denies night sweats ([P-5]) and chest pain is only with coughing, not pleuritic ([P-3]). These are hallucinated/mischaracterized details.",
+    "relevance": "While it attempts to address the question (plan/assessment/next steps), it does so by claiming the information is unavailable and therefore does not provide the requested content. This makes it largely non-responsive to the question’s intent."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 2
+  },
+  "average_score": 1.25,
+  "summary": "The Generated Answer is incorrect, omits nearly all required elements, and is not faithful to the transcript (it denies the existence of [D-47]/[D-48] content and adds mischaracterized symptoms)."
+}

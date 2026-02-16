@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer accurately captures the baseline manageability with puffers [P-1], the 3-day symptom worsening (increased cough, green-yellow sputum, dyspnea, hemoptysis [P-1]), progressive worsening, and that this is the worst episode [P-3], consistent with Gold. However, it omits key baseline details like lifestyle management [P-28], inhaler frequency [P-26], and activity levels [P-4]; introduces 'doctor confirms' slightly overstating [D-43]; and references a non-existent 'knowledge graph,' creating minor discrepancies but no major contradictions.",
+    "completeness": "Covered: baseline manageability [P-1], 3-day symptoms (cough, sputum, dyspnea, hemoptysis [P-1]), worsening trend, worst ever [P-3], prior sick-triggered exacerbations [P-3]. Missed: lifestyle management [P-28], rescue inhaler once every 2 weeks [P-26], routine dog walks at baseline vs. now trickier [P-4], possible fever [P-9], exact worsening quote [P-2], prior ED visits twice in 3 years without hospitalization [P-5,P-6]. Covers ~60% of key points.",
+    "faithfulness": "Most claims verifiable: symptoms and quotes from [P-1,P-3], doctor suspicion [D-43]. Hallucinates 'knowledge graph information' and its 'clinical indicators' not in transcript; 'doctor confirms' slightly interpretive but grounded. Multiple unverifiable additions reduce grounding.",
+    "relevance": "Perfectly structures response around baseline to acute evolution over 3 days, worsening (no improvement), and severity comparison to priors, directly matching question with no off-topic content."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.5,
+  "summary": "The Generated Answer is mostly correct and relevant but incomplete in covering baseline and history details from Gold, with faithfulness reduced by hallucinated 'knowledge graph' references."
+}

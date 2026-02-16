@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly states that 'the doctor's explicit summary is not included in the text,' despite D-58 clearly containing the doctor's recap of key findings (3-4 day dry cough, fever, headache, no sputum, no recent sick contacts except brother 2 weeks ago, no asthma, Claritin only). It instead recaps Jessica's initial symptoms from P-1/P-13 and history, not the doctor's summary. Jessica's goal is misrepresented as seeking treatment with inference to Claritin, not directly quoting P-60's 'if I have to like take medicine or something.' Significant factual errors and contradictions with Gold Answer.",
+    "completeness": "Gold Answer covers doctor's 5 specific recap points from D-58, visit framing, Jessica's precise goal from P-60, and P-61 context. Generated covers none of the doctor's recap points as such; partially overlaps symptoms (dry cough duration, feeling crappy/tired) and Claritin but attributes to patient report; vaguely addresses goal but misses precision and next steps framing. Covers 20-49% at best.",
+    "faithfulness": "Claims unverifiable ('no explicit summary') and false given D-58; symptoms citations (P-1, P-13, etc.) accurate; allergy history verifiable; goal inference ('obtain treatment') plausible but adds 'suggesting next step' not directly in transcript, hallucinating intent around Claritin use. Multiple hallucinations.",
+    "relevance": "Addresses Jessica's symptoms and inferred goal but completely misses doctor's summary (core of question), focusing on patient's initial report instead; partially on-topic but with major off-target content."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "The Generated Answer largely fails by ignoring the doctor's explicit summary in D-58, hallucinating its absence, and incompletely/inaccurately addressing Jessica's goal."
+}

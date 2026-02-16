@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer accurately details all three risk factors with citations and explains their relations to the presentation (smoking impairs clearance/predisposes to infection/COPD/cancer; occupational mitigated but possible low exposure; family adds genetic risk; overall vigilance for malignancy amid infection). Generated Answer misses smoking start age (15, P-38), incorrectly denies any occupational details in transcript despite clear mentions (P-33: consultant chemical plant Sarnia; P-34: engineering side, safe practices), partially covers relations (smoking irritant, family cancer risk) but overemphasizes cancer without noting infection primacy or hemoptysis. Significant contradictions on occupational history and incomplete relations yield score 2.",
+    "completeness": "Gold key points: Smoking (pack/day P-37, age 15 P-38, detailed relations); Occupational (consultant chemical plant P-33, safe/engineering P-34, mitigated risk); Family (grandpa lung cancer/big smoker P-42, genetic risk); Overall infection + vigilance for malignancy w/ hemoptysis. Generated covers: smoking pack/day (partial), family full, occupational none (denied); partial relations (no hemoptysis, mucociliary, COPD details). Covers ~30% of points (smoking partial + family), misses rest -> score 2.",
+    "faithfulness": "Generated citations mostly accurate (P-37 smoking, P-42 family, presentation symptoms). Hallucinates absence of occupational history (directly contradicts P-33/P-34); invents 'knowledge graph' linking family/smoking not in transcript; adds unverified 'high-risk category' and strong cancer push without transcript basis. Multiple hallucinations/misreads -> score 2.",
+    "relevance": "Directly structures around risk factors' elicitation and relation to presentation as asked, but extra unasked presentation summary, denial of one factor, and partial relations make it partially relevant with off-topic elements -> score 3."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "The Generated Answer has significant factual errors, especially denying the occupational history present in the transcript, leading to low completeness and faithfulness despite partial relevance."
+}

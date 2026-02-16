@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer has significant factual errors compared to the Gold Answer and transcript: it incorrectly states that the patient denied trouble breathing (patient explicitly reported difficulty breathing starting yesterday and worsening [P-7-P-11]), misses most denied symptoms listed in Gold (cough [D-15/P-15], runny nose [D-16/P-16], headaches [D-17/P-17], chest pain [D-18/P-18], fever [D-23/P-23], chills/night sweats [D-24/P-24]), only partially covers loss of smell correctly but conflates with taste; it also misinterprets differentials by claiming no loss of smell rules out COVID (Gold notes doctor still suspects COVID despite negatives). Core facts contradicted.",
+    "completeness": "Gold key points: denied cough, runny nose, headaches, chest pain, loss of smell, fever, chills/night sweats, prior breathing difficulty, sick contacts, travel; implications for URI exclusion, chest pain relevance, fever/chills not dissuading COVID suspicion, mono history noted. Generated covers only loss of smell (~1/10 points), hallucinates breathing as negative, mentions mono but misses vast majority including all screening symptoms and differential nuances. Covers <20%.",
+    "faithfulness": "Claims like 'patient did not report trouble breathing' directly contradict transcript [P-7-P-11]; accurate on loss of smell denial [P-19]; introduces unverifiable 'knowledge graph' and mono recurrence not in transcript; multiple hallucinations (breathing negative, breathing not screened as negative); citations partial but misused.",
+    "relevance": "Attempts to address screened negative symptoms and COVID differentiation but with incorrect examples (e.g., breathing as negative) and off-topic mono recurrence emphasis; partially on-topic structure but derailed by errors."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.0,
+  "summary": "The Generated Answer is largely factually incorrect, incomplete, and unfaithful to the transcript due to major hallucinations like denying the patient's reported breathing difficulty, while only partially relevant."
+}

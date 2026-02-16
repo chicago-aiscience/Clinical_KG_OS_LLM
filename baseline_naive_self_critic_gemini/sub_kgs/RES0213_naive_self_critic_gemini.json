@@ -1,0 +1,251 @@
+{
+  "nodes": [
+    {
+      "id": "N_001",
+      "text": "chest pain",
+      "type": "SYMPTOM",
+      "evidence": "Chest pain.",
+      "turn_id": "P-1"
+    },
+    {
+      "id": "N_002",
+      "text": "uncomfortable feeling in chest",
+      "type": "SYMPTOM",
+      "evidence": "it's been just very uncomfortable, like it just felt a little odd for like a week and a half.",
+      "turn_id": "P-2"
+    },
+    {
+      "id": "N_003",
+      "text": "sharp, strong pain when taking a deep breath",
+      "type": "SYMPTOM",
+      "evidence": "it's kind of like a very sharp, strong pain uh when I take a deep breath.",
+      "turn_id": "P-3"
+    },
+    {
+      "id": "N_004",
+      "text": "chest pain when sitting and studying",
+      "type": "SYMPTOM",
+      "evidence": "it's often when um I'm sitting and studying",
+      "turn_id": "P-4"
+    },
+    {
+      "id": "N_005",
+      "text": "chest pain when walking to school",
+      "type": "SYMPTOM",
+      "evidence": "when I'm walking, when I'm walking to school.",
+      "turn_id": "P-4"
+    },
+    {
+      "id": "N_006",
+      "text": "Tylenol",
+      "type": "MEDICATION",
+      "evidence": "I've tried Tylenol",
+      "turn_id": "P-6"
+    },
+    {
+      "id": "N_007",
+      "text": "Advil",
+      "type": "MEDICATION",
+      "evidence": "I've tried Advil",
+      "turn_id": "P-6"
+    },
+    {
+      "id": "N_008",
+      "text": "Alka-Seltzer",
+      "type": "MEDICATION",
+      "evidence": "I've even tried like a like an Alka-Seltzer",
+      "turn_id": "P-6"
+    },
+    {
+      "id": "N_009",
+      "text": "father had a heart attack",
+      "type": "FAMILY_HISTORY",
+      "evidence": "my dad had a heart attack last year",
+      "turn_id": "P-8"
+    },
+    {
+      "id": "N_010",
+      "text": "stress",
+      "type": "RISK_FACTOR",
+      "evidence": "I feel like it might it might be, it could be stress",
+      "turn_id": "P-8"
+    },
+    {
+      "id": "N_011",
+      "text": "chest pain at rest",
+      "type": "SYMPTOM",
+      "evidence": "you mainly get it at, so you can get it at rest",
+      "turn_id": "D-11"
+    },
+    {
+      "id": "N_012",
+      "text": "trying to quit smoking",
+      "type": "MEDICAL_HISTORY",
+      "evidence": "I've been trying to quit smoking",
+      "turn_id": "P-13"
+    },
+    {
+      "id": "N_013",
+      "text": "smoking",
+      "type": "RISK_FACTOR",
+      "evidence": "I smoke",
+      "turn_id": "D-18"
+    },
+    {
+      "id": "N_014",
+      "text": "short of breath",
+      "type": "SYMPTOM",
+      "evidence": "do you ever feel short of breath?",
+      "turn_id": "D-19"
+    },
+    {
+      "id": "N_015",
+      "text": "anxiety attacks",
+      "type": "MEDICAL_HISTORY",
+      "evidence": "You mentioned anxiety attacks.",
+      "turn_id": "D-21"
+    },
+    {
+      "id": "N_016",
+      "text": "London",
+      "type": "LOCATION",
+      "evidence": "you live in London?",
+      "turn_id": "D-26"
+    },
+    {
+      "id": "N_017",
+      "text": "running",
+      "type": "ACTIVITY",
+      "evidence": "I do really enjoy running",
+      "turn_id": "P-28"
+    },
+    {
+      "id": "N_018",
+      "text": "thesis for Masters of Social Work",
+      "type": "ACTIVITY",
+      "evidence": "I'm doing my Masters of social work and I'm getting towards the end and it's just, it's very scary because I'm working on my final uh thesis",
+      "turn_id": "P-15"
+    },
+    {
+      "id": "N_019",
+      "text": "nervousness",
+      "type": "SYMPTOM",
+      "evidence": "it's just making me very nervous.",
+      "turn_id": "P-15"
+    },
+    {
+      "id": "N_020",
+      "text": "chest pain lasts 20 minutes",
+      "type": "SYMPTOM",
+      "evidence": "It kind of lasts like 20 minutes or so",
+      "turn_id": "P-6"
+    },
+    {
+      "id": "N_021",
+      "text": "smoking 5 cigarettes a day",
+      "type": "MEDICAL_HISTORY",
+      "evidence": "I probably smoked 5 cigarettes a day",
+      "turn_id": "P-14"
+    },
+    {
+      "id": "N_022",
+      "text": "difficulty taking a deep breath",
+      "type": "SYMPTOM",
+      "evidence": "it's hard to get a deep breath",
+      "turn_id": "P-19"
+    }
+  ],
+  "edges": [
+    {
+      "source_id": "N_006",
+      "target_id": "N_001",
+      "type": "TREATS",
+      "evidence": "I've tried Tylenol",
+      "turn_id": "P-6"
+    },
+    {
+      "source_id": "N_007",
+      "target_id": "N_001",
+      "type": "TREATS",
+      "evidence": "I've tried Advil",
+      "turn_id": "P-6"
+    },
+    {
+      "source_id": "N_008",
+      "target_id": "N_001",
+      "type": "TREATS",
+      "evidence": "I've even tried like a like an Alka-Seltzer",
+      "turn_id": "P-6"
+    },
+    {
+      "source_id": "N_010",
+      "target_id": "N_001",
+      "type": "CONTRIBUTES_TO",
+      "evidence": "I was kind of worried that it could be a heart thing, I I feel like it might it might be, it could be stress",
+      "turn_id": "P-8"
+    },
+    {
+      "source_id": "N_015",
+      "target_id": "N_014",
+      "type": "CAUSES",
+      "evidence": "only if I, only if I, if I, if I'm having kind of an anxiety attack that's felt like that before",
+      "turn_id": "P-20"
+    },
+    {
+      "source_id": "N_018",
+      "target_id": "N_019",
+      "type": "CAUSES",
+      "evidence": "it's just making me very nervous.",
+      "turn_id": "P-15"
+    },
+    {
+      "source_id": "N_019",
+      "target_id": "N_014",
+      "type": "CAUSES",
+      "evidence": "I kind of start breathing faster, but I don't have a hard, I don't have a hard time breathing otherwise, and it's hard to get a deep breath 'cause I'm, it makes me really nervous.",
+      "turn_id": "P-19"
+    },
+    {
+      "source_id": "N_013",
+      "target_id": "N_001",
+      "type": "CONTRIBUTES_TO",
+      "evidence": "I smoke",
+      "turn_id": "D-18"
+    },
+    {
+      "source_id": "N_010",
+      "target_id": "N_019",
+      "type": "CAUSES",
+      "evidence": "besides just kind of feeling stressed",
+      "turn_id": "P-13"
+    },
+    {
+      "source_id": "N_019",
+      "target_id": "N_022",
+      "type": "CAUSES",
+      "evidence": "it's hard to get a deep breath 'cause I'm, it makes me really nervous.",
+      "turn_id": "P-19"
+    }
+  ],
+  "_usage": {
+    "prompt_tokens": 6815,
+    "completion_tokens": 3899,
+    "total_tokens": 10714,
+    "pass1_nodes": 17,
+    "pass1_edges": 5,
+    "pass2_nodes": 22,
+    "pass2_edges": 10
+  },
+  "_meta": {
+    "method": "self_critic_gemini",
+    "model": "gemini-2.0-flash",
+    "pass1": {
+      "nodes": 17,
+      "edges": 5
+    },
+    "pass2": {
+      "nodes": 22,
+      "edges": 10
+    }
+  }
+}

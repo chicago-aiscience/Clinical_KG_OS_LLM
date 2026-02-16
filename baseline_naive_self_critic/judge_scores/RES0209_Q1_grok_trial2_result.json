@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Step-by-step: Gold Answer specifies four key symptoms (dry cough ~2 weeks nonstop day, SOB/hard breathing, wheezing a lot more freq than inhaler, chest tightness) + day/night freq. Generated correctly reports dry cough nonstop day (P-1), very SOB (P-1), wheezing a lot (P-15), day/night freq accurately (P-1, P-18). Minor discrepancies: omits cough duration (2 weeks, P-13), chest tightness (P-20), wheezing > inhaler (P-17), 'hard time breathing' (P-19); adds cold air worsening cough (P-11 plausible but not exact phrasing for cough specifically). Core facts consistent, minor omissions/misattributions. Score: 4",
+    "completeness": "Gold key points: 1. Dry cough, ~2wks, nonstop day (P-1,P-13,P-14). 2. SOB: very SOB (P-1), hard time breathing (P-19). 3. Wheezing a lot, more freq than inhaler (P-15,P-17). 4. Chest tightness (P-20). 5. Day prominent/constant vs night every other/2 days, less freq (P-18). Covered: dry cough nonstop day, very SOB, wheezing a lot, full day/night freq. Missed: cough duration, hard time breathing detail, wheezing vs inhaler, chest tightness entirely. Covers ~60-70% of key points/details. Score: 3",
+    "faithfulness": "All claims verifiable: cough dry/nonstop day [P-1], cold worsens [P-9,P-11] (grounded, 'it' refers to symptoms), SOB [P-1], bronchodilator more [P-1,P-8], wheeze [P-15], day freq [P-1,P-9], night [P-18]. No fabrications; citations accurate. Minor interpretive stretch on 'cough worse' but transcript supports symptom worsening. Score: 5",
+    "relevance": "Directly structures answer around symptoms (cough char, SOB=breathing diff, wheezing) and day/night freq, matching question exactly. Includes relevant context (bronchodilator, triggers tied to symptoms) with no off-topic content. Minor extras don't detract from focus. Score: 4"
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 5,
+    "relevance": 4
+  },
+  "average_score": 4.0,
+  "summary": "The Generated Answer accurately captures most core symptoms and frequency details from the transcript but omits chest tightness and some specifics like cough duration and wheezing frequency relative to inhaler use, leading to moderate completeness."
+}

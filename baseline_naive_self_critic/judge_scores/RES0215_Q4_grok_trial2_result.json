@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly states that the specific questions about fever [D-7/P-7], runny nose [D-8/P-8], sick contacts [D-10/P-10], recent travel [D-11/P-11], rashes [D-13/P-13], and phlegm production [D-31/P-31] are 'not present' in the transcript, directly contradicting the Gold Answer which accurately cites them and explains their role in screening for infectious and systemic conditions; instead, it fabricates a focus on seasonal allergies vs. viral infection, which mismatches the Gold's emphasis on excluding infections toward reactive airway disease.",
+    "completeness": "Gold Answer key points: specific questions/citations for fever (infectious like pneumonia), runny nose (URTI), sick contacts (contagious), travel (exposure), rashes (systemic/allergic/viral), phlegm (productive infection), pain (pleuritic), plus child's well appearance and past virals; narrowing to reactive airway. Generated covers 0% of these, ignoring them entirely and discussing unrelated allergies/triggers.",
+    "faithfulness": "Generated hallucinates absence of verbatim questions/responses clearly present in transcript (e.g., D-7 to D-31 as cited); cites other transcript parts like P-35/36 allergies and P-38 weather accurately but irrelevantly; references non-existent 'knowledge graph'; overall, largely ungrounded with key fabrication about transcript content.",
+    "relevance": "Question explicitly asks about conditions screened via the listed symptoms (fever etc.) and responses narrowing differential; Generated denies their existence, pivots to unasked allergies vs. viral based on other history, failing to address the core query."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 1
+  },
+  "average_score": 1.0,
+  "summary": "The Generated Answer is fundamentally flawed, hallucinating the absence of key transcript elements central to the question and Gold Answer, resulting in complete inaccuracy, incompleteness, and irrelevance."
+}

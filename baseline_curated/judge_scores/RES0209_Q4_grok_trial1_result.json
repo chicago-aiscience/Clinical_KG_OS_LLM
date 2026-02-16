@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer details specific infectious screening symptoms (colds/infections, loss of taste/smell, fevers, nausea/vomiting, belly pain) and exposures (sick household/frequent contacts, outside sick contacts, travel), all denied by patient with citations. Generated Answer incorrectly identifies chest tightness (D-20, asthma symptom) and other health problems (D-29, general history) as infectious screening, missing all actual screening items. Patient responses listed are general asthma symptoms/triggers, not screening negatives. Only COVID swab is correct. Major factual contradictions.",
+    "completeness": "Gold key points: 6 symptoms/exposures screened (colds, taste/smell, fevers, nausea, belly pain, dry cough confirmation), 3 exposure histories, all denied (with citations), explanation for questions, COVID swab planned despite negatives. Generated covers only COVID swab (~10% at best), misses all screening symptoms/exposures and patient denials.",
+    "faithfulness": "Transcript clearly shows infectious screening in D-21-D-28 (colds, sick contacts home/frequent/outside, travel, taste/smell, fevers, nausea, belly pain), all denied, plus dry cough (D-14/15). Generated cites D-20 (chest tightness, asthma context) and D-29 (post-screening general health) incorrectly as screening; lists asthma symptoms/triggers (P-1,15,11,9) as responses; fabricates intent to 'differentiate' via chest tightness. Multiple claims not verifiable or contradicted by transcript.",
+    "relevance": "Question asks for specific infectious screening symptoms/exposures, patient responses (negatives), and planned test. Generated mimics structure but provides irrelevant/wrong content (asthma symptoms as screening), partially addresses test, but largely fails to target infectious rule-out."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 2
+  },
+  "average_score": 1.5,
+  "summary": "Generated Answer is largely inaccurate, incomplete, and unfaithful to the transcript, misidentifying asthma inquiries as infectious screening while missing the actual screening questions."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Gold Answer correctly diagnoses anxiety-related or stress-induced chest pain, supported by situational triggers, history, stress, and pertinent negatives. The Generated Answer incorrectly diagnoses Angina Pectoris (stress-induced or psychogenic chest pain), introducing a cardiac pathology contradicted by the Gold Answer and transcript negatives (e.g., no exertional worsening, rest pain). Some observations overlap, but core diagnosis is a significant factual error.",
+    "completeness": "Gold key points: (1) situational pattern (alone vs. distraction/resolution [P-4,P-9,P-29]), (2) anxiety history [P-21,P-22], (3) academic stress [P-13,P-15,P-16], (4) nervousness/breathing [P-19], (5) patient links to stress [P-8], (6) pertinent negatives (fevers, exertional, palpitations, asthma). Generated covers: partial (1), partial (2), partial (3), full (4), misses (5) and (6), adds medication resistance [P-6]. Covers ~50-60% partially.",
+    "faithfulness": "Most citations accurate (e.g., [P-4], [P-19], [P-15]); however, misrepresents [P-20] as current chest pain similar to past anxiety attacks (actually refers to palpitations); hallucinates angina diagnosis unsupported by transcript (negatives argue against); interprets medication resistance plausibly but not central. Multiple misrepresentations and unsupported diagnosis.",
+    "relevance": "Directly states a diagnosis and lists specific transcript-cited observations supporting reasoning, perfectly matching question structure despite incorrect content."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer is relevant and partially complete but undermined by incorrect angina diagnosis, factual contradictions to Gold, and hallucinations/misrepresentations in faithfulness."
+}

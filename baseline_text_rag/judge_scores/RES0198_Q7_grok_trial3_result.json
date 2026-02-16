@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer accurately states symptoms started one week ago (P-1, P-2), stuffiness first then shifted to runny (P-3), and clarified as 'pretty constant' (P-8) despite initial 'on and off' (P-1). Generated correctly notes one-week duration and progression from stuffy to runny but incorrectly claims no information on constant/intermittent and that patient did not answer D-8 (patient did answer in P-8: 'pretty constant'). Wrong citations (e.g., D-3/D-4 instead of P-3; ignores P-8). Significant factual error on key question element (constant/intermittent). Score: 2.",
+    "completeness": "Gold key points: 1-week onset [P-1,P-2]; stuffy first [P-3]; shifted to mostly runny [P-3]; constant overall [P-8] with initial on/off note [P-1]; no improvement [P-1]; decongestant mention [P-10]. Generated covers: duration, stuffy first, shift to runny. Misses: constant clarification, initial on/off, no improvement, decongestant influence. Covers ~50% of key points, misses crucial pattern of symptoms. Score: 3.",
+    "faithfulness": "Claims verifiable: week duration (P-1/P-2, though cites D); stuffy first to runny (P-3, but cites D-3/D-4 incorrectly). Hallucinates/misreads: 'patient did not answer' D-8 (P-8 explicitly answers 'pretty constant'); wrong citations point to doctor questions, not patient responses. Multiple inaccuracies in grounding to transcript. Score: 2.",
+    "relevance": "Directly addresses question parts: duration/onset, first symptom (stuffy), predominant change (to runny), and constant/intermittent (though wrongly claims absent). No off-topic content, fully focused on nasal symptoms progression despite errors. Score: 4."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer correctly captures the onset duration and symptom progression but significantly errs by denying the presence of information on symptom constancy, leading to low correctness, completeness, and faithfulness."
+}

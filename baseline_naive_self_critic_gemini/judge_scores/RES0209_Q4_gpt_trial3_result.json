@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer is largely incorrect relative to the Gold Answer. The transcript clearly contains infectious/COVID screening (colds/infections, sick contacts, travel, anosmia/ageusia, fever, GI symptoms) and a planned COVID swab. The Generated Answer incorrectly states there is “no information available” about infectious screening or planned diagnostic testing, directly contradicting D-21 to D-29. It also misattributes/cites wheezing to D-19 (wheezing is asked at D-15).",
+    "completeness": "It misses essentially all key elements from the Gold Answer: (1) screening for recent colds/infections (denied), (2) sick contacts at home and outside (denied), (3) travel (denied), (4) loss of taste/smell (denied), (5) fever (denied), (6) nausea/vomiting and belly pain (denied), and (7) planned COVID swab despite negative screen. It instead summarizes asthma triggers (exercise, cold, pollen), which are not what the question asks for.",
+    "faithfulness": "Multiple statements are not grounded in the transcript: claiming absence of infectious/COVID screening despite it being present; referencing a “knowledge graph” that is not in the transcript; and providing incorrect citation for wheeze (D-19). Some asthma-related content is grounded (exercise/cold/pollen triggers), but overall the response is not faithful to the relevant portion of the transcript.",
+    "relevance": "The response does not address the question’s target (infectious symptom/exposure screening and planned test). It mainly discusses asthma symptoms/triggers and concludes the infectious information is not present, which is directly contrary to the transcript. Thus relevance is poor."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 2
+  },
+  "average_score": 1.5,
+  "summary": "The Generated Answer contradicts the transcript by denying the presence of infectious/COVID screening and omits nearly all required details, resulting in very low correctness and completeness."
+}

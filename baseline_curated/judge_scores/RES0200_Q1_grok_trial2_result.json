@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Generated Answer accurately captures endorsed respiratory symptoms (SOB, worsening cough, chest discomfort) and sputum change matching Gold and transcript [P-1, P-5, P-6, P-8, P-13]. It notes chills correctly [P-29]. However, it misses details like cough triggered by stairs [P-5], SOB severity requiring sitting [P-8], and explicitly states patient did not deny orthopnea, PND, hemoptysis, palpitations – contradicting transcript explicit 'No' responses [P-7, P-9, P-10, P-14] and Gold. Fever denial is overstated as explicit when patient was unsure [P-29]. Significant factual errors on key denials.",
+    "completeness": "Covered: worsening cough, SOB last few days, sputum change (baseline to yellow), chest discomfort, chills. Missed from Gold: cough on minimal exertion (stairs), SOB severity (sit to recover), chills with no measured fever detail, all listed denials (hemoptysis, orthopnea, PND, palpitations, calf pain, dizziness, etc. – only partial fever). Covers ~40% of key points, major gap in denials which are central to question.",
+    "faithfulness": "All cited endorsed symptoms and sputum verifiable in transcript [P-1, P-5, P-6, P-13, P-29]. Chills accurate. However, claim of no explicit denials for orthopnea/PND/hemoptysis/palpitations hallucinates/misreads explicit 'No' answers [P-7, P-9, P-10, P-14]; fever 'denial' stretched from uncertainty. Some ungrounded interpretation but mostly verifiable.",
+    "relevance": "Answer directly structures response into respiratory symptoms, sputum change, systemic symptoms, and specific denials, perfectly mirroring question's focus with no off-topic content."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 3,
+    "relevance": 5
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer correctly identifies main endorsed symptoms and sputum change but significantly underreports denials and misses details, with misinterpretation of explicit negatives."
+}

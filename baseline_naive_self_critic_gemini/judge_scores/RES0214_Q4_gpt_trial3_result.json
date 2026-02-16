@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the ordered test as a COVID-19 swab (matches Gold: “we'll be ordering a covid swab no matter what” [D-53]). For the rationale, it correctly captures the main reason COVID-19 was prioritized: the household clustering/possible transmission involving the husband’s similar symptoms and the clinician’s explicit statement that this makes COVID the first thing to rule out [P-19, D-53]. However, it adds a slightly stronger causal claim (“likely contracted the virus from him”) than the transcript explicitly states, and it does not accurately reflect the sequencing emphasized in the Gold Answer (influenza raised after COVID discussion and flu-shot status).",
+    "completeness": "Key Gold points covered: (1) COVID swab ordered; (2) COVID prioritized due to husband having similar symptoms/household pattern and clinician statement that COVID is first to rule out. Key Gold points missed or only partially addressed: (1) explicit self-isolation instruction as part of the rationale/containment urgency [D-53, D-54]; (2) that influenza was mentioned only after COVID rule-out discussion and after learning she had not had a flu shot [P-53, D-54].",
+    "faithfulness": "Most claims are grounded in the transcript with appropriate citations (COVID swab; husband symptomatic; fever/sore throat; “first thing to rule out”). However, the answer introduces “knowledge graph” support and claims about what it indicates—this is not present in the transcript and is therefore hallucinated. The statement that she “likely contracted” it from her husband is plausible but not explicitly stated. These issues reduce faithfulness.",
+    "relevance": "The response directly addresses both parts of the question (test ordered; rationale for prioritizing COVID-19 over influenza) and stays on-topic."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 3,
+    "relevance": 5
+  },
+  "average_score": 3.75,
+  "summary": "Accurately identifies the COVID swab and the main prioritization rationale (household clustering), but omits key Gold details (self-isolation/containment emphasis and influenza sequencing) and includes non-transcript “knowledge graph” content."
+}

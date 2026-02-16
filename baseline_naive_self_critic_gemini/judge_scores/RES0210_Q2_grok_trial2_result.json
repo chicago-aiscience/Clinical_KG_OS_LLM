@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer states Lipitor for high cholesterol (correct in Generated). Tylenol for symptom relief related to feeling feverish/unwell with 'helps a little bit' effectiveness (Generated correctly notes effectiveness but inaccurately specifies condition as 'cough' instead of fever/symptoms, citing [P-1] which only mentions cough without linking to Tylenol; [P-14] context is post-fever discussion). Generated implies these are the medications but does not explicitly note 'only one prescribed' or no others. Minor discrepancies on Tylenol purpose, core facts (meds, cholesterol, partial effectiveness) correct.",
+    "completeness": "Gold key points: Lipitor (atorvastatin) for cholesterol, only prescribed med; Tylenol OTC for feverish/unwell symptoms, 'helps a little bit'; no other meds; non-med relief (gunk), extras (allergies, cannabis, no temp). Generated covers Lipitor for cholesterol, Tylenol OTC with effectiveness, but misses 'atorvastatin' name, explicit 'only med', non-med relief, and extras. Covers main meds/conditions/effectiveness (80-99%).",
+    "faithfulness": "Lipitor claims verifiable [P-25,P-26]. Tylenol taken and 'helps a little bit' verifiable [P-14]; effectiveness accurate. Tylenol 'for cough' not directly stated (plausible from context but [P-1] citation only cough mention, no Tylenol link; actual context post-fever/chills). No major hallucinations, minor unverifiable condition attribution.",
+    "relevance": "Generated directly lists prescribed/OTC meds, conditions, OTC effectiveness with evidence; structured response perfectly matches question, no tangents or off-topic content."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 4,
+    "relevance": 5
+  },
+  "average_score": 4.25,
+  "summary": "The Generated Answer is mostly accurate and complete but has a minor factual discrepancy and unverifiable detail in attributing Tylenol specifically to cough relief rather than feverish symptoms."
+}

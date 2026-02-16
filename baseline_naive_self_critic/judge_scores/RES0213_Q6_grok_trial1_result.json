@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly claims the transcript only includes patient statements up to [P-26] with no doctor's dialogue or concluding remarks, which is false as the full transcript includes [D-1] to [D-33] with the explicit plan stated in [D-33]; it completely misses the stated plan (relay information to another doctor) and has minor inaccuracies in citations and details (e.g., anxiety history attributed to [P-20] instead of [P-21], incomplete smoking history), representing significant factual errors and contradictions with the Gold Answer.",
+    "completeness": "Gold Answer covers the exact plan from [D-33] (0% covered) and five detailed categories of key information: (1) full symptom characteristics (partial: sharp, deep breath, 20min, but misses 1.5 weeks duration, rest/alone/distraction relief, not exercise); (2) failed OTC (covered); (3) pertinent negatives (none covered: no trauma, fever, asthma, SOB, palpitations, family sudden death); (4) relevant history (partial: anxiety, smoking approximate, father MI); (5) psychosocial (partial: stress/school/smoking quit, misses thesis specifics, living alone, multivitamin). Covers roughly 30-40% of key points.",
+    "faithfulness": "Major hallucination that transcript lacks doctor's remarks/concluding statements, preventing plan identification despite [D-33] being present; some claims verifiable (e.g., symptoms [P-3,P-6], OTC [P-6], family [P-8]) but inaccurate citations (anxiety to [P-20] vs. [P-21]) and omissions indicate multiple issues with grounding.",
+    "relevance": "Addresses key clinical information partially but entirely ignores/denies the stated plan from concluding remarks due to false transcript assumption, introducing off-topic disclaimer; partially relevant to second half of question but fails first half."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "The Generated Answer is significantly flawed by hallucinating transcript limitations, omitting the explicit plan, and providing incomplete/inaccurate coverage of key information."
+}

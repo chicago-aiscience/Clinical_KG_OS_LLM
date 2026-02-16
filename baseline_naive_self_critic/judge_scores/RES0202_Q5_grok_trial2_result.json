@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer highlights mother's explicit concern about COVID from school [P-2], symptoms starting Wednesday evening after school [P-1], no known sick contacts outside school but hard to say at school [P-38], school did not notify [P-39], school test requirement [P-41], and supporting no travel/env factors. Generated Answer has factual errors: incorrectly states symptoms after returning Thursday (transcript is Wednesday [P-1]); misinterprets sick contacts outside by citing [P-8] (activity, not contacts) instead of [P-38]; claims no transcript info on school notification despite [P-39]; misses mother's COVID-school concern [P-2] and other points. Significant errors and omissions contradict Gold.",
+    "completeness": "Key Gold points: school central/mother COVID concern [P-2], symptoms post-Wed school [P-1], no outside sick contacts [P-38], hard to say school [P-38], no school contact [P-39], school test req [P-41], no travel/env. Generated covers partially school as source (timeline wrong), no known school sick contacts (partial), but misses/inaccurately covers outside contacts and school notification, omits most others. Covers ~20-40% with errors.",
+    "faithfulness": "Generated timeline 'returning home on Thursday [P-1]' contradicts [P-1] (Wednesday); [P-8] misused for outside sick contacts (it's about activity, not contacts—hallucinated link); claims no info on school notification despite explicit [P-39/P-38]; no specific school sick contacts ok but misses nuance [P-38]; overall multiple inaccuracies and hallucinations relative to transcript.",
+    "relevance": "Generated directly discusses school as potential source, sick contacts at/ outside school, and school notifications, aligning with question despite errors; minor off-point cite [P-8] but no major tangents."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer is mostly relevant but has significant factual errors, incomplete coverage, and faithfulness issues including wrong timeline, misused citations, and missing key transcript details."
+}

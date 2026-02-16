@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer details a precise chronology: sore throat Day 1 (worsening), fatigue/muscle aches shortly after, taste Day 3 (constant), breathing Day 4 (worsening, constant). Generated Answer correctly notes sore throat onset 4 days ago and worsening but misstates taste/smell (claims loss of smell when transcript indicates taste affected but not smell), treats dysphagia as separate new development (not chronological), omits breathing difficulty entirely, and lacks timing for fatigue/muscle aches or other symptoms, leading to significant factual discrepancies and missing core elements.",
+    "completeness": "Gold key points: sore throat Day 1 + progression; fatigue/muscle aches immediately after; taste Day 3; breathing Day 4; self-treatment failure; overall progression. Generated covers sore throat timing/severity/treatment (~25%), dysphagia (partial overlap), vague mentions of taste/smell (inaccurate) and fatigue (no timing); misses breathing, specific timings for all except sore throat, and full chronology (covers ~20-40%).",
+    "faithfulness": "Claims like sore throat details [P-2,P-4,P-6] verifiable; fatigue/muscle aches [P-25] verifiable but no timing [P-26] omitted; taste/smell misstates [P-19,P-20] as loss of smell (hallucinated/opposite of transcript: taste affected, smell not); dysphagia progression inferred but not distinctly timed in transcript; entirely omits breathing [P-7-P-11] (omission, not fabrication); multiple inaccuracies and omissions indicate poor grounding.",
+    "relevance": "Addresses symptom progression starting from sore throat but fails to provide clear chronological order by days, severity changes for all symptoms, or include all symptoms (e.g., no breathing); structures as evolution + concurrent rather than sequenced timeline, making it only partially responsive."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "The Generated Answer partially captures sore throat progression but omits key symptoms like breathing difficulty, misinterprets taste/smell, and lacks a full chronological order with severity changes, resulting in low scores across dimensions."
+}

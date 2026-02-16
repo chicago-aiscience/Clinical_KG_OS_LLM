@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly states that conditions like night sweats, eczema, and allergic reactions requiring an EpiPen were not screened for, despite clear evidence in the transcript (e.g., [D-9] for night sweats, [D-32/33] for eczema, [D-18/21] for allergies/EpiPen) and Gold Answer; it only partially covers asthma but misses family history, productive cough, rashes, GI, and joint pain screenings listed in Gold, introducing contradictions like claiming Jessica did not explicitly answer asthma (she denied it in [P-29]).",
+    "completeness": "Gold key points: screenings for night sweats ([D-9/P-9]), productive cough ([D-5/6 P-5/6]), severe allergies/EpiPen ([D-18/21 P-18/19/21]), personal asthma ([D-29/P-29]), family asthma ([D-30/31 P-30/31]), family eczema ([D-32/33 P-33]), rashes ([D-10/P-10]), GI symptoms ([D-11/12 P-11/12]), joint pain ([D-13/P-13]) with Jessica's denials/responses; Generated covers only personal asthma partially (<20% coverage), misses all others.",
+    "faithfulness": "Claims unverifiable in transcript: denies screening for night sweats/eczema/allergies despite direct questions [D-9, D-32, D-18/21]; cites [D-29/D-58] accurately for asthma but hallucinates Jessica 'did not explicitly answer'; introduces non-existent 'knowledge graph'; summarizes exposure screening via [D-58] but overinterprets; multiple claims contradict transcript.",
+    "relevance": "Addresses question partially by discussing asthma screening and some responses but deviates by denying key example conditions were screened, adding irrelevant 'recent exposure' and allergy timing analysis, and referencing absent knowledge graph; some off-topic content on differential narrowing beyond transcript-grounded responses."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.0,
+  "summary": "The Generated Answer is significantly incomplete and factually inaccurate compared to the Gold Answer, missing most screened conditions and Jessica's responses while hallucinating absences in the transcript."
+}

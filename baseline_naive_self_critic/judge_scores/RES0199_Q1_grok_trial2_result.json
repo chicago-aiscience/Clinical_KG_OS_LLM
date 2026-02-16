@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly classifies the headache as a respiratory symptom, despite it being neurological; it accurately notes the dry cough but wrongly states that diarrhea frequency (5-6 times/day in P-28), vomiting episodes (two times in P-32), and headache severity (7/10 in P-8) are not specified in the transcript, contradicting the Gold Answer and transcript; core symptoms (nausea, vomiting, diarrhea, dry cough) are mentioned but lack timelines and details like liquid stools, no blood, stability, and negatives present in Gold.",
+    "completeness": "Covered: GI symptoms (nausea, vomiting, diarrhea), respiratory cough (dry nature); Missed: cough start 4 days ago, no sputum/blood, stable severity, no SOB/wheezing/chest pain; diarrhea 2 days ago, liquid stools, 5-6x/day, no blood; vomiting yesterday 2x food contents no blood; nausea today; GI negatives (no bloating/gas, constipation, appetite change); headache details (4 days, persistent bilateral forehead/top, 7/10, no radiation/stiffness, unusual); loss of smell, fatigue. Covers roughly 20-30% of Gold key points.",
+    "faithfulness": "Claims grounded: GI symptoms and dry cough from P-1/P-12; ungrounded/false claims: diarrhea frequency/vomiting number/headache numerical severity 'not specified' (directly contradicted by P-28, P-32, P-8); headache as respiratory not supported; no hallucinations of new facts but multiple erroneous denials of transcript content act as fabricated absences.",
+    "relevance": "Directly structures response around GI/respiratory symptoms and exact specifics requested (cough nature, diarrhea frequency, vomiting number, headache severity), with no off-topic content, perfectly matching question focus despite errors."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer partially identifies main symptoms but significantly errs on key specifics by denying their presence in the transcript and misclassifies headache, resulting in low correctness, completeness, and faithfulness."
+}

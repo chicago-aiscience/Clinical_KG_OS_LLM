@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer specifies precise days: Friday raspy cough, Sunday bad cough + yellow sputum with red spots starting together, Monday fever, Tue-Wed chills (last two days), Tue chest pain (last day). Generated Answer inaccurately states raspy cough 'couple of days' prior (ignores Friday [P-3]), fever 'next day' after cough (misaligns with Monday [P-8]), sputum Sunday correct, chills last two days correct, chest pain vaguely current without day and confuses with sore throat 'raw' [wrongly cites P-15]. Worsening description vague and mismatched. Significant factual errors and contradictions with Gold.",
+    "completeness": "Gold covers runny nose (~week ago), Fri raspy cough, Sun bad cough/sputum/red spots, Mon fever/sputum continue, Tue-Wed chills, Tue chest pain, Wed full picture (dyspnea, sore throat). Generated misses runny nose, Fri cough, precise Sun bad cough, Mon fever, Tue chest pain onset; partially covers sputum Sun, chills last two days; vague worsening without full progression or dyspnea/sore throat distinction. Covers ~30-40% of key points (mainly sputum and chills).",
+    "faithfulness": "Claims like cough 'couple days' [P-1] partial but ignores clarifications [P-3]; fever 'next day' [P-5] misinterprets (P-8 specifies Monday); sputum Sunday [P-6,P-7] accurate; chills [P-9] accurate; chest pain wrongly links to 'raw' throat [P-15, not chest P-17/19/20]; 'knowledge graph' hallucinated (absent); worsening phases loosely grounded but with misattributions (e.g., ignored cough [P-5 wrong]). Multiple hallucinated facts and citation errors.",
+    "relevance": "Directly structures response as timeline for specified symptoms and worsening over week, closely matching question despite inaccuracies; minor irrelevance in 'knowledge graph' mention and vague phases."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer partially addresses the timeline but contains significant factual inaccuracies, timeline omissions, and hallucinations compared to the Gold Answer, resulting in low correctness, completeness, and faithfulness."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies asthma as the top differential (phrased as 'asthma exacerbation' vs Gold's 'asthma reoccurring in some capacity'), physical exam (lungs), rescue puffers as first step, and contingency plan, matching core facts. Minor discrepancies: uses 'exacerbation' and 'acute flare-up' (not exact transcript/Gold phrasing), implies 'shift from chronic management' (inferential, not stated), notes patient's symptoms 'feel different' (patient's words, not doctor's assessment), and cardiac as 'ruled out or lower' (Gold/transcript say 'lower'). Patient's salbutamol use cited but Gold emphasizes lack of current rescue. Core consistent, minor variances.",
+    "completeness": "Gold key points: 1) asthma top differential pending exam; 2) quick phys exam + lung auscultation + possible further inv; 3) rescue puffers trial (notes no current supply); 4) contingency if no help (back to table/other directions); 5) stepwise one at a time; 6) consult supervising doc. Covered: 1 (partial, misses 'pending'), 2 (full), 3 (partial, misses no current puffers/therapeutic trial explicit), 4 (full), 5 (implied), 6 (missed). ~85% coverage.",
+    "faithfulness": "All major claims verifiable: assessment [D-35], exam [D-35], treatment [D-35], contingency [D-35/36], cardiac lower [D-36], past salbutamol [P-25], symptoms different [P-16]. Minor unverifiable/hallucinated: 'exacerbation/acute flare-up/shift to acute' (plausible inference from reoccurring asthma trial but not verbatim), 'rescue puffers such as salbutamol' (salbutamol is SABA rescue, patient takes daily but distinguishes as-needed unfilled). Citations accurate, mostly grounded.",
+    "relevance": "Perfectly structured around question components (assessment, phys exam, first intervention, contingency) with no extraneous content or tangents."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 4,
+    "relevance": 5
+  },
+  "average_score": 4.25,
+  "summary": "The Generated Answer is highly relevant and mostly correct/complete/faithful, with minor interpretive phrasing and omissions relative to the Gold Answer and transcript."
+}

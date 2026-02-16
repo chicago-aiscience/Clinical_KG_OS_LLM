@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer misdates multiple key symptom onsets compared with the Gold Answer/transcript. It places the raspy cough onset on Sunday, but the patient reports a raspy cough starting Friday and worsening Sunday. It places feverishness on Sunday, but the patient states the subjective fever started Monday and continued through Wednesday. It treats right-sided chest pain as a Wednesday-only/current symptom without acknowledging it was first specifically noticed “over the last day” (≈Tuesday). Only the yellow sputum with red spots beginning Sunday and chills starting in the last two days (Tue–Wed) align with the Gold Answer.",
+    "completeness": "Key Gold Answer elements missed or inadequately captured: (1) runny nose about a week prior that resolved; (2) Friday onset of raspy cough; (3) explicit Sunday worsening of the cough (became “really bad”); (4) Monday onset and persistence of fever through Wednesday; (5) continuation of blood-tinged sputum into Monday; (6) chest pain onset around Tuesday (“noticed over the last day”). While it mentions chills, sputum, dyspnea on exertion, and sore throat, it does not provide a complete, day-by-day timeline as requested.",
+    "faithfulness": "Several claims are not supported by (and in fact contradict) the transcript: stating fever began on Sunday (transcript: Monday) and implying the raspy cough began Sunday (transcript: Friday, with worsening Sunday). Other statements (yellow sputum with red spots on Sunday; chills last two days; pleuritic worsening; exertional windedness; sore throat after coughing) are grounded in the transcript.",
+    "relevance": "The response is generally focused on constructing a symptom timeline and describing progression over the week, which matches the question. However, it narrows the timeline to Sunday–Wednesday and omits/incorrectly dates earlier-week milestones (Friday cough, prior runny nose), limiting its usefulness for the asked “complete timeline.”"
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The answer is on-topic but provides an incomplete and partially inaccurate timeline, with key symptom onsets (raspy cough and fever, and likely chest pain) misdated relative to the transcript."
+}

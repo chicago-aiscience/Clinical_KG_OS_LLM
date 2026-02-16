@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the condition as 'cardiac ischemia' (minor terminology difference from Gold's 'cardiac ischemic picture' in [D-36]), and accurately notes the absence of pain ([P-5], [D-36]) and chest tightness as the nature of complaints. However, it omits key Gold details like the lack of exertional dyspnea/classic pattern ([D-36]), and specific absent symptoms (anxiety, sweating, impending doom [D-6, P-6]). It also introduces a non-existent 'knowledge graph' ruling out ischemia, which contradicts Gold's transcript-based evidence, introducing factual errors.",
+    "completeness": "Gold key points covered: condition (yes), tightness vs. pain in nature of complaints (partial), absence of pain (yes). Missed: distinction of no exertional out-of-breath with exercise vs. tightness ([D-36]), absent anxiety/sweaty/impending doom ([D-6,P-6]), clinician screening these ([D-5,D-6]), combination lowering likelihood, patient relief ([P-35]). Covers ~50-60% of key points.",
+    "faithfulness": "Claims like condition, tightness ([P-1]), difficulty breathing ([P-7]), no pain ([P-5,D-36]) verifiable in transcript. However, 'knowledge graph' and '[FINDING] no pain --[RULES_OUT]--> [DIAGNOSIS] cardiac ischemia' are entirely fabricated, not in transcript, representing multiple hallucinations.",
+    "relevance": "Directly addresses the question by naming the condition and citing doctor-referenced symptoms (nature: tightness/no pain; absence: no pain), with structure matching query's request for both categories; minor irrelevance from hallucinated knowledge graph."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer is mostly correct and relevant on core facts like the condition and no pain but incomplete in covering all cited symptoms from Gold, and faithfulness suffers from hallucinated knowledge graph references."
+}

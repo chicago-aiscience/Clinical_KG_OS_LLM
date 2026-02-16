@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the specified symptoms (dry cough, shortness of breath, wheezing, chest tightness) and increased bronchodilator use as pointing to worsening asthma, consistent with the Gold Answer's core facts. It accurately cites transcript for symptoms and notes relief with bronchodilator. However, minor discrepancies include imprecise citation for chest tightness (links to P-16 instead of direct P-20 confirmation), lack of mention of patient's long-standing asthma diagnosis, specific triggers (exercise, cold), and especially the critical screening for infections which Gold emphasizes to differentiate from new conditions. No direct contradictions, so core facts correct.",
+    "completeness": "Gold key points: classic symptoms with citations (all 4 covered), confirmed asthma history (missed), bronchodilator relief and dramatic use increase (covered, though citation approximate), wheezing more frequent than use (missed), triggers (exercise/cold - missed), comprehensive infection ruling out (denials of colds, contacts, etc. - completely missed), need for med adjustment (implied). Covers symptoms and med use (~50-60% of points), misses history, triggers, infection screen.",
+    "faithfulness": "Claims about symptoms grounded in transcript with citations (P-1, P-15, etc.). Increased use and relief verifiable. However, repeatedly references a 'clinical knowledge graph' (KG) with specific relations like [dry cough --RELATED_TO--> asthma], which is entirely absent from transcript - pure hallucination. Chest tightness loosely tied to P-16 (SOB), not direct P-20. Multiple unverifiable KG facts.",
+    "relevance": "Directly addresses the question by explaining how the exact symptom combination plus bronchodilator escalation indicates worsening asthma over new condition, with structured per-symptom reasoning. No tangents or off-topic content."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.5,
+  "summary": "The Generated Answer is relevant and mostly factually correct on core symptoms and medication use but incomplete in covering Gold's full evidence (e.g., infection screening) and unfaithful due to hallucinated knowledge graph references."
+}

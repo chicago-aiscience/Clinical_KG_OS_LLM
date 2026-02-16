@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer states Lipitor for high cholesterol (from transcript [P-25,26]), confirmed only one [P-27]. Tylenol for symptom relief (feverish/unwell) [P-14], 'helps a little bit'. Generated correctly identifies Lipitor for cholesterol and Tylenol with effectiveness quote, but incorrectly attributes Tylenol to relieving cough (not stated in transcript or Gold; Gold specifies feverish/unwell). Lipitor not specified as atorvastatin in Generated (minor). Core meds correct, but factual error on Tylenol purpose vs Gold.",
+    "completeness": "Gold key points: Lipitor (atorvastatin) for high cholesterol, only prescribed med; Tylenol OTC for fever/unwell, partial effectiveness; no others. Generated covers Lipitor (cholesterol), Tylenol (effectiveness), but wrong condition for Tylenol, misses 'only med', no mention of no others or extras like allergies. Covers main meds and effectiveness (~80%), misses nuances.",
+    "faithfulness": "Lipitor source [P-26] and cholesterol from [P-25] verifiable. Tylenol [P-14] and quote verifiable. However, 'knowledge graph' not in transcript (hallucinated external source); Tylenol relieves cough not in transcript (patient context is general symptoms post-cough/fever discussion, not specified for cough). Multiple hallucinated elements (knowledge graph references).",
+    "relevance": "Generated directly lists medications, sources, conditions, and OTC effectiveness in structured format matching question perfectly, no off-topic content."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 4,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.5,
+  "summary": "Generated Answer accurately identifies the medications and OTC effectiveness but introduces hallucinations via 'knowledge graph' and incorrectly specifies Tylenol for cough instead of fever relief, reducing correctness and faithfulness while remaining relevant and mostly complete."
+}

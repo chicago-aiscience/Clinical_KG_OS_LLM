@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer directly contradicts both the transcript and the Gold Answer. In the transcript, the clinician explicitly screened for and the patient denied: fever (D-10/P-10), difficulty breathing (D-11/P-11), headaches (D-12/P-12), sore throat (D-13/P-13), chills/night sweats (D-14/P-14), muscle aches/weakness (D-15/P-15), chest pain (D-22/P-22), sputum/blood (D-7/P-7), and triggers such as cold/environmental exposures (D-21/P-21). The Generated Answer incorrectly states the doctor did not screen for these and that no negatives were documented.",
+    "completeness": "Key negatives expected (per Gold Answer) were entirely omitted or denied as being present in the transcript: no fever, no dyspnea, no headache, no sore throat, no chills/night sweats, no myalgias/weakness, no chest pain, no sputum/hemoptysis, no cough triggers. It also missed the additional broader negatives in Gold Answer (no chronic conditions, meds, surgeries/hospitalizations, allergies, relevant family history). Overall coverage of Gold Answer key points is near-zero.",
+    "faithfulness": "The response is not grounded in the transcript: it asserts that negative findings (fever, dyspnea, sore throat, etc.) were not screened for or mentioned, which is demonstrably false based on multiple transcript lines. While the listed positive findings are present, the central claim about absence of ROS screening is a major unfaithful fabrication/contradiction.",
+    "relevance": "The question asks for all negative ROS findings and how their absence informed the clinical picture. The answer instead claims there were no negatives and shifts to positive findings and testing rationale. This only partially addresses the prompt and does not provide the requested list/explanation of negatives."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 2
+  },
+  "average_score": 1.25,
+  "summary": "The Generated Answer is largely incorrect and unfaithful to the transcript, omitting (and explicitly denying) numerous documented negative ROS findings central to the clinical assessment."
+}

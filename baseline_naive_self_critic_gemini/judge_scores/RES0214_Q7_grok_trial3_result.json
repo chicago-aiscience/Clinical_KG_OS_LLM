@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer specifies stuffy nose first 'just before' fever, sore throat next around fever onset and ongoing, fever for 3 days, muscle aches concurrent with fever (past 2-3 days), husband symptoms for past week (~4 days before patient's fever). Generated Answer correctly identifies stuffy nose first just before fever and sore throat, fever for 3 days, sore throat ongoing, mentions muscle ache, and notes husband week vs. patient's 3-day fever. Minor discrepancies: groups sore throat with fever without specifying it as next after stuffy nose, does not detail muscle ache timing as 2-3 days concurrent, and does not explicitly calculate ~4-day difference for husband. Core facts are accurate, no contradictions.",
+    "completeness": "Gold key points: (1) stuffy nose first just before fever; (2) sore throat next, around fever onset, ongoing; (3) fever 3 days; (4) muscle aches concurrent 2-3 days; (5) husband week (~4 days earlier), similar/ongoing, staggered household transmission. Covered: stuffy nose first, fever/sore throat next (3 days/ongoing), muscle ache mentioned, husband week vs. her 3 days. Missed: sore throat as distinct 'next' step, muscle ache precise timing/concurrency, explicit 4-day gap, transmission note. Covers ~85% of key points.",
+    "faithfulness": "All claims grounded: stuffy nose before primary symptoms [P-1], fever 3 days/sore throat present [P-1], muscle ache [P-13], husband week [P-19]. Timings verifiable in transcript (e.g., muscle ache past 2-3 days [P-14]). Citations accurate, no unverifiable or hallucinated details.",
+    "relevance": "Directly addresses chronological symptom progression (stuffy nose first, then fever/sore throat/muscle ache) and husband timeline comparison. No off-topic content, perfectly focused on question."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 5,
+    "relevance": 5
+  },
+  "average_score": 4.5,
+  "summary": "The Generated Answer is mostly accurate and complete, fully faithful to the transcript and highly relevant, with minor gaps in precise symptom timing details and husband timeline calculation."
+}

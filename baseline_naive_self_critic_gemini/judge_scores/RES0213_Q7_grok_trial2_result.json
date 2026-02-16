@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer provides a precise timeline: smoking start at age 18 (P-18), teen anxiety attacks (P-21), 8-year gap (P-22), escalation to 10 cigs/day past 2 years then cut to 5 few months ago (P-14,P-18), father's heart attack (P-8,P-30), recent weeks thesis stress (P-15,P-16), chest pain 1.5 weeks ago new (P-2,P-17). Generated Answer incorrectly states smoking start age 'not specified' (contradicts P-18/Gold), omits 8-year gap/quantified smoking history/father's event, adds unverified past anxiety symptom of SOB, includes hallucinated causal links via 'clinical knowledge' and [KG], partial matches on recent stress/chest pain timing but core timeline facts erroneous.",
+    "completeness": "Gold key points: smoking age 18/occasional; teen anxiety/discussed w/doctor; 8yr no anxiety; 2yrs 10cigs; few mo cut to 5; dad heart attack; last couple wks thesis time crunch stress; 1.5wk chest pain new; stress/returning anxiety/alone trigger links. Generated covers teen anxiety, recent school stress/quitting smoking, 1.5wk chest pain, vague stress-anxiety-pain links; misses smoking start/escalation details, 8yr gap, dad event, thesis specifics, alone trigger, covers ~30-40%.",
+    "faithfulness": "Generated cites some P-# accurately (e.g., chest pain P-2/6/19, anxiety D-21/P-22) but hallucinates: smoking start 'not specified' (P-18 explicit), past anxiety caused SOB (not in transcript; P-20 only current-ish anxiety flutter), 'clinical knowledge' undocumented past SOB, [KG: stress/smoking contribute to chest pain] fabricated, unverified causal chains (e.g., stress directly causes rapid breathing mirroring past). Multiple unverifiable/hallucinated claims.",
+    "relevance": "Question requires timeline trace (smoking -> teen anxiety -> recent stress escalation -> 1.5wk chest pain) + phase relations; Generated structures 4 phases + relations section attempting this, directly addresses elements despite inaccuracies, minor tangents via clinical knowledge/KG but mostly focused on history timeline and links."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer partially addresses the timeline and relations but contains significant factual errors, omissions of key details, and hallucinations, resulting in low correctness, completeness, and faithfulness."
+}

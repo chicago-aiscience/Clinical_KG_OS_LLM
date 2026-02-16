@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly claims the transcript contains only patient responses (P-1 to P-39) with no clinician dialogue, directly contradicting the Gold Answer and transcript which include full D-1 to D-44 turns detailing the plan (e.g., COVID swab in D-29, medication change in D-43, consulting doctor in D-29/D-43); this is a complete factual inaccuracy.",
+    "completeness": "Gold Answer covers three key points: COVID swab diagnostic test, suggestion to change medications, and consultation with supervising physician; Generated Answer covers 0% of these, instead focusing on patient symptoms, triggers, and history.",
+    "faithfulness": "Generated Answer hallucinates that no clinician dialogue exists despite clear D-turns in transcript; fabricates goldfish as a trigger linked to occupational asthma (P-39 only mentions goldfish as pets, no trigger association); all claims about missing plan elements are unverifiable and false as they contradict the transcript.",
+    "relevance": "The question specifically asks for the clinician's plan including COVID test, medication change, and supervising physician consultation; Generated Answer denies possibility due to alleged lack of clinician input and pivots to patient symptoms summary, failing to address the question."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 1
+  },
+  "average_score": 1.0,
+  "summary": "The Generated Answer is entirely inaccurate, hallucinatory, and irrelevant, falsely denying the presence of clinician dialogue and failing to address any aspect of the actual plan described in the Gold Answer and transcript."
+}

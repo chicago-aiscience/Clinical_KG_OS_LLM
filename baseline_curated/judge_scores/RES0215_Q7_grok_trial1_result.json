@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer has significant factual errors compared to the Gold Answer: it incorrectly identifies cold weather [P-38] as the initial trigger instead of playing tag with a cousin [P-3]; misattributes the fluctuating pattern to past respiratory infections over two years [P-15] rather than the current episode's activity-induced episodes resolving with rest [P-5, P-6]; omits initial symptoms of difficulty taking deep breaths [P-2]; partially correct on onset (4-5 days wheezing [P-1]), recent cough [P-1], and nocturnal episode [P-43]; introduces hallucinated 'knowledge graph'; misses pertinent negatives like no cyanosis [P-32]. Score: 2.",
+    "completeness": "Key points from Gold covered: onset 4-5 days [P-1], emergence of cough [P-1], single nocturnal episode [P-43]; missed: initial trigger playing tag [P-3], wheezing + difficulty deep breaths [P-2], detailed fluctuating pattern with activity/rest resolution [P-5,P-6], cough non-productive [P-31], trouble falling asleep [P-44], pertinent negatives (no cyanosis [P-32], no fever [P-7], fine otherwise [P-9]). Covers ~25-30% of key points. Score: 2.",
+    "faithfulness": "Claims mostly cite transcript accurately ([P-1], [P-38], [P-15], [P-43]), but [P-15] is misused for current fluctuating pattern (it's past infections); cold weather [P-38] is a worsening factor, not initial trigger; hallucinates 'knowledge graph linking cold air to wheezing' not in transcript; some plausible but contextually inaccurate interpretations. Multiple issues including hallucination and miscontextualization. Score: 2.",
+    "relevance": "Directly structures response around question elements (onset, trigger, fluctuating pattern, cough emergence, nocturnal episode) with bullet points matching query; minor tangent with knowledge graph but focused on symptom progression. Score: 4."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer partially addresses the symptom progression but contains significant factual inaccuracies, misinterpretations of the transcript, and hallucinations, leading to low correctness, completeness, and faithfulness."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer identifies the nephew attending daycare (P-11) as the key potential infectious exposure source from social history, noting daycare as a common viral source despite nephew not being sick (P-12), and links it plausibly to viral URI (D-39); Generated Answer incorrectly states no explicit exposure source was named, missing this entirely, and misattributes isolation/swab decisions specifically to diabetes rather than COVID-like symptoms, contradicting Gold's note that transcript does not explicitly link diabetes to immune risk—significant factual errors.",
+    "completeness": "Gold key points: nephew/daycare exposure (P-11/P-12), daycare as viral source, plausible despite no illness, consistent with URI dx (D-39), T1DM details (P-23-26), no explicit immune link, symptoms for week; Generated covers T1DM (partial), viral/cold symptoms vaguely, but misses all exposure-related points (core of question), no mention of no immune link or full T1DM management details—covers ~30% (T1DM, viral assessment).",
+    "faithfulness": "Generated verifiable claims: T1DM (P-23), viral/common cold likely (D-39), symptoms (transcript), pandemic/isolation/swab (D-39); unverifiable/hallucinated: no explicit exposure but implies none (contradicts P-11), diabetes 'factored into care plan' via isolation/swab specifically due to immune impact (not in transcript, doctor doesn't link), general immune effect plausible but not grounded, mysterious [KG] reference—multiple hallucinated connections.",
+    "relevance": "Directly addresses T1DM and viral presentation relation vaguely, but question centers on 'potential infectious exposure source... through social history' which is completely omitted, instead focusing on general pandemic precautions and unlinked diabetes role—partially relevant with off-topic emphasis."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "The Generated Answer significantly misses the key social history exposure source (nephew/daycare), hallucinates diabetes's role in management, and incompletely addresses the question despite partial coverage of viral symptoms and T1DM."
+}

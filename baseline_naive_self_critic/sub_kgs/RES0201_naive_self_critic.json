@@ -1,0 +1,237 @@
+{
+  "nodes": [
+    {
+      "id": "N_001",
+      "text": "sore throat",
+      "type": "SYMPTOM",
+      "evidence": "having a sore throat... started about four days ago... getting worse",
+      "turn_id": "P-2"
+    },
+    {
+      "id": "N_002",
+      "text": "difficulty swallowing food",
+      "type": "SYMPTOM",
+      "evidence": "issues swallowing food",
+      "turn_id": "P-2"
+    },
+    {
+      "id": "N_004",
+      "text": "difficulty breathing",
+      "type": "SYMPTOM",
+      "evidence": "difficulty breathing... started yesterday... got me very concerned... getting worse... just there all the time",
+      "turn_id": "P-8"
+    },
+    {
+      "id": "N_005",
+      "text": "loss of sense of smell",
+      "type": "SYMPTOM",
+      "evidence": "not smell... maybe two days ago",
+      "turn_id": "P-19"
+    },
+    {
+      "id": "N_006",
+      "text": "reduced sense of taste",
+      "type": "SYMPTOM",
+      "evidence": "taste a little bit... maybe two days ago",
+      "turn_id": "P-19"
+    },
+    {
+      "id": "N_007",
+      "text": "muscle aches",
+      "type": "SYMPTOM",
+      "evidence": "my muscles all ache... started immediately after my sore throat",
+      "turn_id": "P-25"
+    },
+    {
+      "id": "N_008",
+      "text": "COPD",
+      "type": "DIAGNOSIS",
+      "evidence": "mild COPD",
+      "turn_id": "P-27"
+    },
+    {
+      "id": "N_009",
+      "text": "mono",
+      "type": "MEDICAL_HISTORY",
+      "evidence": "had mono... when I was younger",
+      "turn_id": "P-5"
+    },
+    {
+      "id": "N_010",
+      "text": "gargling with salt water",
+      "type": "TREATMENT",
+      "evidence": "gargling with salt water... not working",
+      "turn_id": "P-6"
+    },
+    {
+      "id": "N_011",
+      "text": "painkillers",
+      "type": "TREATMENT",
+      "evidence": "painkillers... not working",
+      "turn_id": "P-6"
+    },
+    {
+      "id": "N_012",
+      "text": "long acting beta agonist",
+      "type": "MEDICATION",
+      "evidence": "on a long acting beta agonist",
+      "turn_id": "P-28"
+    },
+    {
+      "id": "N_013",
+      "text": "vitamins",
+      "type": "MEDICATION",
+      "evidence": "take a couple of vitamins",
+      "turn_id": "P-30"
+    },
+    {
+      "id": "N_014",
+      "text": "immunizations",
+      "type": "HEALTH_STATUS",
+      "evidence": "immunizations are up to date",
+      "turn_id": "P-14"
+    },
+    {
+      "id": "N_015",
+      "text": "COVID-19 test (swab)",
+      "type": "PROCEDURE",
+      "evidence": "do a covid swab",
+      "turn_id": "D-43"
+    },
+    {
+      "id": "N_016",
+      "text": "chest xray",
+      "type": "PROCEDURE",
+      "evidence": "get you a chest xray",
+      "turn_id": "D-43"
+    },
+    {
+      "id": "N_017",
+      "text": "COVID-19 (Suspected)",
+      "type": "DIAGNOSIS",
+      "evidence": "symptoms are in line with common symptoms of covid 19",
+      "turn_id": "D-43"
+    },
+    {
+      "id": "N_018",
+      "text": "smoking history",
+      "type": "SOCIAL_HISTORY",
+      "evidence": "smoked 40 years... quit two years ago",
+      "turn_id": "P-34"
+    },
+    {
+      "id": "N_019",
+      "text": "isolation",
+      "type": "PROCEDURE",
+      "evidence": "have to isolate until the result come back",
+      "turn_id": "D-43"
+    }
+  ],
+  "edges": [
+    {
+      "source_id": "N_010",
+      "target_id": "N_001",
+      "type": "TAKEN_FOR",
+      "evidence": "gargling with salt water",
+      "turn_id": "P-6"
+    },
+    {
+      "source_id": "N_011",
+      "target_id": "N_001",
+      "type": "TAKEN_FOR",
+      "evidence": "painkillers",
+      "turn_id": "P-6"
+    },
+    {
+      "source_id": "N_012",
+      "target_id": "N_008",
+      "type": "TAKEN_FOR",
+      "evidence": "on a long acting beta agonist",
+      "turn_id": "P-28"
+    },
+    {
+      "source_id": "N_001",
+      "target_id": "N_017",
+      "type": "INDICATES",
+      "evidence": "symptoms are in line with common symptoms of covid 19",
+      "turn_id": "D-43"
+    },
+    {
+      "source_id": "N_004",
+      "target_id": "N_017",
+      "type": "INDICATES",
+      "evidence": "difficulty breathing",
+      "turn_id": "D-43"
+    },
+    {
+      "source_id": "N_005",
+      "target_id": "N_017",
+      "type": "INDICATES",
+      "evidence": "not smell",
+      "turn_id": "D-43"
+    },
+    {
+      "source_id": "N_006",
+      "target_id": "N_017",
+      "type": "INDICATES",
+      "evidence": "taste a little bit",
+      "turn_id": "D-43"
+    },
+    {
+      "source_id": "N_007",
+      "target_id": "N_017",
+      "type": "INDICATES",
+      "evidence": "my muscles all ache",
+      "turn_id": "D-43"
+    },
+    {
+      "source_id": "N_004",
+      "target_id": "N_019",
+      "type": "INDICATES",
+      "evidence": "isolate",
+      "turn_id": "D-43"
+    },
+    {
+      "source_id": "N_017",
+      "target_id": "N_019",
+      "type": "DEPENDS_ON",
+      "evidence": "until the result come back",
+      "turn_id": "D-43"
+    },
+    {
+      "source_id": "N_004",
+      "target_id": "N_008",
+      "type": "EXACERBATES",
+      "evidence": "COPD",
+      "turn_id": "P-27"
+    },
+    {
+      "source_id": "N_018",
+      "target_id": "N_004",
+      "type": "RISK_FACTOR",
+      "evidence": "smoking history",
+      "turn_id": "P-34"
+    }
+  ],
+  "_usage": {
+    "prompt_tokens": 5431,
+    "completion_tokens": 13260,
+    "reasoning_tokens": 8551,
+    "cost": 0.0056608500000128,
+    "pass1_nodes": 17,
+    "pass1_edges": 9,
+    "pass2_nodes": 18,
+    "pass2_edges": 12
+  },
+  "_meta": {
+    "method": "self_critic",
+    "pass1": {
+      "nodes": 17,
+      "edges": 9
+    },
+    "pass2": {
+      "nodes": 18,
+      "edges": 12
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The answer correctly identifies the cough as mostly dry. However, it is factually incorrect in stating that the transcript does not specify: (1) diarrhea frequency (it specifies liquid stools 5–6 times/day), (2) number of vomiting episodes (it specifies 2 episodes yesterday), and (3) headache severity rating (it specifies 7/10). It also inaccurately implies vomiting occurred for “a few days,” whereas the patient reported nausea today and vomiting yesterday. These are major errors relative to the Gold Answer and the transcript.",
+    "completeness": "Key Gold Answer elements required by the question were largely missed: diarrhea frequency (5–6/day) was omitted/denied; vomiting episode count (2) was omitted/denied; headache severity rating (7/10) was omitted/denied. Only the cough being dry was captured. Overall coverage is well under half of required details.",
+    "faithfulness": "Several statements are not faithful to the transcript because they claim missing data that is explicitly present (diarrhea frequency, vomiting count, headache 1–10 rating). The statement that vomiting occurred for “a few days” is also not supported (vomiting was yesterday). While the response does not introduce many new fabricated positives, these contradictions represent multiple ungrounded/incorrect claims.",
+    "relevance": "The response stays on-topic (GI symptoms, cough characteristics, and headache severity) and attempts to answer the requested specific characteristics, but its content is undermined by incorrect denials of explicitly stated details."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 2.5,
+  "summary": "The response is on-topic but misses and incorrectly denies multiple explicitly stated key details (diarrhea frequency, vomiting count, and headache severity), resulting in low correctness, completeness, and faithfulness."
+}

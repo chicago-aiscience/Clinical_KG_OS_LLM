@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer is factually incorrect relative to the Gold Answer and the transcript. It claims the doctor’s questions about fever, runny nose, sick contacts, travel, rashes, and phlegm production are “not present,” but they are explicitly present in the transcript (D-7, D-8, D-10, D-11, D-13, D-31) with clear patient denials (P-7, P-8, P-10, P-11, P-13, P-31). It also shifts the likely diagnostic focus toward “allergic etiology,” whereas the Gold Answer’s synthesis is that these negatives narrow away from infectious/systemic causes toward reactive airway disease. While allergies are mentioned in the transcript, the Generated Answer’s main claim (missing content) and its differential framing are inconsistent with the Gold Answer and source.",
+    "completeness": "Key Gold Answer points missed: (1) fever screening for pneumonia/bronchitis and denial; (2) runny nose screening for URI/viral-induced wheeze and denial; (3) sick contacts screening for contagious infection and denial; (4) travel screening for exposure-related infections and no travel due to COVID; (5) rash screening for systemic/allergic/viral illness and denial; (6) phlegm screening for productive infectious process and denial; (7) pain screening for pleuritic/musculoskeletal and denial; (8) child looks well otherwise; (9) prior infections not needing antibiotics; (10) overall narrowing toward reactive airway disease. The Generated Answer includes only tangential points (seasonal allergies, cold trigger, activity trigger) and omits nearly all required screening-condition/response pairings. Coverage is well under 20% of Gold Answer key content.",
+    "faithfulness": "The answer is not well-grounded in the transcript because it asserts that the relevant questioning is absent when it is present. It also introduces “knowledge graph” references not supported by the transcript. Some cited details (seasonal allergies, Reactine, cold trigger, exertional symptoms, prior viral infections) are present, but the central premise and conclusions are based on an incorrect reading and speculation rather than the documented Q&A.",
+    "relevance": "The question asks specifically what conditions the doctor was screening for via those symptom/exposure questions and what the patient responses were. The Generated Answer largely fails to provide those condition/response pairs and instead provides an alternate differential discussion. It is only partially aligned with the task."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 2
+  },
+  "average_score": 1.5,
+  "summary": "The Generated Answer contradicts the transcript by claiming the key screening questions/responses are absent and consequently misses most Gold Answer points, making it largely incorrect, incomplete, and only partially relevant."
+}

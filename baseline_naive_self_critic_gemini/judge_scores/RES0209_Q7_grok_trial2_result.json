@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly states that there is no historical context or baseline data in the transcript, directly contradicting the Gold Answer and transcript evidence (P-2: diagnosed at age 8; D-3/P-3: now 10; P-8: baseline once every two weeks, now 5-6 times/week). It partially describes current symptoms but with factual errors (e.g., wrong citations like wheezing at P-18 instead of P-15; chest tightness at D-20 instead of P-20) and omits key evolution details, leading to significant contradictions.",
+    "completeness": "Gold key points: diagnosis at 8/now 10; baseline bronchodilator once/2wks, triggers (exercise/cold), seasonal; 2wk exacerbation (nonstop dry cough, increased wheezing/SOB/chest tightness, usage 5-6x/wk, wheezing>usage, nighttime sx). Generated covers ~30%: some current symptoms (cough, SOB, wheezing, tightness), triggers; misses diagnosis age/history, baseline specifics, exact usage evolution, wheezing frequency vs usage, nighttime details, no precipitant.",
+    "faithfulness": "Multiple hallucinations and errors: denies transcript history (P-2/P-8); wrong citations (wheezing P-18/P-18 instead of P-15; tightness D-20 vs P-20); references non-existent 'Knowledge Graph'; vague 'marked increase' without transcript's quantified baseline/current; symptoms frequency misattributed. Some claims grounded (e.g., cough P-1, triggers P-9/P-11) but overall not verifiable.",
+    "relevance": "Question focuses on temporal evolution (dx at 8 -> baseline -> current exacerbation); Generated dodges by claiming impossible due to no history (false), then partially describes current symptoms/triggers/med use but ignores progression, making it partially relevant with off-topic denial and incomplete focus."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "The Generated Answer significantly underperforms by falsely denying transcript evidence of historical and baseline data, resulting in low correctness, completeness, and faithfulness while only partially addressing the evolutionary question."
+}

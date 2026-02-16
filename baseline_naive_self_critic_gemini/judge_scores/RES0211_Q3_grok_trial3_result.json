@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer details symptoms like scratchy throat [P-4], dry cough [P-1,P-4], subjective fever [P-7,P-9 day/night], headache [P-1,P-2], malaise [P-14,D-15], fatigue [P-13], 3-4 days timeline, no sputum [P-5,P-6], no GI [P-11,P-12], no joint pain [P-13], brother's cold [P-39], doctor summary [D-58]. Generated covers core symptoms accurately (dry cough, scratchy throat, headache, subjective fever as 'feeling hot'), timeline, absences of sputum/GI/joint pain, and doctor summary. Minor issues: inaccurate citation for sputum question (attributes to D-58 instead of D-5/D-6); introduces 'knowledge graph' not in Gold or transcript. Core facts consistent, minor discrepancies.",
+    "completeness": "Gold key points: specific symptoms with citations (throat, cough, fever details, headache, malaise, fatigue, timeline), no sputum, no GI/nausea/diarrhea, no joint pain, brother's exposure, doctor framing. Generated covers dry cough, scratchy throat, headache, feverish 'hot' feeling, malaise/'crappy', timeline, no sputum, absence of GI/joint pain, doctor summary. Misses: detailed fever (day/night), explicit fatigue, brother's cold exposure. Covers ~85-90% of key points.",
+    "faithfulness": "Most claims grounded: symptoms from P-1, P-7, D-58 verifiable. Sputum absence verifiable [P-5,P-6] but citation wrong (D-58 is summary, not question). GI/joint denials verifiable [P-11-13]. Hallucinations: 'knowledge graph' mentioned twice (not in transcript); implies sputum question in D-58 (mis-citation). Malaise association via knowledge graph ungrounded. Some unverifiable details, but mostly transcript-based.",
+    "relevance": "Generated directly structures response around question's symptoms (dry cough, scratchy throat, headache, fever via 'hot') and absences (sputum, GI, joint pain), explaining support for URI via upper airway localization, constitutional signs, exclusions. No tangents, perfectly focused."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 3,
+    "relevance": 5
+  },
+  "average_score": 4.0,
+  "summary": "The Generated Answer is mostly accurate and complete in supporting URI assessment with key symptoms and absences, but loses points for faithfulness due to hallucinated 'knowledge graph' references and citation errors."
+}

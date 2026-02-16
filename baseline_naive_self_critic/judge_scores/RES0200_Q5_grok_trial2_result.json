@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer accurately reports patient's smoking history details (current half pack, reduced from 1-2 packs, doctor's acknowledgment), timelines (cough 10 years, COPD dx 5 years consistent with exposure), no rec drugs, and family history (father lung ca/smoker, patient worry, mother healthy, doctor's question) without asserting causal links beyond timeline consistency. Generated Answer correctly captures smoking current level and change [P-44] and father hx [P-43], but introduces unsubstantiated 'knowledge graph' claims linking smoking to COPD risk factor (plausible but not in Gold) and erroneously links family lung cancer directly to COPD diagnosis via graph associations not present in Gold or transcript. Patient anxiety noted correctly. Some factual additions contradict Gold's neutral reporting of family hx without COPD relation. Main smoking facts align, but extra claims are errors. Score: 3.",
+    "completeness": "Gold key points: smoking current half pack [P-44], reduced from 1-2 packs [P-44], doctor positive on reduction/resources [D-45]; cough 10 yrs [P-3], COPD dx 5 yrs [P-2], timelines consistent; no rec drugs [P-45]; family father lung ca/smoker [P-43], patient worry [P-43], mother healthy [P-43], doctor q [D-43]. Generated covers: smoking current/change [P-44]; father hx/smoking [P-43], patient anxiety [P-43]. Misses: doctor acknowledgment/resources, timelines/cough/Dx duration consistency, no rec drugs, mother healthy, doctor q. Covers core histories (~50-60% of points, focused on specified question elements but lacks relation details). Score: 3.",
+    "faithfulness": "Claims on smoking history [P-44] and family [P-43] verifiable in transcript. Patient anxiety verifiable [P-43]. However, 'knowledge graph', RISK_FACTOR tags, asserted links (lung cancer --[FAMILY_HISTORY_OF]--> COPD, smoking habits associations) not in transcript; these are hallucinated external knowledge/inferences. Multiple unverifiable additions. Score: 2.",
+    "relevance": "Directly addresses question by discussing personal smoking (current/change) and family hx relation to COPD, structuring around risk factors. Includes some extraneous graph references but stays on-topic without major tangents. Score: 4."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer correctly reports core smoking and family history facts from the transcript but is incomplete in covering Gold details like timelines and doctor comments, introduces transcript-ungrounded 'knowledge graph' hallucinations, and inaccurately links family lung cancer directly to COPD."
+}

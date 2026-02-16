@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer has significant factual inaccuracies compared to the Gold Answer: it incorrectly states the patient provided no information on recent travel (contradicts [P-23] where patient reports trip to Sarnia), sick contacts (ignores denial in [P-24]), and chemical exposure (misrepresents [P-33/P-34] where patient describes consultant role with limited exposure); proposes implausible differentials like malaria/dengue for domestic Sarnia travel (Gold specifies Legionella/fungal); adds unmentioned DDs like HIV, asbestosis, COPD; overstates narrowing (e.g., 'rules out' chronic vs Gold's 'less likely but does not exclude'); core structure matches but details contradict.",
+    "completeness": "Gold key points: weight loss screens lung cancer/TB (denial less likely, not exclude); travel for endemic/exposure infections (Sarnia domestic, timing relevant); sick contacts for person-to-person/TB (absence reduces but not exclude CAP); chemical for pneumonitis/occupational (limited exposure less likely); favors acute infectious. Generated covers structure of 4 questions but misses specific DDs (e.g., no Legionella/TB emphasis), inaccurately reports responses, adds irrelevant DDs (malaria, HIV, RSV), partially covers narrowing but incompletely; covers ~20-49% accurately.",
+    "faithfulness": "Multiple hallucinations: claims no patient info on travel/sick contacts/chemical despite direct transcript quotes [P-23/24/33/34]; unverifiable exotic DDs (malaria) not grounded in domestic travel or symptoms; some correct citations (e.g., smoking [P-37], chills [P-9]) but overall not fully verifiable, with fabricated response summaries.",
+    "relevance": "Perfectly focused on the four specified questions, analyzing screened DDs and response impact on differential for each, with no off-topic content."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer is relevant and well-structured but marred by significant factual errors, hallucinations about patient responses, and incomplete/mismatched differentials compared to the Gold Answer."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer includes some facts from D-58 (dry cough for 3-4 days, fever, headache, brother sick 2 weeks ago) but incorrectly attributes scratchy throat and post-nasal drip to the doctor's summary in D-58, which does not mention them; it also omits key recaps like no sputum production, no asthma, and no medications except Claritin. For Jessica's goal, it cites the doctor's framing ('next steps') as hers, contradicting Gold which uses her specific words from P-60 about taking medicine. Significant factual errors and contradictions with Gold.",
+    "completeness": "Gold doctor recaps: (1) 3-4 day dry cough + fever + headache (partial cover); (2) no sputum (missed); (3) no recent sick contacts except brother cold 2wks ago (partial); (4) no asthma (missed); (5) no meds except Claritin (missed). Jessica's goal: wants to know if needs medicine (missed, uses doctor's words instead). Covers ~30% of key points.",
+    "faithfulness": "Claims like dry cough, fever, headache, brother verifiable in D-58; however, scratchy throat cited to [D-58][P-1] but not recapped in D-58 (hallucination of inclusion); post-nasal drip hallucinated as doctor-noted in review (absent from D-58); goal misattributed solely to D-58 without Jessica's P-60 words. Multiple hallucinations about summary content.",
+    "relevance": "Directly structures response around doctor's recapped findings and Jessica's goal with headings matching question; minor tangents in extra symptoms and citations but mostly focused."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer partially covers core symptoms from the doctor's summary but hallucinates additional findings not recapped there, omits key negatives, and inaccurately represents Jessica's goal."
+}

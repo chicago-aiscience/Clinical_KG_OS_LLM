@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Step-by-step: Gold Answer specifies the hiking trip two weeks ago with partner where 'some people kind of brushed by us' [P-18, P-19] as the specific potential exposure event identified by the patient, noting they could not recall other sources. Generated Answer incorrectly claims the living situation with parents and sibling [P-29] is the specific event identified by the patient. Patient denied recent contact with sick people [P-17] and pointed to hiking as possible source [P-18]. This is a significant factual contradiction on the core element of the question.",
+    "completeness": "Key points from Gold: patient in online high school/not out of house [P-36/37, D-38/P-38] (partially covered), specific hiking exposure 2 weeks ago, half-hour away, brushed by people [P-18/19] (completely missed), no other sources/no sick contacts [P-17/18] (missed), lives with family but no illness noted [P-29] (mentioned but wrongly as exposure), immunizations [P-20] (missed), doctor tests due to symptoms [D-39] (partially via symptoms). Covers symptoms and diagnosis connection (~20-30%), misses main exposure entirely.",
+    "faithfulness": "Living with family verifiable [P-29]. Symptoms (anosmia, ageusia, dry cough) verifiable [P-1, etc.], doctor confirmation [D-39]. Citations accurate. However, claim that patient 'identified' family living as 'specific potential exposure event' is not in transcript—patient identified hiking [P-18] and denied sick contacts [P-17]; household transmission is plausible inference but hallucinated as patient-identified.",
+    "relevance": "Directly identifies a purported exposure event (family living) in context of staying home/online school, and connects to COVID diagnosis via symptoms and doctor's response, perfectly matching question structure with no off-topic content."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 3,
+    "relevance": 4
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer misidentifies the patient's living situation as the key exposure event instead of the hiking incident explicitly noted by the patient, resulting in significant inaccuracies and incomplete coverage."
+}

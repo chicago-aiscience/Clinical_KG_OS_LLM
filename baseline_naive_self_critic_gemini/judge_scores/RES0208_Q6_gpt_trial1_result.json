@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer contradicts the Gold Answer (and the transcript) on multiple core facts. It incorrectly states that no diagnostic tests were ordered, whereas the doctor explicitly ordered a chest X-ray and a COVID swab [D-37]. It incorrectly states there were no self-isolation instructions, whereas the doctor instructed the patient (if discharged) to stay away from everyone including his wife and to self-isolate as much as possible [D-37]. It incorrectly states there was no timeline for results, whereas the doctor stated results should be back in 24–48 hours [D-37]. It also omits/denies that disposition (admission vs discharge) would be based on the results, which the doctor explicitly said [D-37]. The only correct element is that a physical exam was planned [D-38], though it omits the more specific plan to examine the chest [D-37].",
+    "completeness": "Key Gold Answer elements covered: only that a physical exam would be done [D-38].\nKey elements missed/incorrect: chest exam intent [D-37]; chest X-ray order [D-37]; COVID swab order [D-37]; self-isolation instruction to stay away from everyone including wife [D-37]; instruction to self-isolate as much as possible [D-37]; results expected in 24–48 hours [D-37]; public health nurse to advise if positive [D-37]; disposition decision contingent on test results [D-37]. Overall, the response covers far less than half of required items and explicitly negates several that are present.",
+    "faithfulness": "Several statements claim the transcript lacks information that is clearly present (tests ordered, isolation instructions, result timeline, and disposition criteria based on results) [D-37]. This is not a minor omission; it is a repeated misrepresentation of the source content. The added phrase 'knowledge graph' is also not grounded in the transcript.",
+    "relevance": "The answer is structured around exactly the elements asked (tests, exam, isolation instructions, timeline, and admit/discharge criteria). It stays on-topic, though the content is largely inaccurate."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 5
+  },
+  "average_score": 2.0,
+  "summary": "The response is on-topic but largely contradicts the transcript and omits nearly all key components of the doctor’s management plan."
+}

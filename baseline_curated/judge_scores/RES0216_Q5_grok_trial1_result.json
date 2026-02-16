@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer emphasizes two key self-directed changes: skipping evening maintenance inhaler [P-19, P-20] and not refilling rescue inhaler [P-17, P-18], both contributing to compromised asthma control leading to symptoms; Generated Answer correctly identifies asthma history [P-16], lack of rescue inhaler, symptoms [P-1, P-7], and doctor's assessment [D-35, D-36], but completely omits the maintenance dose skipping (central to question), introducing 'knowledge graph' (not factual to Gold); core relation to exacerbation correct but significant omission makes it partially accurate.",
+    "completeness": "Gold key points: asthma history/well-controlled [P-16, P-29], maintenance skipping [P-19, P-20], no rescue refill [P-17, P-18], doctor summary [D-34], symptoms details (tightness, exertion, phlegm [P-1, P-4, P-9, P-11]), feels different [P-16], no relief/proposal [D-35]; Generated covers asthma history/feels different [P-16], partial symptoms [P-1], no rescue [P-17], doctor dx [D-35, D-36]; misses maintenance skipping entirely, well-controlled note, phlegm, doctor summary D-34, treatment proposal; covers ~40-50% of points.",
+    "faithfulness": "Claims like symptoms [P-1], history [P-16], no rescue [P-17], doctor dx [D-35, D-36] verifiable in transcript; however, 'knowledge graph's definition' and 'knowledge graph links rescue puffer' are hallucinations (no knowledge graph in transcript); interpretive 'unable to self-manage leading to escalation' plausible but adds unverifiable causation; multiple hallucinated elements.",
+    "relevance": "Directly addresses relation of asthma history and medication issues to symptoms via exacerbation explanation; focused on transcript evidence and clinical reasoning without off-topic content, though incomplete on maintenance skipping; highly relevant to question."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer is mostly correct and relevant in linking asthma history and lack of rescue inhaler to symptoms but significantly incomplete by omitting maintenance dose skipping and includes transcript-unverifiable hallucinations like 'knowledge graph'."
+}

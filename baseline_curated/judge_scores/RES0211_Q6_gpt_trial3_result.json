@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Compared with the Gold Answer, the Generated Answer correctly identifies parts of the doctor’s recap: 3–4 days of dry cough, “a little bit of fever,” headache, and that her brother had been sick ~2 weeks prior. However, it omits several key recap items that were explicitly in D-58 (no sputum production, no asthma, and no meds aside from Claritin). It also misstates Jessica’s primary goal: the Gold Answer (P-60) is that she wants to know if she needs to take medicine; the Generated Answer instead restates the doctor’s framing (“next steps”) as her goal, which is a significant error for the question asked. It additionally attributes “scratchy throat” and “post-nasal drip” to the doctor’s end-of-visit summary, which is not accurate to D-58.",
+    "completeness": "Gold Answer key points: (1) 3–4 day dry cough, (2) a little fever, (3) headache, (4) no sputum, (5) no recent sick contacts except brother with cold ~2 weeks ago, (6) no asthma, (7) no meds aside from Claritin, (8) visit purpose = next steps/where to go from here, (9) Jessica’s goal = whether she needs medicine, (10) she wants to go home/lay down.\n\nGenerated Answer includes: (1)-(3) yes, (5) partially yes, (8) yes. Missing: (4), (6), (7), (9), (10). It adds non-gold/non-summary items (scratchy throat, post-nasal drip) instead of covering the missing key recap findings.",
+    "faithfulness": "Several claims are not grounded in the transcript as stated, particularly the assertion that the doctor recapped “scratchy throat” and “post-nasal drip” in D-58 (they were discussed earlier but are not part of the doctor’s D-58 summary, and the answer’s bracketed citation to D-58 is inaccurate). The main patient-goal statement is also not faithful to P-60, where Jessica specifically asks if she needs medicine.",
+    "relevance": "The response is generally aimed at the two requested elements (doctor’s recap and Jessica’s goal). There are minor tangents/extra symptoms, and the second part is incorrect, but it remains topically focused on the visit summary and goals."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The answer is on-topic and captures a few recap elements, but it misses multiple key findings from the doctor’s summary, incorrectly states Jessica’s primary goal, and includes unfaithful/hallucinated details attributed to the end-of-visit recap."
+}

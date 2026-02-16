@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer accurately captures core facts like productive cough with yellow 'custard' sputum [P-6], red spots [P-4, P-6], fever [P-5], exertional dyspnea [P-10], and pleuritic right-sided chest pain worsening with deep breaths/coughing [P-17, P-18, P-19], consistent with Gold. Minor discrepancies include incomplete fever timing/detail (Gold specifies [P-8] Monday-Wednesday), omission of chills [P-9], constant dull pain at rest [P-20, P-21], and smoking risk [P-37, P-38]; it correctly infers bacterial/purulent but adds unneeded 'hemoptysis' label without contradiction.",
+    "completeness": "Key Gold points covered: productive cough/yellow sputum/red spots (full); fever (partial, misses chills and duration); exertional dyspnea (full); detailed pleuritic pain (partial, covers worsening but misses constant/dull at rest). Missed entirely: chills [P-9], pain persistent lying still [P-20], smoking predisposition [P-37, P-38]. Covers ~70% of key points.",
+    "faithfulness": "Most claims verifiable: sputum [P-4,6], cough [P-1,6], fever [P-5], dyspnea [P-10], pain details [P-17-19]. However, multiple hallucinations: repeated 'knowledge graph' references/correlations (e.g., '[TRIGGER] exertion --> [SYMPTOM] short of breath', not in transcript); 'clinical documentation and knowledge graph provided' unfounded. These introduce unverifiable external content.",
+    "relevance": "Directly addresses question by listing transcript-specific findings for LRTI/pneumonia and explaining pleuritic pain's role in supporting pleural inflammation from pneumonia. Minor off-topic tangents via invented knowledge graph, but core response focused."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 3.25,
+  "summary": "The Generated Answer is mostly correct and relevant with good transcript citations but incomplete in covering all Gold details and unfaithful due to hallucinated knowledge graph references."
+}

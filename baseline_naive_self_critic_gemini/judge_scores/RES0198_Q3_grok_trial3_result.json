@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the doctor's conclusion [D-39] and some supporting symptoms (stuffy/runny nose) and absent features (no sore throat, fevers, etc.), which align with the Gold Answer. However, it omits critical details like discharge quality (clear), duration (1 week), symptom progression, specific contrasts to allergic causes (no allergies [P-28], no exposures [P-22], no prior episodes [P-9]), and bacterial causes (no fever [P-7], clear discharge). It also introduces a non-existent 'knowledge graph' reference, creating a factual discrepancy vs. Gold.",
+    "completeness": "Gold key points: symptom type (congestion/rhinorrhea, no cough/P-4, no systemic/P-7, no post-nasal/P-6), clear discharge/P-5, 1-week duration/P-2/P-8, progression/P-3, anti-allergic (no exposures/P-22, no allergies/P-28, no priors/P-9), anti-bacterial (no fever/P-7, no headache/P-14, clear discharge), daycare exposure/P-11. Generated covers: conclusion, partial symptoms, partial absent features (sore throat/fevers etc., adds taste/smell). Missed: discharge quality, duration, progression, all allergic points, specific bacterial contrasts, daycare. Covers ~30-40% of key points.",
+    "faithfulness": "Most claims grounded: symptoms from P-1/P-3/P-6, conclusion D-39, questions D-7/D-14/D-16 verifiable. However, 'explicitly associated with viral illness in the provided knowledge graph [Knowledge Graph]' is fully hallucinated—no knowledge graph or such association in transcript. Pandemic 'high-exposure' is plausible inference from D-39 but not direct evidence discussed. Multiple hallucinated elements around diagnosis association.",
+    "relevance": "Directly addresses evidence for viral (symptoms, exclusions, conclusion) but question emphasizes contrasts to allergic/bacterial via specific symptom characteristics (duration/discharge absent in Gen) and exposure history (daycare missed, pandemic added as tangent). Partially relevant with some off-topic emphasis on COVID/pandemic."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer provides partial support for the viral diagnosis with accurate but incomplete transcript-grounded details, missing key differentiators against allergic/bacterial causes and including hallucinations."
+}

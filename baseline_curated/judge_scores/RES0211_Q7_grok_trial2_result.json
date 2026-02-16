@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly states the order of symptoms as 'Dry Cough and Scratchy Throat' first based on P-1, followed by headache and then feeling hot; however, the Gold Answer and transcript [P-4] clearly specify that the scratchy throat was noticed first, followed by the dry cough, making this a significant factual error. Additional symptoms like malaise and fatigue are omitted, and the progression from upper airway to systemic symptoms is not accurately captured. The relation of feeling hot is described as concurrent, which aligns somewhat with Gold but lacks the nuance of no exact timing specified.",
+    "completeness": "Key points from Gold covered: 3-4 day duration [P-1], dry cough, scratchy throat, headache, feeling hot as part of illness, doctor's summary of fever [D-58]. Missed: precise order (throat first then cough [P-4]), headache progression (pounding then milder [P-1,P-2]), malaise/'crappy' feeling [P-1,P-14], fatigue [P-13], persistent nature of hot sensation day/night [P-9], overall progression from localized to systemic. Covers roughly 50-79% of key points.",
+    "faithfulness": "Claims about order are not verifiable and contradicted by [P-4], which specifies throat first then cough; relies on P-1 mentioning both together and sequence of dialogue (P-1, P-7) rather than patient's explicit report. Post-nasal drip [P-18] is cited as an additional symptom but relates to allergies, not the acute illness progression. Citations exist but lead to hallucinated symptom sequence not grounded in transcript's direct statement on first symptom.",
+    "relevance": "Directly attempts to answer the question by providing a symptom order list and explaining the relation of feeling hot to cough/throat symptoms as concurrent within the timeline; minor tangent on post-nasal drip but overall focused."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer has significant errors in symptom order and misses key details from the Gold Answer, leading to moderate faithfulness and completeness issues despite being mostly relevant."
+}

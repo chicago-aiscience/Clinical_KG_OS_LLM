@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly states that the patient did not identify any specific potential exposure event, directly contradicting the Gold Answer and transcript where the patient explicitly mentions hiking with their partner two weeks ago, during which 'some people kind of brushed by us,' and states 'I don't see where else I could have gotten this from' [P-18]. This is a major factual error, as the hiking is presented as the sole potential exposure in both Gold and transcript.",
+    "completeness": "The Gold Answer covers key points including the patient's high school status/online classes [P-36, P-37], staying home [D-38, P-38], specific hiking exposure two weeks prior with close contact from strangers [P-18, P-19], no other contacts [P-17], household living situation [P-29], and doctor's decision to test despite limited exposure [D-39]. The Generated Answer covers none of these exposure-related points, instead denying any exposure and focusing only on symptoms; covers <20% of key points.",
+    "faithfulness": "The claim of no specific exposure is not verifiable and contradicts the transcript [P-18]; references to a 'knowledge graph' are entirely hallucinated and not present in the transcript; symptom connection is partially grounded [D-39, P-1] but overall largely ignores or misrepresents transcript content on exposure.",
+    "relevance": "The Generated Answer directly structures its response around identification of exposure (denying it) and connection to diagnosis (via symptoms), addressing the question's core elements, though incorrectly; no major off-topic content."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 3
+  },
+  "average_score": 1.5,
+  "summary": "The Generated Answer is fundamentally incorrect and unfaithful to the transcript by denying the patient's identified hiking exposure event, resulting in low scores across most dimensions."
+}

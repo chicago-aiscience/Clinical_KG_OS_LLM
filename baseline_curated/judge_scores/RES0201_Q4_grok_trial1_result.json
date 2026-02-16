@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the denial of loss of smell (anosmia) from [P-19], which aligns with the Gold Answer, but misses all other key denied symptoms listed in Gold (cough [P-15], runny nose [P-16], headaches [P-17], chest pain [P-18], fever [P-23], chills/night sweats [P-24]) and additional negatives (prior breathing issues [P-11], sick contacts [P-12], travel [P-13]). It inaccurately frames differentials (e.g., excluding mono/strep/cold/influenza based on present dyspnea or anosmia denial), contradicting Gold's note that no explicit differentials were discussed and introducing unsupported exclusions.",
+    "completeness": "Gold key points: denied cough, runny nose, headaches, chest pain, loss of smell, fever, chills/night sweats (7 symptoms), plus prior breathing diff/sick contacts/travel; no explicit differentials but inferences on URI/chest pain relevance/COVID suspicion despite lacks/mono noted. Generated covers only loss of smell (1/10+ points), mentions mono history but misses all others and accurate inferences; covers <20%.",
+    "faithfulness": "Generated accurately cites [P-19] for anosmia denial and [D-43] for COVID suspicion; notes sore throat/breathing confirmed. However, hallucinates differentials (mono distinguished by dyspnea, strep exclusion, cold/flu by anosmia denial) not in transcript; ignores explicit screenings/denials for cough/runny nose/etc. in [D-15 to D-24]; misstates anosmia as primary for cold/flu. Multiple ungrounded claims.",
+    "relevance": "Directly structures response around denied symptoms (though incomplete) and differentials/distinctions from COVID-19, addressing both question parts without major off-topic content; minor issues with invented details."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.25,
+  "summary": "The Generated Answer is significantly incomplete and introduces hallucinations on differentials, covering only one denied symptom accurately while missing the majority and fabricating exclusions not grounded in the transcript."
+}

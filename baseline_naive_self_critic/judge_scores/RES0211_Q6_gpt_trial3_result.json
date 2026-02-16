@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer contains a major error by stating the doctor’s explicit summary is not included, despite D-58 containing the doctor’s end-of-visit recap. It also does not correctly report the doctor’s key recap items from D-58 (dry cough 3–4 days, a little bit of fever, headache; no sputum; limited sick contacts except brother 2 weeks ago; no asthma; no meds aside from Claritin). It incorrectly substitutes other details (scratchy throat, allergies history) as if they were part of the doctor’s closing summary. For Jessica’s goal, it fails to capture her stated aim in P-60 (“if I have to like take medicine or something”) and instead offers a vague inferred goal about treating symptoms and references her having Claritin.",
+    "completeness": "Misses most Gold Answer key points: (1) doctor’s recap of fever and headache, (2) no sputum production, (3) sick-contact clarification including brother’s cold 2 weeks prior, (4) no asthma, (5) no meds besides Claritin, and (6) the doctor framing purpose as “next steps/where to go from here.” For Jessica’s goal, it omits her explicit question about whether she needs to take medicine and omits her desire to go home and lay down (P-61). It includes some symptom/history elements, but they are not the requested recap items.",
+    "faithfulness": "Several statements are not faithful to the transcript: claiming the doctor’s summary is not present is directly contradicted by D-58. It also attributes a “primary goal” based on suggestion/inference (that next step is to obtain treatment) rather than quoting or accurately reflecting P-60. Some included symptom/history claims are present elsewhere in the transcript (e.g., scratchy throat, allergies), but they are not what the doctor recapped at the end, so the response is not grounded in the asked-for segment.",
+    "relevance": "Partially addresses the topic (symptoms and goal) but does not answer the specific question about what the doctor recapped in the end-of-visit summary and what Jessica identified as next steps. It includes irrelevant material (allergy shot history) and misses the explicit “next steps/medicine” exchange."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "The answer is only partially relevant and contains major inaccuracies and omissions, especially failing to use the doctor’s actual recap in D-58 and Jessica’s stated goal in P-60."
+}

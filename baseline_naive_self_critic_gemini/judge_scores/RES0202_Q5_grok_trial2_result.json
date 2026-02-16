@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the mother's suspicion of school as the source [P-1, P-2], but has factual errors: it does not accurately distinguish mother's report of no known sick contacts outside school 'we know for sure' [P-38]; instead, it vaguely notes no specific at school and incorrectly frames the healthy younger sister [P-36] as a 'potential contact' based on doctor's isolation advice [D-44], which was precautionary, not reported as sick; misses school requiring COVID test for return [P-41]; minor citation issue [D-3 not directly swab rec]; core school suspicion correct but discrepancies on contacts.",
+    "completeness": "Covers school suspicion and timing [P-1,P-2]; partial coverage of no known sick at school ('kinda hard to say' [P-38]); misses explicit 'no sick outside we know for sure' [P-38], school no notification [P-39 explicit], school test policy [P-41], no travel [P-40], no environmental [P-37]; adds extraneous sister detail not key in Gold; covers ~60% of Gold key points.",
+    "faithfulness": "Most claims grounded: school suspicion [P-1,P-2], no specific school sick cases [P-38,P-39], no notification [P-39]; doctor's swab and isolation [D-44] verifiable; minor issue framing healthy sister [P-36] as 'potential contact' (plausible precaution but not mother-reported sick); citation [D-3] slightly off but content verifiable; no major hallucinations.",
+    "relevance": "Directly addresses school as suspected source and lack of school notification; covers sick contacts distinction partially (school vs external); minor tangent on sister isolation and doctor recs, but focused on question elements."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 4,
+    "relevance": 4
+  },
+  "average_score": 3.5,
+  "summary": "The Generated Answer captures the core suspicion of school as illness source and lack of known school sick contacts but misses key distinctions on outside contacts, school notifications/policy, and adds an extraneous healthy sibling detail."
+}

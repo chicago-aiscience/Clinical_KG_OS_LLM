@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Compared with the Gold Answer, the Generated Answer is largely inaccurate and unsupported. It identifies only “cardiac issues/heart attack” and “anxiety attacks,” but even these are not correctly characterized as being ruled out based on the specific screening questions in the transcript. For cardiac causes, the transcript shows the clinician asking about exertional worsening (D-10), rest pain (D-11), palpitations/flutter (D-20), and inherited arrhythmia red flags (D-31, D-32). The Generated Answer does not mention these key screening questions and instead adds speculative statements (“likely used the distinction of triggers”) that are not stated in the transcript. For anxiety, the doctor did not explicitly screen to ‘rule out’ anxiety as the cause of chest pain; rather, the patient volunteered prior anxiety attacks and clarified palpitations occur only during anxiety (P-20). The Generated Answer incorrectly frames this as excluding chest pain as an independent symptom and ‘confirming’ it is tied to anxiety attacks, which is not what the patient said (the patient tied fluttering/palpitations to anxiety, not the chest pain itself).",
+    "completeness": "The Gold Answer lists six ruled-out/screened conditions with the exact questions used: (1) traumatic/musculoskeletal injury, (2) cardiac disease/exertional angina features, (3) infectious/febrile illness/exposure, (4) asthma, (5) primary dyspnea, (6) inherited arrhythmia syndromes. The Generated Answer covers only a partial and poorly supported subset (cardiac issues, anxiety), and omits trauma/injury, infection/fever and sick contacts, asthma, shortness of breath screening, and inherited arrhythmia/sudden death screening. It also fails to specify the actual transcript questions used to exclude the cardiac items that were asked (exercise worsening, rest pain, flutter).",
+    "faithfulness": "Multiple elements are not grounded in the transcript and are presented as speculation (“likely inquiring,” “likely used the distinction of triggers,” ‘screened for anxiety as a cause by inquiring about triggers’). The answer does not accurately reflect what was actually asked (e.g., it does not cite D-10/D-11/D-20 for cardiac screening, and it attributes an anxiety-focused line of inquiry that is not explicitly present). This constitutes several hallucinated/unsupported interpretations rather than transcript-based extraction.",
+    "relevance": "The response is on-topic (it attempts to name conditions the doctor screened for and how), but it answers only a small portion of what was asked and does not provide the specific, transcript-based lines of inquiry for most ruled-out conditions. Thus it is only partially responsive to the question."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "Partially on-topic but largely incomplete, with key ruled-out conditions missing and several speculative or incorrect claims not supported by the transcript."
+}

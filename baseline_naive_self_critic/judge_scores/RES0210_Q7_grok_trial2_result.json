@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer has several factual inaccuracies compared to the Gold Answer and transcript: raspy cough is placed on Sunday (Day 1), but transcript [P-3] indicates it started Friday with worsening on Sunday; yellow sputum with red spots correctly on Sunday [P-4,P-6,P-7]; fever onset on Monday [P-8] is completely omitted; chills correctly on Tuesday-Wednesday ('last two days' [P-9]); right-sided chest pain is placed on Wednesday, but transcript [P-20] specifies 'over the last day' (Tuesday onset); runny nose ~week ago [P-16] missed; overall worsening not fully traced (e.g., no mention of exertional dyspnea timeline or sore throat). Tylenol timing [P-14] and Lipitor [P-26] are irrelevant additions. Significant errors contradict Gold.",
+    "completeness": "Key points from Gold covered partially: Sunday sputum with red spots (yes), chills Tuesday-Wednesday (partial), chest pain (day wrong); missed entirely: Friday raspy cough onset, Monday fever start and persistence, runny nose week ago, precise pleuritic nature and exertional dyspnea buildup, sore throat from coughing. Covers ~30-40% of timeline symptoms and worsening progression.",
+    "faithfulness": "Most claims cite transcript accurately but misinterpret: cough onset from [P-1] ignores [P-3] Friday detail; chills [P-9] ok; chest pain [P-17,P-20] timing stretched; Tylenol [P-14] day invented; hallucinates 'knowledge graph supports' (no such thing in transcript); adds irrelevant Lipitor. Multiple misinterpretations and fabrications reduce grounding.",
+    "relevance": "Directly attempts timeline structure addressing question's symptoms and progression, but omits fever, wrong days for cough/pain, minor irrelevancies (Tylenol day, Lipitor, knowledge graph); mostly focused."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer provides a partial timeline with significant factual errors on symptom onsets, omissions (e.g., fever), misinterpretations, and minor hallucinations, reducing overall quality."
+}

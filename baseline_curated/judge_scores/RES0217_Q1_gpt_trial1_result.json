@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Local symptoms: redness, tenderness, and localized soreness of the skin behind the knee are accurately reflected in the transcript. However, the systemic portion contains a major error: the patient *does* explicitly deny fever/feeling feverish (“No, no, I’ve been fine” [P-8]) after the doctor screens for it [D-8], but the Generated Answer incorrectly claims there is no explicit denial. The answer also incorrectly links headache denial to [P-6] (which is about rash), undermining factual accuracy/citation integrity. Joint pain denial is real ([D-7]/[P-7]), but the Generated Answer’s support (“not the joint itself” [P-1]) is not the actual screened/denied exchange.",
+    "completeness": "Covers some key local symptoms (redness, tenderness, soreness; and that it’s skin-level rather than joint). Misses multiple Gold Answer details: (1) location specificity (crease behind the knee where it bends), (2) that the tick was “stuck pretty good,” (3) explicit denial of bullseye/target rash / larger circular rash, and (4) the fact that fever/feverishness was screened and denied. Systemic negatives are therefore incomplete (fever omission/error).",
+    "faithfulness": "Not fully grounded: it asserts there is no explicit denial of fever despite clear denial at [P-8]. It also mis-cites headache denial as occurring at [P-6] and paraphrases a response (“No, I don’t”) that is not present there. These are multiple transcript-inconsistencies rather than minor paraphrases.",
+    "relevance": "The response stays focused on the requested local bite-site symptoms and the systemic symptoms the doctor screened for (fever, joint pain, headaches), with minimal extraneous content."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.25,
+  "summary": "Mostly addresses the right symptom categories and includes key local findings, but it contains important transcript-inconsistent errors (especially about fever denial and citations), making it only moderately correct and complete."
+}

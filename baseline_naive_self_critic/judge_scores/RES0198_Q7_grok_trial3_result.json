@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the onset one week ago [P-1], the initial stuffy nose [P-3], and the shift to predominantly runny nose [P-3], matching the Gold Answer. However, it inaccurately emphasizes the symptoms as intermittent based solely on the initial 'on and off' description [P-1], ignoring the patient's later clarification that symptoms were 'pretty constant for the past week' [P-8], which the Gold Answer reconciles as overall continuous. It also omits the lack of improvement [P-1] and potential influence of decongestants [P-10]. This represents some factual errors on symptom pattern but core progression is correct.",
+    "completeness": "Key points from Gold Answer covered: onset one week prior (✓ [P-1]), initial congestion/stuffy (✓ [P-3]), shift to rhinorrhea/running (✓ [P-3]). Missed: explicit confirmation of one week [P-2], decongestant influence [P-10], reconciliation of 'on and off' [P-1] with 'pretty constant' [P-8], overall continuous persistence, and lack of improvement [P-1]. Covers approximately 60% of key points.",
+    "faithfulness": "All claims in Generated Answer are directly verifiable: both symptoms for past week [P-1], 'on and off' [P-1], stuffy at first and now mostly running [P-3]. Citations are accurate, no hallucinations or fabricated details, though selective omission of [P-8] and [P-10].",
+    "relevance": "The Generated Answer is structured to directly address the question with sections on onset/initial symptoms, progression of predominant symptom, and a summary bulleting first symptom, change, and frequency, with no off-topic content."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 5,
+    "relevance": 5
+  },
+  "average_score": 4.0,
+  "summary": "The Generated Answer accurately captures the core progression of symptoms but is incomplete and partially incorrect on the constant vs. intermittent nature due to selective use of transcript evidence."
+}

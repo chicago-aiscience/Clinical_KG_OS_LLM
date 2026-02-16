@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer contains major factual inaccuracies compared with the Gold Answer and the transcript. It incorrectly states that the transcript does not describe the nasal discharge character, but the patient clearly says it is “mostly clear” [P-5]. It also incorrectly states there is no evidence the patient denied cough, sore throat, post-nasal drip/back-of-throat drainage, or loss of taste/sell; the patient explicitly denied cough [P-4], denied back-of-throat drainage/post-nasal drip (“just mostly for my nose”) [P-6], denied sore throat/SOB/fever/chills [P-7], and denied loss of taste/smell (“not that I’ve noticed”) [P-16]. These errors directly contradict the core asked elements.",
+    "completeness": "Key Gold Answer elements missing or incorrectly negated: (1) discharge character = mostly clear [P-5] (missed/contradicted); (2) explicit denials of cough [P-4], post-nasal drip [P-6], sore throat/SOB/fever/chills [P-7], loss of taste/smell [P-16] (all missed/contradicted); (3) temporal/course detail that it was initially stuffy then mostly running [P-3] (not included). The only correctly covered portion is that the patient had stuffy nose and runny nose for ~1 week.",
+    "faithfulness": "Several statements are not grounded and in fact conflict with the transcript: claiming no discharge description and no explicit denials of related symptoms despite clear transcript evidence ([P-5], [P-4], [P-6], [P-7], [P-16]). This constitutes substantial unfaithfulness/misrepresentation of the source.",
+    "relevance": "The response is structured to address nasal symptoms, discharge character, and denied related symptoms, which matches the question. However, it provides incorrect content for discharge and denials. Still, it remains focused on the requested domains without major tangents."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 4
+  },
+  "average_score": 1.75,
+  "summary": "The answer is on-topic but contradicts the transcript on key points (clear discharge and multiple explicit denials), making it largely incorrect, incomplete, and unfaithful."
+}

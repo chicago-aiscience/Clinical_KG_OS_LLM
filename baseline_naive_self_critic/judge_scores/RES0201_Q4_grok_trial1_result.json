@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer lists multiple denied symptoms (cough, runny nose, headaches, chest pain, loss of smell, fever, chills/night sweats) with citations, plus other negatives like prior breathing issues, sick contacts, travel. Generated Answer only identifies loss of smell (partially accurate) and current smoking (not listed as a screened symptom in Gold or primarily a 'symptom'). Generated misframes screening (focuses on positives like taste/breathing), adds unmentioned differentials (common cold, influenza, COPD exacerbation triggered by smoking), contradicting Gold's note of no explicit differentials in transcript. Significant factual errors and contradictions.",
+    "completeness": "Gold key points: denied cough [D15/P15], runny nose [D16/P16], headaches [D17/P17], chest pain [D18/P18], loss of smell [D19/P19], fever [D23/P23], chills/night sweats [D24/P24], prior breathing difficulty [D11/P11], sick contacts [D12/P12], travel [D13/P13]; implications for URI, chest pain re: breathing, fever/chills not excluding COVID, mono history. Generated covers only loss of smell (~1/10+ points), misses all others, adds extraneous smoking and invented differentials. Covers <20%.",
+    "faithfulness": "Verifiable: loss of smell denial [P-19], quit smoking [P-34]. Unverifiable/hallucinated: 'screened for COVID-19 symptoms such as loss of taste and breathing difficulties' (these are positives, not screened denies); loss of smell denial distinguishing COVID from cold/influenza (not in transcript, doctor suspects COVID anyway); no current smoking excluding COPD exacerbation (transcript notes mild COPD but no such differential discussed). Multiple hallucinated interpretations.",
+    "relevance": "Addresses question by listing some 'denied findings' (loss of smell, smoking) and attempting to link to differentials vs COVID, but uses incorrect/incomplete list of symptoms, includes non-symptom (smoking), and fabricates distinctions not in transcript/question focus. Partially relevant with off-topic and erroneous content."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.0,
+  "summary": "The Generated Answer is significantly incomplete and incorrect, covering only a fraction of the denied symptoms from the Gold Answer while hallucinating unsubstantiated differential diagnoses not grounded in the transcript."
+}

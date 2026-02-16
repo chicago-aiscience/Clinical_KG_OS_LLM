@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer contains major inaccuracies versus the Gold Answer. It incorrectly states that the transcript does not contain explicit denials of orthopnea, PND, palpitations, and fever—these are explicitly denied in the transcript (orthopnea [P-9], PND [P-10], palpitations [P-14]) and fever is addressed as “chilly” with no measured temperature [P-29, P-30]. It also incorrectly treats hemoptysis as only implicitly absent, whereas the patient explicitly denies blood in sputum [P-7]. It omits endorsed symptoms present in Gold (chest discomfort with coughing [P-13], chills [P-29]). The sputum baseline is slightly misrepresented: the patient corrected themselves to “clear to white” as baseline, with “more yellow” recently [P-6]; the Generated Answer’s “clear to yellow or clear to white” is a minor but real discrepancy.",
+    "completeness": "Key Gold Answer points covered: worsening cough beyond baseline; increased dyspnea; sputum becoming more yellow. Key points missed: chest discomfort during coughing fits [P-13]; chills and no measured temperature/fever uncertainty [P-29, P-30]. Major omissions in pertinent negatives: explicit denials of hemoptysis, orthopnea, PND, palpitations, plus the long list of other ROS negatives (calf pain, dizziness/syncope, neuro symptoms, GI/GU changes, URTI symptoms, sensory changes, weight loss, rash, fatigue). Overall, the Generated Answer captures only a minority of required details.",
+    "faithfulness": "Several statements are not faithful to the transcript: claiming the transcript lacks explicit denials of orthopnea/PND/palpitations (it includes them), and framing hemoptysis as not explicitly denied (it is explicitly denied). Including “systemic medical history” under ‘symptoms endorsed’ is not responsive to the question and blurs transcript-grounded symptom reporting. Most of the dyspnea/cough/sputum details are grounded, but multiple key assertions conflict with the transcript.",
+    "relevance": "The response is partially directed at respiratory symptoms and sputum change, but it fails the question’s request to enumerate endorsed systemic symptoms and specifically denied common-screen symptoms. It also introduces irrelevant content (hypercholesterolemia and past BP meds) that are not symptoms and not asked for. The denial section is particularly nonresponsive/incorrect."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "Partially captures the main respiratory complaints and sputum change, but is substantially incorrect and incomplete—especially regarding explicit denials (orthopnea/PND/palpitations/hemoptysis) and missing key endorsed symptoms (chills, chest discomfort) and other pertinent negatives."
+}

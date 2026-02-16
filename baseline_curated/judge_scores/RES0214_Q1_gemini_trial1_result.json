@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the four symptoms reported by the patient (fever, sore throat, stuffy nose, muscle ache). However, it incorrectly states that the transcript does not contain responses denying the other symptoms. In reality, the transcript explicitly includes denials for nausea [P-5], neck stiffness [P-7], headaches [P-8], cough [P-10], and difficulty swallowing [P-24, P-25, P-26].",
+    "completeness": "The answer identifies the four reported symptoms as requested, achieving about 50% of the required information. However, it completely fails to identify the denied symptoms requested in the second half of the prompt, claiming the information is unavailable.",
+    "faithfulness": "The Generated Answer exhibits a 'negative hallucination' by claiming the provided transcript segments do not contain the denials. This is inaccurate, as the transcript provided clearly documents the doctor asking these questions and the patient responding with 'No' or specific denials.",
+    "relevance": "The answer is relevant in its structure as it attempts to address both parts of the question. However, the second part of the response is unhelpful because it fails to extract the information that was present in the source text."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer correctly identifies the reported symptoms but erroneously claims the transcript lacks information regarding the denied symptoms, which were clearly present."
+}

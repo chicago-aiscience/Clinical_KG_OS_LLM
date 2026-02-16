@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Step-by-step: The Gold Answer identifies the hiking trip two weeks ago with partner where people brushed by as the specific exposure event the patient pinpointed [P-18, P-19]. The Generated Answer incorrectly states the exposure is 'living situation with family members' [P-29], which the patient did not identify as a potential exposure; they denied sick contacts [P-17] and explicitly pointed to hiking as the only possible source [P-18]. This is a major factual contradiction with the Gold Answer, as family living is background, not the identified event. No other facts match significantly.",
+    "completeness": "Key points from Gold Answer: (1) online high school/not out of house [P-36/37, D-38/P-38]; (2) specific hiking exposure 2 weeks ago, people brushed by, no other source [P-18/19]; (3) denied sick contacts [P-17]; (4) lives with family, no illness noted [P-29]; (5) immunizations up to date [P-20]; (6) COVID test due to symptoms [D-39]. Generated covers symptoms and doctor suspicion vaguely, mentions online/home implicitly, and family living (minor point), but completely misses hiking (core), incubation timing, denied contacts, etc. Covers <20% of key points.",
+    "faithfulness": "Claims about symptoms (anosmia, ageusia, dry cough) verifiable [P-1-7]. Living with family verifiable [P-29]. Doctor confirmation verifiable [D-39], though citation includes irrelevant [P-1]. However, core claim 'specific potential exposure event identified by the patient is their living situation' is not in transcript—patient identified hiking [P-18], not family; denied sick contacts [P-17]. Inference of household transmission is hallucinated attribution to patient's identification. Multiple hallucinated elements around exposure.",
+    "relevance": "The Generated Answer directly identifies an exposure event (household) and connects it to COVID suspicion via symptoms and testing, mirroring the question's structure with no tangents or off-topic content, despite being factually wrong."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 2.25,
+  "summary": "The Generated Answer fails by misidentifying household living as the patient's specific exposure event instead of the hiking trip, resulting in low correctness, completeness, and faithfulness despite high relevance."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies several reported symptoms matching the Gold Answer (dry cough [P-1,P-4], scratchy throat [P-1], malaise/'crappy' [P-1,P-14], headache [P-1,P-2], feeling hot [P-7,P-9]). However, it inaccurately includes congestion and post-nasal drip [P-18] as part of the 3-4 day symptoms, which Gold attributes to allergies (not acute illness, and occurring before allergy season). It misclassifies 'felt hot' explicitly as 'fever' (Gold uses 'feeling really hot'). For denials, it covers sputum/phlegm correctly via dry cough and explicit [P-5,P-6], adds shortness of breath denial [P-18] (in Gold but allergy-related), but misses rashes/skin changes [P-10], nausea/vomiting [P-11], diarrhea [P-12], joint aches [P-13]. Falsely claims nausea/joint pain/rashes 'not mentioned in transcript segments' despite explicit denials. Significant errors and omissions contradict Gold's precise scope.",
+    "completeness": "Gold reported key points covered: dry cough/scratchy throat (yes), headache (yes), feeling hot (yes, partially), malaise/crappy/icky (yes). Missed: tiredness [P-13], full details on persistent hot sensation day/night/malaise formalization. Gold denied key points covered: sputum/phlegm (yes). Missed: skin changes/rashes, nausea/vomiting, diarrhea, joint aches, cannot breathe (partial via SOB). Covers ~4/5 reported (~80%) + 1-2/6 denied (~20%) = overall ~50% of key points.",
+    "faithfulness": "All listed reported symptoms verifiable: dry cough [P-1,P-4,P-5,P-6], scratchy [P-1], malaise [P-1,P-2,P-14], headache [P-1,P-2], hot [P-7,P-9]; denials sputum [P-5,P-6], SOB [P-18]. Congestion/PND [P-18] verifiable but decontextualized (allergies, not acute). Citations accurate. Minor hallucinations: 'aligns with Knowledge Graph definition of fever' (external, ungrounded); 'clinically defined as dry cough no phlegm' (plausible but interpretive); false note on missing symptoms (they are in full transcript). Some plausible but miscontextualized claims.",
+    "relevance": "Directly structures response around reported 3-4 day symptoms and explicit denials, using bullets for clarity, addresses question core; minor tangent in note claiming symptoms absent and external definitions."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 3,
+    "relevance": 4
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer partially captures reported symptoms but adds irrelevant allergy symptoms, misses most denied symptoms, and includes minor ungrounded interpretations, leading to moderate performance."
+}

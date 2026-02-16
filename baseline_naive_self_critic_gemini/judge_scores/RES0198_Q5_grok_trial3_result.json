@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer identifies the nephew attending daycare (P-11) as the key potential infectious exposure source from social history, noting daycare as a common source of respiratory viruses despite the nephew not being sick (P-12), and links it to the viral URI assessment (D-39). It details T1DM history (P-23/24/25/26) without explicit immune link in transcript. Generated Answer misses the nephew/daycare entirely, falsely claims no explicit exposure source, incorrectly attributes isolation/swab to diabetes rather than pandemic symptoms, and includes unexplained [KG]. Significant factual errors and contradictions on core exposure source.",
+    "completeness": "Gold key points: nephew/daycare exposure (P-11/P-12), plausibility as source, viral consistency (D-39), T1DM details (diagnosis age 7, insulin, endocrinologist), no explicit diabetes-immune link, symptom duration. Generated covers T1DM (partially), viral diagnosis (D-39), symptoms vaguely, diabetes-immune effect generally; misses exposure source entirely, nephew details, plausibility, specific T1DM management, no-link note. Covers ~20-30% (diabetes and viral dx), misses primary exposure.",
+    "faithfulness": "Generated claims verifiable: T1DM (P-23), viral cold (D-39), symptoms, isolation/swab (D-39). Unverifiable/hallucinated: no explicit exposure source (false, nephew in P-11 re: sick contacts), diabetes 'factored into care plan' via isolation/swab (inferred wrongly, due to pandemic), immune effect stated as fact (plausible but not in transcript), [KG] unexplained/not in transcript. Multiple ungrounded claims and false denial of exposure mention.",
+    "relevance": "Question focuses on social history exposure source (nephew/daycare) and relation to presentation with T1DM immune context. Generated addresses T1DM and viral presentation relevance somewhat, pandemic isolation, but completely ignores/misses core exposure source, substituting vague 'no explicit' and pandemic; partially relevant with off-topic inferences."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "The Generated Answer significantly misses the key nephew/daycare exposure source from social history, falsely denies explicit sources, and incorrectly links diabetes to the care plan, resulting in low correctness, completeness, and faithfulness despite partial relevance."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer precisely cites triggers (P-9, P-11), no other triggers (P-10), clinician's allergy suspicion responses (D-12/13, D-31), family details (P-32-34), escalation of inhaler use (P-8), and med change suggestion (D-43). Generated correctly identifies triggers and family history (sister's asthma) with accurate citations, links pollen to allergy suspicion, and notes exacerbation via increased symptoms/inhaler use. Errors: fabricates 'knowledge graph' (absent in Gold/transcript), cites P-1 for usage increase (actual detail in P-8), omits clinician's 'makes sense' affirmation and med change suggestion; core relation to exacerbation/allergies intact but with discrepancies.",
+    "completeness": "Gold key points: 3 triggers w/cites (covered), no others (missed), allergy exchanges (partially: pollen-allergy link but misses full clinician responses/revisit/no other allergies), family sister asthma + no others (partially: sister only), exacerbation via precise inhaler escalation (partially: general increase), clinician med plan (missed). Covers ~80%: all triggers/family/exacerbation basics, allergy suspicion via pollen.",
+    "faithfulness": "Most claims verifiable: triggers/symptoms [P-9,11,1,15], family [P-32], usage increase inferable. Hallucinations: 'knowledge graph' links (twice, not in transcript), imprecise 'constant shortness of breath' (P-1 says 'very short of breath'), 'doctor's suspicion' (clinician D-13, not doctor directly). Multiple unverifiable additions.",
+    "relevance": "Directly addresses question: structures around exacerbation, triggers' role, allergy suspicion (esp. pollen), family history tie-in, summary links all to uncontrolled asthma/allergies; no tangents."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 4,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.5,
+  "summary": "Generated Answer is mostly relevant and covers core elements well but reduced by factual additions like 'knowledge graph' hallucination, minor omissions, and imprecise citations."
+}

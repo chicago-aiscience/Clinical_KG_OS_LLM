@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer contains several factual errors. It lists 'sore throat' as a negated symptom when the patient actually confirmed it ([P-9]). It claims 'loss of smell' was absent, whereas the patient stated 'yeah, kind of' when asked if they were unable to smell well ([P-6]). It also fails to mention that nausea and palpitations were negated, which were specifically prompted in the question.",
+    "completeness": "The Generated Answer misses the majority of the negated symptoms identified in the Gold Answer (vision/hearing, nausea/vomiting, palpitations, abdominal pain, urinary symptoms, numbness/tingling). It also misses the differentiation logic regarding excluding cardiac, gastrointestinal, and neurological causes, focusing instead on pneumonia which was not the primary focus of the Gold Answer's differentiation logic.",
+    "faithfulness": "The Generated Answer hallucinates that loss of smell was absent. In the transcript ([P-4] and [P-6]), the patient reports losing their sense of taste and 'kind of' losing their sense of smell. The answer also contradicts itself by listing sore throat as a negated symptom while noting in the next sentence that the patient confirmed it.",
+    "relevance": "While the Generated Answer attempts to address the two-part question, it fails to incorporate the specific examples provided in the prompt (palpitations and nausea) into its analysis of negated symptoms."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer is largely inaccurate and incomplete, incorrectly identifying confirmed symptoms as negated and hallucinating the absence of findings (loss of smell) that were actually present in the transcript."
+}

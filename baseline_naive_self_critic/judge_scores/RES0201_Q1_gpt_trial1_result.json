@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer contains major factual errors compared with the Gold Answer and the transcript. It omits the patient’s reported difficulty breathing (started yesterday, constant, worsening) and the reduced sense of taste (started ~2 days ago, constant). It incorrectly implies the patient did not explicitly deny cough, runny nose, headaches, chest pain, and fever—yet the transcript shows clear denials: cough [P-15], runny nose [P-16], headaches [P-17], chest pain [P-18], and ‘I don’t think so’ to fever [P-23]. It also misclassifies “loss of smell” as a ‘reported symptom’ rather than a denial; the patient denied loss of smell and only noted possible taste reduction [P-19].",
+    "completeness": "Key reported symptoms covered: sore throat with swallowing difficulty; fatigue/tiredness; muscle aches. Key reported symptoms missed: difficulty breathing (onset yesterday, constant, worsening) and reduced sense of taste (onset ~2 days ago, constant). Key explicit denials missed/incorrectly stated: cough, runny nose, headaches, chest pain, fever, chills/night sweats; also missed the gold answer’s additional negatives (no sick contacts, no travel). Overall, substantially less than full coverage.",
+    "faithfulness": "Several statements are not grounded in the transcript and directly contradict it—most notably the claim that the patient did not explicitly deny cough/runny nose/headaches/chest pain/fever. The transcript contains explicit denials for these. The answer also treats ‘loss of smell’ as a reported symptom, when the transcript indicates the patient denied smell loss and instead reported reduced taste. These issues indicate multiple unfaithful elements.",
+    "relevance": "The response is focused on the patient’s symptoms and explicit denials, which is what the question asks. It includes minor unnecessary framing, but little true off-topic content."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.25,
+  "summary": "The answer is on-topic but is largely incorrect and incomplete, omitting key reported symptoms and falsely stating that several explicitly denied symptoms were not denied in the transcript."
+}

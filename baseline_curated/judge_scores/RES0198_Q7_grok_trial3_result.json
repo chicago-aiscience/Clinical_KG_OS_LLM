@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer states symptoms began one week ago [P-1,P-2], initial stuffiness [P-3], shift to mostly running [P-3], possible decongestant influence [P-10], initial 'on and off' [P-1] but clarified as 'pretty constant' [P-8], no improvement [P-1]. Generated correctly notes one week duration, stuffy first, shift to runny, but incorrectly attributes initial symptom evidence to decongestants/timing [P-10] instead of direct quote [P-3]; contradicts on frequency by claiming 'on and off' without noting constant clarification [P-8]; omits no improvement. Significant errors on evidence and frequency.",
+    "completeness": "Covers onset (week), initial stuffy, shift to runny (~50-79%); misses direct progression quote [P-3], decongestant influence on shift, constancy clarification [P-8], no improvement [P-1].",
+    "faithfulness": "Grounded claims: week [P-1], runny now [P-10]; hallucinations: 'knowledge graph' (absent), decongestants started 'before discussing runny nose' (runny in P-1/P-3, timing unspecified), implies decongestants prove initial stuffy (inferred, not direct); ignores [P-3]/[P-8]. Multiple unverifiable/hallucinated details.",
+    "relevance": "Perfectly addresses progression, first symptom, change in predominance, frequency with structured response matching question elements; no off-topic content."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer captures the basic progression and shift in symptoms but has factual errors on frequency, poor evidence grounding including hallucinations, reducing overall quality."
+}

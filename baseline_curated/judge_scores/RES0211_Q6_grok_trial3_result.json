@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Gold Answer precisely lists the five key points recapped by the doctor in D-58: (1) 3-4 day dry cough with fever and headache; (2) no sputum; (3) no recent sick contacts except brother 2 weeks ago with cold; (4) no asthma; (5) no meds except Claritin. The Generated Answer incorrectly attributes additional symptoms like scratchy throat and post-nasal drip to the doctor's summary in D-58 (these are from earlier patient statements in P-1 and P-18, not recapped by the doctor), partially covers cough/fever/headache/brother but omits no sputum, no asthma, no meds except Claritin, and misattributes Jessica's goal to the doctor's framing in D-58 rather than her direct statement in P-60; significant factual errors and contradictions with Gold.",
+    "completeness": "Gold key points: doctor's 5 recaps + Jessica's goal (medicine?). Generated covers partial point 1 (cough/fever/headache) and partial point 3 (brother exposure), misses points 2,4,5 entirely, adds non-Gold items (scratchy throat, post-nasal drip), and inaccurately covers Jessica's goal (uses doctor's words instead of P-60); covers roughly 20-49% of key points.",
+    "faithfulness": "Claims about doctor's summary in D-58 are not fully grounded: scratchy throat and post-nasal drip are not mentioned in D-58 (hallucinated as part of recap, cited wrongly with patient turns); fever/headache/cough/brother are verifiable in D-58 but extras are not; Jessica's goal misattributed to D-58 framing rather than P-60; multiple hallucinated attributions to doctor's recap.",
+    "relevance": "The Generated Answer directly structures response around doctor's recapped findings and Jessica's goal, using bullet points and citations, with no major off-topic content despite inaccuracies; mostly relevant with minor inclusion of non-recapped symptoms."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer has significant factual errors and hallucinations by attributing non-recapped symptoms to the doctor's summary and incompletely/misrepresenting key points and Jessica's goal."
+}

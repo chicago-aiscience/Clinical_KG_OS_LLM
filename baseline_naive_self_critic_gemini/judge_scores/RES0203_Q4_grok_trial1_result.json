@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies absences of fever (P-10), headaches (P-12), and allergies (P-26), which align with the transcript and partially with Gold. However, it misattributes P-15 (muscle aches denial) to fever confirmation, includes allergies which is PMH not core ROS, omits most Gold-listed negatives (e.g., dyspnea D-11/P-11, sore throat D-13/P-13), and falsely claims dyspnea and sore throat are absent from transcript. Clinical implications are generalized and not faithful to Gold's COVID-context specifics, introducing contradictions.",
+    "completeness": "Gold lists 9+ key ROS negatives (fever, dyspnea, headaches, sore throat, chills/night sweats, muscle aches/weakness, chest pain, sputum/blood, cough triggers) with citations, D-16 summary, PMH negatives, and explanations of clinical picture. Generated covers only fever and headaches (~20% of ROS points), ignores dyspnea/sore throat/examples, cough details, PMH, and Gold's explanations; note dismisses key points. Covers <20%.",
+    "faithfulness": "Claims for fever, headaches, allergies verifiable in transcript with accurate citations (except misusing P-15). Clinical implications plausible but hallucinated (e.g., ruling out pneumonia/sepsis not in transcript/doctor's reasoning). Major hallucination: note claiming dyspnea/sore throat absent from transcript despite explicit denials (D-11/P-11, D-13/P-13). Multiple unverifiable/false elements.",
+    "relevance": "Addresses question by listing some negatives and providing implications, directly referencing examples like fever. However, incomplete list, erroneous dismissal of dyspnea/sore throat, and allergy tangent reduce focus; partially relevant with off-topic content."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.0,
+  "summary": "The Generated Answer is significantly incomplete and factually flawed, covering only a fraction of the Gold Answer's negative findings while hallucinating absences of key symptoms and misaligning clinical explanations."
+}

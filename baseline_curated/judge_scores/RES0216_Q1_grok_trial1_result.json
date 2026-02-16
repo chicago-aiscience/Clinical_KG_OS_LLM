@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Step-by-step: Gold Answer details present symptoms including 3-day diffuse chest tightness (not pain, worsens with inspiration/exertion), difficulty getting full breath, and upper airway symptoms (hoarse, phlegm, throat clearing without cough). It lists explicit denials of chest pain, anxiety/sweating/impending doom, fevers, night sweats, chills, weight loss, and cough with citations. Generated Answer covers chest tightness and SOB partially but misses duration, diffuseness, upper airway symptoms entirely, and incorrectly lists seasonal allergies as a reported symptom (it's historical and denied recently). For denials, it only identifies chest pain and falsely claims others like fevers/chills etc. are not mentioned or explicitly denied (they are in P-11 to P-15), contradicting Gold and transcript. Adds doctor's interpretations (asthma suggestion) as patient symptoms. Significant factual errors and contradictions warrant score 2.",
+    "completeness": "Gold key points: Present - 3-day history, diffuse tightness all over/not localized/not pain, worsens insp/exertion (walks/chair/deep breath), harder full breath, hoarse/phlegm/throat clearing. Denied - chest pain, anxiety/sweating/doom, fevers, night sweats, chills, wt loss, cough (7 items). Generated covers partial tightness (breathing in, walks), SOB (harder breath/whole breath), deny chest pain; misses 3-day/diffuse details, all upper airway, 6/7 denies; adds irrelevant history allergies. Covers ~25-30% of key points -> score 2.",
+    "faithfulness": "Generated claims verifiable for tightness/SOB/chest pain deny (P-1,P-5,P-7). Hallucinates: seasonal allergies as 'reported symptom present' (P-32 is history, not current); doctor's asthma suggestion [D-35] as patient symptom; falsely states fevers/chills/night sweats/wt loss/cough/sweating/anxiety 'not mentioned' or 'not explicitly denied by patient' (direct denials P-6,P-11-P-15); misinterprets D-36 on SOB. Multiple hallucinated/misstated facts not grounded in transcript -> score 2.",
+    "relevance": "Directly structures as 'Reported Symptoms Present' (chest/resp) and 'Explicitly Denied'; addresses question core but incomplete; minor off-topic (allergies history, doctor's diag/comments). Mostly relevant -> score 4."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer partially captures chest tightness and SOB but misses critical upper airway symptoms and most explicit denials, includes hallucinations about unmentioned symptoms and historical details, resulting in low correctness, completeness, and faithfulness."
+}

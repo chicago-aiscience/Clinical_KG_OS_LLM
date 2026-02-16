@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer states assessment as symptoms 'consistent with some common covid symptoms' and patient otherwise well [D-16, D-39]; Generated overstates as 'consistent with COVID-19' and incorrectly attributes to symptoms plus hiking exposure [P-18], which doctor did not cite. Test, self-care, and timeline match Gold and transcript. However, Generated incorrectly claims no mention of supervising physician consultation despite D-40 ('we'll go over this with the doctor that I'm working with today'), misses additional tests [D-40], and omits patient generally well and reassurance. Significant contradictions on key management elements.",
+    "completeness": "Gold key points: assessment (symptoms consistent, otherwise well), COVID swab test, self-isolation details, timeline (day or two), possible additional tests, consult supervising physician/more questions, reassurance. Generated covers assessment (partially/inaccurately), test, self-isolation, timeline (~60% coverage); misses otherwise well, additional tests, physician consult, more questions, reassurance.",
+    "faithfulness": "Claims verifiable: test/swab, self-isolate, timeline [D-39]. Hallucination: assessment based on hiking exposure (doctor never links it [D-39 focuses on symptoms]); denial of supervising consult despite explicit D-40 text; misses additional tests [D-40]. Multiple ungrounded claims and omissions of transcript facts.",
+    "relevance": "Generated Answer directly structures response around question elements (assessment, test, self-care, timeline, consult), with no off-topic content; perfectly mirrors required structure despite inaccuracies."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer partially covers the management plan but contains significant factual errors, including denying a supervising physician consultation and missing additional tests mentioned in the transcript."
+}

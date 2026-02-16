@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer accurately lists stuffy nose (initially on/off), runny nose for one week, progression from stuffy to mostly running [P-1-P-3], clear nasal discharge [P-5], and explicit denials of cough [P-4], post-nasal drip [P-6], sore throat/SOB/fevers/chills [P-7], loss of taste/smell [P-16]. Generated Answer partially matches nasal symptoms but inaccurately states runny nose was 'mostly run since the beginning' (contradicts P-3's 'stuffy at first'), completely omits 'clear' discharge (key fact from P-5), and falsely claims no explicit denials for cough/sore throat/etc. despite direct 'No' responses in P-4, P-7, P-16; significant errors and contradictions warrant score of 2.",
+    "completeness": "Gold key points: nasal symptoms (stuffy/runny, duration, progression), clear discharge, denials (cough, post-nasal, sore throat/SOB/fever/chills, taste/smell), fatigue/other negatives. Generated covers stuffy/runny nose and partial progression (~40% of nasal points), misses clear discharge entirely, covers only post-nasal denial partially and wrongly denies others exist (covers ~1/5 denials); overall ~25-30% coverage, score 2.",
+    "faithfulness": "Generated citations [P-1, P-3, P-10] are accurate for nasal claims, but misinterprets P-3 progression ('mostly run since beginning' vs. 'stuffy first, now running'), omits P-5 clear discharge, and incorrectly asserts 'no explicit verbal denials' for cough [P-4 'No'], sore throat/etc. [P-7 'No'], taste/smell [P-16 'No']—these are direct transcript quotes; multiple unverifiable/misstated claims about absences constitute hallucination/misrepresentation, score 2.",
+    "relevance": "Generated Answer is structured directly around the question with sections on nasal symptoms, discharge character, and denied symptoms, using transcript citations; no off-topic content, perfectly focused despite inaccuracies, score 5."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer partially addresses nasal symptoms but has significant factual errors, omits key details like clear discharge, and incorrectly denies the existence of explicit symptom denials, resulting in low correctness, completeness, and faithfulness."
+}

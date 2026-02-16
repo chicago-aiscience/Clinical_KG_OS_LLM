@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies several present symptoms: chest tightness with inspiration [P-1, P-5], difficulty getting a full breath [P-7], hoarseness and increased phlegm/throat clearing [P-11], and it correctly notes explicit denials of chest pain [P-1, P-5] and cough [P-11]. However, it contains a major factual error by stating that the transcript does not contain explicit denials for fevers, night sweats, chills, weight loss, anxiety, and sweating—when the patient explicitly denied all of these in [P-6, P-12, P-13, P-14, P-15]. This directly contradicts both the transcript and the Gold Answer.",
+    "completeness": "Present symptoms: partially covered (chest tightness, difficulty getting a full breath, hoarseness/phlegm), but misses key descriptors from the Gold Answer such as diffuse/all-over chest distribution [P-8] and clear triggers/worsening with exertion (walking), deep breaths, and getting up from a chair [P-1, P-9, P-10]. Denials: only includes chest pain and cough, but omits explicit denials of anxiety/sweating/impending doom [P-6], fevers [P-12], night sweats [P-13], chills [P-14], and weight loss [P-15]. Overall, substantially incomplete relative to Gold Answer.",
+    "faithfulness": "Most included claims are grounded in the transcript with appropriate references. The main faithfulness problem is the statement that the transcript lacks explicit denials for several screened symptoms (fever/night sweats/chills/weight loss/anxiety/sweating), which is demonstrably false given [P-6, P-12–P-15]. This is not a minor omission but an incorrect characterization of the source.",
+    "relevance": "The response stays on-topic (symptoms present and symptoms denied). However, it fails to answer a major portion of the question (the full set of explicit denials requested), reducing its overall responsiveness."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "Partially captures the patient’s presenting complaints but incorrectly claims key symptom denials are absent from the transcript and omits multiple required present/denied symptoms, resulting in low correctness, completeness, and faithfulness."
+}

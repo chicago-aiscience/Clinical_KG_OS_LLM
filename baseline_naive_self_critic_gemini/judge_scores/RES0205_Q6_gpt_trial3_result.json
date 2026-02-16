@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Gold Answer correctly identifies the doctor’s end-of-visit plan at D-37: a quick listen to heart and lungs, a quick physical exam, then consultation with the supervising doctor, review of what was discussed, and return to the patient to decide next steps. The Generated Answer states the plan/exam/next-steps process are not present and that the transcript ends at P-35; this directly contradicts the transcript, which clearly includes D-36 through D-38 (including D-37 with the full plan). Thus, the Generated Answer is factually incorrect relative to both the transcript and Gold Answer.",
+    "completeness": "Key points in the Gold Answer: (1) auscultation of heart and lungs, (2) quick physical exam, (3) consult supervising physician, (4) review discussion, (5) return to discuss next steps, (6) this was foreshadowed in D-1, (7) patient agreed, (8) no diagnosis/meds given yet and transcript ends before findings/treatment. The Generated Answer covers essentially none of these and instead claims the information is missing. Completeness is therefore <20%.",
+    "faithfulness": "The Generated Answer is not well grounded in the provided transcript: it incorrectly claims the transcript ends at P-35 and that no later doctor plan is included, despite explicit content at D-37. This is a major unfaithful/unsupported assertion (a misreading/omission of existing lines).",
+    "relevance": "Although it attempts to address the question by commenting on whether the plan is available, it fails to provide the requested plan and next-steps process that are explicitly present. Therefore it is only minimally responsive to the task."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 2
+  },
+  "average_score": 1.5,
+  "summary": "The Generated Answer is largely incorrect and incomplete because it denies the presence of the doctor’s stated plan and exam components despite them being explicitly stated in the transcript (D-37)."
+}

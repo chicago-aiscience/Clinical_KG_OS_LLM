@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer diagnoses acute lower respiratory tract infection (acute bronchitis with possible bacterial superinfection or early CAP on chronic cough), emphasizing acute 3-day productive cough on 3-month intermittent cough, greenish sputum suggesting bacterial concern, and subjective nighttime fevers as systemic response. Generated Answer diagnoses bacterial pneumonia or acute bacterial bronchitis but misstates cough as ~1 month (vs. 3 months intermittent with 3-day acute productive phase), denies explicit fevers exist (contradicting P-4 'feeling hot at night'), substitutes fatigue/sleep disturbance, and introduces unsubstantiated 'Knowledge Graph'. Core diagnosis partially aligns but significant errors in symptom representation and evidence contradict Gold's nuanced facts.",
+    "completeness": "Gold key points: specific diagnosis with chronic context; productive cough as acute transition [P-2,P-12]; greenish sputum as infectious [P-9]; subjective fevers [P-4]; doctor's synthesis [D-47]; lacks other data. Generated covers sputum accurately; partial cough (but misses acute/chronic distinction); ignores fevers entirely, uses fatigue instead; no doctor's summary or lacks data. Covers ~30-40% (diagnosis partial, one feature accurate, others missed/substituted).",
+    "faithfulness": "Claims verifiable? Cough citations [P-1,P-3,P-19] partial but misrepresents duration/productive onset (P-2/P-12 acute gunk ignored). Sputum [P-9] accurate. Denies fevers despite P-4 explicit 'feeling hot at night'; fabricates 'transcript does not explicitly mention fevers'. Introduces 'Knowledge Graph' not in transcript (hallucination). Fatigue/sleep [P-19] verifiable but not proxy for fevers. Multiple hallucinations and selective/misleading citations.",
+    "relevance": "Directly proposes diagnosis and breaks down three features per question structure, but substitutes fatigue for fevers (question specifies 'subjective nighttime fevers'), adds irrelevant Knowledge Graph, and deviates on cough details; mostly on-topic but with off-target evidence."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "The Generated Answer partially aligns on diagnosis and sputum but contains significant factual errors, ignores key fevers evidence, hallucinates external references, and incompletely covers Gold's points."
+}

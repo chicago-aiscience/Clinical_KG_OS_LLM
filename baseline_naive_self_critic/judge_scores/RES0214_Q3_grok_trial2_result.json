@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer highlights fever and sore throat [D-53] as key for infectious etiology (COVID-19), broader symptoms [D-24], and husband's similar symptoms [D-53]; Generated correctly identifies fever and sore throat [D-53] and patient's report [P-1], but misses broader symptoms and husband; errors include wrong citation for flu shot response ([P-27] instead of [P-53]), 'stuffy throat' misphrasing (should be sore throat and stuffy nose), and extraneous 'knowledge graph' reference not in Gold or transcript. Main points correct but some factual errors present.",
+    "completeness": "Gold covers: fever/sore throat [D-53], muscle aches/fever/stuffy nose/sore throat [D-24], husband symptoms [D-53], no flu shot [P-53/D-54]; Generated covers fever/sore throat and no flu shot, but misses broader symptom cluster [D-24] and epidemiological husband factor, covering ~60% of key points.",
+    "faithfulness": "Claims of fever/sore throat [D-53/P-1] verifiable; flu shot query [D-53/D-54] verifiable but wrong response citation [P-27] (actual [P-53], P-27 is neck swelling); 'knowledge graph' entirely hallucinated/not in transcript; 'stuffy throat' not exact (stuffy nose/sore throat). Multiple unverifiable/hallucinated elements.",
+    "relevance": "Generated directly structures answer into two parts matching question (symptoms for infectious/COVID, vaccination for influenza), no tangents or off-topic content."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.25,
+  "summary": "The Generated Answer captures core symptoms and vaccination detail but includes factual errors like incorrect citations, hallucinations (knowledge graph), and misses supporting context from Gold, leading to moderate scores."
+}

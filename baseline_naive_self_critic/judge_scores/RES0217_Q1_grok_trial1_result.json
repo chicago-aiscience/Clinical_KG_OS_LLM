@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Step-by-step: Generated accurately lists redness, tenderness, and soreness at the site from [P-1], matching Gold. Location matches. However, it omits several Gold details like 'stuck pretty good,' no bullseye rash [P-6], and 'totally fine aside' [P-18]. For systemic, it correctly notes joint pain [D-7] and fever [D-8] screening but misrepresents denials using [P-1]/[P-3] instead of direct 'No' [P-7]/[P-8], and falsely claims no headaches screening despite [D-19]/[P-19-20] in transcript and Gold. This introduces contradictions on headaches and denial evidence, making significant factual errors.",
+    "completeness": "Key points from Gold: Local - precise location/crease, stuck good, sore skin/not joint, red/tender [P-1], red/tender [P-6], no bullseye [P-6], fine aside tenderness [P-18], healthy [P-13] (8 points). Systemic - joint pain [D-7/P-7], fever [D-8/P-8], headaches [D-19/P-19-20] (3 points). Generated covers location, red/tender/sore/not joint (4/8 local partial), joint/fever screening (2/3 systemic) but misses denials/rash/etc., wrong denial cites, no headaches. Covers ~40-45% of key points.",
+    "faithfulness": "Local claims verifiable [P-1]. Systemic screening cites [D-7/D-8] accurate. However, denial via 'focusing localized [P-1]' and 'not too bad [P-3]' not direct denials ([P-7/P-8]); interpretive/misgrounded. Note 'no headaches screening' hallucinates absence despite explicit [D-19]. Multiple ungrounded/misrepresented claims.",
+    "relevance": "Directly structures response around local symptoms at site and systemic symptoms (joint pain, fever) screened/denied, addressing question precisely; note on headaches relevant to query's inclusion."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer partially covers local symptoms accurately but significantly errs by omitting headaches screening, misrepresenting denials, and missing key Gold details like rash denial, resulting in low correctness, completeness, and faithfulness despite high relevance."
+}

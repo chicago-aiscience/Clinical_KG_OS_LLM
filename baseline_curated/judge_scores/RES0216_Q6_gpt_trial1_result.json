@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The core elements match the Gold Answer: clinician suspects asthma recurrence, plans a quick exam with lung auscultation, recommends a trial of rescue inhaler use during walks, and will reassess/escalate if no improvement. Minor inaccuracies/overstatements: (1) Generated Answer labels this definitively as an “asthma exacerbation,” whereas the transcript states it “might be your asthma reoccurring in some capacity” (probabilistic, pending exam). (2) It says cardiac ischemia is “ruled out,” but the transcript only places it “lower on the differential,” not excluded. (3) The salbutamol wording is a bit muddled given the transcript’s internal inconsistency (patient earlier says they don’t have the PRN inhaler, later lists salbutamol as a med), so the claim “confirmed use…in the past” is not quite accurate to the cited line.",
+    "completeness": "Covers most key points: assessment of asthma recurrence, planned physical exam with lung auscultation, rescue puffer trial as first step, and contingency to return/reassess and consider other directions/investigations if ineffective. Misses one Gold Answer component: the clinician states they will go “talk to the doc”/supervising physician before returning with next steps. Also only implicitly mentions possible investigations rather than explicitly noting they will consider investigations based on exam findings.",
+    "faithfulness": "Most statements are grounded in D-35/D-36 (asthma high on differential, listen to lungs, therapeutic trial of rescue inhaler, stepwise reassessment). However, there are minor faithfulness issues: the transcript does not support “ruled out” for ischemia, and the “shift from chronic management to acute flare-up” interpretation is not explicitly stated. Overall, only minor extrapolation beyond the transcript.",
+    "relevance": "Directly addresses the question: overall assessment, planned exam component(s), first-step treatment, and contingency plan if the intervention fails. No meaningful off-topic content."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 4,
+    "relevance": 5
+  },
+  "average_score": 4.25,
+  "summary": "The Generated Answer is highly relevant and largely consistent with the Gold Answer, with minor overstatements (e.g., ischemia “ruled out,” definitive “exacerbation”) and one omitted plan element (consulting the supervising physician)."
+}

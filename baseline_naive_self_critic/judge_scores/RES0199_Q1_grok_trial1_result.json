@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies nausea, vomiting, diarrhea as GI symptoms and dry cough as respiratory, matching the transcript and Gold Answer basics [P-1, P-12]. However, it incorrectly classifies headache as a respiratory symptom, despite it being neurological; wrongly states diarrhea frequency and vomiting episodes are unspecified (contradicting P-28 'five or six times a day' and P-32 'vomited two times'); claims no numerical headache severity (contradicting P-8 '7'); misses timelines, qualities (e.g., liquid stools, food contents vomit), and negatives. Significant factual errors and contradictions with Gold Answer warrant a score of 2.",
+    "completeness": "Gold Answer key points include: cough (dry, 4 days start, stable, no sputum/blood, resp negatives); diarrhea (2 days, liquid, 5-6x/day, no blood); vomiting (yesterday, 2 episodes, food contents, no blood), nausea; headache (4 days, persistent, bilateral forehead/top, 7/10, no radiation/stiffness); plus loss of smell/fatigue. Generated covers basic symptoms (nausea/vomiting/diarrhea, dry cough, headache) but misses all specifics like timelines, frequencies (diarrhea 5-6x/day missed), vomiting count (2 missed), headache severity (7/10 missed), qualities, negatives. Covers ~20-30% of key points, score 2.",
+    "faithfulness": "Claims like dry cough [P-12] and basic symptoms [P-1] are verifiable. However, 'diarrhea frequency not specified' ignores P-28 ('five or six times a day'); 'vomiting episodes not specified' ignores P-32 ('two times'); 'no numerical severity' ignores P-8 ('7'); headache as respiratory is not grounded (hallucinated category, headache discussed separately D-3 to D-10). Multiple unverifiable/incorrect claims about absences indicate hallucination/misreading, score 2.",
+    "relevance": "The answer directly structures response around GI/respiratory symptoms and the specified characteristics (cough nature, diarrhea freq, vomiting #, headache severity), with no major off-topic content, though answers are incomplete/incorrect. Minor misclassification but focused on question, score 4."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer partially identifies symptoms but contains significant factual errors, misses key specifics from the transcript and Gold Answer, and misclassifies the headache, resulting in low correctness, completeness, and faithfulness."
+}

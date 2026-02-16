@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the COVID-19 swab as the test ordered with accurate citation [D-53], matching the Gold Answer. It captures the core rationale of household transmission from the husband's similar symptoms [P-19, D-53], including the doctor's quote about prioritizing COVID-19. However, it introduces minor interpretive phrasing like 'likely contracted the virus from him' (Gold uses hypothetical 'if'), emphasizes symptomatology (fever/sore throat) more than Gold's focus on epidemiology, and adds unsubstantiated 'knowledge graph' references not present in Gold or transcript, creating minor discrepancies.",
+    "completeness": "Covers: test ordered (COVID swab [D-53]); household transmission/rationale [P-19, D-53]; infectious nature and self-isolation need [D-53]. Misses/partial: explicit self-isolate instruction as reinforcing urgency [D-53]; full contrast with influenza (no flu shot [P-53, D-54], mentioned only after COVID prioritization [D-54]). Covers ~85-90% of Gold key points.",
+    "faithfulness": "Claims about test, symptoms [P-1, D-53], husband [P-19], prioritization quote [D-53], and infectious/self-isolation [D-53] are verifiable in transcript with accurate citations. 'Likely contracted from him' is a slight overinterpretation of hypothetical 'if' in [D-53]. 'Knowledge graph' references (twice) are fully hallucinated/not in transcript, introducing unverifiable/plausible external structure.",
+    "relevance": "Directly structures response around the two-part question (test + rationale prioritizing over influenza), uses bullet points for clarity, no tangents or off-topic content."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 3,
+    "relevance": 5
+  },
+  "average_score": 4.0,
+  "summary": "The Generated Answer is mostly accurate and complete but marred by hallucinated 'knowledge graph' references and minor interpretive additions."
+}

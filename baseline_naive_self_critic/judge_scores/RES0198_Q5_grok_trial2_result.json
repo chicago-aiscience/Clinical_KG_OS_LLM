@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer identifies the nephew attending daycare (P-11) as the potential infectious exposure source from social history, noting daycare as a common source of respiratory viruses despite the nephew not being sick (P-12), consistent with viral URI (D-39). Generated Answer incorrectly states the 'common cold (viral infection)' and COVID-19 as the exposure source identified through symptoms and physician analysis (D-39), not social history, misrepresenting the key element. For diabetes, Gold notes no explicit doctor link to immune risk, while Generated hallucinates physician considerations tied to diabetes (e.g., risk assessment, isolation), unsupported by transcript where advice is pandemic-general. Significant contradictions on core facts.",
+    "completeness": "Key Gold points: nephew/daycare exposure (P-11/P-12), plausibility despite no nephew illness, alignment with D-39; diabetes details (P-23-27), no explicit immune link. Generated covers none of exposure source points (0%), minimally notes diabetes (P-23) but misses details/management/no link; covers symptom management/isolation (irrelevant to Gold). Covers <20% of key points.",
+    "faithfulness": "Generated claims 'common cold/COVID as exposure source' not verifiable as social history source (hallucinated); diabetes-risk links (swab/isolation due to chronic condition) not in transcript—doctor cites pandemic (D-39), not diabetes. Citations to D-39 accurate for diagnoses/advice but misapplied. Symptom management/hydration verifiable (D-39). Multiple ungrounded claims/hallucinations.",
+    "relevance": "Question specifies 'social history' exposure source and diabetes relation to presentation/immune function. Generated ignores social history (nephew/daycare), focuses on diagnoses (common cold/COVID) and doctor's general advice misinterpreted as diabetes-linked, partially addresses diabetes/current presentation but off-target on core exposure question."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 2
+  },
+  "average_score": 1.75,
+  "summary": "The Generated Answer significantly deviates from the Gold Answer by misidentifying the social history exposure source and hallucinating unsupported links between diabetes and clinical decisions."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer details specific infection screening symptoms (recent colds/infections [D-21], loss of taste/smell [D-25], fevers [D-26], nausea/vomiting [D-27], belly pain [D-28], dry cough [D-14/15]) and exposures (sick contacts at home/frequent [D-22], outside home [D-23], travel [D-24]), all denied. Generated Answer incorrectly identifies chest tightness [D-20] and other health problems [D-29] as infection screening (these relate to asthma/general history, not infection-specific); lists general symptoms (dry cough, SOB, wheezing) and asthma triggers (pollen, cold air) as responses instead of screening denials; gets COVID swab correct but overall significant factual errors and contradictions with Gold.",
+    "completeness": "Key points from Gold: screens for colds/infections, taste/smell loss, fevers, nausea/vomiting, belly pain, dry cough (all covered with denials and citations); exposures to sick contacts (home/frequent, outside), travel (denied); D-29 explanation; COVID swab planned despite negatives. Generated covers only COVID swab (~10-20% at best); misses all specific screening symptoms/exposures/responses.",
+    "faithfulness": "Transcript verifies chest tightness [D-20/P-20], other health problems [D-29/P-29], dry cough/SOB/wheezing [P-1/P-15], pollen/cold [P-9/P-11], COVID swab [D-29]; however, Generated hallucinates/misattributes these as 'screening for infectious causes' (e.g., chest tightness not for infection differentiation, pollen/cold are asthma triggers not exposures); purpose of 'differentiate from infectious' not in transcript; multiple misinterpretations qualify as hallucinated intent.",
+    "relevance": "Generated attempts structure matching question (screened symptoms, responses, test planned) but fills with incorrect/misattributed transcript elements (asthma symptoms/triggers instead of infection screen); partially addresses via COVID swab but largely off-topic wrong content detracts from direct question focus."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.0,
+  "summary": "The Generated Answer significantly misidentifies and misattributes transcript elements as infection screening, covering almost none of the Gold Answer's key points despite attempting the question's structure and correctly noting the planned COVID swab."
+}

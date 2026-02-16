@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer contains major factual errors compared with the Gold Answer. It incorrectly states that Jessica did not explicitly deny sputum production, nausea/vomiting, joint pain, or rashes, when in fact she clearly denied all of these in the transcript (sputum/phlegm: P-5, P-6; rashes: P-10; nausea/vomiting: P-11; joint aches: P-13). It also claims the transcript does not contain information about nausea/joint pain/rashes, which is false. It partially correctly identifies reported symptoms (dry cough, scratchy throat, headache) and mentions fever via the doctor’s summary, but it misses the patient’s own description of feeling persistently hot and malaise. Overall, the core ‘denied symptoms’ portion is substantially incorrect.",
+    "completeness": "Reported symptoms: captures dry cough, scratchy throat, headache; adds post-nasal drip (not in Gold’s main acute symptom list) and ‘fever’ from summary but misses key Gold items: feeling really hot day and night (P-7, P-9), feeling crappy/icky (P-1, P-2, P-14), malaise characterization (D-15), and tiredness (P-13). Denied symptoms: misses essentially all key denials listed in the Gold Answer (sputum/phlegm, rashes, nausea/vomiting, diarrhea, joint aches, and denied dyspnea from allergies). Coverage is well under 50% of required key points.",
+    "faithfulness": "Several statements are not faithful to the transcript: it claims Jessica did not explicitly deny sputum production and that the transcript contains no information on nausea/joint pain/rashes, despite explicit denials in P-5/P-6, P-11, P-13, and P-10. While some reported symptoms are grounded, the repeated ‘not present in transcript’ assertions constitute multiple clear transcript contradictions.",
+    "relevance": "The answer is on-topic (it attempts to list symptoms experienced and symptoms denied), but due to the incorrect handling of the denied symptoms, it does not effectively answer the question as asked. Still, it remains focused on the requested symptom inventory without major tangents."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The response is focused on the right task but is substantially inaccurate and incomplete, especially in wrongly claiming Jessica did not deny key symptoms that she explicitly denied in the transcript."
+}

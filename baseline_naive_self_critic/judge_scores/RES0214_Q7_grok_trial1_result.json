@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer specifies stuffy nose first, then sore throat around fever onset, fever for 3 days, muscle aches concurrent with fever (2-3 days). Generated correctly identifies stuffy nose first (just before fever), fever for 3 days, sore throat ongoing, muscle aches mentioned later in transcript but timed to same period; minor discrepancy in implying sore throat and muscle aches strictly follow fever rather than concurrent/around same time, but core sequence (stuffy nose -> fever + others) matches doctor's summary [D-2/3]; husband timeline vaguer in Generated (longer duration) vs Gold's precise ~4 days earlier, but factually consistent. No major errors.",
+    "completeness": "Gold key points: stuffy nose first [P-1,D2-P3]; sore throat next/around fever [P-1]; fever 3 days [P-1,D3]; muscle aches concurrent 2-3 days [P13-16]; husband week (~4 days before patient's fever) similar/ongoing [P19-20], staggered household transmission [D51/53]. Generated covers: stuffy nose first, fever 3 days, sore throat ongoing, muscle aches, husband week longer than patient's 3 days (implies earlier onset); misses explicit concurrency of muscle aches, precise 4-day gap calculation, confirmatory dialogue citations, transmission note. Covers ~85% of points.",
+    "faithfulness": "All claims grounded: stuffy nose 'just before' [P-1]; fever 3 days [P-1]; sore throat [P-1]; muscle aches [P-13]; husband week similar [P-19]; citations accurate. 'Subsequently' for muscle aches reflects narrative order but aligns with 2-3 day timing same as fever [P-14]; no hallucinations or unverifiable details.",
+    "relevance": "Generated directly structures response around patient's symptom progression (numbered chronology) and explicit husband timeline comparison, matching question precisely with no off-topic content."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 5,
+    "relevance": 5
+  },
+  "average_score": 4.5,
+  "summary": "The Generated Answer is mostly accurate and complete, faithfully grounded in the transcript, and highly relevant, with minor discrepancies in symptom timing precision."
+}

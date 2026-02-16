@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer has significant factual errors compared to the Gold Answer and transcript: it incorrectly states the patient has 'existing rescue puffers (salbutamol)' when the patient explicitly reports not having refilled the as-needed rescue inhaler for years (P-17, P-18), and Gold emphasizes obtaining them since they lack it; it elevates 'cardiac ischemia' as a 'primary differential diagnosis' despite the doctor placing it 'lower on the differential' due to no pain/SOB (D-36) and Gold not listing it as primary; assessment specified as 'asthma exacerbation' adds specificity not in transcript/Gold ('asthma reoccurring in some capacity'); citation to D-34 for treatment is inaccurate as D-34 summarizes history, not plan. Core assessment that asthma is top differential is correct, but errors undermine accuracy.",
+    "completeness": "Key points from Gold covered: assessment (asthma top of differential, cardiac lower noted); physical exam (listen to lungs); initial intervention (rescue puffers trial on walks); contingency (if no relief, reevaluate other directions). Missed or incomplete: explicit 'pending examination/further findings'; 'quick physical exam' and 'further investigations depending on findings'; 'therapeutic trial' framing; stepwise 'one thing at a time'; consulting supervising 'doc'. Covers ~60-70% of key points.",
+    "faithfulness": "Multiple claims not fully grounded: 'asthma exacerbation' infers beyond transcript's 'reoccurring'; 'cardiac ischemia remains primary differential' contradicts D-36 ('lower'); hallucinates 'existing rescue puffers' contradicting P-17/P-18; attributes hoarseness/phlegm directly to asthma consistency without doctor stating it; wrong citation D-34 for intervention (actual D-35). Physical exam and contingency mostly verifiable from D-35.",
+    "relevance": "Perfectly structured to address question components (assessment, exam, first-step treatment, contingency) with no off-topic content."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer captures the main structure but contains significant factual inaccuracies on puffer availability and differentials, partial omissions of plan details, and some hallucinations, though highly relevant."
+}
