@@ -30,18 +30,27 @@ MAX_RETRIES = 3
 # === Prompts ===
 EXTRACTION_PROMPT = """Extract clinical knowledge graph from transcript.
 
-NODE TYPES: SYMPTOM, DIAGNOSIS, TREATMENT, PROCEDURE, MEDICAL_HISTORY, LOCATION
-EDGE TYPES: INDICATES, CAUSES, TAKEN_FOR, RULES_OUT, CONFIRMS, LOCATED_AT
+## NODE TYPES:
+- SYMPTOM: Patient-reported or observed symptoms (chest pain, shortness of breath)
+- DIAGNOSIS: Active or suspected conditions (COPD exacerbation, pneumonia)
+- TREATMENT: Medications, therapies, interventions (Aspirin, Metformin, DASH diet)
+- PROCEDURE: Tests, exams, surgeries (ECG, stress test, CT angiography)
+- LOCATION: Body parts and anatomical locations (chest, left arm, heart)
+- MEDICAL_HISTORY: Pre-existing conditions, risk factors (diabetes, smoking)
+- LAB_RESULT: Lab values and vital signs (A1C 7.2%, BP 148/90, BNP elevated)
+
+## EDGE TYPES:
+- CAUSES: Risk factor causes condition (smoking CAUSES heart disease)
+- INDICATES: Symptom indicates diagnosis (chest pain INDICATES angina)
+- LOCATED_AT: Symptom at body location (pain LOCATED_AT chest)
+- RULES_OUT: Test rules out condition (ECG RULES_OUT arrhythmia)
+- TAKEN_FOR: Treatment for condition (Aspirin TAKEN_FOR angina)
+- CONFIRMS: Lab/test confirms diagnosis (elevated BNP CONFIRMS heart failure)
 
 TRANSCRIPT:
 {transcript}
 
-Output JSON:
-{{
-  "nodes": [{{"id": "N_001", "text": "...", "type": "SYMPTOM", "evidence": "...", "turn_id": "P-1"}}],
-  "edges": [{{"source_id": "N_001", "target_id": "N_002", "type": "INDICATES", "evidence": "...", "turn_id": "D-1"}}]
-}}
-
+Output JSON with nodes (id, text, type, evidence, turn_id) and edges (source_id, target_id, type, evidence, turn_id).
 Output ONLY valid JSON."""
 
 SELF_CRITIC_PROMPT = """Review and improve this clinical knowledge graph.
@@ -53,15 +62,14 @@ EXTRACTED KG:
 {kg_json}
 
 REVIEW CHECKLIST:
-1. Are all important symptoms, diagnoses, treatments captured?
-2. Are node types correct (SYMPTOM vs DIAGNOSIS vs MEDICAL_HISTORY)?
-3. Are edge types accurate (INDICATES vs CAUSES vs CONFIRMS)?
+1. Are all symptoms, diagnoses, treatments, procedures, lab results captured?
+2. Are node types correct? (SYMPTOM, DIAGNOSIS, TREATMENT, PROCEDURE, LOCATION, MEDICAL_HISTORY, LAB_RESULT)
+3. Are edge types accurate? (CAUSES, INDICATES, LOCATED_AT, RULES_OUT, TAKEN_FOR, CONFIRMS)
 4. Are there missing relationships that should be added?
 5. Are there incorrect or hallucinated nodes/edges to remove?
 6. Is evidence properly cited with turn_ids?
 
-Output the IMPROVED knowledge graph in the same JSON format.
-Add any missing nodes/edges. Remove any incorrect ones. Fix any wrong types.
+Output the IMPROVED knowledge graph. Add missing nodes/edges. Remove incorrect ones. Fix wrong types.
 
 Output ONLY valid JSON:
 {{
