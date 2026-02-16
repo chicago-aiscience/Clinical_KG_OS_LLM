@@ -12,12 +12,13 @@ Your task: Design an agentic orchestration pipeline that extracts high-quality K
 
 To ensure fair comparison, KG extraction must use **only these OpenRouter models**:
 
-| Model | Cost | Notes |
-|-------|------|-------|
-| `zhipu-ai/glm-4-flash` | Free | Our baseline model |
-| `qwen/qwen3-14b` | Free | |
-| `deepseek/deepseek-chat-v3-0324` | Free | |
-| `google/gemini-2.0-flash-exp:free` | Free | |
+| Model | Notes |
+|-------|-------|
+| `zhipu-ai/glm-4.7-flash` | Our baseline model |
+| `qwen/qwen3-14b` | |
+| `nvidia/nemotron-3-nano-30b-a3b` | |
+| `openai/gpt-oss-20b` | |
+| `deepseek/deepseek-r1-distill-qwen-32b` | |
 
 See `openrouter_example/` for API usage examples.
 
