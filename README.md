@@ -8,6 +8,19 @@ Evaluate Knowledge Graph extraction methods for clinical transcripts using Graph
 
 Your task: Design an agentic orchestration pipeline that extracts high-quality Knowledge Graphs from clinical transcripts. We provide the evaluation framework — you bring the innovation.
 
+### Model Restriction
+
+To ensure fair comparison, KG extraction must use **only these OpenRouter models**:
+
+| Model | Cost | Notes |
+|-------|------|-------|
+| `zhipu-ai/glm-4-flash` | Free | Our baseline model |
+| `qwen/qwen3-14b` | Free | |
+| `deepseek/deepseek-chat-v3-0324` | Free | |
+| `google/gemini-2.0-flash-exp:free` | Free | |
+
+See `openrouter_example/` for API usage examples.
+
 ---
 
 ## Pipeline Overview
@@ -75,6 +88,9 @@ python kg_similarity_scorer.py --student my_unified_graph.json --baseline baseli
 ├── evaluation_bundle/     # 20 patients × 7 question types (140 QA pairs)
 ├── baseline_*/            # Pre-computed baselines with full evaluation
 ├── figures/               # Visualizations
+├── openrouter_example/    # OpenRouter API examples (start here!)
+│   ├── src/               # Single-agent & multi-agent extraction
+│   └── README.md          # Setup instructions
 ├── kg_extraction.py       # Baseline extraction (naive / self-critic)
 ├── dump_graph.py          # Entity resolution & KG merging
 ├── graphrag_qa_pipeline.py
