@@ -14,13 +14,13 @@ To ensure fair comparison, KG extraction must use **only these OpenRouter models
 
 | Model | Notes |
 |-------|-------|
-| `zhipu-ai/glm-4.7-flash` | Our baseline model |
+| `z-ai/glm-4.7-flash` | Our baseline model |
 | `qwen/qwen3-14b` | |
 | `nvidia/nemotron-3-nano-30b-a3b` | |
 | `openai/gpt-oss-20b` | |
 | `deepseek/deepseek-r1-distill-qwen-32b` | |
 
-See `openrouter_example/` for API usage examples.
+See `kg_extraction.py` for API usage reference.
 
 ---
 
@@ -89,10 +89,7 @@ python kg_similarity_scorer.py --student my_unified_graph.json --baseline baseli
 ├── evaluation_bundle/     # 20 patients × 7 question types (140 QA pairs)
 ├── baseline_*/            # Pre-computed baselines with full evaluation
 ├── figures/               # Visualizations
-├── openrouter_example/    # OpenRouter API examples (start here!)
-│   ├── src/               # Single-agent & multi-agent extraction
-│   └── README.md          # Setup instructions
-├── kg_extraction.py       # Baseline extraction (naive / self-critic)
+├── kg_extraction.py       # Baseline extraction (naive / self-critic) - USE AS REFERENCE
 ├── dump_graph.py          # Entity resolution & KG merging
 ├── graphrag_qa_pipeline.py
 ├── llm_judge_batch_parallel.py
