@@ -145,4 +145,4 @@ python speech_to_transcript.py --input evaluation_bundle/RES0198/RES0198.mp3 --a
 
 ### Bonus: Start from Audio
 
-Teams that build pipelines starting from `.mp3` audio files (instead of provided transcripts) and achieve **QA scores ≥3.3** will be highlighted as **innovation award** candidates.
+We hope to see teams that can provide **high-quality, low-cost solutions** that go directly from `.mp3` audio to Knowledge Graph.
