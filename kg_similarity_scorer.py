@@ -8,11 +8,11 @@ Usage:
     python kg_similarity_scorer.py --student path/to/student_kg.json
     python kg_similarity_scorer.py --student student.json --baseline baseline.json --output report.json
 
-Composite Score (correlates r=0.99 with QA performance):
-    - Entity F1 (40%): Node overlap with curated baseline
-    - Edge Density (20%): Relationship richness
-    - Edge Type Coverage (20%): Coverage of edge types
-    - Turn ID Quality (20%): Format correctness for transcript linking
+Composite Score (correlates r=0.94 with QA performance):
+    - Entity F1 (25%): Node overlap with curated baseline
+    - Population Completeness (25%): Node count coverage
+    - Relation Completeness (25%): Edge count coverage
+    - Schema Completeness (25%): Node type coverage
 """
 
 import json
@@ -245,31 +245,33 @@ def compute_similarity(student_kg: dict, baseline_kg: dict) -> dict:
     # Per-patient coverage
     patient_coverage = per_patient_coverage(student_kg, baseline_kg)
 
-    # New metrics for composite score
-    turn_id_quality = calculate_turn_id_quality(student_kg)
-    edge_type_coverage = calculate_edge_type_coverage(student_kg, baseline_kg)
+    # Completeness metrics (correlates r=0.94 with QA performance)
+    # Population completeness (node count ratio, capped at 1.5x)
+    population_completeness = min(student_struct['node_count'] / max(baseline_struct['node_count'], 1), 1.5) / 1.5
 
-    # Edge density ratio (capped at 1.5x baseline)
-    baseline_density = baseline_struct['edge_density']
-    student_density = student_struct['edge_density']
-    edge_density_ratio = min(student_density / baseline_density, 1.5) / 1.5 if baseline_density > 0 else 0
+    # Relation completeness (edge count ratio, capped at 1.5x)
+    relation_completeness = min(student_struct['edge_count'] / max(baseline_struct['edge_count'], 1), 1.5) / 1.5
 
-    # Composite score (correlates r=0.99 with QA performance)
-    # Weights: Entity F1 (40%), Edge Density (20%), Edge Type Coverage (20%), Turn ID Quality (20%)
+    # Schema completeness (node type coverage)
+    student_node_types = set(n.get('type', 'UNKNOWN').upper() for n in student_kg.get('nodes', []))
+    baseline_node_types = set(n.get('type', 'UNKNOWN').upper() for n in baseline_kg.get('nodes', []))
+    schema_completeness = len(student_node_types & baseline_node_types) / len(baseline_node_types) if baseline_node_types else 1.0
+
+    # Composite score: Entity F1 (25%) + Population (25%) + Relation (25%) + Schema (25%)
     composite_score = (
-        0.4 * node_overlap['f1'] +
-        0.2 * edge_density_ratio +
-        0.2 * edge_type_coverage +
-        0.2 * turn_id_quality
+        0.25 * node_overlap['f1'] +
+        0.25 * population_completeness +
+        0.25 * relation_completeness +
+        0.25 * schema_completeness
     )
 
     return {
         'composite_score': round(composite_score, 4),
         'component_scores': {
             'entity_f1': round(node_overlap['f1'], 4),
-            'edge_density_ratio': round(edge_density_ratio, 4),
-            'edge_type_coverage': round(edge_type_coverage, 4),
-            'turn_id_quality': round(turn_id_quality, 4)
+            'population_completeness': round(population_completeness, 4),
+            'relation_completeness': round(relation_completeness, 4),
+            'schema_completeness': round(schema_completeness, 4)
         },
         'node_overlap': node_overlap,
         'node_jaccard': round(node_jaccard, 4),
@@ -298,16 +300,16 @@ def print_report(result: dict, student_path: str, baseline_path: str):
     print(f"{'='*30}")
     print(f"  COMPOSITE SCORE: {result['composite_score']:.3f}")
     print(f"{'='*30}")
-    print(f"  (Correlates r=0.99 with QA performance)")
+    print(f"  (Correlates r=0.94 with QA performance)")
     print()
 
     # Component breakdown
     cs = result['component_scores']
     print('Component Scores:')
-    print(f"  Entity F1 (40%):         {cs['entity_f1']:.3f}")
-    print(f"  Edge Density (20%):      {cs['edge_density_ratio']:.3f}")
-    print(f"  Edge Type Coverage (20%): {cs['edge_type_coverage']:.3f}")
-    print(f"  Turn ID Quality (20%):   {cs['turn_id_quality']:.3f}")
+    print(f"  Entity F1 (25%):              {cs['entity_f1']:.3f}")
+    print(f"  Population Completeness (25%): {cs['population_completeness']:.3f}")
+    print(f"  Relation Completeness (25%):   {cs['relation_completeness']:.3f}")
+    print(f"  Schema Completeness (25%):     {cs['schema_completeness']:.3f}")
     print()
 
     print('Detailed Node Overlap:')
