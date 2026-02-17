@@ -101,7 +101,7 @@ def create_pipeline_figure():
     # ===== LEFT BRANCH: Dev Evaluation (Cheap/Fast) =====
     ax.text(5, 5.2, 'Development Path', ha='center', va='center',
            fontsize=13, fontweight='bold', color='#8E44AD')
-    ax.text(5, 4.75, '(Fast & Free)', ha='center', va='center',
+    ax.text(5, 4.75, '(Your Team - Fast & Free)', ha='center', va='center',
            fontsize=11, color='#8E44AD')
 
     # Curated KG (baseline)
@@ -124,7 +124,7 @@ def create_pipeline_figure():
     # ===== RIGHT BRANCH: Final Evaluation (Expensive) =====
     ax.text(14.5, 5.2, 'Final Evaluation', ha='center', va='center',
            fontsize=13, fontweight='bold', color='#C0392B')
-    ax.text(14.5, 4.75, '(~$8-10 per run)', ha='center', va='center',
+    ax.text(14.5, 4.75, '(Organizers - ~$8-10/run)', ha='center', va='center',
            fontsize=11, color='#C0392B')
 
     # Questions input
