@@ -59,20 +59,20 @@ See `kg_extraction.py` for API usage reference.
 
 ![KG Quality vs QA](figures/kg_quality_vs_qa.png)
 
-Based on community experience, we use a **composite KG score** that correlates **r = 0.997** with final QA performance:
+Based on community experience, we use a **composite KG score** that correlates **r = 0.94** with final QA performance:
 
 | Component | Weight | Description |
 |-----------|--------|-------------|
-| Entity F1 | 40% | Node overlap with curated baseline |
-| Edge Density | 20% | Relationship richness |
-| Edge Type Coverage | 20% | Coverage of relation types |
-| Turn ID Quality | 20% | Format correctness for transcript linking |
+| Entity F1 | 25% | Node overlap with curated baseline |
+| Population Completeness | 25% | Node count coverage |
+| Relation Completeness | 25% | Edge count coverage |
+| Schema Completeness | 25% | Node type coverage |
 
 | Method | Composite Score | QA Score |
 |--------|-----------------|----------|
-| **3-Agent** | **0.768** | **3.36** |
-| Self-Critic | 0.753 | 3.24 |
-| Naive | 0.738 | 3.08 |
+| **3-Agent** | **0.748** | **3.36** |
+| Self-Critic | 0.738 | 3.24 |
+| Naive | 0.700 | 3.08 |
 
 > **Note for Participants**: The LLM Judge evaluation (Step 5) is **expensive** (~$8-10 per full run) and will be executed by hackathon organizers for final scoring. During development, use `kg_similarity_scorer.py` to get your **composite score**, a reliable low-cost proxy for QA performance.
 
