@@ -322,8 +322,10 @@ def generate_answer_openrouter(prompt: str) -> str:
     return content.strip()
 
 
-def generate_answer_llama_index(llm, prompt: str) -> str:
+def generate_answer_llama_index(prompt: str) -> str:
     """Try llama-index call (fallback 1)."""
+    from llama_index.llms.ollama import Ollama
+    llm = Ollama(model=LLM_MODEL, request_timeout=120.0)
     return str(llm.complete(prompt)).strip()
 
 
@@ -468,7 +470,7 @@ def main():
                 method_used = "llama-index"
                 try:
                     t0 = time.time()
-                    answer = generate_answer_llama_index(llm, prompt)
+                    answer = generate_answer_llama_index(prompt)
                     t_gen = time.time() - t0
                     print(f"    generation {t_gen:.1f}s (llama-index)", flush=True)
                 except Exception as e:
