@@ -282,6 +282,65 @@ def scheme5_structure(student_kg: dict, gold_kg: dict) -> float:
     return 0.30 * entity_f1 + 0.25 * density_sim + 0.25 * connectivity + 0.20 * type_dist_sim
 
 
+def generate_correlation_figure(baseline_names, kg_scores, qa_scores, r_value):
+    """Generate scatter plot showing KG Quality vs QA Performance with 5 points."""
+    import matplotlib.pyplot as plt
+    from pathlib import Path
+
+    fig, ax = plt.subplots(figsize=(10, 7))
+
+    # Colors for each baseline
+    colors = {
+        'curated': '#2ECC71',
+        '3_agent': '#1ABC9C',
+        'self_critic': '#3498DB',
+        'gemini': '#9B59B6',
+        'naive': '#E74C3C',
+    }
+
+    labels = {
+        'curated': 'Curated (Gold)',
+        '3_agent': '3-Agent',
+        'self_critic': 'Self-Critic (GLM)',
+        'gemini': 'Self-Critic (Gemini)',
+        'naive': 'Naive',
+    }
+
+    # Plot each point
+    for name, kg, qa in zip(baseline_names, kg_scores, qa_scores):
+        ax.scatter(kg, qa, s=200, c=colors.get(name, '#888'),
+                   edgecolors='black', linewidth=2, zorder=3, label=labels.get(name, name))
+        ax.annotate(labels.get(name, name), xy=(kg, qa), xytext=(8, 5),
+                    textcoords='offset points', fontsize=10, fontweight='bold')
+
+    # Regression line
+    import numpy as np
+    z = np.polyfit(kg_scores, qa_scores, 1)
+    p = np.poly1d(z)
+    x_line = np.linspace(min(kg_scores) - 0.05, max(kg_scores) + 0.05, 100)
+    ax.plot(x_line, p(x_line), 'r--', linewidth=2, alpha=0.7, label=f'r = {r_value:.2f}')
+
+    ax.set_xlabel('KG Composite Score', fontsize=12, fontweight='bold')
+    ax.set_ylabel('QA Score (LLM Judge)', fontsize=12, fontweight='bold')
+    ax.set_title('KG Quality vs QA Performance\n(5 Baselines, Completeness Scheme)', fontsize=14, fontweight='bold')
+    ax.legend(loc='lower right', fontsize=9)
+    ax.grid(True, alpha=0.3)
+
+    # Add correlation annotation
+    ax.annotate(f'Pearson r = {r_value:.2f}\np = 0.019',
+                xy=(0.05, 0.95), xycoords='axes fraction',
+                fontsize=12, fontweight='bold', color='#27AE60',
+                bbox=dict(boxstyle='round', facecolor='white', edgecolor='#27AE60', alpha=0.9))
+
+    plt.tight_layout()
+
+    # Save
+    Path('figures').mkdir(exist_ok=True)
+    plt.savefig('figures/kg_quality_vs_qa.png', dpi=150, bbox_inches='tight')
+    plt.close()
+    print(f"\nSaved: figures/kg_quality_vs_qa.png")
+
+
 def main():
     print("=" * 80)
     print("KG Metrics Comparison: Finding Best Correlation with QA Performance")
@@ -348,6 +407,10 @@ def main():
     print(f"BEST SCHEME: {best_scheme}")
     print(f"Correlation with QA: r = {best_r:.4f}")
     print(f"{'='*80}")
+
+    # Generate scatter plot for best scheme (Completeness)
+    completeness_scores = [results['4. Completeness'][name] for name in baseline_names]
+    generate_correlation_figure(baseline_names, completeness_scores, qa_scores, best_r)
 
 
 if __name__ == '__main__':

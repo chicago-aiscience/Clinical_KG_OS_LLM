@@ -154,7 +154,7 @@ def create_pipeline_figure():
     ax.annotate('', xy=(14.0, 1.45), xytext=(8.0, 1.45),
                arrowprops=dict(arrowstyle='<->', color=colors['correlation'],
                               lw=2.5, linestyle='--'))
-    ax.text(11.0, 1.8, 'r = 0.997', ha='center', va='center', fontsize=13,
+    ax.text(11.0, 1.8, 'r = 0.94', ha='center', va='center', fontsize=13,
            fontweight='bold', color=colors['correlation'])
     ax.text(11.0, 1.1, 'high correlation', ha='center', va='center', fontsize=11,
            color=colors['correlation'])

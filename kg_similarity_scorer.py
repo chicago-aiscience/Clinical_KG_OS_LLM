@@ -13,6 +13,10 @@ Composite Score (correlates r=0.94 with QA performance):
     - Population Completeness (25%): Node count coverage
     - Relation Completeness (25%): Edge count coverage
     - Schema Completeness (25%): Node type coverage
+
+Reference:
+    Xue et al. "Knowledge Graph Quality Management: A Comprehensive Survey"
+    IEEE TKDE 2022. https://ieeexplore.ieee.org/document/9709663/
 """
 
 import json
