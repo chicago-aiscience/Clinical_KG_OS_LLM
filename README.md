@@ -62,7 +62,7 @@ See `kg_extraction.py` for API usage reference.
 
 ![KG Quality vs QA](figures/kg_quality_vs_qa.png)
 
-We designed a **composite KG score** that correlates **r = 0.997** with final QA performance:
+Based on community experience, we use a **composite KG score** that correlates **r = 0.997** with final QA performance:
 
 | Component | Weight | Description |
 |-----------|--------|-------------|
