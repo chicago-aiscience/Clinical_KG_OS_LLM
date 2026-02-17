@@ -6,7 +6,7 @@ Evaluate Knowledge Graph extraction methods for clinical transcripts using Graph
 
 **Build your own multi-agent KG extraction system** to beat our baselines.
 
-Your task: Design an agentic orchestration pipeline that extracts high-quality Knowledge Graphs from clinical transcripts. We provide the evaluation framework — you bring the innovation.
+Your task: Design an agentic orchestration pipeline that extracts high-quality Knowledge Graphs from clinical transcripts. We provide the evaluation framework, you bring the innovation.
 
 ### Model Restriction
 
@@ -74,7 +74,7 @@ Based on community experience, we use a **composite KG score** that correlates *
 | Self-Critic | 0.753 | 3.24 |
 | Naive | 0.738 | 3.08 |
 
-> **Note for Participants**: The LLM Judge evaluation (Step 5) is **expensive** (~$8-10 per full run) and will be executed by hackathon organizers for final scoring. During development, use `kg_similarity_scorer.py` to get your **composite score** — it's a reliable, low-cost proxy for QA performance.
+> **Note for Participants**: The LLM Judge evaluation (Step 5) is **expensive** (~$8-10 per full run) and will be executed by hackathon organizers for final scoring. During development, use `kg_similarity_scorer.py` to get your **composite score**, a reliable low-cost proxy for QA performance.
 
 ## Quick Start
 
@@ -85,16 +85,16 @@ cp api_keys_example.json api_keys.json  # Add your OpenRouter/Gemini keys
 # Step 2: KG Extraction (replace with YOUR method)
 python kg_extraction.py --input evaluation_bundle/transcripts --output my_kg/ --method self-critic
 
-# Step 3: Entity Resolution — merge per-patient KGs
+# Step 3: Entity Resolution - merge per-patient KGs
 python dump_graph.py --input my_kg/ --output my_unified_graph.json
 
-# Step 4: GraphRAG QA — answer 140 clinical questions
+# Step 4: GraphRAG QA - answer 140 clinical questions
 python graphrag_qa_pipeline.py --kg my_unified_graph.json --bundle evaluation_bundle/ --output my_results/
 
-# Step 5: LLM Judge — score your answers
+# Step 5: LLM Judge - score your answers
 python llm_judge_batch_parallel.py --results my_results/ --output my_scores/
 
-# Step 6: Compare to baseline — quick KG quality check
+# Step 6: Compare to baseline - quick KG quality check
 python kg_similarity_scorer.py --student my_unified_graph.json --baseline baseline_curated/unified_graph_curated.json
 ```
 
