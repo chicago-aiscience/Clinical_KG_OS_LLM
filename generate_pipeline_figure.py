@@ -113,7 +113,7 @@ def create_pipeline_figure():
     ax.text(6.6, 4.45, 'Step 3a', ha='center', fontsize=10, color='#8E44AD')
 
     # KG Score output
-    draw_box(5.2, 0.8, 2.8, 1.3, colors['eval_dev'], 'Composite Score', '(r=0.997 with QA)',
+    draw_box(5.2, 0.8, 2.8, 1.3, colors['eval_dev'], 'Composite Score', '(r=0.94 with QA)',
             border_color='#8E44AD')
 
     # Arrows for left branch
