@@ -32,14 +32,14 @@ See `kg_extraction.py` for API usage reference.
 | Step | Script | Purpose |
 |------|--------|---------|
 | **KG Extraction** | `kg_extraction.py` | Extract entities (symptoms, diagnoses, treatments) and relations from each patient's transcript. This is where your multi-agent system comes in. |
-| **Entity Resolution** | `dump_graph.py` | Merge per-patient KGs into a unified graph. Uses BGE-M3 embeddings (0.85 cosine threshold) to deduplicate entities like "high blood pressure" = "hypertension". |
+| **Entity Resolution** | `dump_graph.py` | Merge per-patient KGs into a unified graph. Uses [BGE-M3](https://arxiv.org/abs/2402.03216) embeddings (0.85 cosine threshold) to deduplicate entities like "high blood pressure" = "hypertension". |
 
 ### Stage 2: Evaluation (Provided)
 
 | Step | Script | Purpose |
 |------|--------|---------|
 | **GraphRAG QA** | `graphrag_qa_pipeline.py` | Given a clinical question, retrieve relevant KG triples and generate an answer. Tests if your KG captures the right information. |
-| **LLM Judge** | `llm_judge_batch_parallel.py` | 4 LLM judges (GPT/Claude/Gemini/Grok) × 3 trials score each answer on correctness, completeness, faithfulness, and relevance. |
+| **LLM Judge** | `llm_judge_batch_parallel.py` | 4 LLM judges (GPT/Claude/Gemini/Grok) × 3 trials score each answer on correctness, completeness, faithfulness, and relevance. Based on [LLM-as-Judge](https://arxiv.org/abs/2306.05685) methodology. |
 
 ## Baseline Results
 
@@ -117,7 +117,7 @@ python kg_similarity_scorer.py --student my_unified_graph.json --baseline baseli
 
 Each patient folder includes the original `.mp3` audio recording. While we provide pre-generated transcripts, teams can optionally experiment with ASR.
 
-**Open-source SOTA**: [OpenAI Whisper](https://github.com/openai/whisper)
+**Open-source SOTA**: [OpenAI Whisper](https://github.com/openai/whisper) ([Radford et al. 2022](https://arxiv.org/abs/2212.04356))
 
 ```bash
 # Install (requires ffmpeg)
