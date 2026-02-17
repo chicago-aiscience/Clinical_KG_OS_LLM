@@ -301,7 +301,7 @@ def generate_correlation_figure(baseline_names, kg_scores, qa_scores, r_value):
     labels = {
         'curated': 'Curated (Gold)',
         '3_agent': '3-Agent',
-        'self_critic': 'Self-Critic (GLM)',
+        'self_critic': 'Self-Critic',
         'gemini': 'Self-Critic (Gemini)',
         'naive': 'Naive',
     }
