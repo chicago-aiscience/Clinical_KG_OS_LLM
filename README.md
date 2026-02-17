@@ -109,5 +109,26 @@ python kg_similarity_scorer.py --student my_unified_graph.json --baseline baseli
 ├── graphrag_qa_pipeline.py
 ├── llm_judge_batch_parallel.py
 ├── kg_similarity_scorer.py
-└── visualize.py           # Generate comparison figures
+├── visualize.py           # Generate comparison figures
+└── speech_to_transcript.py # (Optional) ASR demo
 ```
+
+## Additional Challenge: Speech-to-Text
+
+Each patient folder includes the original `.mp3` audio recording. While we provide pre-generated transcripts, teams can optionally experiment with ASR.
+
+**Open-source SOTA**: [OpenAI Whisper](https://github.com/openai/whisper)
+
+```bash
+# Install (requires ffmpeg)
+pip install openai-whisper
+conda install ffmpeg  # if not installed
+
+# Transcribe single file
+python speech_to_transcript.py --input evaluation_bundle/RES0198/RES0198.mp3
+
+# Batch process with larger model
+python speech_to_transcript.py --input evaluation_bundle/ --output asr_output/ --model small
+```
+
+**Note**: Basic Whisper doesn't separate speakers (Patient vs Doctor). For speaker diarization, see [WhisperX](https://github.com/m-bain/whisperX) or [pyannote-audio](https://github.com/pyannote/pyannote-audio).
