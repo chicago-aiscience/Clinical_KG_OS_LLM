@@ -131,4 +131,16 @@ python speech_to_transcript.py --input evaluation_bundle/RES0198/RES0198.mp3
 python speech_to_transcript.py --input evaluation_bundle/ --output asr_output/ --model small
 ```
 
+**Baseline Results** (Whisper base model on 20 transcripts):
+- Average WER: 16.7%
+- Accuracy: 83.3%
+
+```bash
+# Evaluate ASR accuracy
+python speech_to_transcript.py --evaluate --input evaluation_bundle/
+
+# Add rule-based speaker labels (D/P alternating)
+python speech_to_transcript.py --input evaluation_bundle/RES0198/RES0198.mp3 --add-speakers
+```
+
 **Note**: Basic Whisper doesn't separate speakers (Patient vs Doctor). For speaker diarization, see [WhisperX](https://github.com/m-bain/whisperX) or [pyannote-audio](https://github.com/pyannote/pyannote-audio).
