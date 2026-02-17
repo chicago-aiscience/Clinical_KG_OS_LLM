@@ -22,7 +22,6 @@ To ensure fair comparison and enable future **local deployment**, KG extraction 
 
 See `kg_extraction.py` for API usage reference.
 
----
 
 ## Pipeline Overview
 
@@ -41,8 +40,6 @@ See `kg_extraction.py` for API usage reference.
 |------|--------|---------|
 | **GraphRAG QA** | `graphrag_qa_pipeline.py` | Given a clinical question, retrieve relevant KG triples and generate an answer. Tests if your KG captures the right information. |
 | **LLM Judge** | `llm_judge_batch_parallel.py` | 4 LLM judges (GPT/Claude/Gemini/Grok) × 3 trials score each answer on correctness, completeness, faithfulness, and relevance. |
-
----
 
 ## Baseline Results
 
@@ -79,8 +76,6 @@ Based on community experience, we use a **composite KG score** that correlates *
 
 > **Note for Participants**: The LLM Judge evaluation (Step 5) is **expensive** (~$8-10 per full run) and will be executed by hackathon organizers for final scoring. During development, use `kg_similarity_scorer.py` to get your **composite score** — it's a reliable, low-cost proxy for QA performance.
 
----
-
 ## Quick Start
 
 ```bash
@@ -102,8 +97,6 @@ python llm_judge_batch_parallel.py --results my_results/ --output my_scores/
 # Step 6: Compare to baseline — quick KG quality check
 python kg_similarity_scorer.py --student my_unified_graph.json --baseline baseline_curated/unified_graph_curated.json
 ```
-
----
 
 ## Project Structure
 
