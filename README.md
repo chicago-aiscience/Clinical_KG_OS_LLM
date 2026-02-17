@@ -10,7 +10,7 @@ Your task: Design an agentic orchestration pipeline that extracts high-quality K
 
 ### Model Restriction
 
-To ensure fair comparison, KG extraction must use **only these OpenRouter models**:
+To ensure fair comparison and enable future **local deployment**, KG extraction must use **only these OpenRouter models**:
 
 | Model | Notes |
 |-------|-------|
@@ -69,6 +69,8 @@ See `kg_extraction.py` for API usage reference.
 | Naive | 0.354 | 3.08 |
 
 **Correlation r = 0.84**: Higher KG entity overlap with curated baseline → better QA performance.
+
+> **Note for Participants**: The LLM Judge evaluation (Step 5) is **expensive** (~$8-10 per full run) and will be executed by hackathon organizers for final scoring. During development, we recommend using **KG Similarity** (`kg_similarity_scorer.py`) as a **low-cost, early-stage proxy** to estimate your KG extraction quality before submission.
 
 ---
 
