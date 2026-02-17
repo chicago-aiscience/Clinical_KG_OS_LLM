@@ -142,3 +142,19 @@ python speech_to_transcript.py --evaluate --input evaluation_bundle/
 # Add rule-based speaker labels (D/P alternating)
 python speech_to_transcript.py --input evaluation_bundle/RES0198/RES0198.mp3 --add-speakers
 ```
+
+### Bonus: Multimodal End-to-End (Speech → KG)
+
+Teams that propose **multimodal end-to-end solutions** (directly from audio to Knowledge Graph) will receive special recognition. This is a challenging but highly impactful direction.
+
+**Why it matters:**
+- Real clinical workflows start from audio recordings
+- End-to-end systems can leverage acoustic features (tone, pauses, emphasis)
+- Reduces error propagation from ASR → NLP pipeline
+
+**Approaches to explore:**
+- Joint ASR + KG extraction with shared representations
+- Audio-conditioned LLM prompting
+- Multimodal embeddings for entity/relation extraction
+
+**Evaluation:** Same LLM Judge pipeline (GraphRAG QA → 4 judges × 3 trials). Teams achieving **high QA scores (≥3.3)** with end-to-end audio input will be highlighted as **innovation award** candidates.
