@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Step-by-step: Gold Answer details a 3-day history of diffuse chest tightness (not pain, worse on inspiration/exertion like walks, chair, deep breaths), dyspnea (harder full breath), upper airway (hoarse, phlegm, throat clearing, no cough), and explicitly lists denials of chest pain, anxiety/sweating/impending doom, fevers, night sweats, chills, weight loss, cough. Generated correctly captures chest tightness on inspiration/walks, dyspnea, upper airway symptoms (hoarse/phlegm/throat clearing), denial of cough/chest pain with citations. However, it misses duration (3 days), full extent of triggers (chair/deep breath/constantly present but worse), explicitly denies only cough/chest pain, and falsely claims in note that transcript lacks explicit denials/reporting of fevers, night sweats, chills, weight loss, anxiety, sweating—which are all explicitly denied in P-6, P-11-P-15. This introduces significant factual contradictions vs Gold and transcript.",
+    "completeness": "Key points from Gold covered: chest tightness details (partial: covers inspiration/walks but misses 3-day duration, diffuse nature, full triggers like chair/deep breath, constant but worse), dyspnea (yes), upper airway (hoarse/phlegm/throat clearing yes, no cough noted), denials (only cough and chest pain; misses anxiety, sweating, impending doom, fevers, night sweats, chills, weight loss—7/8 missed). Covers ~60-70% of present symptoms key points, ~25% of denials; overall 50-79%.",
+    "faithfulness": "Claims grounded: chest tightness/dyspnea [P-1], upper airway/deny cough [P-11], deny chest pain [P-1/D-36]—verifiable. 'Dyspnea' paraphrase accurate from P-1/P-7. However, note claiming 'transcript does not contain explicit... fevers, night sweats, chills, weight loss, anxiety, or sweating' is false/hallucinated (directly contradicted by P-6 anxiety/sweaty; P-12-15 fevers/night sweats/chills/weight loss). 'Knowledge graph provided' hallucinated (none in input). Multiple incorrect/unverifiable claims.",
+    "relevance": "Generated directly structures response around reported present symptoms (chest/respiratory, upper airway) and explicit denials of listed screened symptoms, using transcript citations; addresses question focus without off-topic content, though incomplete/error-prone note is minor tangent."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer partially covers present symptoms accurately but significantly underreports explicit denials and hallucinates their absence in the transcript, leading to moderate-low overall quality."
+}

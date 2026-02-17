@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer fundamentally misinterprets the question and Gold Answer by focusing on affirmed symptoms (SOB, dry cough, fever) and minor details like seizure frequency and medication adherence, rather than the specific denied symptoms (chest pain, feeling faint, loss of taste/smell, sore throat, runny nose, sick contacts, travel, nausea/vomiting, belly pain, diarrhea, sputum production, prior episodes) listed in the Gold Answer; it also incorrectly attributes differentials to positive findings instead of negative ones ruling them out, leading to contradictions on core facts.",
+    "completeness": "Gold Answer key points: denied cardiac/CP (chest pain, faint), infectious/UR (taste/smell, sore throat, runny nose), exposures (sick contacts, travel), GI (nausea/vomiting, belly pain, diarrhea), dry cough/no sputum, no prior episodes, and pattern addressing cardiac/infectious/GI differentials; Generated covers 0% of these denied items specifically, instead listing positives and unrelated denial, missing all key screened/denied elements.",
+    "faithfulness": "Generated cites transcript snippets (P-1, P-4/5, P-8/9) but inaccurately frames affirmed symptoms as 'screened for' in denial context; hallucinates specific differentials (pneumonia, bronchitis, pulmonary edema, PE, GERD) not mentioned or implied in transcript, which only shows history-taking without dx discussion; epilepsy history is verifiable but irrelevant to denials.",
+    "relevance": "Generated Answer does not address the core question of denied symptoms/exposures screened by doctor or differentials addressed by those negatives, instead pivoting to affirmed symptoms and speculative dx from positives, making it largely off-topic."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 1
+  },
+  "average_score": 1.25,
+  "summary": "The Generated Answer is largely incorrect, incomplete, and irrelevant as it focuses on affirmed symptoms rather than denied ones and hallucinates differentials not grounded in the transcript or Gold Answer."
+}

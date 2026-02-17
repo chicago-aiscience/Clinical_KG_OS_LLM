@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer accurately reports symptoms (stuffy/runny nose [P-1, P-3]), progression [P-3], duration ('on and off' per [P-1], though Gold notes 'constant' [P-8]—minor discrepancy), and doctor's conclusion [D-39]. No direct contradictions with Gold, but introduces 'Knowledge Graph' (absent from transcript/Gold) and infers 'indicate viral illness' without error. Core facts align with Gold's evidence on symptoms, duration, and progression; minor extras like KG.",
+    "completeness": "Key points from Gold covered: symptom type (broadly stuffy/runny, partial); progression [P-3]; duration/timeline [P-1, D-39]. Missed: specific absent features (no cough [P-4], no sore throat/SOB/fever/chills [P-7], no post-nasal drip [P-6]); discharge quality ('clear' [P-5]); constant symptoms [P-8]; against allergic (no exposures [P-22], no allergies [P-28], no recent priors [P-9]); against bacterial (no fever [P-7], no headache [P-14]); exposure (nephew/daycare [P-11]). Covers ~30-40% of Gold's key points.",
+    "faithfulness": "Claims grounded: symptoms [P-1, P-3], progression [P-3], duration [P-1], doctor's notes [D-39]. Hallucinations/unverifiable: 'Knowledge Graph' (not in transcript); 'both symptoms indicate viral illness' (inferred, not direct); 'common progression in viral URIs' and contrasts to 'rapid allergic/sudden bacterial' (plausible medical knowledge, not stated in transcript). Some plausible extras, but KG is clear fabrication; mostly verifiable with minor issues.",
+    "relevance": "Directly lists evidence for viral conclusion (symptoms, evolution, duration, doctor's reasoning), addressing question's focus on symptom characteristics and implicitly viral vs. others via duration contrast. Minor tangent (KG); no major off-topic content, but omits discharge/absent features/exposure as specified in question."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 2,
+    "faithfulness": 3,
+    "relevance": 4
+  },
+  "average_score": 3.25,
+  "summary": "The Generated Answer is factually mostly accurate and relevant but incomplete in covering Gold's key differentiators against allergic/bacterial causes and faithfulness is reduced by hallucinated Knowledge Graph references."
+}

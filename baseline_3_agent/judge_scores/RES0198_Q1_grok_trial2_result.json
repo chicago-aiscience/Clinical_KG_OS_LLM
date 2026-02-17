@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the reported nasal symptoms (stuffy nose and runny nose, with progression from stuffy to mostly running, citing P-1 and P-3 accurately, matching Gold). However, it incorrectly states that the character of the nasal discharge is not specified, contradicting P-5 ('mostly clear') and Gold Answer. It also erroneously claims that denials of related symptoms (cough [P-4], post-nasal drip [P-6], sore throat etc. [P-7], loss of taste/smell [P-16]) are not explicit due to missing context, despite full transcript availability, representing significant factual errors and contradictions on key elements.",
+    "completeness": "Gold key points covered: stuffy/runny nose for 1 week, progression (stuffy first, now running). Missed: clear discharge, mild fatigue, explicit denials of cough, post-nasal drip, sore throat/SOB/fevers/chills, loss of taste/smell, and other pertinent negatives. Covers ~30% of key points (mainly nasal reports).",
+    "faithfulness": "Nasal symptom claims verifiable in P-1, P-2, P-3; D-39 summary accurate. However, assertion that discharge character not specified hallucinates absence (contradicts P-5); claim of missing context for denials fabricates lack of evidence (full transcript has explicit queries/denials in P-4, P-6, P-7, P-16). Multiple hallucinated absences.",
+    "relevance": "Directly structures response around the question's three parts (reported symptoms, discharge character, denied symptoms), with no off-topic content beyond minor doctor summary; perfectly focused."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer accurately captures nasal symptoms but significantly errs by denying the presence of discharge character details and denial contexts that are explicitly in the transcript, leading to low correctness, completeness, and faithfulness."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the onset timing, the first symptom (stuffy nose), and the shift to the predominant symptom (runny nose). However, it identifies the symptoms as intermittent ('on and off') based on P-1. The Gold Answer highlights that the patient later clarified in P-8 that the symptoms were 'pretty constant,' leading to the conclusion that symptoms were continuous. By omitting this clarification, the Generated Answer provides a conclusion on the pattern that contradicts the Gold Answer.",
+    "completeness": "The Generated Answer covers several key points: onset timing, initial symptom, and the progression to the current predominant symptom. However, it misses several nuances found in the Gold Answer: 1) The clarification in P-8 that symptoms were constant; 2) The role of over-the-counter decongestants in the symptom shift (P-10); 3) The fact that symptoms were not getting better (P-1).",
+    "faithfulness": "The Generated Answer is grounded in the transcript, specifically citing P-1 and P-3. It does not hallucinate information, though it is selective in which parts of the transcript it uses for the 'constant vs intermittent' question.",
+    "relevance": "The Generated Answer directly addresses all parts of the question, including the timeline, the first symptom, the change in predominant symptom, and the constant/intermittent nature."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 5,
+    "relevance": 5
+  },
+  "average_score": 4.0,
+  "summary": "The Generated Answer correctly tracks the sequence of nasal symptoms but misses a critical clarification regarding the constancy of the symptoms and the impact of OTC medications."
+}

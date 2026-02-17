@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the patient's asthma history [P-16], current symptoms [P-1], doctor's suspicion of recurrence [D-35], and treatment suggestion [D-35], but it factually errs by claiming the transcript lacks details on self-adherence behaviors like skipping the evening maintenance dose [P-19] and not refilling the rescue inhaler [P-17,P-18], which directly contradict the Gold Answer's emphasis on these as compromising control; it also misinterprets D-36 and introduces non-existent [KG] references.",
+    "completeness": "Covers asthma history, basic symptoms, doctor's assessment of recurrence, and rescue puffer suggestion; misses key Gold points like specific medication non-adherence details (reduced maintenance dosing [P-19,P-20], no rescue refill [P-17,P-18]), doctor's explicit connection in D-34, symptom details (phlegm/hoarseness [P-11], exertion worsening [P-4,P-9]), patient's note that it feels different [P-16], and well-controlled past [P-29], covering ~30-40% of key points.",
+    "faithfulness": "Claims verifiable via citations [P-16,P-1,D-35] are grounded, but hallucinates that self-adherence issues are absent from transcript (directly refuted by P-17-P-20); fabricates [KG] references not in transcript; minor misquote of D-36 on cardiac exclusion.",
+    "relevance": "Addresses asthma history and symptom relation to recurrence but explicitly denies/ignores the question's core elements of self-directed skipping evening dose and rescue non-refill, making it partially off-topic on the specific causal linkage asked."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "The Generated Answer partially captures the asthma recurrence link but significantly errs by denying key transcript-supported medication non-adherence facts central to the Gold Answer and question."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the core symptoms from D-58 (three-to-four day dry cough, little bit of fever, headache), which aligns with the first point in the Gold Answer. However, it omits four other key findings recapped by the doctor: no sputum production, no recent sick contacts except brother's cold two weeks ago, no asthma, and no medications aside from Claritin. For Jessica's goal, it attributes the doctor's phrasing ('next steps and where to go from here') as her primary goal, but the Gold Answer specifies Jessica's own words from P-60 ('if I have to like take medicine or something') and P-61 (go home and lay down), introducing a significant discrepancy in attribution and detail.",
+    "completeness": "Gold Answer key points: Doctor's recap (1. symptoms duration/intensity; 2. no sputum; 3. contacts/brother's cold; 4. no asthma; 5. medications/Claritin); Jessica's goal (know if needs medicine, desire to rest/go home). Generated covers only ~20%: partial symptoms (1/5 doctor's points) and vague 'next steps' (not matching Jessica's specific goal or rest mention). Misses 80%+ of points.",
+    "faithfulness": "All claims in Generated are verifiable in D-58: doctor does recap symptoms as stated, and uses 'next steps/where to go from here'; no fabricated facts or inaccurate citations. Minor issue is loose attribution of goal phrasing to Jessica (doctor says it, she affirms with specifics), but grounded in transcript without hallucination.",
+    "relevance": "Generated Answer directly structures response to the two-part question (doctor's findings and Jessica's goal), cites relevant transcript section, and includes no extraneous content; perfectly on-topic."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 4,
+    "relevance": 5
+  },
+  "average_score": 3.25,
+  "summary": "The Generated Answer is relevant and faithful to the transcript but lacks correctness and completeness by omitting most of the doctor's recapped findings and misattributing Jessica's precise goal."
+}

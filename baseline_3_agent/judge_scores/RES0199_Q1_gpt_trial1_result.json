@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer contains a major factual error: it states the transcript does not give a specific diarrhea frequency, but the patient clearly reports “five or six times a day” [P-28]. It also fails to report the cough’s key characteristic (mostly dry [P-12], no sputum/blood [P-13]) and fails to provide the headache severity rating of 7/10 [P-8], instead inferring “high severity” from feeling sick and taking Tylenol. It correctly reports vomiting count as two episodes [P-32] and that symptoms began around four days ago for cough/headache [P-1]. Overall, there are significant inaccuracies/omissions relative to what was asked.",
+    "completeness": "Key points from the Gold Answer that are covered: vomiting occurred with a count of two episodes; cough started four days ago and was stable. Key points missed: diarrhea frequency (5–6/day) and liquid nature; vomiting characteristics (food contents, no blood); cough characteristics (dry, no sputum/blood) and key respiratory negatives (no SOB/wheeze/chest pain); headache severity rating (7/10) and location/bilateral/persistence details; several relevant negatives and associated symptoms (e.g., no blood in stool, nausea today, etc. only partially included). Overall coverage is well under ~50% of the requested specifics.",
+    "faithfulness": "Several statements are not well-grounded or are contradicted by the transcript: claiming the transcript does not specify diarrhea frequency contradicts [P-28]. Inferring “high severity level” for headache is not stated; the transcript provides an explicit 7/10 rating [P-8] which is omitted. Most other included claims are grounded (e.g., vomiting two times [P-32], cough stable [P-11]), but the explicit contradiction and unsupported inference reduce faithfulness substantially.",
+    "relevance": "The answer stays focused on GI symptoms, respiratory symptoms, and headache characteristics, which matches the question. However, it does not provide the specific characteristics requested (dry cough, diarrhea frequency, headache severity rating), limiting its practical relevance despite being on-topic."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The response is on-topic but misses multiple required specifics and includes a key contradiction about diarrhea frequency, leading to low correctness, completeness, and faithfulness."
+}

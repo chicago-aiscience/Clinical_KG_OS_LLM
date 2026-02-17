@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer accurately identifies four symptoms (stuffy nose with timing, persistent sore throat, 3-day fever, 2-3 day muscle aches coinciding with fever) with precise citations and clarifications (e.g., no joint pain). Generated Answer correctly lists the four symptoms matching Gold (fever, stuffy nose, sore throat, muscle ache) with appropriate citations. For denials, Generated lists the exact five symptoms (cough, headache, neck stiffness, nausea, difficulty swallowing) matching Gold and question, but supporting evidence contains factual error: claims patient did not answer neck stiffness query at [D-7] and 'immediately began reporting her own history,' which contradicts transcript [P-7] 'No.' Other denials lack citations and rely on absence rather than explicit responses. Core lists correct, but significant error in explanation vs. Gold's accuracy; some factual errors but main point correct.",
+    "completeness": "Gold key points: detailed four symptoms with sequence/timing/persistence/clarification (stuffy nose first [P-1,D-2,P-2], sore throat persistent [P-1], fever 3 days [P-1], muscle aches 2-3 days with fever [P-13/14,D-15,P-15/16], no joints [P-13]); explicit denials with citations (cough [P-10], headache [P-8], neck stiffness [P-7], nausea/vomiting [P-5], difficulty swallowing details [P-24-26]). Generated covers all four symptoms identified and all five denied symptoms listed, with basic citations for symptoms. Misses timings, persistence, clarifications, denial citations, and specifics (e.g., nausea includes vomiting, swallowing details); covers core identification (80-99%) but lacks depth.",
+    "faithfulness": "Symptoms claims verifiable: [P-1] for first three, [P-13] for muscle ache. Denied list verifiable indirectly, but supporting evidence not grounded: 'did not include' infers absence, not explicit denials asked (e.g., nausea [D-5/P-5 'No'], cough [D-10/P-10 'No cough'], etc.). Major hallucination: for neck stiffness [D-7], claims 'without answering... implying lack,' but transcript [P-7] 'No.' directly; patient did not 'immediately begin reporting history' (P-13 much later). Multiple ungrounded/hallucinated claims about responses.",
+    "relevance": "Generated Answer directly structures response around question: lists exactly four reported symptoms and five specified denied symptoms with headings, provides supporting evidence tied to transcript; no off-topic content, perfectly addresses query."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 4,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.5,
+  "summary": "The Generated Answer correctly identifies the key symptoms and denials but includes a significant hallucination and factual error in explaining the neck stiffness denial, reducing faithfulness and correctness while remaining relevant and mostly complete."
+}

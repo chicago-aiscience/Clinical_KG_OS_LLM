@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly states that the transcript does not contain the doctor's stated plan, despite [D-43] explicitly describing it as going over the case with the supervising physician and returning to discuss next steps; it partially covers Tylenol from [P-14] correctly but misses expectoration [P-13] and resting [P-10] as self-care; aggravating factors are misrepresented by only citing throat rawness after coughing [P-15], ignoring key elements like deep breathing worsening pain [P-18], coughing/ deep breath worsening chest pain [P-19], and exertion causing windedness/crummy feeling [P-10,P-11]; alleviating factors limited to Tylenol, missing others; additionally hallucinates a 'Knowledge Graph' not present in the transcript, leading to significant factual errors and contradictions with Gold Answer.",
+    "completeness": "Gold key points: doctor's plan [D-43] (missed); self-care - Tylenol effect [P-14] (covered), expectoration temporary relief [P-13] (missed), resting/avoiding exertion [P-10] (missed); aggravating - deep breathing [P-18], coughing worsens chest pain [P-19], exertion/stairs [P-10,P-11], no others [P-12] (only minor throat rawness partially covered, ~20% of aggr points); alleviating - Tylenol [P-14], expectoration [P-13], resting [P-10] (only Tylenol covered); overall covers ~25% of key points.",
+    "faithfulness": "Tylenol claim verifiable [P-14]; throat rawness after coughing verifiable [P-15] but not primary aggravating for chest pain/dyspnea; absence of plan claim unverifiable and false given [D-43]; 'Knowledge Graph' and its links (e.g., Tylenol treats chest pain) entirely fabricated, not in transcript; misses verifiable aggr/alliev details, introducing hallucination via external KG reference.",
+    "relevance": "Generated Answer is structured directly around the three components of the question (doctor's plan, self-care, aggravating/alleviating factors), with no off-topic content, though incomplete and inaccurate."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer is relevant in structure but suffers from major omissions, factual inaccuracies, and hallucinations, covering only a fraction of the Gold Answer's key points."
+}

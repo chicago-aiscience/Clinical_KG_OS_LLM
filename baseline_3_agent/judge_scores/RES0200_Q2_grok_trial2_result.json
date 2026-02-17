@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer identifies Ventolin and Spiriva as current respiratory inhalers, Ventolin used ~10 times past week [P-11,P-12], atorvastatin (Torva Staten) as current non-respiratory med [P-38,D-39], and discontinued diuretic for BP without approval [P-35,P-36]. Generated correctly identifies Spiriva and Ventolin (misspelled Ventilin) as current inhalers but misses Ventolin frequency (claims no specific number despite [P-12]), wrongly lists diuretic as current non-respiratory med (P-34/P-35 indicate discontinued), and completely omits atorvastatin. Discontinued med is correctly identified as diuretic without approval. Significant errors in current vs past meds and Ventolin use make it score 2.",
+    "completeness": "Gold key points: two inhalers (covered), Ventolin 10x/week (missed), atorvastatin current (missed), diuretic prior/discontinued (partially covered but misclassified as current). Covers inhalers and discontinued med but misses frequency and one current med, plus misplaces diuretic; ~50% coverage, score 3.",
+    "faithfulness": "Spiriva/Ventolin from [P-11] accurate; Ventolin 'lot more' from [P-11] but ignores specific 10x from [P-12]; diuretic cited [P-35] but transcript [P-34/P-35] shows past use ('used to take...don't right now'), so hallucinates as current; no atorva mention. Multiple misinterpretations/hallucinations on med status, score 2.",
+    "relevance": "Directly structures response to question parts (existing meds split by type, Ventolin freq, discontinued med) with citations; fully on-topic despite errors, score 4."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer partially addresses the question with correct identification of inhalers and discontinued diuretic but has significant errors in omitting atorvastatin, misclassifying the diuretic as current, and missing the specific Ventolin frequency."
+}

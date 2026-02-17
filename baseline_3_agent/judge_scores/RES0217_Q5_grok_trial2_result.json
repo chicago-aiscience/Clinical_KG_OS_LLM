@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly describes the tick attachment duration reasoning, matching the Gold Answer and transcript by citing patient activities on Friday and Saturday [P-1] and doctor's estimate of >72 hours [D-6]. However, it factually errs by claiming the transcript 'does not contain evidence' of the doctor using an Ontario Lyme disease distribution map or Strathroy's position to justify treatment, directly contradicting both Gold Answer and explicit transcript evidence in [D-13] where the doctor references the map and states 'Strathroy is close enough to be considered a little bit of a concerning point, so I think that we will be moving forward with antibiotics'. This is a significant contradiction on a core element of the question.",
+    "completeness": "Key points from Gold Answer covered: patient hiking/gardening Fri/Sat [P-1], uncertainty of attachment, discovery 'earlier today', doctor's timeline note [D-2], >72h estimate [D-6], prophylactic antibiotics [D-6]. Missed/denied: doctor's reference to Lyme map, Strathroy location [P-12] as concerning per map [D-13], leading to antibiotics [D-13]. Covers duration fully (~60% of key points), omits second half entirely.",
+    "faithfulness": "Duration claims fully verifiable [P-1, D-2, D-6]. Geographic claims hallucinate absence of map/Strathroy justification despite clear evidence in [D-13] ('Lyme disease distribution map for Ontario... Strathroy is close enough... moving forward with antibiotics'). Adds unverifiable/unprompted 'knowledge graph'; attributes justifications to [D-18] (general advice) and symptoms [P-1], which are plausible but not doctor's stated reasons for treatment decision. Multiple inaccuracies in transcript grounding.",
+    "relevance": "Answer is structured directly around the two-part question (duration and map/geographic use), with focused sections addressing each element without tangents or off-topic content, even where factually incorrect."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer accurately covers tick attachment duration but significantly errs by denying the doctor's explicit use of the Lyme map and Strathroy's position, leading to low correctness, faithfulness, and completeness."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer outlines precise chronology: sore throat Day 1 (worsening, swallow food issue), fatigue/muscle aches shortly after, reduced taste Day 3 (constant), breathing difficulty Day 4 (constant, worsening). Generated Answer incorrectly states sore throat 'pretty constant' (cites wrong P-21 for taste, contradicts P-4 'getting worse'), treats swallowing as separate symptom (part of sore throat), places taste/smell 'immediately after' sore throat citing P-26 (fatigue, contradicts P-20 'two days ago'), reverses taste/smell effects (Gold: taste reduced/smell intact; Gen: taste little/smell lost, misreads P-19), entirely omits breathing (key Day 4 symptom) and fatigue/aches. Significant factual errors and contradictions.",
+    "completeness": "Gold key points: sore throat onset/worsening/swallow (partial cover), fatigue/aches shortly after (missed), taste Day 3 constant (wrong timing/severity), breathing Day 4 worsening constant (missed), self-treatment failure (missed). Covers ~25% (sore throat onset/swallow partially, taste incorrectly), misses major symptoms/accuracies.",
+    "faithfulness": "Errors: sore throat 'constant' cites P-21 (taste); taste onset cites P-26 (fatigue/muscles); smell 'entirely lost' misreads P-19 ('maybe taste... but not smell' = smell unaffected). Omits verifiable breathing [P-7-11], fatigue [P-25-26]. Adds plausible COVID/smoking context [D-43, P-35] but hallucinated timelines/symptom details. Multiple hallucinations/misattributions.",
+    "relevance": "Directly attempts chronological symptom list with onset/severity, but incomplete (misses breathing/fatigue), inaccurate, and includes off-topic clinical context (COVID swab, x-ray, smoking). Partially relevant with off-topic elements."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "The Generated Answer has significant factual inaccuracies, omissions of key symptoms like breathing and fatigue, misattributed timelines and citations, and minor off-topic content, resulting in poor alignment with the Gold Answer."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer is factually inconsistent with both the transcript and the Gold Answer. It incorrectly states there are “no doctor turns” and that the transcript ends at P-26, when the transcript clearly includes multiple doctor turns through D-38, including the key closing plan at D-37 (“go over it with the doctor who’s working today… come back shortly… if there’s any tests we want to do or how we want to move forward”). It also introduces unsupported clinical inferences (e.g., pneumonia, status epilepticus) that are not part of the doctor’s communicated next steps in the transcript and are not in the Gold Answer.",
+    "completeness": "The Generated Answer misses essentially all key Gold Answer points: (1) the clinician will review the case with “the doctor who’s working today,” indicating another physician involved in decision-making; (2) they will return shortly to discuss next steps; (3) possible ordering of tests and deciding how to move forward; (4) no specific tests/treatments were named; (5) courteous close. Instead, it claims the plan is unavailable and provides speculative medical steps.",
+    "faithfulness": "Multiple statements are not grounded in the provided transcript: the claim that there are no doctor turns and that the conversation cuts off before any plan is demonstrably false; the suggested follow-up actions (medication management, ruling out pneumonia/status epilepticus) are not stated by the doctor in the transcript. This constitutes substantial unfaithfulness/hallucination relative to the source.",
+    "relevance": "It nominally addresses the question but largely avoids answering it by asserting the relevant information is missing, and then adds speculative clinical possibilities rather than reporting the doctor’s communicated next steps. This makes it only weakly responsive to the question."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 2
+  },
+  "average_score": 1.25,
+  "summary": "The Generated Answer fails to extract the explicitly stated end-of-consultation plan (D-37/D-38), incorrectly claims the transcript lacks doctor turns, and adds unsupported speculation, resulting in very low correctness, completeness, and faithfulness."
+}

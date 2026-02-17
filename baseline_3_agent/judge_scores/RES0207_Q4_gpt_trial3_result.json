@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer is largely inconsistent with the Gold Answer. It fails to identify the main *denied* screened symptoms/exposures (e.g., chest pain, presyncope, GI symptoms, URI/COVID symptoms, sick contacts, travel) and instead emphasizes presenting symptoms (SOB, cough, mild fever) that were not the key “denied screen” items asked in the question. It also introduces questionable/incorrect clinical inferences (e.g., linking epilepsy to “stroke risk” and then to PE) and names specific diagnoses (pneumonia/bronchitis/PE/HF/GERD) that were not stated in the transcript and go beyond what the Gold Answer claims (category-level differentials suggested by the screening pattern).",
+    "completeness": "Key Gold Answer items covered: essentially none of the core *negative* screen items (no chest pain, no faintness, no nausea/vomiting, no belly pain, no diarrhea, no sick contacts, no travel, no loss of taste/smell, no sore throat, no runny nose). It also omits the sputum denial/dry cough framing as a screening negative, and omits the “no prior similar episodes” point. Overall coverage is well under 20% of Gold Answer key points.",
+    "faithfulness": "Several elements are not grounded in the transcript: the answer’s focus on Keppra adherence and seizure frequency is not responsive to the asked negative screens, and the proposed differentials (PE, pulmonary edema/heart failure, GERD/aspiration) are not supported by explicit screening in the transcript (and the epilepsy→stroke/PE linkage is not supported). While a few statements are transcript-based (dry cough, mild fever, missed dose), much of the differential discussion is speculative beyond what the Gold Answer allows.",
+    "relevance": "The question asks which *screened symptoms/exposures the patient denied* and what differential categories those negatives address. The Generated Answer mostly discusses presenting symptoms and speculative diagnoses, and does not enumerate the denied screening items. Therefore it is only minimally aligned with the question."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 2
+  },
+  "average_score": 1.75,
+  "summary": "The Generated Answer misses most denied screening findings and adds speculative, weakly supported differentials, resulting in low correctness, very poor completeness, and limited relevance/faithfulness."
+}

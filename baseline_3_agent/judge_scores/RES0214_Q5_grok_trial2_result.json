@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer accurately captures the core epidemiological factors from the Gold Answer: husband's week-long similar illness increasing COVID-19 suspicion [P-19, D-53], lack of flu shot making influenza viable [P-53, D-53/D-54], and shared household prompting isolation and prioritizing COVID testing. It correctly notes COVID as primary differential due to household transmission and flu as alternative. Minor discrepancies include unsubstantiated 'knowledge graph' (KG) references not in Gold Answer or transcript, and slightly less emphasis on limited outside contacts (e.g., no explicit mention of work-from-home or hiking), but no major factual errors or contradictions.",
+    "completeness": "Key Gold points covered: husband's preceding illness and household transmission (fully); no flu shot fitting symptoms for both diagnoses (fully); shared household/limited contact (partially - mentions shared environment but omits specifics like work-from-home [P-23/P-42], self-isolating [P-22], hiking [P-18], no other sick contacts [P-17]). Covers doctor's prioritization of COVID and mention of flu, but misses full details on limited exposures supporting household over independent acquisition. Approximately 85% coverage.",
+    "faithfulness": "Claims about husband's illness [P-19/D-53], no flu shot [P-53/D-53/D-54], and isolation/testing [D-53] are directly verifiable in transcript. Doctor's prioritization of COVID due to husband is accurate [D-53]. However, multiple 'knowledge graph' (KG) references (e.g., KG: fever/sore throat --RELATED_TO--> husband_current_illness) are hallucinated, as no KG exists in transcript. Interpretations like 'removes a protective health factor' are plausible but not explicit. Mostly grounded with some unverifiable fabricated details.",
+    "relevance": "The answer directly structures response around the three specified epidemiological factors (husband's illness, shared household, no flu shot) and explains their role in shaping COVID-19 as top differential vs. influenza, with no off-topic content or tangents."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 3,
+    "relevance": 5
+  },
+  "average_score": 4.0,
+  "summary": "The Generated Answer is mostly accurate and relevant but introduces minor hallucinations via knowledge graph references and slightly undercovers details on limited outside contacts."
+}

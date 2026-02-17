@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly states COPD diagnosis as approximately two years ago citing [P-1], ignoring the patient's correction to five years ago in [P-2], which Gold Answer accurately reflects. It omits key smoking details (half pack currently, reduced from 1-2 packs [P-44]) claiming no exact consumption is specified, contradicting Gold and transcript. Introduces non-existent 'knowledge graph' linking smoke to lung cancer. Family history partially correct but incomplete. Significant factual errors.",
+    "completeness": "Gold key points: current half pack/day [P-44], reduced from 1-2 packs [P-44], doctor notes reduction/offers resources [D-45], cough 10 years [P-3], COPD 5 years [P-2], consistent with tobacco exposure, no other drugs [P-45], father lung cancer heavy smoker [P-43], patient worry [P-43], mother healthy [P-43]. Generated covers current smoker vaguely, father history; misses quantities/change, timelines, doctor's response, exposure link. Covers ~20-30% of points.",
+    "faithfulness": "Claims verifiable: COPD history/symptoms [P-1,D-52], smoker [P-43], father history [P-43]. Unverifiable/hallucinated: 'knowledge graph' linking medical history (not in transcript), no exact consumption despite [P-44]. Mis-cites diagnosis time ignoring [P-2]. Multiple hallucinations and inaccuracies.",
+    "relevance": "Directly structures around diagnosis, smoking, family, relationship to COPD; however, focuses heavily on current exacerbation/symptoms/management (not core question), vaguely links without specifics on smoking changes/timelines to COPD, mixes lung cancer with COPD risks. Partially relevant with off-topic content."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "The Generated Answer has significant factual inaccuracies, omits key smoking history details central to the question, hallucinates elements like a knowledge graph, and diverts to exacerbation details."
+}

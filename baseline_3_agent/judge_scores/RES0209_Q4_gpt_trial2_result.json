@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Gold Answer specifies an infectious/COVID screen: recent colds/infection, sick contacts (home and outside), travel, loss of taste/smell, fever, nausea/vomiting, belly pain, and confirms the cough is dry/nonproductive; all were denied. The Generated Answer largely does not report these items and instead incorrectly states the clinician screened for “other health problems” and “chest tightness” as the infectious rule-out. While chest tightness was asked about, it is not part of the infectious/COVID screen described in the Gold Answer. The only clearly correct element aligned with Gold is that a COVID swab was planned.",
+    "completeness": "Key Gold points missed: (1) denial of recent colds/infection, (2) denial of sick contacts at home, (3) denial of sick contacts outside home, (4) denial of travel, (5) denial of loss of taste/smell, (6) denial of fever, (7) denial of nausea/vomiting, (8) denial of belly pain, and (9) explicit linkage that these were asked to rule out infection. It includes only the planned COVID swab and some general asthma symptom history (dry cough/wheeze/SOB) but not the infectious screening responses. Overall coverage is far below 50%.",
+    "faithfulness": "Most statements cited are present in the transcript (dry cough, wheeze, triggers, sister with asthma, COVID swab). However, the answer misattributes what was ‘specifically’ screened to rule out infection (substituting non-infectious questions like “other health problems” and “chest tightness”) and omits the actual infectious screening questions that are clearly in the transcript. This is more than a minor omission; it reflects a misrepresentation of the screening content.",
+    "relevance": "The question asks specifically for infectious/COVID symptom and exposure screening, the patient’s yes/no responses, and the planned test. The Generated Answer provides mostly asthma history/triggers/family history (not what was asked) and fails to report the infectious symptom/exposure screening and the patient’s negative answers. It does mention the planned COVID swab, but overall it only partially addresses the question."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 1,
+    "faithfulness": 3,
+    "relevance": 2
+  },
+  "average_score": 2.0,
+  "summary": "The response captures the planned COVID swab but largely misses and mischaracterizes the specific infectious/COVID symptom and exposure screening and the patient’s negative answers."
+}

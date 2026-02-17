@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer identifies Tylenol, Advil, and Alka-Seltzer for pain relief (ineffective per [P-6]), a daily multivitamin as routine supplement ([P-25]), no prescription meds, stress management (reading/running), and quitting smoking. Generated Answer correctly lists the three pain meds and their ineffectiveness with accurate quotes/citations. However, it incorrectly states there is 'no indication' of routine OTC supplements, directly contradicting the multivitamin mentioned in [P-25]. It also references a non-existent 'knowledge graph.' Core facts on pain relief are correct, but significant discrepancy on routine supplements.",
+    "completeness": "Gold key points: pain meds (Tylenol, Advil, Alka-Seltzer), ineffectiveness, routine multivitamin, no prescription meds, stress management, quitting smoking. Generated covers pain meds (100%) and ineffectiveness (100%). Misses routine multivitamin (explicitly denies), no prescription meds (implied but not stated), stress management, and smoking. Covers main pain relief points (~60-70% of Gold's coverage).",
+    "faithfulness": "Pain meds and quote from [P-6] are fully verifiable and accurate. Claim of 'no indication' of routine supplements is not verifiable (contradicts [P-25] multivitamin). Reference to 'knowledge graph provided' is hallucinated (no KG in transcript or prompt). Multiple ungrounded/incorrect claims.",
+    "relevance": "Generated Answer directly structures response around pain meds, their effectiveness, and routine supplements, perfectly matching the question's focus without off-topic content."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.25,
+  "summary": "The Generated Answer accurately covers pain relief medications and effectiveness but significantly errs by denying the routine multivitamin supplement and hallucinating a knowledge graph, reducing completeness and faithfulness."
+}

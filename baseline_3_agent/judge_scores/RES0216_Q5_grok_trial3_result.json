@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the patient's asthma history [P-16], current symptoms [P-1], doctor's suspicion of asthma recurrence [D-35], and suggestion for rescue puffers [D-35], which aligns with parts of the Gold Answer. However, it contains significant factual errors: it falsely claims the transcript 'does not explicitly contain details regarding the patient's specific self-adherence behaviors (such as skipping maintenance doses or failing to refill inhalers)', directly contradicting explicit transcript evidence [P-17-P-20] and the Gold Answer's core emphasis on these self-directed changes. It also hallucinates a 'Knowledge Graph' [KG] and attributes salbutamol to KG despite patient mention [P-25]. Doctor's cardiac differential is misrepresented [D-36]. These are major contradictions to Gold.",
+    "completeness": "Gold key points covered: asthma history [P-16], symptoms like chest tightness worsened by activity [P-1,P-4,P-9 partially], doctor's recurrence assessment [D-35], rescue puffer suggestion [D-35]. Missed entirely: well-controlled past [P-29], specific self-reduction of maintenance to mornings only [P-19,P-20], no rescue refill [P-17,P-18], doctor's summary of limiting meds [D-34], phlegm/hoarseness [P-11], patient noting 'different' feel [P-16]. Covers ~25-30% of key points.",
+    "faithfulness": "Verifiable claims: asthma history [P-16], symptoms [P-1], recurrence [D-35], rescue [D-35]. Unverifiable/hallucinated: entire 'Knowledge Graph' [KG] references not in transcript; false claim that self-adherence details (skipping evening dose [P-19], no rescue refill [P-17-18]) are absent from transcript, which is a direct fabrication. Salbutamol attributed to KG but in [P-25]. Multiple hallucinations and contradictions to transcript.",
+    "relevance": "Addresses asthma history and symptoms relation partially, with doctor's recurrence view, but question specifically asks about relation involving self-skipping evening maintenance and no rescue refill, which Generated denies exist in transcript and omits explanation. Includes off-topic KG and cardiac details. Partially relevant."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "The Generated Answer is partially relevant and covers basic asthma-symptom links but significantly errs by denying key transcript evidence of medication non-adherence central to the Gold Answer, introducing hallucinations like KG, resulting in low factual accuracy and completeness."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer details the doctor's specific inquiry at [D-28] about family history of respiratory problems, mother's disclosure of grandparents' asthma [P-28], doctor's summary [D-30], and differentiation via mother's report of prior workup, absence of SOB/wheezing even with activity [P-28], contrasted with current dry cough [P-2,5,6 etc.], runny nose, and prior shorter episodes [P-24]. Generated Answer correctly notes grandparents' asthma and absence of SOB/wheezing for differentiation [P-28], but inaccurately attributes statements to 'the patient' instead of mother, claims family history triggered lung exam prioritization [D-1] (which precedes inquiry and is due to cough), and omits direct link via inquiry itself and other symptoms like runny nose. Some factual errors (speaker, causation) but main points of connection and differentiation align.",
+    "completeness": "Gold key points: doctor's inquiry [D-28], relevance to cough, grandparents asthma [P-28], doctor summary [D-30], prior workup/no SOB/wheeze [P-28], current dry cough details, runny nose, no wheeze/dyspnea, prior shorter issues [P-24]. Generated covers grandparents asthma, no SOB/wheeze differentiation, current cough; misses inquiry details/specifics, doctor's summary, runny nose, prior history comparison. Covers ~50-60% of key points.",
+    "faithfulness": "Claims grounded: grandparents asthma, no SOB/wheezing with activity [P-28], current cough [P-2]. Hallucinations: 'patient provided/stated' (actually mother in [P-28], third-person 'his'), family history 'triggering' differential leading to prioritized lung/heart exam [D-1] (exam planned before history asked, for cough). Multiple unverifiable attributions and causal links.",
+    "relevance": "Directly addresses connection of family asthma to inquiry (via differential) and differentiation via symptom absence (SOB/wheezing), aligning with question's two parts; minor inaccuracy but no off-topic content."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer captures the core differentiation from familial asthma via absent key symptoms but has factual errors in speaker attribution, causal links, and misses several supporting details from the Gold Answer."
+}

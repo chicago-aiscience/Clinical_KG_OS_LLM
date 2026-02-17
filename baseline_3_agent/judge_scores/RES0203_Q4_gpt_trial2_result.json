@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Gold Answer lists multiple specific review-of-systems negatives explicitly documented in the transcript: no fever, no dyspnea, no headache, no sore throat, no chills/night sweats, no myalgias/weakness, no chest pain, no sputum/blood, and no cough triggers, plus negatives in PMH/meds/surgeries/allergies/FH. The Generated Answer incorrectly states the transcript does not explicitly list negatives like fever/dyspnea/sore throat—these are explicitly denied at P-10, P-11, P-13, etc. It also wrongly claims negative confirmations for immunizations and family history are not visible, despite P-20 (“Yes” up to date) and P-27 (“No, nothing like that”). It omits nearly all required negative findings and provides an inaccurate explanation of the role of absence of symptoms (it pivots to presence of symptoms instead).",
+    "completeness": "Key negatives from the Gold Answer that are missing in the Generated Answer: no fever; no difficulty breathing; no headaches; no sore throat; no chills/night sweats; no muscle aches/weakness; no chest pain; no sputum production; no hemoptysis; no environmental/cold triggers. It also fails to list the additional negatives (no chronic conditions, no meds, no surgeries/hospitalizations, no allergies, no relevant FH), except it mentions immunizations and family history but does so inaccurately and without capturing the patient’s actual negative FH response. Overall, it covers only a small fraction of the Gold Answer’s content and misses the central ROS negatives the question asks for.",
+    "faithfulness": "Multiple statements are not grounded or are directly contradicted by the transcript: (1) references to a “knowledge graph provided” (not in source); (2) claims that fever/dyspnea/sore throat are not explicitly documented as negatives (they are); (3) claims that immunization and family history negative confirmations are not visible (they are visible). The answer also shifts toward interpreting clinical reasoning without accurately reflecting the documented negative ROS. This constitutes substantial unfaithfulness to the transcript.",
+    "relevance": "The question asks to list all negative ROS findings and explain how their absence informed the clinical picture. The Generated Answer largely fails to list the negative ROS and instead discusses presence of symptoms and testing. It includes tangential points (immunizations/family history) while missing the core requested items. Thus it is only minimally responsive."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 2
+  },
+  "average_score": 1.25,
+  "summary": "The Generated Answer is largely incorrect and incomplete: it misses nearly all documented negative ROS findings, makes several transcript-contradicted claims, and only minimally addresses the question."
+}

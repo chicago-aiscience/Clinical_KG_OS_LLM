@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer is factually incorrect regarding the source text. It explicitly claims there is 'no explicit evidence' of the doctor asking about chest pain, palpitations, runny nose, or nausea, when these are clearly present in the transcript (D-10, D-15, D-16, D-17). It fails to identify the symptoms the patient negated.",
+    "completeness": "The Generated Answer misses almost all key points from the Gold Answer. It fails to list the negated symptoms (runny nose, vision/hearing, nausea, chest pain, palpitations, abdominal pain, urinary symptoms, numbness/tingling) and focuses instead on confirmed symptoms, which were not the primary focus of the question.",
+    "faithfulness": "The Generated Answer demonstrates a significant failure in faithfulness by hallucinating that the transcript does not contain the specific review of systems questions. It even cites a nonsensical range of turns ([D-36] to [P-11]) to justify this claim, despite the full transcript being provided.",
+    "relevance": "The Generated Answer is only partially relevant. While it attempts to discuss the diagnostic significance of the symptoms mentioned in the prompt, it does so based on the false premise that those symptoms were not explicitly discussed in the interaction."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 2
+  },
+  "average_score": 1.25,
+  "summary": "The Generated Answer is highly inaccurate as it incorrectly claims the transcript lacks the information requested, which is clearly present and correctly identified in the Gold Answer."
+}

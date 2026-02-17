@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer only discusses screening for asthma, missing all other conditions listed in the Gold Answer (night sweats, productive cough, severe allergies/EpiPen, family asthma/eczema, rashes, GI symptoms, joint pain); it has factual errors like citing [P-1] for asthma exclusion (actual denial is [P-29]) and [D-58] as screening (it's a summary); adds unsupported diagnosis of viral URI and 'knowledge graph'. Significant errors and contradictions in scope.",
+    "completeness": "Gold Answer covers screenings for night sweats [D-9/P-9], productive cough [D-5/6,P-5/6], allergies/EpiPen [D-18/21,P-18/19/21], personal asthma [D-29/P-29], family asthma [P-30/31], family eczema [D-32/33,P-33], rashes [D-10/P-10], GI [D-11/12,P-11/12], joints [D-13/P-13]; Generated covers only ~10% (partial asthma), misses 90%.",
+    "faithfulness": "Wrong citations ([P-1] not asthma denial; [D-58] summary not screening question); 'knowledge graph' hallucinated/not in transcript; allergy differentiation plausible but stretched; symptom/exposure claims verifiable but incomplete.",
+    "relevance": "Addresses part of question (asthma screening and some responses) but ignores most listed conditions (eczema, EpiPen allergies, night sweats) and adds off-topic diagnosis/exposure details; partially relevant with off-topic content."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.0,
+  "summary": "The Generated Answer is narrowly focused on asthma with citation errors and hallucinations, missing nearly all key screenings and responses from the Gold Answer."
+}

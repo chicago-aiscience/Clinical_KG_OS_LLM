@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer accurately reflects transcript details like symptoms (stuffy/runny nose [P-1, P-3]), progression [P-3], duration [P-1], and doctor's conclusion [D-39]. No direct contradictions with Gold Answer; minor issue with describing duration as 'on and off' (P-1) without noting 'pretty constant' (P-8). Introduces 'Knowledge Graph' not in transcript or Gold, but core facts match. Minor discrepancies, so 4.",
+    "completeness": "Gold key points: (1) symptom type w/o lower/systemic/absent features (cough [P-4], sore throat/SOB/fever/chills [P-7], post-nasal drip [P-6]); (2) clear discharge [P-5]; (3) 1-week duration/constant [P-1,P-2,P-8]; (4) progression [P-3]; (5) against allergic (no exposures [P-22], no allergies [P-28], no recent priors [P-9]); (6) against bacterial (no fever [P-7], no headache [P-14], clear discharge); (7) daycare exposure [P-11]. Generated covers symptom type (partial), progression, duration (partial); misses absent features, discharge quality, explicit against allergic/bacterial, exposure. Covers ~30-40% of key points, so 2.",
+    "faithfulness": "Most claims grounded: symptoms [P-1,P-3], progression [P-3], duration [P-1], doctor quote [D-39]. 'Knowledge Graph' and 'indicate viral illness' via KG hallucinated (no KG in transcript). 'Common progression in viral URI', 'not rapid allergic or sudden bacterial' plausible but not directly in transcript (inferred reasoning). Some unverifiable/plausible claims, so 3.",
+    "relevance": "Generated lists evidence supporting viral conclusion (symptoms, evolution, duration, doctor's reasoning), directly addressing question on symptom characteristics favoring viral over allergic/bacterial. Vague on differentiators but no off-topic content, mostly relevant, so 4."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 2,
+    "faithfulness": 3,
+    "relevance": 4
+  },
+  "average_score": 3.25,
+  "summary": "The Generated Answer is factually accurate and relevant but incomplete in covering key differentiators like absent features, clear discharge, and exposure history against allergic/bacterial causes, with minor hallucinations from external references."
+}

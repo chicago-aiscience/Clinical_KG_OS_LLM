@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies core present symptoms like chest tightness when breathing in and on walks (P-1), dyspnea/harder breathing (P-1), and upper airway issues (hoarseness, phlegm, throat clearing from P-11), aligning with Gold's description. It accurately notes denial of cough (P-11) and chest pain (indirectly from P-1, summarized in D-36). However, it omits key details from Gold such as 3-day duration (P-1/P-2), diffuse 'all over' nature (P-8), constant presence worsening with specific activities like getting up from chair or deep breaths (P-9/P-10), and 'difficulty getting a whole breath' (P-7). Critically, it only covers 2 of Gold's 7+ denied symptoms (cough, chest pain) and falsely claims the transcript lacks explicit denials for fevers (P-12), night sweats (P-13), chills (P-14), weight loss (P-15), anxiety/sweating (P-6), directly contradicting Gold and transcript. This introduces significant factual errors and contradictions.",
+    "completeness": "Gold key points covered: chest tightness on inspiration/walks (partial), dyspnea/harder breathing, upper airway (hoarse/phlegm/throat clearing), denial of cough and chest pain (~30-40% coverage). Missed from Gold: 3-day history, diffuse/non-localized, worsens with exertion/getting up/deep breath/constant but worse on activity, 'whole breath' difficulty, denials of anxiety/sweating/impending doom, fevers, night sweats, chills, weight loss (5+ key denials), systematic screening, and cardiac differential note. Covers 20-49% of Gold's key points, primarily basics of present symptoms but minimal denials.",
+    "faithfulness": "Present symptom claims (tightness, dyspnea P-1; upper airway P-11) are directly verifiable with accurate citations. Cough denial (P-11) verifiable. Chest pain denial citations (P-1 'not really pain/not specific spot'; D-36 summary) are verifiable though P-5 is more direct. However, the note claiming 'transcript does not contain explicit reporting or denial of fevers, night sweats, chills, weight loss, anxiety, or sweating' is a fabrication/hallucination, as these are explicitly denied in P-6 (anxiety/sweaty), P-12 (fevers), P-13 (night sweats), P-14 (chills), P-15 (weight loss). Introduces multiple hallucinated absences.",
+    "relevance": "The answer is perfectly structured with sections for 'Reported Symptoms' (categorized as chest-related and upper airway, matching question's respiratory/upper/chest focus) and 'Explicit Denials of Commonly Screened Symptoms' (directly lists from question's examples), with no extraneous content or tangents."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer captures basic present symptoms and partial denials but omits critical details and denials while hallucinating their absence from the transcript, resulting in low correctness, completeness, and faithfulness despite strong relevance."
+}

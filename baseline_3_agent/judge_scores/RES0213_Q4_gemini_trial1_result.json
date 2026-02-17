@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly identifies 'Anxiety' as a condition that was 'effectively ruled out'. In the transcript, anxiety is actually the primary suspected cause of the symptoms, not something excluded. Furthermore, it attributes certain lines of inquiry to the doctor (e.g., asking about Tylenol/Advil or Family History) that were actually volunteered by the patient earlier in the conversation. It misses several core medical conditions that were systematically ruled out, such as trauma, asthma, and infection.",
+    "completeness": "The Generated Answer only covers 2 conditions (one of which wasn't ruled out), whereas the Gold Answer identifies 6 distinct categories: Traumatic injury, Cardiac disease/angina, Infectious illness, Asthma, Primary dyspnea, and Inherited arrhythmia syndromes. It misses approximately 80% of the specific conditions and lines of inquiry detailed in the Gold Answer.",
+    "faithfulness": "The Generated Answer uses speculative language ('The doctor likely inquired', 'The doctor probably asked') and incorrectly attributes the initiation of several topics to the doctor when the transcript shows the patient volunteered the information first (e.g., smoking, family heart history, and use of OTC medications).",
+    "relevance": "While the response attempts to answer the prompt, it focuses on the wrong conditions (Anxiety was not ruled out) and overlooks the bulk of the clinical screening performed by the doctor."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "The Generated Answer fails to identify most of the ruled-out conditions listed in the Gold Answer, incorrectly labels anxiety as 'ruled out', and misattributes several patient-volunteered statements as doctor-led inquiries."
+}

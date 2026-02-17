@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Gold Answer identifies specific infectious and systemic conditions screened for/excluded via the listed questions (fever for pneumonia/bronchitis, runny nose for URI/viral wheeze, sick contacts for contagious infections, travel for exposure infections, rashes for allergic/viral skin manifestations, phlegm for productive infection), all denied, narrowing to reactive airway disease. The Generated Answer incorrectly claims the doctor was screening for 'Viral Infection' and 'Seasonal Allergies,' misattributes the questions (claims fever/runny nose/sick contacts not in transcript, citing wrong [D-14,D-20]), ignores the exclusionary purpose, and adds non-transcript 'Knowledge Graph.' Significant contradictions on purpose and conditions.",
+    "completeness": "Gold key points: fever [D-7/P-7 denied -> infectious], runny nose [D-8/P-8 -> URI], sick contacts [D-10/P-10 -> contagious], travel [D-11/P-11 -> exposures], rashes [D-13/P-13 -> systemic/allergic], phlegm [D-31/P-31 -> productive], plus pain/looks fine/past virals. Generated covers none of these; instead focuses on viral history [P-15, wrong context], seasonal allergies [P-35/36], cold weather [P-38], Reactine. 0% coverage of Gold points.",
+    "faithfulness": "Generated hallucinates absence of key questions (fever [D-7], runny nose [D-8], sick contacts [D-10] explicitly present, wrongly cited as [D-14,D-20]); invents 'Knowledge Graph' multiple times (not in transcript); misinterprets P-15 past virals as current screening evidence; claims doctor screening FOR viral infection despite exclusionary questions. Multiple ungrounded claims and fabrications.",
+    "relevance": "Question specifies screening via exact questions (fever, runny nose, etc.) and responses narrowing differential. Generated mentions them once but dismisses as absent, then pivots to unrelated viral history and allergies (later transcript parts), ignoring the listed questions' role. Largely off-topic from query focus."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 2
+  },
+  "average_score": 1.75,
+  "summary": "The Generated Answer is factually incorrect, incomplete, unfaithful to the transcript with hallucinations, and largely irrelevant by ignoring the specific screening questions and their exclusionary responses."
+}

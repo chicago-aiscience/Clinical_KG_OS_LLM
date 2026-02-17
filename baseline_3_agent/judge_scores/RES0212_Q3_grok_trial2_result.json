@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer specifies 'acute lower respiratory tract infection, most likely acute bronchitis with possible bacterial superinfection or early community-acquired pneumonia, superimposed on a pre-existing chronic cough.' Generated Answer simplifies to 'acute bronchitis' only, missing nuances like bacterial superinfection, pneumonia possibility, and chronic cough background. It inaccurately bundles productive cough and sputum color into one point instead of addressing separately as per question/Gold. References to non-existent 'Knowledge Graph' introduce factual errors, though core diagnosis of acute bronchitis aligns partially with Gold's main point.",
+    "completeness": "Gold key points: detailed diagnosis with differentials and chronic context; separate explanations for productive cough (3-day acute on 3-month chronic, mucus production); greenish sputum (infectious etiology, bacterial concern); subjective fevers (systemic response); doctor's summary [D-47]; absence of other symptoms; no vitals/exam. Generated covers basic diagnosis, productive cough/green sputum combined [P-2,D-47], subjective fever [P-4]; misses chronic context, bacterial nuance, pneumonia, separate sputum explanation, doctor's synthesis, absences. Covers ~50-60% of points.",
+    "faithfulness": "Claims like 'Knowledge Graph explicitly establishes' and links to KG for symptoms (e.g., tired/sleep to bronchitis) are not in transcript - hallucinations. Citations [P-2,D-47,P-4] accurate and verifiable. Productive cough/greenish sputum grounded in [P-2,P-9,D-47,P-12]; fever in [P-4]. But multiple fabricated KG references make it not fully grounded.",
+    "relevance": "Directly states diagnosis and breaks down the three features (though cough+sputum combined), addressing question on collective diagnosis and contributions. Minor tangent via hallucinated KG, but focused on clinical features."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer captures the core diagnosis of acute bronchitis and key symptoms but is incomplete in nuances, less faithful due to hallucinations about a 'Knowledge Graph,' and partially bundles features."
+}

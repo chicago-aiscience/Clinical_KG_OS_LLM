@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly attributes loss of smell (anosmia) to the patient, stating 'loss of smell (anosmia) as reported by the patient [P-19]' and 'inability to smell', but the transcript clearly states 'maybe taste a little bit but not smell' [P-19], contradicting the Gold Answer and question emphasis on reduced taste WITHOUT loss of smell. It limits the symptom combination to only sore throat and dysphagia, omitting key symptoms like difficulty breathing, fatigue/muscle aches highlighted in Gold. Introduces non-existent 'Knowledge Graph'. Significant factual errors and contradictions.",
+    "completeness": "Gold key points: sore throat [P-2,P-4], difficulty breathing [P-8-10], reduced taste (no smell loss) [P-19-21], fatigue/muscle aches [P-25-26], doctor's statement [D-43], exposure context [P-12-14]. Generated covers sore throat partially and misstates taste/smell; misses breathing difficulty, fatigue/aches, exposure details entirely. Covers <50% (mainly sore throat and partial quote), closer to 20-49%.",
+    "faithfulness": "Misinterprets [P-19] as reporting smell loss (hallucination); fabricates 'Knowledge Graph' and links to smell loss not in transcript. Doctor's [D-43] quote used accurately but contextually wrong (attributes to smell). Sore throat from transcript verifiable, but multiple hallucinated claims about smell and corroboration. Not grounded, multiple fabrications.",
+    "relevance": "Addresses the question by discussing symptom combination and taste/smell role, but introduces irrelevant 'Knowledge Graph' and flips the taste-without-smell premise to include anosmia. Partially relevant with off-topic fabrication."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "The Generated Answer has significant factual errors, especially hallucinating smell loss, omits key symptoms, and introduces extraneous non-transcript elements, resulting in low overall quality."
+}

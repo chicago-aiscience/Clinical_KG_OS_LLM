@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer specifies stuffy nose first 'just before' fever, sore throat around fever onset (grouped with stuffy nose in P-1), fever for 3 days, muscle aches concurrent with fever (2-3 days). Generated correctly identifies stuffy nose first then fever, but inaccurately places sore throat as developing subsequently after fever (P-1 groups sore throat with stuffy nose before fever). Muscle aches noted but not specified as concurrent. Husband's timeline approximated as ~1 week ago vs Gold's precise ~4 days before patient's fever; core facts consistent with minor discrepancies on sequences and precision.",
+    "completeness": "Covers: stuffy nose first, fever next (3 days), sore throat (though mistimed), muscle ache, husband's similar symptoms past week with patient more recent. Misses: explicit sore throat timing around fever onset, muscle aches precisely concurrent (2-3 days), doctor's confirmation of progression (D-2/D-3), exact 4-day stagger, household transmission note. Covers ~85% of key points.",
+    "faithfulness": "All claims grounded: stuffy nose/fever/sore throat from P-1, muscle ache P-13, husband P-19. Minor issue: 'subsequently developed sore throat' after fever not verifiable in transcript (P-1 places it with stuffy nose pre-fever); no hallucinations, mostly accurate citations.",
+    "relevance": "Directly addresses chronological progression (lists order 1-3), first symptom (stuffy nose), what followed (fever, sore throat, muscle ache), and husband comparison; no off-topic content."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 4,
+    "relevance": 5
+  },
+  "average_score": 4.25,
+  "summary": "The Generated Answer is mostly accurate and complete, with strong relevance and faithfulness, but has minor discrepancies in symptom sequencing (sore throat) and timing precision compared to the Gold Answer."
+}

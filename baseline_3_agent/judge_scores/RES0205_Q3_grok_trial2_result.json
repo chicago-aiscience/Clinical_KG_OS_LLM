@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies COVID-19 as the diagnosis investigated, matching the Gold Answer. Evidence listed (persistent cough [P-2], initial flu-like symptoms [P-14], hospital work [P-17], coworkers scared [P-35]) aligns closely with Gold's key prompts (occupational exposure [P-17,P-34], flu-like symptoms [P-13,P-14], persistence, social pressure [P-35]). Minor discrepancy: emphasizes chest soreness [P-15] not highlighted in Gold as prompting COVID test. Test result negative [P-35] matches. No factual errors or contradictions, core facts intact.",
+    "completeness": "Key Gold points covered: diagnosis (COVID-19), patient disclosure/test [P-35], hospital work [P-17 vs. P-17/P-34], flu-like symptoms [P-14 covers P-13/P-14], persistence [P-2 matches], coworkers scared [P-35], test negative [P-35]. Missed/minor: specific sore throat [P-13]/runny nose citations, PPE/carefulness [P-17], test timing at onset [P-36], staying home [P-36]. Covers ~85-90% of key points.",
+    "faithfulness": "All claims directly verifiable in transcript: cough persistence [P-2], chest soreness [P-15], flu-like [P-14], hospital [P-17], scared coworkers/test negative [P-35]. Citations accurate; no hallucinations or unverifiable details. Inference of COVID investigation grounded in patient's explicit mention [P-35].",
+    "relevance": "Perfectly addresses question's three parts (diagnosis investigated, evidence prompting it, testing results) with structured sections directly matching query. No off-topic content or tangents."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 5,
+    "relevance": 5
+  },
+  "average_score": 4.5,
+  "summary": "The Generated Answer is factually accurate, highly faithful and relevant, covering most Gold key points with only minor omissions in evidence details."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer accurately captures quality as initially 'uncomfortable/odd' but 'sharp strong pain on deep breath'; episodes 20 min intermittent; occurs when alone (walking to school, studying); resolves when with people/talking/hands-on; at rest; not worse with exercise; 1.5 weeks duration; first time; no injury. Generated partially matches quality ('sharp strong') and episode duration (20 min), but errs by omitting deep breath trigger, overall duration, rest/exercise details; significantly misinterprets situations as triggered exclusively by 'anxiety attacks' citing P-20 (which refers to palpitations, not pain) and overemphasizes stress without matching specific situational descriptions in Gold; adds unrequested med relief. Thus, significant factual errors/contradictions warrant score 2.",
+    "completeness": "Gold key points: 1.5 weeks overall; quality (uncomfortable to sharp on deep breath); 20 min intermittent episodes; occurs alone/walking/studying; resolves with people/activities; at rest; not worse exercise; no injury/first time. Generated covers: partial quality (sharp/strong), episode duration; misses overall duration, deep breath, specific alone situations vs social resolution, rest/exercise, injury history. Wrongly reframes situations around stress/anxiety. Covers ~20-49% accurately, score 2.",
+    "faithfulness": "Claims like 'sharp/strong' [P-3,6] grounded; duration [P-6] ok. But 'exclusive to anxiety attacks [P-20]' hallucinates (P-20 about heart flutter/palpitations); attributes pain directly to workload/anxiety attacks/nervousness not directly stated for pain occurrence; 'consistently localized' assumed; resolution as 'context-dependent exclusive to anxiety' fabricated from misread. Multiple hallucinated/misattributed facts, score 2.",
+    "relevance": "Directly structures response around quality, duration, occurrence (triggers), resolution as per question; includes med relief as characteristic but minor tangent; no major off-topic content, score 4."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer partially covers basic quality and duration but introduces significant factual errors and hallucinations by misattributing pain triggers to anxiety attacks and stress instead of specific situational contexts, resulting in low correctness, completeness, and faithfulness."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer identifies the COVID-19 swab test with citation [D-53], which Generated matches exactly. For rationale, Gold emphasizes epidemiological context (household transmission from husband [P-19], quote [D-53], self-isolation [D-53,D-54], and influenza as secondary after no flu shot). Generated correctly notes the test and quote [D-53], mentions husband as exposure source aligning with epi context, but shifts emphasis to symptoms ([P-1]) as primary driver and omits self-isolation/flu shot details. No major contradictions, but minor reweighting of factors and omission of some specifics.",
+    "completeness": "Gold key points: 1) COVID swab [D-53] - covered; 2) Household transmission (husband symptoms past week [P-19]) - partially (mentions husband, no citation/duration); 3) Quote prioritizing COVID [D-53] - covered; 4) Self-isolate instructions [D-53,D-54] - missed; 5) Urgency for containment - implied but not explicit; 6) Influenza secondary, post flu shot info [P-53,D-54] - missed. Covers test and core rationale quote/exposure (~60-70%), misses ~30-40%.",
+    "faithfulness": "Test and quotes [D-53] verifiable in transcript. Symptoms [P-1] accurate. Inference of infection via husband grounded in [D-19,P-19,D-53]. However, repeated mentions of 'Knowledge Graph' confirming test and linking symptoms to COVID are not in transcript (hallucinated, unverifiable). Other claims grounded, but KG introduces multiple fabrications.",
+    "relevance": "Generated directly structures response around the two-part question (test + rationale prioritizing over influenza), uses bullets for clarity, no off-topic content or tangents despite minor extraneous KG references."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 3,
+    "relevance": 5
+  },
+  "average_score": 3.75,
+  "summary": "The Generated Answer is mostly accurate and relevant but incomplete in covering self-isolation and influenza details from the Gold Answer, with some hallucinated references to a non-existent Knowledge Graph reducing faithfulness."
+}

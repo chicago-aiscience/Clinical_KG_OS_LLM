@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer correctly identifies stuffy nose (on/off), runny nose for 1 week, initially stuffy now running, discharge 'mostly clear' [P-5], and explicit denials of cough [P-4], post-nasal drip [P-6], sore throat/SOB/fevers/chills [P-7], loss of taste/smell [P-16]. Generated Answer accurately reports nasal symptoms and progression but incorrectly states discharge character is not specified (contradicts [P-5]), and claims denials lack explicit context despite clear doctor questions and patient 'No' responses in transcript; also includes minor extraneous doctor summary. Significant contradictions on key facts warrant score of 2.",
+    "completeness": "Gold key points: nasal symptoms (stuffy on/off, runny 1wk [P1-3]), clear discharge [P5], denied cough [P4], post-nasal [P6], sore throat etc [P7], loss taste/smell [P16]. Generated covers nasal symptoms (~50%) but entirely misses/negates discharge character and all specific denied symptoms (claims unconfirmable), covering <50% overall. Score 2.",
+    "faithfulness": "Generated nasal symptoms verifiable [P1,P3]; doctor summary [D39] ok. But 'discharge not specified' hallucinates absence when directly stated 'mostly clear' [P5:D5-P5]; denials cited [P4,P14,P16] but falsely claims 'context missing' despite preceding D questions [D4 cough, D6 post-nasal, D7 sore throat, D16 taste/smell] explicitly in transcript. Multiple ungrounded claims. Score 2.",
+    "relevance": "Directly structures response into reported symptoms, discharge character, denied symptoms matching question's three parts; minor tangent on doctor's viral summary but focused. Score 4."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer correctly captures nasal symptoms but has significant errors and hallucinations by denying the presence of clear discharge description and explicit denial contexts that are directly verifiable in the transcript, resulting in low correctness, completeness, and faithfulness."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The answer correctly notes the patient had nasal congestion (“stuffy nose”) and rhinorrhea for ~1 week and that it was initially stuffy then “mostly running” (matches [P-1], [P-2], [P-3]). However, it incorrectly states the discharge character was not specified; the transcript explicitly says it was “mostly clear” ([P-5]). It also incorrectly claims the transcript does not explicitly list denials of sore throat, cough, post-nasal drip, and loss of taste/smell due to “missing context”; in fact, the transcript clearly shows denials of cough ([P-4]), back-of-throat drainage/post-nasal drip ([P-6]), sore throat/SOB/fever/chills ([P-7]), and loss of taste/smell ([P-16]). These are major factual errors/contradictions relative to the Gold Answer.",
+    "completeness": "Key points from the Gold Answer covered: nasal congestion + runny nose for one week; progression from stuffy to mostly running. Key points missed/incorrect: discharge described as mostly clear; explicit denials of cough, post-nasal drip/back-of-throat drainage, sore throat, SOB, fever/chills, and loss of taste/smell. Also omits mild fatigue (not required by the question but present in Gold Answer) and other pertinent negatives (not required by the question). Overall coverage of the asked elements is well under 50%.",
+    "faithfulness": "The response is not well-grounded in the transcript because it denies the presence of clearly stated information (e.g., “mostly clear” discharge [P-5] and multiple explicit symptom denials [P-4], [P-6], [P-7], [P-16]). While it does not fabricate new symptoms, it makes multiple claims that key details are “not specified” when they are explicitly present, which is a significant faithfulness failure.",
+    "relevance": "It is structured to address exactly what was asked (nasal symptoms, discharge character, and denied related symptoms). However, much of the content is devoted to incorrectly stating that information is missing, which reduces usefulness but remains on-topic."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The answer is on-topic and captures the basic congestion/rhinorrhea timeline, but it incorrectly claims key details are absent when the transcript explicitly documents clear discharge and several denied related symptoms."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "- Sputum: Transcript clarifies sputum was “yellow custard” with “little spots of red” (blood-tinged) [P-6]. The generated answer describes it as “red…gunk,” which overstates redness and omits the key yellow/color/appearance description. This is a clinically meaningful inaccuracy relative to the Gold Answer.\n- Chest pain: Correctly notes right-sided pain [P-17], but does not state it is constant/dull and pleuritic (worse with cough/deep breath), which are key features.\n- Systemic symptoms: Correctly includes fever/feeling off and chills (esp. last two days) [P-5, P-9].\n- “Raw” symptom: The transcript specifies a sore/raw throat after a lot of coughing [P-15]; the generated answer implies the chest felt raw, which is inaccurate.",
+    "completeness": "Compared with the Gold Answer, the generated answer includes only some key elements:\n- Included: productive cough with blood-tinged sputum (partially, but missing yellow custard), right-sided chest pain (location only), fever, chills.\n- Missing major required details: sputum’s yellow “custard” appearance; that yellow + red spots started together on Sunday; chest pain quality (dull), constancy/at rest, and worsening with coughing/deep breathing; subjective fever details (started Monday, unmeasured, persisted until visit); mild dyspnea on exertion; prior runny nose resolved; no weight loss.\nOverall, it captures <50% of the Gold Answer’s key points.",
+    "faithfulness": "Most points are grounded in cited transcript lines (right-sided pain [P-17], chills [P-9], fever/feeling off [P-5]). However:\n- The sputum characterization as primarily “red gunk” is not faithful to the clarified description (yellow custard with red spots) [P-6].\n- The “raw chest” implication is not supported; it was the throat that felt raw [P-15].\nThus there are multiple distortions/misinterpretations beyond minor omissions.",
+    "relevance": "The answer stays focused on the asked symptom categories (sputum, chest pain, systemic symptoms) and adds related symptoms (cough, raw throat) without major tangents. It is relevant but under-detailed for what the question requested."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 2,
+    "faithfulness": 3,
+    "relevance": 5
+  },
+  "average_score": 3.25,
+  "summary": "The generated answer is on-topic and captures fever/chills and right-sided pain, but it omits many key requested details and mischaracterizes sputum color/appearance and the location of the “raw” symptom."
+}

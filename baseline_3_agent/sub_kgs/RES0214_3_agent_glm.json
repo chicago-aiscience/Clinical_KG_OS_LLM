@@ -1,0 +1,228 @@
+{
+  "nodes": [
+    {
+      "id": "N_001",
+      "text": "Fever",
+      "type": "SYMPTOM",
+      "evidence": "I've had this terrible fever for the past three days",
+      "turn_id": "P-1"
+    },
+    {
+      "id": "N_002",
+      "text": "Stuffy nose",
+      "type": "SYMPTOM",
+      "evidence": "I had a stuffy nose",
+      "turn_id": "P-1"
+    },
+    {
+      "id": "N_003",
+      "text": "Sore throat",
+      "type": "SYMPTOM",
+      "evidence": "I had a sore throat",
+      "turn_id": "P-1"
+    },
+    {
+      "id": "N_004",
+      "text": "Muscle ache",
+      "type": "SYMPTOM",
+      "evidence": "there has been some muscle ache",
+      "turn_id": "P-13"
+    },
+    {
+      "id": "N_005",
+      "text": "COVID-19",
+      "type": "DIAGNOSIS",
+      "evidence": "do you think I have covid",
+      "turn_id": "P-53"
+    },
+    {
+      "id": "N_006",
+      "text": "Influenza",
+      "type": "DIAGNOSIS",
+      "evidence": "it's also a possibility it might be influenza",
+      "turn_id": "D-54"
+    },
+    {
+      "id": "N_007",
+      "text": "Cholecystectomy",
+      "type": "MEDICAL_HISTORY",
+      "evidence": "I had my gallbladder taken out five years ago",
+      "turn_id": "P-31"
+    },
+    {
+      "id": "N_008",
+      "text": "Pre-diabetes",
+      "type": "MEDICAL_HISTORY",
+      "evidence": "I'm pre diabetic",
+      "turn_id": "P-33"
+    },
+    {
+      "id": "N_009",
+      "text": "Covid swab",
+      "type": "PROCEDURE",
+      "evidence": "we'll be ordering a covid swab",
+      "turn_id": "D-53"
+    },
+    {
+      "id": "N_010",
+      "text": "Throat",
+      "type": "LOCATION",
+      "evidence": "sore throat",
+      "turn_id": "P-1"
+    },
+    {
+      "id": "N_011",
+      "text": "Neck",
+      "type": "LOCATION",
+      "evidence": "any neck stiffness",
+      "turn_id": "D-7"
+    },
+    {
+      "id": "N_012",
+      "text": "Muscles",
+      "type": "LOCATION",
+      "evidence": "muscle ache",
+      "turn_id": "P-13"
+    },
+    {
+      "id": "N_013",
+      "text": "Multivitamins",
+      "type": "TREATMENT",
+      "evidence": "I just take multivitamins",
+      "turn_id": "P-40"
+    },
+    {
+      "id": "N_014",
+      "text": "Penicillin",
+      "type": "ALLERGY",
+      "evidence": "what happens when you take penicillin? Um I get a rash",
+      "turn_id": "P-37"
+    },
+    {
+      "id": "N_015",
+      "text": "Husband_Current_Illness",
+      "type": "FAMILY_HISTORY",
+      "evidence": "my husband has also been experiencing similar symptoms for the past week",
+      "turn_id": "P-19"
+    },
+    {
+      "id": "N_016",
+      "text": "Alcohol_Use",
+      "type": "SOCIAL_HISTORY",
+      "evidence": "I drink once once in a while",
+      "turn_id": "P-44"
+    },
+    {
+      "id": "N_017",
+      "text": "Marijuana_Use",
+      "type": "SOCIAL_HISTORY",
+      "evidence": "I've tried marijuana before, just like edibles",
+      "turn_id": "P-47"
+    },
+    {
+      "id": "N_018",
+      "text": "Glucose_Monitoring",
+      "type": "PROCEDURE",
+      "evidence": "checking my glucose levels",
+      "turn_id": "P-33"
+    }
+  ],
+  "edges": [
+    {
+      "source_id": "N_001",
+      "target_id": "N_005",
+      "type": "INDICATES",
+      "evidence": "fever and sore throat... rule out covid",
+      "turn_id": "D-53"
+    },
+    {
+      "source_id": "N_002",
+      "target_id": "N_005",
+      "type": "INDICATES",
+      "evidence": "fever and sore throat... rule out covid",
+      "turn_id": "D-53"
+    },
+    {
+      "source_id": "N_003",
+      "target_id": "N_005",
+      "type": "INDICATES",
+      "evidence": "fever and sore throat... rule out covid",
+      "turn_id": "D-53"
+    },
+    {
+      "source_id": "N_003",
+      "target_id": "N_006",
+      "type": "DIFFERENTIAL_DIAGNOSIS",
+      "evidence": "it's also a possibility it might be influenza",
+      "turn_id": "D-54"
+    },
+    {
+      "source_id": "N_004",
+      "target_id": "N_012",
+      "type": "LOCATED_AT",
+      "evidence": "some muscle ache",
+      "turn_id": "P-13"
+    },
+    {
+      "source_id": "N_003",
+      "target_id": "N_010",
+      "type": "LOCATED_AT",
+      "evidence": "sore throat",
+      "turn_id": "P-1"
+    },
+    {
+      "source_id": "N_009",
+      "target_id": "N_005",
+      "type": "RULES_OUT",
+      "evidence": "ordering a covid swab",
+      "turn_id": "D-53"
+    },
+    {
+      "source_id": "N_001",
+      "target_id": "N_015",
+      "type": "RELATED_TO",
+      "evidence": "my husband has also been experiencing similar symptoms",
+      "turn_id": "P-19"
+    },
+    {
+      "source_id": "N_003",
+      "target_id": "N_015",
+      "type": "RELATED_TO",
+      "evidence": "my husband has also been experiencing similar symptoms",
+      "turn_id": "P-19"
+    },
+    {
+      "source_id": "N_008",
+      "target_id": "N_013",
+      "type": "MANAGED_BY",
+      "evidence": "pre diabetic... take multivitamins",
+      "turn_id": "P-33"
+    },
+    {
+      "source_id": "N_008",
+      "target_id": "N_018",
+      "type": "MANAGED_BY",
+      "evidence": "checking my glucose levels",
+      "turn_id": "P-33"
+    }
+  ],
+  "_meta": {
+    "pass1": {
+      "nodes": 14,
+      "edges": 8
+    },
+    "pass3": {
+      "nodes": 18,
+      "edges": 11
+    },
+    "critique_length": 2721
+  },
+  "_usage": {
+    "prompt_tokens": 10483,
+    "completion_tokens": 16160,
+    "pass1_nodes": 14,
+    "pass1_edges": 8,
+    "pass3_nodes": 18,
+    "pass3_edges": 11
+  }
+}

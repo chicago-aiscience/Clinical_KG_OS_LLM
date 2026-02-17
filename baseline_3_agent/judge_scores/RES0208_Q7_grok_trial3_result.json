@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer categorizes symptoms into onset (SOB, fatigue/rundown/tired/weakness/reduced appetite/laborious breathing/generalized aches), day before (subjective fever), morning (loss of taste/smell, new onset), and emerging at consult (cough/sore throat/headaches). Generated Answer correctly identifies onset SOB/fatigue/weakness, yesterday fever, and emerging cough/sore throat/loss of taste, but minor discrepancies include placing loss of taste in 'just beginning' instead of morning/recent, omitting smell/aches/appetite/headaches/breathing details/newness, and referencing unprovided 'knowledge graph'/COVID alignment not central to timeline.",
+    "completeness": "Covered: onset SOB/fatigue/weakness (~50% of onset points), fever (100%), loss of taste/cough/sore throat (~70% of recent/emerging). Missed: rundown/super tired explicitly, reduced appetite detail, laborious breathing description, generalized aches, diminished smell, sensory newness [P-5], headaches [P-11/12], dry cough nuance [P-8]. Covers ~60-70% of Gold key points.",
+    "faithfulness": "Most claims verifiable: SOB/fatigue [P-1/2], weakness [P-2], fever [P-4/D-36], taste [P-4], cough/sore [P-7/9/D-36]. Minor unverifiable/hallucinated: 'medical knowledge graph' and COVID links not in transcript; 'physical limitations' vague but inferable; doctor's 'fevers' plural minor. Plausible but adds external inference.",
+    "relevance": "Directly reconstructs timeline in structured phases matching question's onset/recent/just emerging framing; minor extra COVID/knowledge graph but focused on symptoms/timeline with citations."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 3,
+    "relevance": 5
+  },
+  "average_score": 3.75,
+  "summary": "The Generated Answer provides a mostly accurate and relevant timeline reconstruction but misses several key symptoms and introduces minor ungrounded references, reducing completeness and faithfulness."
+}

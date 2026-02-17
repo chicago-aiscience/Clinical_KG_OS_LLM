@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer lists specific denied symptoms: cough [D-15/P-15], runny nose [D-16/P-16], headaches [D-17/P-17], chest pain [D-18/P-18], loss of smell [D-19/P-19], fever [D-23/P-23], chills/night sweats [D-24/P-24], plus prior breathing issues [D-11/P-11], sick contacts [D-12/P-12], travel [D-13/P-13]. Generated Answer incorrectly lists mostly positive symptoms (sore throat, swallowing difficulties, breathing issues, muscle ache) as screened negatives from a non-existent 'knowledge graph,' only partially noting smell loss denial. It fabricates KG-based links for differentials (e.g., smell loss distinguishing COVID/mono), contradicting Gold's note of no explicit differentials discussed and inferred narrowing (e.g., from URI). Significant factual errors and contradictions.",
+    "completeness": "Gold key points: 7+ specific denied symptoms with citations, additional denials (prior breathing, contacts, travel), no explicit differentials but implications (URI narrowing, chest pain relevance, fever/chills not ruling out COVID, mono history). Generated covers only smell loss denial (~1/10+ points) and vaguely touches mono history, missing cough, runny nose, headaches, chest pain, fever, chills, etc. Covers <20% of key points.",
+    "faithfulness": "Generated hallucinates 'knowledge graph' not in transcript, falsely attributes screened symptoms (positives like sore throat as screened set), invents KG links (e.g., smell loss INDICATES COVID, distinguishes mono). Partial ground: correct quote [P-19] on smell denial, COVID suspicion [D-43], mono history [P-5]. Multiple hallucinated facts and unverifiable claims.",
+    "relevance": "Generated structures response around screened negative symptoms (smell loss) and differentials (COVID vs. mono), matching question format, but deviates with invented KG/content and ignores most negatives. Partially relevant with some off-topic fabrication."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.0,
+  "summary": "The Generated Answer is significantly inaccurate and incomplete, hallucinating a non-existent knowledge graph while missing most denied symptoms and fabricating differential reasoning."
+}

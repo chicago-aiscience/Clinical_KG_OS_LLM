@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer lists 6 specific conditions ruled out (trauma, cardiac angina, infection, asthma, dyspnea, inherited arrhythmia) with precise doctor questions and patient denials. Generated Answer only partially covers cardiac issues under 'Heart Disease' but inaccurately attributes patient-volunteered info (e.g., family history [P-8], smoking [P-13/14], pain relief [P-6]) as doctor inquiries; includes Anxiety, which is not ruled out and not in Gold; mischaracterizes screening questions with 'likely/probably asked' hallucinations; significant errors and contradictions.",
+    "completeness": "Gold key points: 6 conditions with specific D/P citations. Generated covers ~partial cardiac (angina/arrhythmia) but misses trauma [D-5], infection [D-12/27], asthma [D-23/24], dyspnea [D-19]; adds unrelated Anxiety; covers <30% of key points.",
+    "faithfulness": "Many claims not grounded: 'doctor probably asked about family history/lifestyle/smoking response' but these were patient-initiated [P-8,13,6]; doctor did ask some stress [D-15] and palpitations [D-20] but citations misattributed; 'likely' phrases indicate speculation/hallucination; multiple unverifiable attributions.",
+    "relevance": "Attempts structure of conditions + inquiries but focuses on wrong ones (Anxiety not ruled out, incomplete heart disease); partially addresses screening/ruled out via responses but deviates with inaccuracies and extras."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "Generated Answer has significant factual inaccuracies, poor coverage of Gold's ruled-out conditions, multiple hallucinations in attributing questions to the doctor, and only partial relevance."
+}

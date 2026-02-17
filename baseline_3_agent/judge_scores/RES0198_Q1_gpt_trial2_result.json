@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the key nasal symptoms (stuffy nose and runny nose for ~1 week; initially more congestion then mostly running) consistent with [P-1, P-2, P-3]. However, it contains major factual errors versus the Gold Answer/transcript: it incorrectly states the discharge character is not specified, despite the patient saying it was “mostly clear” [P-5]. It also incorrectly claims the transcript does not explicitly list denials of sore throat, cough, post-nasal drip, or loss of taste/smell; these are explicitly denied in-context in the transcript (cough [P-4], back-of-throat drainage/post-nasal drip [P-6], sore throat/SOB/fever/chills [P-7], loss of taste/smell [P-16]).",
+    "completeness": "Covers: nasal congestion + rhinorrhea, duration (~1 week), and evolution from stuffy to mostly running.\nMisses (key question elements): discharge character (clear) and essentially all explicitly denied related symptoms (cough, sore throat, post-nasal drip, loss of taste/smell; also SOB/fever/chills).\nAdds minor non-asked content: clinician impression of viral illness.\nOverall, it provides only a minority of the required key points.",
+    "faithfulness": "Some statements are grounded with correct citations ([P-1], [P-3]). However, it repeatedly asserts that information is “not specified” or “context is missing,” when the transcript explicitly provides that information (clear discharge [P-5]; explicit symptom denials in [P-4], [P-6], [P-7], [P-16]). These are not just omissions but incorrect claims about what the transcript contains, reducing faithfulness.",
+    "relevance": "The answer is structured to address the question (nasal symptoms, discharge character, denied related symptoms) and remains on-topic. However, it fails to actually provide correct content for discharge character and denied symptoms, so it only partially addresses the question."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "Captures the presence and course of congestion/rhinorrhea but wrongly claims key transcript details (clear discharge and explicit denials) are absent, making it incomplete and inaccurate."
+}

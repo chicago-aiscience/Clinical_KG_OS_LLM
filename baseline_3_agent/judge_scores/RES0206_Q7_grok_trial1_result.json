@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer accurately captures the baseline manageability with puffers [P-1] and the acute symptoms over 3 days (increased cough, green-yellow sputum, hemoptysis, worsened SOB [P-1]), and worsening trend. However, it has minor discrepancies like inferring severity from inability to manage with puffers and doctor's interventions [D-43] without directly referencing the patient's statement of 'worst that I've had' [P-3], and introduces unsubstantiated 'knowledge graph' interpretations not aligned with Gold's fact-based summary.",
+    "completeness": "Key points from Gold covered: baseline with puffers [P-1], 3-day symptoms (cough, sputum, hemoptysis, dyspnea [P-1]), worsening. Missed: detailed baseline (lifestyle [P-28], rescue inhaler frequency [P-26], routine dog walks [P-4]), exercise tolerance decline specifics [P-4], possible fever [P-9], explicit progressive worsening quote [P-2], 'worst I've had' [P-3], prior exacerbations worsened by illness [P-3], ED visits twice in 3 years without hospitalization [P-5,P-6]. Covers ~60% of key points.",
+    "faithfulness": "Most claims verifiable in transcript with accurate citations (e.g., symptoms [P-1], ER visits [P-5]). However, multiple hallucinations: repeated references to non-existent 'knowledge graph' and [SYMPTOM] for sputum/hemoptysis/SOB interpretations; infers severity from doctor's plan [D-43] beyond patient's words. Some claims not grounded in transcript.",
+    "relevance": "The answer directly addresses symptom evolution from baseline to acute presentation over 3 days, confirms worsening, and compares to prior exacerbations via ER history. Minor off-topic elements like knowledge graph, but overall focused on the question."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 3.25,
+  "summary": "The Generated Answer is mostly correct and relevant but incomplete in covering Gold's key details and faithfulness suffers from hallucinated knowledge graph references."
+}

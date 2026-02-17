@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Local symptoms: Mostly accurate—redness, tenderness, and localized skin soreness (not the joint) are correctly extracted and consistent with [P-1], [P-3], [P-6]. However, it omits other correct local details from the Gold Answer (e.g., “stuck pretty good,” behind-knee crease detail, and explicit denial of bullseye/target rash).\nSystemic symptoms: Incorrect. The generated answer states the doctor did not screen for fever, joint pain, or headaches, but the transcript clearly shows screening for joint pain [D-7], fever/feeling ill [D-8], and headaches [D-19], all denied by the patient [P-7], [P-8], [P-19]/[P-20]. This is a major factual error relative to the Gold Answer.",
+    "completeness": "Covers some key local symptoms (redness, tenderness, soreness; skin not joint). Misses: (1) the tick being “stuck pretty good,” (2) explicit location phrasing (crease/where it bends), (3) explicit denial of bullseye/target rash/larger circle rash.\nSystemic portion is largely missing/incorrect: it fails to report the doctor’s screening for joint pain, fever/illness, and headaches and the patient’s denials. Overall, well under 50% of Gold key points.",
+    "faithfulness": "Local symptom statements are grounded and appropriately cited.\nHowever, the claim that the doctor did not screen for fever/joint pain/headaches is directly contradicted by the transcript (those questions are explicitly asked). This is not just unverifiable—it is false given the provided text, representing a major unfaithful statement.",
+    "relevance": "The response is aimed at the right target (local bite-site symptoms and systemic screening), but it fails to answer the systemic part of the question by incorrectly asserting those symptoms were not screened for. Mostly on-topic but does not fulfill the asked systemic negatives."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "Accurately captures several local bite-site symptoms but makes a major error by incorrectly claiming the doctor did not screen for fever, joint pain, and headaches, leading to poor correctness, completeness, and faithfulness."
+}

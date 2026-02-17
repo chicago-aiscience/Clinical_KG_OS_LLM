@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer explains how family history (father's allergies [P-33], cousin's asthma [P-30]), brother's recent cold [P-39, D-58], and isolated farm/homeschool living situation [P-41-44, P-42, P-45, P-48] collectively point to intra-household viral transmission amid atopy risk, with allergies not yet seasonal. Generated Answer incorrectly diagnoses 'common cold' (not in Gold or explicitly diagnosed), partially notes brother's cold and her allergies, but fabricates that transcript lacks father/cousin/farm/homeschool/COVID info (directly contradicted by citations), missing isolation context and family details; significant contradictions on transcript content and incomplete relation to symptoms.",
+    "completeness": "Gold key points: father's allergies, cousin's asthma, allergies not started, brother's cold ~2 weeks, farm life outside London, homeschool during COVID, family all home-bound, only dog (low animal exposure), implying household transmission. Generated covers brother's cold and her allergies partially (~20-30%), misses family history specifics, all isolation/farm/homeschool details, seasonality distinction, and collective intra-household conclusion.",
+    "faithfulness": "Generated hallucinates major absence of transcript info on father allergies [P-33 present], cousin asthma [P-30 present], farm [P-43-44], homeschool [P-41, COVID context], etc.; misattributes 'common cold diagnosis confirmed' to [D-58] (D-58 only summarizes, no diagnosis); some accurate cites like symptoms [P-1,P-4,D-58] and brother [D-58], but multiple unverifiable/false claims about transcript content.",
+    "relevance": "Question asks for collective relation of specified factors (family hx allergies/asthma, brother cold, farm/homeschool COVID) to symptoms; Generated partially addresses brother cold and allergies to suggest cold, but denies existence of other queried elements, adds unasked diagnosis, and ignores isolation context, making it largely tangential."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 1,
+    "relevance": 2
+  },
+  "average_score": 1.75,
+  "summary": "Generated Answer has significant factual errors and hallucinations about transcript content, covers few key points from Gold, and fails to address the collective relation of specified risk factors to symptoms."
+}

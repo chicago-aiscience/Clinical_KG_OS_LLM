@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer includes accurate facts where stated, such as teenage anxiety [P-21], reduced smoking to 5/day [P-13,14], recent academic stress [P-15,16], and chest pain onset 1.5 weeks ago [P-2,3]. However, it reverses the question's specified order (starts with anxiety instead of smoking at age 18 [P-18]), omits key details like smoking start at 18, escalation to 10/day for 2 years, 8-year anxiety gap [P-22], father's heart attack [P-8,30], and anxiety possibly returning [P-22]. It also introduces 'knowledge graph' which is not in the transcript. Core facts are correct but with minor discrepancies in timeline and omissions.",
+    "completeness": "Key points from Gold covered: teenage anxiety [P-21], smoking reduction/quit attempt [P-14], recent weeks academic stress/thesis [P-15,16], chest pain 1.5 weeks ago [P-2,3], stress as possible cause [P-8], links to anxiety [P-19,20]. Missed: smoking start age 18 [P-18], 2 years at 10 cigs/day, few months ago cut down [P-18], 8 years without anxiety [P-22], father's heart attack [P-8,30], pain noticeable when alone [P-9,29], first-time symptom [P-17]. Covers ~60-70% of key points.",
+    "faithfulness": "Most claims verifiable: anxiety teen [P-21], smoking details [P-13,14], stress [P-15,16], pain description [P-1,3,6,8], SOB self-induced [P-19], heart flutter in past anxiety [P-20]. Hallucinations: repeated 'knowledge graph' references (not in transcript), smoking 'classified as risk factor' by KG. Interpretations like 'baseline history contributing to current response' plausible but not directly stated. Some unverifiable details.",
+    "relevance": "Addresses timeline of history (anxiety, smoking, stress, pain) and relations (stress-anxiety via [P-19], stress-pain via [P-8], smoking risk), but starts with anxiety instead of smoking as per question order, includes minor extraneous KG mentions. Mostly focused on question."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 3,
+    "relevance": 4
+  },
+  "average_score": 3.5,
+  "summary": "The Generated Answer is mostly correct and relevant but incomplete in timeline details, omits key events like detailed smoking history and father's heart attack, and includes minor hallucinations referencing a non-existent knowledge graph."
+}

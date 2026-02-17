@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Step-by-step: Gold Answer specifies onset symptoms as shortness of breath, fatigue/rundown/super tired, weakness, reduced appetite, laborious breathing, and body aches (unspecified onset). Generated correctly identifies SOB, fatigue, weakness/decreased appetite as onset. Yesterday: both match on subjective fever. Morning: Gold has loss of taste and smell; Generated places loss of taste under 'just beginning' (noted as 'this morning' with citation), misses smell. Emerging: Gold has cough, sore throat, headaches; Generated has cough, sore throat, loss of taste (misplaced), misses headaches. Minor discrepancies include missing smell, aches, headaches, breathing detail, and adding knowledge graph/COVID reference not central to timeline. Core timeline facts correct, no major errors.",
+    "completeness": "Key points from Gold covered: onset SOB/fatigue/weakness/appetite (yes), laborious breathing (no), aches (no), yesterday fever (yes), morning loss of taste (yes, but grouped emerging), smell (no), newness (no), emerging cough/sore throat (yes), headaches (no). Covers major symptoms and timeline structure (SOB/fatigue onset, fever recent, taste/cough/throat emerging), misses smell, aches, headaches, details (~75-80% coverage).",
+    "faithfulness": "All cited transcript references [P-1,2,4,7,9; D-36] accurate and verifiable: e.g., P-1 SOB/fatigue couple days, P-4 fever yesterday/taste morning, P-7/9 emerging cough/throat, D-36 doctor summary. Minor hallucination: 'knowledge graph' and 'COVID-19 diagnoses' not in transcript (inferred but extra). No other fabrications; claims grounded.",
+    "relevance": "Generated directly reconstructs timeline in three phases matching question (onset couple days, yesterday fever, consultation emerging), lists symptoms with citations, no off-topic content despite minor COVID mention tied to symptoms."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 4,
+    "relevance": 5
+  },
+  "average_score": 4.25,
+  "summary": "The Generated Answer is mostly accurate and complete in reconstructing the symptom timeline, with strong relevance and faithfulness to the transcript, marred only by minor omissions, misplacement of loss of taste, and extraneous knowledge graph reference."
+}

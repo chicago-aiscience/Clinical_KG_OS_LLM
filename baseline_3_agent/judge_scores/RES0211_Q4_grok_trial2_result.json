@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer claims the doctor systematically screened only for asthma, misattributing the screening to the summary in [D-58] rather than the direct question in [D-29]; it incorrectly cites [P-1] (initial symptoms) as Jessica's confirmation of no asthma instead of [P-29]; introduces a hallucinated 'knowledge graph'; misinterprets Claritin usage and adds unmentioned viral diagnosis details; completely ignores other Gold Answer conditions like night sweats [D-9], productive cough [D-5/D-6], allergies/EpiPen [D-18/D-21], family asthma/eczema, rashes [D-10], GI [D-11/12], and joints [D-13], resulting in significant factual errors and contradictions with the Gold Answer's comprehensive list.",
+    "completeness": "Gold Answer key points: night sweats (D-9/P-9), productive cough (D-5/6/P-5/6), severe allergies (D-18/P-18/19), no EpiPen (D-21/P-21), personal asthma (D-29/P-29), family asthma (P-30/31), family eczema (D-32/33/P-33), rashes (D-10/P-10), GI symptoms (D-11/12/P-11/12), joint pain (D-13/P-13). Generated covers only personal asthma partially (~10% of points), misses all others (<20% coverage).",
+    "faithfulness": "Many claims unverifiable or wrong: [P-1] not about asthma denial; [D-58] is summary, not screening; 'knowledge graph' and viral URI diagnosis not in transcript; Claritin differentiation plausible but stretched; symptom descriptions grounded [P-1/P-4/P-7/P-9] but overall multiple hallucinations and inaccurate citations.",
+    "relevance": "Directly addresses asthma screening and some narrowing responses (relevant to part of question), but ignores systematic screening for multiple listed conditions (e.g., eczema, EpiPen allergies, night sweats), adds off-topic viral diagnosis and exposure details."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.0,
+  "summary": "The Generated Answer inaccurately and incompletely covers only one condition (asthma) with errors and hallucinations, failing to address the full scope of systematic screenings in the Gold Answer."
+}

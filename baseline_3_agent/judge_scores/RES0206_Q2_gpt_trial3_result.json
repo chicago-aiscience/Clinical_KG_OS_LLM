@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly states that the transcript does not specify inhaler frequency and does not explain why she is not on antihypertensives. In fact, the patient clearly states she has one inhaler she uses every day regardless of symptoms and a second inhaler she uses as needed, about once every two weeks [P-26]. She also explicitly explains she is not taking BP meds because she and her doctor discussed it and she chose to try lifestyle changes first, with weight loss and more walking, and reports her BP is currently “OK” [P-23, P-24]. It also omits that she is not on home oxygen [P-1]. Thus, multiple key points are wrong by contradiction/denial of available transcript content.",
+    "completeness": "Key points in the Gold Answer largely missing: (1) two inhalers with distinct roles (maintenance daily; rescue PRN) and the PRN frequency ~once every two weeks; (2) no home oxygen; (3) hypertension is managed via lifestyle modification rather than meds; (4) specific lifestyle strategies (weight loss, walking); (5) patient reports BP currently OK; (6) clinician encouragement to continue lifestyle changes; (7) additional lifestyle factors (quit smoking, rare alcohol) and baseline COPD well-managed. The Generated Answer only notes she uses inhalers and has HTN, without the required frequencies or rationale. Coverage is far below 50%.",
+    "faithfulness": "The answer mostly refrains from inventing details, but it repeatedly claims the transcript lacks information that is actually explicitly present (inhaler frequency and rationale for no antihypertensives). This is not a hallucination of new facts, but it is unfaithful to the source because it contradicts/ignores clear transcript statements.",
+    "relevance": "It is generally on-topic (COPD meds/strategies, inhaler frequency, HTN meds and rationale), but it fails to provide the requested details and incorrectly says they are not available. Still, no major irrelevant tangents."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.0,
+  "summary": "The Generated Answer is on-topic but largely incorrect and incomplete because it denies or omits multiple explicit transcript details, especially inhaler usage frequency and the lifestyle-based reason she is not taking antihypertensive medication."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the patient’s first symptom as a stuffy nose and correctly states that the fever has been present for ~3 days at presentation. However, it places the sore throat as developing after the fever (“subsequently developed a sore throat”), which contradicts the transcript and Gold Answer: the patient reports the sore throat (and stuffy nose) occurred before the fever (“just before that…stuffy nose…sore throat”) and is still ongoing. The husband’s timeline (“similar symptoms for the past week”) is correctly captured, but the answer’s implication that her illness “may…be a direct result of her husband’s prior exposure” is speculative and not explicitly supported in the transcript.",
+    "completeness": "Key Gold Answer points covered: stuffy nose first; fever present for 3 days; husband has similar symptoms for ~1 week. Key points missed or inaccurately represented: sore throat timing (should be before/around fever onset and persistent); muscle aches should be explicitly dated to the past 2–3 days and described as concurrent with fever; the explicit comparison that husband’s illness began ~4 days before the patient’s fever onset (staggered household onset) is not clearly stated. Overall coverage is partial with an important sequencing error.",
+    "faithfulness": "Most statements are grounded in the transcript (stuffy nose first; fever 3 days; sore throat present; muscle aches present; husband sick ~1 week). However, the statement suggesting her illness may be a “direct result” of her husband’s exposure goes beyond the transcript (which notes similar symptoms and suggests COVID as a possibility) and is not directly verifiable. Also, the sore-throat-after-fever sequence is not faithful to the transcript.",
+    "relevance": "The answer stays focused on symptom chronology and compares to the husband’s onset, which directly addresses the question, with no major irrelevant tangents."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 4,
+    "relevance": 5
+  },
+  "average_score": 3.75,
+  "summary": "Relevant and mostly grounded, but it contains a key chronology error (sore throat placed after fever) and omits/understates important timing details (muscle-ache timing and clearer husband-vs-patient onset comparison)."
+}

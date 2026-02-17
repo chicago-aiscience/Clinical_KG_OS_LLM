@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer fundamentally fails to address the prompt's requirement to list symptoms the patient denied. Instead, it lists symptoms the patient confirmed (shortness of breath, cough, fever). It mentions the denial of frequent seizures, but misses the entire clinical screen for cardiac, gastrointestinal, and upper respiratory symptoms that were actually denied. It also mentions 'stroke risk' for pulmonary embolism, which is medically inaccurate in this context.",
+    "completeness": "The Generated Answer misses almost all key points from the Gold Answer. It fails to list chest pain, feeling faint, loss of taste/smell, sore throat, runny nose, sick contacts, travel, nausea, vomiting, belly pain, diarrhea, and sputum production—all of which were specific negatives in the transcript and the Gold Answer.",
+    "faithfulness": "While the symptoms mentioned (SOB, cough, fever) are in the transcript, the Generated Answer mischaracterizes them as things the patient denied or fails to distinguish them from the negative screens requested. The mention of 'stroke risk' in relation to pulmonary embolism is a hallucinated/incorrect clinical association.",
+    "relevance": "The Generated Answer is largely irrelevant to the specific question asked. The question specifically requests symptoms screened for that the patient *denied* and how those *negative findings* address differentials. The Generated Answer focuses almost exclusively on positive findings and their differentials, ignoring the logic of the clinical 'rule-out' process requested by the prompt. Only one minor denial (seizure frequency) is mentioned, which was not the primary focus of the clinical screen for the acute respiratory issue. It does not address the question as asked. It focuses on symptoms the patient has, not the ones they denied. It misses the doctor's screening for cardiac, GI, and URI symptoms entirely. It also incorrectly associates stroke with PE in its differential section. It misses the entire point of the prompt which was about 'negative findings'. It doesn't list the negatives at all (chest pain, GI symptoms, URI symptoms, etc.)."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 2
+  },
+  "average_score": 1.5,
+  "summary": "The Generated Answer fails to identify the negative findings requested, focusing instead on the patient's positive symptoms and providing an incomplete and partially inaccurate clinical analysis."
+}

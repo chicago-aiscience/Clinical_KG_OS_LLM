@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer details the doctor's direct inquiry about family history of respiratory problems [D-28] in response to the cough, with mother reporting grandparents' asthma [P-28] and differentiating via prior workup and absence of SOB/wheezing even with activity, plus current symptoms like dry cough and runny nose vs. prior shorter issues. Generated Answer correctly notes grandparents' asthma [P-28] and differentiation via no SOB/wheezing or SOB even with activity, but inaccurately claims family history triggered the inquiry and prioritization of lung/heart exam [D-1], which precedes the inquiry by ~30 exchanges; also misattributes statement to 'patient' instead of mother. Some factual errors but core connection and differentiation points correct.",
+    "completeness": "Gold key points: doctor's inquiry [D-28] relevant to cough; grandparents asthma [P-28]; doctor summary [D-30]; differentiation (worked up negative, no SOB/wheeze with activity [P-28]); current dry cough [D-5/6 etc.], clear runny nose, no wheeze/SOB; prior issues shorter/no dry cough [P-24]. Generated covers: family asthma, inquiry connection (inaccurately), differentiation via workup/no SOB/wheeze [P-28], current dry cough [P-2]. Misses: runny nose, prior history contrast, doctor's summary, inquiry details/mom's role, explicit cough relevance. Covers ~60% of key points.",
+    "faithfulness": "Claims grounded: grandparents asthma [P-28], no SOB/wheezing with activity/workup [P-28], dry cough [P-2/P-5/6]. Citations accurate. Unverifiable/hallucinated: family history 'triggering' differential leading to inquiry/exam prioritization 'because of' history [D-1 before D-28]; attributes to 'patient' not mom. Causal link and speaker not in transcript, but other claims verifiable/plausible. Some not directly grounded.",
+    "relevance": "Generated directly addresses connection of family asthma to doctor's inquiry (via differential) and differentiation using symptom profile evidence (no SOB/wheeze), matching question structure with no off-topic content."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 3,
+    "relevance": 5
+  },
+  "average_score": 3.5,
+  "summary": "The Generated Answer captures the core familial asthma history and key differentiating symptoms but introduces factual errors on timing/causality of inquiry and exam, partial omissions, and minor hallucinations, while remaining highly relevant."
+}

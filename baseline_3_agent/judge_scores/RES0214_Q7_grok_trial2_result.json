@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer states stuffy nose first 'just before' fever, sore throat developed next around fever onset, fever for 3 days, muscle aches concurrent with fever for 2-3 days. Generated Answer correctly identifies stuffy nose first before other symptoms, fever next for 3 days, mentions sore throat and muscle ache, but incorrectly places sore throat as 'subsequently developed' after fever under 'current symptoms,' contradicting Gold and transcript where sore throat is mentioned alongside prior symptoms in P-1 ('I had a sore throat'). Husband timeline approximately correct (week vs 3 days fever, implying ~4 days earlier). Some factual errors in chronology but core sequence (stuffy nose -> fever) and comparison intact.",
+    "completeness": "Gold key points: stuffy nose first (covered), sore throat around fever (mentioned but timing wrong), fever 3 days after stuffy (covered), muscle aches concurrent 2-3 days (mentioned but timing not specified), husband symptoms past week (~4 days before patient's fever, staggered onset, household transmission implied). Generated covers all symptoms and husband comparison but misses precise timings for sore throat and muscle aches, and explicit staggered transmission note. Covers ~85% of key points.",
+    "faithfulness": "All claims verifiable: stuffy nose [P-1], fever 3 days [P-1], sore throat [P-1], muscle ache [P-13], husband week [P-19]. 'Subsequently developed sore throat' after fever is minor unverifiable detail/inference not directly supported (P-1 lists sore throat with stuffy before detailing fever duration), but plausible and not hallucinated; no fabricated facts.",
+    "relevance": "Answer directly describes chronological progression (numbered list), lists symptoms in order, includes husband timeline comparison, fully addresses question with no off-topic content."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 4,
+    "faithfulness": 4,
+    "relevance": 5
+  },
+  "average_score": 4.0,
+  "summary": "The Generated Answer is mostly accurate and complete but has a factual error in placing the sore throat after the fever instead of concurrent with it."
+}

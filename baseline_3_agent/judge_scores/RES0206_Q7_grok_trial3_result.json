@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer accurately captures the baseline manageability of COPD with puffers [P-1] and the acute worsening over 3 days with increased cough, green-yellow sputum, hemoptysis, and dyspnea [P-1], matching Gold's core facts. However, it omits key details like rescue inhaler frequency [P-26], routine dog walks vs. current limitation [P-4], possible fever [P-9], explicit progressive worsening [P-2], and the patient's statement that this is 'the worst' [P-3]. It infers severity as 'comparable or exceeding' prior episodes based on ER visits [P-5] but misses the explicit 'worst' claim and no prior admissions [P-5,P-6]. Addition of external 'knowledge graph' is a minor discrepancy but not contradictory. Overall, minor discrepancies with core facts correct.",
+    "completeness": "Gold key points covered: baseline manageability [P-1] (partial, misses [P-26,P-28,P-4 routine]), acute symptoms over 3 days—increased cough, sputum, hemoptysis, dyspnea [P-1] (full), worsening trend (implied via [P-1], misses explicit [P-2]), severity comparison—prior ER visits [P-5] (partial, misses 'worst ever' [P-3], no admissions [P-5], prior sick episodes [P-3]). Missed: detailed exercise tolerance decline [P-4], fever [P-9], lifestyle management [P-28]. Covers ~60-70% of key points.",
+    "faithfulness": "Most claims grounded: baseline [P-1], symptoms [P-1], ER history [P-5]. However, hallucinates 'knowledge graph' and [SYMPTOM] citations entirely absent from transcript for sputum and hemoptysis interpretation. Infers inability to manage with puffers (plausible from [P-1]) and ties severity to doctor's plan [D-43] (verifiable but tangential). Multiple unverifiable/hallucinated elements from external source.",
+    "relevance": "Directly addresses symptom evolution from baseline to acute over 3 days, confirms worsening, and compares severity to priors via ER history. Minor off-topic elements include knowledge graph references and doctor's intervention plan [D-43], but core focus aligns with question."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 3.25,
+  "summary": "The Generated Answer is mostly correct and relevant but incomplete in covering Gold's specifics, with faithfulness undermined by hallucinated knowledge graph references."
+}

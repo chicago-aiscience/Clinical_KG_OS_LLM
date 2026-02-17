@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies several present symptoms from the transcript: chest tightness with inspiration/walking [P-1], subjective breathing difficulty [P-1], and upper-airway complaints (hoarseness, increased phlegm, throat clearing) with no cough [P-11]. However, it contains a major factual error by stating: “The transcript does not contain explicit reporting or denial of fevers, night sweats, chills, weight loss, anxiety, or sweating.” This is directly contradicted by the transcript: the patient explicitly denies anxiety/sweating/impending doom [P-6], fevers [P-12], night sweats [P-13], chills [P-14], and weight loss [P-15]. It also under-specifies the chest symptom description compared with Gold (diffuse/all over [P-8], harder to get a whole breath [P-7], worse with deep breaths/getting up [P-9]).",
+    "completeness": "Present symptoms: partially covered (tightness, breathing difficulty, hoarseness/phlegm/throat clearing), but misses/understates key qualifiers (diffuse “all over,” constant/steady course, worse with deep breath/getting up from chair, and explicit “harder to get a whole breath”). Denials: only includes cough and chest pain, but misses explicit denials of anxiety, sweating/impending doom, fevers, night sweats, chills, and weight loss. Overall this is well under 80% of Gold Answer content.",
+    "faithfulness": "Most positive symptom statements are grounded in cited transcript lines. However, the claim that the transcript does not include explicit denial of several screened symptoms is not just unverifiable—it is false given [P-6] and [P-12]–[P-15]. This constitutes a significant unfaithful statement. Also, citing the clinician’s summary [D-36] as “corroboration” is less ideal but not inherently hallucinated; the main issue is the incorrect absence claim.",
+    "relevance": "The response stays focused on the asked domains (respiratory/upper airway/chest complaints and explicit denials). There are no major tangents. The main problem is omission/inaccuracy rather than off-topic content."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "Relevant but substantially incomplete, and it includes a major transcript-contradicting error by claiming several explicit denials (fever/chills/night sweats/weight loss/anxiety/sweating) were not present in the transcript."
+}

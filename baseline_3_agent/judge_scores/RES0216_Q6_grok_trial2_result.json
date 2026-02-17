@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer states assessment as asthma 'reoccurring in some capacity' at top of differential pending exam (D-35); Generated overstates as 'primary assessment is recurrence of asthma' without 'pending' qualifier (minor discrepancy). Gold notes patient does not have rescue puffers (P-17/P-18), recommends obtaining them; Generated inaccurately says patient 'utilizes rescue inhalers [P-25]' and to 'continue to have' them (factual error, as P-25 lists salbutamol but context shows no current rescue use). Cardiac ischemic lower correctly reflected (D-36). Physical exam, treatment trial, and contingency match well. Some factual errors but core points correct.",
+    "completeness": "Gold key points: (1) Assessment as top differential pending exam/findings; (2) Phys exam: quick exam + lung auscultation + possible further inv; (3) Initial: obtain rescue puffers (notes lack), trial on walks; (4) Contingency: if no help, reassess/other directions/inv; (5) Stepwise/one at a time; (6) Consult supervising doc. Generated covers: (1) assessment (partial, misses pending); (2) phys exam + lungs; (3) rescue trial on walks (misses obtaining/lack); (4) contingency reassess. Misses: pending status, further inv, stepwise phrasing, consult doc. Covers ~80% of key points.",
+    "faithfulness": "All major claims verifiable: assessment (D-35), cardiac lower (D-36), phys exam/lungs (D-35), rescue trial (D-35), contingency (D-35). Minor issues: 'utilizes rescue [P-25]' misleading as patient lacks as-needed rescue despite listing salbutamol (plausible but contextually inaccurate); 'continue' not in transcript (doctor implies providing access). No major hallucinations, mostly grounded.",
+    "relevance": "Generated Answer directly structures response to match question: overall assessment, clinical plan with exact subsections for phys exam, first-step treatment, and contingency. No off-topic content, perfectly focused."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 4,
+    "faithfulness": 4,
+    "relevance": 5
+  },
+  "average_score": 4.0,
+  "summary": "The Generated Answer is mostly accurate and complete, with strong relevance and faithfulness to the transcript, but has minor factual errors regarding the patient's current rescue inhaler use and slightly overstates the assessment confidence."
+}

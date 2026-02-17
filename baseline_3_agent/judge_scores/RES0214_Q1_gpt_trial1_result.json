@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Reported symptoms list matches the Gold Answer: fever, stuffy nose, sore throat, and muscle aches. Denials list also matches the clinically significant negatives asked about (cough, headache, neck stiffness, nausea, difficulty swallowing). However, the “Supporting Evidence” section contains a clear factual error: it claims the patient “did not answer” the neck-stiffness question and only implied absence, whereas the transcript shows an explicit denial (“No” at P-7). It also loosely states denials were not included in P-1/P-13 rather than citing the actual direct denials, which is misleading given the question asks what she explicitly denied.",
+    "completeness": "Covers all four reported symptoms in the Gold Answer (stuffy nose, sore throat, fever, muscle aches). Covers all five specifically queried denials (cough, headache, neck stiffness, nausea, difficulty swallowing). No key items from the question are missing.",
+    "faithfulness": "Most core claims are supported by the transcript, but the answer introduces an ungrounded/incorrect claim that the patient did not answer the neck stiffness question and that absence was only implied. Additionally, it does not accurately anchor the denials to their actual transcript turns (e.g., P-5, P-7, P-8, P-10, P-24/25), weakening grounding.",
+    "relevance": "Directly answers what four symptoms were reported and which clinically significant symptoms were denied; no substantive off-topic content."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 5,
+    "faithfulness": 3,
+    "relevance": 5
+  },
+  "average_score": 4.25,
+  "summary": "The main symptom and denial lists are correct and complete, but the supporting rationale contains an explicit transcript contradiction (neck stiffness) and weaker grounding for “explicit denials,” reducing faithfulness."
+}

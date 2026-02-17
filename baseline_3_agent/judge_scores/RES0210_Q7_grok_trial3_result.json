@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer has significant factual errors compared to the Gold Answer: it incorrectly places the initial 'bad cough' onset on Sunday, missing the Friday raspy cough [P-3]; omits the yellow color of sputum, only mentioning red spots [P-4,P-6,P-7]; correctly identifies fever on Monday [P-5,P-8] and chills on Tuesday [P-9]; but wrongly attributes right-sided chest pain onset to Wednesday [P-17], while Gold (and transcript [P-20]) indicates 'over the last day' suggesting Tuesday; also misses runny nose ~week ago [P-16], exertional dyspnea [P-10,P-11], and sore throat [P-15]. Core timeline contradicted on key symptoms.",
+    "completeness": "Key points from Gold covered: Sunday worsening cough and red sputum (partial, misses yellow), Monday fever and sputum persistence, Tuesday chills; missed entirely: Friday raspy cough, runny nose week ago, precise Tuesday chest pain onset, exertional dyspnea, sore throat from coughing, full symptom list by Wednesday. Covers approximately 30-40% of Gold's key points.",
+    "faithfulness": "Most claims grounded: Sunday cough/sputum in [P-1,P-2,P-3,P-4], Monday fever/sputum [P-5], chills last two days [P-9], chest pain right side [P-17]; however, chest pain onset explicitly on Wednesday not in transcript (P-20 says 'specially notice over the last day'), and 'likely as a result of severe coughing [P-15]' links sore throat to chest pain implausibly; progression interpretations (e.g., 'systemic infection response') plausible but added; minor unverifiable details.",
+    "relevance": "The answer directly provides a timeline of symptom onsets and a progression summary, addressing the question's core request for days of specific symptoms (cough, sputum, fever, chills, chest pain) and worsening, with only minor interpretive tangents; no major off-topic content."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 3,
+    "relevance": 4
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer provides a partially relevant timeline but with significant factual inaccuracies on symptom onsets and incomplete coverage of key details from the Gold Answer."
+}

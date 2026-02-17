@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly claims the transcript contains only patient turns and no doctor questions or patient responses for weight loss, travel, sick contacts, or chemical exposure, despite these being explicitly present (e.g., [D-22/P-22], [D-23/P-23], [D-24/P-24], [D-34/P-34]). It partially identifies correct differentials (e.g., lung cancer for weight loss, infections for travel/sick contacts, occupational disease for chemicals) matching Gold, but fails to address how patient responses narrow differentials (e.g., no weight loss, Sarnia travel, no sick contacts, limited exposure), adds unsupported cardiac pathology, and contradicts Gold's emphasis on acute infectious cause. Significant errors and omissions.",
+    "completeness": "Gold key points: weight loss screens lung ca/TB, denial less likely; travel for infections (Sarnia timing); sick contacts for resp inf/TB, denied; chemicals for pneumonitis/Occ dz, limited exposure; favors acute infection. Generated vaguely covers differentials but misses all specific responses and narrowing effects (e.g., no mention of 'No, not really', Sarnia, 'keeping to myself', engineering side), covers ~30% of points.",
+    "faithfulness": "Major hallucination: transcript falsely described as only patient turns, ignoring full D/P dialogue. Misattributes evidence (e.g., cites [P-40] joints for chemicals, irrelevant). Claims no responses available, directly contradicting transcript. Adds ungrounded angina/cardiac from Tylenol/Lipitor. Multiple fabrications.",
+    "relevance": "Structures around the four questions and differentials, but dodges response analysis by denying their existence, adds off-topic symptom summary and broad differentials (e.g., COPD, angina), partially addresses question."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 1,
+    "relevance": 3
+  },
+  "average_score": 2.0,
+  "summary": "Generated Answer is fundamentally flawed by hallucinating transcript content, omitting patient response impacts, and introducing irrelevancies, resulting in low factual alignment with Gold."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the condition as 'cardiac ischemic' matching the Gold's 'cardiac ischemic picture'. It accurately cites the doctor's statements in D-36 about no out-of-breath with exercise, chest tightness, and no pain, which align with Gold. However, it omits the Gold's emphasis on the screening and denial of anxiety, sweating, or impending doom (P-6, D-6), and the nuance of patient's mild SOB report (P-7). Core facts are correct with minor omissions/discrepancies in full scope of cited evidence.",
+    "completeness": "Gold key points: 1) condition (cardiac ischemic picture); 2) nature - tightness not pain (P-5, D-36); 3) not SOB with exercise vs classic dyspnea (D-36, nuance P-7); 4) absences - no pain (P-5), no anxiety/sweaty/doom (P-6); 5) screening (D-5,D-6); 6) combination lowers likelihood; 7) patient relief (P-35). Generated covers 1, tightness/no SOB (partial 2-3), no pain (partial 4). Misses anxiety/doom absences, nuance, screening citations, patient relief, and explicit tightness vs pain framing. Covers ~60% of key points.",
+    "faithfulness": "All claims in Generated are directly verifiable: condition and citations from D-36 exact; patient quotes from P-1 accurate. No hallucinations or unverifiable details; fully grounded in transcript.",
+    "relevance": "Generated directly answers the question by naming the condition with citation, then structures evidence into 'nature of chest complaints' (tightness, no SOB) and 'absence' (no pain), precisely matching the query's request for both categories without off-topic content."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 5,
+    "relevance": 5
+  },
+  "average_score": 4.25,
+  "summary": "The Generated Answer is factually accurate and highly faithful/relevant but only partially complete, missing some absent symptoms like anxiety and impending doom highlighted in the Gold Answer."
+}

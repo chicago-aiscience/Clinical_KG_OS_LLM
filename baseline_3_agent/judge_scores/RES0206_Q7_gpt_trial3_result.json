@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The answer correctly captures the key 3-day change from baseline to acute symptoms: increased cough, increased green/yellow sputum, small amounts of blood with hard coughing, and worsened dyspnea (all supported by [P-1]). It also appropriately states symptoms worsened over the 3 days (generally consistent with [P-2]). However, it introduces unsupported/overstated elements: references to a “knowledge graph” and claims that green sputum/hemoptysis “confirm” exacerbation are not from the transcript; “current inability to manage the condition with home puffers alone” is not explicitly stated; and it does not accurately compare severity to prior exacerbations (it speculates rather than using the patient’s explicit statement that this is “probably the worst” [P-3]).",
+    "completeness": "Covers some key evolution elements (worsening over 3 days; cough/sputum color; hemoptysis; dyspnea). Misses several Gold Answer points: baseline control details (rescue inhaler about once every two weeks [P-26]; lifestyle/well-managed [P-28]); functional decline specifics (dog-walking tolerance, could still walk to appointment [P-4]); possible fever night before [P-9] and its implication of ongoing escalation; and—most importantly—the explicit severity comparison (“probably the worst that I've had” [P-3]) plus prior exacerbation history (triggered by illness [P-3], ED visits ~twice/3 years [P-5–P-6], no overnight hospitalization [P-5]).",
+    "faithfulness": "Several statements are not grounded in the transcript: repeated reliance on an external “knowledge graph,” asserting that symptoms are “indicative/confirming” exacerbation via that graph, and inferring she cannot manage with puffers alone. The mention of COVID swab/potential admission is grounded in [D-43], but the answer uses it to imply likely admission, which is not stated. Overall, a mix of grounded symptom reporting with notable unsupported additions.",
+    "relevance": "It stays focused on symptom evolution over 3 days and attempts to compare to prior exacerbations. There is minor irrelevant framing (e.g., “knowledge graph”) but it largely addresses the question."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 3,
+    "relevance": 4
+  },
+  "average_score": 3.25,
+  "summary": "Partially accurate and mostly relevant summary of the 3-day symptom worsening, but it omits several key baseline/severity comparison details and includes multiple ungrounded “knowledge graph”/inference statements."
+}

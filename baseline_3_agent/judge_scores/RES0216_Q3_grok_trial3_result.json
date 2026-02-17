@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer accurately captures core elements like the patient's asthma history [P-16, P-25], presenting symptoms of chest tightness and exertional worsening [P-1, P-9, P-10], and exclusion of cardiac ischemia [D-36], which align with the Gold Answer. However, it has minor discrepancies: it emphasizes hoarseness/phlegm [P-11] as part of the asthma profile (not highlighted in Gold), misrepresents the degree of dyspnea (patient reported difficulty with full breaths [P-7], not fully 'no significant out of breath'), and incorrectly implies consistent salbutamol use without noting non-adherence (skipping night doses [P-19], no rescue puffer [P-17]). Core facts remain consistent with Gold's synthesis.",
+    "completeness": "Gold key points: (1) asthma history [covered]; (2) medication limiting/skipping [missed]; (3) specific symptoms (tightness on exertion, diff breath) [partially covered]; (4) patient notes possible relation [missed]; (5) no triggers [missed]; (6) no cardiac indicators [covered]; (7) therapeutic trial [missed, though D-35 cited]. Covers ~60% (history, symptoms, cardiac exclusion), misses critical medication non-compliance and other nuances central to doctor's synthesis [D-34, D-35].",
+    "faithfulness": "All claims are verifiable in transcript: symptoms [P-1, P-7, P-9, P-11], history/asthma/salbutamol [P-16, P-25], no pain/exertional profile [D-36, P-5], cardiac differentiation [D-35, D-36]. Citations accurate; no fabricated facts or hallucinations, though some details like phlegm are minor additions but grounded.",
+    "relevance": "Directly addresses the question by structuring response around symptoms, history, and diagnostic linkage to asthma recurrence, mirroring the query's focus on combination and reasoning without off-topic content."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 5,
+    "relevance": 5
+  },
+  "average_score": 4.25,
+  "summary": "The Generated Answer is mostly accurate and highly faithful/relevant but incomplete in covering key aspects like medication non-adherence and therapeutic trial from the Gold Answer."
+}

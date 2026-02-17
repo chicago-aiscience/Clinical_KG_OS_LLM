@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer accurately cites transcript for symptoms (e.g., dry cough P-1/P-14, SOB P-1/P-19, wheezing P-15, chest tightness P-20), asthma history (P-2/D-3), bronchodilator relief/escalation (P-1/P-8), wheezing frequency (D-17/P-17), triggers (P-9/P-11), and infection negatives. Generated correctly identifies all four symptoms and escalation in use but has factual errors: mis-cites chest tightness to P-4/P-9 (actual P-20), frequency to P-9 (actual P-8), introduces unmentioned 'triad,' and fabricates 'knowledge graph.' Core conclusion matches (worsening asthma), but errors present. Score: 3.",
+    "completeness": "Gold key points: all four symptoms with cites, asthma history, bronchodilator relief/escalation, wheezing > use, triggers, infection screens (colds, contacts, etc.), reversible obstruction, med adjustment. Generated covers symptoms, escalation, triggers, relief; partially covers history implicitly. Misses explicit history cite, wheezing frequency detail, all infection negatives (crucial vs new condition), med adjustment hint. Covers ~60-70% of points. Score: 3.",
+    "faithfulness": "Claims like symptoms verifiable but citations inaccurate (chest tightness P-4/P-9 wrong, frequency P-9 wrong). Escalation baseline paraphrased correctly but wrong cite. 'Knowledge graph' entirely hallucinated/not in transcript. Family history verifiable (P-32). 'Triad' plausible but not grounded. Multiple unverifiable/inaccurate details. Score: 2.",
+    "relevance": "Directly addresses question by linking exact symptoms + bronchodilator increase to asthma worsening vs new condition. Structure (symptoms, usage, conclusion) focused; minor tangents (knowledge graph, family history, triad). Score: 4."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer captures core symptoms and bronchodilator escalation supporting asthma worsening but is undermined by inaccurate citations, hallucinations like a knowledge graph, and omission of infection screening and other details from the Gold Answer."
+}

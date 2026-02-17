@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The answer correctly notes the pain is described as “very sharp, strong” and that episodes last ~20 minutes. However, it contains major inaccuracies: it omits/does not emphasize that the pain is specifically pleuritic (triggered by taking a deep breath) and incorrectly states the pain is “exclusive to anxiety attacks” and that the patient “attributes the pain to stress and anxiety” as a trigger. In the transcript, the patient wonders if it could be stress but also says they don’t really know triggers; the clearest situational pattern is occurring when alone (studying/walking) and being unnoticed/resolving when distracted/socializing. It also incorrectly cites [P-1] (which is not the relevant content) and adds unsupported claims about localization and resolution mechanism.",
+    "completeness": "Key Gold Answer elements missed: (1) symptoms present for ~1.5 weeks; (2) initial description as discomfort/odd rather than pain; (3) deep-breath association; (4) intermittent recurrence ‘here and there’ rather than constant; (5) tends to occur when alone (walking to school, studying) and is less noticed/resolves when at school/talking/doing tasks; (6) can occur at rest; (7) not worse with exercise; (8) no prior similar pain and no injury. The generated answer includes only a subset (sharp/strong, ~20 min duration, ‘same each time’), and adds OTC medication attempts (true but not asked in the question/gold). Overall coverage is well under half of the Gold Answer’s key characteristics.",
+    "faithfulness": "Several statements are not supported by the transcript or are distortions: claiming the patient ‘attributes’ pain to stress/anxiety as a trigger, and that pain is ‘exclusive to episodes of anxiety attacks’ misrepresents [P-20] (which is about palpitations/flutter during anxiety, not chest pain exclusivity). The claim of ‘consistently localized in the chest’ is not specifically established. Citations are also inaccurate (e.g., [P-1]). These constitute multiple hallucinated/misattributed points.",
+    "relevance": "The response is generally aimed at describing quality, duration, triggers, and resolution contexts, which matches the question. However, it spends substantial space on stress/anxiety narratives that do not accurately answer the “occurs vs resolves” situational pattern described (alone vs distracted/with others), and includes extra content (OTC medication) not requested. Hence only partially relevant."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "Captures the sharp quality and ~20-minute episodes, but misses most core contextual features (deep-breath/alone vs distracted), and introduces multiple unsupported claims about anxiety as the trigger and exclusivity, resulting in low overall performance."
+}

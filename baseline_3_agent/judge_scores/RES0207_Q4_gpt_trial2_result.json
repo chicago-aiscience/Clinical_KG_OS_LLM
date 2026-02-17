@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Gold Answer lists multiple specific *denied* symptoms/exposures (chest pain, presyncope, N/V, abdominal pain, diarrhea, sick contacts, travel, loss of taste/smell, sore throat, runny nose, sputum) and explains these map to cardiac/cardiopulmonary, infectious/URI, and GI/systemic differentials. The Generated Answer instead focuses on *present* symptoms (SOB, dry cough, mild fever) rather than the negative screens the question asks for, and it incorrectly treats seizure frequency as a key denial. It also introduces unsupported differential suggestions (e.g., pulmonary embolism, pulmonary edema/heart failure, GERD/aspiration) not derived from the doctor’s negative screening questions and not present in the Gold Answer’s framing.",
+    "completeness": "Key Gold Answer elements missed: denied chest pain; denied feeling faint; denied nausea/vomiting; denied belly pain; denied diarrhea; denied sick contacts; denied travel; denied loss of taste/smell; denied sore throat; denied runny nose; denied sputum production (dry cough); denial of prior similar SOB episodes; explicit linking of these negative findings to narrowing cardiac vs infectious vs GI categories. The Generated Answer covers essentially none of these negative screens and does not map the actual denied items to the intended differential categories.",
+    "faithfulness": "Several statements are not grounded in the transcript: (1) framing seizure frequency as the main ‘denial’ the doctor screened for; (2) claiming epilepsy confers ‘risk factors’ prompting PE/pulmonary edema considerations; (3) mentioning pulmonary embolism ‘stroke risk’; (4) suggesting GERD/aspiration as a differential based on the screening shown. While SOB/dry cough/fever and missed Keppra dose are in the transcript, they do not answer the question about denied screens, and much of the differential discussion is speculative beyond the transcript/Gold Answer.",
+    "relevance": "The question asks for (a) specific *screened-for symptoms/exposures that were denied* and (b) what differentials those negative findings address. The Generated Answer largely discusses positive symptoms and unrelated issues (med adherence), and does not enumerate the denied screening items or correctly tie them to cardiac/infectious/GI differentials. Thus it is only minimally responsive."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 2
+  },
+  "average_score": 1.5,
+  "summary": "The Generated Answer fails to identify the key denied symptoms/exposures and instead focuses on present symptoms and speculative differentials, with multiple unsupported claims and major omissions compared with the Gold Answer."
+}

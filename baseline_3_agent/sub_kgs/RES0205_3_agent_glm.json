@@ -1,0 +1,277 @@
+{
+  "nodes": [
+    {
+      "id": "N_001",
+      "text": "cough",
+      "type": "SYMPTOM",
+      "evidence": "I've had this cough for the past two weeks",
+      "turn_id": "P-2"
+    },
+    {
+      "id": "N_002",
+      "text": "chest pain",
+      "type": "SYMPTOM",
+      "evidence": "my chest hurts a little bit",
+      "turn_id": "P-15"
+    },
+    {
+      "id": "N_003",
+      "text": "fever",
+      "type": "SYMPTOM",
+      "evidence": "any fevers",
+      "turn_id": "P-12"
+    },
+    {
+      "id": "N_004",
+      "text": "sore throat",
+      "type": "SYMPTOM",
+      "evidence": "any sore throat",
+      "turn_id": "P-13"
+    },
+    {
+      "id": "N_005",
+      "text": "runny nose",
+      "type": "SYMPTOM",
+      "evidence": "any runny nose",
+      "turn_id": "P-14"
+    },
+    {
+      "id": "N_006",
+      "text": "anxiety",
+      "type": "MEDICAL_HISTORY",
+      "evidence": "I also have anxiety",
+      "turn_id": "P-22"
+    },
+    {
+      "id": "N_007",
+      "text": "acid reflux",
+      "type": "MEDICAL_HISTORY",
+      "evidence": "I've got acid reflux",
+      "turn_id": "P-22"
+    },
+    {
+      "id": "N_008",
+      "text": "COVID-19",
+      "type": "DIAGNOSIS",
+      "evidence": "I have had the covid test and I don't have it",
+      "turn_id": "P-35"
+    },
+    {
+      "id": "N_009",
+      "text": "covid test",
+      "type": "PROCEDURE",
+      "evidence": "had the covid test",
+      "turn_id": "P-35"
+    },
+    {
+      "id": "N_010",
+      "text": "negative covid test",
+      "type": "LAB_RESULT",
+      "evidence": "I don't have it",
+      "turn_id": "P-35"
+    },
+    {
+      "id": "N_011",
+      "text": "chest",
+      "type": "LOCATION",
+      "evidence": "my chest hurts a little bit",
+      "turn_id": "P-15"
+    },
+    {
+      "id": "N_012",
+      "text": "throat",
+      "type": "LOCATION",
+      "evidence": "any sore throat",
+      "turn_id": "P-13"
+    },
+    {
+      "id": "N_013",
+      "text": "nose",
+      "type": "LOCATION",
+      "evidence": "any runny nose",
+      "turn_id": "P-14"
+    },
+    {
+      "id": "N_014",
+      "text": "acidic foods",
+      "type": "DIETARY_RESTRICTION",
+      "evidence": "avoid right now... acidic foods",
+      "turn_id": "P-25"
+    },
+    {
+      "id": "N_015",
+      "text": "chocolates",
+      "type": "DIETARY_RESTRICTION",
+      "evidence": "avoid... chocolates",
+      "turn_id": "P-25"
+    },
+    {
+      "id": "N_016",
+      "text": "PPE",
+      "type": "PROTECTIVE_EQUIPMENT",
+      "evidence": "wearing PPE",
+      "turn_id": "P-17"
+    },
+    {
+      "id": "N_017",
+      "text": "physical exam",
+      "type": "PROCEDURE",
+      "evidence": "listen to your heart and lungs",
+      "turn_id": "D-37"
+    },
+    {
+      "id": "N_018",
+      "text": "hospital",
+      "type": "LOCATION",
+      "evidence": "I work at the hospital",
+      "turn_id": "P-17"
+    },
+    {
+      "id": "N_019",
+      "text": "hay fever",
+      "type": "MEDICAL_HISTORY",
+      "evidence": "Just hay fever",
+      "turn_id": "P-27"
+    },
+    {
+      "id": "N_020",
+      "text": "chest soreness",
+      "type": "SYMPTOM",
+      "evidence": "it feels kind of sore after all that?",
+      "turn_id": "P-16"
+    },
+    {
+      "id": "N_021",
+      "text": "productive cough",
+      "type": "SYMPTOM",
+      "evidence": "whitish clear kind of mucus",
+      "turn_id": "P-6"
+    },
+    {
+      "id": "N_022",
+      "text": "dry cough",
+      "type": "SYMPTOM",
+      "evidence": "it's all, it’s a dry cough",
+      "turn_id": "P-6"
+    },
+    {
+      "id": "N_023",
+      "text": "anxiety medication",
+      "type": "MEDICATION_HISTORY",
+      "evidence": "take something for anxiety two three years ago",
+      "turn_id": "P-24"
+    }
+  ],
+  "edges": [
+    {
+      "source_id": "N_001",
+      "target_id": "N_011",
+      "type": "LOCATED_AT",
+      "evidence": "sometimes when I'm coughing... my chest hurts a little bit",
+      "turn_id": "P-15"
+    },
+    {
+      "source_id": "N_002",
+      "target_id": "N_011",
+      "type": "LOCATED_AT",
+      "evidence": "my chest hurts a little bit",
+      "turn_id": "P-15"
+    },
+    {
+      "source_id": "N_001",
+      "target_id": "N_002",
+      "type": "CAUSES",
+      "evidence": "sometimes when I'm coughing too much my chest hurts a little bit",
+      "turn_id": "P-15"
+    },
+    {
+      "source_id": "N_018",
+      "target_id": "N_016",
+      "type": "USES",
+      "evidence": "work at the hospital... wearing PPE",
+      "turn_id": "P-17"
+    },
+    {
+      "source_id": "N_014",
+      "target_id": "N_007",
+      "type": "AVOIDS",
+      "evidence": "I just avoid right now... acidic foods",
+      "turn_id": "P-25"
+    },
+    {
+      "source_id": "N_015",
+      "target_id": "N_007",
+      "type": "AVOIDS",
+      "evidence": "avoid... chocolates",
+      "turn_id": "P-25"
+    },
+    {
+      "source_id": "N_016",
+      "target_id": "N_008",
+      "type": "PREVENTS",
+      "evidence": "wearing PPE all the time",
+      "turn_id": "P-17"
+    },
+    {
+      "source_id": "N_009",
+      "target_id": "N_010",
+      "type": "RESULTS_IN",
+      "evidence": "had the covid test",
+      "turn_id": "P-35"
+    },
+    {
+      "source_id": "N_010",
+      "target_id": "N_008",
+      "type": "RULES_OUT",
+      "evidence": "I don't have it",
+      "turn_id": "P-35"
+    },
+    {
+      "source_id": "N_021",
+      "target_id": "N_022",
+      "type": "TRANSITION_TO",
+      "evidence": "whitish clear kind of mucus... then after that was a... dry cough",
+      "turn_id": "P-6"
+    },
+    {
+      "source_id": "N_022",
+      "target_id": "N_001",
+      "type": "IS_A",
+      "evidence": "it's all, it’s a dry cough",
+      "turn_id": "P-6"
+    },
+    {
+      "source_id": "N_023",
+      "target_id": "N_006",
+      "type": "TREATS",
+      "evidence": "take something for anxiety",
+      "turn_id": "P-24"
+    },
+    {
+      "source_id": "N_020",
+      "target_id": "N_002",
+      "type": "CAUSES",
+      "evidence": "it feels kind of sore after all that?",
+      "turn_id": "P-16"
+    }
+  ],
+  "_meta": {
+    "pass1": {
+      "nodes": 17,
+      "edges": 8
+    },
+    "pass3": {
+      "nodes": 23,
+      "edges": 13
+    },
+    "critique_length": 4038
+  },
+  "_usage": {
+    "prompt_tokens": 10022,
+    "completion_tokens": 18824,
+    "pass1_nodes": 17,
+    "pass1_edges": 8,
+    "pass3_nodes": 23,
+    "pass3_edges": 13
+  }
+}

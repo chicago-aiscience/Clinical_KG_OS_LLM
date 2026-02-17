@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer accurately cites patient-reported symptoms with precise transcript references. Generated Answer has significant errors: incorrectly claims patient 'explicitly stated, \"sore throat and cough\" [P-1]' but P-1 only mentions shortness of breath, fatigue, and being rundown—no sore throat or cough there (actual mentions are P-7-P-9). Attributes muscle aches partly to doctor's summary [D-36] rather than patient's direct report. Misses nuances like symptoms being new (e.g., taste), dry cough specifics, denial of runny nose, and characterizes headaches as usual rather than new. Core symptoms like weakness, taste loss, fever, appetite are correct, but misattributions and omissions create contradictions. Score: 2.",
+    "completeness": "Gold key points: sensory (taste loss [P-4], smell loss [P-6], new [P-5]); upper resp (dry cough starting [P-7/8], sore throat starting [P-9], denied runny nose [P-10]); musc (achy overall [P-20/21], weakness [P-2]); const (subjective fever [P-4], decreased appetite [P-2/4/18], mild headaches usual [P-11-13]). Generated covers: sore throat, cough, weakness, aches, taste loss, fever, appetite (7 points). Misses: smell loss, denied runny nose, headaches (3 points); partial on details. Covers ~70% of key points. Score: 3.",
+    "faithfulness": "Most claims verifiable: weakness [P-2], taste [P-4], achy [P-20], fever/hot [P-4], appetite [P-2/4]. However, fabricates 'explicitly stated \"sore throat and cough\" [P-1]'—P-1 has no such statement (sore throat P-9, cough P-7/8). Cites doctor's summary [D-36] as patient report for aches. No mention of smell despite [P-6]. Multiple unverifiable/misattributed claims indicate hallucination. Score: 2.",
+    "relevance": "Generated Answer directly addresses the question by categorizing symptoms into the specified domains (sensory changes, upper respiratory, musculoskeletal, constitutional) beyond chief complaints, with citations, no off-topic content. Perfectly focused. Score: 5."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer is mostly relevant and covers many key symptoms but suffers from significant factual errors, incorrect citations, and hallucinations, particularly misattributing sore throat and cough to P-1."
+}

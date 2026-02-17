@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The answer correctly states part of the doctor’s recap (3–4 days of dry cough, a little fever, headache). However, it incorrectly reports Jessica’s stated primary goal: in P-60 she specifies wanting to know whether she needs to take medicine, whereas the generated answer attributes the more general “next steps/where to go from here” framing to Jessica as her primary goal. Because one of the two question components (Jessica’s goal) is wrong and several recap items are omitted, factual accuracy is materially compromised.",
+    "completeness": "Gold recap includes: dry cough + fever + headache + duration; no sputum; limited sick contacts except brother’s cold 2 weeks ago; no asthma; no meds other than Claritin; visit purpose framed as next steps; Jessica’s goal to know if she needs medicine; plus her desire to go home and lie down. The generated answer includes only the first symptom cluster and misses the other recap elements and Jessica’s explicit goal (and the rest/lay down point). Coverage is well under half of the key points.",
+    "faithfulness": "Most included statements (dry cough duration, fever, headache) are directly supported by D-58. The claim that Jessica identified her primary goal as “next steps/where to go from here” is not faithful to her own wording; the transcript shows that framing came from the doctor and Jessica clarified her goal as whether she needs medicine. This is a misattribution/oversimplification rather than a fully fabricated detail, but it is not well-grounded as stated.",
+    "relevance": "The response stays focused on the two things asked: the doctor’s recap and Jessica’s goal for next steps. There is no irrelevant content, even though it is incomplete and partly inaccurate."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 3,
+    "relevance": 5
+  },
+  "average_score": 3.0,
+  "summary": "Relevant and partially grounded, but it omits multiple key recap findings and misstates Jessica’s primary stated goal (needing to know if she should take medicine)."
+}

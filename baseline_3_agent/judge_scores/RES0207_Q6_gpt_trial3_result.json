@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer is factually incorrect relative to the Gold Answer. The transcript clearly includes many doctor turns ([D-1] through [D-38]), including the key closing plan in [D-37] and farewell in [D-38]. The Generated Answer’s central claim—“there are no doctor turns included”—is false. It also fails to report the actual next steps communicated (review with the doctor working today, return shortly, discuss possible tests/how to move forward). Additionally, it introduces speculative clinical steps (e.g., pneumonia, status epilepticus) that are not stated by the doctor and are not part of the Gold Answer.",
+    "completeness": "The Gold Answer’s key points are: (1) the clinician will review the information with the doctor working today; (2) another physician is involved in decision-making; (3) they will return shortly to discuss next steps; (4) possible tests may be ordered and plan to move forward will be discussed; (5) no specific tests/treatments were named; (6) courteous closing/farewell. The Generated Answer covers essentially none of these; instead it claims the transcript lacks the relevant doctor content and provides unrelated inferences. Thus, it misses nearly all required elements.",
+    "faithfulness": "The response is not grounded in the transcript. It incorrectly states that only patient turns are present and that the transcript cuts off before the doctor’s conclusion—both contradicted by [D-37] and [D-38]. It adds unsubstantiated medical inferences (pneumonia, status epilepticus) that are not mentioned in the transcript. Therefore, multiple hallucinated/unsupported claims are present.",
+    "relevance": "The question asks for the doctor’s communicated next steps at the end of the consultation. The Generated Answer does not provide those next steps and instead argues it cannot answer due to missing doctor turns. While it attempts to address the question, it largely fails to respond with the requested information and includes speculative tangents."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 2
+  },
+  "average_score": 1.25,
+  "summary": "The Generated Answer contradicts the transcript by claiming no doctor turns exist, omits the documented next-step plan in D-37/D-38, and adds unsupported speculation, resulting in very low correctness, completeness, and faithfulness."
+}

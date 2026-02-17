@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Gold Answer precisely identifies the infectious screening symptoms (colds/infections [D-21], loss of taste/smell [D-25], fevers [D-26], nausea/vomiting [D-27], belly pain [D-28], dry cough [D-14/15]) and exposures (sick at home/frequent contacts [D-22], outside contacts [D-23], travel [D-24]), all denied by patient, with explanation [D-29] and planned COVID swab [D-29]. The Generated Answer incorrectly claims screening for 'other health problems' [D-29, which is general PMH post-screening] and 'chest tightness' [D-20, an asthma symptom, not infectious screen], omitting all actual screening items; it lists unrelated patient symptoms/triggers instead of screening responses. This introduces factual errors and contradictions throughout.",
+    "completeness": "Gold key points: specific symptoms screened (6 items), exposures (3 items), all negative responses with citations, purpose explanation, planned COVID swab despite negatives. Generated covers only the planned COVID swab (~10% coverage); misses 100% of screening symptoms/exposures/responses and explanation.",
+    "faithfulness": "Generated claims unverifiable as infectious screening: 'other health problems' [D-29] is general history, not infection-specific; chest tightness [D-20] is asthma-related; patient responses listed (dry cough, SOB, wheezing, triggers, bronchodilator use, family hx) are from general asthma Hx [P-1,9,11,15,32], not screening denies [P-21-28]. Multiple hallucinations re: what was screened for infectious causes; citations misused; only COVID swab [D-29] accurate.",
+    "relevance": "Question asks for specific infectious screening symptoms/exposures, patient responses (denials), and planned test. Generated addresses planned test but substitutes irrelevant general symptoms/asthma history/triggers for screening details, failing to directly answer core elements."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 2
+  },
+  "average_score": 1.5,
+  "summary": "The Generated Answer is largely inaccurate, incomplete, and unfaithful, misidentifying screening elements and hallucinating their purpose while only correctly noting the planned test."
+}

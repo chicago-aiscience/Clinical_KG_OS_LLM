@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the respiratory symptoms mentioned in the transcript (wheezing, difficulty taking deep breaths, shortness of breath/out of breath with activity, and a slight cough). However, it is factually inaccurate about which symptoms were earliest at onset: the transcript explicitly answers that question with wheezing and difficulty taking deep breaths as the first-noticed symptoms [P-2]. The Generated Answer incorrectly concludes that cough and shortness of breath were also present from the start; the phrasing “and now she has a slight cough” [P-1] implies the cough developed later, and onset questioning [P-2] does not include cough.",
+    "completeness": "For symptoms at presentation, it captures the core respiratory complaints (wheeze, cough, shortness of breath, difficulty deep breaths). It does not include other respiratory descriptors highlighted in the Gold Answer (e.g., “hard time catching her breath,” denial of cyanosis, non-productive cough), though those are secondary to the question. The major completeness gap is in the onset/earliest-symptom part: it fails to specify that wheeze + difficulty deep breaths were the earliest and instead expands earliest symptoms to include cough and shortness of breath.",
+    "faithfulness": "The list of symptoms is grounded in cited transcript lines. The statement that “the reported symptoms (wheezy, cough, and shortness of breath) are all understood to have been present since the issue started” is not supported by the transcript and conflicts with the explicit onset history question/answer [P-2] and the “and now” phrasing for cough [P-1]. This is an unsupported inference (and effectively a hallucinated timeline) rather than a verbatim, grounded claim.",
+    "relevance": "The answer stays focused on respiratory symptoms at presentation and attempts to address which were earliest at onset, with minimal extraneous content."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 3,
+    "relevance": 5
+  },
+  "average_score": 3.5,
+  "summary": "Captures the main respiratory symptoms but incorrectly states that cough and shortness of breath were present from the beginning, despite the transcript indicating wheeze and difficulty deep breaths were earliest and cough appeared later."
+}

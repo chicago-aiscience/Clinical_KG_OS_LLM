@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer has significant factual errors compared to the Gold Answer: sore throat is described as 'pretty constant' (wrong, Gold and [P-4] say worsening); taste/smell onset wrongly placed 'immediately after' sore throat citing [P-26] (which is fatigue, Gold has Day 3); smell loss is hallucinated (transcript [P-19] indicates no smell loss); swallowing treated as separate (Gold folds into sore throat); completely misses key symptoms of fatigue/muscle aches (Gold: shortly after sore throat) and difficulty breathing (Gold: Day 4, worsening); omits self-treatment failure and overall progressive worsening trajectory.",
+    "completeness": "Key points from Gold covered partially: sore throat onset Day 1 and severity (but wrong on worsening); reduced taste (wrong timeline/details). Missed entirely: fatigue/muscle aches shortly after sore throat; breathing difficulty Day 4 (constant, worsening); self-treatment failure; progressive worsening with accumulating symptoms. Covers ~30-40% of key points.",
+    "faithfulness": "Multiple inaccuracies vs transcript: sore throat 'constant' cites [P-21] (taste, not sore throat); taste/smell 'immediately after' cites [P-26] (muscle aches); smell 'entirely lost' misreads [P-19] ('maybe taste... but not smell' means smell unaffected); swallowing not separately onset-timed; adds doctor's COVID plan and smoking history which are verifiable but not central to symptoms chronology. Multiple hallucinated timelines/details and wrong citations.",
+    "relevance": "Attempts chronological symptom list with onset/severity changes, directly addressing question structure, but incomplete (misses major symptoms), erroneous timelines, and includes off-topic clinical context/COVID/smoking note."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "The Generated Answer partially addresses the question with a chronological structure but is marred by significant factual errors, omissions of key symptoms like breathing difficulty and fatigue, hallucinations on timelines and smell loss, and irrelevant additions."
+}

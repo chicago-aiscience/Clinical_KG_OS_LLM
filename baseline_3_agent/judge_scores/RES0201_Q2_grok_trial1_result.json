@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer lists LABA for COPD, vitamins, confirmation of only meds, no allergies, salt water gargle, painkillers for throat (no relief), no other therapies, and substance use details. Generated correctly identifies LABA for COPD with accurate citations [P-28, P-27 implied, P-35 smoking]. However, misses vitamins [P-30], confirmation [D-29/30], allergies [P-31], actual self-treatments (salt water, painkillers [P-6]), and introduces incorrect 'fluid intake' as self-treatment (misinterpretation of [P-2] symptom description, not treatment). Hallucinates 'knowledge graph'. Significant factual errors/omissions/contradictions.",
+    "completeness": "Key Gold points: 1. LABA for COPD; 2. Vitamins; 3. Only meds confirmed; 4. No allergies; 5. Salt gargle; 6. Painkillers no relief; 7. No other therapies; 8. Substance use. Generated covers only #1 partially (COPD link). Misses #2-8 entirely. Adds irrelevant fluids. Covers <20% of key points.",
+    "faithfulness": "LABA claim [P-28] verifiable. COPD [P-27], smoking [P-35] verifiable. But 'knowledge graph' not in transcript (hallucination). Fluids as 'self-treatment measure' [P-2] misinterprets symptom tolerance as treatment attempt (not grounded; actual treatments in [P-6] ignored). Multiple hallucinations/misinterpretations.",
+    "relevance": "Directly structures response around 'Medications/Ongoing Prescriptions' and 'Self-Treatment for Sore Throat', addressing question structure. However, incorrect self-treatment content (fluids instead of actual ones) and omissions make it partially off-topic/misaligned."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.0,
+  "summary": "The Generated Answer partially captures the COPD medication but misses vitamins, actual self-treatments, and other details while hallucinating a knowledge graph and misinterpreting fluid intake as treatment."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "- Condition ruled out: Generated Answer identifies COVID-19, which matches the Gold Answer.\n- Test used: States a “COVID test” with a negative result, consistent with the transcript and Gold Answer.\n- Timing: Gold specifies the test was done at symptom onset (“when I first started having symptoms about two weeks ago” [P-36]). The Generated Answer instead says it was done “during this 2-week duration… concurrent with the persistence of the cough,” which is less accurate and misses/obscures that it was specifically at onset.\n- Workplace concerns: Correctly notes hospital employment and coworkers being scared when she coughs; however, it omits other workplace-related details emphasized in Gold (e.g., she is a clerk, PPE mention, staying home awaiting symptom resolution, desire to return to work without coughing).",
+    "completeness": "Key Gold Answer elements:\n1) COVID-19 ruled out ✅\n2) Specific test: COVID test ✅\n3) Timing: performed at onset of symptoms ~2 weeks prior ❌/partial (imprecise; does not state at onset)\n4) Workplace concerns:\n   - Works at hospital (clerk) ✅ partial (hospital stated; clerk role omitted)\n   - PPE use/workplace infection-control context ❌\n   - Coworkers scared when she coughs ✅\n   - Stayed home and wants to return without coughing ❌\n   - Medication desire tied to return-to-work pressure ❌\nOverall coverage is roughly 50–79% with notable omissions around timing and the full workplace context.",
+    "faithfulness": "Most claims are supported by the transcript (COVID test negative [P-35], hospital workplace [P-17/P-34], coworkers scared [P-35]).\nHowever:\n- The timing statement is not well-grounded because the transcript explicitly places testing at symptom onset [P-36], while the Generated Answer describes it more vaguely as occurring during the two-week period.\n- “High-stakes medical environment” is a reasonable inference but not directly stated.\n- The mention of a “knowledge graph” is not in the transcript (minor ungrounded framing).",
+    "relevance": "Directly addresses all parts of the question (condition, test, timing, workplace concerns). Minor issues are due to imprecision/omissions rather than off-topic content."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 4,
+    "relevance": 4
+  },
+  "average_score": 3.75,
+  "summary": "The Generated Answer correctly identifies COVID-19 and a negative COVID test and notes key workplace anxiety, but it is imprecise about the test timing (missing that it was done at symptom onset) and omits several workplace-context details highlighted in the Gold Answer."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The generated answer correctly notes part of the doctor’s recap: 3–4 days of dry cough, a little bit of fever, and headache (all present in D-58). However, it is inaccurate about Jessica’s primary goal: in P-60 she states she wants to know if she needs to take medicine, whereas the generated answer says her goal was “next steps/where to go from here” (language introduced by the doctor in D-58, not identified by Jessica as her own goal).",
+    "completeness": "It captures only a subset of the doctor’s recap (symptom duration and key symptoms) but misses several key items from the gold answer: no sputum production, limited sick contacts except brother with a cold ~2 weeks ago, no asthma, and no meds aside from Claritin. For Jessica’s goal, it omits the specific “do I need to take medicine” next step and also omits her desire to go home and rest (P-61). Overall, well under 50% of the gold answer’s key points are included.",
+    "faithfulness": "The included symptom summary is grounded in D-58. The statement about Jessica’s goal is not faithful: it attributes the doctor’s framing (“next steps/where to go from here”) to Jessica rather than reporting her actual stated goal in P-60. No additional major hallucinated clinical facts are introduced, but the misattribution is a notable ungrounded/inaccurate interpretation.",
+    "relevance": "The response stays on-topic (doctor’s recap and Jessica’s goal/next steps) and does not add irrelevant material, but it fails to provide the full set of requested recap findings and misstates the key next-step goal."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 2,
+    "faithfulness": 3,
+    "relevance": 4
+  },
+  "average_score": 3.0,
+  "summary": "Partially correct and relevant, but it omits several key recap findings and misstates Jessica’s primary goal (medicine need), reducing completeness and faithfulness."
+}

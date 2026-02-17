@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the main persistent symptom (cough for two weeks) and the early productive phase with whitish/clear mucus transitioning to a dry cough. However, it mischaracterizes the chest symptom as “chest pain” rather than chest soreness only after excessive coughing; the patient explicitly denied independent chest pain and described it as soreness after coughing [P-15, P-16]. No other overt incorrect symptoms are added.",
+    "completeness": "Key symptoms in the Gold Answer that are missing from the Generated Answer include: (1) sore throat for first 2–3 days that resolved [P-13], (2) runny nose initially that resolved [P-14], (3) patient’s description of “flu symptoms” resolving within ~3–4 days except cough [P-14], (4) cough frequency (~3–4 times/hour) [P-9], (5) spontaneous/no triggers [P-10], (6) stable intensity and not increasing frequency [P-7, P-8], and (7) pertinent negatives (no dyspnea, fever, N/V, abdominal pain) [P-11, P-12, P-19, P-20]. It covers only a minority of the Gold Answer’s key points.",
+    "faithfulness": "Most statements are grounded in the transcript (persistent cough [P-2], initial mucus [P-6], later dry cough [P-6]). The main faithfulness issue is the phrasing “chest pain” rather than cough-related soreness; this is a mild distortion but still based on the patient’s report that the chest hurts a little when coughing too much [P-15, P-16]. No clear hallucinated symptoms beyond that.",
+    "relevance": "The response stays on-topic (symptoms during the illness, distinguishing resolved vs ongoing). It is limited by omissions but does not include irrelevant tangents."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 2,
+    "faithfulness": 4,
+    "relevance": 4
+  },
+  "average_score": 3.25,
+  "summary": "The answer is on-topic and mostly transcript-grounded but is substantially incomplete and slightly misstates the chest symptom as pain rather than cough-related soreness."
+}

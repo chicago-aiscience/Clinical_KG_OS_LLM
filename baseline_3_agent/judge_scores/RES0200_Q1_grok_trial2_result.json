@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies shortness of breath, cough, phlegm production, and the sputum change from clear-to-white to yellow, matching Gold. However, it misses key details like worsening beyond baseline, exertion triggers, chest discomfort [P-13], and chills [P-29]; incorrectly claims no systemic symptoms despite these; and lists incomplete/irrelevant denied symptoms, omitting key ones like orthopnea [P-9], PND [P-10], hemoptysis [P-7], palpitations [P-14]. Significant factual discrepancies vs Gold.",
+    "completeness": "Covered: basic SOB/cough [P-1], sputum change fully [P-6]. Missed: worsening cough/SOB details [P-1,P-5,P-8], exertion triggers [P-5], chest discomfort [P-13], chills/no fever [P-29,P-30], nearly all pertinent negatives (orthopnea, PND, hemoptysis, palpitations, etc.). Covers ~25% of Gold key points.",
+    "faithfulness": "Respiratory/sputum claims verifiable [P-1,P-6]. 'No systemic symptoms like chills' contradicts transcript [P-13 chest discomfort, P-29 chills], not grounded. Listed denials verifiable [e.g., D-17,P-17] but selective. Some ungrounded claims.",
+    "relevance": "Directly structures response around endorsed respiratory/systemic symptoms, sputum change, and denied symptoms, matching question focus with no off-topic content."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 3,
+    "relevance": 5
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer partially captures core respiratory symptoms and sputum change but misses critical details, systemic endorsements, and key denied symptoms, leading to incompleteness and factual gaps."
+}

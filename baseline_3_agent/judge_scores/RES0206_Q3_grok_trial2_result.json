@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Generated Answer misattributes green-yellow sputum as indicating COPD exacerbation (citing a non-existent 'knowledge graph'), whereas Gold Answer attributes it to supporting respiratory infection as a purulent feature; it omits key COPD symptoms like increased cough frequency, sputum volume, and decreased exercise tolerance, while adding hemoptysis not highlighted in Gold; fever correctly supports infection, but overall significant factual contradictions with Gold's categorization and explanations.",
+    "completeness": "Key points covered: some COPD symptoms (SOB, sputum, history); infection (fever). Missed: increased cough/sputum volume, exercise intolerance for COPD; sinus pressure, headache, sick contact for infection; patient's recognition of past pattern [P-3]; exclusion of other triggers; doctor's exact framing and how sputum/fever indicate infectious trigger specifically. Covers ~20-40% of Gold points.",
+    "faithfulness": "Claims grounded: symptom quotes from transcript [P-1, P-9, etc.] accurate. Hallucinations: repeated references to 'knowledge graph' and its specific causal links (e.g., green sputum --> COPD exac, fever --> infection), which are not in transcript; misrepresents doctor's assessment by assigning diagnostic specificity not present.",
+    "relevance": "Directly structures response around symptoms for COPD exac vs. infection and distinction via sputum/fever, addressing the question; minor tangent on history/smoking but focused overall."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer partially addresses the question but contains significant factual errors, omissions, and hallucinations via a fabricated 'knowledge graph,' leading to incorrect symptom attribution compared to the Gold Answer."
+}

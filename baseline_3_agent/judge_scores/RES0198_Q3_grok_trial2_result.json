@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer accurately cites transcript elements like stuffy/runny nose [P-1, P-3, D-39], duration of one week [P-1], and doctor's conclusion [D-39], which align with Gold. Minor discrepancy: describes symptoms as 'on and off' [P-1] while Gold emphasizes 'constant' [P-8], but no major contradictions. However, it omits key differentiators (e.g., absent symptoms, clear discharge) without erroring on facts stated. Core facts consistent.",
+    "completeness": "Gold key points: (1) symptom type/absent features (cough [P-4], etc.) - missed; (2) clear discharge [P-5] - missed; (3) duration/constant [P-2,P-8,D-39] - partially covered; (4) progression [P-3] - covered; against allergic (exposures [P-22], allergies [P-28], history [P-9]) - missed; against bacterial (no fever [P-7], etc.) - missed; exposure (daycare [P-11]) - missed. Covers ~30% (progression, duration, basic symptoms, conclusion).",
+    "faithfulness": "Claims like stuffy to runny [P-3], duration [P-1,D-39], doctor's statement [D-39] verifiable. 'Knowledge Graph' reference not in transcript - hallucination. 'Common progression in viral URIs' plausible but not directly from transcript. 'Rapid-resolution allergic or sudden bacterial' interpretive, grounded loosely. Some unverifiable details.",
+    "relevance": "Addresses evidence for viral (symptoms, duration, progression) with brief contrast to allergic/bacterial in duration section. Directly responds to question on symptom characteristics and doctor's conclusion, but lacks depth on absent features/exposure and explicit allergic/bacterial differentiation. Mostly focused."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 2,
+    "faithfulness": 3,
+    "relevance": 4
+  },
+  "average_score": 3.25,
+  "summary": "The Generated Answer is factually mostly accurate and relevant but incomplete in covering key differentiators against allergic/bacterial causes and includes a hallucinated 'Knowledge Graph' reference."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer emphasizes the patient's self-directed reduction of maintenance inhaler to morning-only [P-19, P-20] and failure to refill rescue inhaler [P-17, P-18], linking these to compromised asthma control and new symptoms, as summarized by doctor [D-34]. Generated Answer incorrectly states the transcript 'does not explicitly contain details regarding... skipping maintenance doses or failing to refill inhalers,' which directly contradicts the transcript and Gold. It also misrepresents D-36 (doctor does not claim cardiac issues ruled out by 'absence of pain and exercise-related shortness of breath'; patient reported breathing difficulty). Additional errors include hallucinating a 'Knowledge Graph [KG]' and claiming salbutamol was 'in the past.' Core facts on asthma history and recurrence are partially correct, but significant contradictions exist. Score: 2.",
+    "completeness": "Gold key points: asthma history well-controlled previously [P-16, P-29]; skipped evening maintenance [P-19, P-20]; no rescue refill for years [P-17, P-18]; doctor notes limiting meds [D-34]; symptoms (chest tightness on exertion/deep breath [P-1, P-4, P-9], phlegm/hoarseness [P-11]) consistent with recurrence [D-35]; feels different [P-16]; propose rescue [D-35]. Generated covers asthma history [P-16], symptoms [P-1], recurrence suspicion [D-35], rescue suggestion [D-35] (~25-30%). Misses all non-adherence details central to question and Gold. Score: 2.",
+    "faithfulness": "Generated hallucinates 'Knowledge Graph [KG]' (not in transcript); falsely claims no details on adherence (directly refuted by P-17-20); misquotes D-36 on cardiac differential and SOB; implies salbutamol only past use despite P-25. Claims verifiable: asthma history [P-16], symptoms [P-1], recurrence [D-35], rescue plan [D-35]. Multiple ungrounded additions and denials of transcript content. Score: 2.",
+    "relevance": "Question focuses on linking asthma history + specific non-adherence (skip evening dose, no rescue refill) to new symptoms. Generated addresses asthma history/recurrence/symptoms but explicitly denies/ignores non-adherence details (claiming absent), adds irrelevant KG hallucinations, partially connects history to symptoms via doctor's suspicion but misses core relational analysis. Score: 3."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "The Generated Answer partially recognizes asthma recurrence but significantly errs by denying key transcript details on medication non-adherence, hallucinates external sources, and fails to cover the question's core linkage, resulting in low factual accuracy and completeness."
+}

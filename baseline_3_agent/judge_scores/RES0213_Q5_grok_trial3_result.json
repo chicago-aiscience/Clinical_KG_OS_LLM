@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer has significant factual errors compared to the Gold Answer: incorrectly refers to the patient as 'he/his' multiple times despite the question and Gold Answer using 'her' (contradicting contextual evidence like Masters in social work); omits key details like father's heart attack being 'last year' and now seeing 'a lot of heart doctors' [P-8, P-30]; misses paternal grandfather's death in accident [P-30]; inaccurately frames smoking as a 'direct physiological risk factor for the chest pain' rather than a personal concern; introduces unsubstantiated causations. Core structure matches but errors undermine accuracy.",
+    "completeness": "Covers: family history (father's HA in 50s scaring patient [P-8]); smoking (5 cigs/day, trying to quit [P-13,14]); stressors (thesis pressure [P-15,16], possible stress cause [P-8]); basic interactions. Misses from Gold: 'last year' timing, father sees heart doctors, grandpa accident [P-30]; full smoking history (started 18, peaked 10/day 2 yrs [P-18]); additional stressors (lives alone [P-26,27], nervous about running [P-28]); nervousness/rapid breathing [P-19]; past anxiety attacks [P-22]. Covers ~60% of key points.",
+    "faithfulness": "Multiple hallucinations: entire 'Knowledge Graph' references (e.g., [FAMILY_HISTORY], [RISK_FACTOR], causal links like 'smoke --> chest pain', 'final thesis --> stress --> chest pain') not in transcript; assumes male patient; attributes smoking as causing 'biological vulnerability to symptoms' not verifiable (patient worries about heart, doesn't link directly to her pain); transcript supports concerns but not these fabricated graphs/causations. Citations accurate but content not fully grounded.",
+    "relevance": "Directly structures response around the three factors (family, smoking, stressors) and their interactions with concern about heart disease, using transcript details and citations; minor off-topic tangents via hallucinated Knowledge Graph, but overall focused on question."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer captures the main factors contributing to the patient's heart disease concern but is undermined by significant factual errors (e.g., patient gender), omissions of key details, and hallucinations like Knowledge Graph references."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the initial symptoms (headache and cough starting 4 days ago) and places loss of smell as beginning about 1 day ago, which is consistent with the transcript. It also correctly reports vomiting occurred yesterday twice and nausea persisted today. It correctly states the cough remained “around the same.” However, it does not state that the headache’s severity “stayed around the same” over the four days (it only says “persistent”), and it does not give the more specific timing for diarrhea (“probably like 2 days ago”). The GI timing is presented as “few days back,” which is mentioned by the patient for nausea/vomiting and initially for diarrhea, but the transcript later specifies diarrhea onset at 2 days, so the answer is somewhat imprecise.",
+    "completeness": "Key gold points covered: (1) headache and cough started first, 4 days ago; (2) loss of smell began ~1 day ago; (3) nausea today and vomiting yesterday (2x); (4) cough stable over 4 days; (5) headache persistent.\nKey gold points missed: (1) diarrhea onset specifically ~2 days ago and frequency (5–6/day); (2) explicit statement that headache severity stayed the same over the 4 days; (3) headache details (7/10, location) and that patient doesn’t usually get headaches; (4) clear “two days later” framing for GI symptoms relative to the initial symptoms (gold emphasizes temporal progression).",
+    "faithfulness": "Most statements are directly supported by the transcript. The only notable issue is lack of specificity: it groups diarrhea with GI symptoms starting “few days back,” whereas the transcript provides a more precise diarrhea onset of 2 days ago. No clear hallucinated symptoms are introduced.",
+    "relevance": "The response stays focused on the requested illness course (order of symptom onset, timing of GI symptoms and anosmia relative to initial symptoms, and change/stability of headache/cough). It is somewhat incomplete but not off-topic."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 4,
+    "relevance": 4
+  },
+  "average_score": 3.75,
+  "summary": "Mostly accurate and relevant timeline with correct initial symptoms, anosmia timing, and stable cough, but it is imprecise about GI/diarrhea timing and omits key details about headache stability and diarrhea onset/frequency."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer diagnoses 'pediatric asthma with exercise-induced bronchoconstriction in the context of an atopic predisposition.' Generated Answer diagnoses 'Asthma (specifically exercise-induced asthma exacerbated by cold weather and allergic rhinitis),' which is factually similar in core (asthma, exercise-induced, atopic/allergic context) but adds 'allergic rhinitis' not explicitly in Gold and specifies exacerbation phrasing slightly differently. Supports mostly align on exercise, cold, settings, allergies, but Generated incorrectly posits past viral history [P-15] as supportive (Gold uses negatives to rule out infection), and introduces 'knowledge graph' references absent from Gold/transcript. Minor discrepancies but core diagnosis and main supports correct.",
+    "completeness": "Gold key points: diagnosis; exercise [P-3,P-41,P-6]; reversible [P-6,P-33]; cold [P-38]; multiple settings [P-38]; allergies [P-35,P-36]; nocturnal [P-43,P-44]; negatives [P-7,P-8,P-10,P-31]. Generated covers diagnosis (closely); exercise [P-3,P-41]; cold [P-38]; settings [P-38,P-41]; allergies [P-35,P-36]; adds symptoms [P-1,P-2,P-32] and viral [P-15]. Misses reversibility with rest, nocturnal episode, and pertinent negatives entirely (~4/7 key supports covered, ~57%).",
+    "faithfulness": "Citations [P-3,P-41,P-38,P-35,P-36,P-1,P-2,P-32,P-15] accurately reflect transcript content. However, 'knowledge graph' mentioned twice (links allergies/Reactine, wheezing/SOB/chest discomfort) is entirely fabricated/not in transcript. Viral history [P-15] is verifiable but contextually stretched as supportive for diagnosis (past resolved virals, not acute). Multiple hallucinated elements (knowledge graph).",
+    "relevance": "Directly states diagnosis and lists specific transcript findings with citations addressing the question perfectly; minor off-topic via hallucinated 'knowledge graph' and less-central viral history."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 3.25,
+  "summary": "The Generated Answer is mostly correct and relevant with solid transcript citations for core supports but incomplete in missing key Gold points like reversibility, nocturnal symptoms, and negatives, while introducing transcript-ungrounded 'knowledge graph' hallucinations."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The generated answer correctly states the main recommendations: COVID swab with results in 24–48 hours, isolation for 14 days, and isolating from the younger sister (all supported by D-44). It also accurately includes the ER/return precautions listed in D-44 (high temperature, neurologic symptoms/seizures, weakness/dizziness, fainting).\n\nMinor inaccuracy: it says that if the swab is negative and symptoms persist, asthma would be considered. In the transcript, asthma is mentioned only as a consideration if it were “just the cough”/shortness of breath without fever (D-45), not specifically contingent on a negative swab. This makes the asthma linkage somewhat incorrect, though not central to the question.",
+    "completeness": "Compared with the gold answer, the generated answer includes: COVID swab + timing, 14-day isolation, isolate from younger sister, and ER precautions.\n\nIt omits several management-related elements present in the gold answer/transcript: the doctor’s mention of possible false negatives and that a negative swab could still represent another viral illness going around (D-44), the plan to wait for swab results/supportive-observational approach and that no medications were prescribed (D-44), and the school requirement for a COVID test to return (P-41). Overall, it captures the core isolation/testing pieces but not all key management context.",
+    "faithfulness": "Most statements are directly grounded in D-44 (test, turnaround time, 14-day isolation, isolate from younger sister, ER precautions). The only notable issue is the asthma statement: it introduces a condition (‘if swab negative and symptoms persist’) that is not stated in the transcript; D-45 frames asthma differently. This is a minor but real ungrounded inference; otherwise the answer is faithful.",
+    "relevance": "The response directly addresses what was asked: diagnostic test, isolation instructions and duration, and the specific household member to isolate from. It also adds closely related management/safety-net guidance without major tangents."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 4,
+    "relevance": 5
+  },
+  "average_score": 4.0,
+  "summary": "The generated answer accurately captures the key test and isolation instructions (including isolating from the younger sister) and ER precautions, but misses several gold-answer management details and slightly misstates the context for considering asthma."
+}

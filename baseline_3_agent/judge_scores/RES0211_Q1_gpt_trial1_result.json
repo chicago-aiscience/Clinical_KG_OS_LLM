@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Reported symptoms listed (dry cough, scratchy throat, headache/head pounding, feeling crappy, feeling hot) are consistent with the transcript and Gold Answer. However, the answer mischaracterizes sputum denial as “implicit” (it was explicitly denied: P-5, P-6) and cites an inappropriate line (D-58 is the doctor’s summary, not the initial denial). It also introduces denials not requested in the question (e.g., “no contact with sick people recently,” “no asthma”), and omits several explicit denials that were asked about (nausea/vomiting, diarrhea, joint aches, rashes, dyspnea). These issues substantially reduce factual alignment with the Gold Answer.",
+    "completeness": "Reported symptoms: covers dry cough, scratchy throat, headache, feeling hot, and feeling crappy/overall unwell, but misses key Gold Answer elements: active headache at visit, tiredness, and the more specific description of persistent heat day and night with minimal clothing (partially captured). Explicit denials: only addresses sputum/phlegm (and even that is handled inaccurately) while missing denial of rashes/skin changes, nausea/vomiting, diarrhea, joint aches, and denial of breathing difficulty related to allergies. Overall coverage is well under 50% of Gold Answer key points.",
+    "faithfulness": "Most symptom statements are grounded in the transcript. However, it adds extraneous claims framed as denials (no sick contacts recently, no asthma) that are not part of the doctor’s symptom ROS questions referenced in the user’s examples, and it references a “knowledge graph provided,” which is not in the transcript. It also relies on D-58 for sputum denial rather than the direct patient statements (P-5, P-6), weakening grounding.",
+    "relevance": "Partially addresses the question by listing some symptoms and one denial, but fails to answer the main thrust (which symptoms she explicitly denied when asked—nausea, joint pain, rashes, etc.). It also includes irrelevant items (sick contacts, asthma) relative to the question prompt and examples."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 3,
+    "relevance": 3
+  },
+  "average_score": 2.5,
+  "summary": "The answer captures several core presenting symptoms but misses most explicit denials and adds irrelevant/unsupported elements, resulting in low overall alignment with the Gold Answer."
+}

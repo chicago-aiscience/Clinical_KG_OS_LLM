@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer details the three triggers with citations (exercise P-9, cold P-9/P-11, pollen P-11), notes no other triggers (P-10), clinician's allergy questions and responses (D-12/P-12/D-13/D-31/P-31), family history specifics (sister asthma P-32, no other breathing P-33, no allergies P-34), and links to exacerbation via increased inhaler use (P-8) and clinician's med suggestion (D-43). Generated correctly identifies triggers with citations (P-9, P-11), symptoms of exacerbation (P-1, P-15), increased use (P-1), family history (P-32), and pollen-allergy link. Minor discrepancies: omits no other triggers, exact inhaler frequency (every 2 weeks to 5-6x/week), clinician interactions, family details beyond sister; introduces 'knowledge graph' not in Gold but facts from transcript are accurate.",
+    "completeness": "Key Gold points: 3 triggers (covered), no other triggers (missed), clinician allergy exchanges (missed), family details beyond sister (missed), precise inhaler escalation (partially covered as 'using a lot'), clinician med suggestion (missed). Generated covers triggers, family sister asthma, exacerbation symptoms/increased use, pollen-allergy suspicion. Covers core elements (triggers, family, exacerbation context, allergy suspicion) but misses supporting details and clinician responses; ~80% coverage.",
+    "faithfulness": "Symptoms verifiable (P-1, P-15); triggers verifiable (P-9, P-11); family verifiable (P-32); increased use verifiable (P-1, P-8). However, multiple 'knowledge graph' references linking triggers/family to diagnoses (e.g., exercise/cold to asthma exacerbation, pollen to allergies, family to asthma risk) are not in transcript—hallucinated external framework. Citations accurate where used.",
+    "relevance": "Generated directly structures response around exacerbation (symptoms, triggers), family history role, and allergy suspicion (pollen), mirroring question's focus on triggers + family relating to exacerbation and allergy suspicion; no off-topic content."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.75,
+  "summary": "The Generated Answer is mostly correct and relevant but introduces transcript-ungrounded 'knowledge graph' hallucinations, reducing faithfulness, while covering core but not all Gold details."
+}

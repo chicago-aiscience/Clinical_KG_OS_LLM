@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer details triggers with precise citations, notes no other triggers, clinician's allergy suspicion responses (D-12/P-12/D-13/D-31), full family history (sister asthma, no other breathing issues or allergies), ties to exacerbation via increased inhaler use (P-8), and clinician's plan (D-43). Generated Answer correctly identifies triggers, symptoms, increased inhaler use, family history of sister with asthma, and pollen-allergy link, but introduces non-existent 'knowledge graph' for linkages and misses details like no other triggers, specific clinician quotes/responses, and full family history nuances. Core facts align, but minor additions/discrepancies present.",
+    "completeness": "Gold key points: 3 triggers w/citations (exercise P-9, cold P-9/11, pollen P-11), no other triggers (P-10), allergy discussion (D-12/13/31, P-12/31), family hx (sister asthma P-32, no other breathing P-33, no allergies P-34), exacerbation link (P-8 inhaler use), clinician plan (D-43). Generated covers triggers w/citations, symptoms/increased use, sister asthma, pollen-allergy suspicion; misses no other triggers, detailed clinician allergy responses, full family hx (no other issues), exact plan quote. Covers ~85% of key points.",
+    "faithfulness": "Claims like symptoms (P-1/15), triggers (P-9/11), sister asthma (P-32), pollen mention (P-11) verifiable in transcript with accurate citations. However, repeated 'knowledge graph' references (linking triggers/family/pollen to diagnoses/risk factors/allergens) are entirely absent from transcript, representing multiple hallucinations. Doctor's suspicion inferred correctly from context but framed via hallucinated graph.",
+    "relevance": "Generated Answer directly structures response around exacerbation (triggers/symptoms), family history role, and allergy suspicion via pollen, precisely matching question's focus on triggers + family hx relating to exacerbation and allergy suspicion; no off-topic content."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.75,
+  "summary": "The Generated Answer is mostly correct and relevant but reduced by hallucinations introducing a non-existent 'knowledge graph' and incomplete coverage of clinician responses and full family history details."
+}

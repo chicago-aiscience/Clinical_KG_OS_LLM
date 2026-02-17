@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer has significant factual errors compared to the Gold Answer: it incorrectly attributes green-yellow sputum primarily to COPD exacerbation (Gold attributes it to infection), omits key COPD symptoms like increased cough frequency, sputum volume, and decreased exercise tolerance, misses infection symptoms like sinus pressure, headache, and sick contact, and reverses the distinguishing role of sputum and fever (Gold links them to infection trigger for COPD worsening). It also fabricates a 'knowledge graph' not present in the Gold or transcript. Core facts like SOB, hemoptysis, fever are mentioned but miscontextualized. Score: 2",
+    "completeness": "Gold key points covered partially: COPD exacerbation symptoms (only SOB, sputum wrongly, hemoptysis not emphasized in Gold); infection (only fever); distinguishing sputum/fever (but wrongly). Missed: doctor's quote [D-43], incr cough/sputum vol [P-1], exercise tol [P-4], sinus [P-12], HA [P-14], sick contact [P-20], excluded triggers [P-38,P-26], patient history [P-3], no objective findings [D-43]. Covers ~20-40% of points. Score: 2",
+    "faithfulness": "Claims are partially grounded (cites P-1, P-9, P-40, D-43 accurately for symptoms), but repeatedly hallucinates a 'knowledge graph' linking symptoms to diagnoses (e.g., green sputum to COPD, fever to infection), which is not in transcript. Hemoptysis and smoking history are verifiable but overemphasized without causal link. Multiple unverifiable 'graph' references. Score: 2",
+    "relevance": "Directly structures response around symptoms for COPD exacerbation, respiratory infection, and distinguishing role of sputum/fever, matching question focus; minor tangent with fabricated knowledge graph but no major off-topic content. Score: 4"
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer partially addresses the question but contains significant factual inaccuracies, omissions of key symptoms, and hallucinations about a non-existent knowledge graph, leading to a poor overall match with the Gold Answer."
+}

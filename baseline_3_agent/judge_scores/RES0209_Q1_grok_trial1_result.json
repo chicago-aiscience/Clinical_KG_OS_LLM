@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer is mostly accurate on the core symptoms (dry cough nonstop daytime from P-1, shortness of breath from P-1, wheezing a lot from P-15, chest tightness confirmed), but has minor discrepancy on cough duration (week vs. two weeks in P-13), misses elaborations like 'hard time breathing' (P-19) and wheezing more frequent than bronchodilator (P-17), incorrectly cites P-4 for chest tightness instead of P-20, and significantly contradicts the Gold Answer by claiming no nighttime details exist despite explicit transcript evidence in P-18 of less frequent nighttime symptoms every other day or so. These represent significant factual errors and contradictions.",
+    "completeness": "Key points from Gold Answer: (1) dry cough ~2 weeks nonstop daytime (covered partially: dry/nonstop day but ~1 week); (2) SOB very short + hard time breathing (covered partially: only very short); (3) wheezing a lot + more freq than bronchodilator (covered partially: only a lot); (4) chest tightness (covered); (5) daytime prominent (covered); (6) nighttime less frequent every other/2 days (completely missed). Covers about 60% of key points partially.",
+    "faithfulness": "All symptom claims are verifiable (cough P-1/P-14, SOB P-1, wheezing P-15, chest P-20, daytime P-1/P-9), but chest tightness citation is inaccurate (cites wrong P-4), daytime triggers verifiable (P-9); however, the claim 'transcript does not contain specific details regarding nighttime' is a hallucination as P-18 explicitly describes nighttime symptoms occurring less than daytime, every other day or so. Multiple inaccuracies and one fabricated negation.",
+    "relevance": "The answer is structured directly around the question's requested symptoms (cough character, breathing difficulties, wheezing, chest sensations) with bullet points and a frequency section comparing daytime (detailed) vs. nighttime, containing no off-topic content despite errors."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer correctly identifies main symptoms but has significant errors in details, citations, and completely misses/denies nighttime frequency differences, leading to reduced scores in correctness, completeness, and faithfulness."
+}

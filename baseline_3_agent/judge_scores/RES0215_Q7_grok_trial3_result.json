@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer specifies initial onset 4-5 days ago with wheezing and difficulty deep breathing triggered by playing tag [P-2,P-3]; fluctuating episodic pattern resolving with rest and recurring with activity [P-5,P-6]; recent emergence of slight non-productive cough [P-1,P-31]; single nocturnal wheeziness episode causing trouble falling asleep [P-43,P-44]. Generated Answer correctly notes 4-5 day onset, wheezing, dyspnea [P-2,P-32], cough [P-1], exertion trigger including tag [P-3], but incorrectly states initial wheezing 'without a reported acute trigger [P-1]' (contradicts P-3), misattributes fluctuating history to past infections [P-15] irrelevant to this episode, and falsely claims no explicit nocturnal episode (directly contradicts P-43,P-44). Includes irrelevant seasonal allergies/management. Significant contradictions on trigger presentation, nocturnal event, and extraneous history.",
+    "completeness": "Covers: onset 4-5 days (100%), wheezing/dyspnea, cough emergence, exertion trigger (incl. tag), some fluctuation via exertion. Partially covers fluctuating pattern but inaccurately links to past infections instead of episodic activity/rest cycle [P-6]. Misses: detailed episodic resolution with rest/recurrence with activity, non-productive cough detail, single nocturnal episode entirely, pertinent negatives (no cyanosis, fever, well between episodes). Covers ~50-60% of key points.",
+    "faithfulness": "Claims verifiable: onset [P-1], wheezing [P-1,P-2], dyspnea [P-2,P-32], cough [P-1], tag [P-3], cold weather [P-38]. Unverifiable/misgrounded: 'without acute trigger [P-1]' (P-1 doesn't state this, contradicted by P-3); fluctuating history tied to past infections [P-15] (not for current episode); denies explicit nocturnal detail despite clear [P-43,P-44]; adds 'knowledge graph' not in transcript; seasonal allergies [P-35] tangential. Multiple misreads/hallucinated connections.",
+    "relevance": "Directly summarizes symptom onset, progression, triggers, patterns addressing question; minor tangents on past infections/allergies/management but stays mostly focused on respiratory symptoms development without major off-topic content."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer covers much of the symptom progression but contains significant factual errors, including denying the initial trigger and nocturnal episode, and adds irrelevant historical context."
+}

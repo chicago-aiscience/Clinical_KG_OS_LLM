@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The reported symptoms listed (dry cough, scratchy throat, feeling crappy, headache, feeling hot) match the transcript and Gold Answer. However, the answer is materially incorrect/inadequate for the “explicitly denied” portion: it fails to report Jessica’s explicit denials of nausea/vomiting, diarrhea, rashes/skin changes, and joint aches, and instead introduces non-ROS items (asthma history, sick contacts) as “denials.” It also incorrectly states “no one in contact… been sick,” which conflicts with Jessica reporting her brother had a cold a few weeks ago (P-39–P-40).",
+    "completeness": "Reported symptoms: covers dry cough, scratchy throat, headache, feeling hot, and general unwellness, but misses key Gold Answer items (explicit “icky”/malaise characterization, tiredness). Denials: only addresses sputum/phlegm, and omits the majority of required denials (rashes/skin changes, nausea/vomiting, diarrhea, joint aches, and denial of breathing difficulty related to allergies). Overall coverage is well under 50% of Gold Answer key points.",
+    "faithfulness": "Several statements are not well-grounded or are misstated: references a “knowledge graph” not present; uses D-58 (doctor summary) rather than the patient’s direct denials (P-5/P-6) for sputum; and incorrectly claims no sick contacts despite the brother’s recent cold. Asthma denial is in the transcript but is not part of the asked symptom-denial set, making its inclusion misleading in this context.",
+    "relevance": "Partially addresses the question by listing some of Jessica’s symptoms over 3–4 days, but it substantially fails to answer the asked ‘explicitly denied symptoms’ examples (sputum, nausea, joint pain, rashes) and adds tangential items (asthma, sick contacts)."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "The answer captures some of Jessica’s main presenting symptoms but largely misses (and partially misstates) the explicitly denied ROS symptoms requested, with multiple omissions and at least one contradiction to the transcript."
+}

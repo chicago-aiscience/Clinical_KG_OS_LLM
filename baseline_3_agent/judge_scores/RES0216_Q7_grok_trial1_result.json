@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the onset as three days ago [P-1] and first noticing during dog walk [P-1, matching Gold's P-4 intent]. It accurately describes tightness on inspiration and harder breathing [P-1, P-5]. However, it erroneously states the transcript 'does not explicitly state' if symptoms are better, worse, or same, directly contradicting Gold (and transcript P-2: 'staying the same'; P-3: 'pretty steady'). It incompletely lists exacerbators (only walking/dog walk, missing getting up from chair and big breaths [P-9]). Impact on routine is incorrect: claims patient 'continues with their daily walking routine' but Gold/transcript [P-22] notes reduction from usually 2 walks/day to 1. Adds hoarseness/phlegm [P-11] not central to Gold. Misattributes 'no SOB with exercise' and 'different than asthma' primarily to doctor [D-36], though patient notes difference [P-16]. Significant errors on progression and impact warrant score 2.",
+    "completeness": "Gold key points: 1. Onset 3 days [P-1] - covered. 2. First on walk with dog [P-4] - partially (dog walk but not 'first noticed'). 3. No particular trigger, just came on [P-3] - missed. 4. Staying same/steady [P-2,P-3] - missed (denied existence). 5. Always there, worse on walks, up from chair, big breath [P-9,P-10] - partially (only walks). 6. On inspiration [P-1,P-5] - covered. 7. Reduced to 1 walk/day from couple [P-22] - missed (says continues). 8. No missed work [P-21,P-22] - missed. 9. Noticeably limiting [P-22,P-23] - missed. Covers ~30% (onset, first activity partial, main exacerbator, inspiration), score 2.",
+    "faithfulness": "Claims verifiable: 3 days [P-1], tightness on breathe in/harder [P-1,P-5], exacerbated walking/dog [P-1,P-9], hoarseness [P-11]. 'Knowledge graph' hallucinated (absent). Trend 'not explicitly stated' false - P-2 explicitly 'staying the same'. Impact 'continues daily routine' ignores P-22 (reduced walks), cherry-picks P-1. 'Doctor clarified no SOB with exercise, different than asthma' [D-36] is paraphrase; patient reports SOB-ish [P-7], difference [P-16]. Multiple interpretive errors/hallucinations of absence/oversimplification, score 2.",
+    "relevance": "Directly structures around onset, nature, triggers, trend, impact - aligns with question on development/evolution (3 days, first activity=walk/dog), exacerbators (walking), walking routine impact. Minor tangents (hoarseness, asthma comparison) but focused, no major off-topic, score 4."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer has significant factual gaps and errors on symptom progression and walking impact, incorrectly denying explicit transcript details while partially covering onset and main trigger."
+}

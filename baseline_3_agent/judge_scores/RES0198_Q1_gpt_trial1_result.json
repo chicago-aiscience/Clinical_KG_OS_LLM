@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Compared with the Gold Answer, the Generated Answer correctly identifies the main nasal symptoms (stuffy nose/nasal congestion and runny nose for ~1 week, initially stuffy then mostly running). However, it is factually wrong in two core areas: (1) it states the character of the discharge is not specified, but the patient explicitly says it is “mostly clear” [P-5]; (2) it claims the transcript does not explicitly list denials of cough, sore throat, post-nasal drip, or loss of taste/smell, but these are explicitly denied in the transcript (cough [P-4], back-of-throat drainage/post-nasal drip [P-6], sore throat/SOB/fever/chills [P-7], loss of taste/smell [P-16]). These errors affect central elements asked in the question.",
+    "completeness": "Key Gold Answer points covered: stuffy nose + runny nose for one week; progression from stuffy to mostly running. Key points missed: discharge character “mostly clear” [P-5]; explicit denials of cough [P-4], post-nasal drip/back-of-throat drainage [P-6], sore throat/SOB/fever/chills [P-7], and loss of taste/smell [P-16]. (Gold also mentions mild fatigue [P-15] and other negatives, but the question’s focus is primarily nasal symptoms/discharge and the specified related-symptom denials.) Overall, it omits most of the requested denial/discharge details.",
+    "faithfulness": "The answer is not well-grounded in the transcript because it repeatedly asserts that information is “not specified” or that context is “missing,” when the transcript explicitly contains those details (clear discharge [P-5]; symptom denials tied to specific questions [P-4, P-6, P-7, P-16]). While it doesn’t introduce many new fabricated clinical facts, these contradictions with the transcript reduce faithfulness substantially.",
+    "relevance": "It is organized around exactly what was asked (nasal symptoms, discharge character, and denied related symptoms). There is minor extra content (doctor’s viral illness/common cold summary), but overall it stays on-topic."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "Captures the basic nasal symptoms but incorrectly claims key details are absent (clear discharge and explicit denials), leading to low correctness/completeness/faithfulness despite generally addressing the question."
+}

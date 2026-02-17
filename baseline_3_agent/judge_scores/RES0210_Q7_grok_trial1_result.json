@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer specifies raspy cough on Friday [P-3], but Generated places 'pretty bad cough' onset on Sunday [P-1,P-4], a significant error. Yellow sputum with red spots both started Sunday [P-4,P-6,P-7], but Generated mentions only 'red gunk' without 'yellow custard'. Fever correctly on Monday [P-5,P-8]. Chills 'last two days' (Tue-Wed) [P-9], Generated says Tuesday (minor). Chest pain 'over the last day' (Tue) [P-20], but Generated places on Wednesday [P-17], contradictory. Misses runny nose and exertional dyspnea details. Significant factual errors on key symptom onsets.",
+    "completeness": "Gold covers runny nose (week ago), Friday raspy cough, Sunday bad cough + yellow sputum w/red spots, Monday fever + sputum persist, Tue-Wed chills, Tue chest pain onset worsening details, overall symptoms by Wed (dyspnea, sore throat). Generated covers Sunday cough+red sputum, Mon fever+sputum, Tue chills, Wed chest pain, progression summary. Misses Friday raspy cough, runny nose, yellow sputum descriptor, exertional dyspnea/sore throat in timeline, precise chest pain timing. Covers ~60% of key points.",
+    "faithfulness": "All claims grounded: Sunday cough [P-1,P-2,P-3], red sputum [P-4], persist Mon [P-5], fever Mon [P-5,P-8], chills last two days [P-9], chest pain right [P-17,P-19,P-20], sore throat [P-15]. Citations accurate. Minor interpretation: chills pinned to Tue (plausible), chest pain cause 'severe coughing' inferred but not explicit for chest (sore throat is). No hallucinations.",
+    "relevance": "Generated directly traces timeline by day (Sun-Wed) specifying onsets for cough, sputum/red spots, fever, chills, chest pain, and describes worsening progression, perfectly matching question focus without off-topic content."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 4,
+    "relevance": 5
+  },
+  "average_score": 3.5,
+  "summary": "The Generated Answer addresses the question structure well and is mostly faithful to the transcript but has significant factual inaccuracies in symptom onset days (cough, chest pain) and misses key early details compared to Gold, reducing correctness and completeness."
+}

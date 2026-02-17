@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly states that the patient did not identify a specific exposure event. In the transcript [P-18], the patient explicitly mentions going hiking two weeks ago where people brushed by them, identifying it as the only possible source of infection. The Gold Answer correctly identifies this event, while the Generated Answer contradicts the source material.",
+    "completeness": "The Generated Answer fails to mention the hiking trip, which is the primary answer to the first part of the question. It also misses how this specific history connects to the diagnosis, instead pivoting to a discussion of symptoms which was not the focus of the question.",
+    "faithfulness": "The Generated Answer hallucinates that there was no exposure history mentioned. It also references a 'Knowledge Graph' which is not part of the provided source transcript. However, it does correctly attribute the symptoms and the doctor's conclusion to the transcript segments.",
+    "relevance": "The answer is largely irrelevant to the specific prompt because it denies the existence of the information requested (the exposure event). By focusing on symptoms instead of the 'exposure history' asked for, it fails to address the core of the user's query."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 2
+  },
+  "average_score": 1.5,
+  "summary": "The Generated Answer fails significantly by incorrectly claiming no exposure event was identified, directly contradicting the transcript and the Gold Answer."
+}

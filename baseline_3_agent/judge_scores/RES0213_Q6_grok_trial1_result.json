@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly claims that the doctor's concluding remarks are not included in the transcript, despite [D-33] explicitly providing them and stating the plan to pass information to another doctor for evaluation; it covers some symptom details (sharp pain on deep breath, 20 min duration, OTC failure), smoking, family history, past anxiety, and stress but omits key elements like 1.5-week onset, rest/alone triggers, distraction relief, no exercise worsening, multiple pertinent negatives (trauma, fevers, asthma, dyspnea, palpitations, family sudden death), lives alone, and multivitamin, representing significant factual discrepancies from the Gold Answer.",
+    "completeness": "Gold Answer covers the plan (relay to another physician) and key points in 5 categories: detailed symptoms, failed OTC, pertinent negatives, relevant history, psychosocial context; Generated misses the entire plan, partial symptoms (misses onset, full pattern, relief), no pertinent negatives, incomplete history (e.g., full smoking reduction, lives alone), partial psychosocial; covers approximately 25-40% of key points.",
+    "faithfulness": "Claims concluding remarks absent is directly contradicted by [D-33]; accurate citations for some symptoms/smoking/family/stress/anxiety but hallucinates 'knowledge graph' references not in transcript, infers anxiety diagnosis not stated, and misrepresents anxiety symptoms as constant rather than contextual; multiple unverifiable additions.",
+    "relevance": "Directly attempts to address key clinical information gathered but completely sidesteps the stated plan by falsely denying source material, introduces off-topic 'knowledge graph'; partially relevant to question."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "The Generated Answer has major factual errors by missing the concluding plan in [D-33], provides incomplete key clinical details, includes hallucinations like knowledge graph references, and only partially addresses the full question."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer accurately captures the local symptoms of redness, tenderness, and soreness at the tick bite site behind the left knee, with correct citations to [P-1], [P-3], and [P-6], consistent with the Gold Answer. However, it contains a major factual error by stating the doctor 'did not explicitly screen for fever, joint pain, or headaches,' directly contradicting the Gold Answer and transcript evidence of screening for joint pain [D-7/P-7], feverish/ill [D-8/P-8], and headaches [D-19/P-19-20]. This is a significant contradiction on the second half of the question.",
+    "completeness": "Key points from Gold covered: redness [P-1/P-6], tenderness [P-1/P-6], soreness of skin not joint [P-1], sore in one spot [P-3]. Missed from Gold: precise location 'in the crease where leg bends,' 'stuck pretty good,' explicit denial of bullseye/target rash with only localized redness [P-6], 'totally fine' aside from tenderness [P-18], 'pretty healthy' [P-13]. Systemic: covers 0% of joint pain, fever, headaches screenings and denials. Approximately 40% coverage (strong on core local symptoms but incomplete details and zero systemic).",
+    "faithfulness": "Local symptom claims are fully verifiable in transcript with accurate citations [P-1, P-3, P-6]. Systemic claims hallucinate absence of screening despite clear transcript evidence [D-7, D-8, D-19]; incorrectly states 'transcript does not contain evidence' and cites only rash [D-6] and general wellness [D-18]. References non-existent 'knowledge graph.' Multiple hallucinated facts about screening reduce grounding.",
+    "relevance": "The answer directly structures response around local symptoms at tick bite site and systemic symptoms screened, using bullet points matching question parts; minor extraneous note on rash/general wellness but no major tangents or off-topic content."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer is mostly accurate and relevant for local symptoms but factually incorrect, incomplete, and unfaithful on systemic symptoms by denying their presence in the transcript."
+}

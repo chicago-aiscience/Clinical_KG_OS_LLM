@@ -1,0 +1,256 @@
+{
+  "nodes": [
+    {
+      "id": "N_001",
+      "text": "stuffy nose",
+      "type": "SYMPTOM",
+      "evidence": "P-1: 'I've had the stuffy nose'",
+      "turn_id": "P-1"
+    },
+    {
+      "id": "N_002",
+      "text": "runny nose",
+      "type": "SYMPTOM",
+      "evidence": "P-1: 'as well as a runny nose'",
+      "turn_id": "P-1"
+    },
+    {
+      "id": "N_003",
+      "text": "fatigue",
+      "type": "SYMPTOM",
+      "evidence": "P-15: 'A little bit'",
+      "turn_id": "P-15"
+    },
+    {
+      "id": "N_004",
+      "text": "covid",
+      "type": "DIAGNOSIS",
+      "evidence": "P-1: 'in case I have covid'",
+      "turn_id": "P-1"
+    },
+    {
+      "id": "N_005",
+      "text": "viral infection",
+      "type": "DIAGNOSIS",
+      "evidence": "D-39: 'it seems like it's most likely a viral infection'",
+      "turn_id": "D-39"
+    },
+    {
+      "id": "N_006",
+      "text": "common cold",
+      "type": "DIAGNOSIS",
+      "evidence": "D-39: 'viral infection like the common cold'",
+      "turn_id": "D-39"
+    },
+    {
+      "id": "N_007",
+      "text": "decongestants",
+      "type": "TREATMENT",
+      "evidence": "P-10: 'I've tried like decongestants'",
+      "turn_id": "P-10"
+    },
+    {
+      "id": "N_008",
+      "text": "Tylenol cold",
+      "type": "TREATMENT",
+      "evidence": "D-39: 'use over the counter medications uh like Tylenol cold'",
+      "turn_id": "D-39"
+    },
+    {
+      "id": "N_009",
+      "text": "supportive care",
+      "type": "TREATMENT",
+      "evidence": "D-39: 'not much that we can do besides supportive care'",
+      "turn_id": "D-39"
+    },
+    {
+      "id": "N_010",
+      "text": "swab",
+      "type": "PROCEDURE",
+      "evidence": "D-39: 'we will also get a swab done for you today'",
+      "turn_id": "D-39"
+    },
+    {
+      "id": "N_011",
+      "text": "type one diabetes",
+      "type": "MEDICAL_HISTORY",
+      "evidence": "P-23: 'Um I have type one diabetes'",
+      "turn_id": "P-23"
+    },
+    {
+      "id": "N_012",
+      "text": "nose",
+      "type": "LOCATION",
+      "evidence": "P-3: 'It felt pretty stuffy at first' (contextually nose)",
+      "turn_id": "P-3"
+    },
+    {
+      "id": "N_013",
+      "text": "insulin",
+      "type": "TREATMENT",
+      "evidence": "P-25: 'my insulin medication'",
+      "turn_id": "P-25"
+    },
+    {
+      "id": "N_014",
+      "text": "endocrinologist",
+      "type": "PROFESSIONAL",
+      "evidence": "P-26: 'I do' (referring to endocrinologist)",
+      "turn_id": "P-26"
+    },
+    {
+      "id": "N_015",
+      "text": "cough",
+      "type": "SYMPTOM",
+      "evidence": "P-4: 'No'",
+      "turn_id": "P-4"
+    },
+    {
+      "id": "N_016",
+      "text": "loss of sense of taste or smell",
+      "type": "SYMPTOM",
+      "evidence": "P-16: 'No, um not that I've noticed'",
+      "turn_id": "P-16"
+    },
+    {
+      "id": "N_017",
+      "text": "nausea",
+      "type": "SYMPTOM",
+      "evidence": "P-14: 'Nope, nothing like that'",
+      "turn_id": "P-14"
+    },
+    {
+      "id": "N_018",
+      "text": "stay well hydrated",
+      "type": "TREATMENT",
+      "evidence": "D-39: 'make sure you get you stay well hydrated'",
+      "turn_id": "D-39"
+    }
+  ],
+  "edges": [
+    {
+      "source_id": "N_001",
+      "target_id": "N_012",
+      "type": "LOCATED_AT",
+      "evidence": "P-1: 'I've had the stuffy nose'",
+      "turn_id": "P-1"
+    },
+    {
+      "source_id": "N_002",
+      "target_id": "N_012",
+      "type": "LOCATED_AT",
+      "evidence": "P-1: 'as well as a runny nose'",
+      "turn_id": "P-1"
+    },
+    {
+      "source_id": "N_004",
+      "target_id": "N_001",
+      "type": "CAUSES",
+      "evidence": "P-1: 'in case I have covid' (Patient suspects)",
+      "turn_id": "P-1"
+    },
+    {
+      "source_id": "N_004",
+      "target_id": "N_002",
+      "type": "CAUSES",
+      "evidence": "P-1: 'in case I have covid' (Patient suspects)",
+      "turn_id": "P-1"
+    },
+    {
+      "source_id": "N_004",
+      "target_id": "N_003",
+      "type": "CAUSES",
+      "evidence": "P-15: 'A little bit' (Patient reports fatigue in context of illness)",
+      "turn_id": "P-15"
+    },
+    {
+      "source_id": "N_001",
+      "target_id": "N_005",
+      "type": "INDICATES",
+      "evidence": "D-39: 'it seems like it's most likely a viral infection'",
+      "turn_id": "D-39"
+    },
+    {
+      "source_id": "N_002",
+      "target_id": "N_005",
+      "type": "INDICATES",
+      "evidence": "D-39: 'it seems like it's most likely a viral infection'",
+      "turn_id": "D-39"
+    },
+    {
+      "source_id": "N_007",
+      "target_id": "N_001",
+      "type": "TAKEN_FOR",
+      "evidence": "P-10: 'I've tried like decongestants'",
+      "turn_id": "P-10"
+    },
+    {
+      "source_id": "N_008",
+      "target_id": "N_001",
+      "type": "TAKEN_FOR",
+      "evidence": "D-39: 'use over the counter medications uh like Tylenol cold'",
+      "turn_id": "D-39"
+    },
+    {
+      "source_id": "N_008",
+      "target_id": "N_002",
+      "type": "TAKEN_FOR",
+      "evidence": "D-39: 'use over the counter medications uh like Tylenol cold'",
+      "turn_id": "D-39"
+    },
+    {
+      "source_id": "N_009",
+      "target_id": "N_006",
+      "type": "TAKEN_FOR",
+      "evidence": "D-39: 'not much that we can do besides supportive care' for the common cold",
+      "turn_id": "D-39"
+    },
+    {
+      "source_id": "N_010",
+      "target_id": "N_004",
+      "type": "CONFIRMS",
+      "evidence": "D-39: 'we will also get a swab done for you today' for covid",
+      "turn_id": "D-39"
+    },
+    {
+      "source_id": "N_011",
+      "target_id": "N_013",
+      "type": "TREATS",
+      "evidence": "P-25: 'my insulin medication'",
+      "turn_id": "P-25"
+    },
+    {
+      "source_id": "N_011",
+      "target_id": "N_014",
+      "type": "SEEKS_HELP_FROM",
+      "evidence": "P-26: 'I do' (referring to endocrinologist)",
+      "turn_id": "P-26"
+    },
+    {
+      "source_id": "N_009",
+      "target_id": "N_018",
+      "type": "TAKEN_FOR",
+      "evidence": "D-39: 'stay well hydrated' as part of supportive care",
+      "turn_id": "D-39"
+    }
+  ],
+  "_meta": {
+    "pass1": {
+      "nodes": 12,
+      "edges": 12
+    },
+    "pass3": {
+      "nodes": 18,
+      "edges": 15
+    },
+    "critique_length": 1912
+  },
+  "_usage": {
+    "prompt_tokens": 9244,
+    "completion_tokens": 14246,
+    "pass1_nodes": 12,
+    "pass1_edges": 12,
+    "pass3_nodes": 18,
+    "pass3_edges": 15
+  }
+}

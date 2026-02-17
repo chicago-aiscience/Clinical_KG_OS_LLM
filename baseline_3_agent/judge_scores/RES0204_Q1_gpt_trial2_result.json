@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the two main respiratory symptoms (cough and runny nose) and their durations, and correctly notes the nasal discharge was “pretty clear” [P-12]. However, it contains a major factual error relative to the Gold Answer and transcript: it states the transcript does not specify whether the cough is productive vs. non-productive. In fact, the clinician explicitly characterizes it as a dry cough and the patient agrees [D-5, P-5], and the patient denies bringing up any “gunk”/sputum [D-6, P-6], making it explicitly non-productive. It also omits the transcript detail that the cough “kind of stayed the same” [D-7, P-7] (though it partially captures lack of improvement via [P-2]).",
+    "completeness": "Key Gold Answer points covered: (1) cough duration ~4–5 days; (2) runny nose duration past couple of days; (3) nasal discharge clear. Key points missed: (1) cough is dry; (2) cough is explicitly non-productive/no sputum; (3) cough course stayed the same; (4) patient’s comment about never having a dry cough like this and prior runny noses not lasting as long; (5) other pertinent negatives listed in Gold Answer (sore throat, chest pain) are not included (though wheeze/SOB is included). Overall, it captures some but not most of the Gold Answer’s defining characteristics of the cough.",
+    "faithfulness": "Most statements are grounded in the transcript (cough duration, lack of improvement per [P-2], runny nose duration, clear discharge, no wheeze/SOB per [P-28]). The main faithfulness problem is the claim that productivity/dryness is not specified; this contradicts explicit transcript content [D-5/P-5, D-6/P-6]. This is not mere omission but a contradictory interpretation, reducing faithfulness.",
+    "relevance": "The response stays focused on respiratory symptoms and attempts to describe characteristics (cough and nasal discharge) and includes a relevant respiratory negative (no wheeze/SOB). However, it fails to answer a central part of the question (productive vs non-productive cough) and therefore is not fully responsive to what was asked."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 3,
+    "relevance": 4
+  },
+  "average_score": 3.0,
+  "summary": "Identifies the main symptoms and clear nasal discharge but makes a major error by claiming cough productivity is unspecified despite explicit transcript evidence of a dry, non-productive cough, and omits several key symptom characteristics."
+}

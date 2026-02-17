@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly identifies 'other health problems' [D-29] and 'chest tightness' [D-20] as screening for infectious causes, which they are not; the actual infectious screening includes specific questions on colds/infections [D-21], loss of taste/smell [D-25], fevers [D-26], nausea/vomiting [D-27], belly pain [D-28], and exposures [D-22-D-24], all denied by the patient. It lists general symptoms and triggers instead of screening responses, contradicting the Gold Answer's focus on infectious screening. The planned COVID swab is correctly noted, but core facts are misrepresented.",
+    "completeness": "Gold Answer key points: symptoms screened (colds/infections denied, loss taste/smell denied, fevers denied, nausea/vomiting denied, belly pain denied, dry cough); exposures (home contacts sick denied, outside contacts sick denied, travel denied); explanation [D-29]; planned COVID swab [D-29]. Generated covers only the planned COVID swab and mentions dry cough generally; misses all specific screening symptoms, exposure responses, and explanation—covers <20% of key points.",
+    "faithfulness": "Claims about screening for 'other health problems' [D-29] and 'chest tightness' [D-20] are verifiable in transcript but inaccurately framed as infectious screening (actual infectious questions are D-21-D-28); general symptoms [P-1,P-15], triggers [P-9,P-11], and family history [P-32] are grounded but irrelevant to infectious screening; presents misattribution as hallucinated interpretation of screening purpose; COVID swab [D-29] accurate.",
+    "relevance": "Generated partially addresses planned test but focuses on general symptoms, triggers, bronchodilator use, and family history instead of specific infectious screening symptoms/exposures and responses; includes irrelevant details while missing core question elements."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.0,
+  "summary": "The Generated Answer significantly misidentifies the infectious screening questions and responses, covering only the planned test while including irrelevant general history, resulting in low factual accuracy and completeness."
+}

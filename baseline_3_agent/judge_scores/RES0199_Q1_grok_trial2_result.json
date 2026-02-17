@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Generated Answer has factual inaccuracies compared to Gold: incorrectly states diarrhea onset as 'few days back' without specifying 2 days [P-28]; claims no explicit frequency for diarrhea despite P-28 stating 'five or six times a day'; fails to identify cough as dry [P-12], mis-cites P-11 (stability, not nature); omits vomiting yesterday timing and food contents [P-32,34]; no headache severity 7/10 [P-8], instead vaguely infers from persistence and Tylenol; misses many specifics like liquid stools, no blood, resp/GI negatives. Core symptoms mentioned but significant errors/omissions.",
+    "completeness": "Gold key points: resp (dry cough 4d stable no sputum/blood, negatives SOB/wheeze/chest pain); GI (diarrhea 2d liquid 5-6x/d no blood, nausea today vomit yesterday 2x food no blood, GI negatives); headache (4d persistent bilateral forehead/top 7/10 no rad/stiff unusual). Generated covers: cough onset/stable vaguely, diarrhea mention no details, vomit 2x nausea, headache onset/persistent no rating/location. Misses ~80% specifics/negatives asked (cough nature, diarrhea freq, vomit details, headache severity/location). Covers 20-49%.",
+    "faithfulness": "Claims mostly grounded but errors: diarrhea freq wrongly 'not explicitly stated' (P-28 contradicts); cough 'nature' mis-cited P-11 (stability), dry cough P-12 omitted; headache severity inferred vaguely ('high' from 'really sick'/Tylenol) not 7/10; onsets from P-1 ok but imprecise for GI; no major fabrications but multiple misreads/unverifiable inferences and false claim on freq. Multiple issues.",
+    "relevance": "Perfectly addresses GI (diarrhea/nausea/vomiting), respiratory (cough), headache characteristics/severity as per question; structured directly, no off-topic content."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer partially identifies main symptoms but has significant factual errors, misses key specifics like diarrhea frequency and cough nature, and lacks headache severity rating, resulting in low correctness, completeness, and faithfulness despite high relevance."
+}

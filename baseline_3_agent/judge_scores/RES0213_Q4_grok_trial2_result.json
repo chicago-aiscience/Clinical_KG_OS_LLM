@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly identifies only 'Heart Disease (Heart Attack)' and 'Anxiety' as screened-for conditions ruled out, whereas the Gold Answer lists six specific conditions: traumatic/musculoskeletal injury, cardiac disease (angina), infectious/febrile illness, asthma, primary dyspnea, and inherited arrhythmia. It misattributes patient-initiated statements (e.g., family history [P-8], smoking [P-13/14]) as doctor's inquiries with 'likely asked,' and anxiety is not ruled out but suggested. Significant contradictions and errors compared to Gold.",
+    "completeness": "Gold key points: 6 conditions with specific doctor questions/citations (D-5 trauma; D-10/D-20/D-11 cardiac; D-12/D-27 infection; D-23/D-24 asthma; D-19 dyspnea; D-31/D-32 arrhythmia). Generated covers none fully; vague overlap on cardiac symptoms but misses trauma, infection, asthma, dyspnea, arrhythmia entirely, and adds irrelevant anxiety. Covers <20% of key points.",
+    "faithfulness": "Generated hallucinates doctor's lines of inquiry (e.g., 'doctor likely asked about family history' cites [P-8] patient-led; smoking [P-13/14] patient-led, doctor only follows up [D-14]; past anxiety [P-21] patient volunteer). Symptom patterns misattributed (e.g., OTC meds [P-6] not doctor's question). Multiple unverifiable/hallucinated claims not grounded in transcript.",
+    "relevance": "Structure mimics Gold (numbered conditions, lines of inquiry) and addresses screening/ruled-out theme, but content deviates to wrong conditions (anxiety not ruled out) and off-topic elements (lifestyle risks, OTC response not exclusions), making it partially relevant with significant inaccuracies."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.0,
+  "summary": "The Generated Answer has significant factual errors, poor coverage of Gold key points, multiple hallucinations about doctor's inquiries, and only partial relevance due to incorrect conditions identified."
+}

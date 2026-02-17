@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer’s main diagnosis of **acute bronchitis** is broadly consistent with the Gold Answer’s framing of an **acute lower respiratory tract infection most likely acute bronchitis**. However, it omits the Gold Answer’s important qualification that this could represent **bacterial superinfection or early community-acquired pneumonia** superimposed on chronic cough, and it does not convey the Gold Answer’s nuance that **green sputum is not definitive for bacterial infection**. It also adds non–Gold-supported statements (e.g., “Knowledge Graph explicitly establishes…”) which are not clinically grounded and detract from factual reliability, though this is primarily a faithfulness issue.",
+    "completeness": "It addresses the three requested features (productive cough, green sputum, subjective fever) and links them to acute bronchitis, but misses several key Gold Answer points: (1) broader diagnosis framing as **acute LRTI** with **possible early pneumonia/bacterial superinfection**, (2) the context of **acute worsening over 3 days on top of a 3-month intermittent cough**, (3) explicit nuance that **green sputum alone does not confirm bacterial infection**, (4) the Gold Answer’s note that the clinician summary highlights absence of other constitutional symptoms (night sweats, weight loss, hemoptysis), and (5) that **no vitals/exam/imaging/labs** were available to confirm. Overall coverage is partial.",
+    "faithfulness": "Multiple elements are not supported by the transcript: references to a “**Knowledge Graph**” and claims that it “explicitly establishes” cough/tiredness/sleep disturbance as evidence of acute bronchitis are **hallucinated** (no such source appears in the transcript). The transcript does support that she has cough with greenish sputum and subjective nighttime heat without measured temperature, but the added external framework is not verifiable from the provided text.",
+    "relevance": "The response stays focused on the question: it proposes a diagnosis and explains how productive cough, green sputum, and subjective fever support it. There are no major tangents beyond the irrelevant (and unsupported) “Knowledge Graph” references."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.5,
+  "summary": "The answer is relevant and largely consistent in pointing to acute bronchitis, but it is incomplete versus the Gold Answer’s broader infectious differential and contains several unsupported (hallucinated) “Knowledge Graph” claims, reducing faithfulness."
+}

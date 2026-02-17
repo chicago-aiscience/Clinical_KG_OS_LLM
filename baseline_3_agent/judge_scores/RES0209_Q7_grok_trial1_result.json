@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer details precise timeline (dx age 8, now 10), baseline bronchodilator use once every 2 weeks (P-8), current 2-week exacerbation with 5-6x/week use, specific symptoms including nighttime and wheezing > use frequency. Generated Answer misses dx age/history length, precise baseline/current frequencies (vaguely says 'near-daily' and 'marked increase'), incorrectly cites chest tightness as [P-4] instead of [P-20], presents baseline triggers as exacerbation-specific, adds hallucinated 'diagnosis' and '[Knowledge Graph]'. Main point of escalation is correct but with discrepancies and omissions. Score: 3.",
+    "completeness": "Gold key points: dx age 8/now 10; baseline low use/triggers; 2wk exacerb: nonstop cough, wheezing/SOB/chest tight, use 5-6x/wk, wheezing>use, nighttime sxs, no precipitant. Generated covers current symptoms (cough/SOB/wheeze/tight), vague escalation, triggers; misses dx age, precise use freqs, 2wk timeline clarification, nighttime sxs, wheezing freq vs use, no precipitant. Covers ~50-60% of points. Score: 3.",
+    "faithfulness": "Symptoms verifiable (P-1,15,20); triggers ok (P-9,11); increase grounded (P-1,8 implied). Errors: wrong cite chest tightness [P-4 vs P-20]; baseline triggers framed as current exacerb; hallucinated 'diagnosis of asthma exacerbation', '[Knowledge Graph] inference'; family history extra but verifiable. Multiple inaccuracies/hallucinations. Score: 2.",
+    "relevance": "Directly discusses symptom evolution and bronchodilator usage increase (core question), but vague on timeline/baseline/current specifics, adds tangents (family hx, diagnosis inference, KG). Mostly focused. Score: 4."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer partially captures the escalation in symptoms and bronchodilator use but lacks precise timeline details, frequencies, and faithfulness due to citation errors and hallucinations."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The generated answer incorrectly states that the patient endorsed no systemic symptoms, whereas the transcript and gold answer confirm the patient endorsed chills [P-29] and chest discomfort [P-13]. It also fails to provide the status of the specific symptoms requested in the prompt's examples (orthopnea, PND, hemoptysis, palpitations, fever).",
+    "completeness": "The generated answer misses several key points from the gold answer: it omits the exertional nature of the symptoms, chest discomfort, and chills. Most significantly, it misses 100% of the specific 'denied' symptoms requested in the parentheses of the prompt (orthopnea, PND, hemoptysis, palpitations, fever), instead listing a different set of negatives.",
+    "faithfulness": "The answer is mostly grounded, but the claim that the transcript 'does not explicitly indicate' any systemic symptoms is unfaithful to the source text, which mentions feeling 'chilly' and experiencing 'discomfort' during coughing fits.",
+    "relevance": "The response is only partially relevant because it ignores the specific instructions in the question to report on a particular set of screened symptoms (orthopnea, PND, hemoptysis, palpitations, fever), providing an alternative list instead."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 2,
+    "faithfulness": 4,
+    "relevance": 3
+  },
+  "average_score": 3.0,
+  "summary": "The answer correctly identifies the respiratory symptoms and sputum changes but fails to capture systemic symptoms and ignores the specific negative symptoms requested in the prompt."
+}

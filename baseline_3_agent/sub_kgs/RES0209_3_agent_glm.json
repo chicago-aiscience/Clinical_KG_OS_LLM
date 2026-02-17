@@ -1,0 +1,193 @@
+{
+  "nodes": [
+    {
+      "id": "N_001",
+      "text": "Asthma",
+      "type": "DIAGNOSIS",
+      "evidence": "diagnosed when I was eight",
+      "turn_id": "P-2"
+    },
+    {
+      "id": "N_002",
+      "text": "Asthma exacerbation",
+      "type": "DIAGNOSIS",
+      "evidence": "using it a lot now... almost everyday",
+      "turn_id": "D-1"
+    },
+    {
+      "id": "N_003",
+      "text": "Bronchodilator",
+      "type": "TREATMENT",
+      "evidence": "kind of as needed",
+      "turn_id": "P-4"
+    },
+    {
+      "id": "N_004",
+      "text": "Coughing",
+      "type": "SYMPTOM",
+      "evidence": "have been coughing a lot",
+      "turn_id": "P-1"
+    },
+    {
+      "id": "N_005",
+      "text": "Shortness of breath",
+      "type": "SYMPTOM",
+      "evidence": "feeling very short of breath",
+      "turn_id": "P-1"
+    },
+    {
+      "id": "N_006",
+      "text": "Wheezing",
+      "type": "SYMPTOM",
+      "evidence": "I've been wheezing a lot",
+      "turn_id": "P-15"
+    },
+    {
+      "id": "N_007",
+      "text": "Chest tightness",
+      "type": "SYMPTOM",
+      "evidence": "it gets tight in your chest",
+      "turn_id": "D-20"
+    },
+    {
+      "id": "N_008",
+      "text": "Chest",
+      "type": "LOCATION",
+      "evidence": "tight in your chest",
+      "turn_id": "D-20"
+    },
+    {
+      "id": "N_009",
+      "text": "Allergies",
+      "type": "DIAGNOSIS",
+      "evidence": "spring with like pollen",
+      "turn_id": "P-11"
+    },
+    {
+      "id": "N_010",
+      "text": "COVID swab",
+      "type": "PROCEDURE",
+      "evidence": "do a covid swab",
+      "turn_id": "D-29"
+    },
+    {
+      "id": "N_011",
+      "text": "Family history of asthma",
+      "type": "MEDICAL_HISTORY",
+      "evidence": "Sister has asthma too",
+      "turn_id": "P-32"
+    },
+    {
+      "id": "N_012",
+      "text": "Cold air",
+      "type": "TRIGGER",
+      "evidence": "cold air makes it worse",
+      "turn_id": "P-9"
+    },
+    {
+      "id": "N_013",
+      "text": "Pollen",
+      "type": "ALLERGEN",
+      "evidence": "spring with like pollen",
+      "turn_id": "P-11"
+    },
+    {
+      "id": "N_014",
+      "text": "Exercise",
+      "type": "TRIGGER",
+      "evidence": "run around after gym during recess",
+      "turn_id": "P-9"
+    }
+  ],
+  "edges": [
+    {
+      "source_id": "N_004",
+      "target_id": "N_002",
+      "type": "INDICATES",
+      "evidence": "Coughing indicates asthma exacerbation",
+      "turn_id": "P-1"
+    },
+    {
+      "source_id": "N_005",
+      "target_id": "N_002",
+      "type": "INDICATES",
+      "evidence": "Shortness of breath indicates asthma exacerbation",
+      "turn_id": "P-1"
+    },
+    {
+      "source_id": "N_006",
+      "target_id": "N_002",
+      "type": "INDICATES",
+      "evidence": "Wheezing indicates asthma exacerbation",
+      "turn_id": "P-15"
+    },
+    {
+      "source_id": "N_007",
+      "target_id": "N_008",
+      "type": "LOCATED_AT",
+      "evidence": "Chest tightness located at chest",
+      "turn_id": "D-20"
+    },
+    {
+      "source_id": "N_003",
+      "target_id": "N_001",
+      "type": "TAKEN_FOR",
+      "evidence": "Bronchodilator taken for asthma",
+      "turn_id": "P-4"
+    },
+    {
+      "source_id": "N_003",
+      "target_id": "N_002",
+      "type": "TAKEN_FOR",
+      "evidence": "Bronchodilator taken for asthma exacerbation",
+      "turn_id": "P-4"
+    },
+    {
+      "source_id": "N_011",
+      "target_id": "N_001",
+      "type": "RISK_FACTOR",
+      "evidence": "Sister has asthma too",
+      "turn_id": "P-32"
+    },
+    {
+      "source_id": "N_012",
+      "target_id": "N_002",
+      "type": "TRIGGERS",
+      "evidence": "cold air makes it worse",
+      "turn_id": "P-9"
+    },
+    {
+      "source_id": "N_013",
+      "target_id": "N_009",
+      "type": "TRIGGERS",
+      "evidence": "spring with like pollen",
+      "turn_id": "P-11"
+    },
+    {
+      "source_id": "N_014",
+      "target_id": "N_002",
+      "type": "TRIGGERS",
+      "evidence": "run around after gym during recess",
+      "turn_id": "P-9"
+    }
+  ],
+  "_meta": {
+    "pass1": {
+      "nodes": 13,
+      "edges": 10
+    },
+    "pass3": {
+      "nodes": 14,
+      "edges": 10
+    },
+    "critique_length": 2323
+  },
+  "_usage": {
+    "prompt_tokens": 9889,
+    "completion_tokens": 15795,
+    "pass1_nodes": 13,
+    "pass1_edges": 10,
+    "pass3_nodes": 14,
+    "pass3_edges": 10
+  }
+}

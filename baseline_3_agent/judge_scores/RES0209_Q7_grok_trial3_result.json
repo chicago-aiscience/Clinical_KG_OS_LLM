@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer details diagnosis at age 8 (now 10), baseline bronchodilator use once every two weeks, triggers (exercise/cold/seasonal), and two-week exacerbation with specific symptoms (nonstop dry cough, increased wheezing, SOB, chest tightness), escalated use to 5-6 times/week, wheezing exceeding use, nighttime symptoms, no precipitant. Generated Answer misses ages/diagnosis timing, exact baseline/current frequencies, two-week duration clarification, wheezing > use, nighttime symptoms, and no precipitant; incorrectly cites chest tightness to [P-4] instead of [P-20]; presents triggers as exacerbation-specific rather than baseline; adds unmentioned 'diagnosis of asthma exacerbation' and '[Knowledge Graph]'; main escalation point correct but significant omissions and errors.",
+    "completeness": "Key Gold points covered: escalation in symptoms (cough, wheezing, SOB, chest tightness partially), bronchodilator increase vaguely ('near-daily'), some triggers. Missed: diagnosis age 8/now 10, baseline 'once every two weeks', current 'five-six times a week', two-week duration (says 'past week'), wheezing frequency exceeds use, nighttime symptoms every other/two days, no precipitant. Covers ~30-40% of key points.",
+    "faithfulness": "Most claims grounded: cough/SOB/wheezing [P-1,P-15], triggers [P-9,P-11], increased use [P-1,P-8 implied]. Errors: chest tightness cited [P-4] (wrong, unrelated; actual [P-20]), usage cites [P-9] not precise freq from [P-8]; 'nonstop cough past week' [P-1] but later clarified two weeks [P-13]; adds 'diagnosis of asthma exacerbation' and '[Knowledge Graph]' not in transcript; family history [P-32] verifiable but tangential. Some unverifiable/plausible claims and citation inaccuracies.",
+    "relevance": "Addresses current symptoms and usage escalation somewhat but fails to detail temporal evolution (initial diagnosis, specific baseline vs. current frequencies as in question); focuses on current exacerbation state/triggers/diagnosis rather than progression; includes irrelevant family history and Knowledge Graph."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 3,
+    "relevance": 3
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer partially captures symptom escalation and bronchodilator increase but lacks key temporal details, specific frequencies, and accurate citations from the Gold Answer and transcript, resulting in incomplete and somewhat unfaithful coverage."
+}

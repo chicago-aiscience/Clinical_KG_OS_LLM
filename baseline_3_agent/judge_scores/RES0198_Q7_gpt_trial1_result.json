@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly states onset (~1 week) and correctly identifies that congestion/stuffiness came first and that the predominant symptom shifted to rhinorrhea by the visit (matches [P-2], [P-3]). However, it incorrectly concludes the symptoms were intermittent rather than constant: while the patient initially said “on and off” ([P-1]), they later clarified the symptoms had been “pretty constant for the past week” ([P-8]). This is a key factual discrepancy versus the Gold Answer, which reconciles the two statements.",
+    "completeness": "Included: (1) onset ~1 week, (2) first symptom = stuffiness, (3) shift over the week to mostly runny nose.\nMissed/insufficient: (1) the later clarification that symptoms were pretty constant over the week (and the nuance that early ‘on and off’ perception was overridden by [P-8]); (2) lack of improvement as reason for visit; (3) possible influence of decongestants on symptom change. Overall coverage is partial.",
+    "faithfulness": "Most statements are traceable to the transcript (onset and symptom shift). However, the claim that “on and off” indicates intermittent ‘rather than constant’ is not faithful to the full transcript because it omits/contradicts the later explicit report of being “pretty constant” ([P-8]). No clear hallucinated details beyond this mischaracterization.",
+    "relevance": "The answer stays focused on the asked symptom chronology (onset, first symptom, change over the week, pattern). The main issue is not irrelevance but an incorrect pattern characterization and missing nuance."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 3,
+    "relevance": 4
+  },
+  "average_score": 3.25,
+  "summary": "Captures onset and the shift from initial congestion to predominant runny nose, but incorrectly characterizes the symptom pattern as intermittent and omits key nuance from the patient’s later statement that symptoms were pretty constant."
+}

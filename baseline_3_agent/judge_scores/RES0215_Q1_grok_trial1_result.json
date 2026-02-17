@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies and cites the key respiratory symptoms (wheezy [P-1,P-2], difficulty taking deep breaths [P-2], shortness of breath/out of breath [P-1,P-3], slight cough [P-1]), aligning with the Gold Answer's main symptoms. However, it contains a significant factual error by claiming all symptoms started simultaneously 4-5 days ago based on [P-1], contradicting the Gold Answer's accurate distinction that wheezing and difficulty taking deep breaths were the earliest [P-2], while the cough is more recent ('and now' [P-1]). It also omits or does not detail other Gold points like hard time catching breath/no cyanosis [P-32], non-productive cough [P-31], and looks fine otherwise [P-9]. This represents significant discrepancies on chronology and coverage of specific details.",
+    "completeness": "Gold key points: 1) wheezy 4-5 days [P-1]; 2) short of breath [P-1]; 3) slight cough now [P-1]; 4) out of breath with activity [P-3]; 5) hard time catching breath, no cyanosis [P-32]; 6) earliest: wheezy + difficulty deep breaths [P-2]; 7) cough non-productive [P-31]; 8) looks fine [P-9]. Generated covers 1,2,3,4 (out of breath as SOB), and difficulty deep breaths, but incorrectly handles 6 (lumps all as earliest), misses 5,7,8 entirely. Covers approximately 50-70% of key points, with partial credit for overlapping symptoms.",
+    "faithfulness": "All claims in Generated are directly verifiable in the transcript with accurate citations ([P-1], [P-2], [P-3]). Symptom descriptions match verbatim quotes (e.g., 'quite wheezy', 'difficulty taking in deep breaths', 'out of breath', 'slight cough'). The interpretation of onset duration from [P-1] is grounded, though debatable; no fabricated facts or inaccurate citations.",
+    "relevance": "The answer is perfectly focused on the question, using bullet points to list specific respiratory symptoms at presentation with citations, and directly addresses the earliest symptoms with reasoning tied to the transcript. No irrelevant content or tangents."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 5,
+    "relevance": 5
+  },
+  "average_score": 3.75,
+  "summary": "The Generated Answer accurately lists the main respiratory symptoms with proper citations but significantly errs in identifying the earliest symptoms by not distinguishing chronology and omits several supporting details from the Gold Answer."
+}

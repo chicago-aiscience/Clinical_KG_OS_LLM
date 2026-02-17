@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer emphasizes school as central suspected source due to mother's explicit COVID concern at school [P-2] and post-school symptom onset [P-1]; distinguishes no known sick contacts outside school ('we know for sure' [P-38]) vs. uncertain at school ('kinda hard to say' [P-38]); notes school did not notify [P-39] and requires test [P-41]. Generated correctly notes timeline suggesting school source and no school notification, but inaccurately lumps sick contacts as none reported 'at school or outside' without distinction (contradicts Gold's nuance on outside certainty vs. school uncertainty); wrong citations ([P-1] instead of [P-38/39]); adds unmentioned 'knowledge graph' and asthma tie-in not central to source. Significant discrepancies on sick contacts detail and omissions.",
+    "completeness": "Gold key points: school central/mother COVID-school concern [P-2]; symptoms post-school [P-1]; no sick outside sure [P-38]; hard to say school [P-38]; no school contact [P-39]; school test req [P-41]; no travel [P-40]; no env exposures [P-37]. Generated covers: timeline/post-school onset (~school source); no specific sick contacts (partial); no school notification. Misses: explicit COVID-school worry; outside/school distinction; school test req; no travel/env. Covers ~30-40% of points.",
+    "faithfulness": "Verifiable: timeline/temp [P-1]; COVID symptoms [D-44]; intent to isolate [P-1]. Unverifiable/hallucinated: 'knowledge graph'; strong school source conclusion beyond transcript (doctor doesn't explicitly say school source); wrong citations for sick contacts/school notif ([P-1] vs. [P-38/39]); asthma reference [D-45] tangential. Multiple citation errors and added external concepts indicate hallucination.",
+    "relevance": "Generated directly structures response around school source, sick contacts (school/outside implied), and school notification, perfectly matching question components with no off-topic content."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer partially captures the school timeline and lack of notifications but misrepresents sick contact details, misses key distinctions and points, includes hallucinations, though remains highly relevant."
+}

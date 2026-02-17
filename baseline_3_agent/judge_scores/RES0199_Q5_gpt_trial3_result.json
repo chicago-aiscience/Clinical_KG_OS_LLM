@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer is factually incorrect relative to both the transcript and the Gold Answer. It states the doctor “did not systematically explore” living situation, workplace environment, and travel history, but the transcript clearly shows the doctor asked: where the patient lives (D-45/P-45), home environmental exposures (D-46/P-46), sick contacts (D-47/P-47), workplace (D-48/P-48) and whether anyone at work was sick (D-50/P-50), and recent travel (D-49/P-49). The Generated Answer’s only accurate point is that the doctor mentioned public health contact tracing if COVID-positive (D-52), but that does not substitute for the direct exposure-history questions that were in fact asked.",
+    "completeness": "The Gold Answer includes multiple explored exposure domains: (1) living situation (apartment, alone), (2) home environmental exposures (carpets/dust/mold/asbestos/pets), (3) sick contacts including possible exposure at work lunch room, (4) workplace type (car dealership) and whether coworkers were sick, (5) travel denial, and (6) substance use screening. The Generated Answer misses essentially all of these (it incorrectly says they were not explored) and only references contact tracing mentioned in counseling. Coverage is therefore far below 20% of key points.",
+    "faithfulness": "The response is not grounded in the transcript because it claims multiple key exposure areas were “not explored,” directly contradicting explicit transcript content (D-45 through D-50). While the mention of contact tracing (D-52) is verifiable, the central assertions are contradicted by the source, making the answer largely unfaithful.",
+    "relevance": "The answer is on-topic in that it attempts to address the requested exposure categories (living situation, workplace, travel, sick contacts). However, it provides incorrect determinations for those categories. Despite the inaccuracy, it remains focused on the question without major tangents."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 4
+  },
+  "average_score": 1.75,
+  "summary": "The Generated Answer is highly inaccurate and largely contradicts the transcript, missing nearly all exposure-history elements the doctor actually asked about."
+}

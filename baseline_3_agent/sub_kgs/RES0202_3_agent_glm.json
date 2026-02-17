@@ -1,0 +1,270 @@
+{
+  "nodes": [
+    {
+      "id": "N_001",
+      "text": "cough",
+      "type": "SYMPTOM",
+      "evidence": "he started to have a bit of like a cough",
+      "turn_id": "P-1"
+    },
+    {
+      "id": "N_002",
+      "text": "fever",
+      "type": "SYMPTOM",
+      "evidence": "temp got like a little high today... 101 or something... 100.1",
+      "turn_id": "P-1"
+    },
+    {
+      "id": "N_003",
+      "text": "tired",
+      "type": "SYMPTOM",
+      "evidence": "he was really tired",
+      "turn_id": "P-2"
+    },
+    {
+      "id": "N_004",
+      "text": "dry cough",
+      "type": "SYMPTOM",
+      "evidence": "I think it's dry... just sounds kind of dry",
+      "turn_id": "P-5"
+    },
+    {
+      "id": "N_005",
+      "text": "heart racing",
+      "type": "SYMPTOM",
+      "evidence": "feeling like his heart's racing",
+      "turn_id": "D-13"
+    },
+    {
+      "id": "N_006",
+      "text": "chest pain",
+      "type": "SYMPTOM",
+      "evidence": "complaining of anything like chest pain",
+      "turn_id": "D-13"
+    },
+    {
+      "id": "N_007",
+      "text": "shortness of breath",
+      "type": "SYMPTOM",
+      "evidence": "he could have been having a harder time breathing",
+      "turn_id": "P-8"
+    },
+    {
+      "id": "N_008",
+      "text": "loss of taste",
+      "type": "SYMPTOM",
+      "evidence": "like he wasn't like into his breakfast... losing his sense of taste",
+      "turn_id": "P-17"
+    },
+    {
+      "id": "N_009",
+      "text": "vaccinations",
+      "type": "MEDICAL_HISTORY",
+      "evidence": "he is up to date with all his immunizations",
+      "turn_id": "P-33"
+    },
+    {
+      "id": "N_010",
+      "text": "broken arm",
+      "type": "MEDICAL_HISTORY",
+      "evidence": "he broke his arm once",
+      "turn_id": "P-27"
+    },
+    {
+      "id": "N_011",
+      "text": "COVID",
+      "type": "DIAGNOSIS",
+      "evidence": "he could have got covid",
+      "turn_id": "P-2"
+    },
+    {
+      "id": "N_012",
+      "text": "asthma",
+      "type": "DIAGNOSIS",
+      "evidence": "we would add other things like asthma to the list",
+      "turn_id": "D-45"
+    },
+    {
+      "id": "N_013",
+      "text": "viral illness",
+      "type": "DIAGNOSIS",
+      "evidence": "could be another viral illness",
+      "turn_id": "D-45"
+    },
+    {
+      "id": "N_014",
+      "text": "viral infection",
+      "type": "DIAGNOSIS",
+      "evidence": "sounds like an infection",
+      "turn_id": "D-45"
+    },
+    {
+      "id": "N_015",
+      "text": "covid swab",
+      "type": "PROCEDURE",
+      "evidence": "first we need to do a covid swab",
+      "turn_id": "D-44"
+    },
+    {
+      "id": "N_016",
+      "text": "Isolation",
+      "type": "TREATMENT",
+      "evidence": "he isolate for 14 days",
+      "turn_id": "D-44"
+    },
+    {
+      "id": "N_017",
+      "text": "chest",
+      "type": "LOCATION",
+      "evidence": "feeling like his heart's racing / chest pain",
+      "turn_id": "D-13"
+    },
+    {
+      "id": "N_018",
+      "text": "lung conditions or heart conditions",
+      "type": "MEDICAL_HISTORY",
+      "evidence": "any lung conditions or heart conditions",
+      "turn_id": "D-34"
+    },
+    {
+      "id": "N_019",
+      "text": "diarrhea",
+      "type": "SYMPTOM",
+      "evidence": "no diarrhea",
+      "turn_id": "D-22"
+    },
+    {
+      "id": "N_020",
+      "text": "runny nose",
+      "type": "SYMPTOM",
+      "evidence": "Maybe a bit of like a runny nose",
+      "turn_id": "P-16"
+    },
+    {
+      "id": "N_021",
+      "text": "loss of appetite",
+      "type": "SYMPTOM",
+      "evidence": "he doesn't seem to have a big appetite right now",
+      "turn_id": "P-15"
+    }
+  ],
+  "edges": [
+    {
+      "source_id": "N_001",
+      "target_id": "N_014",
+      "type": "INDICATES",
+      "evidence": "could be another viral illness",
+      "turn_id": "D-45"
+    },
+    {
+      "source_id": "N_001",
+      "target_id": "N_012",
+      "type": "INDICATES",
+      "evidence": "we would add other things like asthma to the list",
+      "turn_id": "D-45"
+    },
+    {
+      "source_id": "N_003",
+      "target_id": "N_007",
+      "type": "CAUSES",
+      "evidence": "he hasn't been running... maybe he could have been having a harder time breathing",
+      "turn_id": "P-8"
+    },
+    {
+      "source_id": "N_005",
+      "target_id": "N_017",
+      "type": "LOCATED_AT",
+      "evidence": "feeling like his heart's racing",
+      "turn_id": "D-13"
+    },
+    {
+      "source_id": "N_006",
+      "target_id": "N_017",
+      "type": "LOCATED_AT",
+      "evidence": "complaining of anything like chest pain",
+      "turn_id": "D-13"
+    },
+    {
+      "source_id": "N_011",
+      "target_id": "N_015",
+      "type": "TAKEN_FOR",
+      "evidence": "first we need to do a covid swab",
+      "turn_id": "D-44"
+    },
+    {
+      "source_id": "N_016",
+      "target_id": "N_011",
+      "type": "TAKEN_FOR",
+      "evidence": "isolate for 14 days",
+      "turn_id": "D-44"
+    },
+    {
+      "source_id": "N_015",
+      "target_id": "N_011",
+      "type": "CONFIRMS",
+      "evidence": "make sure that he either has it or it doesn't have it",
+      "turn_id": "D-44"
+    },
+    {
+      "source_id": "N_002",
+      "target_id": "N_011",
+      "type": "INDICATES",
+      "evidence": "symptoms aligned with symptoms of covid",
+      "turn_id": "D-44"
+    },
+    {
+      "source_id": "N_004",
+      "target_id": "N_011",
+      "type": "INDICATES",
+      "evidence": "symptoms are aligned with symptoms of covid",
+      "turn_id": "D-44"
+    },
+    {
+      "source_id": "N_008",
+      "target_id": "N_011",
+      "type": "INDICATES",
+      "evidence": "he was into his breakfast... losing his sense of taste",
+      "turn_id": "P-17"
+    },
+    {
+      "source_id": "N_009",
+      "target_id": "N_011",
+      "type": "IMPROVES_OUTCOMES",
+      "evidence": "up to date with all his immunizations",
+      "turn_id": "P-33"
+    },
+    {
+      "source_id": "N_010",
+      "target_id": "N_011",
+      "type": "HAS_HISTORY",
+      "evidence": "he broke his arm once",
+      "turn_id": "P-27"
+    },
+    {
+      "source_id": "N_018",
+      "target_id": "N_011",
+      "type": "EXCLUDES_CONTRIBUTING_FACTORS",
+      "evidence": "no lung conditions or heart conditions",
+      "turn_id": "P-34"
+    }
+  ],
+  "_meta": {
+    "pass1": {
+      "nodes": 20,
+      "edges": 9
+    },
+    "pass3": {
+      "nodes": 21,
+      "edges": 14
+    },
+    "critique_length": 2993
+  },
+  "_usage": {
+    "prompt_tokens": 12356,
+    "completion_tokens": 17451,
+    "pass1_nodes": 20,
+    "pass1_edges": 9,
+    "pass3_nodes": 21,
+    "pass3_edges": 14
+  }
+}

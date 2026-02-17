@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer has significant factual errors compared to the Gold Answer, including consistently misgendering the patient as 'he/his' instead of 'she/her' (Gold uses 'her'), incorrectly implying a stronger genetic predisposition without noting the limited family history (only father, grandfather unknown due to accident), omitting that the father is alive and seeing heart doctors, and fabricating 'Knowledge Graph' references not present in Gold or transcript. Core factors (family history, smoking, stress) are mentioned but distorted; smoking history details are incomplete (misses start age, escalation). Main point of multifactorial concern is correct but undermined by errors.",
+    "completeness": "Gold key points: family (father HA last year in 50s, alive seeing doctors [P8,P30], scares her [P8], grandpa accident [P30]); smoking (started ~18, 10/day 2yrs, now ~5/day, quitting hard [P13,14,18]); stressors (thesis pressure/time crunch [P15,16], live alone [P26,27], nervous running [P28]); connections (stress possible but unsure [P8], nervous/breathing faster [P19], past anxiety [P22]). Generated covers family fear [P8], smoking reduction [P13,14], thesis stress [P15,16,P8], cycle interaction; misses father alive/doctors, grandpa, full smoking history, living alone/running, past anxiety, nervous breathing. Covers ~60% of key points.",
+    "faithfulness": "Claims like family fear [P8], smoking [P13,14], thesis stress [P15,16], pain with stress [P8,P19] verifiable in transcript. However, multiple hallucinations: entire 'Knowledge Graph' system with specific links (e.g., 'heart attack --[FAMILY_HISTORY]--> heart disease', 'smoke --[RISK_FACTOR]--> chest pain', 'final thesis --[CAUSES]--> stress') not in transcript; misgendering (transcript neutral but context/Gold female); implies smoking directly causes her specific symptoms ('direct physiological risk factor for the chest pain'). Largely grounded but unverifiable additions reduce score.",
+    "relevance": "Perfectly structures response around the three specified factors (family, smoking, stressors), their contributions to heart disease concern, interactions via anxiety cycle, and cites transcript details, directly addressing the question with no off-topic content."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer is relevant and covers main factors but is undermined by factual errors like misgendering, incomplete details, and hallucinated Knowledge Graph references."
+}

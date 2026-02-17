@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer accurately identifies fever, sore throat, and stuffy nose as key symptoms from the patient's report [P-1] and doctor's validation [D-53], aligning with Gold's explicit mention of fever and sore throat [D-53] and broader cluster [D-24]; however, it omits muscle aches from the doctor's summary [D-24] and the epidemiological factor of the husband's symptoms [D-53], introducing minor discrepancies in emphasis but no factual errors.",
+    "completeness": "Gold key points: (1) fever/sore throat explicit [D-53], (2) broader cluster muscle aches/fever/stuffy nose/sore throat [D-24], (3) husband's similar symptoms [D-53], (4) no flu shot [P-53], (5) prompting influenza [D-54]. Generated covers (1) fully, (2) partially (misses muscle aches), misses (3), covers (4)-(5) fully; approximately 80% coverage.",
+    "faithfulness": "All claims in Generated are directly verifiable: symptoms from [P-1], doctor's suspicion from [D-53], flu shot question/response [D-53/P-53], influenza mention [D-54]; no hallucinations or unverifiable details.",
+    "relevance": "Generated Answer is structured perfectly around the two parts of the question (symptoms for infectious/COVID suspicion, vaccination for influenza differential), with evidence citations, no off-topic content."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 5,
+    "relevance": 5
+  },
+  "average_score": 4.5,
+  "summary": "The Generated Answer is highly faithful and relevant, with strong correctness and good completeness, minor omissions of supporting details from the Gold Answer."
+}

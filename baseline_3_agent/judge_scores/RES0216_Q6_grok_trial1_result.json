@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer states doctor's assessment as asthma reoccurring 'in some capacity' at top of differential pending exam/findings (D-35). Generated correctly captures asthma as primary suspicion and cardiac lower (D-36), but inaccurately claims doctor notes symptoms feel 'different' (actually patient's words P-16), misrepresents patient currently 'utilizes rescue inhalers' (patient lacks rescue, uses only daily controller P-17/P-18/P-25), and says 'continue to have rescue puffers' instead of 'try having available' implying obtain them (D-35). Minor to some factual errors, core assessment correct.",
+    "completeness": "Gold key points: 1) Assessment as top differential pending findings (covered); 2) Phys exam: quick exam, listen lungs, further inv (covers exam/lungs, misses further inv nuance); 3) Initial tx: obtain/use rescue on walks as trial, notes no current rescue (covers recommendation/use on walks, misses lack of current supply); 4) Contingency: if no help, reassess/other directions/stepwise (covered); 5) Consult supervising doc (missed). Covers ~85% of points.",
+    "faithfulness": "Transcript verifies: assessment tentative asthma top barring new findings (D-35, matches); phys exam lungs (D-35); rescue trial if available (D-35, but patient lacks per P-17/18); contingency reassess (D-35/36). Hallucinations: 'doctor notes feels different' (patient P-16); 'utilizes rescue inhalers [P-25]' (P-25 lists salbutamol but context no current rescue use/refill); 'continue to have' implies current use (contradicts). Multiple unverifiable/hallucinated details.",
+    "relevance": "Generated Answer is structured precisely around question elements: assessment, phys exam components, first-step treatment, contingency; no off-topic content, perfectly focused."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 4,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.5,
+  "summary": "The Generated Answer is mostly correct and complete in summarizing the doctor's assessment and plan but contains notable hallucinations and factual inaccuracies regarding rescue inhaler use and attribution of symptom description."
+}

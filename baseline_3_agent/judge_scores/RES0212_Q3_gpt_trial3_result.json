@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Gold Answer identifies an acute lower respiratory tract infection, most likely acute bronchitis but with possible bacterial superinfection or early community-acquired pneumonia, on a background of chronic cough. The Generated Answer’s main diagnosis of acute bronchitis aligns with the “most likely” portion of the Gold Answer, but it is narrower and does not acknowledge the pneumonia/bacterial superinfection possibility. It also implicitly treats green sputum as strongly diagnostic without the Gold Answer’s caveat that green sputum is not definitive for bacterial infection.",
+    "completeness": "Key Gold Answer points covered: (1) productive cough with recent worsening supports an acute infectious/inflammatory process; (2) greenish sputum suggests infectious/inflammatory etiology; (3) subjective fever is supportive but unmeasured. \nKey points missed: (1) broader framing as acute LRTI with possible early pneumonia/bacterial superinfection; (2) explicit caveat that green sputum alone does not confirm bacterial infection; (3) the important context of acute change superimposed on a 3-month intermittent cough; (4) mention of absence of other constitutional/red-flag symptoms (night sweats, weight loss, hemoptysis) used to contextualize severity; (5) statement that no vitals/exam/imaging/labs are provided to confirm diagnosis.",
+    "faithfulness": "Several statements are not grounded in the transcript, notably repeated references to a “Knowledge Graph” and claims that it “explicitly establishes” cough/tiredness/sleep disturbance as evidence for acute bronchitis. The transcript contains no knowledge graph or explicit mapping of symptoms to diagnoses. The symptom quotes/citations to [P-2], [P-4], and [D-47] are otherwise consistent with the transcript.",
+    "relevance": "The response stays focused on linking productive cough/greenish sputum and subjective fever to a respiratory infection diagnosis. However, it does not cleanly address all three requested features separately (productive cough vs sputum color are blended together) and adds irrelevant framing about a “Knowledge Graph.”"
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer identifies the most likely diagnosis (acute bronchitis) and uses transcript-backed symptoms, but it is incomplete versus the Gold Answer and includes multiple ungrounded “knowledge graph” claims that reduce faithfulness."
+}

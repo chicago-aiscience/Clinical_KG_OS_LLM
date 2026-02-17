@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer details partial loss for both smell (can smell very bad odors) and taste (can taste very salty foods but not normal items like banana), all symptoms for two days, cough specifics (non-productive, no sputum/blood, started same time, consistent, no triggers). Generated correctly identifies symptoms and notes partial smell loss inferred from P-1, but presents taste as simply 'lost' without noting partial nature or specifics from P-4, misses duration and full cough details; some discrepancies in depth but no outright factual errors, main symptoms accurate.",
+    "completeness": "Gold key points: 3 symptoms for 2 days; smell partial with bad odor detail; taste partial with salty yes/banana no; both sensory consistent; cough mild dry, non-productive no sputum/blood, consistent no worsening, same onset, no triggers. Generated covers: smell reduced/partial, taste lost, cough mild dry consistent. Misses: duration, smell/taste specific perceptions, sensory consistency explicitly, cough full details (no sputum, onset, triggers); covers ~30-40% of key points.",
+    "faithfulness": "All claims directly from transcript: smell from P-1 ('can't smell as well'), taste 'lost' from P-1, cough 'mild dry' P-1 and 'consistent' P-8; inference of smell not complete grounded in P-1 phrasing; citations accurate [P-1, P-8]; no hallucinations or unverifiable details.",
+    "relevance": "Directly lists sensory (smell, taste) and respiratory (cough) symptoms with some degree info (smell partial, cough mild/consistent), structured response matches question focus; no off-topic content, though lacks full perception details requested."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 2,
+    "faithfulness": 5,
+    "relevance": 4
+  },
+  "average_score": 3.5,
+  "summary": "The Generated Answer accurately identifies the main symptoms and is faithful to the transcript but lacks completeness in detailing the partial degrees of sensory losses and cough specifics compared to the Gold Answer."
+}

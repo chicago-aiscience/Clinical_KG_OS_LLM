@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer matches the Gold Answer on the core management plan: chest exam planned, chest X-ray and COVID swab ordered, self-isolation away from everyone including wife if discharged, results in 24–48 hours, and disposition (admit vs discharge) based on results. However, it contains minor factual/attribution issues: it cites the chest X-ray as coming from [D-36] (the X-ray is actually mentioned in [D-37]), and it lists the physical exam as a “Diagnostic Test Ordered,” whereas the Gold Answer separates the physical exam from diagnostic testing (two investigations: CXR + COVID swab). These are modest inaccuracies but do not change the main plan.",
+    "completeness": "Key Gold Answer elements largely covered: (1) planned chest-focused physical exam, (2) diagnostic tests: chest X-ray and COVID swab, (3) self-isolation away from everyone including wife if sent home, (4) results expected in 24–48 hours, (5) public health nurse provides instructions if positive, and (6) admit vs discharge decided based on results. The main completeness gap is structural: it conflates the physical exam with “diagnostic tests ordered,” rather than clearly listing only the two investigations as tests, and it does not explicitly note that no specific numeric thresholds were given (though that is an interpretive clarifier in the Gold Answer).",
+    "faithfulness": "Most statements are grounded in [D-37] and [D-38]. The main faithfulness issue is citation accuracy (CXR attributed to [D-36]) and the categorization of a physical exam as a diagnostic test. No major hallucinated content beyond these minor misattributions/classification issues.",
+    "relevance": "The answer directly addresses all components of the question (tests, physical exam, isolation instructions and by whom, timeline for results, and admission vs discharge criteria) without irrelevant tangents."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 4,
+    "relevance": 5
+  },
+  "average_score": 4.25,
+  "summary": "A largely accurate and focused summary of the doctor’s plan, with minor citation/misclassification issues (notably attributing the X-ray to the wrong transcript line and treating the physical exam as a diagnostic test)."
+}

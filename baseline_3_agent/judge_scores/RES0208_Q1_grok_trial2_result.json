@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer includes most key symptoms from the Gold Answer (e.g., loss of taste, muscle aches/weakness, fever, loss of appetite, sore throat, cough) but has significant factual errors: incorrectly attributes sore throat and cough to [P-1] (which only mentions shortness of breath, fatigue, and being rundown, not those symptoms), misquotes patient as explicitly stating 'sore throat and cough' together (they are reported separately later in [P-7]-[P-9]), omits qualifiers like symptoms being mild/starting/dry/early, and relies on doctor's summary [D-36] rather than patient reports for some; misses smell loss, runny nose denial, and headaches entirely; core symptoms are present but with contradictions in details and citations compared to Gold's precise reporting.",
+    "completeness": "Key points from Gold Answer: sensory (taste loss, smell loss - new); upper resp (early dry cough, mild sore throat starting, denied runny nose/congestion); musculoskeletal (generalized achy muscle aches, weakness); constitutional (subjective fever, decreased appetite, mild usual headaches). Generated covers: taste loss, sore throat, cough, weakness, achy, fever, appetite loss (~7/11 points, 60-65%, missing smell loss, runny nose denial, headaches, and qualifiers/details).",
+    "faithfulness": "Most claims verifiable: weakness [P-2], achy [P-20], taste [P-4], hot/warm [P-4], appetite [P-2,P-4]; however, sore throat and cough falsely attributed to [P-1] (not present there, patient reports them later in [P-7]-[P-9] without the exact phrasing 'sore throat and cough'); doctor's summary [D-36] cited for muscle aches but patient confirms [P-20]; inaccurate citations and fabricated direct quote/phrasing indicate hallucination in attribution.",
+    "relevance": "Perfectly addresses the question by listing symptoms beyond SOB/fatigue, categorized exactly as specified (sensory changes, upper respiratory, musculoskeletal, constitutional), with transcript citations, no off-topic content."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.25,
+  "summary": "The Generated Answer covers many key symptoms but is undermined by incorrect citations and fabricated attributions for upper respiratory complaints, missing some points like smell loss and headaches, resulting in moderate overall quality."
+}

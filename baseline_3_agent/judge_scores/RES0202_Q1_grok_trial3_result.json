@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer lists reported symptoms including dry cough (worsening over 3 days), fever (~100.1-101°F on Friday), fatigue, decreased appetite, possible loss of taste, mild runny nose, and uncertain SOB. Generated covers cough (dry, worsening), fever (over 100), fatigue, loss of taste, but misquotes P-15 as 'big appetite' instead of 'doesn't seem to have a big appetite' (decreased), misses runny nose entirely, and presents SOB as somewhat reported when Gold notes uncertain. Denied symptoms in Gold include sputum/blood, wheezing, chest pain/heart racing, sore throat, chills/night sweats, rashes, GI issues, N/V, urine changes, dizziness, confusion, vision/hearing fine, uncertain swallowing. Generated only covers chest pain, partial GI, and irrelevant family history (not a symptom). References non-existent 'knowledge graph.' Some factual errors but main reported symptoms mostly align.",
+    "completeness": "Covers ~70% of reported symptoms (cough, fever, fatigue, taste loss, SOB, appetite but incorrect/misquoted); misses runny nose. For denied, covers only 2-3 out of 12+ (chest pain, GI partial), misses wheezing, sore throat, chills, sputum, etc. Partial coverage of key points.",
+    "faithfulness": "Most claims grounded with accurate citations (e.g., cough P-1/P-5, fever P-1, fatigue P-1/P-8, taste P-17). However, appetite misquoted from P-15 ('big appetite' vs. 'doesn't seem to have a big appetite'), hallucinates 'knowledge graph' references not in transcript, and includes family history denial irrelevant to symptoms. SOB inference grounded but ties to non-transcript KG. Multiple inaccuracies/hallucinations.",
+    "relevance": "Directly structures response into reported respiratory/systemic symptoms and denied symptoms, matching question focus; minor off-topic elements like KG and family history."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer covers most reported symptoms with some accuracy but has significant issues including a key misquote, omissions, hallucinations, and incomplete denied symptoms list."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer's diagnosis of 'Asthma (specifically exercise-induced asthma exacerbated by cold weather and allergic rhinitis)' is factually consistent with the Gold Answer's 'pediatric asthma with exercise-induced bronchoconstriction in the context of an atopic predisposition,' as both identify asthma with exercise and allergy triggers. Core supporting facts like exercise triggers [P-3, P-41], cold weather [P-38], multiple settings [P-38], and seasonal allergies [P-35, P-36] match. Minor discrepancies include framing past viral history [P-15] as supportive (Gold uses current negatives to rule out infection) and adding 'allergic rhinitis' (implied but not explicit). No major contradictions.",
+    "completeness": "Gold key points: 1) exercise-triggered [P-3,6,41]; 2) episodic/reversible with rest [P-6,33]; 3) cold weather [P-38]; 4) multiple settings [P-38]; 5) seasonal allergies [P-35,36]; 6) nocturnal episode [P-43,44]; 7) pertinent negatives (fever [P-7], runny nose [P-8], etc.). Generated covers exercise, cold, settings, allergies (4/7 ~57%). Misses explicit reversibility citation, nocturnal episode, and negatives; adds symptoms and viral history not central to Gold.",
+    "faithfulness": "Most claims verifiable: citations [P-1,2,3,32,35,36,38,41,15] accurate from transcript. Hallucinations include two 'knowledge graph' references (not in transcript, fabricating external validation for allergies/Reactine and wheezing/SOB/chest discomfort); 'chest discomfort' not in transcript (only SOB/wheezing/deep breaths). Viral history presented as support is plausible but stretched beyond transcript. Multiple unverifiable/hallucinated elements.",
+    "relevance": "Directly addresses diagnosis and transcript supports with bulleted list matching question. Minor off-topic additions (knowledge graph, viral history, extra symptoms) but core content focused on question without major digressions."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 3.25,
+  "summary": "The Generated Answer is mostly correct and relevant with solid coverage of core supports but reduced by incomplete key points, hallucinations via 'knowledge graph' references, and minor misframing of viral history."
+}

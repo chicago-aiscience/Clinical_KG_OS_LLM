@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer identifies specific screenings via fever (infectious like pneumonia/bronchitis), runny nose (URI/viral wheeze), sick contacts (contagious), travel (exposure infections), rashes (systemic/allergic/viral), phlegm (productive vs reactive), with all denied, narrowing to reactive airway. Generated Answer incorrectly claims doctor screening primarily for viral infection vs seasonal allergies, falsely states fever/runny nose/sick contact questions absent (citing wrong D-14/D-20), ignores specific conditions excluded by those questions, and focuses on symptoms/history/allergies instead; significant contradictions and errors.",
+    "completeness": "Gold key points: detailed mapping of each listed question (fever D7/P7 no, runny D8/P8 no, sick D10/P10 no, travel D11/P11 no, rashes D13/P13 no, phlegm D31/P31 no) to screened conditions (infectious/systemic), plus pain/looks fine/past virals, narrowing to reactive. Generated covers 0% of these specific mappings/responses; mentions unrelated viral history (P15) and allergies (P35/36/38), missing all key points.",
+    "faithfulness": "Generated cites transcript accurately for some symptoms (P1/2/32/15/35/36/38) but hallucinates absence of fever/runny/sick questions (they exist at D7/8/10), wrong citations (D14 pain, D20 growth), invents 'Knowledge Graph' not in transcript, and misattributes screening intent; multiple unverifiable/hallucinated claims.",
+    "relevance": "Question focuses on specific questions (fever, runny, sick contacts, travel, rashes, phlegm) and responses narrowing differential; Generated ignores these questions entirely (claims some absent), pivots to viral/allergies via symptoms/history, failing to address core query directly."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 2
+  },
+  "average_score": 1.75,
+  "summary": "The Generated Answer is significantly inaccurate, incomplete, and unfaithful to the transcript by ignoring the specific screening questions and responses outlined in the Gold Answer, hallucinating their absence, and shifting focus to unrelated viral and allergy differentials."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer accurately captures the baseline manageability with puffers [P-1] and the acute symptoms (increased cough, green-yellow sputum, hemoptysis, worsened dyspnea) from [P-1], as well as overall worsening and prior ED visits [P-5]. However, it has discrepancies: attributes progression solely to [P-1] without noting explicit worsening over the 3 days from [P-2]; misses that this is 'the worst' [P-3]; omits no prior hospitalizations [P-5]; confuses comparison to baseline (manageable) rather than prior exacerbations; adds interpretations like sputum color severity without Gold support. Core facts mostly correct but some errors.",
+    "completeness": "Key Gold points covered: baseline puffers [P-1]; acute symptoms from [P-1] (cough, sputum, hemoptysis, dyspnea); worsening; prior ED visits [P-5,P-6]. Missed: detailed baseline (lifestyle [P-28], rescue frequency [P-26], routine walks [P-4]); exercise tolerance decline specifics [P-4]; possible fever [P-9]; explicit 'getting a little worse' over 3 days [P-2]; 'worst that I've had' [P-3]; prior episodes worsened by illness without hospitalization [P-3,P-5]. Covers ~60% of key points.",
+    "faithfulness": "Symptoms and quotes verifiable in [P-1],[P-5]. However, multiple references to non-existent 'knowledge graph' and [SYMPTOM] for sputum, hemoptysis, SOB as exacerbation indicators are hallucinated (not in transcript). Inability to manage with puffers and need for intervention [D-43] inferred but stretches beyond direct evidence for the question. Doctor's plan irrelevant. Some hallucinated elements.",
+    "relevance": "Directly addresses symptom evolution from baseline to acute over 3 days, worsening (yes), and severity comparison to priors (via ED history, though incomplete). KG details and doctor's plan are minor off-topic tangents but structure focuses on question."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer is mostly accurate and relevant but incomplete on key severity details and faithfulness due to hallucinated knowledge graph references."
+}

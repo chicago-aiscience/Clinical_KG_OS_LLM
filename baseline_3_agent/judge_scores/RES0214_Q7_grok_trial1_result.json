@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer specifies stuffy nose first ('just before' fever), sore throat around fever onset and ongoing, fever for 3 days, muscle aches concurrent with fever (past 2-3 days). Husband's symptoms started ~4 days before patient's fever (week vs. 3 days). Generated Answer correctly identifies stuffy nose first, fever next (3 days), mentions sore throat and muscle ache, and notes husband's week-long symptoms vs. patient's recent onset. Minor discrepancy: places sore throat 'subsequently' after fever (Gold says around onset), and approximates timeline difference without exact 4-day gap, but core sequence and comparison are accurate.",
+    "completeness": "Gold key points: (1) stuffy nose first just before fever; (2) sore throat around fever onset, ongoing; (3) fever 3 days; (4) muscle aches 2-3 days concurrent with fever; (5) husband week ago (~4 days before her fever); (6) staggered onset consistent with transmission. Generated covers stuffy nose first, fever 3 days, sore throat persisting, muscle ache, husband week vs. her ~3 days (implies staggered). Misses precise sore throat timing ('around onset'), exact concurrent muscle aches, 4-day gap, and transmission note, but covers 80-99% of points.",
+    "faithfulness": "All claims in Generated are directly verifiable: stuffy nose 'just before' [P-1]; fever 3 days [P-1]; sore throat persists [P-1]; muscle ache [P-13]; husband similar symptoms past week [P-19, P-20]. Citations accurate. 'Subsequently developed sore throat' interpretive but plausible from [P-1] structure; no hallucinations or unverifiable facts.",
+    "relevance": "Generated directly structures response as chronological list (stuffy nose → fever → sore throat/muscle ache) with explicit husband timeline comparison section, perfectly matching question's requirements without off-topic content."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 5,
+    "relevance": 5
+  },
+  "average_score": 4.5,
+  "summary": "The Generated Answer is highly faithful and relevant, with strong coverage of the symptom progression and husband comparison, marred only by minor timing discrepancies on sore throat and exact days."
+}

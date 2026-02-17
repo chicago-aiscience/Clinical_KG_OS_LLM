@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Generated Answer incorrectly claims the transcript contains only patient turns and lacks doctor questions/responses for weight loss [D-22/P-22], travel [D-23/P-23], sick contacts [D-24/P-24], and chemical exposure [D-33/D-34/P-33/P-34], which directly contradicts the provided full transcript and Gold Answer's accurate use of these elements; it vaguely mentions some overlapping differentials (e.g., lung cancer for weight loss, infections for travel/sick contacts, occupational disease for chemicals) but misses key specifics like TB, Legionella/fungal, chemical pneumonitis, and entirely omits how patient responses narrow differentials, adding irrelevant cardiac pathology.",
+    "completeness": "Gold key points: weight loss screens lung cancer/TB, denial less likely; travel screens endemic/exposure infections (Legionella/fungal), Sarnia/timing noted; sick contacts screens person-to-person/TB, denial reduces exposure likelihood; chemical screens pneumonitis/occupational, limited exposure less likely; collective favors acute infection. Generated covers partial screenings vaguely (~3/5) but misses all response narrowing effects (0/5) and specifics, adds extras; covers 20-49%.",
+    "faithfulness": "False claim that transcript lacks doctor questions/responses is a major hallucination (verifiable false via full transcript); differentials partially plausible but not tied to actual context/responses; adds ungrounded cardiac pathology and symptom summary not addressing query; multiple hallucinated facts about transcript content.",
+    "relevance": "Partially addresses potential screenings per question but ignores patient's responses' role in narrowing differentials (core query element), includes off-topic symptom summary and broad differentials like cardiac pathology."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 2,
+    "faithfulness": 1,
+    "relevance": 3
+  },
+  "average_score": 1.75,
+  "summary": "The Generated Answer is largely inaccurate and unfaithful due to hallucinated claims about missing transcript data, failing to use actual patient responses or fully match Gold Answer's precise differentials and narrowing analysis."
+}

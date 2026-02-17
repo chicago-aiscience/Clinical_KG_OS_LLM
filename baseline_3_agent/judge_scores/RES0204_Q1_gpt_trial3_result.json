@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the two main respiratory symptoms (cough and runny nose) and correctly states the runny nose duration and that the discharge was clear. However, it contains a key factual error: it states the transcript does not specify whether the cough is productive vs non-productive, when the transcript explicitly characterizes the cough as dry and non-productive (dry cough confirmed at [D-5, P-5] and denial of any sputum/gunk at [D-6, P-6]). It also misses the transcript detail that the cough has “kind of stayed the same” since onset ([D-7, P-7]), instead only reflecting the earlier statement that it wasn’t getting better ([P-2]).",
+    "completeness": "Key points from the Gold Answer that are covered: (1) cough duration ~4–5 days; (2) runny nose for past couple of days; (3) nasal discharge described as clear; (4) absence of wheezing/SOB noted. Key points missed for the question: (1) cough explicitly described as dry; (2) cough explicitly non-productive/no sputum; (3) cough course characterized as staying the same (neither worse nor better). It also omits the historical note that he’d never had a dry cough like this before and that prior runny noses didn’t last this long (less central, but present in Gold Answer).",
+    "faithfulness": "Most statements are grounded in the transcript, and the citations used (e.g., [P-2], [P-11], [P-12], [P-28]) align with the transcript. However, the claim that the transcript does not explicitly specify productive vs non-productive cough is contradicted by the transcript ([D-5, P-5], [D-6, P-6]). This is an unfaithful interpretation of the provided source.",
+    "relevance": "The answer is largely focused on the asked respiratory symptoms and their characteristics (cough and nasal discharge). The added point about absence of wheeze/SOB is a minor addition but still within respiratory context; it does not substantially distract from the question."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 3,
+    "relevance": 4
+  },
+  "average_score": 3.25,
+  "summary": "Identifies the main symptoms and clear nasal discharge, but misses and incorrectly denies the transcript’s explicit dry/non-productive cough characterization, reducing correctness, completeness, and faithfulness."
+}

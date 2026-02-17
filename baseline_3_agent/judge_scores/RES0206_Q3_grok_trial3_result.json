@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer attributes green-yellow sputum and fever to supporting respiratory infection (purulent sputum indicating infection), with COPD exacerbation supported by increased dyspnea, cough frequency, sputum volume, and decreased exercise tolerance. Generated Answer incorrectly attributes green-yellow sputum primarily to COPD exacerbation and fever to infection per a non-existent 'knowledge graph,' reverses key distinctions, includes hemoptysis as COPD support (not emphasized in Gold), and misses core COPD symptoms like increased cough/sputum volume/exercise tolerance and infection symptoms like sinus pressure/headache/sick contact. Significant contradictions on symptom attribution and doctor's framing.",
+    "completeness": "Gold key points: doctor's quote [D-43]; COPD: incr dyspnea/cough/sputum vol/exercise tol [P-1,P-4]; infection: green sputum/fever/sinus/HA/contact [P-1,P-9,P-12,P-14,P-20]; distinction via infectious trigger; patient history [P-3]; exclusions [P-26,P-38]; no labs. Generated covers partial COPD (SOB, sputum color wrong, hemoptysis); infection (fever); partial distinction/doctor quote; misses incr cough/vol/exercise, sinus/HA/contact, patient history, exclusions, no labs. Covers ~25-30% of points.",
+    "faithfulness": "Claims like green sputum -> COPD and fever -> infection cite transcript symptoms [P-1,P-9] but fabricate 'knowledge graph' links not in transcript (multiple hallucinations). Hemoptysis verifiable [P-1]; doctor's assessment [D-43] accurate. Smoking/COPD history verifiable but overemphasized. Unverifiable external causal links reduce grounding.",
+    "relevance": "Directly structures response around symptoms for COPD exacerbation vs respiratory infection, addresses distinction of green sputum/fever per question, minor tangent on smoking/history but focused on query."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer has significant factual inaccuracies in symptom attribution compared to Gold, low completeness missing many key points, hallucinations via 'knowledge graph,' but remains mostly relevant to the question."
+}

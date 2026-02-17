@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer provides a precise timeline: flu-like symptoms (sore throat, runny nose) days 1-3 resolving by 3-4 days; productive cough with whitish clear mucus days 1-4/5 transitioning to dry thereafter; cough intensity and frequency stable (same intensity, not more frequent, 3-4x/hr spontaneous); no fevers; only dry cough with chest soreness remains; mentions COVID test. Generated Answer correctly captures onset of flu symptoms resolving in 3-4 days, mucus production (whitish clear, days 1-5), transition to dry cough persisting 2 weeks. However, it inaccurately describes cough frequency as 'high throughout' (contradicts P-8/P-9 stable low frequency); omits intensity 'same' (P-7); vague on specific flu symptoms; mislabels timeline as 'Week 1 & 2 Onset (Days 1-2)' which is confusing; misses no fevers and stable/spontaneous details. Some factual errors but core timeline intact.",
+    "completeness": "Gold key points: 2wk onset flu [P-2]; days1-3 sore throat/runny nose resolve [P13/14]; other flu resolve 3-4d [P14]; mucus whitish clear 4-5d [P6]; trans day4-5 dry persist [P5/6]; intensity same [P7]; freq stable 3-4/hr spontaneous [P8/9/10]; no fever [P12]; remaining dry cough + soreness [P15/16]; COVID neg [P35/36]. Generated covers: flu onset/resolve 1-4d; cough from start persists; mucus 1-5d whitish clear; trans to dry; chest soreness. Misses: sore throat specific; intensity unchanged; freq details/stable/spontaneous; no fever; COVID test. Covers ~60% of key points.",
+    "faithfulness": "All major claims verifiable: flu onset/resolve [P13/14]; mucus details [P6]; transition [P5/6]; persistence [P2]; chest pain [P15]. Minor issue: 'frequency remained high' not supported (P9: 3-4/hr low; P8: not more frequent); interpretive 'high' from persistence [P2] but exaggerated, plausible but unverifiable as 'high'. Citations accurate. Mostly grounded, minor unverifiable detail.",
+    "relevance": "Directly structures response as timeline addressing question elements: flu onset, mucus duration/appearance, transition timing, other symptoms resolution, cough persistence. Addresses intensity/frequency changes partially (persistence but inaccurately 'high freq'). No off-topic content, focused on progression despite gaps."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 4,
+    "relevance": 4
+  },
+  "average_score": 3.5,
+  "summary": "The Generated Answer provides a mostly accurate and relevant timeline of symptom progression but has factual discrepancies on cough frequency/intensity stability and misses some key details from the Gold Answer."
+}

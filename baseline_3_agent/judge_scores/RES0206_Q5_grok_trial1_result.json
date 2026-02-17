@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer states smoking is the primary risk factor for COPD, citing 20 years half-pack/day [P-40], quitting at diagnosis 4-5 years ago [P-7,P-40], and persistent damage requiring inhalers [P-26]. Generated correctly identifies smoking history as direct cause [P-40] with accurate citation. For chain, Gold details exposure [P-20], infection symptoms [P-1,P-9,P-12,P-14], patient recognition [P-3,P-23], timeline [P-1], doctor summary [D-43]. Generated links sick contact to infection [D-43,P-1] to exacerbation, core chain correct but omits details like quitting timeline, specific exposure (dog walks, closeness), full symptoms, patient quotes. Knowledge graph references are consistent with facts but not central discrepancies. Overall minor discrepancies, core facts match.",
+    "completeness": "Gold key points: smoking as risk factor (half-pack 20yrs [P-40], quit 4-5yrs ago [P-7], inhalers [P-26]); chain (dog walks sick friend too close [P-20], infection signs sputum/sinus/fever/headache [P-1/12/9/14], patient 'got sick' [P-23]/past pattern [P-3], 3-day worsening [P-1], doctor [D-43]). Generated covers smoking history [P-40] to COPD; symptoms [P-1] to exacerbation via infection [D-43] from sick contact. Misses quitting details, inhalers, exposure specifics, most infection symptoms, patient insights, timeline. Covers ~60% of key points (main relations but not full details).",
+    "faithfulness": "Claims like smoking [P-40], sputum/blood [P-1], doctor infection [D-43] verifiable with accurate citations. Symptoms indicate exacerbation grounded. However, multiple 'knowledge graph' references (e.g., smoke-->COPD, infection-->exacerb) not in transcript, unverifiable, appear hallucinated (no graph provided). Plausible medically but introduces external ungrounded elements. Minor hallucination via graph, mostly transcript-grounded.",
+    "relevance": "Generated structured into two numbered sections directly matching question's two parts (smoking-COPD; sick contact chain to exacerbation). No tangents, fully focused despite graph mentions."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 3,
+    "relevance": 5
+  },
+  "average_score": 3.75,
+  "summary": "The Generated Answer captures core facts and structure of the Gold Answer but lacks detail on several key points and introduces ungrounded knowledge graph references."
+}

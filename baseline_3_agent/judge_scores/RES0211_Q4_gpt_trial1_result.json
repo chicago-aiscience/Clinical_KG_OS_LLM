@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Gold Answer lists multiple targeted screens (night sweats, productive vs non-productive cough, severe allergic reaction/EpiPen, asthma personal and family history, eczema, rashes, GI symptoms, joint pain) and Jessica’s specific responses. The Generated Answer focuses almost entirely on asthma and adds an interpretation of “viral URI/common cold,” which is not what the question asked for. It also contains a clear citation error: it states “Jessica confirmed she does not have asthma [P-1]” but [P-1] is her presenting complaint; the asthma denial is at [P-29]. The rest (dry cough, scratchy throat, feeling hot, brother sick) is broadly consistent with the transcript, but it does not correctly answer the asked inventory of systematic screening items and responses.",
+    "completeness": "Key points expected from the Gold Answer but missing in the Generated Answer include:\n- Night sweats screen (soaked sheets) and Jessica’s non-drenching “feels hot all the time” response.\n- Productive cough/phlegm screen and denial of sputum.\n- Severe allergic reaction screen (breathing difficulty/facial swelling) and mild stuffiness/post-nasal drip response.\n- EpiPen screen and denial.\n- Family history of asthma details (cousin only; parents/sibling no).\n- Eczema family history screen and denial.\n- Rash/skin changes screen and denial.\n- GI symptoms (nausea/vomiting/diarrhea) screen and denial.\n- Joint pain screen and denial.\nCovered: only personal asthma denial (and even that is mis-cited). This is well under 20% of the required content.",
+    "faithfulness": "Several statements are grounded (dry cough/scratchy throat; feeling hot; brother had a cold; doctor summary mentions no asthma/only Claritin). However, there are issues: (1) incorrect citation for asthma denial ([P-1] instead of [P-29]); (2) mention of a “knowledge graph,” which is not in the transcript; (3) the framing that the doctor was “aiming to rule out respiratory conditions beyond a simple viral infection” is an inference rather than something explicitly stated. Overall, partially grounded but with notable unsupported/misattributed elements.",
+    "relevance": "The question specifically asks for the conditions the doctor systematically screened for via targeted questioning (examples given: asthma, eczema, EpiPen-level allergy, night sweats) and Jessica’s responses. The Generated Answer largely does not enumerate these screens and instead discusses a suspected viral URI and exposure history. It only addresses asthma (incompletely) and omits the rest, so it is only partially responsive."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 1,
+    "faithfulness": 3,
+    "relevance": 2
+  },
+  "average_score": 2.0,
+  "summary": "The generated answer is largely incomplete and partially mis-cited, covering only asthma while omitting most of the doctor’s systematic screening questions and Jessica’s key responses (night sweats, sputum, allergic reaction/EpiPen, eczema, rashes, GI, joint pain, and family history details)."
+}

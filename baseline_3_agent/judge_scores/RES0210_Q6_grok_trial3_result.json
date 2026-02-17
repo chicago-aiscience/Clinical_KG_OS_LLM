@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Step-by-step: Gold Answer accurately cites [D-43] for doctor's plan to consult supervising physician and return; Generated incorrectly states no information on doctor's plan exists, a direct contradiction. Gold identifies self-care as Tylenol (partial help [P-14]), expectoration (temporary relief [P-13]), and resting/avoiding exertion [P-10]; Generated only mentions Tylenol correctly but misses others. Gold lists aggravating factors as deep breathing [P-18], coughing worsening chest pain [P-19], exertion/stairs [P-10/11]; Generated wrongly identifies only coughing for throat rawness [P-15], missing key pleuritic/exertional factors. Generated hallucinates 'Knowledge Graph' support not in transcript. Significant factual errors and contradictions vs Gold.",
+    "completeness": "Gold key points: 1) Doctor's plan [D-43]; 2) Self-care: Tylenol [P-14], expectoration [P-13], resting [P-10]; 3) Aggravating: deep breathing [P-18], coughing on pain [P-19], exertion [P-10/11], no others [P-12]; 4) Alleviating: Tylenol, expectoration, resting; 5) Clinical relevance of pleuritic/exertional symptoms. Generated covers only Tylenol partially (~1/10 key points), misses plan entirely, wrong/incomplete agg/allev. Covers <50%, closer to 20-49%.",
+    "faithfulness": "Generated cites [P-14] and [P-15] accurately from transcript. However, claims no doctor's plan info despite clear [D-43]; misinterprets [P-15] sore throat as main aggravating vs chest pain; fabricates 'Knowledge Graph' and its links (TREATMENT: tylenol --[TREATS]--> [SYMPTOM] chest pain), not verifiable in provided transcript. Multiple unverifiable/hallucinated elements, misses many transcript-grounded claims like [D-43],[P-13],[P-18],[P-10].",
+    "relevance": "Generated structures response directly around the three question components (Doctor's plan, Self-care, Aggravating, Alleviating factors), using bold headings matching query; no off-topic content or tangents, fully addresses question format despite inaccuracies."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer is relevant and somewhat structured but has significant factual errors, misses most key points from the Gold Answer, and includes hallucinations like Knowledge Graph references, resulting in low overall quality."
+}

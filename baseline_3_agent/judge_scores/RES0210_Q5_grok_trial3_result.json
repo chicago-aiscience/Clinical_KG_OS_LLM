@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer accurately details all three risk factors (smoking pack-a-day since age 15 [P-37/38], occupational as engineering consultant at chemical plant with low exposure [P-33/34], family history of grandfather's lung cancer [P-42]) and their relations to presentation (e.g., infection risk, malignancy vigilance). Generated Answer incorrectly states pack-a-day smoking and occupational history were not elicited (direct contradictions to transcript and Gold), misattributes tobacco smoking to cannabis only with cessation [P-40] (hallucinated interpretation), covers family history correctly but minimally; significant factual errors and contradictions yield score 2.",
+    "completeness": "Gold key points: smoking details and risks, occupational details and mitigation, family details, collective relation to cough/hemoptysis (infection vs. malignancy). Generated covers only family history (~25% key points), misses smoking and occupational entirely with denials, no full relations explained; covers 20-49% yield score 2.",
+    "faithfulness": "Generated misreads transcript: claims no tobacco smoking elicited (ignores [P-36-38]), attributes to cannabis cessation only [P-40]; denies occupational history (ignores [P-33/34]); adds irrelevant presentation details; multiple ungrounded/misread claims, score 2.",
+    "relevance": "Generated attempts to address risk factors relative to presentation and elicitation but deviates with incorrect denials of two factors, extra presentation details, and flawed synthesis; partially relevant with some off-topic/wrong content, score 3."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "The Generated Answer has major factual errors and omissions by denying two key elicited risk factors, resulting in low correctness, completeness, and faithfulness despite partial relevance."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The core question asks for an infectious exposure source identified in the *social history* and how it relates to the presentation in context of type 1 diabetes. The Gold Answer identifies the nephew who attends daycare and lives with the patient as the plausible exposure source. The Generated Answer incorrectly states the exposure source is “COVID-19,” which is not an exposure identified in the social history; rather, COVID is a diagnostic consideration raised by the clinician due to pandemic context and overlapping symptoms. It also implies the physician tailored advice because diabetes may affect immune function; the Gold Answer notes the transcript does not explicitly link diabetes to immune risk. While the Generated Answer correctly mentions swabbing, isolation, and supportive care per [D-39], it misses/incorrectly answers the main exposure component.",
+    "completeness": "Key Gold Answer points include: (1) nephew attends daycare and lives with patient as exposure source; (2) nephew reportedly not sick but still possible source; (3) type 1 diabetes history and management details; (4) transcript does not explicitly connect diabetes to immune impairment; (5) symptom duration prompting visit. The Generated Answer omits the daycare/nephew exposure entirely, does not note the nephew was not sick, and does not include the important nuance that the clinician did not explicitly connect diabetes with immune risk. It mentions diabetes generally and the testing/isolation plan, but overall covers less than half of the Gold Answer’s key points.",
+    "faithfulness": "Several claims are not grounded as stated: calling COVID-19 the identified ‘exposure source’ is not supported by the social history portion of the transcript. The statement that the physician emphasizes supportive care specifically because diabetes may affect immune function is also not supported; [D-39] gives general viral URI/COVID-era guidance without tying it to diabetes. However, swab testing, hydration/supportive care, and isolation pending results are supported by [D-39]. Overall, there are multiple key misattributions/hallucinated linkages.",
+    "relevance": "The response is on-topic in that it attempts to address exposure and the impact of diabetes on the presentation/management. However, it focuses on COVID as the ‘exposure’ rather than the social-history exposure (daycare contact), so it only partially addresses what the question asks."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.0,
+  "summary": "The answer is partially relevant but misses the key social-history exposure (nephew in daycare) and introduces unsupported linkages, making it largely incorrect and incomplete relative to the Gold Answer."
+}

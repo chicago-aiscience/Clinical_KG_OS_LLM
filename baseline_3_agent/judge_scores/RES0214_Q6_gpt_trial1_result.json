@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly states that the clinician ordered a COVID-19 swab [D-53] and recommended self-isolation for both the patient and her husband [D-53, D-54]. It does not introduce major contradictions with the Gold Answer. Minor issues: it adds rationale (“to prevent infecting others”) that is implied but not explicitly stated, and it omits two explicit next steps (physical exam; clinician going to speak with the doctor and return), which affects completeness more than factual accuracy.",
+    "completeness": "Gold Answer key points: (1) COVID-19 swab ordered; (2) self-isolation for patient and husband; (3) next step: physical exam; (4) next step: clinician will go talk to the doctor/supervising physician and come back; (5) patient agreed. Generated Answer includes (1) and (2). It only gives a vague “further investigation/work this up further” and misses the explicitly stated physical exam and the plan to consult the doctor and return, and it omits the patient’s agreement. Overall coverage is ~50%.",
+    "faithfulness": "Most statements are grounded in the transcript with appropriate references to [D-53]. However, “based on the provided transcript and knowledge graph” references a ‘knowledge graph’ that is not in the source, and “to prevent infecting others” is an inferred intent rather than a verbatim recommendation. It also fails to mention transcript-grounded next steps (physical exam; go talk to the doctor and return), but omission is a completeness issue rather than hallucination.",
+    "relevance": "The answer stays on-topic: it addresses the management plan, test ordered, precautions, and next steps. The main weakness is that the ‘next steps’ section is incomplete (missing the physical exam and plan to speak with the doctor and return)."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 4,
+    "relevance": 5
+  },
+  "average_score": 4.0,
+  "summary": "The Generated Answer is accurate and relevant for the COVID swab and self-isolation advice, but it is incomplete because it omits the planned physical exam and the plan to speak with the doctor and return before concluding the visit."
+}

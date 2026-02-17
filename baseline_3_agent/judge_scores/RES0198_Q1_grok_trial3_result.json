@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer accurately captures nasal symptoms (stuffy nose/congestion, runny nose/rhinorrhea, 1 week duration, initial stuffiness progressing to mostly running), clear nasal discharge [P-5], and explicit denials of cough [P-4], post-nasal drip [P-6], sore throat/fevers/etc. [P-7], loss of taste/smell [P-16]. Generated Answer correctly identifies stuffy and runny nose with progression and duration but incorrectly states discharge character is unspecified (directly contradicted by [P-5] 'mostly clear') and claims denied symptoms context is missing (explicit questions and denials in transcript). Adds irrelevant doctor summary on viral illness. Significant factual errors on key elements.",
+    "completeness": "Gold key points: stuffy/runny nose (week, progression), clear discharge, denied cough/post-nasal/sore throat/etc./taste-smell, fatigue/others. Generated covers stuffy/runny nose and progression (~40% of nasal details) but misses discharge entirely, all specific denials, fatigue; instead fabricates absences. Covers 20-49% of key points.",
+    "faithfulness": "Nasal symptoms grounded with correct citations [P-1,P-3]. Discharge claim 'not specified' hallucinates absence despite direct [D-5/P-5] 'mostly clear'. Denied symptoms wrongly asserts 'context missing' when transcript explicitly provides questions/denials [P-4,P-6,P-7,P-16]; misrepresents 'provided segments' as incomplete. Doctor summary [D-39] verifiable but extraneous. Multiple hallucinated absences.",
+    "relevance": "Generated Answer directly structures response around the three question elements (reported nasal symptoms, discharge character, denied symptoms) with no off-topic content or tangents, perfectly matching query focus."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer accurately covers nasal symptoms but significantly errs by hallucinating the absence of discharge character and denial details, leading to low correctness, completeness, and faithfulness despite high relevance."
+}

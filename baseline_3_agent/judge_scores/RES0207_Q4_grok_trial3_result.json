@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly focuses on affirmed symptoms (SOB, dry cough, fever) and medication non-adherence as 'screened for,' while the Gold Answer and question emphasize denied symptoms/exposures (e.g., chest pain, feeling faint, loss of taste/smell, sore throat, runny nose, sick contacts, travel, nausea/vomiting, belly pain, diarrhea, sputum). It misrepresents patient denials (only mentions denying frequent seizures, which is minor) and infers DDs from positives rather than negatives, contradicting Gold's factual listing and interpretation; core facts about denied screenings are absent or wrong.",
+    "completeness": "Gold key points covered: none fully; missed all major denied symptoms (chest pain, faintness, URI symptoms, exposures, GI symptoms, dry cough confirmation, no prior episodes). Generated covers 0% of these, instead discussing affirmed presenting complaints and unrelated seizure frequency.",
+    "faithfulness": "Claims about screened symptoms (SOB, cough, fever) are verifiable but irrelevant to denials; missed Keppra dose verifiable [P-9, P-24]; denial of frequent seizures verifiable but minor. Hallucinations include specific DDs like pneumonia, bronchitis, pulmonary edema, PE, GERD/aspiration not in transcript or suggested by negatives; doctor screened to RULE OUT infectious/cardiac/GI via denials, opposite of Generated's positive-based inferences.",
+    "relevance": "Generated Answer addresses reported symptoms and infers DDs from positives, largely ignoring the question's focus on denied symptoms/exposures and how negatives address DDs (e.g., cardiac via no chest pain/faintness, infectious via no URI/exposures); only tangential mention of categories without tying to negatives."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 2
+  },
+  "average_score": 1.5,
+  "summary": "The Generated Answer is fundamentally off-target, ignoring denied symptoms and basing analysis on affirmed complaints, resulting in low factual alignment, coverage, grounding, and relevance to the question and Gold Answer."
+}

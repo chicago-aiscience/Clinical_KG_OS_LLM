@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies most reported symptoms (dry cough, scratchy throat, feeling crappy, headache, feeling hot) matching Gold, but omits tiredness [P-13], active headache detail [P-2], 'icky' feeling, and malaise characterization [D-15]; for denials, it inaccurately describes sputum denial as implicit and cites wrong summary [D-58] instead of explicit [P-5,P-6], misses all other explicit denials (rashes [P-10], nausea/vomiting [P-11], diarrhea [P-12], joint aches [P-13], breathing difficulty [P-18]), and adds irrelevant non-symptom denials (contacts sick, asthma) from doctor's summary, leading to significant factual errors and contradictions.",
+    "completeness": "Covers ~5/6 reported key points from Gold (dry cough/scratchy throat, headache, crappy/icky, hot; partial on details); covers 0-1/6 denied points (partial sputum, misses rashes, nausea/vomiting, diarrhea, joints, breathing); adds irrelevant points; overall ~40% coverage.",
+    "faithfulness": "Reported symptoms verifiable with accurate citations [P-1,P-4,P-7,P-9]; denials mis-cite doctor's summary [D-58] as Jessica's explicit denials instead of direct responses [P-5/6,10-13,18]; hallucinated 'knowledge graph provided' not in transcript; misattributes contact/asthma as symptom denials; multiple unverifiable/hallucinated elements in denials section.",
+    "relevance": "Directly structured with 'Reported Symptoms' and 'Explicit Denials' sections addressing the question; includes some irrelevant non-symptom denials (contacts, asthma) and misses key denied symptoms, but mostly focused without major tangents."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer is partially accurate and complete on reported symptoms but significantly flawed in denials with errors, omissions, misattributions, and hallucinations, while remaining mostly relevant."
+}

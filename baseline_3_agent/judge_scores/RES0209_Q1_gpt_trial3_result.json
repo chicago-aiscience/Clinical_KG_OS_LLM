@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The answer correctly identifies key reported symptoms: dry cough (P-1), shortness of breath (P-1), wheezing (P-15). However, it contains major inaccuracies: (1) It states there are no nighttime frequency details, but the patient explicitly reports nighttime symptoms occur “every other day”/“every two days” and are less frequent than daytime (P-18). (2) It misattributes chest tightness confirmation to “Yeah [P-4]”; the chest tightness is confirmed at P-20 in response to D-20. (3) It under-specifies duration by emphasizing “past week or so” while the history is clarified to “last two weeks” (P-13). These errors significantly conflict with the Gold Answer.",
+    "completeness": "Gold Answer key points include: persistent dry cough ~2 weeks, near-nonstop daytime; nonproductive nature; shortness of breath/hard time breathing during episodes; wheezing a lot and occurring more frequently than bronchodilator use; chest tightness; and clear daytime vs nighttime frequency (night every other day/every two days, less than daytime). Generated answer covers: dry cough and daytime near-nonstop; shortness of breath; wheezing. It misses/incorrectly reports: nighttime frequency (missed and contradicted), 2-week duration detail, “hard time breathing” during episodes, wheezing occurring more often than bronchodilator use, and it botches the chest-tightness support/citation. Overall coverage is well under 80%.",
+    "faithfulness": "Several statements are not faithfully grounded: it claims the transcript lacks nighttime frequency details (contradicted by P-18). It also provides an incorrect citation/quote for chest tightness (uses P-4, which is about as-needed bronchodilator use, not chest tightness). Other included symptom statements are grounded in the transcript.",
+    "relevance": "The response is largely focused on the asked symptom domains (cough character, breathing difficulty, wheeze, chest sensation) and day vs night frequency. However, by incorrectly stating there is no nighttime frequency information, it fails an essential part of the question and reduces overall relevance."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "Identifies some core symptoms but contains major errors about nighttime symptom frequency and mis-cites chest tightness, with multiple key Gold Answer details omitted."
+}

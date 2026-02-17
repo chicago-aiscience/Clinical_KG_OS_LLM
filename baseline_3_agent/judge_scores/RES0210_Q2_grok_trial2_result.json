@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer specifies Lipitor for high cholesterol (patient-stated), confirmed as only prescribed med, Tylenol OTC for symptom relief (feverish/unwell) with partial effectiveness ('helps a little bit'), and notes no other meds. Generated correctly identifies Lipitor for cholesterol and Tylenol with effectiveness quote. Minor discrepancies: Tylenol uses expanded to fever/sore throat/chest pain (not patient-specified for Tylenol, though symptoms present); awkward quote 'haven't taken some Tylenol'; misses explicit 'only med' confirmation. Core facts match.",
+    "completeness": "Gold key points: 1) Lipitor for cholesterol, only prescribed [P25-27]; 2) Tylenol OTC for feverish symptoms, 'helps a little' [P14]; 3) No other meds; 4) Non-med relief (expectoration) [P13]; 5) Extras like no allergies. Generated covers Lipitor (use), Tylenol (effectiveness), implies no others. Misses 'only' confirmation, precise Tylenol indication, non-med relief, extras. Covers ~85% of core med points.",
+    "faithfulness": "Lipitor details verifiable [P25-26]. Tylenol mention and effectiveness verifiable [P14], but specific uses (fever/sore throat/chest pain) not linked to Tylenol in transcript (symptoms exist but not attributed); quote slightly misphrased. 'Knowledge graph' and [MEDICAL_HISTORY] not in transcript (hallucination). Patient did not specify Tylenol indications beyond helping symptoms in fever context. Multiple unverifiable additions.",
+    "relevance": "Generated directly structures response around prescribed/OTC meds, their uses, and OTC effectiveness, perfectly matching question with no off-topic content."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.75,
+  "summary": "The Generated Answer is mostly correct and relevant but reduced in faithfulness due to hallucinated 'knowledge graph' references and unsubstantiated specific uses for Tylenol."
+}

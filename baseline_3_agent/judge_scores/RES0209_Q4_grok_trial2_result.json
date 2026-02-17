@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly identifies 'other health problems' (D-29) and 'chest tightness' (D-20) as the specific screening for infectious causes, whereas the Gold Answer and transcript detail explicit infectious screens like recent colds/infections (D-21), loss of taste/smell (D-25), fevers (D-26), nausea/vomiting (D-27), belly pain (D-28), sick contacts (D-22/D-23), and travel (D-24); it mentions the planned COVID swab correctly but omits or misrepresents patient denials and purpose, leading to significant factual errors and contradictions with the Gold Answer.",
+    "completeness": "Gold Answer key points: symptoms screened (colds/infections, taste/smell, fevers, nausea/vomiting, belly pain, dry cough), all denied; exposures (home/frequent contacts sick, outside contacts sick, travel), all denied; explanation (D-29); planned COVID swab despite negatives. Generated covers only the planned COVID swab (~10%) and vaguely dry cough in patient symptoms; misses all specific infectious screenings, responses, and exposures.",
+    "faithfulness": "Claims about 'screening for other health problems [D-29]' and 'chest tightness [D-20]' are verifiable in transcript but hallucinate these as infectious etiology screening (actual infectious questions are D-21-D-28); patient symptoms/triggers cited accurately but not tied to infectious screening; misattributes purpose, introducing multiple interpretive hallucinations.",
+    "relevance": "Generated attempts structure matching question (screening, responses, test) and notes COVID swab, but fills with irrelevant general asthma symptoms/triggers/family history instead of infectious screens/exposures/responses, making it largely off-topic for the specific query."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 2
+  },
+  "average_score": 1.75,
+  "summary": "The Generated Answer significantly deviates from the Gold Answer by misidentifying irrelevant details as infectious screening, covering only a tiny fraction of key points with factual inaccuracies and poor grounding."
+}

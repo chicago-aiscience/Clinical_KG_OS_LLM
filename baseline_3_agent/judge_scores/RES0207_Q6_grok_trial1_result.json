@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly claims there are no doctor turns in the transcript and that it cuts off at P-26, directly contradicting the Gold Answer which accurately cites D-37 and D-38; it fabricates a transcript limitation that does not exist, making all its conclusions factually inaccurate compared to the Gold Answer's correct summary of the doctor's communicated next steps.",
+    "completeness": "Gold Answer key points: doctor will review info with another doctor (collaborative decision-making, D-37), return shortly to discuss (D-37/D-38), possible tests and management plan (D-37), no specifics ordered, patient agreement (P-37), farewell (D-38). Generated Answer covers 0% of these, instead refusing to answer based on false premise and suggesting inferences not in Gold.",
+    "faithfulness": "Generated Answer hallucinates absence of all [D-X] turns despite full transcript provided (D-1 to D-38); references patient statements like P-9 but misattributes context; infers unstated clinical actions (e.g., rule out pneumonia) not grounded in transcript or doctor's words, purely speculative.",
+    "relevance": "Generated Answer does not address the question by extracting doctor's communicated steps, instead dismissing the query due to fabricated transcript incompleteness and pivoting to irrelevant inferences from patient history; fails to engage with actual content."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 1
+  },
+  "average_score": 1.0,
+  "summary": "The Generated Answer is entirely inaccurate, incomplete, unfaithful to the transcript, and irrelevant due to a fundamental hallucination about the provided source material."
+}

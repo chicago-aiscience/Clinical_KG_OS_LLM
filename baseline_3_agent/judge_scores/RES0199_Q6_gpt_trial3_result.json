@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer accurately matches the Gold Answer on the key factual elements it includes: COVID-19 swab ordered with results in 24–48 hours, self-isolation for 14 days, public health contact tracing if the result is positive, and supportive care measures (hydration, nutritious food, sleep/rest, Tylenol for fever, Tylenol or NSAIDs for aches). It does not introduce any clinically incorrect recommendations. The only minor issue is the inclusion of the phrase “Based on the transcript and knowledge graph,” where “knowledge graph” is not part of the source and is unnecessary, but it does not materially alter the medical plan described.",
+    "completeness": "Covers most Gold Answer elements: (1) COVID swab + 24–48h results, (2) isolate 14 days, (3) contact tracing if positive, (4) supportive care list. However, it omits two items present in the Gold Answer: (a) the doctor’s statement that if not COVID it could be another seasonal viral illness, and (b) the explicit note that no prescription medications were ordered beyond supportive measures / that management is supportive regardless of the test result. Thus it is not fully complete.",
+    "faithfulness": "Nearly all statements are directly supported by [D-52]. The only ungrounded element is the reference to a “knowledge graph,” which is not in the transcript. Otherwise, recommendations and conditions (positive test triggers contact tracing) are faithful to the transcript; no major hallucinated clinical details are added.",
+    "relevance": "The response is focused on exactly what was asked: diagnostic test ordered, self-isolation duration, when contact tracing occurs, and supportive care recommendations. No substantial tangents."
+  },
+  "scores": {
+    "correctness": 5,
+    "completeness": 4,
+    "faithfulness": 4,
+    "relevance": 5
+  },
+  "average_score": 4.5,
+  "summary": "Accurate and highly relevant summary of the management plan, but slightly incomplete (misses the alternative viral-illness note and the explicit “no prescriptions/supportive regardless” point) and includes a minor ungrounded “knowledge graph” reference."
+}

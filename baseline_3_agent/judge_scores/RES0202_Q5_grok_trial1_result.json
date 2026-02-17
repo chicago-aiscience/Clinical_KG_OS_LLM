@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer emphasizes mother's explicit concern about COVID from school [P-2], precise sick contacts (none known outside 'for sure' [P-38], uncertain at school 'kinda hard to say' [P-38]), school no notification [P-39], school test requirement [P-41], no travel/env exposures. Generated correctly notes timeline post-school suggesting school source [P-1], but inaccurately claims no specific sick contacts at school OR outside without nuance (misses distinction), wrong citation [P-1 instead of P-38/39], omits mother's COVID-school worry, adds unmentioned 'knowledge graph' for cough/asthma. Significant errors in sick contact details and extras contradict Gold's precision. Score: 2.",
+    "completeness": "Gold key points: school central/mother COVID concern [P-2], symptoms post-school [P-1], no sick outside but uncertain school [P-38], no school contact [P-39], school test req [P-41], no travel [P-40], no env [P-37]. Generated covers timeline/school source (~20%), no sick contacts broadly (~10%), no school notif (~10%). Misses ~70%: nuance on contacts, COVID concern, test req, no travel/env. Covers 20-49%. Score: 2.",
+    "faithfulness": "Timeline [P-1] and COVID symptoms [D-44] verifiable. Sick contacts/no notification claimed from [P-1] unverifiable (actual [P-38/39]). 'Knowledge graph' for cough/viral/asthma hallucinated (doctor mentions asthma possibility [D-45] but not as source suspicion). Multiple hallucinations/mis-cites. Score: 2.",
+    "relevance": "Generated uses sections directly matching question (source via school, sick contacts, school notification). No off-topic content. Perfectly focused. Score: 5."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 2.75,
+  "summary": "Generated Answer partially addresses school as suspected source via timeline but has significant factual errors, lacks completeness on key contact nuances and misses major Gold points, with hallucinations and poor faithfulness."
+}

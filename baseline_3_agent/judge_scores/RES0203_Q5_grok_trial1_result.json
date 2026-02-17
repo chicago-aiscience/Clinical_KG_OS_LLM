@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly states that the patient 'did not explicitly identify a specific exposure event,' directly contradicting the Gold Answer and transcript where the patient identifies the hiking trip two weeks ago with their partner, during which 'some people kind of brushed by us' [P-18, P-19]. It ignores this key fact and instead focuses on symptoms, introducing a non-existent 'knowledge graph' not present in the source materials. This represents a major factual contradiction with the Gold Answer.",
+    "completeness": "Gold Answer key points: patient in last year HS online [P-36/37], not out of house [D-38/P-38], specific exposure hiking 2 weeks ago with partner, people brushed by [P-18/19], no other sources/no sick contacts [P-17/18], lives with parents/sibling [P-29], immunizations up to date [P-20], doctor tests despite limited exposure [D-39]. Generated Answer covers 0% of these exposure-related points, instead discussing symptoms (loss of smell/taste [P-1], dry cough [P-1/8], doctor's confirmation [D-39]), which are not central to the question on exposure.",
+    "faithfulness": "Claims about symptoms are verifiable [P-1, P-8, D-39], but assertion of no specific exposure event contradicts transcript [P-18]; references to 'knowledge graph' linking symptoms to COVID are hallucinated as no such graph exists in provided materials; pivots away from transcript-grounded exposure history, introducing unverifiable clinical linkages.",
+    "relevance": "Question specifically asks for the identified exposure event (hiking) and its connection to COVID suspicion given homebound status; Generated Answer denies any exposure event exists and shifts to symptom-based reasoning, failing to address the core query on exposure history."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 1
+  },
+  "average_score": 1.25,
+  "summary": "The Generated Answer is factually incorrect, incomplete, and irrelevant by denying the key exposure event from the transcript and Gold Answer, hallucinating unrelated elements, and focusing on symptoms instead."
+}

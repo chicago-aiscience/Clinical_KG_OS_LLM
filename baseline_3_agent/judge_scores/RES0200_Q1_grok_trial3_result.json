@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies shortness of breath [P-1, P-8], cough [P-1, P-5], phlegm production, and sputum change from clear-to-white baseline to yellow [P-6], consistent with Gold. However, it omits key details like cough worsening over the last week beyond chronic baseline [P-1, P-5], cough triggered by minimal exertion [P-5], increased SOB severity over days [P-8], chest discomfort during coughing [P-13], and chills [P-29]. It incorrectly states no systemic symptoms despite chills being endorsed. The denied symptoms list is partial, missing key ones like orthopnea [P-9], PND [P-10], hemoptysis [P-7], palpitations [P-14], and fever (no measured [P-30]). Some factual errors and omissions lead to score 3.",
+    "completeness": "Covered: shortness of breath, cough, phlegm, sputum character change (baseline clear-white to yellow). Missed: worsening cough (week vs baseline), cough on exertion (stairs), SOB severity (short walks need rest), chest discomfort (coughing fits), chills (last couple days); nearly all pertinent negatives (orthopnea, PND, hemoptysis, palpitations, fever, calf pain, dizziness, etc. - Gold lists ~20). Covers ~25% of key points. Score 2.",
+    "faithfulness": "Specific endorsed claims (SOB [P-1], cough [P-1], phlegm/sputum details [P-6]) verifiable with accurate citations. Denied symptoms listed verifiable (e.g., numbness [P-17], nausea [P-21], etc.). 'No systemic symptoms (e.g., chills)' overlooks P-29 ('feeling a bit chilly') but no fabrication of new facts; minor unverifiable detail as chills are borderline mild. No hallucinations, mostly grounded. Score 4.",
+    "relevance": "Answer is structured directly around endorsed respiratory/systemic symptoms, sputum change, and denied symptoms, perfectly matching question categories with no off-topic content. Score 5."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 2,
+    "faithfulness": 4,
+    "relevance": 5
+  },
+  "average_score": 3.5,
+  "summary": "The Generated Answer is mostly accurate on core respiratory symptoms and sputum but misses critical endorsed details like worsening, chest discomfort, chills, and key denied symptoms, impacting completeness."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer states the sole medication is a bronchodilator (rescue inhaler) administered via a 'puffer' (inhaler), confirmed as the only one used as-needed (D-4/P-4, D-7/P-7, D-6/P-6). Generated Answer correctly identifies bronchodilator but errs by claiming administration method is unspecified (ignores 'puffer' in P-7/D-7) and denies any doctor inquiry about daily controller medication despite explicit question in D-5 ('one that you take every day no matter what') and patient denial in P-5. Significant contradictions on two of three core facts.",
+    "completeness": "Gold key points: (1) bronchodilator/rescue inhaler as sole medication; (2) administered via puffer/inhaler; (3) doctor asked about daily controller ('every day no matter what'), patient lacks it. Generated covers (1) partially (bronchodilator identified, but not as sole/as-needed explicitly); misses (2) entirely; misses (3) entirely and claims no evidence. Covers ~25% of key points.",
+    "faithfulness": "Bronchodilator claim grounded in P-1 (verifiable). Administration claim hallucinates absence despite 'puffer' in P-7/D-7. Daily controller denial hallucinates no evidence despite D-5/P-5/D-6; cites irrelevant sections (D-20, P-9, P-11) instead of actual exchanges. Multiple inaccuracies and ignored transcript facts.",
+    "relevance": "Generated Answer directly structures response to match question's three parts (current med, administration, daily controller inquiry), with no off-topic content or tangents, though answers are factually flawed."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer partially identifies the medication but contains significant factual errors and omissions regarding administration and the doctor's inquiry about a daily controller, ignoring key transcript evidence."
+}

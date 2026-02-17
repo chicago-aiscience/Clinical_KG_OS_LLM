@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Generated Answer has multiple factual errors compared to Gold Answer and transcript: sore throat is incorrectly described as 'pretty constant' (cites wrong [P-21], but actually worsening [P-4]); taste/smell onset wrongly as 'immediately after sore throat' (cites [P-26] which is fatigue, actual [P-20] two days ago); smell loss hallucinated (patient said 'not smell' meaning unaffected [P-19]); swallowing treated as separate symptom (it's part of sore throat [P-2]); completely misses breathing difficulty (Day 4, key symptom [P-8]) and fatigue/muscle aches (shortly after sore throat [P-25,P-26]); Gold emphasizes progressive worsening and full sequence which is contradicted.",
+    "completeness": "Gold key points: Day1 sore throat (worsening); shortly after fatigue/aches; Day3 taste reduced (constant); Day4 breathing (worsening, constant). Covered partially: sore throat onset/severity (inaccurate); misses fatigue/aches entirely; taste (wrong onset/severity/smell); misses breathing entirely; adds irrelevant swallowing separation and COVID context. Covers ~30% of key points.",
+    "faithfulness": "Multiple inaccuracies/hallucinations: wrong citations ([P-21] for sore throat, [P-26] for taste); sore throat not constant (worsening [P-4]); smell not lost ([P-19]); swallowing not separate onset; misses verifiable breathing [P-7-P-11] and fatigue [P-25-26]; adds ungrounded COVID linkage as primary though mentioned [D-43] but not central to symptoms chrono.",
+    "relevance": "Attempts chronological symptom list but incomplete (misses breathing, fatigue), inaccurate order/severity/details, and includes off-topic clinical context/COVID plans/smoking note; partially addresses question but with tangents and omissions."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "The Generated Answer is significantly incomplete and factually inaccurate, missing key symptoms like breathing difficulty and fatigue while misrepresenting timelines, severities, and citations from the transcript and Gold Answer."
+}

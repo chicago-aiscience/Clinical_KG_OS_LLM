@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer highlights three key factors shaping the differential: (1) husband's week-long similar illness suggesting household transmission (cited P-19/P-20, D-51/D-53); (2) limited outside contact (P-17/P-18/P-22/P-23/P-42) supporting household spread over independent exposure; (3) no flu shot (P-53/D-53) making influenza viable alongside COVID prioritization. Generated Answer covers husband's illness accurately linking to COVID priority (D-53), no flu shot leaving influenza possible (D-53/D-54), and shared household implying transmission (D-53). Core facts match, but omits specific limited contact details (e.g., hiking, no other sick contacts, work from home) and their role in favoring household transmission. Introduces interpretive KG links not contradicting but extraneous. Minor discrepancies, core correct.",
+    "completeness": "Gold key points: husband's prior illness (full coverage); limited outside contact details (partial: mentions shared household but misses specifics like work from home P-23/P-42, hiking P-18, no other contacts P-17); no flu shot (full). Collectively shaping COVID priority vs. flu possibility covered in structure. Covers ~85% (strong on husband/flu shot, partial on limited contact).",
+    "faithfulness": "Claims grounded: husband's symptoms [P-19], links to COVID [D-53], no flu shot [P-53/D-53/D-54], isolation [D-53]. Citations accurate. Hallucinations: multiple 'knowledge graph' references (e.g., KG: fever/sore throat --RELATED_TO--> husband_current_illness; sore throat --DIFFERENTIAL_DIAGNOSIS--> influenza) not in transcript—fabricated. 'Digital marketing agent' from P-42 but not central. Some unverifiable/plausible interpretations (e.g., 'removes protective factor'), but KG instances are clear hallucinations.",
+    "relevance": "Directly addresses how factors (husband's illness, no flu shot, shared environment) shape COVID as primary vs. influenza secondary differential, with testing/isolation. Structured by factors, no off-topic content despite KG mentions. Perfectly focused on question."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.75,
+  "summary": "The Generated Answer is mostly correct and relevant, covering core epidemiological factors well but reduced by hallucinations from unsubstantiated knowledge graph references and partial omission of limited contact specifics."
+}

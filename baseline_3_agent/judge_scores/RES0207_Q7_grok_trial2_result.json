@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Generated Answer has core facts like seizure last night due to missed Keppra, morning SOB onset upon waking, temperature check of 37.4C, and decision to seek care, aligning with Gold. However, errors include fabricating 'woke up in the evening' for seizure (not in transcript or Gold), omitting daughter's birthday as reason for missed dose (Gold cites [P-24]), missing dry cough and 3-hour symptom onset ([P-2,P-4,P-11]), and not noting patient's uncertainty about seizure relation or prior lack of SOB ([P-3,P-8]). Thus, some factual errors but main timeline points correct.",
+    "completeness": "Gold key points: evening birthday disruption and missed Keppra ([P-24,P-9]), later seizure and bed ([P-8]), morning sudden SOB and dry cough ([P-1,P-2,P-4]), symptoms ~3 hours prior ([P-11]), temp check 37.4C ([P-5,P-6]), no prior SOB ([P-3]), decision to seek care due to uncertainty ([P-1]), seizure mention with relation uncertainty ([P-8]). Generated covers seizure (missed med), SOB onset, decision to seek care, temp check (~50% coverage), misses birthday detail, cough, timing, prior history, uncertainties.",
+    "faithfulness": "Most claims grounded: seizure last night [P-8], missed med Keppra [P-9,P-23], SOB [P-1], decision [P-1], temp [P-5]. Hallucinations: 'woke up in the evening' (not in transcript), family history detail (accurate but extra), especially 'clinical knowledge graph' and fever confirmation via LAB_RESULT (fabricated, no such elements). Multiple unverifiable/hallucinated additions.",
+    "relevance": "Directly reconstructs timeline addressing seizure, respiratory onset, temp check, seek care decision with structured sections; minor off-topic additions like family history and knowledge graph tangent."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer provides a partially accurate and relevant timeline but misses key details from the Gold Answer and includes hallucinations, resulting in moderate scores across dimensions."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer specifies cough onset 3 months ago during pole dancing class (P-13), dry intermittent for 2 months (P-2), sleep disruption nightly for 1 month (P-19, P-21), productive greenish sputum 3 days ago (P-12), subjective fevers couple days ago (P-4). Generated Answer correctly notes 3-month intermittent onset (P-2) and recent productive sputum (few days, P-2/P-9) and fevers (P-4), but significantly errs on sleep disruption: claims it became 'bad' and started waking her nightly only in last 3 days citing D-47, ignoring patient's explicit statement of every night for last month (P-21). Misses specific onset details. Significant factual errors on key timeline element.",
+    "completeness": "Gold key points: 3mo onset at class, 2mo dry intermittent, 1mo nightly sleep disruption, 3d productive green sputum, couple d fevers, acute-on-chronic pattern. Generated covers: 3mo onset (partial), productive recent, fevers recent, sleep disruption (but wrong timing). Misses class onset, dry nature, precise 1mo sleep, exact 3d productive, pattern summary. Covers ~50-60% of points.",
+    "faithfulness": "Most claims grounded: 3mo intermittent (P-2), greenish (P-9), recent productive (P-2/P-12 implied), fevers (P-4). Sleep claim partially grounded in P-19 ('month...waking a little') and D-47 ('become bad last 3 days...waking at night'), but fabricates that nightly waking 'started' then, contradicting P-21 ('every night...last month'). Misinterpretation leads to hallucinated timeline shift.",
+    "relevance": "Perfectly structured as timeline bullets directly addressing question's elements: onset, sleep disruption, productive sputum, fevers. No off-topic content."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer provides a relevant timeline structure but contains significant inaccuracies and misinterpretations regarding the onset of nightly sleep disruption, undermining correctness, completeness, and faithfulness."
+}

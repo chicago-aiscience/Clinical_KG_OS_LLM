@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer lists five specific key clinical findings recapped by the doctor in D-58: (1) 3-4 day dry cough with fever and headache, (2) no sputum, (3) limited recent contacts sick (brother 2 weeks ago), (4) no asthma, (5) meds only Claritin. Generated Answer only covers partial (1): dry cough, fever, headache; misses (2)-(5) entirely, introducing significant omissions relative to Gold. For Jessica's goal, Gold specifies 'know if have to take medicine' (P-60); Generated misattributes doctor's framing ('next steps/where to go') directly to Jessica, though she agrees; this is a factual discrepancy. Overall, core partial match but significant errors/omissions.",
+    "completeness": "Gold key points: Doctor's 5 findings + Jessica's medicine question (primary) + rest desire (secondary). Generated covers ~20% (partial doctor's finding 1 + loose next steps proxy); misses no sputum, contacts/brother, no asthma, Claritin/meds, exact medicine goal, rest mention. 20-49% coverage.",
+    "faithfulness": "All claims verifiable in D-58 for doctor's partial summary (direct paraphrase). Jessica's goal claim grounded in D-58 context (doctor states, she affirms 'yeah' then specifies medicine), no fabrication, but loose attribution plausible without direct quote; minor interpretive stretch but transcript-supported.",
+    "relevance": "Generated Answer directly structures response to question with bolded sections on doctor's findings and Jessica's goal, cites D-58, no off-topic content; perfectly focused."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 4,
+    "relevance": 5
+  },
+  "average_score": 3.25,
+  "summary": "The Generated Answer partially captures one key finding from the doctor's summary and loosely addresses Jessica's goal but omits most detailed recaps and misattributes her precise primary aim, resulting in low correctness and completeness despite being grounded and relevant."
+}

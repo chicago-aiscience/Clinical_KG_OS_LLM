@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly links Jessica’s scratchy throat and dry, non-productive cough to an upper respiratory process and notes that lack of sputum makes a lower-respiratory infection (e.g., bronchitis/pneumonia) less likely. However, it contains a factual error about the record: it claims the absence of GI symptoms and joint pain was “not explicitly” stated, but Jessica explicitly denied nausea/vomiting [P-11], diarrhea [P-12], and joint aches [P-13]. It also overreaches with “confined to the upper respiratory tract” (reasonable inference, but not explicitly established) and labels this “specifically a common cold,” which is plausible but more specific than the Gold Answer’s URI framing.",
+    "completeness": "Key Gold Answer points covered: scratchy throat → dry cough sequence; non-productive cough/no phlegm supporting upper-airway irritation rather than productive lower respiratory disease; headache/malaise mentioned. Key points missed or underdeveloped: the 3–4 day typical URI timeline; subjective fever/persistent feeling hot; fatigue; explicit use of denied GI symptoms and denied joint pain as differentiators; household exposure (brother had a cold); and the doctor’s explicit summary framing next steps. Overall coverage is partial (roughly 50–79%).",
+    "faithfulness": "Several elements are not grounded in the transcript: repeated references to a “Knowledge Graph” and “mapped” diagnosis are fabricated. The citation to [D-58] as the place where the doctor asks about bringing anything up is misleading (that questioning occurs earlier at [D-5]/[D-6], while [D-58] summarizes). The answer also incorrectly states that GI/joint-pain absence was not explicitly provided, despite clear denials in the transcript. Most symptom descriptions themselves are grounded, but there are multiple ungrounded/meta claims.",
+    "relevance": "The response largely addresses the question by explaining how the symptom pattern (dry cough, scratchy throat, headache, fever) plus absence of sputum and other systemic features supports a URI assessment. Minor tangents (e.g., “Knowledge Graph,” “systemic pathogens”) reduce focus but do not derail the core answer."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 3,
+    "relevance": 4
+  },
+  "average_score": 3.25,
+  "summary": "Partially correct and relevant explanation for a URI, but missing several Gold Answer elements and includes ungrounded/incorrect transcript-based statements (notably the “Knowledge Graph” framing and mischaracterization of GI/joint symptom denials)."
+}

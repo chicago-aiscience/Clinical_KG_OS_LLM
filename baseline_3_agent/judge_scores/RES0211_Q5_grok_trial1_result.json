@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer has significant factual errors compared to the Gold Answer: it incorrectly claims the transcript lacks information on Jessica's father (allergies [P-33]), cousin (asthma [P-30]), farm living ([P-43,P-44]), home-schooling ([P-41]), and COVID context, which are all present. It partially aligns on brother's cold ([P-39,D-58]) and allergies not in season ([P-16,P-17]), but shifts focus to diagnosing 'common cold' (not in Gold or transcript) and omits family asthma/allergies and isolation reducing external exposures. Core relation of factors to symptoms (atopy risk + likely household viral transmission in isolated setting) is contradicted or ignored.",
+    "completeness": "Key Gold points covered: brother's cold a few weeks ago (partial), allergies not yet seasonal. Missed: father allergies [P-33], cousin asthma [P-30], farm location [P-43,P-44], home-schooling/mom home/dad farm [P-41,P-42], limited outings/no travel [P-45,P-46], only dog/no animal farm exposures [P-48], collective implication of intra-household transmission in isolated environment. Covers ~20-30% of key points.",
+    "faithfulness": "Major hallucination: asserts transcript lacks info on father, cousin, asthma, farm, home-schooling, COVID—directly contradicted by explicit transcript segments (e.g., [P-30],[P-33],[P-41-44],[P-48]). Invented 'knowledge graph'; transcript has no diagnosis of 'common cold' (D-58 summarizes symptoms/exposure but no dx). Symptom citations ([P-1],[P-4],etc.) accurate, but brother's timing misstated as 'two weeks' without noting 'few weeks' variability. Multiple ungrounded claims.",
+    "relevance": "Partially addresses brother's cold and allergies relating to symptoms, but ignores question's specified factors (dad allergies, cousin asthma, farm/home-schooling/COVID isolation). Diverts to unrelated diagnosis of 'common cold' and transcript denial, failing to explain collective relation (familial atopy + isolated household viral source)."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 1,
+    "relevance": 2
+  },
+  "average_score": 1.75,
+  "summary": "The Generated Answer is significantly flawed by hallucinating absent transcript details, ignoring key question elements like family history and isolation, and introducing an unsupported diagnosis, resulting in low factual alignment and coverage."
+}

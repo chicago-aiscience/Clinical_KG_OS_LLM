@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The generated answer correctly identifies COVID-19 as the diagnosis investigated and correctly states the COVID test result was negative, consistent with the Gold Answer and transcript (patient: “I have had the covid test and I don't have it” [P-35]). The listed prompts for investigation (hospital worker, flu-like symptoms with persistent cough, workplace concern) are consistent with the Gold Answer. Inclusion of chest soreness as part of the context is supported by the transcript [P-15] and does not contradict the Gold Answer, though it is not emphasized in the Gold Answer as a key driver for COVID testing.",
+    "completeness": "Covers the main required elements: (1) diagnosis investigated = COVID-19; (2) evidence prompting investigation = hospital work/possible exposure, viral/flu-like symptoms with persistent cough, coworker concern; (3) testing revealed negative result. It omits several Gold Answer details: PPE use/being “very careful” [P-17], the timing of the test (performed ~2 weeks ago at symptom onset) [P-36], and that the patient stayed home after testing while awaiting symptom resolution [P-36].",
+    "faithfulness": "Claims are grounded in the transcript: persistent cough [P-2], initial flu-like symptoms resolving with cough persisting [P-14], hospital employment [P-17, P-34], coworker concern and having had a COVID test [P-35], negative result [P-35], chest soreness with coughing [P-15]. No clear hallucinations.",
+    "relevance": "Directly answers all parts of the question (diagnosis investigated, what prompted it, and what testing showed) without meaningful tangents."
+  },
+  "scores": {
+    "correctness": 5,
+    "completeness": 4,
+    "faithfulness": 5,
+    "relevance": 5
+  },
+  "average_score": 4.75,
+  "summary": "Accurately identifies COVID-19 evaluation and a negative test result with relevant supporting context, but omits several Gold Answer specifics (PPE, timing of testing, and staying home)."
+}

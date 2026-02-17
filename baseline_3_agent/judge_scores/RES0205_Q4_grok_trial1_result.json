@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer specifies COVID-19 ruled out by 'covid test' [P-35] negative, performed at symptom onset ~2 weeks prior [P-36]. Generated correctly identifies condition and test with citation. Timing is roughly accurate (cough 2 weeks [P-2], test during that time [P-35]), but less precise than Gold's 'at onset two weeks prior' and misses [P-36] detail. Workplace concerns cover hospital work [P-17] and scared coworkers [P-35], but omit clerk role [P-34], PPE [P-17 specifics], staying home, return eagerness, and meds link. Minor discrepancies, core facts match.",
+    "completeness": "Gold key points: COVID-19; covid test [P-35] negative; at onset ~2 weeks prior [P-36]; concerns - hospital clerk [P-34], PPE [P-17], scared coworkers [P-35], staying home [P-36], return without cough [P-36], meds driven by this [P-35]. Generated covers: condition, test [P-35], rough timing [P-2/P-35], hospital [P-17], scared [P-35]. Missed: precise timing/citation [P-36], clerk, PPE detail, staying home, return eagerness, meds link. Covers ~60% of points.",
+    "faithfulness": "All claims grounded: COVID/test/negative [P-35]; cough 2 weeks [P-2]; hospital [P-17]; scared [P-35]. Timing inference from cited turns verifiable (P-36 supports though not cited). No hallucinations or unverified details; interpretations plausible and transcript-based.",
+    "relevance": "Generated Answer directly structures response to match question components (condition, test, timing, concerns) with no off-topic content or tangents, perfectly focused."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 5,
+    "relevance": 5
+  },
+  "average_score": 4.25,
+  "summary": "The Generated Answer is mostly accurate and highly faithful/relevant but moderately complete due to missing precise timing details and several workplace concern specifics from the Gold Answer."
+}

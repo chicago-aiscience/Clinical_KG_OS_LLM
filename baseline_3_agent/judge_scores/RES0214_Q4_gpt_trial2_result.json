@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "- Test ordered: Correct. The generated answer states the doctor ordered a “covid swab,” which matches the transcript and Gold Answer (“we'll be ordering a covid swab no matter what” [D-53]).\n- Rationale for prioritizing COVID over influenza: Partially correct. It correctly includes the doctor’s stated reasoning that because the husband had similar symptoms and then the patient developed symptoms, COVID would be the first thing to rule out (“if your husband got it, and you have it…” [D-53]).\n- However, it overstates/introduces an additional rationale that the doctor prioritized COVID based on symptom-to-COVID linkage; the transcript does not explicitly say these symptoms specifically point to COVID over flu—rather, the doctor frames it as ruling out infectious causes and prioritizing COVID in the context of likely household transmission and need to rule out COVID first. This is not a direct contradiction, but it is an unsupported emphasis.",
+    "completeness": "Key Gold Answer points covered:\n- COVID-19 swab test ordered ✅\n- Prioritization due to household transmission pattern (husband similar symptoms; “if your husband got it, and you have it…”) ✅\n\nKey Gold Answer points missed:\n- Explicit containment/urgency rationale reflected by self-isolation instruction while awaiting rule-out [D-53, D-54] ❌\n- Influenza discussed only after COVID rule-out discussion and after learning she did not get a flu shot [P-53, D-54] ❌\n- Epidemiological framing (priority is to exclude COVID first before considering flu) as presented in Gold Answer, including the sequencing and public health implication ❌\n\nOverall coverage is roughly around half to two-thirds of the Gold Answer rationale.",
+    "faithfulness": "- The core claims (COVID swab ordered; husband-to-patient transmission leading doctor to prioritize COVID; doctor’s general statement about ruling out infectious causes) are grounded in [D-53] and earlier history.\n- But the answer repeatedly references a “Knowledge Graph” and claims it “confirms” symptom-diagnosis linkages; this is not present in the provided transcript and is therefore hallucinated/unverifiable.\n- It also asserts symptom-based prioritization of COVID over influenza as a specific rationale; the transcript does not explicitly support that comparative symptom-based prioritization.\n\nThus, it is mostly grounded but contains some non-transcript support and overreach.",
+    "relevance": "- Directly answers both parts of the question: (1) what test was ordered and (2) why COVID was prioritized over influenza.\n- No major irrelevant tangents (aside from unnecessary mention of a knowledge graph)."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 3,
+    "relevance": 5
+  },
+  "average_score": 3.75,
+  "summary": "The generated answer correctly identifies the COVID swab and captures the key household-transmission rationale, but it omits the self-isolation/containment and flu-shot sequencing points and introduces unverifiable “knowledge graph” support and symptom-based prioritization not explicitly stated in the transcript."
+}

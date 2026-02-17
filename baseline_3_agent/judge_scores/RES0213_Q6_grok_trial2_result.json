@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer correctly identifies the concluding plan from [D-33] as relaying information to another doctor for evaluation. Generated Answer falsely claims concluding remarks are not included, a major factual contradiction. For key information, it partially covers symptoms (sharp pain on deep breath, 20min duration, failed OTC), smoking, family history (dad's MI), anxiety history, and stress, but inaccurately states anxiety causes constant SOB/rapid breathing/heart flutter (patient denies baseline SOB, attributes to anxiety provocation), omits 1.5-week onset, rest/alone triggers, distraction relief, no exercise worsening, numerous pertinent negatives (no trauma, fevers, asthma, palpitations outside anxiety, family sudden death), lives alone, multivitamin; adds extraneous 'knowledge graph' and '[SYMPTOM] anxiety' not in Gold or transcript. Significant errors.",
+    "completeness": "Gold covers plan + 5 categories of key points (detailed symptoms, failed OTC, negatives, history, psychosocial). Generated misses entire plan, symptom details (1.5wks, rest/alone, distraction relief, no exercise effect), most negatives, lives alone/multivitamin; partially covers symptoms/OTC (some), smoking/family/anxiety/stress (incomplete). Covers ~30-40% of key points.",
+    "faithfulness": "Claims concluding remarks absent despite [D-33] present (hallucination). Citations like [P-3],[P-6] accurate for some claims, but misrepresents [P-19]/[P-20] as baseline anxiety SOB/rapid breathing/flutter (patient clarifies no hard breathing/SOB except anxiety-induced, flutter only past attacks). Adds 'knowledge graph' and '[SYMPTOM] anxiety' unverifiable. Multiple inaccuracies/hallucinations.",
+    "relevance": "Directly addresses question by denying plan determinability (wrongly) and listing gathered info in structured categories mirroring Gold's style, with minor off-topic references to external 'knowledge graph'; mostly focused on clinical details relevant to informing next steps."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer has significant factual errors, especially denying the existence of concluding remarks, incomplete coverage of key points, faithfulness issues from misrepresentations, but remains mostly relevant."
+}

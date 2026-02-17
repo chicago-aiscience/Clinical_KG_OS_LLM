@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer specifies initial headache and cough 4 days ago, stable severity (explicitly 'stayed around the same' for both), GI symptoms with diarrhea precisely 2 days ago (~2 days after initial), nausea/vomiting 'few days back' with vomiting yesterday, anosmia 1 day ago (~3 days after initial). Generated correctly identifies initial symptoms and timeline, anosmia 1 day ago with accurate relative timing (~3 days after), cough stable ('around the same'), but for headache uses 'pretty persistent' [P-3] instead of stable severity [P-9], and GI timeline is vaguely 'few days back' [P-1] without specifying diarrhea 2 days ago [P-28] or precise relative timing. Minor discrepancies in precision and phrasing, but core facts consistent.",
+    "completeness": "Gold key points: initial h/c 4da; h details (persistent, same sev); c dry/stable; GI diarrhea 2da (5-6x/d), n/v few d back (vomit yesterday, n today); smell 1da. Generated covers initial h/c 4da (100%); smell timing relative (100%); GI start 'few d back' with n today/v yesterday (partial, misses diarrhea specifics); cough stable (100%); headache persistent (partial, misses 'same sev'). Covers ~85% of key timeline/severity points, misses precise GI details and explicit headache stability.",
+    "faithfulness": "All claims directly grounded: initial [P-1]; smell decline 1da ago [P-24]; GI 'few d back' [P-1], n today/v yesterday [P-32]; cough same [P-11]; headache persistent/Tylenol [P-3]. Relative timing for smell logically derived (4da initial - 1da smell = 3d later), no unverifiable or hallucinated content; citations accurate.",
+    "relevance": "Generated structures response as clear timeline directly addressing question elements: first symptoms (h/c 4da), smell relative to initial (~3d after), GI timing (after initial), h/c stability (cough same, headache persistent). No off-topic content, perfectly focused on 4-day progression."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 5,
+    "relevance": 5
+  },
+  "average_score": 4.5,
+  "summary": "The Generated Answer is mostly accurate and complete in capturing the symptom timeline and stability, with minor issues in GI timing precision and headache severity phrasing, while remaining fully faithful and relevant."
+}

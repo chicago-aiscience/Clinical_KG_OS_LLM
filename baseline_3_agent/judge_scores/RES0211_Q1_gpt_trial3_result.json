@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Reported symptoms: correctly includes dry cough, scratchy throat, feeling crappy, head pounding/headache, feeling hot. However it omits key symptom details (active headache at visit, malaise/icky wording, tiredness) and does not capture the doctor’s characterization as malaise (though that’s more contextual). Denials: it inadequately/incorrectly handles denials. It notes sputum denial but attributes it to the doctor’s later summary [D-58] rather than directly to Jessica’s clear denials [P-5, P-6]. It incorrectly adds/frames denials about sick contacts and asthma based on the doctor’s summary; Jessica did not deny sick contacts (she reported her brother had a cold a few weeks ago), and asthma is not part of the question’s examples of symptom denials. It misses multiple explicit denials that are central in the Gold Answer (rash/skin changes, nausea/vomiting, diarrhea, joint aches, no dyspnea from allergies).",
+    "completeness": "Covers some of the reported symptoms (dry cough, scratchy throat, headache, feeling hot, feeling crappy) but misses tiredness and the ‘icky/malaise’ framing and active headache confirmation. For denied symptoms, it only partially covers sputum/phlegm and misses rashes/skin changes, nausea/vomiting, diarrhea, joint pain, and breathing difficulty. Overall it captures well under half of the Gold Answer’s key denial list.",
+    "faithfulness": "Several statements are not well grounded or are misleading: citing [D-58] (doctor summary) as evidence of Jessica’s denial of sputum, and claiming she denied sick contacts (‘No one in contact…’) despite her earlier report that her brother had a cold. It also introduces asthma denial as part of the denial list, which is in transcript but not asked, and it presents doctor-summary statements as if they were Jessica’s explicit denials. These issues constitute multiple unfaithful/misattributed claims.",
+    "relevance": "Partially addresses the question by listing some symptoms, but the ‘explicit denials’ section largely fails to answer what was asked (denials re sputum, nausea, joint pain, rashes, etc.) and includes tangential items (sick contacts, asthma)."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "The answer captures some main reported symptoms but misses most of the key explicit denials and includes misattributed/incorrect denials (e.g., sick contacts), making it incomplete and only partially faithful to the transcript."
+}

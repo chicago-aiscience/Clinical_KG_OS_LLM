@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer is not factually consistent with the Gold Answer. It incorrectly states there is no information about the doctor’s plan/next steps, despite the transcript clearly stating: “I’m going to go over this with the physician I’m working with … [and] be back shortly together to talk to you about the next steps” [D-43]. It also misrepresents/over-interprets Tylenol as treating chest pain via an unsupported “Knowledge Graph” claim; the transcript only says Tylenol “helps a little bit” [P-14] without specifying it was for chest pain. It fails to identify key aggravating factors explicitly stated in the transcript (deep breathing worsening pain [P-18], cough worsening right-sided chest pain [P-19], exertion/stairs causing winded/crummy feeling [P-10, P-11]).",
+    "completeness": "Key Gold Answer elements covered: (1) Tylenol tried at home with partial benefit [P-14] (partially captured). Key elements missed: (1) clinician’s end-of-visit plan to discuss with supervising physician and return [D-43]; (2) expectorating sputum temporarily improves symptoms [P-13]; (3) resting/“taking it easy” as a self-care/alleviating factor [P-10]; (4) aggravation by deep breathing [P-18]; (5) aggravation of chest pain by coughing [P-19]; (6) aggravation by physical exertion (stairs) [P-10, P-11]; (7) explicit denial of other triggers [P-12]. Overall, it captures only a small subset of required points.",
+    "faithfulness": "The answer introduces unverifiable content (“Knowledge Graph…Tylenol treats chest pain”) that is not present in the transcript, and it claims absence of a stated plan when the transcript explicitly provides one [D-43]. While the Tylenol quote is grounded [P-14], several core statements are either contradicted by the transcript or supported by non-transcript material, indicating multiple hallucinated/unfaithful elements.",
+    "relevance": "The response is structured to address the asked components (plan, self-care, aggravating and alleviating factors), so it is on-topic. However, it omits most of the clinically relevant aggravating/alleviating factors requested (deep breathing, exertion, sputum clearance), reducing how well it addresses the full question."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "The Generated Answer is on-topic but misses most key findings and contains major inaccuracies/unfaithful claims, especially denying the documented end-of-visit plan and omitting major aggravating/alleviating factors."
+}

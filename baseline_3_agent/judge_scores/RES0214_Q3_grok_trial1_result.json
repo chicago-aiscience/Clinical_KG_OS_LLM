@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies fever, stuffy nose, and sore throat as symptoms prompting suspicion of infectious etiology like COVID-19, aligning with patient's report [P-1] and doctor's summary [D-24/D-53]; however, Gold Answer specifies doctor's explicit mention of only 'fever and sore throat' [D-53] as key, plus broader cluster including muscle aches [D-24] and epi context. Vaccination history perfectly matches. Minor discrepancies in symptom specificity, core facts intact.",
+    "completeness": "Gold key points: fever/sore throat [D-53]; broader cluster (muscle aches, fever, stuffy nose, sore throat [D-24]); husband epi [D-53]; no flu shot [P-53] -> influenza [D-54]. Generated covers fever/stuffy nose/sore throat (~75% of broader), full vaccination; misses muscle aches and husband epi context (~60-70% coverage).",
+    "faithfulness": "All claims directly verifiable: symptoms [P-1], doctor's note on fever/sore throat [D-53], flu shot question/response [D-53/P-53], influenza mention [D-54]. Accurate citations, no hallucinations or unverifiable details.",
+    "relevance": "Perfectly structured to address exact question parts: symptoms for infectious/COVID suspicion, then vaccination for influenza differential. No off-topic content."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 5,
+    "relevance": 5
+  },
+  "average_score": 4.25,
+  "summary": "The Generated Answer is highly faithful, relevant, and mostly correct but slightly incomplete by omitting muscle aches and epidemiological context emphasized in the Gold Answer."
+}

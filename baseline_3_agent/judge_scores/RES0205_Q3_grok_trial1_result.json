@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer identifies COVID-19 as the diagnosis investigated, prompted by hospital work (P-34, P-17), flu-like symptoms (sore throat P-13, runny nose P-14, cough), persistent cough, coworkers scared (P-35), PPE/careful (P-17), with test negative two weeks prior (P-36) and patient staying home. Generated Answer correctly identifies COVID-19, test negative (P-35), persistent cough (P-2), initial flu-like (P-14), hospital work (P-17), coworkers scared (P-35). Minor discrepancy: Generated lists chest soreness (P-15/16) as prompting evidence, but this was not a primary prompter in Gold (patient reported no chest pain initially, soreness post-coughing, and test predated this discussion); core facts align without contradiction.",
+    "completeness": "Gold key points: COVID-19 investigated; patient disclosed test (P-35); prompts - hospital clerk (P-34/17), viral symptoms (sore throat/runny nose/cough P-13/14), persistent cough, coworkers scared (P-35), PPE/careful (P-17), test 2 weeks ago at onset (P-36), negative result, stayed home since (P-36). Generated covers: COVID-19, test disclosure/negative (P-35), persistent cough (P-2), initial flu-like (P-14), hospital work (P-17), coworkers scared (P-35), adds chest soreness. Missed: specific sore throat/runny nose, PPE/careful detail, exact test timing/staying home. Covers ~85% of key points.",
+    "faithfulness": "All claims in Generated verifiable in transcript: COVID test mentioned (P-35), persistent cough 2 weeks (P-2), chest soreness after coughing (P-15/16), initial flu-like symptoms resolving except cough (P-14), hospital work (P-17/P-34), coworkers scared (P-35). No hallucinations; inferences (e.g., urgency from work) grounded in context. Citations accurate.",
+    "relevance": "Question asks for diagnosis investigated, evidence prompting it, and testing results. Generated Answer is structured directly around these (Diagnosis, Evidence Prompting with bullets, Testing Results), with no off-topic content; perfectly addresses query."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 5,
+    "relevance": 5
+  },
+  "average_score": 4.5,
+  "summary": "The Generated Answer is highly accurate, relevant, and faithful to the transcript, with strong coverage of key points from the Gold Answer but minor omissions of specific symptom details and testing context."
+}

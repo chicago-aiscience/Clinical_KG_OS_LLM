@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Step-by-step: Gold Answer specifies dry cough with no sputum/blood (P-12, P-13), stable (P-11); diarrhea 2 days ago, liquid stools 5-6x/day, no blood (P-28, P-29); vomiting 2 episodes yesterday, food contents no blood (P-32-34); headache 7/10 persistent bilateral forehead/top, no radiation/stiffness (P-3-8); negatives and extras like loss of smell. Generated Answer misses dry nature of cough (incorrectly cites P-11 for nature instead of P-12), claims no diarrhea frequency despite P-28 explicitly stating 'five or six times a day', vague onsets ('few days back' vs precise), no 7/10 severity for headache (vague 'persistent/constant/really sick'), omits many details/negatives. Significant factual discrepancies and omissions vs Gold.",
+    "completeness": "Key points from Gold covered: cough onset (partial), vomiting 2 episodes (yes), headache onset/persistent (partial). Missed: cough dry/no sputum/blood/stable/negatives (SOB/wheeze/chest pain), diarrhea precise onset/frequency/liquid/no blood/negatives, vomiting timing/details/negatives, nausea precise, headache location/7/10/no rad/stiff/unusual, smell/fatigue. Covers ~20-30% of key points.",
+    "faithfulness": "Claims mostly grounded but errors: denies diarrhea frequency exists despite P-28; attributes cough 'nature' to P-11 (stability, not nature - dry is P-12); headache severity inferred vaguely without citing P-8 (7/10); no fabrications but multiple inaccurate transcript interpretations and omissions of verifiable facts. Multiple issues with verification.",
+    "relevance": "Directly structures response around GI (diarrhea/nausea/vomiting), respiratory (cough), headache symptoms/severity as per question; no off-topic content, focused despite incompleteness."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer partially addresses the symptoms but has significant factual inaccuracies, misses key specifics like cough nature, diarrhea frequency, and headache severity rating, and incorrectly claims some details are absent from the transcript."
+}

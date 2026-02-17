@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer captures the main intended relationships in the Gold Answer: father’s heart attack in his 50s increases her worry that chest symptoms are cardiac; smoking history contributes to perceived cardiac risk; thesis-related stress/anxiety may trigger or amplify symptoms and worry. However, it introduces inaccuracies/unsupported framings: repeated use of “Knowledge Graph confirms/links” and explicit causal assertions (e.g., stress → chest pain; smoking → chest pain) are not stated in the consultation and are not part of the Gold Answer’s evidentiary framing. It also misgenders the patient (he/his), which is inconsistent with the question stem and Gold Answer (her).",
+    "completeness": "Key Gold Answer points covered: father had a heart attack in his 50s and this scares her; she thinks pain could be stress-related; Masters thesis/time crunch causing stress; she becomes nervous and breathes faster during episodes; she is trying to quit smoking and currently ~5 cigarettes/day.\n\nKey Gold Answer points missed: father’s heart attack was “last year” and he now sees “a lot of heart doctors”; paternal grandfather history is unknown because he died young in an accident; living alone in London/limited social contact; being nervous about running lately; explicit note that prior anxiety attacks from teenage years may be returning.",
+    "faithfulness": "Several elements are not grounded in the transcript and read as fabricated scaffolding: references to a “Knowledge Graph,” claimed edges (e.g., heart attack → family history of heart disease; smoke → risk factor → chest pain; final thesis → stress → chest pain) are not present in the transcript. While the general ideas are clinically plausible, they are not supported by quoted consultation details. The rest (father’s MI in 50s, smoking amounts, thesis stress, faster breathing with nervousness) is grounded.",
+    "relevance": "The response stays focused on how family history, smoking, and psychosocial stressors contribute to and interact with her heart-disease concern, and it attempts to cite consultation moments (especially [P-8], [P-13-16], [P-19]). No major irrelevant tangents."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.5,
+  "summary": "Mostly addresses the required biopsychosocial links, but misses several specific consultation details from the Gold Answer and includes multiple ungrounded “Knowledge Graph”/causal claims that reduce faithfulness."
+}

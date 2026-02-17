@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly states that the transcript 'does not explicitly specify whether the cough is productive or non-productive,' directly contradicting the Gold Answer and transcript evidence where the doctor describes it as a 'dry cough' (D-5, P-5 confirmed) and confirms no 'gunk' or sputum (D-6, P-6). It partially captures cough duration and runny nose details but misrepresents cough severity (cites P-2 'not going away/getting better' instead of Gold's 'stayed the same' from P-7). Wheezing/SOB absence is accurate but not patient-reported symptom. Overall, significant factual errors on core cough characteristics.",
+    "completeness": "Key Gold points covered: cough duration (4-5 days), runny nose duration (couple days) and appearance (clear). Missed: cough explicitly dry/non-productive, severity 'stayed the same,' patient's history of never having such a dry cough or prolonged runny nose before (P-24), pertinent negatives like no sore throat (P-9) and no chest pain (P-15). Covers ~30-40% of key points, mainly basics of symptoms but omits critical characteristics.",
+    "faithfulness": "Claims on cough duration [P-2], runny nose [P-11,P-12], and no wheezing/SOB [P-28] are directly verifiable in transcript with accurate citations. However, assertion that cough nature is unspecified is a misrepresentation/hallucination as transcript explicitly supports dry/non-productive (D-5,P-5,D-6,P-6). No fully fabricated content, but key interpretive error introduces ungrounded claim.",
+    "relevance": "Directly addresses the question by listing reported respiratory symptoms (cough, runny nose) with available characteristics and adds relevant absence of other issues; no off-topic content or tangents."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 3,
+    "relevance": 5
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer partially covers the symptoms but commits a significant error by denying the explicit dry/non-productive nature of the cough, reducing correctness and completeness."
+}

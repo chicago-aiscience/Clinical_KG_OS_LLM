@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer has several factual inaccuracies compared to the Gold Answer: (1) Incorrectly genders the patient as male ('his', 'he') throughout, while the question and transcript context indicate female ('her concern', Masters of social work). (2) Fabricates a 'Knowledge Graph' with specific links (e.g., 'heart attack --[FAMILY_HISTORY]--> heart disease') not present in the Gold Answer or transcript. (3) Misses key details like father's heart attack being 'last year', current heart doctors [P-30], and grandfather's accidental death [P-30]. Core structure aligns (family, smoking, stress contributing to concern), but errors contradict or add unsupported facts. Score: 2.",
+    "completeness": "Gold Answer key points: Family - father heart attack 'last year' in 50s, sees heart doctors [P-8,P-30], scares her [P-8], grandpa accident [P-30]; Smoking - started ~18, 10/day for 2 years, now ~5/day, hard to quit [P-13,14,18]; Stressors - Masters SW thesis pressure/time crunch [P-15,16], lives alone [P-26,27], nervous about running [P-28]; Connections - possible stress [P-8], nervous/rapid breathing [P-19], past anxiety [P-22]. Generated covers: family fear [P-8]; smoking ~5/day quit attempt [P-13,14]; stressors thesis crunch [P-15,16]; cycle interaction. Misses: timing/doctors/grandpa in family; full smoking history; living alone/running; past anxiety/breathing details. Covers ~40-50% of specifics. Score: 2.",
+    "faithfulness": "Claims grounded: family fear [P-8], smoking details [P-13,14], thesis stress [P-15,16], possible stress cause [P-8], rapid breathing [P-19] verifiable in transcript. Unverifiable/hallucinated: Entire 'Knowledge Graph' system and links (not in transcript); patient gender as male (contradicts question/transcript context); implies father 'passed early' indirectly but transcript clarifies alive [P-30]. Multiple hallucinations undermine grounding. Score: 2.",
+    "relevance": "Directly structures response around the three factors (family history, smoking, stressors) and their contributions/interactions with heart disease concern, using consultation details with citations. No off-topic content; perfectly matches question focus. Score: 5."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer is relevant and structurally aligned but undermined by factual errors (gender), omissions of key details, and hallucinations (Knowledge Graph), resulting in low correctness, completeness, and faithfulness."
+}

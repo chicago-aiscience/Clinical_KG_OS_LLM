@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly reports part of the doctor’s recap: 3–4 days of dry cough, a little fever, and headache (matches D-58). However, it incorrectly states Jessica’s primary goal was to determine “next steps/where to go from here.” In the transcript, that phrasing is introduced by the doctor (D-58) and confirmed by Jessica, but Jessica’s explicit stated goal for next steps is to know whether she needs to take medicine (P-60). The generated answer therefore misidentifies her primary goal and omits other recapped findings.",
+    "completeness": "Gold Answer key points include: (1) dry cough 3–4 days + fever + headache (covered); (2) no sputum production (missed); (3) no sick contacts except brother with cold 2 weeks ago (missed); (4) no asthma (missed); (5) no meds aside from Claritin (missed); plus Jessica’s goal: whether she needs medicine (missed) and desire to go home/lay down (missed). Overall, it covers only a small subset of the required items.",
+    "faithfulness": "The included clinical findings (dry cough, fever, headache) are grounded in D-58. The statement about “next steps/where to go from here” is grounded in D-58 but is attributed to Jessica as her primary goal rather than to the doctor’s framing; Jessica’s own stated goal in P-60 is different. This is a misattribution/interpretation error rather than a fully fabricated detail.",
+    "relevance": "The response stays on-topic (doctor’s recap + Jessica’s goal), but it fails to accurately answer the second part (Jessica’s primary goal for next steps)."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 2,
+    "faithfulness": 4,
+    "relevance": 4
+  },
+  "average_score": 3.25,
+  "summary": "Partially accurate on the symptom recap but misses most recapped findings and misstates Jessica’s primary next-step goal (medicine), making the answer incomplete and only moderately correct."
+}

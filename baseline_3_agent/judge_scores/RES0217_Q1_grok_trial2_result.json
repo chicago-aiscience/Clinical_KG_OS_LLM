@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer accurately describes the local symptoms (redness, tenderness, soreness at the skin behind the left knee, not the joint) consistent with the Gold Answer and transcript [P-1, P-3, P-6]. However, it incorrectly states that the doctor did not screen for fever, joint pain, or headaches, directly contradicting the Gold Answer and transcript evidence [D-7/P-7 joint pain denied; D-8/P-8 feverish/ill denied; D-19/P-19 headaches denied]. This is a significant factual error on the systemic symptoms half of the question.",
+    "completeness": "Covered from Gold: local symptoms including redness [P-1,P-6], tenderness [P-1,P-6], soreness of skin not joint [P-1,P-3]. Missed from Gold: tick 'stuck pretty good' [P-1], explicit denial of bullseye/target rash/larger circle [P-6,P-3], 'totally fine' aside from local tenderness [P-18], 'pretty healthy' [P-13]; all systemic screenings (joint pain [D-7/P-7], fever/ill [D-8/P-8], headaches [D-19/P-19/P-20]). Covers local details (~60-70%) but 0% systemic, overall 30-40% of key points.",
+    "faithfulness": "Local symptom claims are verifiable in transcript with accurate citations [P-1,P-3,P-6]. Systemic claims hallucinate absence of screening ('does not contain evidence' for fever/joint pain/headaches), ignoring direct transcript quotes [D-7,D-8,D-19]; mentions rash/general wellness [D-6,D-18] but fabricates that these were the only inquiries, introducing unverifiable/contradictory narrative. Multiple hallucinated facts about screening.",
+    "relevance": "The answer is structured directly around the question's two parts (local symptoms at tick site and systemic symptoms screened), with bullet points and citations focused on symptoms; no off-topic content despite factual errors."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer is strong on local symptoms but significantly flawed by incorrectly denying the doctor's screening for key systemic symptoms, leading to low correctness, completeness, and faithfulness."
+}

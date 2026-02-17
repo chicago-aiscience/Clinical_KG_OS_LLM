@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The four reported symptoms (fever, stuffy nose, sore throat, muscle aches) match the Gold Answer and are supported by the transcript ([P-1], [P-13]). The denied symptom list (cough, headache, neck stiffness, nausea, difficulty swallowing) also matches what the patient denied in the transcript ([P-10], [P-8], [P-7], [P-5], [P-24]/[P-25]). However, the Generated Answer contains a factual error in its supporting narrative: it claims the patient did not answer the neck-stiffness question and only “implied” absence, whereas she explicitly answered “No” at [P-7].",
+    "completeness": "Captures the core required items: all four presenting symptoms and all five specified clinically significant negatives (cough, headache, neck stiffness, nausea, difficulty swallowing). Compared to the Gold Answer, it omits some corroborating/clarifying details (e.g., nausea *and vomiting*, ability to swallow food/liquids without coughing/aspiration, and symptom timing/persistence), but these are largely beyond what the question explicitly asked.",
+    "faithfulness": "Most claims are grounded in the transcript, but there is at least one clear hallucination/incorrect inference: stating the patient did not answer the neck stiffness question and that absence was only implied. Additionally, the phrasing that denials were based on them not being ‘included’ in [P-1]/[P-13] is not well-grounded because the transcript contains explicit denials at specific turns (e.g., [P-5], [P-7], [P-8], [P-10], [P-24]).",
+    "relevance": "Directly answers the question by listing the four reported symptoms and specifying that the patient denied cough, headache, neck stiffness, nausea, and difficulty swallowing. Minimal extraneous content."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 3,
+    "relevance": 5
+  },
+  "average_score": 4.0,
+  "summary": "The response correctly identifies the four symptoms and the requested denials, but contains an unfaithful/incorrect justification about neck stiffness and lacks some of the explicit-negative supporting details present in the transcript."
+}

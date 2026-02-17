@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the initial onset as three months ago with intermittent nature [P-2], productive greenish sputum in the past few days [P-2, P-9], and subjective fevers in the past couple days [P-4], matching Gold. However, it significantly errs on sleep disruption: it claims the cough 'became bad and started waking the patient up at night in the last three days' citing [D-47], but Gold and transcript [P-19, P-21] clearly state nightly sleep disruption began approximately one month ago, not three days ago; the 'mild wakefulness a month ago' is a partial acknowledgment but contradicted by the main claim.",
+    "completeness": "Gold key points: 3-month onset during pole class [P-13]; intermittent dry for ~2 months [P-2]; 1-month nightly sleep disruption [P-19,P-21]; 3-day productive green sputum [P-12]; couple-day fevers [P-4]; acute-on-chronic pattern. Generated covers 3-month onset/intermittent, productive few days, fevers; partially/misstates sleep (covers timing but wrong escalation); misses pole class, exact 3 days, 2-month dry phase detail, and pattern summary. Covers ~60% with major gap on sleep.",
+    "faithfulness": "Most claims grounded: 3 mo [P-2], productive [P-2,P-9,P-12], fevers [P-4]. Sleep claim 'became bad and started waking... last three days' [D-47] misinterprets—D-47 summarizes current waking but patient specifies 1 month [P-21]; 'mild wakefulness a month ago' loosely from [P-19] but not verbatim. Minor hallucination in timing synthesis, plausible but inaccurate.",
+    "relevance": "Perfectly structures timeline directly addressing question's elements (onset, sleep disruption, productive sputum, fevers) with no off-topic content."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 3,
+    "relevance": 5
+  },
+  "average_score": 3.25,
+  "summary": "The Generated Answer is mostly relevant and grounded but has significant factual errors and incompleteness in misplacing the sleep disruption timeline from one month to three days ago."
+}

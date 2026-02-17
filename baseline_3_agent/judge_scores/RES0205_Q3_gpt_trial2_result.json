@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Generated Answer correctly identifies COVID-19 as the diagnosis investigated and states the test was negative, consistent with the Gold Answer and transcript ([P-35]). The cited symptom context (flu-like symptoms initially, persistent cough, hospital work, coworkers concerned) aligns with the transcript. A minor issue is that it presents chest soreness with coughing as part of the rationale for COVID investigation; while chest soreness is mentioned ([P-15]), it is not a key driver of COVID testing in the Gold Answer, so this is a small overemphasis rather than a clear factual error.",
+    "completeness": "Covers: COVID-19 as the investigated diagnosis; hospital work context; initial flu-like symptoms with persistent cough; coworkers being scared; negative test result. Misses several Gold Answer specifics: the patient being a hospital clerk ([P-34]); explicit mention of PPE/being “very careful” ([P-17]); timing of the test at symptom onset about two weeks ago ([P-36]); and that the patient stayed home awaiting symptom resolution before returning to work ([P-36]). Overall this is ~60–75% of key Gold points.",
+    "faithfulness": "Statements are largely verifiable in the transcript: persistent cough for two weeks ([P-2]), initial flu-like symptoms resolving with persistent cough ([P-14]), chest soreness after coughing ([P-15]), hospital work ([P-17], [P-34]), coworkers scared when coughing ([P-35]), and negative COVID test ([P-35]). No clear hallucinated facts; the ‘inferred’ phrasing is unnecessary but not ungrounded.",
+    "relevance": "Directly answers all parts of the question: what was investigated (COVID-19), what prompted it (hospital exposure context plus viral symptoms/persistent cough and workplace concern), and what testing showed (negative). No substantial tangents."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 5,
+    "relevance": 5
+  },
+  "average_score": 4.25,
+  "summary": "The generated answer is accurate and well-grounded regarding COVID-19 investigation and a negative result, but it omits several key contextual details from the gold answer (PPE use, test timing, staying home, clerk role)."
+}

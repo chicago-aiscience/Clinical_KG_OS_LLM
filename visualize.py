@@ -73,6 +73,14 @@ BASELINES = {
         "color": "#F39C12",
         "cost": 0.00,
     },
+    "3_agent": {
+        "name": "3-Agent (GLM)",
+        "short": "3-Agent",
+        "judge_dir": "baseline_3_agent/judge_scores",
+        "kg_file": "baseline_3_agent/unified_graph_3_agent.json",
+        "color": "#1ABC9C",
+        "cost": 0.18,
+    },
 }
 
 DIMS = ["correctness", "completeness", "faithfulness", "relevance"]

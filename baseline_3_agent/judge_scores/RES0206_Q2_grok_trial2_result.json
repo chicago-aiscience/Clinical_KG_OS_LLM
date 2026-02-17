@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer accurately extracts from transcript: COPD uses two inhalers (daily maintenance [P-26], rescue as needed ~once every 2 weeks [P-26], no home O2 [P-1]); HTN diagnosed but no meds, chose lifestyle first (weight loss, walking [P-23,P-24]), BP OK [P-23], doc supports [D-25], additional lifestyle (quit smoking [P-40], rare alcohol [P-39], well-managed baseline [P-28]). Generated Answer correctly notes use of puffers for COPD [P-1,P-26 implied] and HTN diagnosis [P-22] with no meds, but factually errs by claiming no frequency specified (directly contradicted by [P-26]), no management strategies (ignores lifestyle details [P-23,P-24]), and no reason for no antiHTN meds (explicit in [P-23]). Significant contradictions on key facts present in transcript/Gold.",
+    "completeness": "Gold key points: COPD (2 inhalers, daily/rescue freq, no O2, no names); HTN (dx, no meds, lifestyle reason/wt loss/walking/BP OK/doc support); extras (quit smoke, rare alc, well-managed, no allergies). Generated covers: COPD puffers (partial, misses types/freq/no O2); HTN dx/no meds (partial). Misses: inhaler frequencies, specific lifestyle strategies/reason for no meds, quit smoking, etc. Covers ~20-30% of key points.",
+    "faithfulness": "Generated verifiable claims: puffers manageable [P-1], HTN history [P-22]. But hallucinates absences: 'does not specify exact frequency' (falsely, [P-26] has 'every day' and 'once every two weeks'); 'no information on... management strategies' or 'reason' for no antiHTN (falsely, [P-23,P-24] detail lifestyle choice). Multiple inaccurate claims about transcript content, not grounded.",
+    "relevance": "Generated uses bullets directly mirroring question parts (COPD meds/usage, HTN meds/management, reason no antiHTN), no off-topic content, fully focused on query despite inaccuracies."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer is relevant and partially grounded but has significant factual errors and incompleteness by incorrectly denying key transcript details on inhaler frequencies and HTN management reasons that are explicitly stated."
+}

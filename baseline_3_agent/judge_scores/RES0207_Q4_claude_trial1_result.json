@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer contains significant factual errors. It incorrectly identifies 'medication adherence issues' and 'missed dose' as symptoms the doctor screened for that the patient denied, when actually the patient ADMITTED to missing the dose. The answer misses most of the actual denied symptoms from the Gold Answer: chest pain, feeling faint, loss of taste/smell, sore throat, runny nose, sick contacts, travel, nausea, vomiting, belly pain, and diarrhea. It also incorrectly states the patient denied frequent seizures as a key screening point, when this was contextual information, not a symptom denial relevant to the current presentation.",
+    "completeness": "The Generated Answer covers less than 20% of the key screening points identified in the Gold Answer. It mentions only the dry cough characterization but misses the systematic screening for: cardiac symptoms (chest pain, feeling faint), infectious symptoms (loss of taste/smell, sore throat, runny nose), exposure history (sick contacts, travel), and gastrointestinal symptoms (nausea, vomiting, belly pain, diarrhea). The differential diagnoses section is somewhat present but lacks the systematic organization and specificity of the Gold Answer.",
+    "faithfulness": "The answer contains hallucinated content and misrepresents transcript information. The claim about 'medication adherence issues' being screened for as a denied symptom is inaccurate - the patient admitted to missing the dose. The framing of 'Patient Denials' section focusing on seizure frequency is misleading in context. However, the basic facts about SOB, dry cough, and fever are accurately grounded in the transcript.",
+    "relevance": "The answer partially addresses the question but misses the core focus. The question asks about 'symptoms and exposures the doctor screened for that the patient DENIED' - the Generated Answer incorrectly focuses on positive findings and admitted medication non-adherence rather than the systematic negative findings. The differential diagnosis discussion is somewhat relevant but doesn't clearly connect to the specific negative findings as the question requests."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 2
+  },
+  "average_score": 1.75,
+  "summary": "The Generated Answer significantly misinterprets the question and contains major factual errors. It incorrectly identifies medication adherence as a 'denied' symptom when the patient actually admitted to missing doses. The answer misses the vast majority (>80%) of the systematic negative findings documented in the Gold Answer, including cardiac symptoms (chest pain, presyncope), infectious symptoms (loss of taste/smell, sore throat, runny nose), exposures (sick contacts, travel), and gastrointestinal symptoms (nausea, vomiting, belly pain, diarrhea). While it correctly identifies some positive findings (SOB, dry cough, fever), it fails to address the core question about what the patient DENIED and how those denials relate to differential diagnoses. The answer demonstrates poor understanding of the clinical screening process and the relationship between negative findings and ruling out differential diagnoses."
+}

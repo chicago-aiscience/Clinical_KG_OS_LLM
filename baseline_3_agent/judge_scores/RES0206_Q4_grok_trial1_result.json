@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the condition (COVID) and test (COVID swab) with accurate citation [D-43], matching the Gold Answer. However, it significantly errs by claiming the transcript 'does not contain any details regarding the patient's recent social contacts,' directly contradicting the Gold Answer and transcript evidence in [D-20], [P-20], [D-21], and [P-21], where the patient describes meeting friends for dog walks, one being sick, walking too close, and uncertainty about the friend's COVID test. It also incorrectly attributes the consideration solely to symptoms rather than the social exposure prompt. This introduces major factual contradictions on a core question component.",
+    "completeness": "Gold Answer key points: (1) condition COVID-19; (2) test COVID swab [D-43]; (3) prompted by sick friend during outdoor dog walks [P-20]; (4) walked 'a little too close' [P-20]; (5) friend 'a bit sick for a bit' [P-20]; (6) unsure if friend COVID-tested [P-21]; (7) additional COVID symptom screenings (smell/taste [P-32/33], confusion [P-34], aches [P-35], travel [P-31]). Generated covers only (1) and (2), misses all details on (3)-(7), and denies their existence, covering roughly 20-30% of key points.",
+    "faithfulness": "Condition and test claims are verifiable in [D-43]. However, assertion that 'transcript does not contain any details' on social contacts is a hallucination, as [P-20] explicitly describes friend exposure while sick during dog walks, with doctor probing COVID test [D-21/P-21]. Attribution to symptoms alone is partially plausible but not the transcript-grounded prompt (exposures asked right before [D-20]). Multiple unverifiable/contradictory claims present.",
+    "relevance": "The Generated Answer is structured directly around the three question components with bolded headings, remains focused without tangents or off-topic content, perfectly addressing the query format despite inaccuracies."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer accurately identifies the condition and test but fails completely on the social contacts prompt by hallucinating their absence in the transcript, resulting in low correctness, completeness, and faithfulness."
+}

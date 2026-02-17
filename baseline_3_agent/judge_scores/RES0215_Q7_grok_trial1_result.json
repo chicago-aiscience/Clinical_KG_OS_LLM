@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer specifies onset 4-5 days ago with initial trigger of playing tag leading to out-of-breath/wheezy [P-3, P-2]; fluctuating episodic pattern resolving with rest and recurring with activity [P-5, P-6]; recent emergence of slight non-productive cough [P-1, P-31]; single nocturnal wheeziness with trouble falling asleep [P-43, P-44]. Generated Answer correctly notes 4-5 day duration [P-1], wheezing [P-1, P-2], dyspnea [P-2, P-32], cough [P-1], tag episode [P-3], and cold weather trigger [P-38], but inaccurately claims no initial acute trigger [contradicts P-2/P-3], links irrelevant past infections [P-15] to this episode's fluctuating history, and wrongly states transcript lacks explicit nocturnal episode detail (direct contradiction to P-43/P-44). Significant errors on key elements like trigger and nocturnal episode.",
+    "completeness": "Gold key points: 4-5 day onset [P-1], tag trigger [P-3], wheezing/diff deep breaths [P-2], detailed fluctuating episodes (resolve rest, recur activity) [P-5/P-6], recent cough non-productive [P-1/P-31], single nocturnal wheeziness/trouble sleep [P-43/P-44], negatives (no cyanosis/fever/well otherwise) [P-32/P-7/P-9]. Generated covers onset, wheezing/dyspnea, cough, partial trigger (tag/cold/activity), mentions fluctuating vaguely; misses detailed fluctuating pattern, nocturnal entirely, cough timing/non-productive detail, negatives. Covers ~40% of key points.",
+    "faithfulness": "Claims verifiable: onset [P-1], wheezing [P-1/P-2], dyspnea [P-2/P-32], cough [P-1], tag [P-3], cold [P-38], allergies/Reactine [P-35/P-36]. Unverifiable/hallucinated: 'no reported acute trigger initially' (contradicts P-2/P-3 sequence), past infections as part of this 'fluctuating history' [P-15 irrelevant], explicit denial of nocturnal detail despite P-43/P-44, 'knowledge graph' not in transcript, 'patient notes' (it's parent). Multiple misinterpretations and hallucinations.",
+    "relevance": "Directly addresses symptom onset, progression (wheezing to dyspnea/cough), triggers/patterns; however, includes off-topic past infections [P-15], allergies/management [P-35/P-36], denies/misses nocturnal, adds 'knowledge graph'. Partially on-topic with some extraneous content."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "The Generated Answer has significant factual errors and omissions on key aspects like the initial trigger, fluctuating pattern details, and nocturnal episode, while introducing irrelevant details and hallucinations."
+}

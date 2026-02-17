@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer fundamentally contradicts the Gold Answer by claiming the doctor did not state a comprehensive plan and that the only action was inquiring about air filters, ignoring the explicit plan in [D-58] (physical exam, consult physician, discuss next steps). It also mischaracterizes environmental factors by including backyard activity and weather (not strictly home factors) while partially covering some but not aligning with Gold's precise list. Significant factual errors throughout.",
+    "completeness": "Key points from Gold Answer: Plan (physical exam, consult physician, return to discuss, offer questions) - 0% covered. Environmental factors (smoking [P-53], carpets [P-54], pets [P-55], wood-burning [P-56], air filters [P-57], townhouse [P-50]) - partially covers carpets and air filters (~20-30%), misses most. Overall <20% coverage.",
+    "faithfulness": "Claims like 'no comprehensive plan' and 'only stated action was air filters inquiry as preliminary step' are not verifiable and contradict [D-58]; backyard [P-41] and weather [P-38] are in transcript but not 'home environmental factors assessed before plan'; references non-existent 'knowledge graph'; multiple misinterpretations and ungrounded assertions.",
+    "relevance": "Addresses structure of question (plan and environmental factors) but provides incorrect information on plan (denies it exists) and partially off-topic additions to environmental factors; mostly relevant in intent but derailed by errors."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 1.75,
+  "summary": "The Generated Answer is largely incorrect, incomplete, and unfaithful by denying the clearly stated plan in [D-58] and misrepresenting environmental assessments, despite attempting to address the question."
+}

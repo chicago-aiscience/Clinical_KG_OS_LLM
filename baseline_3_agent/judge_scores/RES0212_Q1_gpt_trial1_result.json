@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly reports the key positive respiratory features: a cough for ~3 months with worsening/productive “greenish” sputum over the last ~3 days, and discomfort only with coughing. It also correctly notes fatigue and sleep disruption from nocturnal cough. However, it inaccurately frames “pain” as an explicitly denied symptom without clarifying that she did report pain with coughing (so the denial applies only to generalized body pain/tenderness). It also omits/does not mention several other accurate symptom characteristics (initially dry/intermittent, no foul smell) and other positives (subjective nighttime heat/feverishness, exercise limitation), but these are primarily completeness issues rather than direct contradictions.",
+    "completeness": "Major omissions relative to the Gold Answer. Missing: initial dry/intermittent nature of the 3-month cough and onset context (pole dancing class), no foul smell noticed, subjective feverishness (“hot at night”), exercise impairment, and the detailed denial set (night sweats, weight loss/loose clothes, nausea/vomiting, stiff neck, body pain/tenderness, and denial of sick contacts). It only includes denials of blood in sputum and (imprecisely) pain. Overall covers well under half of the Gold Answer key points.",
+    "faithfulness": "Most statements are supported by the transcript (cough duration, green sputum, no blood, fatigue, sleep disruption, pain with coughing). The main issue is mild distortion: listing “Pain” as denied without the nuance that pain occurs with coughing. Also, citing the doctor’s recap ([D-47]) for patient-reported items is acceptable because it reflects earlier patient statements, but it’s weaker grounding than citing the original patient turns. No major hallucinated symptoms are introduced.",
+    "relevance": "The answer stays focused on respiratory/associated symptoms and symptom denials, which is what the question asks. It does not wander into unrelated history. However, it fails to include many of the explicitly denied symptoms asked about, reducing how well it satisfies the question."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 2,
+    "faithfulness": 4,
+    "relevance": 4
+  },
+  "average_score": 3.5,
+  "summary": "Mostly accurate for the limited symptoms it mentions, but it omits many key cough characteristics and most of the explicit denials required by the question."
+}

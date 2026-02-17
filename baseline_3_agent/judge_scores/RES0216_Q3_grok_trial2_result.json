@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer accurately captures core elements like the patient's asthma history [P-16, P-25], presenting symptoms of chest tightness and exertional worsening [P-1], absence of pain and cardiac features [D-36], and the doctor's top differential of asthma recurrence [D-35]. However, it has minor discrepancies: it omits crucial medication non-adherence (skipping evening doses [P-19], no rescue inhaler [P-17/P-18]) emphasized in Gold and doctor's summary [D-34]; presents hoarseness/phlegm [P-11] as a key asthma symptom without Gold emphasis; and paraphrases 'no significant out of breath' from doctor's summary [D-36] despite patient's report of difficulty taking full breaths [P-7]. Core facts align, no major contradictions.",
+    "completeness": "Gold key points: (1) asthma history [covered]; (2) medication limiting/skip evening/no rescue [missed entirely]; (3) specific symptoms (diffuse tightness, exertional dyspnea) [partially covered, misses 'diffuse all over' [P-8] and exact citations]; (4) patient notes possible relation despite difference [missed]; (5) no environmental triggers [missed]; (6) absence cardiac/systemic [covered]; (7) therapeutic trial with rescue [missed]. Covers ~60% (history, symptoms broadly, cardiac exclusion), misses several interconnected reasoning points.",
+    "faithfulness": "All claims in Generated are verifiable: symptoms from [P-1, P-7, P-9/P-10, P-11]; history [P-16, P-25]; doctor's links/exclusions [D-35/D-36]; no fabricated details or inaccurate citations. Hoarseness/phlegm is directly from transcript [P-11], even if minor. Fully grounded, no hallucinations.",
+    "relevance": "Perfectly addresses the question by structuring response around symptoms/clinical features, history, and explicit diagnostic linking process, with no off-topic content or tangents."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 5,
+    "relevance": 5
+  },
+  "average_score": 4.25,
+  "summary": "The Generated Answer is mostly accurate and highly faithful/relevant but incomplete in covering key Gold points like medication non-adherence and additional supporting details."
+}

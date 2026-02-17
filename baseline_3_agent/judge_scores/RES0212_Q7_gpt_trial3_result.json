@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies that the cough began ~3 months ago (intermittent) and that subjective fevers (“hot at night”) developed in the past couple of days. It also correctly places the development of productive greenish sputum in the last few days (~3 days). However, it makes a major factual error on the key timeline element of nocturnal disruption: the transcript indicates the cough has been waking her up pretty much every night for about the last month (not the last three days). The answer incorrectly ties the onset of sleep disruption to “the last three days” and cites [D-47] for that, but [D-47] summarizes that the cough became bad in the last three days—not that sleep disruption began then.",
+    "completeness": "Key points in the Gold Answer include: (1) onset ~3 months ago (during pole dancing class), (2) dry/intermittent for ~2 months, (3) nightly sleep disruption for ~1 month, (4) productive green/‘gunk’ starting ~3 days ago, (5) subjective fevers in past couple days, and (6) acute-on-chronic characterization.\n\nThe Generated Answer covers (1) partially (3 months, but omits the pole-dancing context), (4) partially (past few days but not clearly “~3 days”), and (5) fully. It attempts (3) but gives the wrong timing (last three days instead of last month). It omits (2) dry/intermittent phase detail and does not synthesize the acute-on-chronic pattern. Overall coverage is partial with a major miss on the sleep-disruption timing.",
+    "faithfulness": "Several statements are grounded in the transcript (3-month intermittent cough [P-2]; greenish sputum in past few days [P-2, P-9, P-12]; feeling hot at night in past couple days [P-4]). However, the claim that the cough ‘started waking the patient up at night in the last three days’ is not supported and misuses [D-47] (which refers to cough becoming bad, not the onset of nocturnal awakenings). This is a notable ungrounded/misinterpreted element, though the answer is not largely fabricated.",
+    "relevance": "The response is focused on the requested cough timeline elements (onset, nightly sleep disruption, productive green sputum, subjective fevers) and does not add major irrelevant content."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 3,
+    "relevance": 5
+  },
+  "average_score": 3.25,
+  "summary": "The answer is relevant and captures onset/sputum/fever timing, but it contains a major error about when nightly sleep disruption began (should be ~1 month, not the last three days) and omits some key contextual timeline details."
+}

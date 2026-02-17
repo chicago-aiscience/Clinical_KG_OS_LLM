@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the condition as COVID [D-43] and the test as COVID swab [D-43], matching the Gold Answer. However, it incorrectly states that the transcript 'does not contain any details regarding the patient's recent social contacts,' directly contradicting the Gold Answer's accurate citation of [P-20] describing the sick friend during dog walks and proximity concerns. It also misattributes the prompting factor to symptoms alone, ignoring the exposure history. This introduces significant factual errors on a core part of the question.",
+    "completeness": "Gold Answer key points: (1) condition COVID-19; (2) test COVID swab [D-43]; (3) prompting details from social contacts [P-20, P-21] including sick friend, dog walks, too close proximity, unsure of friend's test; (4) additional COVID screening questions [P-31 to P-35]. Generated covers (1) and (2) fully but completely misses (3) and (4), wrongly denying their existence. Covers ~30-40% of key points.",
+    "faithfulness": "Condition and test claims are verifiable [D-43]. However, the claim that 'transcript does not contain any details regarding recent social contacts' is false—directly verifiable exposures in [D-20/P-20/D-21/P-21]. It hallucinates the prompting reason as symptoms/infection from [D-43] without basis tying it specifically, ignoring prior exposure questions. Multiple hallucinated/erroneous facts.",
+    "relevance": "The Generated Answer is structured to directly address all three parts of the question with bullet points, staying focused without irrelevant content or tangents, even though content is incorrect on the third part."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 2.75,
+  "summary": "The Generated Answer is correct and relevant on the condition and test but factually incorrect, incomplete, and unfaithful by denying and missing the key social contact details that prompted COVID consideration."
+}

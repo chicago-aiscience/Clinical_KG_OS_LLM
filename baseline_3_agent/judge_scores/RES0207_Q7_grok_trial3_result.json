@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer details evening birthday celebration causing missed Keppra dose leading to seizure last night (fine after, bed); morning sudden SOB and dry cough (~3 hours pre-consult), temp 37.4C, never before, decided to seek care unsure, mentioned seizure unsure related. Generated covers seizure night before (but inaccurately says 'woke up in evening' not in transcript/Gold), missed med (misses birthday reason), morning SOB, temp check, decision to care. Misses cough, 3hr timing, prior no SOB, birthday detail; adds irrelevant family history in timeline and hallucinates 'clinical knowledge graph' fever confirmation. Some factual errors (waking phrasing, hallucination) but core events (seizure, SOB, temp, decision) align, main timeline point correct. Score: 3",
+    "completeness": "Gold key points: birthday disruption/missed dose [P24/P9], seizure last night/fine/bed [P8], morning SOB+cough [P1/P2/P4], ~3hrs [P11], temp 37.4 morning [P5/6], no prior SOB [P3], seek care unsure [P1], seizure mention unsure [P8]. Generated covers: seizure/missed med/fine/bed, SOB morning, temp, seek care. Missed: birthday reason, cough, 3hr timing, no prior SOB, unsure relation. Covers ~50-60% of key points (core events but misses specifics). Score: 3",
+    "faithfulness": "Generated citations accurate (P8,P9,P23,P1,P5). Seizure details mostly grounded but 'woke up in evening' not in transcript (P8: 'had a seizure last night...fine after...went to bed'). Family history [P26] plausible but not timeline-specific. Major hallucination: 'clinical knowledge graph...[LAB_RESULT...]--[CONFIRMS]--> SYMPTOM: fever' entirely fabricated, no such entity. Multiple unverifiable/hallucinated elements. Score: 2",
+    "relevance": "Question asks timeline evening before to consult: seizure, respiratory onset, temp check, seek care decision. Generated provides structured timeline directly addressing these from evening seizure to morning symptoms/temp/decision, with minor off-topic additions (family history, knowledge graph). Mostly focused. Score: 4"
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer captures the core timeline events but misses key details like the birthday trigger and cough, includes minor factual errors and hallucinations, resulting in moderate performance."
+}

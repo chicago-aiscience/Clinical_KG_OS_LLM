@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Gold Answer identifies a specific exposure event (hiking two weeks ago with partner, people brushed by [P-18, P-19]) as the patient's identified potential source, despite limited outings. The Generated Answer incorrectly states the patient 'did not explicitly identify a specific exposure event,' directly contradicting the transcript and Gold Answer. It shifts focus to symptoms and introduces a non-existent 'knowledge graph,' fabricating links not in the source. This results in significant factual errors and contradictions on the core question element.",
+    "completeness": "Gold key points: high school senior online [P-36/37], mostly home [D-38/P-38], hiking exposure 2 weeks ago [P-18/19], no other sources/sick contacts [P-17/18], lives with family [P-29], immunizations up-to-date [P-20], testing due to symptoms despite limited exposure [D-39]. Generated covers 0% of these, instead discussing symptoms (anosmia, dry cough [P-1/8]) and invented knowledge graph, missing all exposure-related points.",
+    "faithfulness": "Generated correctly cites symptoms from transcript [P-1, P-8, D-39] but hallucinates denial of exposure event despite clear transcript evidence [P-18]. Introduces unverifiable 'knowledge graph' with symptom-disease links not in transcript. Claims no exposure identification contradict verifiable [P-18: 'I went hiking... some people kind of brushed by us... I don't see where else']. Multiple hallucinations.",
+    "relevance": "Question asks for specific patient-identified exposure event and its connection to COVID-19 suspicion, given homebound context. Generated denies exposure exists and pivots to symptoms as the connection, ignoring question's focus on exposure history; largely off-topic."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 2
+  },
+  "average_score": 1.5,
+  "summary": "The Generated Answer fundamentally misinterprets the question by denying the existence of a transcript-supported exposure event and hallucinates unrelated elements, resulting in low scores across all dimensions."
+}

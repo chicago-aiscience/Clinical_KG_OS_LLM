@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold diagnosis: anxiety-related/stress-induced chest pain. Generated answer identifies “Functional Chest Pain / Anxiety-Induced Chest Pain related to Academic Stress,” which is broadly consistent with the Gold (anxiety/stress-related chest pain) and does not introduce a competing organic diagnosis. Minor issue: it states the patient reports “shortness of breath” [P-19]; in the transcript she mainly describes anxiety-driven faster breathing and difficulty taking a deep breath due to nervousness, while denying intrinsic breathing difficulty—so “SOB” is a slight overstatement.",
+    "completeness": "Key Gold supports include: (1) situational pattern—occurs when alone/studying/walking alone and improves with distraction/social interaction/hands-on tasks [P-4, P-9, P-29]; (2) prior anxiety attacks and concern they may return [P-21, P-22]; (3) major academic stress/time crunch [P-13, P-15, P-16]; (4) anxiety physiology (breathing faster, hard to get deep breath because nervous) [P-19]; (5) patient suspects stress [P-8]; (6) pertinent negatives favoring non-cardiopulmonary causes (no fever, no exertional worsening, occurs at rest, no palpitations outside anxiety, no asthma) [P-12, P-10, D-11/P-11, P-20, P-23/24]. Generated covers (2), (3), (4), and (5) but omits the central situational/distractibility pattern (1) and the pertinent negatives (6).",
+    "faithfulness": "Most statements are grounded in cited transcript lines (academic stress [P-13, P-15], anxiety history [P-21], anxious breathing pattern [P-19], patient stress attribution [P-8], pain description/duration [P-3, P-6]). The main faithfulness concern is mild: labeling the breathing symptoms as “shortness of breath” rather than anxiety-related faster breathing without true dyspnea, which is a nuance not fully supported. “Functional chest pain” is not stated in the transcript but is presented as an interpretive label consistent with the clinical picture.",
+    "relevance": "The response addresses the question (diagnosis + supporting consultation observations) and stays focused on anxiety/stress-related features; no major irrelevant tangents."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 4,
+    "relevance": 5
+  },
+  "average_score": 4.0,
+  "summary": "The generated answer identifies the correct overall diagnosis (anxiety/stress-related chest pain) and cites several supporting features, but it misses the key alone/distractibility pattern and the pertinent negatives emphasized in the Gold answer, with a minor overstatement of dyspnea."
+}

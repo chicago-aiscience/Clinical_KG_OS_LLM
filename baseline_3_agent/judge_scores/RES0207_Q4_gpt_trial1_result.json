@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Gold Answer lists multiple specific negative screens (chest pain, presyncope, URI symptoms, infectious exposures, GI symptoms, sputum, prior episodes) and interprets them as addressing cardiac/cardiopulmonary, infectious/URI/epidemiologic, and GI/systemic differentials. The Generated Answer instead focuses on presenting positives (SOB, dry cough, mild fever) rather than the doctor’s negative screening questions, and it incorrectly treats seizure frequency/Keppra adherence as the main “denial.” It also introduces speculative/incorrect differentials and reasoning (e.g., “stroke risk,” PE framed via epilepsy risk factors, GERD/aspiration discussion) that are not supported by the transcript and are not the point of the question. Thus, compared to the Gold Answer, the core requested content is largely missing and several assertions are inaccurate or unjustified.",
+    "completeness": "Key Gold Answer elements missed include: denial of chest pain; denial of feeling faint; denial of nausea/vomiting, belly pain, diarrhea; denial of sick contacts and travel; denial of loss of taste/smell, sore throat, runny nose; denial of sputum (dry cough); denial of prior similar SOB episodes. The Generated Answer covers essentially none of these specific screened-and-denied items and does not map the negative findings to the intended differential categories as in the Gold Answer. Completeness is therefore very low.",
+    "faithfulness": "Several statements are not grounded in the transcript: implying the doctor screened for “fever” as part of a denial set (patient actually reported a mild temperature); suggesting epilepsy confers PE/“stroke risk”; proposing pulmonary edema/heart failure/PE as targeted screens without linking to the actual negative questions asked; discussing GERD/aspiration. It also mischaracterizes the patient’s statement about seizure frequency as a key denial relevant to the doctor’s dyspnea workup. Overall, multiple claims are speculative or fabricated relative to the transcript.",
+    "relevance": "The question asks: (1) which specific symptoms/exposures the doctor screened for that were denied, and (2) what differentials those negatives address. The Generated Answer largely does not list the denied screened symptoms/exposures (it lists mostly presenting symptoms and medication adherence) and provides largely speculative differential discussion. Therefore it only weakly addresses the question."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 2
+  },
+  "average_score": 1.5,
+  "summary": "The Generated Answer largely fails to identify the doctor’s screened-and-denied symptoms/exposures and adds speculative, transcript-unsupported differential reasoning, resulting in very low correctness and completeness."
+}

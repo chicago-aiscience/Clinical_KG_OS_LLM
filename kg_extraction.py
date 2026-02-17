@@ -4,13 +4,13 @@ Unified KG Extraction Pipeline
 Extract clinical knowledge graphs from transcripts using LLM.
 
 Supports multiple methods and models:
-  - Method: naive (1-pass) or self-critic (2-pass with review)
+  - Method: naive (1-pass), self-critic (2-pass), or 3-agent (3-pass with critic+refiner)
   - Model: glm-4.7-flash (via OpenRouter), gemini-2.0-flash, etc.
 
 Usage:
     python kg_extraction.py --method naive --model glm --output baseline_naive/sub_kgs
     python kg_extraction.py --method self-critic --model glm --output baseline_self_critic/sub_kgs
-    python kg_extraction.py --method self-critic --model gemini --output baseline_self_critic_gemini/sub_kgs
+    python kg_extraction.py --method 3-agent --model glm --output baseline_3_agent/sub_kgs
 
 After extraction, merge with:
     python dump_graph.py --input baseline_naive/sub_kgs --output baseline_naive/
@@ -50,6 +50,11 @@ EXTRACTION_PROMPT = """Extract clinical knowledge graph from transcript.
 TRANSCRIPT:
 {transcript}
 
+## FORMAT REQUIREMENTS:
+- Node IDs: "N_001", "N_002", etc.
+- turn_id: String format "P-X" or "D-X" (P=Patient, D=Doctor, X=turn number)
+  Example: "P-1", "D-39" (from [P-1], [D-39] in transcript)
+
 Output JSON with nodes (id, text, type, evidence, turn_id) and edges (source_id, target_id, type, evidence, turn_id).
 Output ONLY valid JSON."""
 
@@ -75,6 +80,80 @@ Output ONLY valid JSON:
 {{
   "nodes": [...],
   "edges": [...]
+}}"""
+
+# === 3-Agent Prompts ===
+CRITIC_PROMPT = """You are a Clinical Knowledge Graph Critic. Review this extraction thoroughly.
+
+## SCHEMA REMINDER:
+NODE TYPES: SYMPTOM, DIAGNOSIS, TREATMENT, PROCEDURE, LOCATION, MEDICAL_HISTORY, LAB_RESULT
+EDGE TYPES: CAUSES, INDICATES, LOCATED_AT, RULES_OUT, TAKEN_FOR, CONFIRMS
+
+## TRANSCRIPT:
+{transcript}
+
+## EXTRACTED KG:
+{kg_json}
+
+## REVIEW CHECKLIST:
+1. MISSING ENTITIES - Check for:
+   - Symptoms mentioned but not captured
+   - Lab values (A1C, BP, BNP, LDL, etc.) → should be LAB_RESULT
+   - Pre-existing conditions → should be MEDICAL_HISTORY (not DIAGNOSIS)
+   - Family history → should be MEDICAL_HISTORY
+   - Procedures/tests mentioned
+
+2. TYPE ERRORS - Common mistakes:
+   - MEDICAL_HISTORY vs DIAGNOSIS (chronic vs acute)
+   - SYMPTOM vs DIAGNOSIS (patient complaint vs doctor assessment)
+   - TREATMENT vs PROCEDURE (medication vs test)
+
+3. MISSING RELATIONSHIPS - Check for:
+   - Risk factors → CAUSES → conditions
+   - Symptoms → INDICATES → diagnoses
+   - Tests → RULES_OUT or CONFIRMS → conditions
+   - Treatments → TAKEN_FOR → conditions
+
+4. HALLUCINATIONS - Information not in transcript
+
+5. ORPHAN NODES - Nodes without any edges
+
+Provide specific critique with quotes from transcript. Do NOT output JSON."""
+
+REFINER_PROMPT = """You are a Clinical Knowledge Graph Refiner. Improve the KG based on critique.
+
+## TRANSCRIPT:
+{transcript}
+
+## CURRENT KG:
+{kg_json}
+
+## CRITIQUE:
+{critique}
+
+Fix all issues mentioned in critique:
+- Add missing nodes with proper types
+- Add missing edges
+- Fix incorrect node/edge types
+- Remove hallucinated information
+
+## CRITICAL FORMAT REQUIREMENTS:
+- Node IDs: Use format "N_001", "N_002", etc.
+- turn_id: MUST be strings in format "P-X" or "D-X" where:
+  - P = Patient utterance, D = Doctor utterance
+  - X = turn number from transcript (e.g., [P-1], [D-39])
+  - Example: "P-1", "P-5", "D-39" (NOT integers like 1, 5, 39)
+
+Output ONLY valid JSON:
+{{
+  "nodes": [
+    {{"id": "N_001", "text": "...", "type": "SYMPTOM", "turn_id": "P-1", "evidence": "..."}},
+    ...
+  ],
+  "edges": [
+    {{"source_id": "N_001", "target_id": "N_002", "type": "INDICATES", "turn_id": "D-15", "evidence": "..."}},
+    ...
+  ]
 }}"""
 
 
@@ -310,6 +389,56 @@ def extract_self_critic(transcript: str, client) -> tuple:
     return kg2, total_usage
 
 
+def extract_3_agent(transcript: str, client) -> tuple:
+    """Three-pass extraction: Extract → Critic → Refine."""
+    # Pass 1: Initial extraction
+    kg1, usage1 = extract_naive(transcript, client)
+    if not kg1:
+        return None, usage1
+
+    n1, e1 = len(kg1.get('nodes', [])), len(kg1.get('edges', []))
+
+    # Pass 2: Critic (outputs text critique, not JSON)
+    kg_json = json.dumps(kg1, indent=2, ensure_ascii=False)
+    prompt2 = CRITIC_PROMPT.format(transcript=transcript, kg_json=kg_json)
+    critique, usage2 = client.generate(prompt2)
+
+    if not critique:
+        # If critic fails, return pass1 result
+        return kg1, usage1
+
+    # Pass 3: Refiner (uses critique to improve KG)
+    prompt3 = REFINER_PROMPT.format(transcript=transcript, kg_json=kg_json, critique=critique)
+    content3, usage3 = client.generate(prompt3)
+
+    kg3 = kg1  # Default to pass1 if refiner fails
+    if content3:
+        refined_kg = extract_json_from_response(content3)
+        if refined_kg:
+            kg3 = validate_knowledge_graph(refined_kg)
+
+    n3, e3 = len(kg3.get('nodes', [])), len(kg3.get('edges', []))
+
+    # Combine usage
+    total_usage = {
+        "prompt_tokens": sum((u or {}).get("prompt_tokens", 0) for u in [usage1, usage2, usage3]),
+        "completion_tokens": sum((u or {}).get("completion_tokens", 0) for u in [usage1, usage2, usage3]),
+        "pass1_nodes": n1,
+        "pass1_edges": e1,
+        "pass3_nodes": n3,
+        "pass3_edges": e3,
+    }
+
+    # Add metadata
+    kg3['_meta'] = {
+        "pass1": {"nodes": n1, "edges": e1},
+        "pass3": {"nodes": n3, "edges": e3},
+        "critique_length": len(critique),
+    }
+
+    return kg3, total_usage
+
+
 def process_one(txt_path: Path, client, method: str, output_dir: Path, suffix: str) -> tuple:
     """Process single transcript."""
     res_id = txt_path.stem
@@ -325,9 +454,12 @@ def process_one(txt_path: Path, client, method: str, output_dir: Path, suffix: s
         if method == "naive":
             print(f"  {res_id}...", end=" ", flush=True)
             kg, usage = extract_naive(transcript, client)
-        else:  # self-critic
+        elif method == "self-critic":
             print(f"  {res_id} pass1...", end=" ", flush=True)
             kg, usage = extract_self_critic(transcript, client)
+        else:  # 3-agent
+            print(f"  {res_id} extract...", end=" ", flush=True)
+            kg, usage = extract_3_agent(transcript, client)
 
         if not kg:
             print("FAILED")
@@ -345,6 +477,10 @@ def process_one(txt_path: Path, client, method: str, output_dir: Path, suffix: s
             delta_n = usage.get('pass2_nodes', n) - usage.get('pass1_nodes', 0)
             delta_e = usage.get('pass2_edges', e) - usage.get('pass1_edges', 0)
             print(f"({usage.get('pass1_nodes', 0)}n/{usage.get('pass1_edges', 0)}e) pass2... → ({n}n/{e}e) Δ{delta_n:+d}n/{delta_e:+d}e")
+        elif method == "3-agent" and usage:
+            delta_n = usage.get('pass3_nodes', n) - usage.get('pass1_nodes', 0)
+            delta_e = usage.get('pass3_edges', e) - usage.get('pass1_edges', 0)
+            print(f"critic... refine... ({usage.get('pass1_nodes', 0)}n/{usage.get('pass1_edges', 0)}e) → ({n}n/{e}e) Δ{delta_n:+d}n/{delta_e:+d}e")
         else:
             print(f"({n}n/{e}e)")
 
@@ -357,8 +493,8 @@ def process_one(txt_path: Path, client, method: str, output_dir: Path, suffix: s
 
 def main():
     parser = argparse.ArgumentParser(description="KG Extraction Pipeline")
-    parser.add_argument("--method", type=str, choices=["naive", "self-critic"], required=True,
-                        help="Extraction method: naive (1-pass) or self-critic (2-pass)")
+    parser.add_argument("--method", type=str, choices=["naive", "self-critic", "3-agent"], required=True,
+                        help="Extraction method: naive (1-pass), self-critic (2-pass), or 3-agent (3-pass)")
     parser.add_argument("--model", type=str, default="glm",
                         help="Model to use: glm, gemini (default: glm)")
     parser.add_argument("--output", type=str, required=True,

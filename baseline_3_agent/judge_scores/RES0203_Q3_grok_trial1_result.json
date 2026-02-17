@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer identifies loss of smell, taste, and dry cough as key symptoms, patient-initiated COVID concern (P-1), doctor's explicit connection via D-39 quote, swab test order (D-39), confirmation of absent symptoms (fever P-10, breathing P-11, sore throat P-13, chest pain P-22), 'pretty well' summary (D-16/P-16), and narrow profile supporting isolation (D-39). Generated correctly identifies the three symptoms, doctor's D-39 connection quote, swab test, and isolation. No contradictions, but adds unmentioned 'nasopharyngeal' detail (plausible but unspecified) and misses patient initiation, absent symptoms confirmation, and explanatory depth; core facts match.",
+    "completeness": "Gold key points: 1) three symptoms, 2) patient COVID worry (P-1), 3) D-39 connection, 4) swab test (D-39), 5) absent symptoms confirmation (specific citations), 6) 'pretty well' summary, 7) narrow profile rationale, 8) isolation. Generated covers 1,3,4,8 fully; partially 7 implicitly; misses 2,5,6 explicitly. Covers ~60-70% of key points, focusing on core but lacking thorough explanatory elements.",
+    "faithfulness": "Symptoms verifiable in P-1/P-4/P-7; D-39 quote accurate for connection and swab/isolation. 'Knowledge graph provided' hallucinated (no KG in input/transcript). 'Nasopharyngeal swab' not in transcript (just 'swab' in D-39), though plausible for COVID testing. All other claims directly grounded; minor hallucination in intro and plausible extension on test type.",
+    "relevance": "Generated directly lists exact symptom combination, quotes doctor's connection to COVID suspicion, specifies test method (swab), and notes isolation; structured response perfectly matches question's request for symptoms, connection explanation, and test without off-topic content."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 4,
+    "relevance": 5
+  },
+  "average_score": 4.0,
+  "summary": "The Generated Answer is mostly accurate and relevant, covering core symptoms, connection, and test faithfully but with minor hallucinations and incomplete coverage of Gold's explanatory details on symptom ruling-out."
+}

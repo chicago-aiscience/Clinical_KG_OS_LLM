@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer specifies 'acute lower respiratory tract infection, most likely acute bronchitis with possible bacterial superinfection or early community-acquired pneumonia, superimposed on a pre-existing chronic cough.' Generated Answer simplifies to 'acute bronchitis' without mentioning the chronic cough background, potential bacterial superinfection, or pneumonia possibility, which are key nuances. Explanations of features are broadly similar but less precise (e.g., greenish sputum not definitively bacterial in Gold; Generated combines cough and sputum). References to a non-existent 'Knowledge Graph' introduce inaccuracies. Main point of acute bronchitis is correct, but significant discrepancies exist.",
+    "completeness": "Gold key points: nuanced diagnosis including chronic overlay, superinfection/CAP; separate detailed contributions of productive cough (3-day acute on 3-month chronic), greenish sputum (infectious etiology), nighttime fevers (systemic response); doctor's summary [D-47] distinguishing features; absence of vitals/exam. Generated covers acute bronchitis diagnosis, productive cough with greenish sputum, subjective fever contributions with citations, but misses chronic context, diagnostic nuances, doctor's synthesis, and lack of confirmatory tests. Covers ~60% of key points.",
+    "faithfulness": "Claims like productive cough, greenish sputum [P-2, P-9, D-47], subjective fever [P-4], tiredness/sleep issues [P-19-21] are verifiable in transcript. However, repeated references to a 'Knowledge Graph' establishing relationships (e.g., cough to bronchitis, tired/sleep to bronchitis) are entirely hallucinated—not present in transcript. Links fever directly to tiredness/sleep via KG is a stretch and ungrounded. Multiple hallucinated elements present.",
+    "relevance": "Directly addresses the question by naming a diagnosis (acute bronchitis) and explaining contributions of productive cough (with sputum) and subjective fever, with transcript citations. Minor combination of cough and sputum features instead of fully separating sputum color, but no off-topic content."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer partially matches the Gold Answer's core diagnosis and symptom explanations but lacks nuance on chronic context and possibilities like superinfection, while introducing hallucinations via 'Knowledge Graph' references."
+}

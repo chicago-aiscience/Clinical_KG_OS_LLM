@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer states smoking history provides 'direct context' for COPD diagnosis, citing transcript accurately; Generated Answer escalates to 'direct causal factor,' which is medically accurate and consistent with Gold's implication, with matching citations [P-35, P-27, P-28]. Both link COPD to new dyspnea and COVID suspicion via doctor's X-ray [D-43]. No factual contradictions, but Generated introduces unmentioned 'knowledge graph' details not in Gold, a minor discrepancy.",
+    "completeness": "Gold key points: smoking 40 years [P-35]/quit 2 years [P-34]/COPD [P-27]/LABA [P-28]; smoking context for COPD; new/worsening/constant dyspnea unlike past [P-8-11]; compromised lungs; X-ray [D-43]; COVID alignment [D-43]; living alone/retired/low exposure [P-12,33,39]. Generated covers smoking-COPD causal link, LABA, compromised lungs/COVID risk, X-ray; misses quit timing, detailed dyspnea descriptors, lifestyle/exposure context (~60-70% coverage).",
+    "faithfulness": "Transcript verifies smoking [P-35]/quit [P-34]/COPD [P-27]/LABA [P-28]/dyspnea onset/worsening [P-8-10]/X-ray/COVID suspicion [D-43]. Generated hallucinates entire 'knowledge graph' with causal/treatment/indication links not present; paraphrases 'difficulty breathing' as 'harder to breathe'; 'respiratory reserve insufficient' plausible but ungrounded.",
+    "relevance": "Generated directly structures response around smoking-COPD relation and COPD as risk for dyspnea/COVID presentation, with citations and clinical explanation perfectly matching question focus, no off-topic content."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.5,
+  "summary": "Generated Answer is mostly correct and relevant but incomplete in covering Gold's details and unfaithful due to hallucinated knowledge graph references."
+}

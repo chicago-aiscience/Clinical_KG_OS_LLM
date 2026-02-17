@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer contains multiple inaccuracies compared with the Gold Answer. It incorrectly states the cough developed on Thursday (mother said it started Wednesday night after coming home from school) and over-interprets the timeline as suggesting he “contracted the illness during his time at school,” which is not explicitly stated (mother only raised it as a possibility). It also incorrectly summarizes the contact history as “no known sick contacts at school or outside of school”; the mother specifically said no known sick contacts outside school, but that it was hard to say regarding school. It is correct that the school had not contacted them about any exposures, but the citation given ([P-1]) is wrong (this was [P-39]).",
+    "completeness": "Key Gold Answer points missing or inadequately captured include: (1) mother explicitly raised concern he could have gotten COVID at school [P-2]; (2) explicit distinction: no known sick contacts outside school, but uncertain at school (“kinda hard to say”) [P-38]; (3) school had not contacted them about any exposures [P-39] (partially included but poorly supported); (4) school required a COVID test to return and to inform other families about exposure [P-41] (missing); (5) additional narrowing factors (no travel [P-40], no home environmental exposures [P-37]) are missing. Overall, less than half of the Gold Answer’s key points are covered.",
+    "faithfulness": "Several statements are not well-grounded in the transcript: asserting the timeline “suggests” school was the source is an inference not stated by the mother; the “knowledge graph”/asthma framing is extraneous and not supported by the transcript; and citations are inaccurate (e.g., school notification attributed to [P-1] rather than [P-39]). These issues reduce grounding and introduce hallucinated context.",
+    "relevance": "The response is mostly focused on school attendance, sick contacts, and whether the school notified them, which matches the question. However, it includes minor irrelevant content (e.g., “knowledge graph” mention) and misses an important asked element (school notification of exposures is addressed, but the school’s COVID-test-to-return requirement is not)."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The answer is generally on-topic but contains notable inaccuracies, misses several key details from the gold response (especially the outside-vs-school contact distinction and the school’s COVID-test requirement), and includes ungrounded/invented context."
+}

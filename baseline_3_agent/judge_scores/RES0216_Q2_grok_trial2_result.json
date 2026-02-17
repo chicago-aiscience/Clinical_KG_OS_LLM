@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the three medications (salbutamol for asthma, Ramipril for high blood pressure, Tylenol for headaches) matching the Gold Answer. However, it inaccurately states that the transcript 'does not contain specific information detailing changes to dosing frequency or adherence over the past couple of years,' directly contradicting the Gold Answer and transcript evidence (e.g., P-17-P-20 describe skipping evening daily inhaler doses 'for a while,' only taking morning dose 'lately,' and not refilling rescue inhaler for 'a couple of years'). It also misrepresents the clinician's comment (D-35) as 'prescribing' a new rescue inhaler adjustment, whereas the Gold Answer clarifies the patient's self-reported non-adherence (no refill, no availability). References to a non-existent 'Knowledge Graph' introduce external fabrications. Significant factual errors on the core adherence question.",
+    "completeness": "Gold Answer key points: (1) salbutamol (asthma), (2) Ramipril (high BP), (3) occasional Tylenol (headaches); (4) daily inhaler prescribed BID (morning/night) but skipping evening 'for a while,' now only morning; (5) no rescue refill 'couple of years,' none available; (6) justifications and clinician summary. Generated covers 1-3 fully but misses 4-6 entirely, replacing with irrelevant symptom recurrence and future clinician plan. Covers ~30% of key points.",
+    "faithfulness": "Meds claims verifiable (P-25-P-27). Adherence claims not grounded: falsely asserts no info on past changes despite P-17-P-20 explicitly detailing them; hallucinates 'Knowledge Graph' citations absent from transcript; misinterprets D-35 as new prescription vs. suggestion to restore availability due to patient's non-refill; adds unverified 'asthma recurrence diagnosis.' Multiple hallucinations.",
+    "relevance": "Directly addresses medications and conditions. Fails to address adherence changes over past years (dodges with 'no info,' pivots to current symptoms, future plans, walks), introducing off-topic content like symptom context and clinician's differential/suggestion instead of historical adherence details."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "The Generated Answer accurately lists medications but significantly errs by denying transcript evidence of adherence changes, hallucinating a knowledge graph, and veering into irrelevant future plans, missing key historical details."
+}

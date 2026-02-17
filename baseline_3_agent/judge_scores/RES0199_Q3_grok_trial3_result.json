@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer lists specific symptoms including dry cough [P-12], persistent headache [P-3,P-5], GI symptoms [P-1,P-28,P-32], fatigue [P-19], and loss of smell [P-24] as the constellation leading to COVID suspicion. Generated Answer lists headache, cough, nausea, vomiting, diarrhea matching P-1 summary, but omits 'dry' cough detail, persistence, and fatigue; correctly identifies loss of smell as characteristic with accurate citation. Core facts align with doctor's statement [D-52] of overlapping symptoms, minor discrepancies in detail completeness.",
+    "completeness": "Gold key points: doctor's explicit statement [D-52]; symptoms (dry cough, persistent headache, GI, fatigue, loss of smell); doctor queried smell/taste [D-24]; anosmia characteristic; alternative diagnosis; pertinent negatives (no fever, no rhinorrhea, no myalgias). Generated covers main symptom combo from P-1 and [D-52], loss of smell as characteristic [P-24]; misses fatigue, dry cough specifier, pertinent negatives, alternative mention, query detail—covers ~80% of core symptom overlap and characteristic symptom.",
+    "faithfulness": "All claims grounded: symptom combo from [P-1], doctor's suspicion [D-52], loss of smell [P-24]; citations accurate. Minor unverifiable element is the notation '[SYMPTOM] smell loss --[INDICATES]--> [DIAGNOSIS] covid' which is interpretive formatting not in transcript but does not fabricate facts.",
+    "relevance": "Directly answers both question parts: specifies symptom combination leading to COVID suspicion and identifies loss of smell as particularly characteristic; no off-topic content."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 4,
+    "faithfulness": 4,
+    "relevance": 5
+  },
+  "average_score": 4.25,
+  "summary": "The Generated Answer is mostly accurate and relevant, effectively capturing the core symptom combination and characteristic anosmia while grounded in the transcript, though it misses some detailed symptoms and context from the Gold Answer."
+}

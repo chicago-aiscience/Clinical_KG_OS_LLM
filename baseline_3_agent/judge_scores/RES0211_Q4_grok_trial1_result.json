@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly claims the doctor systematically screened only for asthma, while the Gold Answer lists multiple conditions including night sweats, productive cough, severe allergies/EpiPen, asthma (personal/family), eczema (family), rashes, GI symptoms, and joint pain; it also has factual errors like citing [P-1] for asthma denial (actual denial is [P-29]) and misrepresenting [D-58] as screening rather than summary, contradicting Gold's detailed screenings.",
+    "completeness": "Gold key points: night sweats [D-9/P-9], productive cough [D-5/6 P-5/6], severe allergies [D-18 P-18/19], EpiPen [D-21 P-21], personal asthma [D-29 P-29], family asthma [D-30/31 P-30/31], family eczema [D-32/33 P-33], rashes [D-10 P-10], GI [D-11/12 P-11/12], joint pain [D-13 P-13]; Generated covers only asthma partially (~10% coverage), misses all others.",
+    "faithfulness": "Claims like asthma confirmation in [P-1] (incorrect, P-1 is initial symptoms; actual [P-29]); screening via [D-58] (summary, not questioning); 'knowledge graph' hallucinated; allergy differentiation and exposure history plausible but not directly from targeted screening questions as in Gold; multiple inaccurate citations and fabrications.",
+    "relevance": "Addresses asthma screening partially but ignores other specified conditions (e.g., eczema, EpiPen, night sweats), diverts to viral diagnosis speculation and knowledge graph, making it only partially relevant to listing conditions and responses."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.0,
+  "summary": "The Generated Answer is significantly incomplete and factually inaccurate, focusing narrowly on asthma with hallucinations while ignoring most screened conditions detailed in the Gold Answer."
+}

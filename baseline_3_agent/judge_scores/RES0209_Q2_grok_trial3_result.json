@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Generated Answer correctly identifies the bronchodilator as the current medication but fails to note it is the sole asthma medication used as-needed; incorrectly states administration method is unspecified (contradicts Gold and transcript P-7 'puffer'); completely contradicts Gold and transcript by denying the doctor asked about a daily controller medication (D-5 explicitly asks for 'one that you take every day no matter what'), with wrong citations (e.g., D-20 irrelevant). Significant contradictions on core facts warrant score 2.",
+    "completeness": "Gold key points: bronchodilator (rescue/as-needed), puffer administration, no other meds, doctor asked about 'every day no matter what' daily controller (patient lacks). Generated covers only bronchodilator name (~20% partial); misses as-needed/sole status, puffer, no others, and denies doctor query. Score 1 (<20%).",
+    "faithfulness": "Bronchodilator verifiable [P-1]; but administration 'not specified' hallucinates absence (P-7/D-7 puffer); denies doctor asked about controller despite D-5/P-5; wrong citations (D-20 symptoms irrelevant). Multiple hallucinated absences/denials not grounded in transcript. Score 1.",
+    "relevance": "Generated directly structures response to answer all three question parts (med, administration, controller query) with no off-topic content or tangents. Score 5."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 5
+  },
+  "average_score": 2.25,
+  "summary": "The Generated Answer is significantly incorrect and unfaithful to the transcript by denying key evidence of the puffer administration and the doctor's explicit inquiry about a daily controller medication, covering almost none of the Gold Answer's points despite being relevantly structured."
+}

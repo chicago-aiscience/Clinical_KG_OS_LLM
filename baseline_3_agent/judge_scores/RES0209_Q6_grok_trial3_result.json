@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer identifies three main plan elements: 1) COVID swab (D-29); 2) medication change suggestion (D-43, with context); 3) consultation with supervising physician (D-43, D-29, including returning shortly). Generated Answer correctly identifies COVID swab and consultation but misrepresents medication change as non-explicit/implied review rather than a direct suggestion quoted in Gold/D-43; ignores D-43 entirely; adds unstated 'asthma exacerbation [D-29]' which is not in transcript. Core facts present but with notable errors/omissions.",
+    "completeness": "Gold key points: COVID swab (covered); medication change suggestion incl. D-43 quote/context (missed, only implied); consultation details incl. D-43 'go talk to doctor' and return (partially covered via D-29 only); infectious screening context (missed); goal for sports (missed). Covers ~60% (main elements but incomplete details/citations).",
+    "faithfulness": "COVID swab verifiable [D-29]; consultation verifiable [D-29]; medication claim 'not explicitly stated' incorrect as D-43 explicitly suggests change; 'asthma exacerbation [D-29]' hallucinated (not in transcript); symptom citations accurate but secondary; overall some plausible but unverifiable/missing key transcript parts.",
+    "relevance": "Directly structures answer around clinician's plan addressing question's specifics (diagnostic test, medication, consultation); minor addition of symptom background but focused on plan elements."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 3,
+    "relevance": 5
+  },
+  "average_score": 3.5,
+  "summary": "The Generated Answer captures the core plan elements but with incomplete coverage, factual discrepancies on medication suggestion, and minor hallucinations, while remaining highly relevant."
+}

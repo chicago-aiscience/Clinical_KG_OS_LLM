@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the COVID-19 swab test with accurate citation [D-53], matching the Gold Answer. For rationale, it captures the doctor's quote [D-53] linking to the husband and symptoms, but emphasizes symptoms more than the Gold's focus on epidemiological household transmission; no major contradictions, but minor shift in emphasis and addition of unverified 'potential exposure' details.",
+    "completeness": "Key Gold points covered: test/swab [D-53] (yes), household transmission via husband [P-19, D-53] (yes, mentioned), self-isolate instruction [D-53, D-54] (no), explicit prioritization quote (partial yes), flu as secondary after no flu shot [P-53, D-54] (no, influenza barely addressed). Covers ~60-70% of points.",
+    "faithfulness": "Quotes from transcript accurate [D-53, P-1]; inferences like 'likely infected via husband' grounded. However, repeated mentions of 'Knowledge Graph' confirming links and procedures are not in transcript—hallucinated external reference, introducing multiple unverifiable claims.",
+    "relevance": "Directly answers both parts of question with structured sections on test and rationale; minor irrelevant Knowledge Graph tangents but overall focused on query."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 3.25,
+  "summary": "The Generated Answer is mostly correct and relevant but incomplete in covering the full rationale including self-isolation and flu contrast, and faithfulness is reduced by hallucinated Knowledge Graph references."
+}

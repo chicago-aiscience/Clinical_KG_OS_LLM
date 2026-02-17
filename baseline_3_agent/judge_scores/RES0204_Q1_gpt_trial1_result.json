@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Gold Answer states the cough was explicitly characterized as dry (non-productive) and the patient denied bringing up any sputum/gunk. The Generated Answer incorrectly claims the transcript does not specify productive vs non-productive, which directly contradicts [D-5–D-6, P-5–P-6]. It correctly reports cough duration (~4–5 days) and nasal discharge as “pretty clear,” and correctly notes no wheeze/SOB per family history comment, but it misses/does not accurately represent the cough characterization central to the question.",
+    "completeness": "Key Gold Answer points: (1) cough 4–5 days; (2) dry; (3) explicitly non-productive; (4) severity stayed the same; (5) runny nose past couple of days; (6) discharge clear; (7) patient hadn’t had a dry cough like this before; (8) past runny noses not this long; (9) pertinent negatives (sore throat, chest pain; no SOB/wheeze). Generated Answer covers: (1), (5), (6), and partially a negative (no wheeze/SOB). It omits (2), (3), (4), (7), (8), and other pertinent negatives. Because it fails to provide the cough’s productive vs non-productive nature (explicitly asked), coverage is substantially incomplete.",
+    "faithfulness": "Most statements are grounded in the transcript (duration of cough; runny nose duration; clear discharge; no wheeze/SOB). However, the claim that the transcript does not explicitly specify productive vs non-productive is not faithful to the transcript because the clinician labels it dry and the patient denies sputum/gunk. This is a notable contradiction rather than a minor unverifiable detail.",
+    "relevance": "The response is largely focused on respiratory symptoms (cough and nasal discharge) and their characteristics. The added note about absence of wheeze/SOB is slightly tangential but still respiratory and aligns with the Gold Answer’s pertinent negatives."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 3,
+    "relevance": 4
+  },
+  "average_score": 2.75,
+  "summary": "The answer is relevant and partly transcript-grounded, but it contains a major error and omission by denying that the cough’s dry/non-productive nature was specified, which is central to the question."
+}

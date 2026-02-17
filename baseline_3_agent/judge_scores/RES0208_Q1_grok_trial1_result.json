@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer has significant factual errors: it incorrectly attributes 'sore throat and cough' explicitly to [P-1], fabricating a quote not present in the transcript (P-1 only mentions shortness of breath, rundown, tired). Patient reports sore throat [P-9] and cough [P-7,P-8] later, but not as stated. It misses key details like newness of sensory losses, specifics of cough/sore throat (early/mild/dry), denial of runny nose [P-10], and headaches [P-11-13] described as usual in Gold. Correctly identifies taste loss [P-4], weakness [P-2], achiness [P-20], fever [P-4], appetite loss [P-2,P-4], but overall contradictions and omissions vs Gold warrant score 2.",
+    "completeness": "Gold key points: Sensory (taste loss [P-4], smell loss [P-6], new [P-5]); Upper resp (dry cough starting [P-7/8], sore throat starting [P-9], no runny nose [P-10]); Musculo (overall achy [P-20/21], weakness [P-2]); Const (subjective fever [P-4], dec appetite [P-2/4/18], mild usual headaches [P-11-13]). Generated covers: taste, weakness, achy, fever, appetite, cough, sore throat (but inaccurately). Misses: smell loss, newness, runny nose denial, headaches, detailed qualifiers. Covers ~50-60% of points: score 3.",
+    "faithfulness": "Major hallucination: fabricates 'sore throat and cough' quote in [P-1] (absent; contradicts transcript). Muscle aches cites doctor summary [D-36] alongside patient [P-20] (minor issue). Taste [P-4], weakness [P-2], fever [P-4], appetite [P-2/4] verifiable. Wrong citation and invented quote indicate multiple hallucinated elements, not fully grounded: score 2.",
+    "relevance": "Generated directly addresses the question by categorizing symptoms into sensory changes, upper respiratory, musculoskeletal, and constitutional findings beyond SOB/fatigue, with citations. No off-topic content, perfectly focused: score 5."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer is relevant and partially complete but undermined by significant factual inaccuracies, hallucinated quotes/citations, and omissions of key symptoms like smell loss and headaches."
+}

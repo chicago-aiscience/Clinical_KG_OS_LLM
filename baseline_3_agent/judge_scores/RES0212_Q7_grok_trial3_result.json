@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer specifies cough onset 3 months ago during pole dancing class (P-13), dry and intermittent for next 2 months (P-2), sleep disruption nightly for 1 month causing fatigue (P-19, P-21), productive with greenish sputum 3 days ago (P-12, P-9), subjective fevers couple days ago (P-4). Generated correctly identifies 3-month onset and intermittency (P-2), productive sputum in past few days (close to 3 days), and fevers in couple days (P-4), but significantly errs on sleep disruption by stating it 'started waking up at night in the last three days' (misinterpreting D-47) instead of 1 month ago nightly (P-21), omitting initial dry nature, specific onset context, and acute-on-chronic pattern. This introduces a key factual contradiction on a specifically queried timeline point.",
+    "completeness": "Gold key points: 3mo onset at class (P-13), dry intermittent ~2mo (P-2), 1mo nightly sleep disruption + fatigue (P-19/21), 3d productive greenish/gross (P-2/9/12), couple d fevers (P-4), doctor summary (D-47), acute-on-chronic. Generated covers: 3mo intermittent onset (partial), productive few days (partial), fevers couple days; partially covers sleep (wrong timing) but misses class onset, dry phase, fatigue, exact 3d productive, doctor echo, pattern summary. Covers ~50-60% with major gap on sleep timing and details.",
+    "faithfulness": "All citations accurate (P-2, P-9, P-4, D-47). Onset/intermittent verifiable (P-2). Mild wakefulness 1mo ago grounded (P-19). Productive 'past few days' (P-2/P-9/P-12). Fevers verifiable (P-4). However, 'became bad and started waking up at night in last three days' (D-47) misinterprets; transcript specifies sleep disruption for last month nightly (P-21), not starting recently—plausible but inaccurate claim not directly supported, introducing interpretation error akin to minor hallucination.",
+    "relevance": "Generated directly structures response as bullet-point timeline addressing all queried elements (onset, sleep disruption, productive sputum, fevers) with no off-topic content, perfectly matching question focus."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 3,
+    "relevance": 5
+  },
+  "average_score": 3.25,
+  "summary": "The Generated Answer provides a relevant timeline structure but contains a significant factual error and incompleteness on sleep disruption timing, with minor faithfulness issues from misinterpretation."
+}

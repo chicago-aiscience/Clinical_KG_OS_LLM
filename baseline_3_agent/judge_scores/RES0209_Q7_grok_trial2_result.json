@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer details diagnosis at age 8 (now 10), baseline bronchodilator use once every two weeks, triggers (exercise, cold, seasonal), two-week exacerbation with nonstop dry cough, increased wheezing, SOB, chest tightness, bronchodilator 5-6 times/week (wheezing more frequent), nighttime symptoms, no precipitant. Generated Answer omits diagnosis age/history, baseline frequency, exact current frequency, exacerbation duration (says one week vs two), nighttime symptoms, wheezing frequency exceeding use; incorrectly cites chest tightness response to [P-4] instead of [P-20]; adds unsubstantiated 'diagnosis of asthma exacerbation' and '[Knowledge Graph]'; core escalation noted but significant factual discrepancies and omissions.",
+    "completeness": "Key Gold points covered: escalation in symptoms (cough, wheezing, SOB), some triggers (cold, exercise, spring/pollen), increased bronchodilator use (vaguely). Missed: diagnosis at age 8/now 10, baseline 'once every two weeks', current 'five-six times a week', two-week duration, wheezing more than bronchodilator use, nighttime symptoms every other day, no precipitant identified. Covers ~30-40% of key points.",
+    "faithfulness": "Most symptom claims verifiable (cough/SOB [P-1], wheezing [P-15], triggers [P-9,P-11]); chest tightness response mis-cited as [P-4] (actual [P-20]); bronchodilator increase referenced vaguely ([P-1], not precise [P-8]); hallucinations include 'diagnosis of asthma exacerbation' (not stated), '[Knowledge Graph] inference' (absent), family history added though minor. Multiple unverifiable additions and citation error.",
+    "relevance": "Addresses current symptoms and bronchodilator increase somewhat relevant to evolution question, but lacks structure/timeline from initial diagnosis/baseline to exacerbation; includes off-topic elements like family history and inferred diagnosis; partially on-topic with tangents."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "The Generated Answer partially captures symptom escalation and triggers but omits critical timeline details, exact usage frequencies, and key features like nighttime symptoms, with factual errors, hallucinations, and incomplete coverage of the Gold Answer."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Generated Answer incorrectly states that the doctor's concluding remarks are not included in the transcript, directly contradicting the presence of [D-33] which explicitly states the plan to pass information to another doctor; it misses or inaccurately represents many key facts from Gold Answer such as full symptom details (e.g., 1.5 weeks duration, at rest/alone, distraction relief, not worse with exercise), numerous pertinent negatives (no trauma, fevers, asthma, etc.), living alone, and multivitamin only; introduces minor inaccuracies in anxiety symptoms (e.g., claiming shortness of breath when patient denies hard time breathing); significant contradictions on core plan and partial symptom coverage warrant score of 2.",
+    "completeness": "Gold Answer covers plan + 5 categories of key info (detailed symptoms, failed OTC, negatives, history, psychosocial); Generated covers partial symptoms (sharp, deep breath, 20min, OTC), smoking, family hx dad MI, teen anxiety, stress; misses plan entirely, 1.5wk duration, rest/alone/distraction/not exercise, most negatives (trauma/fevers/asthma/SOB/palps/fam sudden), living alone, multi; covers ~30% of key points, score 2.",
+    "faithfulness": "Claims concluding remarks absent (false, [D-33] exists); cites some accurately (e.g., [P-3],[P-6]); but hallucinates 'knowledge graph' and '[SYMPTOM] anxiety' not in transcript; misrepresents anxiety (claims SOB/rapid/heart flutter as symptoms, but transcript specifies no hard SOB, flutter only in past attacks, rapid from nervousness); multiple unverifiable/hallucinated elements, score 2.",
+    "relevance": "Directly addresses key clinical info gathered (second part of question) with structured list but ignores/denies first part (plan/concluding remarks) despite evidence; adds off-topic 'knowledge graph'; partially relevant due to focus on symptoms/history but incomplete and erroneous on plan, score 3."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "The Generated Answer has significant factual errors by denying the existence of concluding remarks and plan, incompletely covers key points with hallucinations like knowledge graph references, though partially relevant to clinical info."
+}

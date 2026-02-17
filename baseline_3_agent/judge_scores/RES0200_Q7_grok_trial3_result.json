@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer specifies chronic cough began ~10 years ago [P-3], but Generated Answer only notes it as pre-existing/normal without timeline [P-1]. COPD diagnosis clarified to ~5 years ago [P-2], but Generated uses initial 'couple years ago' [P-1], ignoring clarification. Recent events (cough/sputum worsen last week [P-1,P-5,P-6]; SOB last few days [P-1,P-8]) match Gold. Some factual discrepancies on key long-term timelines asked in question, but core recent facts correct: score 3.",
+    "completeness": "Gold key points: 10yr cough onset; 5yr COPD dx (clarified); baseline SOB; 1wk cough worse + sputum change; few days SOB intensify + chills. Generated covers: chronic cough (no time); COPD dx (partial); 1wk cough + sputum; few days SOB. Misses: 10yr/5yr specifics, baseline SOB, chills, exertional details. Covers ~50-60% of key points: score 3.",
+    "faithfulness": "All claims in Generated directly verifiable: chronic cough [P-1]; COPD 'couple years' [P-1]; worsening last week [P-1]; sputum details [P-6]; SOB last few days [P-1]. Citations accurate, no hallucinations or unverifiable additions, fully grounded despite selective quoting: score 5.",
+    "relevance": "Generated structures response as bullet-point timeline directly tracing illness from chronic cough through recent worsening to current SOB prompting visit, precisely matching question's requested elements without off-topic content: score 5."
+  },
+  "scores": {
+    "correctness": 3,
+    "completeness": 3,
+    "faithfulness": 5,
+    "relevance": 5
+  },
+  "average_score": 4.0,
+  "summary": "The Generated Answer provides a relevant and faithful timeline of recent symptom worsening but is incomplete and has discrepancies in long-term details compared to the Gold Answer."
+}

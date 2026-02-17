@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer is largely incorrect relative to the Gold Answer. The key factual error is stating there is “no explicit evidence” that the doctor asked about and the patient denied chest pain, palpitations, runny nose, or nausea—when the transcript explicitly contains these denials: runny nose/congestion [D-10/P-10], nausea/vomiting [D-15/P-15], chest pain [D-16/P-16], and fast heartbeat/palpitations [D-17/P-17]. It also mislabels some symptom confirmations (e.g., cites sore throat as confirmed by [P-7], but [P-7] is about cough; sore throat is [D-9/P-9]). The diagnostic interpretation is also muddled: it introduces “COVID [Knowledge Graph]” and speculative reasoning not aligned with the Gold Answer’s specific differentiation points grounded in the ROS negatives.",
+    "completeness": "The Gold Answer’s key required list of explicitly negated symptoms includes: runny nose/congestion, vision/hearing changes, nausea/vomiting, chest pain, palpitations/fast heartbeat, abdominal pain, urinary symptoms, numbness/tingling. The Generated Answer fails to list these negated symptoms and instead focuses on positive symptoms (fever, fatigue, aches, SOB, cough, sore throat). It does not capture the required pertinent negatives nor their role in narrowing the differential in the way described in the Gold Answer (cardiac vs GI vs neurologic vs common cold pattern). Overall it covers far less than 20% of the Gold Answer’s required content.",
+    "faithfulness": "The answer is not well grounded in the transcript. It explicitly contradicts multiple transcript lines by claiming absence of explicit denials that are clearly present. It also references a “Knowledge Graph,” which is not part of the transcript, and adds speculative statements (e.g., “general absence of pain-related symptoms”) without systematically extracting the actual ROS denials present. Several citations are incorrect/misaligned (e.g., sore throat tied to [P-7]).",
+    "relevance": "It is partially relevant in that it attempts to address ROS and diagnostic differentiation, but it largely fails to answer the actual question (which asks for explicitly asked-and-negated symptoms and how those negatives differentiate the working diagnosis). The response spends substantial space on positive symptoms and incorrectly asserts the negatives were not asked. Hence, it only weakly addresses the prompt."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 2
+  },
+  "average_score": 1.25,
+  "summary": "The Generated Answer contradicts the transcript by denying the presence of explicit ROS negatives, omits most required negated symptoms, includes mis-citations and non-transcript content, and only partially addresses the question."
+}

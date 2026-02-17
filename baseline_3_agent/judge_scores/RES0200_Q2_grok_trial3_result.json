@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer lists respiratory inhalers as Ventolin (as needed) and Spiriva [P-11]; Ventolin use ~10 times past week [P-12]; non-respiratory: atorvastatin [P-38]; discontinued: diuretic without approval [P-35-36]. Generated correctly identifies Spiriva and Ventolin (minor spelling 'Ventilin'), and correctly identifies diuretic as discontinued without approval. However, significant errors: (1) Classifies diuretic as current/existing medication instead of discontinued; (2) Completely misses atorvastatin ('Torva Staten') as current non-respiratory med; (3) Falsely claims no specific Ventolin frequency provided, ignoring explicit 'almost like 10 times this past week' [P-12]. These are significant factual errors and contradictions with Gold and transcript.",
+    "completeness": "Key Gold points: Ventolin, Spiriva, Ventolin 10x/week, atorvastatin current, diuretic previously prescribed & discontinued without approval. Generated covers: Ventolin & Spiriva (partial, no freq detail); diuretic discontinued (yes). Misses: atorvastatin entirely; Ventolin frequency (claims absent). Covers ~50% of key points (inhalers names + discontinued med), but incomplete on frequency and misses major current med. ~50-79%.",
+    "faithfulness": "Claims grounded? Spiriva/Ventolin [P-11] verifiable. Diuretic reference [P-35] accurate quote but misclassifies as 'existing' vs transcript [P-34] 'used to take...don't right now' and discontinued [P-36] — not grounded. Ventolin freq cites only [P-11] 'lot more recently', ignores verifiable [P-12] '10 times' — hallucinated absence. Discontinued approval [P-35/36] mostly accurate. Multiple ungrounded/misrepresented claims (diuretic status, freq omission).",
+    "relevance": "Generated directly structures response to question parts (existing meds respiratory/non-resp, Ventolin freq, discontinued med) with citations, no off-topic content or tangents — perfectly focused despite factual issues."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.0,
+  "summary": "The Generated Answer partially addresses the question with correct identification of inhalers and discontinued diuretic but has significant errors in missing atorvastatin, misclassifying the diuretic as current, and fabricating the absence of Ventolin frequency data."
+}

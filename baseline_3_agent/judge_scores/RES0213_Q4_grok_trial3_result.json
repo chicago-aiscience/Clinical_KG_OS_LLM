@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer identifies 6 specific conditions ruled out (trauma, cardiac angina, infection, asthma, dyspnea, arrhythmia) with precise doctor questions and patient denials. Generated Answer incorrectly focuses on only 'Heart Disease (heart attack)' and 'Anxiety' (anxiety not ruled out per Gold or question), misattributes patient-volunteered info (e.g., family history [P-8]) as doctor inquiries, hallucinates purposes (e.g., 'to rule out gastritis'), and omits 5/6 Gold conditions; significant errors and contradictions warrant score 2.",
+    "completeness": "Gold key points: 6 conditions with exact [D-#] citations and rulings out. Generated covers partial cardiac elements inaccurately but misses trauma [D-5], infection [D-12/27], asthma [D-23/24], dyspnea [D-19], arrhythmia [D-31/32]; adds irrelevant anxiety; covers <20% accurately, score 1.",
+    "faithfulness": "Generated hallucinates doctor 'likely inquired/probably asked' for family history (patient-led [P-8,30]), symptom response for gastritis/strain (not in transcript), past history framing; partial grounds like smoking [D-14], stress [D-15], SOB [D-19], palpitations [D-20] but miscontextualized; multiple unverified claims, score 2.",
+    "relevance": "Addresses screening and inquiries but selects wrong conditions (heart disease partial/misframed, anxiety not ruled out), ignores most Gold conditions, includes extraneous interpretations; partially relevant with off-topic content, score 3."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.0,
+  "summary": "The Generated Answer is largely inaccurate and incomplete, hallucinating doctor inquiries and focusing on incorrect or unruled-out conditions while omitting most key points from the Gold Answer."
+}

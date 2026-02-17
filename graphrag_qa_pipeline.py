@@ -72,9 +72,31 @@ def parse_transcript(txt_path: str) -> dict[str, str]:
     return turn_dict
 
 
-def turn_sort_key(tid: str):
-    parts = tid.split("-")
-    return (parts[0], int(parts[1]))
+def turn_sort_key(tid):
+    """Sort key for turn IDs. Handles 'D-3', '[D-3]', int, and other formats."""
+    if isinstance(tid, int):
+        return ("", tid)
+    if tid is None:
+        return ("", 0)
+
+    # Convert to string and clean up brackets/whitespace
+    tid_str = str(tid).strip().strip("[]")
+
+    # Try to parse as "X-N" format (e.g., "D-3", "P-5")
+    parts = tid_str.split("-")
+    if len(parts) == 2:
+        try:
+            return (parts[0], int(parts[1]))
+        except ValueError:
+            pass
+
+    # Try to extract just numbers
+    import re
+    nums = re.findall(r'\d+', tid_str)
+    if nums:
+        return ("", int(nums[0]))
+
+    return ("", 0)
 
 
 # ── KG loader + validator ─────────────────────────────────────────────

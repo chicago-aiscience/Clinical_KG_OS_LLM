@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer accurately captures the local symptoms (redness, tenderness, soreness in the skin at the back of the left knee) consistent with the Gold Answer and transcript [P-1, P-3, P-6]. However, it contains a major factual error by stating the doctor did not screen for fever, joint pain, or headaches, directly contradicting the Gold Answer and transcript evidence [D-7/P-7 for joint pain, D-8/P-8 for feverish/ill, D-19/P-19/P-20 for headaches]. This significant contradiction on the systemic symptoms halves the correctness.",
+    "completeness": "Key local points from Gold covered: soreness of skin/not joint [P-1], red and tender [P-1, P-6]; partially covers localized without larger rash via 'sore in one spot' [P-3]. Missed: 'stuck pretty good' [P-1], explicit denial of bullseye/larger circle rash [P-6], 'totally fine' aside tenderness [P-18], 'pretty healthy' [P-13]. Systemic: covers 0% (misses all three screenings and denials). Covers ~40% of key points overall (strong on local symptoms, none on systemic).",
+    "faithfulness": "Local claims fully verifiable in transcript with accurate citations [P-1, P-3, P-6]. Systemic claims ('did not explicitly screen for fever, joint pain, or headaches') are not grounded and hallucinate absence despite clear transcript evidence [D-7, D-8, D-19]; mentions other inquiries [D-6, D-18] but misleadingly omits key screenings. Multiple hallucinated facts about lack of screening.",
+    "relevance": "The answer is structured directly around the question's two parts (local symptoms at tick site and systemic symptoms screened/denied), using bullet points and headings matching the query. Includes no irrelevant tangents, though systemic section is factually wrong; remains perfectly focused on addressing the question."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer is strong on local symptoms but fails completely on systemic screenings, introducing major factual errors and hallucinations that undermine overall quality."
+}

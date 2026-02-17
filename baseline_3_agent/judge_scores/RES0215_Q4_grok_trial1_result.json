@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer incorrectly identifies the doctor's screening purpose as differentiating viral infection from seasonal allergies, whereas the Gold Answer specifies screening for/excluding infectious causes (pneumonia/bronchitis via fever), URI/viral wheeze (runny nose), contagious infections (sick contacts), exposure infections (travel), systemic/allergic/viral with rash (rashes), and productive infection (phlegm), all with negative responses narrowing to reactive airway disease; significant contradictions include claiming these questions were absent or miscited (e.g., [D-14], [D-20]) when they are explicitly in the transcript.",
+    "completeness": "Gold key points: fever denies infection (pneumonia/bronchitis) [D7/P7]; runny nose denies URI [D8/P8]; sick contacts denies contagious [D10/P10]; travel denies exposure [D11/P11]; rashes denies systemic [D13/P13]; phlegm denies productive [D31/P31]; pain denies pleuritic [D14/P14]; looks fine [P9]; past virals no abx [P16]; narrows to reactive. Generated covers none of these specifically, instead focusing on viral broadly [P15] and allergies [P35/P36/P38]; covers <20%.",
+    "faithfulness": "Generated hallucinates absence of key questions (fever [D7], runny [D8], contacts [D10], travel [D11], rashes [D13], phlegm [D31]) despite their presence with denials; wrong citations ([D-14 pain, D-20 growth]); invents 'Knowledge Graph'; misinterprets screening as favoring viral/allergies rather than excluding infections; multiple ungrounded claims.",
+    "relevance": "Question focuses on specific questions (fever, runny nose, sick contacts, travel, rashes, phlegm) and responses narrowing differential; Generated dismisses these questions as absent, shifts to unrelated viral history [P15] and allergies [P35-38], introducing cold weather/asthma speculation; largely off-topic."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 1,
+    "faithfulness": 2,
+    "relevance": 2
+  },
+  "average_score": 1.75,
+  "summary": "The Generated Answer is factually inaccurate, incomplete, unfaithful to the transcript with hallucinations about missing questions, and largely irrelevant by focusing on wrong conditions instead of the specified screening queries."
+}

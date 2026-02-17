@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies most reported symptoms (dry cough, scratchy throat, feeling crappy, headache, feeling hot) matching Gold's core facts, but omits details like active headache, malaise characterization, and tiredness as reported symptoms. For denials, it inaccurately describes sputum denial as 'implicit' when it is explicit (P-5, P-6), cites incorrectly (D-58 instead of direct patient responses), and adds irrelevant denials (contact with sick people, asthma) not mentioned in Gold or as symptom denials in the question. These are significant factual errors and contradictions.",
+    "completeness": "Gold key reported points: dry cough/scratchy throat, pounding/active headache, feeling hot (persistent), crappy/icky/malaise, tired (6 clusters). Generated covers 4-5 (~70%). Gold denied points: sputum/phlegm, rashes/skin changes, nausea/vomiting, diarrhea, joint aches, breathing difficulty (6). Generated covers only sputum partially (~17%). Overall ~40-50% coverage (5/12 key points), missing most explicit denials.",
+    "faithfulness": "Reported symptoms verifiable with accurate citations (P-1, P-4, P-7, P-9). Sputum denial grounded but mislabeled 'implicit' (explicit in P-5/P-6; D-58 summary ok but secondary). Hallucinations: 'knowledge graph provided' (none in input); adds unverifiable/irrelevant denials like 'no contact with sick' and 'no asthma' from D-58 summary, not patient-explicit symptom denials. Multiple inaccuracies.",
+    "relevance": "Directly structures response into reported symptoms over 3-4 days and explicit denials, addressing question core. However, denials section includes off-topic non-symptom items (contacts, asthma), diluting focus on examples like nausea, joint pain, rashes."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "The Generated Answer partially captures reported symptoms but significantly underperforms on completeness and accuracy of denied symptoms, introducing hallucinations and irrelevant content."
+}

@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Step-by-step: Gold Answer lists salbutamol (asthma), Ramipril (HTN), Tylenol (headaches) - Generated matches this exactly. However, on adherence: Gold details skipping evening daily inhaler dose (now only morning for a while), no rescue refill for couple years (P-17-20). Generated falsely claims 'transcript does not contain specific information detailing changes to dosing frequency or adherence over the past couple of years', contradicting transcript and Gold. Adds hallucinated 'doctor is prescribing adjustment' and KG references (no KG in input). Significant contradictions on core adherence facts.",
+    "completeness": "Gold key points: 1. Meds/conditions: salbutamol-asthma, Ramipril-HTN, Tylenol-headaches (covered 100%). 2. Daily inhaler: bid prescribed, skipping night for while, now only morning (P-19,20). 3. No rescue refill couple years, none available (P-17,18). 4. Clinician notes limiting meds (D-34). Generated covers meds fully but misses ALL adherence changes (skipping dose, no rescue), instead covers unrelated recurrence/symptoms/future plan. Covers ~25-30% (meds only).",
+    "faithfulness": "Meds claims verifiable (P-25-27). But 'no specific info on changes over years' false - directly in P-17-20. KG citations fabricated (no KG provided). Doctor 'prescribing' rescue adjustment hallucinated - D-35 suggests trying availability, but patient already had/not refilled. Recurrence as diagnosis plausible but speculative. Multiple unverifiable/hallucinated elements.",
+    "relevance": "Directly lists meds/conditions as asked. For adherence changes over years (dosing/rescue): denies info exists, pivots to current symptoms/recurrence/future plan - off-topic, doesn't address historical changes. Partially relevant due to meds, but misses core second half of question."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 3
+  },
+  "average_score": 2.25,
+  "summary": "The Generated Answer accurately covers current medications but significantly fails on asthma adherence changes by denying transcript evidence, hallucinating details, and providing irrelevant future-oriented content instead of past changes."
+}

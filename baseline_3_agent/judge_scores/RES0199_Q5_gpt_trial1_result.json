@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer is factually inconsistent with the Gold Answer and the transcript. The doctor *did* ask about: living situation (\"where do you currently live?\"), home environmental exposures (carpets/dust/mold/asbestos/pets), sick contacts, workplace and whether coworkers were sick, and recent travel. The Generated Answer incorrectly states these were \"not explored\" and reframes contact tracing counseling as the only exposure-related inquiry, which does not match the actual systematic exposure history taken.",
+    "completeness": "It misses essentially all key exposure sources documented in the Gold Answer: apartment/city/alone living situation; environmental triggers (carpets, dust, mold, asbestos, pets); sick contacts and incidental contact at work lunchroom; workplace (car dealership) and whether others at work were sick; and travel history (denied). It also omits the substance-use screening noted in the Gold Answer. Overall coverage is far below 20%.",
+    "faithfulness": "Multiple claims directly contradict the transcript (e.g., stating living situation/workplace/travel were not explored when they are explicitly asked in D-45/46/48/49/50). The only grounded element is the mention of contact tracing (from D-52), but it is used to imply the doctor didn’t ask about sick contacts, which is also contradicted by D-47/P-47. This results in largely unfaithful reporting.",
+    "relevance": "The response is framed around the requested categories (living situation, workplace, travel, sick contacts), but it fails to provide the actual explored sources and instead provides incorrect denials. It is only partially responsive to the question."
+  },
+  "scores": {
+    "correctness": 1,
+    "completeness": 1,
+    "faithfulness": 1,
+    "relevance": 3
+  },
+  "average_score": 1.5,
+  "summary": "The Generated Answer is largely incorrect and unfaithful to the transcript, omitting nearly all exposure-history elements that were explicitly explored."
+}

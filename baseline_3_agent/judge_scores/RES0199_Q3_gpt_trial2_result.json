@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the doctor’s rationale for prioritizing COVID-19 (“symptoms overlap with those of covid” [D-52]) and accurately lists several key symptoms the patient reported: headache and cough [P-1], nausea/vomiting [P-1, P-32], and diarrhea [P-1, P-28]. It also correctly selects loss of smell as the COVID-characteristic symptom [P-24]. Minor issues: it does not specify the cough was dry [P-12] or that the headache was persistent [P-3], and it omits fatigue [P-19] which is part of the symptom cluster considered in the Gold Answer.",
+    "completeness": "Key Gold Answer points covered: (1) COVID-19 explicitly the first diagnosis to rule out [D-52]; (2) headache + cough; (3) GI symptoms (nausea/vomiting/diarrhea); (4) loss of smell as the characteristic symptom. Key points missed: dry cough [P-12], fatigue [P-19], and the fuller constellation framing that included anosmia as part of the gathered symptom set. Also does not mention pertinent negatives (no fever, no runny/stuffy nose, no myalgias), though these are secondary.",
+    "faithfulness": "Most statements are directly supported by the transcript with appropriate citations for the symptoms listed and for the doctor’s statement about ruling out COVID [D-52]. The claim that loss of smell is 'particularly characteristic of COVID-19 compared to other common viral illnesses' is not explicitly stated in the transcript, but it matches the Gold Answer’s expected clinical interpretation. The additional bracketed '[SYMPTOM]…[INDICATES]…' annotation is not in the transcript but does not add concrete new clinical facts beyond the same inference.",
+    "relevance": "Directly answers both parts of the question: identifies the symptom combination prompting COVID rule-out and names the characteristic symptom (loss of smell). No significant irrelevant content."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 4,
+    "relevance": 5
+  },
+  "average_score": 4.0,
+  "summary": "Accurate and highly relevant, but misses several elements of the fuller symptom constellation (notably fatigue and dry cough), with a small amount of inference beyond the transcript."
+}

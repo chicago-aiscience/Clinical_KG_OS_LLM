@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "Gold Answer identifies cough as dry and explicitly non-productive based on D-5/P-5 (patient agrees to 'dry cough') and D-6/P-6 (denies bringing up gunk). Generated Answer incorrectly states 'The transcript does not explicitly specify whether the cough is productive or non-productive,' which directly contradicts Gold and misreads transcript. Other facts like cough duration (4-5 days), runny nose duration ('couple of days'), and clear appearance match Gold. Paraphrase of clinical status ('doesn't seem to be going away or getting better') aligns with P-2/P-7 stability but not fully. Wheezing/SOB negative matches Gold. Significant contradiction on core cough characteristic leads to score of 2.",
+    "completeness": "Gold key points: 1) cough 4-5 days (covered); 2) dry cough confirmed (missed); 3) non-productive/no gunk (missed); 4) stayed the same (partially paraphrased but not explicit); 5) runny nose couple days (covered); 6) pretty clear (covered); 7) never had dry cough like this/past runny noses shorter (missed); 8) negs: no sore throat, chest pain, wheezing/SOB (only wheezing covered). Covers durations and nasal details (~40%), misses core cough nature, history, most negs. Score 2 (20-49%).",
+    "faithfulness": "Claims on cough duration [P-2/P-4], runny nose [P-11], clear discharge [P-12], no wheezing/SOB [P-28] verifiable and accurate. However, assertion 'transcript does not explicitly specify' cough nature is false/hallucinated as D-5/P-5/D-6/P-6 explicitly confirm dry/non-productive. No other fabrications, citations correct, but major misinterpretation counts as hallucinated fact. Score 2.",
+    "relevance": "Directly addresses question by listing respiratory symptoms (cough, runny nose), durations, partial characteristics (nasal clear, cough status), and cough nature (though erroneously). Includes relevant pertinent negative (wheezing/SOB). Minor tangent but focused on respiratory symptoms. Score 4."
+  },
+  "scores": {
+    "correctness": 2,
+    "completeness": 2,
+    "faithfulness": 2,
+    "relevance": 4
+  },
+  "average_score": 2.5,
+  "summary": "The Generated Answer substantially underperforms by incorrectly denying the transcript's explicit description of the cough as dry and non-productive, missing key details and leading to low correctness, completeness, and faithfulness despite good relevance."
+}

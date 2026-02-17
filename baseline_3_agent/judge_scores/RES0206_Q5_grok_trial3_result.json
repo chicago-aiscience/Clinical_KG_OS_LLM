@@ -1,0 +1,16 @@
+{
+  "reasoning": {
+    "correctness": "The Generated Answer correctly identifies the 20-year smoking history (half-pack/day, [P-40]) as the cause of COPD, aligning with Gold's 'primary risk factor,' though it omits quitting at diagnosis ([P-7, P-40]) and persistent damage requiring inhalers ([P-26]). For the chain, it links sick contact to infection to exacerbation via [D-43] and [P-1], matching Gold's core logic, but lacks details like dog walks ([P-20]), specific symptoms (sinus [P-12], headache [P-14], fever [P-9]), patient's past pattern ([P-3]), and self-suggestion ([P-23]). Addition of 'knowledge graph' introduces minor discrepancy as it's not in Gold/transcript. Core facts are accurate with minor omissions.",
+    "completeness": "Gold key points: Smoking details (duration, amount, quit timing), persistent COPD (inhalers); Chain (dog walks/friend sick/too close [P-20], infection symptoms [P-1/9/12/14], patient recognition [P-3/23], doctor [D-43], 3-day worsening [P-1/2]). Generated covers smoking history partially (misses quit/inhalers), high-level chain (sick contact -> infection -> exacerbation), some symptoms/doctor cite; misses ~40% including walk details, multiple symptoms, patient insights. Covers 50-79%.",
+    "faithfulness": "Claims like smoking [P-40], symptoms [P-1], doctor [D-43] verifiable. However, repeated 'knowledge graph' references ([MEDICAL_HISTORY] smoke --[CAUSES]--> COPD, infection --> exacerbation) and 'medical logic' are not in transcript, fully hallucinated. Hemoptysis interpretation accurate but minor. Multiple fabricated elements undermine grounding.",
+    "relevance": "Answer directly structures response around the two-part question (smoking-COPD, sick contact chain to exacerbation), uses transcript citations, stays focused despite extraneous knowledge graph mentions."
+  },
+  "scores": {
+    "correctness": 4,
+    "completeness": 3,
+    "faithfulness": 2,
+    "relevance": 5
+  },
+  "average_score": 3.5,
+  "summary": "The Generated Answer captures core relationships but is incomplete on details, introduces transcript-external hallucinations via knowledge graph, while remaining relevant."
+}
