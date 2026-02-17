@@ -174,16 +174,17 @@ def retrieve_context(
     embed_model,
 ) -> str:
     """
-    使用预计算的 embedding 进行确定性检索。
+    Deterministic retrieval using precomputed embeddings.
 
-    改进版：先按患者过滤，再从该患者实体中取 top-k。
-    这确保每个患者都能检索到相关实体，而不是被其他患者实体"挤出"。
+    Patient-scoped retrieval: filter by patient first, then take top-k from that patient's entities.
+    This ensures each patient gets relevant entities without being crowded out by other patients.
 
-    1. 找出该患者相关的所有节点索引
-    2. 计算 query embedding
-    3. 仅对患者相关节点计算相似度
-    4. 取 top-k 最相似的患者节点
-    5. 从 KG 中提取相关的 triples 和 transcript segments
+    Steps:
+    1. Find all node indices for this patient
+    2. Compute query embedding
+    3. Calculate similarity only for patient-related nodes
+    4. Take top-k most similar patient nodes
+    5. Extract related triples and transcript segments from KG
     """
     # Build lookup tables
     node_by_text = {n["text"]: n for n in kg["nodes"]}

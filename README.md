@@ -142,5 +142,3 @@ python speech_to_transcript.py --evaluate --input evaluation_bundle/
 # Add rule-based speaker labels (D/P alternating)
 python speech_to_transcript.py --input evaluation_bundle/RES0198/RES0198.mp3 --add-speakers
 ```
-
-**Note**: We use rule-based speaker labels (D/P alternating), not true diarization. For accurate speaker separation, see [WhisperX](https://github.com/m-bain/whisperX) or [pyannote-audio](https://github.com/pyannote/pyannote-audio).
