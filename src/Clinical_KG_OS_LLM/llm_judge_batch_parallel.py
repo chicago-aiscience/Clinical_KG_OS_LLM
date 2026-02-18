@@ -32,7 +32,7 @@ from threading import Lock
 
 # ── Config ──
 API_KEYS_PATH = Path("api_keys.json")
-DEFAULT_BUNDLE_PATH = Path("evaluation_bundle")
+DEFAULT_BUNDLE_PATH = Path("src", "Clinical_KG_OS_LLM", "transcripts")
 DEFAULT_RESULTS_PATH = DEFAULT_BUNDLE_PATH / "unified_graph_curated" / "results_unified_graph_curated"
 DEFAULT_OUTPUT_DIR = DEFAULT_BUNDLE_PATH / "unified_graph_curated" / "LLM_judge_score_unified_graph_curated"
 

@@ -22,6 +22,54 @@ To ensure fair comparison and enable future **local deployment**, KG extraction 
 
 See `kg_extraction.py` for API usage reference.
 
+## Quick Start
+
+```bash
+# Step 0: Install uv and dependencies
+# Install uv: https://docs.astral.sh/uv/getting-started/installation/
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+# Sync project dependencies (from project root)
+uv sync
+
+# Step 1: Setup API keys
+cp api_keys_example.json api_keys.json
+# Edit api_keys.json and replace "sk-or-v1-your-openrouter-api-key-here" with your key from https://openrouter.ai/keys (The other keys are optional and not required)
+
+# Step 2: KG Extraction (replace this script with YOUR method)
+uv run python -m src.Clinical_KG_OS_LLM.kg_extraction --method naive --model glm --output ./my_kg
+
+# Step 3: Entity Resolution - merge per-patient KGs into unified graph
+uv run python -m src.Clinical_KG_OS_LLM.dump_graph --input ./my_kg --output ./my_kg_naive
+
+# Step 4: GraphRAG QA - answer clinical questions (omit --questions to run all)
+uv run python -m src.Clinical_KG_OS_LLM.graphrag_qa_pipeline \
+  --kg ./my_kg_naive/unified_graph_my_kg.json \
+  --bundle ./src/Clinical_KG_OS_LLM/transcripts
+
+# Step 5: Quick quality check - compare against curated baseline
+uv run python -m src.Clinical_KG_OS_LLM.kg_similarity_scorer \
+  --student ./my_kg_naive/unified_graph_my_kg.json \
+  --baseline ./src/Clinical_KG_OS_LLM/baseline_results/baseline_curated/unified_graph_curated.json
+
+# Step 6: Visualize the knowledge graph
+uv run python -m src.Clinical_KG_OS_LLM.visualize_kg \
+  --kg ./my_kg_naive/unified_graph_my_kg.json \
+  --output ./my_kg_naive/kg_graph.png
+
+# Step 7: LLM Judge - score your answers [OPTIONAL] ($$ significant cost - Executed by Hackathon organizers ONLY)
+uv run python -m src.Clinical_KG_OS_LLM.llm_judge_batch_parallel \
+  --results-dir ./my_kg_naive/results_unified_graph_my_kg \
+  --output-dir ./my_kg_judge
+```
+
+**Path notes:**
+- `dump_graph` writes `unified_graph_{input_dir_name}.json` (e.g. `unified_graph_my_kg.json` when `--input ./my_kg`)
+- `graphrag_qa_pipeline` writes results to `{kg_parent}/results_{kg_stem}/` by default (e.g. `./my_kg_naive/results_unified_graph_my_kg`)
+
+### Quick Start Notebook
+
+Prefer running in a notebook? Use `notebooks/quickstart.ipynb` to run Steps 0–6 interactively. Install Jupyter Lab first with `uv sync --extra jupyter`, then open the notebook.
 
 ## Pipeline Overview
 
@@ -75,28 +123,6 @@ Based on the [IEEE TKDE Survey on KG Quality Management](https://ieeexplore.ieee
 | Naive | 0.700 | 3.08 |
 
 > **Note for Participants**: The LLM Judge evaluation (Step 5) is **expensive** (~$8-10 per full run) and will be executed by hackathon organizers for final scoring. During development, use `kg_similarity_scorer.py` to get your **composite score**, a reliable low-cost proxy for QA performance.
-
-## Quick Start
-
-```bash
-# Step 1: Setup API keys
-cp api_keys_example.json api_keys.json  # Add your OpenRouter/Gemini keys
-
-# Step 2: KG Extraction (replace with YOUR method)
-python kg_extraction.py --input evaluation_bundle/transcripts --output my_kg/ --method self-critic
-
-# Step 3: Entity Resolution - merge per-patient KGs
-python dump_graph.py --input my_kg/ --output my_unified_graph.json
-
-# Step 4: GraphRAG QA - answer 140 clinical questions
-python graphrag_qa_pipeline.py --kg my_unified_graph.json --bundle evaluation_bundle/ --output my_results/
-
-# Step 5: LLM Judge - score your answers
-python llm_judge_batch_parallel.py --results my_results/ --output my_scores/
-
-# Step 6: Compare to baseline - quick KG quality check
-python kg_similarity_scorer.py --student my_unified_graph.json --baseline baseline_curated/unified_graph_curated.json
-```
 
 ## Project Structure
 
