@@ -24,7 +24,7 @@ from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # === Configuration ===
-TRANSCRIPT_DIR = Path("evaluation_bundle")
+TRANSCRIPT_DIR = Path("src", "Clinical_KG_OS_LLM", "transcripts_1")
 MAX_RETRIES = 3
 
 # === Prompts ===
