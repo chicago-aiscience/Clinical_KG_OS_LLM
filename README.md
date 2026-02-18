@@ -127,16 +127,17 @@ Based on the [IEEE TKDE Survey on KG Quality Management](https://ieeexplore.ieee
 ## Project Structure
 
 ```
-├── evaluation_bundle/     # 20 patients × 7 question types (140 QA pairs)
-├── baseline_*/            # Pre-computed baselines with full evaluation
-├── figures/               # Visualizations
-├── kg_extraction.py       # Baseline extraction (naive / self-critic / 3-agent) - USE AS REFERENCE
-├── dump_graph.py          # Entity resolution & KG merging
-├── graphrag_qa_pipeline.py
-├── llm_judge_batch_parallel.py
-├── kg_similarity_scorer.py
-├── visualize.py           # Generate comparison figures
-└── speech_to_transcript.py # (Optional) ASR demo
+├── src/Clinical_KG_OS_LLM/
+│   ├── kg_extraction.py           # Baseline extraction (naive / self-critic / 3-agent) - USE AS REFERENCE
+│   ├── dump_graph.py              # Entity resolution & KG merging
+│   ├── graphrag_qa_pipeline.py
+│   ├── llm_judge_batch_parallel.py
+│   ├── kg_similarity_scorer.py
+│   ├── transcripts/               # 20 patients × 7 question types (140 QA pairs)
+│   └── baseline_results/          # Pre-computed baselines with full evaluation
+├── notebooks/quickstart.ipynb     # Interactive tutorial
+├── figures/                       # Visualizations
+└── pyproject.toml                 # Dependencies (use `uv sync`)
 ```
 
 ## Additional Challenge: Speech-to-Text
