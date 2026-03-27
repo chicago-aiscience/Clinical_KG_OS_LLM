@@ -26,7 +26,7 @@ See `kg_extraction.py` for API usage reference.
 
 A few possible architectures you may want to pursue but are not limited to:
 
-![Multi Agent Architectures](figures/multi-agent-architectures.pdf)
+![Multi Agent Architectures](figures/multi-agent-architectures.png)
 
 ## Quick Start
 
