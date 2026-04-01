@@ -1,6 +1,23 @@
 # Clinical GraphRAG Evaluation
 
-Evaluate Knowledge Graph extraction methods for clinical transcripts using GraphRAG QA.
+## Context
+
+Evaluate Knowledge Graph extraction methods for clinical transcripts.
+
+**The clinical scenario:**
+
+A doctor has a 15-minute appointment with a patient. That conversation gets recorded and transcribed. The transcript is dense and unstructured — the patient mentions symptoms scattered throughout, the doctor references past history, treatments get discussed mid-conversation. If another clinician needs to quickly understand that patient's situation later (a specialist, an ER doctor, a nurse doing a handoff), reading the full transcript is slow and error-prone.
+
+**What the KG does:**
+
+The extraction step pulls out the structured facts — this patient has COPD, reported shortness of breath, is on albuterol, has a history of smoking — and the relationships between them. That's what a doctor mentally does when they read a chart: they're building a mental model of entities and how they connect.
+
+**Why it matters clinically:**
+
+- Reduces documentation burden — the KG could auto-populate a structured patient summary
+- Enables faster handoffs between care providers
+- Supports clinical decision support — e.g. flagging drug interactions or missing follow-ups
+- Scales across large patient populations for retrospective analysis
 
 ## Hackathon Goal
 
@@ -10,7 +27,7 @@ We provide a naive single-pass implementation in `kg_extraction.py` (composite s
 
 ### What is a Knowledge Graph here?
 
-A KG captures **entities** (symptoms, diagnoses, treatments, procedures, etc.) and their **relationships** extracted from patient transcripts. This structured representation is used by **GraphRAG** to retrieve relevant clinical context when answering questions about a patient — the richer and more accurate your KG, the better the QA answers.
+A KG captures **entities** (symptoms, diagnoses, treatments, procedures, etc.) and their **relationships** extracted from patient transcripts. This structured representation is used by **GraphRAG** to retrieve relevant clinical context when answering questions about a patient — the richer and more accurate your KG, the better the QA answers. This simulates how a clinician might query the transcript data.
 
 ### How is it evaluated?
 
