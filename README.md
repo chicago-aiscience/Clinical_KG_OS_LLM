@@ -114,13 +114,17 @@ uv run python -m Clinical_KG_OS_LLM.visualize_kg \
   --output ./my_kg_naive/kg_graph.png
 ```
 
-**Optional:** To see how your KG answers clinical questions (as organizers will evaluate it), you can run the GraphRAG QA pipeline:
+**Optional:**
+
+To see how your KG answers clinical questions (as organizers will evaluate it), you can run the GraphRAG QA pipeline:
 
 ```bash
 uv run python -m Clinical_KG_OS_LLM.graphrag_qa_pipeline \
   --kg ./my_kg_naive/unified_graph_my_kg.json
 # Results written to ./my_kg_naive/results_unified_graph_my_kg/
 ```
+
+You may use the knowledge graph visualization at your discretion during the development process (recommended) but you need to ensure the outputs of your pipeline are formatted in such a way that the judges are able to evaluate after submission.
 
 **Path note:** `dump_graph` writes `unified_graph_{input_dir_name}.json` (e.g. `unified_graph_my_kg.json` when `--input ./my_kg`)
 
