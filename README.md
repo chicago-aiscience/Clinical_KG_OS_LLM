@@ -150,6 +150,19 @@ Prefer running in a notebook? Use `notebooks/quickstart.ipynb` to run Steps 0–
 | **GraphRAG QA** | `graphrag_qa_pipeline.py` | Retrieve relevant KG triples for a clinical question and generate an answer. Tests whether your KG captures the right information. Provided at `src/Clinical_KG_OS_LLM/graphrag_qa_pipeline.py`. |
 | **LLM Judge** | `llm_judge_batch_parallel.py` | Multiple commercial LLMs score each answer (0–5) on correctness, completeness, faithfulness, and relevance. Based on [LLM-as-Judge](https://arxiv.org/abs/2306.05685) methodology. **Run by organizers only and not provided.** |
 
+## Expected Output
+
+Participants submit a single JSON file: A unified knowledge graph (`unified_graph_{your_name}.json`) which is produced by running your multi-agent KG extraction pipeline over the 20 provided patient transcripts, followed by entity resolution via `dump_graph.py`.
+
+The graph captures clinical entities (symptoms, diagnoses, treatments, procedures, etc.) and the relationships between them across all patients in a unified, deduplicated structure. This is the artifact organizers will use for final evaluation.
+
+To generate it:
+
+1. Run your KG extraction pipeline (replacing or extending `kg_extraction.py`) → produces per-patient KG files
+2. Run `dump_graph.py` to merge and deduplicate into the unified graph
+3. Optionally verify your composite score with `kg_similarity_scorer.py` before submitting
+4. Organizers then run the GraphRAG QA pipeline and LLM judge on your submitted graph, you don't need to run that step yourself.
+
 ## Project Structure
 
 ```
