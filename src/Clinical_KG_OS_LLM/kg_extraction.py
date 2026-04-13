@@ -238,6 +238,8 @@ def main():
     parser = argparse.ArgumentParser(description="KG Extraction Pipeline (naive, GLM via OpenRouter)")
     parser.add_argument("--output", type=str, required=True,
                         help="Output directory for sub-KG JSON files")
+    parser.add_argument("--res-ids", nargs="+", default=None,
+                        help="Optional list of patient IDs to process (e.g. RES0198 RES0199). Processes all if omitted.")
     args = parser.parse_args()
 
     output_dir = Path(args.output)
@@ -250,6 +252,8 @@ def main():
     suffix = OUTPUT_SUFFIX
 
     transcript_files = get_transcript_files()
+    if args.res_ids:
+        transcript_files = [f for f in transcript_files if f.parent.name in args.res_ids]
     print("KG Extraction Pipeline")
     print(f"Method: naive ({OPENROUTER_MODEL})")
     print(f"Output: {output_dir}")
