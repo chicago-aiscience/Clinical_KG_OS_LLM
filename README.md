@@ -161,7 +161,6 @@ Prefer running in a notebook? Use `notebooks/quickstart.ipynb` to run Steps 0–
 │   ├── kg_extraction.py           # Naive single-pass implementation (OpenRouter GLM) — use as reference
 │   ├── dump_graph.py              # Entity resolution & KG merging
 │   ├── graphrag_qa_pipeline.py    # GraphRAG QA pipeline
-│   ├── llm_judge_batch_parallel.py
 │   └── kg_similarity_scorer.py    # Composite score against human-curated KG
 ├── notebooks/quickstart.ipynb     # Interactive tutorial
 ├── figures/                       # Visualizations
